@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gary de Bites — April 17, 2026</title>
-  <meta name="description" content="Anthropic 营收首超 OpenAI，$30B ARR 背后是 Claude Code 驱动的企业 API 浪潮。Meta 同时以 $2B 买下 Manus、接收 Dreamer 团队，AI Agent OS 层争夺进入明牌阶段。">
+  <meta name="description" content="Claude Opus 4.7 今日发布，SWE-bench Verified 达 87.6%，新增 xhigh 推理档位并支持 3.75MP 图像输入。OpenAI 发布生物专用模型 GPT-Rosalind，Cloudflare 宣布 Agents Week 统一推理基础设施。">
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -18,9 +18,9 @@
 
   <h1 class="post-date">April 17, 2026</h1>
 
-  <p class="post-lead">Anthropic 营收首超 OpenAI，$30B ARR 背后是 Claude Code 驱动的企业 API 浪潮。Meta 同时以 $2B 买下 Manus、接收 Dreamer 团队，AI Agent OS 层的争夺进入明牌阶段。Windsurf 2.0 的 Spaces + Kanban，开始解决工程师同时开跑数十个 Agent 时"人是瓶颈"的问题。</p>
+  <p class="post-lead">Claude Opus 4.7 今日发布，SWE-bench Verified 达 87.6%，新增 xhigh 推理档位并支持 3.75MP 图像输入，API 定价不变。OpenAI 同日发布生物专用模型 GPT-Rosalind，Cloudflare 宣布 Agents Week，为 14 家模型供应商推出统一推理层。</p>
 
-  <p class="post-note">Gmail 未能读取，本期内容仅基于 RSS 源及公开信息。</p>
+  <p class="post-note">本期部分源抓取失败，内容较常规偏少。</p>
 
   <section class="section">
     <div class="section-head">
@@ -29,24 +29,31 @@
     </div>
 
     <article class="item">
-      <h3><a href="https://vucense.com/ai-intelligence/industry-business/anthropic-overtakes-openai-30-billion-arr-2026/" target="_blank" rel="noopener">Anthropic 营收首超 OpenAI：$30B ARR，企业客户双月破千</a></h3>
-      <p>Anthropic 宣布年化营收（ARR，即把当前月收入换算成全年数字的行业通用计量方式）达到 $300 亿，首次超过 OpenAI 的 $250 亿。增长曲线异常陡峭：从 2025 年 1 月的 $10 亿到现在，只用了 15 个月。今年 2 月 Series G 融资时，每年付超过百万美元的企业客户有 500 家，今天超过了 1000 家，不到两个月翻了一倍。</p>
-      <p>市场份额方面，Anthropic 现在占企业 LLM API 支出的 40%，OpenAI 从 2023 年的 50% 降到了 27%。这不是产品能力的倒转，是商业模式的分歧：Anthropic 80% 营收来自企业客户，OpenAI 消费者比重更高。企业客户粘性强、可预期，消费者容易流动。</p>
-      <cite><a href="https://www.saastr.com/anthropic-just-passed-openai-in-revenue-while-spending-4x-less-to-train-their-models/" target="_blank" rel="noopener">SaaStr</a> · <a href="https://techcrunch.com/2026/04/14/anthropics-rise-is-giving-some-openai-investors-second-thoughts/" target="_blank" rel="noopener">TechCrunch</a></cite>
+      <h3><a href="https://www.anthropic.com/news/claude-opus-4-7" target="_blank" rel="noopener">Claude Opus 4.7 发布：SWE-bench Verified 87.6%，视觉翻3倍，xhigh 档位默认开</a></h3>
+      <p>Anthropic 今天发布 Claude Opus 4.7，基准（benchmark，行业用来横向比较模型能力的标准测试集）成绩全面高于 4.6：SWE-bench Pro 64.3%（+11 分），SWE-bench Verified 87.6%（+7 分），ARC-AGI-2 75.83%，在 GDPval-AA 评测上拿到 1753 Elo，当前排名第一。Cursor 内部评测从 58% 跳到 70%，Notion 内部 eval 提升 14%。</p>
+      <p>三个技术变化值得记住。第一，新 tokenizer（分词器，决定模型如何把文本切成可处理单元）：同一段文字会比 4.6 多消耗最多 35% 的 token，但 Anthropic 同步上调了所有订阅套餐的用量上限。定价仍是 $5/$25 每百万 token 输入/输出。第二，视觉分辨率：支持最长边 2576 像素（约 3.75 百万像素），比之前的 Claude 模型提升约 3 倍，不再压缩高分辨率截图，computer use（用 AI 直接操控电脑界面的能力）场景直接受益。第三，新推理档位 xhigh：介于 high 和 max 之间，Claude Code 默认使用此档位。</p>
+      <cite><a href="https://www.latent.space/p/ainews-anthropic-claude-opus-47-literally" target="_blank" rel="noopener">AINews / Latent Space</a> · <a href="https://venturebeat.com/technology/anthropic-releases-claude-opus-4-7-narrowly-retaking-lead-for-most-powerful-generally-available-llm" target="_blank" rel="noopener">VentureBeat</a> · <a href="https://www.theaivalley.com/p/openai-unveils-gpt-rosalind" target="_blank" rel="noopener">AI Valley</a></cite>
     </article>
 
     <article class="item">
-      <h3><a href="https://aimagazine.com/news/how-manus-puts-meta-ahead-in-the-agentic-ai-economy" target="_blank" rel="noopener">Meta 双线押注：$2B 收购 Manus + 接收 Dreamer 创始团队</a></h3>
-      <p>Meta 用约 $20 亿收购了 Manus（一个能自主完成从查资料到操作网页等全流程任务的 AI Agent 产品），同时全盘接收了 Dreamer AI 的创始团队，后者原本在做面向普通用户的个人 Agent OS（操作系统层）。Manus 当时估值约 $5 亿，本轮溢价约 4 倍，ARR 约 $1 亿。</p>
-      <p>Dreamer 此前拿了 $5600 万融资，核心命题是"非技术用户也能用的个人 AI Agent"，整个创始团队已整建制并入 Meta Superintelligence Labs。两笔交易合在一起，意图清晰：一个负责任务执行（Manus），一个负责界面与用户端体验（Dreamer），目标是拼出 Meta 自己的 AI OS 层。</p>
-      <cite><a href="https://www.techradar.com/pro/meta-buys-manus-for-usd2-billion-to-power-high-stakes-ai-agent-race" target="_blank" rel="noopener">TechRadar</a> · <a href="https://winbuzzer.com/2026/03/24/meta-hires-dreamer-ai-startup-team-superintelligence-labs-xcxwbn/" target="_blank" rel="noopener">WinBuzzer</a></cite>
+      <h3><a href="https://openai.com/index/introducing-gpt-rosalind/" target="_blank" rel="noopener">OpenAI 发布 GPT-Rosalind：生物学专用 LLM，连接公开数据库，偏向"否定坏靶点"</a></h3>
+      <p>GPT-Rosalind 是 OpenAI 专门为生命科学研发的模型，覆盖生物学、药物发现和转化医学（把基础研究转化成临床治疗的过程）。它能直连主要公开生物数据库，协助研究者做文献综述、假说探索到实验设计的全链路推进，并被特别调整为"更倾向于否定坏的药物靶点"，减少误导研究者浪费时间在死胡同上。</p>
+      <p>访问目前限定美国境内特定机构，通过 OpenAI 的受信访问部署结构（Trusted Access Deployment）管控。发布时间与 Opus 4.7 同天，但性质不同：Rosalind 不是通用模型的迭代，而是垂直场景的专用系统，意在压缩药物早期发现动辄 10-15 年的时间线。</p>
+      <cite><a href="https://arstechnica.com/science/2026/04/openai-starts-offering-a-biology-tuned-llm/" target="_blank" rel="noopener">Ars Technica</a> · <a href="https://www.theaivalley.com/p/openai-unveils-gpt-rosalind" target="_blank" rel="noopener">AI Valley</a></cite>
     </article>
 
     <article class="item">
-      <h3><a href="https://www.kucoin.com/news/flash/cognition-ai-launches-windsurf-2-0-with-agent-command-center-and-built-in-devin-cloud-agent" target="_blank" rel="noopener">Windsurf 2.0 发布：Spaces 组织单位 + Kanban 管理面板 + SWE-grep</a></h3>
-      <p>Cognition AI 发布 Windsurf 2.0，三个核心更新。第一，Spaces：把一个项目的所有 Agent 会话、PR、文件和上下文打包成一个单位，新建 Agent 时自动继承项目背景，不用每次重头交代。第二，Agent Command Center：看板（Kanban，一种用列表可视化追踪任务进度的界面）界面，可以同时看到所有 Agent 是跑着、卡住了还是在等待审核。第三，集成 Devin：把 Devin（Cognition 的自主编程 Agent）嵌入 IDE，一键把任务转给云端 Devin 执行，关掉电脑也不影响进度。</p>
-      <p>同时发布了 SWE-grep 和 SWE-grep-mini，两个专门做代码上下文检索的子模型，速度比 frontier 模型快约 20 倍，每轮最多并发 8 个工具调用（详见 AI 进展）。</p>
-      <cite><a href="https://cognition.ai/blog/swe-grep" target="_blank" rel="noopener">Cognition Blog</a> · <a href="https://www.testingcatalog.com/windsurf-2-0-adds-devin-and-agent-command-center/" target="_blank" rel="noopener">Testing Catalog</a></cite>
+      <h3><a href="https://x.com/TencentHunyuan/status/2044604754836505076" target="_blank" rel="noopener">Tencent HY-World 2.0 开源：文字/图像/视频一键生成完整可编辑 3D 世界</a></h3>
+      <p>Tencent 发布并开源 HunyuanWorld 2.0，接受文本、图像、视频作为输入，输出完整 3D 环境，格式包括 mesh（三角网格）、点云和 Gaussian splat（高斯点云渲染格式），可直接导入 Unity 和 Unreal 等主流引擎。整个流程分多阶段：先生成全景场景，再规划导航路径，再扩展环境，最后拼装成连贯世界，用于游戏关卡原型、地图生成和资产制作。</p>
+      <p>与之前大多数 3D 生成模型只能输出几秒短片或静态场景不同，HY-World 2.0 的输出是可编辑的生产级资产。开源意味着个人开发者和独立工作室也能直接使用。</p>
+      <cite><a href="https://www.theaivalley.com/p/openai-unveils-gpt-rosalind" target="_blank" rel="noopener">AI Valley</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.cloudflare.com/agents-week/updates/" target="_blank" rel="noopener">Cloudflare Agents Week：14 家供应商统一推理层 + Email Service 公测 + Artifacts 存储</a></h3>
+      <p>Cloudflare 本周密集发布 Agent 基础设施更新。三个核心：第一，统一推理层（Unified Inference Layer），开发者一次接入就能调用 14 家模型供应商，不用为每家写一套调用逻辑。第二，Email Service 进入公测，Agent 可以原生收发和处理邮件，不依赖第三方 API。第三，Artifacts：Git 兼容的版本化存储，专为 Agent 状态和产物管理设计。</p>
+      <p>这三个更新合在一起，指向同一个方向：Cloudflare 在为 Agent 的生产化运行搭水管——不是卖模型，而是卖"让 Agent 跑起来所需的基础设施层"。</p>
+      <cite><a href="https://a.tldrnewsletter.com/web-version?ep=1&lc=00381c30c-3010-11f0-9f05-dd8bee5dda6f" target="_blank" rel="noopener">TLDR</a></cite>
     </article>
 </section>
   <section class="section">
@@ -56,19 +63,27 @@
     </div>
 
     <article class="item">
-      <h3>Swyx（Latent Space 联合创始人）：Meta 的赌注进入"turn"牌阶段</h3>
-      <p>Swyx 发推说，Meta 的 AI 叙事走到了一个关键节点："看到了 flop，现在正在看 turn"。这是德州扑克比喻：flop 是前三张公共牌，turn 是第四张，意思是前期的下注和初步结果（Llama 4、Manus 收购、Zuck 亲自编码）都已经亮出来了，现在是要看下一张验收牌。</p>
-      <p>他具体列出的信号：Meta 的 hiring momentum（招聘节奏）、Zuck 本人重新开始写代码、新一代模型能力提升、以及连续两笔 Agent 收购，认为这一轮 Meta 的 AI 押注比外界判断的要认真得多。</p>
-      <p><strong>Llama 4 是 Meta 的 flop，接下来的 turn 是 Agent 能力，river 是 AI OS 落地——牌桌上的局还没结束。</strong></p>
-      <cite><a href="https://x.com/swyx/status/2044598788065731017" target="_blank" rel="noopener">X @swyx</a></cite>
+      <h3>Cat Wu（Anthropic 工程师）：Opus 4.7 要当成"可委托的工程师"用，不是结对编程伙伴</h3>
+      <p>Cat Wu 在 Opus 4.7 发布当天发了一条使用指引，核心逻辑是：这个模型设计上倾向于自主完成任务，给它完整的目标、约束和验收标准，然后走开。不要每一步都干预（pair programming，即结对编程，两个人/人和 AI 实时共同写代码），因为这会打断模型的自主执行节奏。</p>
+      <p>她还建议把验证逻辑写进 claude.md（Claude Code 项目的配置文件）或 skill（可复用的指令模板）里，让模型知道"怎么证明自己做完了"，而不是靠人在旁边实时确认。Claude Code 默认把 Opus 4.7 设成 xhigh（最高推理档位之一）也印证了这个定位：高推理成本换自主完成率。</p>
+      <p><strong>Anthropic 把 Opus 4.7 推向了"异步委托"模式，这要求用户对 AI 的信任阈值和任务拆解方式都做出改变。</strong></p>
+      <cite><a href="https://x.com/_catwu" target="_blank" rel="noopener">X @_catwu</a> · <a href="https://www.latent.space/p/ainews-anthropic-claude-opus-47-literally" target="_blank" rel="noopener">AINews</a></cite>
     </article>
 
     <article class="item">
-      <h3>Aaron Levie（Box CEO）：AI 不消灭工作，它把瓶颈换一个地方</h3>
-      <p>Levie 引用了一篇 FT 报道说，AI 为什么在很多行业会创造新工作：你用 AI 加速了一个环节，就会在流程的另一个地方撞上新的瓶颈，而这个新瓶颈还需要人。他举了法律服务的例子：AI 批量生成法律信函和专利草稿，反而让审核这些文件的律师更忙了，因为需求量上来了。</p>
-      <p>类似模式在软件工程（更多代码 = 更多安全审查）和医疗（更快诊断 = 更多后续处理）都在发生。这背后是经济学上的 Jevons 悖论（Jevons Paradox）：当某种资源变得更高效，总消耗量反而增加，因为需求也跟着扩大。</p>
-      <p><strong>AI 是需求放大器，不是需求终结者，但它会把你的护城河从"会做"变成"做得快还做得对"。</strong></p>
-      <cite><a href="https://x.com/levie/status/2044621545348481285" target="_blank" rel="noopener">X @levie</a> · <a href="https://www.benzinga.com/markets/tech/26/04/51853283/box-ceo-aaron-levie-says-were-going-to-use-ai-to-accelerate-output-argues-jobs-will-shift-not-disappear-in-legal-tech-and-healthcare" target="_blank" rel="noopener">Benzinga</a></cite>
+      <h3>Boris Cherny（Anthropic）：MRCR 不再是有效的长上下文基准，Graphwalks 是替代</h3>
+      <p>Opus 4.7 在 MRCR（Multi-Round Context Recall，通过在长上下文中隐藏干扰信息来测试模型记忆力的评测方式）上的得分低于 4.6，引发外界质疑。Anthropic 工程师 Boris Cherny 直接回应：MRCR 会被专门为"藏针游戏"设计的技巧过度优化，衡量的不是真实的推理能力。他给出了 Graphwalks（一种通过图结构推理任务来测试长上下文应用理解力的新指标）的数据：Opus 4.6 是 38.7%，Opus 4.7 是 58.6%，涨幅明显。</p>
+      <p>这件事本身揭示了一个评测行业的结构性问题：当某个 benchmark 被普遍采用后，模型厂商很容易专门针对它调优，导致数字好看但实际能力没涨。Anthropic 选择在系统卡里保留 MRCR 数据（"为了科学诚实"），但同时主动推动迁移到新指标，是一个不常见的公开自我挑战。</p>
+      <p><strong>下一代 benchmark 大战的赌注不是谁的数字高，而是谁定义了什么叫"真实能力"。</strong></p>
+      <cite><a href="https://www.latent.space/p/ainews-anthropic-claude-opus-47-literally" target="_blank" rel="noopener">AINews / Latent Space</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Jeremy Howard vs. Theo：Opus 4.7 质量的两张截图</h3>
+      <p>Jeremy Howard（fast.ai 联合创始人）说 Opus 4.7 是他用过第一个"真的懂他在做什么"的模型，具体体现是模型会停下来先讨论而不是直接推进。Theo（T3 Stack 作者）则说新系统提示"把模型大脑切掉了"（lobotomized），建议在 T3 Chat 里用，绕过官方系统提示。</p>
+      <p>两个人说的可能都是真的：系统提示对模型行为的影响比版本号更大，同一个模型在不同部署环境里表现出的"智力"可以差很远。这意味着评估一个新模型，测哪个接入点、带什么系统提示，结论可能完全不同。</p>
+      <p><strong>模型发布时的系统提示，已经是产品决策，不是工程设置。</strong></p>
+      <cite><a href="https://x.com/jeremyphoward" target="_blank" rel="noopener">X @jeremyphoward</a> · <a href="https://x.com/theo" target="_blank" rel="noopener">X @theo</a> · <a href="https://www.latent.space/p/ainews-anthropic-claude-opus-47-literally" target="_blank" rel="noopener">AINews</a></cite>
     </article>
 </section>
   <section class="section">
@@ -78,25 +93,24 @@
     </div>
 
     <article class="item">
-      <h3><a href="https://www.saastr.com/anthropic-just-passed-openai-in-revenue-while-spending-4x-less-to-train-their-models/" target="_blank" rel="noopener">Anthropic 赢 OpenAI 的商业逻辑：训练成本 1/4，Claude Code 独撑 $25亿</a></h3>
-      <p>同样做 frontier 模型，Anthropic 的训练花费约是 OpenAI 的四分之一。这不一定意味着他们的模型更便宜训练，更可能是产品路线的差异：Anthropic 把精力集中在企业 API 和工具链，而不是 ChatGPT 这样的消费级前端。</p>
-      <p>结果就是：Claude Code 一个产品，年化营收已经到 $25 亿，成为 Anthropic 增长最快的收入来源。对比整体 $300 亿 ARR，一个 CLI 工具（命令行界面工具，就是在终端里敲命令用的）贡献了约 8% 的营收，这个比例非常高。背后是工程师作为付费用户的消费力，以及 Agent 化工具从"方便"变成"必须用"的临界点越过了。</p>
-      <p><strong>Anthropic 的赌注不是做最好的聊天机器人，而是做工程师离不开的基础设施。</strong></p>
-      <cite><a href="https://www.saastr.com/anthropic-just-passed-openai-in-revenue-while-spending-4x-less-to-train-their-models/" target="_blank" rel="noopener">SaaStr</a></cite>
+      <h3>Peter Yang（Follow 联合创始人）：构建 AI skill 时，同时跑一个 eval agent 做 yes/no 检查</h3>
+      <p>Peter Yang 发推说他现在构建所有 AI skill（可复用的指令模板或工具）时，都会让 AI 同时启动一个独立的 eval agent（评估用的子 Agent，专门对主 Agent 的每个输出做是非判断）。这个 eval agent 的工作非常窄：只回答"这个输出通过了吗"，不做其他事。</p>
+      <p>这个模式的成本很低，但信号价值很高：你不需要事后人工审核每一条输出，eval agent 帮你把质量检查内嵌在执行流程里。这也让 skill 本身更容易迭代，因为每次修改后立刻有自动化的合格/不合格反馈。对做 Agent workflow 的 PM 来说，这是一个可以今天就落地的设计模式。</p>
+      <cite><a href="https://x.com/petergyang/status/2044998456062906422" target="_blank" rel="noopener">X @petergyang</a></cite>
     </article>
 
     <article class="item">
-      <h3>Claude Code auto-compact：1M 上下文是双刃剑，在 60% 时主动出手</h3>
-      <p>Claude Code 新版自动压缩功能（auto-compact：当对话历史快撑满上下文窗口时，自动把旧对话压缩成摘要，让 Agent 继续工作而不用重开）现在可以自定义触发阈值。Thariq（@trq212）的建议：1M 上下文窗口不是越大越好，在 60% 左右就手动跑一次 /compact 命令，主动压缩，而不是等自动触发。</p>
-      <p>原因是上下文越长，模型越容易被早期无关信息带偏；压缩本身也有信息损耗，在对话密度最高的时间点压缩比积累了很多废话再压缩损失更少。这跟"早 review 比晚 review 省力"是同一个逻辑。</p>
-      <cite><a href="https://x.com/trq212/status/2044653083817660431" target="_blank" rel="noopener">X @trq212</a></cite>
+      <h3>Amjad Masad（Replit CEO）：把 Web app 转成 iOS app，成本已低于 $10</h3>
+      <p>Amjad Masad 发推说现在用 AI 工具链把一个 Web app 转成 iOS 原生应用，成本已经低于 $10。他说的不是"体验用用"，而是拿得出手、能发布的应用。这背后是 React Native、Expo 和 AI 辅助代码生成工具链这几年成熟的叠加效应。</p>
+      <p>对独立开发者来说，这改变了"要不要做 iOS 版"的决策门槛：以前 iOS 版是一个独立的大项目，现在是一个周末可以完成的延伸动作。这个成本线一旦被接受，就会有更多 Web-first 的工具开始补 iOS 版，用户期待也会跟着调整。</p>
+      <cite><a href="https://x.com/amasad/status/2044953138957025707" target="_blank" rel="noopener">X @amasad</a></cite>
     </article>
 
     <article class="item">
-      <h3>Garry Tan（Y Combinator CEO）：GBrain 多 Agent 协作经实测稳定，关键是 git + postgres</h3>
-      <p>Garry Tan 发推说 GBrain（他自己在用的多 Agent 工作系统）配合 git 和 postgres 同时运行多个 Agent 协作"效果非常好"。git（版本控制工具，记录代码每一次改动）管代码变更，postgres（一种关系型数据库）管任务状态和上下文共享，两者配合让多个 Agent 不互相踩踏。</p>
-      <p>值得注意的是这条推文有约 900 个 likes。Garry Tan 不做技术评测，他发这条的意义是：这个方案已经过了"demo 可玩"的阶段，进入了"可以真正依赖"的区间。</p>
-      <cite><a href="https://x.com/garrytan/status/2044644320599560416" target="_blank" rel="noopener">X @garrytan</a></cite>
+      <h3>Kevin Weil（OpenAI CPO）：新 Codex computer use 好用程度"令人震惊"</h3>
+      <p>OpenAI 首席产品官 Kevin Weil 只发了一句话："The new codex computer use is shockingly good"（新 Codex 的 computer use 好用程度令人震惊）。Codex 是 OpenAI 的自主编程 Agent，computer use 指 AI 直接操控电脑图形界面完成任务，不依赖 API。</p>
+      <p>这条评论是在 Opus 4.7 发布当天，一个 OpenAI 高管发这种语气的推，信号意义很明确：他们认为自己的产品在这个方向还有竞争力。不过注意来源是内部人员，没有第三方数据，需要等外部评测验证。</p>
+      <cite><a href="https://x.com/kevinweil/status/2045004924682195027" target="_blank" rel="noopener">X @kevinweil</a></cite>
     </article>
 </section>
   <section class="section">
@@ -106,18 +120,20 @@
     </div>
 
     <article class="item">
-      <h3><a href="https://creatoreconomy.so/p/15-observations-on-work-and-life" target="_blank" rel="noopener">Peter Yang：从中国 AI 公司归来的 15 个观察</a></h3>
-      <p>Peter Yang 走访了北京、上海几家头部 AI 公司，写了 15 条观察，有几条值得停下来想一想。工作节奏：11 点到公司，干到 11 点走，中间外卖+奶茶送到工位，主要原因是维持这种节奏的很多是还没孩子的年轻人。年轻文化：这一代不太喝酒、不怎么出去玩，不是因为纪律，是生活本来就长这样。</p>
-      <p>AI 工具：这些公司的工程师全用顶级美国 AI 工具，Claude Code 是提到最多的，走 VPN（翻墙工具）。政府角色：地方政府之间互相竞争，都想把最好的 AI 创始人吸引过来，给地、给钱、给政策。生活成本：住家保姆月薪约 $1500，私人大厨时薪约 $7，滴滴大多数订单 $3-5。</p>
-      <p>这种不对称的生活成本背后是一个现实：中国 AI 创业者能把几乎所有精力都放在工作上，因为生活的其他摩擦被廉价服务抹平了。这在结构上比较难复制。</p>
-      <cite><a href="https://x.com/petergyang/status/2044418914856353901" target="_blank" rel="noopener">X @petergyang</a></cite>
+      <h3><a href="https://www.timdavis.com/blog/probabilistic-engineering-and-the-24-7-employee" target="_blank" rel="noopener">从确定性到概率性：AI 代码时代，生成变便宜了，但验证没有</a></h3>
+      <p>Tim Davis 的这篇文章提出一个当前软件开发的核心矛盾：确定性工程（你写代码、测试它、理解它做什么）正在被概率性工程（大段代码由随机系统生成、在时间压力下审查、集成进没有人完整设计过的系统）取代。生成成本已经接近零，但验证成本没有降。</p>
+      <p>当 AI 产生的代码量超过人类注意力可以有效检查的上限时，bug 就会漏过去，因为产出速度已经超过了人工检验的上限，而负责审查的 AI 也会漏掉很多。他把 AI 比作"24-7 员工"：永不疲倦，但也永不犯错地存在——这个假设本身就是危险的。</p>
+      <p>这对工程师、PM 和产品团队的意味是：你们面临的新问题不是"怎么写代码"，而是"怎么验证你不完全理解的代码"。投资 review 流程、测试基础设施和可观测性，边际价值正在快速上升。</p>
+      <p><strong>AI 把代码生成变成了水龙头，但没有人给验证装个水表。</strong></p>
+      <cite><a href="https://www.timdavis.com/blog/probabilistic-engineering-and-the-24-7-employee" target="_blank" rel="noopener">timdavis.com</a> · <a href="https://a.tldrnewsletter.com/web-version?ep=1&lc=00381c30c-3010-11f0-9f05-dd8bee5dda6f" target="_blank" rel="noopener">TLDR</a></cite>
     </article>
 
     <article class="item">
-      <h3>Zara Zhang（Follow 联合创始人）：和 AI 模型"玩"就是认真的工作</h3>
-      <p>Zara Zhang 发推说：很多人把"玩"AI 模型当成不正经的事，但她的体验是，那些随手试试的时间往往是一天里信息密度最高的时间段。实验本身就是最快的学习方式，不需要一个正式任务作为理由才能开始探索。</p>
-      <p>这和"高质量休息"的研究有一个共鸣：真正的深度学习往往发生在低压力、允许失败的时间里，而不是被考核压着的时候。对做产品的人来说，这是一个关于探索成本的提醒：真正阻止你深度理解 AI 工具的，可能不是时间，是"必须有产出才值得花时间"的心态。</p>
-      <cite><a href="https://x.com/zarazhangrui/status/2044515052435476685" target="_blank" rel="noopener">X @zarazhangrui</a></cite>
+      <h3><a href="https://links.tldrnewsletter.com/24J4nz" target="_blank" rel="noopener">片段经济：TBPN 每集 7000 播，每条剪辑 25.7 万播，片段已是主要产品</a></h3>
+      <p>这篇文章用 TBPN（最近被 OpenAI 以 $2 亿收购的播客）作为核心案例：每集完整节目大约 7000 播放量，但每条剪辑平均 25.7 万次。片段不是长内容的附产品，片段就是产品。TBPN 把广告直接烧进剪辑里（而不是放在开头或中间），去年靠这个模式做了 $500 万收入。</p>
+      <p>这个模式正在覆盖整个媒体生态：长内容的商业价值越来越依赖它能否被剪成传播力强的片段，而不是完播率或订阅量。这对做内容的产品来说意味着：分发逻辑和创作逻辑都要倒过来设计，先问"什么片段会传"，再问"围绕它怎么组织完整内容"。</p>
+      <p><strong>内容产品的护城河已经从"完播"转移到"可剪辑性"。</strong></p>
+      <cite><a href="https://links.tldrnewsletter.com/24J4nz" target="_blank" rel="noopener">TLDR</a></cite>
     </article>
 </section>
   <section class="section">
@@ -127,23 +143,23 @@
     </div>
 
     <article class="item">
-      <h3><a href="https://cognition.ai/blog/swe-grep" target="_blank" rel="noopener">SWE-grep / SWE-grep-mini：强化学习训练的快速代码检索子模型</a></h3>
-      <p><strong>现状：</strong>多 Agent 并行工作时，最大的速度瓶颈之一是"找上下文"——让模型搞清楚当前代码库里的结构、接口、依赖。这步慢，整个流水线就慢。</p>
-      <p><strong>问题：</strong>frontier 模型（指当前最强的大模型）虽然检索能力强，但太重，用来做这种高频、短任务非常浪费。需要一个又快又准的专用子模型。</p>
-      <p><strong>解决方案：</strong>Cognition 用强化学习（Reinforcement Learning，通过奖惩反馈让模型自己学会策略，不需要人工标注每一步怎么做）专门训练了 SWE-grep 和轻量版 SWE-grep-mini，专攻多轮上下文检索。每轮最多同时发出 8 个工具调用，最多跑 4 轮，找完停手。</p>
-      <p><strong>价值：</strong>在 Windsurf 的实测中，Fast Context 子 Agent（子模型负责的辅助模块）速度比用 frontier 模型快 20 倍，同时检索质量保持对齐。意味着并行工程师模式（一个人同时驱动几十个 Agent）从理论变成了可用的日常工具。</p>
-      <p><strong>未来方向：</strong>这个思路可以推广：训练专用的轻量子模型接管流水线中的特定高频任务，而不是用一个全能大模型做所有事。SWE-grep 是这个方向的第一个有说服力的案例。</p>
-      <cite><a href="https://cognition.ai/blog/swe-grep" target="_blank" rel="noopener">Cognition Blog</a> · <a href="https://news.ycombinator.com/item?id=45607822" target="_blank" rel="noopener">Hacker News</a></cite>
+      <h3><a href="https://www.pi.website/blog/pi07" target="_blank" rel="noopener">Physical Intelligence π0.7：机器人大脑首次可语言引导完成未经训练的任务</a></h3>
+      <p><strong>现状：</strong>现有机器人模型绑定训练任务集，机器人只能做它"见过"的事。给新任务就得收集数据、重新训练，周期长、成本高。</p>
+      <p><strong>问题：</strong>真实场景任务千变万化，固定训练集的机器人在部署后很快就遇到覆盖盲区。</p>
+      <p><strong>解决方案：</strong>π0.7 通过语言引导（verbal coaching，用自然语言口头指导机器人，而不是重新训练模型）实现零样本任务泛化（zero-shot generalization，意为第一次遇到某个任务、没有对应训练数据，也能尝试完成）。模型不需要额外数据采集或重新训练，接到口头描述的新任务后直接尝试执行。</p>
+      <p><strong>价值：</strong>这是机器人从"会背题"到"会听话"方向上的一个早期但有意义的验证。从 demo 视频来看，复杂多步任务从单条高层指令自主完成还做不到，但单步新任务已经有效。</p>
+      <p><strong>未来方向：</strong>从"语言引导单步"到"语言引导多步自主流程"，是下一个明确的里程碑。目前仍处于研究阶段，尚未产品化。</p>
+      <cite><a href="https://www.pi.website/blog/pi07" target="_blank" rel="noopener">Physical Intelligence Blog</a> · <a href="https://techcrunch.com/2026/04/16/physical-intelligence-a-hot-robotics-startup-says-its-new-robot-brain-can-figure-out-tasks-it-was-never-taught/" target="_blank" rel="noopener">TechCrunch</a></cite>
     </article>
 
     <article class="item">
-      <h3><a href="https://arxiv.org/abs/2510.21618" target="_blank" rel="noopener">DeepAgent（WWW '26）：通用推理 Agent + 可扩展工具集</a></h3>
-      <p><strong>现状：</strong>大多数 Agent 系统工具集是固定的：开发者预先定义好 Agent 可以调用哪些工具，Agent 只能在这个范围内行动。</p>
-      <p><strong>问题：</strong>真实任务需要的工具组合千变万化，固定工具集要么太少（Agent 做不了）、要么太多（推理效率低下）。</p>
-      <p><strong>解决方案：</strong>DeepAgent 用 ToolPO（一种强化学习训练方法，用工具模拟器生成大规模真实 API 工具调用的训练数据，让模型学会按需发现和使用工具）做端到端训练。模型在推理时能主动发现新工具、执行、然后把这次工具使用的经验打包存进记忆，下次类似任务直接调用，不需要重新探索。</p>
-      <p><strong>价值：</strong>工具记忆层让 Agent 越用越聪明，不是靠重新训练，而是靠经验积累。这和人类的技能增长模式更接近。在 WWW '26（2026年国际万维网大会，三月底至四月中旬在迪拜举行）上发表，同行评审已完成。</p>
-      <p><strong>未来方向：</strong>ToolPO 方法能否迁移到其他 Agent 训练场景，以及工具记忆的长期一致性问题，是接下来的验证重点。</p>
-      <cite><a href="https://arxiv.org/abs/2510.21618" target="_blank" rel="noopener">arXiv 2510.21618</a></cite>
+      <h3><a href="https://www.anthropic.com/news/claude-opus-4-7" target="_blank" rel="noopener">Opus 4.7 技术拆解：新 tokenizer + 3.75MP 视觉 + xhigh 档位，三层叠加的实质</a></h3>
+      <p><strong>现状：</strong>从 4.6 到 4.7，表面上是版本迭代，内部有三处结构变化同时发生，各自独立但效果叠加。</p>
+      <p><strong>新 tokenizer：</strong>分词器换了，意味着这可能是从新基础训练起步的模型（而非仅微调），token 消耗量最多增加 35%，但推理效率提升抵消了部分成本，Anthropic 同步提高了所有套餐用量上限。LlamaIndex 的独立测试显示图表理解从 13.5% 跳到 55.8%，但布局理解略有下降，说明提升是非均匀的。</p>
+      <p><strong>视觉升级：</strong>支持图像最长边 2576 像素（约 3.75MP），之前约 1.2MP。高分辨率截图不再被压缩，computer use（AI 直接操控电脑图形界面）和复杂图表分析直接受益。Anthropic 工程师 Alex Albert 特别指出 UI/slides/docs 的输出"品味"也有提升。</p>
+      <p><strong>xhigh 档位：</strong>新增推理努力级别 xhigh，介于 high 和 max 之间。Claude Code 把 Opus 4.7 默认设为此档位，意味着 Anthropic 在用更多推理计算（test-time compute，推理时消耗的算力，区别于训练时算力）换取任务完成质量，而非靠参数量取胜。</p>
+      <p><strong>未来方向：</strong>tokenizer 换代通常是基础模型的代际信号，外界猜测 4.7 可能是 Mythos（Anthropic 目前仅对安全研究伙伴开放的更强模型）的蒸馏版本，Anthropic 未正式确认。</p>
+      <cite><a href="https://www.latent.space/p/ainews-anthropic-claude-opus-47-literally" target="_blank" rel="noopener">AINews / Latent Space</a></cite>
     </article>
 </section>
   <section class="section">
@@ -153,12 +169,13 @@
     </div>
 
     <ul class="glance-list">
-      <li>GPT-6 预训练已于 3 月 24 日在德州 Abilene 数据中心完成，4 月 14 日传言发布落空，当前共识窗口改为"4 月底至 5 月"。<a class="glance-src" href="https://findskill.ai/blog/gpt-6-release-date/" target="_blank" rel="noopener">FindSkill.ai →</a></li>
-      <li>OpenAI、Anthropic、Google 联合通过 Frontier Model Forum 共享情报，封堵中国公司的模型蒸馏攻击（蒸馏：用顶级模型生成的答案反复训练较弱模型，让弱模型模仿强模型能力）；Anthropic 称发现约 2.4 万个欺诈账号。<a class="glance-src" href="https://www.bloomberg.com/news/articles/2026-04-06/openai-anthropic-google-unite-to-combat-model-copying-in-china" target="_blank" rel="noopener">Bloomberg →</a></li>
-      <li>Llama 4 Scout（109B 总参数，MoE 架构，每次激活 17B）单张 NVIDIA H100 即可运行，上下文窗口 10M token，已开放下载。<a class="glance-src" href="https://ai.meta.com/blog/llama-4-multimodal-intelligence/" target="_blank" rel="noopener">Meta AI →</a></li>
-      <li>DeepSeek R2 在 AIME 2025（高中数学奥赛题集，常用来衡量模型推理能力的基准）上达到 92.7%，API 定价约为同级西方模型的 30%。<a class="glance-src" href="https://llm-stats.com/ai-news" target="_blank" rel="noopener">LLM Stats →</a></li>
-      <li>Thariq：Claude Code 的自动压缩阈值现在可以自定义，他本人的设置是 400k 上下文时触发，建议在 60% 使用率时手动跑 /compact 而不是等自动。<a class="glance-src" href="https://x.com/trq212/status/2044654705780179011" target="_blank" rel="noopener">X @trq212 →</a></li>
-      <li>Aditya Agarwal（前 Facebook CTO）用一条推文总结了 LLM 怀疑论者的完整进化弧："先说这是 autocomplete（自动补全），再说幻觉太多，再说只会编，现在……LLMs are awesome。"（约 800 likes）<a class="glance-src" href="https://x.com/adityaag/status/2044444065199177748" target="_blank" rel="noopener">X @adityaag →</a></li>
+      <li>Cursor 内部 benchmark：Opus 4.7 让分数从 58% 跳到 70%；同时统计显示，500 支团队今年处理的高复杂度任务增加了 68%。<a class="glance-src" href="https://www.latent.space/p/ainews-anthropic-claude-opus-47-literally" target="_blank" rel="noopener">AINews →</a></li>
+      <li>Notion：Opus 4.7 让内部 eval 提升 14%，tool error（工具调用错误率）降到原来的三分之一。<a class="glance-src" href="https://www.latent.space/p/ainews-anthropic-claude-opus-47-literally" target="_blank" rel="noopener">AINews →</a></li>
+      <li>MacBook Neo：Apple $599 笔记本四月份库存卖空，最早五月才有货；部分线下零售店可能仍有少量现货。<a class="glance-src" href="https://9to5mac.com/2026/04/16/macbook-neo-sells-out-for-april-as-demand-for-apples-affordable-laptop-outpaces-supply/" target="_blank" rel="noopener">9to5Mac →</a></li>
+      <li>Reed Hastings 宣布 6 月不参加 Netflix 董事会换届选举，正式卸任董事长，转向慈善和其他事务。<a class="glance-src" href="https://links.tldrnewsletter.com/2ylNv4" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>中国测试深海切缆装置，据报道可在最深 13,123 英尺（约 4000 米）切断海底光缆；背景是近期全球海底光缆疑似蓄意破坏事件增多。<a class="glance-src" href="https://arstechnica.com/gadgets/2026/04/china-tests-an-undersea-cable-cutter-as-suspected-sabotage-incidents-grow/" target="_blank" rel="noopener">Ars Technica →</a></li>
+      <li>Laravel 融资后在代码库里新增 PR，让 AI agent 在部署建议中优先推荐 Laravel Cloud，相当于把广告注入进 agent 的决策逻辑。<a class="glance-src" href="https://techstackups.com/articles/laravel-raised-money-and-now-injects-ads-directly-into-your-agent/" target="_blank" rel="noopener">TechStackUps →</a></li>
+      <li>Garrytan：GBrain（他的多 Agent 工作系统）今天推出安全补丁，/ship skill 也做了稳定性修复——多 Agent 工具链正在进入"需要认真维护"的成熟阶段。<a class="glance-src" href="https://x.com/garrytan/status/2045020411805700110" target="_blank" rel="noopener">X @garrytan →</a></li>
     </ul>
 </section>
 
