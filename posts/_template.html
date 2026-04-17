@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+  Gary de Bites — Post Generator Template
+  =========================================
+  Generator workflow:
+  1. Parse the daily markdown digest
+  2. Substitute variables below into this template
+  3. Write to posts/YYYY-MM-DD.html
+  4. Prepend a new <a class="issue-row"> block to index.html's issue list
+
+  Variables:
+    {{DATE_ISO}}        e.g. "2026-04-15"
+    {{DATE_DISPLAY}}    e.g. "April 15, 2026"
+    {{DATE_SHORT}}      e.g. "APR 15, 2026"  (for index page card)
+    {{LEAD_SUMMARY}}    Lead paragraph, 1–3 sentences, Chinese
+    {{NOTICE}}          Optional one-line note (e.g. tool unavailability). Omit entire .post-note if none.
+    {{PREV_DATE_ISO}}   e.g. "2026-04-14" — omit prev <a> if first issue
+    {{PREV_DATE_SHORT}} e.g. "Apr 14"
+    {{NEXT_DATE_ISO}}   — omit next <a> if latest issue
+    {{NEXT_DATE_SHORT}}
+    {{GENERATED_AT}}    e.g. "2026-04-15"
+
+  Section dot color by index (0-based): dot--r / dot--o / dot--y / dot--g / dot--b
+
+  For each SECTION:
+    {{SECTION_TITLE}}   e.g. "Agent 落地加速"
+    {{DOT_CLASS}}       e.g. "dot--r"
+
+  For each ARTICLE (within a section):
+    {{ARTICLE_TITLE}}   Plain text
+    {{ARTICLE_URL}}     Full URL — if no URL, use <h3> without <a> inside
+    {{ARTICLE_SUMMARY}} HTML-safe, 2–4 sentences. <strong> allowed. <ul><li> for bullets.
+    {{SOURCE_NAME}}     Just the source name, no date. e.g. "The Marginalian"
+
+  Index card to prepend to index.html (insert before first .issue-row):
+  ──────────────────────────────────────────────────────────────────
+  <a href="posts/{{DATE_ISO}}.html" class="issue-row">
+    <span class="issue-row__date">{{DATE_SHORT}}</span>
+    <p class="issue-row__summary">{{LEAD_SUMMARY}}</p>
+    <div class="issue-row__sections">
+      <span class="sec-tag"><span class="dot {{DOT_CLASS_0}}"></span>{{SECTION_1_TITLE_SHORT}}</span>
+      <span class="sec-tag"><span class="dot {{DOT_CLASS_1}}"></span>{{SECTION_2_TITLE_SHORT}}</span>
+      ...
+    </div>
+  </a>
+  ──────────────────────────────────────────────────────────────────
+-->
+
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — {{DATE_DISPLAY}}</title>
+  <meta name="description" content="{{LEAD_SUMMARY_FIRST_SENTENCE}}">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">{{DATE_DISPLAY}}</h1>
+
+  <p class="post-lead">{{LEAD_SUMMARY}}</p>
+
+  <!-- Remove this block entirely if no notice -->
+  <p class="post-note">注：{{NOTICE}}</p>
+
+  <!-- REPEAT for each section -->
+  <section class="section">
+    <div class="section-head">
+      <span class="dot {{DOT_CLASS}}"></span>
+      <h2>{{SECTION_TITLE}}</h2>
+    </div>
+
+    <!-- REPEAT for each article — WITH link -->
+    <article class="item">
+      <h3><a href="{{ARTICLE_URL}}" target="_blank" rel="noopener">{{ARTICLE_TITLE}}</a></h3>
+      <p>{{ARTICLE_SUMMARY}}</p>
+      <cite>{{SOURCE_NAME}}</cite>
+    </article>
+
+    <!-- REPEAT for each article — WITHOUT link -->
+    <article class="item">
+      <h3>{{ARTICLE_TITLE}}</h3>
+      <p>{{ARTICLE_SUMMARY}}</p>
+      <cite>{{SOURCE_NAME}}</cite>
+    </article>
+
+  </section>
+  <!-- end section repeat -->
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <!-- If first issue, replace <a> with <span>—</span> -->
+      <a href="{{PREV_DATE_ISO}}.html">← {{PREV_DATE_SHORT}}</a>
+      <!-- If latest issue, replace <a> with <span>—</span> -->
+      <a href="{{NEXT_DATE_ISO}}.html">{{NEXT_DATE_SHORT}} →</a>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — April 16, 2026</title>
+  <meta name="description" content="GPT-5.4 Pro 解开了搁置数十年的 Erdős 难题，走的是人类不会选的路径。同一天，GitHub 允许禁用 Pull Request，工程师开始讨论用 Prompt Request 替代 PR。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">April 16, 2026</h1>
+
+  <p class="post-lead">GPT-5.4 Pro 解开了 Erdős 一道搁置数十年的难题，走的是人类不会选的证明路径。这不是能力展示，是警示。同一天，GitHub 首次允许禁用 Pull Request，工程师社区开始讨论用"Prompt Request"替代 PR：审查生成代码的 prompt，而不是代码本身。AI 对软件协作方式的影响，开始触及最基本的单位。</p>
+
+  <!-- ── Section 1 ── -->
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--r"></span>
+      <h2>新闻速递</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://techcrunch.com/2026/04/15/openai-updates-its-agents-sdk-to-help-enterprises-build-safer-more-capable-agents/" target="_blank" rel="noopener">OpenAI 更新 Agents SDK：把控制层开源，执行交给合作伙伴</a></h3>
+      <p>OpenAI 调整了 Agent 的技术架构。简单说：把"控制层"（决定 Agent 下一步做什么）和"执行层"（真正跑代码的地方）拆开。控制层开源；执行层可以委托给 Cloudflare、Modal、e2b、Vercel 等合作伙伴的沙箱（一个隔离的临时运行环境，代码在里面跑，就算出错也不会影响外部系统）。</p>
+      <p>这件事的意义：过去要做一个"像 Codex 那样会自己写代码、改代码"的 Agent，几乎只能绑在 OpenAI 的基础设施上。现在第三方公司可以用同一套架构做类似产品。竞争焦点因此转移，不再只拼模型能力，而是谁的任务调度更聪明、谁的运行环境更安全、谁的状态管理更稳定。</p>
+      <cite><a href="https://tldr.tech/ai" target="_blank" rel="noopener">TLDR</a> · <a href="https://www.latent.space/p/ainews-rip-pull-requests-2005-2026" target="_blank" rel="noopener">Latent Space</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-rip-pull-requests-2005-2026" target="_blank" rel="noopener">RIP Pull Requests (2005–2026)：GitHub 允许禁用 PR</a></h3>
+      <p>GitHub 首次允许用户在开源项目上禁用 Pull Request（PR：开源协作的标准流程，别人把改好的代码以一份 PR 的形式提交，维护者审核后合并）。此前 GitHub 只允许禁用 Issue，不允许禁用 PR。</p>
+      <p>这件事本身是小新闻，但背后的趋势不小。Peter Steinberger 和 Mitchell Hashimoto 等人已在讨论用"Prompt Request"替代 PR：与其审查 AI 生成的代码，不如审查生成代码的 prompt。没有合并冲突，维护者更容易按自己的方向修改。</p>
+      <cite><a href="https://www.latent.space/p/ainews-rip-pull-requests-2005-2026" target="_blank" rel="noopener">Latent Space</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Gemini 原生 Mac 应用发布</h3>
+      <p>Google 发布 Gemini 原生 Mac 应用：Option+Space 唤起、屏幕共享、可以读取本地文件作为上下文、用 Swift 原生实现（不是网页套壳）。</p>
+      <p>同天 Google 还发布了 Gemini 3.1 Flash TTS（见文末"看一眼"）。一天内两个产品，速度异常。</p>
+      <cite><a href="https://www.latent.space/p/ainews-rip-pull-requests-2005-2026" target="_blank" rel="noopener">Latent Space</a> · <a href="https://tldr.tech/ai" target="_blank" rel="noopener">TLDR</a> · <a href="https://simonwillison.net" target="_blank" rel="noopener">Simon Willison</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>GPT-5.4 Pro 解出搁置数十年的 Erdős 数学难题</h3>
+      <p>GPT-5.4 Pro 给出了 Erdős 问题 #1196 的完整证明，用的是 von Mangoldt 函数的一个反直觉解析方法。翻译成外行话：模型选了一条人类数学家通常不会选的路径。</p>
+      <p>研究者称这可能是第一个被数学界广泛认可的 AI "Book Proof"。"Book Proof"是 Erdős 自己提出的概念，指那种"最优雅、像神写出来的证明"。</p>
+      <p>重要的不是这道题本身，是模型开始找到人类不会选的路径。</p>
+      <cite><a href="https://www.latent.space/p/ainews-rip-pull-requests-2005-2026" target="_blank" rel="noopener">Latent Space</a></cite>
+    </article>
+
+  </section>
+
+  <!-- ── Section 2 ── -->
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--o"></span>
+      <h2>AI 方向观点</h2>
+    </div>
+
+    <article class="item">
+      <h3>Peter Steinberger（PSPDFKit 作者，独立开发者）：四个月前还是这样，现在已经不是了</h3>
+      <p>Peter Steinberger 连续发出两条高转发推文，核心意思是：某件事在 2025 年 12 月还是 true，四个月之后已经不是了。他具体比较了 GPT 5.4-Cyber 和其他模型的能力边界，没有一句废话，全是具体对比。</p>
+      <p>两条都在从业者群体里引发大量讨论（1,063 和 1,420 likes）。"四个月"这个节奏感，是最好的提醒：你觉得自己对某个模型边界的判断是最新的，大概率已经过期了。</p>
+      <cite><a href="https://x.com/steipete" target="_blank" rel="noopener">X @steipete</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Amjad Masad（Replit CEO）：如果 frontier 模型能全自动找出安全漏洞……</h3>
+      <p>Amjad Masad 提了一个没有展开但显然有答案的问题："If finding security flaws is fully automated with frontier models, ___?"（如果顶尖模型能全自动找出安全漏洞，会怎样？）（410 likes）</p>
+      <p>这不是技术讨论，是一个商业结构问题。安全审计公司、漏洞赏金市场、供应链信任体系，凡是依赖"人工找漏洞"作为护城河的业务，正在面临地基被抽走的风险。</p>
+      <p><strong>不是 AI 比人类更聪明，是 AI 把某些稀缺技能变成了商品。</strong></p>
+      <cite><a href="https://x.com/amasad" target="_blank" rel="noopener">X @amasad</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Swyx（Latent Space 联合创始人）：subagent 本质上是优化问题，不是架构问题</h3>
+      <p>Swyx 说他一直在讲"今年是 subagent 之年"（subagent：主 Agent 派出去处理子任务的小 Agent），但他自己纠正了这个说法：subagent 的核心其实是一个优化问题，不是架构问题。怎么让主 Agent 知道什么时候该派出子 Agent、什么时候自己做，本质上是决策树的剪枝（在所有可能的分支里筛掉不划算的那些）。</p>
+      <p>同一天他还在说 Meta 的 AI 叙事走到了关键节点："看到了 flop（Llama 4），现在正在看 turn"。这是德州扑克的比喻：flop 是前三张公共牌，turn 是第四张。意思是 Meta 的赌注已经下了，Llama 4 是前三张牌的表现，接下来是结果揭晓阶段。</p>
+      <cite><a href="https://x.com/swyx" target="_blank" rel="noopener">X @swyx</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Hermes Agent：完成的工作流自动变成可复用 Skill</h3>
+      <p>AINews 详细报道了 Hermes Agent 的核心设计：它不只是工具调用，而是持续的 skill 积累。skill 在这里指"可复用的工作流模块"：一个任务完成后，系统会判断这个工作流是否值得复用，如果是，自动封装成 Skill 供下次调用。</p>
+      <p>有人展示它自主补填历史数据、更新 cron 任务（定时任务），然后把整个流程存成技能。这和"每次对话从零开始"的 ChatGPT 范式是完全不同的设计哲学。</p>
+      <p><strong>Agent 能不能学习，不是靠微调，而是靠有没有工作流记忆层。</strong></p>
+      <cite><a href="https://www.latent.space/p/ainews-rip-pull-requests-2005-2026" target="_blank" rel="noopener">Latent Space</a></cite>
+    </article>
+
+  </section>
+
+  <!-- ── Section 3 ── -->
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--y"></span>
+      <h2>产品与商业</h2>
+    </div>
+
+    <article class="item">
+      <h3>Guillermo Rauch（Vercel CEO）：软件工厂本身就是产品</h3>
+      <p>Vercel CEO 发了一条很短但密度很高的推文："The software factory is the product"（软件工厂本身就是产品）（255 likes）。</p>
+      <p>说白了：以前你卖的是软件，现在你卖的是生成软件的能力。</p>
+      <p>这个判断的产品含义是：如果你在构建工具，用户买的不是功能列表，而是你能多快、多可靠地生成满足他们需求的新能力。这对定价、定位、护城河的建立逻辑都有影响。</p>
+      <p><strong>软件公司正在变成软件生产系统，而不是软件本身。</strong></p>
+      <cite><a href="https://x.com/rauchg" target="_blank" rel="noopener">X @rauchg</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Garry Tan（Y Combinator CEO）：OpenClaw 加上 Docker 沙箱，开始成熟了</h3>
+      <p>Garry Tan 发推说 OpenClaw（一个开源 Agent 工具）加上 docker sandbox 配合 git + postgres 的工作流"运行得非常好"（900 likes）。</p>
+      <p>这不是一个技术评测，是一个信号。产品已经越过"demo 可用"的门槛，进入可以真正依赖的阶段。在 Garry Tan 这种人开始公开推荐之前，一个工具通常只是玩具。</p>
+      <cite><a href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://stratechery.com/2026/amazon-buys-globalstar-delta-to-add-leo-the-apple-angle/" target="_blank" rel="noopener">Stratechery：Amazon 买 Globalstar，真正的赢家可能是 Apple</a></h3>
+      <p>Ben Thompson 分析了 Amazon 收购 Globalstar（卫星通讯公司）的逻辑，指出这表面上是 Amazon 和 SpaceX 的卫星竞争，实质上更关乎 Apple 的卫星连接战略布局。</p>
+      <p>对做移动或硬件产品的人来说值得关注：卫星连接正在从应急功能变成标配基础设施，谁控制连接层就能影响分发。</p>
+      <cite><a href="https://stratechery.com/2026/amazon-buys-globalstar-delta-to-add-leo-the-apple-angle/" target="_blank" rel="noopener">Stratechery</a></cite>
+    </article>
+
+  </section>
+
+  <!-- ── Section 4 ── -->
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--g"></span>
+      <h2>人文与哲学</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://www.themarginalian.org/2026/04/15/kiln-quantum/" target="_blank" rel="noopener">窑火与量子：关系是现实的基本单位</a></h3>
+      <img src="https://i0.wp.com/www.themarginalian.org/wp-content/uploads/2025/04/helgoland_rovelli.jpg?fit=320%2C490&ssl=1" alt="Helgoland by Carlo Rovelli book cover">
+      <p>Maria Popova 把卡罗·罗韦利的量子力学（Helgoland）和陶瓷釉药放在一起讲：两者都表明，物体的属性不是孤立存在的，只在关系中才能确定。量子粒子的"颜色"取决于它与什么相互作用，陶瓷的釉色取决于它经历了什么样的窑火。</p>
+      <p>关系不是装饰，是本质。</p>
+      <p>这个框架放在 AI 时代也挺有趣：我们讨论模型能力时，能力本身可能是一个关系属性，而不是模型本身的固有属性。换句话说，同一个模型在不同工具、不同上下文里表现出的能力，可能本质上是两个东西。</p>
+      <cite><a href="https://www.themarginalian.org/2026/04/15/kiln-quantum/" target="_blank" rel="noopener">The Marginalian</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.themarginalian.org/2026/04/15/le-guin-lathe-of-heaven-change/" target="_blank" rel="noopener">Ursula K. Le Guin：抵抗变化，是在抵抗宇宙本身</a></h3>
+      <img src="https://i0.wp.com/www.themarginalian.org/wp-content/uploads/2025/12/thelatheofheaven_leguin.jpg?fit=320%2C487&ssl=1" alt="The Lathe of Heaven by Ursula K. Le Guin book cover">
+      <p>Popova 读《天堂的熔炉》，提炼出 Le Guin 的核心主张：人类在一个不断变化的宇宙里寻求稳定，是根本性的错位。</p>
+      <p>不是要接受坏事，而是要接受变化是现实的结构。</p>
+      <p>这种能力是在快速变化环境里不被耗竭的前提：主动拥抱流变，不被它淹没。</p>
+      <cite><a href="https://www.themarginalian.org/2026/04/15/le-guin-lathe-of-heaven-change/" target="_blank" rel="noopener">The Marginalian</a></cite>
+    </article>
+
+  </section>
+
+  <!-- ── Section 5 ── -->
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--b"></span>
+      <h2>AI 进展</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/papers/2604.07429" target="_blank" rel="noopener">GameWorld：多模态游戏 Agent 的标准化评估框架</a></h3>
+      <img src="https://cdn-uploads.huggingface.co/production/uploads/634e2217c1ce28f1de921708/Uwlq0VSXnzeZ46DQ1SyKm.jpeg" alt="GameWorld benchmark banner">
+      <p><strong>现状：</strong>Agent benchmark（测试基准）现在是一团乱麻。每个团队用自己的任务集、自己的评估逻辑，结果无法横向比较，谁好谁差全靠自说自话。</p>
+      <p><strong>问题：</strong>如何建立一个标准化、可验证、可复现的多模态 Agent 评估框架？</p>
+      <p><strong>解决方案：</strong>新加坡国立大学提出 GameWorld，把游戏环境做成标准化测试床：统一 API、可控难度、确定性验证。任何 Agent 都可以在同一条件下被测试，结果可复现。</p>
+      <p><strong>价值：</strong>游戏是理想的测试环境。规则清晰、目标可量化、难度可以精确调节，比"让 Agent 完成文书任务"的 benchmark 更难造假。</p>
+      <p><strong>未来方向：</strong>如果 GameWorld 被广泛采用，Agent 的能力进步将首次可以被系统跟踪，而不是靠论文里的精选样本。今日 HuggingFace 热度榜首（103 upvotes）。</p>
+      <cite><a href="https://huggingface.co/papers/2604.07429" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2604.07429" target="_blank" rel="noopener">arXiv 2604.07429</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/papers/2604.14148" target="_blank" rel="noopener">Seedance 2.0：ByteDance 专攻视频生成的世界一致性</a></h3>
+      <p><strong>现状：</strong>AI 视频生成已经过了"能不能生成"这关，当下瓶颈是生成出来的世界是否自洽。多个角色在场景里运动时物理行为要合理，跨镜头的同一物体外观要一致，长片段不能出现无中生有或凭空消失。</p>
+      <p><strong>问题：</strong>怎么让视频生成模型在复杂场景中保持一致性？</p>
+      <p><strong>解决方案：</strong>ByteDance Seed 团队的 Seedance 2.0 针对这个"世界复杂性"问题做了专项训练，聚焦复杂物理交互、多角色协调和长时序一致性。</p>
+      <p><strong>价值：</strong>直接的。生成内容从"需要大量人工修复"推向"可直接使用"。</p>
+      <p><strong>未来方向：</strong>视觉一致性这个方向一旦过关，视频生成才真正进入创意工具链。（96 upvotes）</p>
+      <cite><a href="https://huggingface.co/papers/2604.14148" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2604.14148" target="_blank" rel="noopener">arXiv 2604.14148</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/papers/2604.11626" target="_blank" rel="noopener">RationalRewards：把推理 scaling 的逻辑延伸到视觉生成</a></h3>
+      <img src="https://arxiv.org/html/2604.11626v1/x1.png" alt="RationalRewards overview figure">
+      <p><strong>现状：</strong>语言模型的 test-time compute scaling（推理阶段多算一会儿、投入更多算力得到更好答案）已经被证明有效。</p>
+      <p><strong>问题：</strong>这个逻辑在视觉生成模型上几乎没有。模型训练时学到的推理能力，在生成图像/视频时被完全浪费了。</p>
+      <p><strong>解决方案：</strong>RationalRewards 用推理奖励信号打通这条路，让模型在推理阶段也能用 reasoning 持续改善输出质量，而不只是训练时受益。</p>
+      <p><strong>价值：</strong>如果可行，意味着视觉生成质量也可以通过投入更多算力在推理时提升，不必重新训练模型。这是一个架构方向，不只是一篇论文。</p>
+      <p><strong>未来方向：</strong>值得保留怀疑。实际计算开销和提升幅度的权衡还需要独立验证。（90 upvotes）</p>
+      <cite><a href="https://huggingface.co/papers/2604.11626" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2604.11626" target="_blank" rel="noopener">arXiv 2604.11626</a></cite>
+    </article>
+
+  </section>
+
+  <!-- ── Section 6：看一眼 ── -->
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--m"></span>
+      <h2>看一眼</h2>
+    </div>
+
+    <ul class="glance-list">
+      <li>Apple 把约 60 名 Siri 工程师送进多周 AI 辅助编程训练营，同等规模团队负责评估性能。新 Siri 预计两个月后在 WWDC 亮相。<a class="glance-src" href="https://www.macrumors.com/2026/04/15/siri-engineers-ai-coding-bootcamp/" target="_blank" rel="noopener">MacRumors →</a></li>
+      <li>Google 同日发布 Gemini 3.1 Flash TTS：支持 70+ 语言、行内非语言提示、多说话人，Speech Arena 排名第二。<a class="glance-src" href="https://www.latent.space/p/ainews-rip-pull-requests-2005-2026" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>Cursor 设计师 Ryo Lu 展示 /canvas 命令，一种可视化的 AI 辅助设计界面，可以在代码编辑器里直接操作布局。（273 likes）<a class="glance-src" href="https://x.com/ryolu_" target="_blank" rel="noopener">X @ryolu_ →</a></li>
+    </ul>
+
+  </section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <span>—</span>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
