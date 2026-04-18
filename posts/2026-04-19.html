@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — April 19, 2026</title>
+  <meta name="description" content="Claude Opus 4.7 发布，SWE-bench Pro 达 64.3%，同日 Anthropic 推出首个设计工具 Claude Design，Figma 股价应声下跌。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">April 19, 2026</h1>
+
+  <p class="post-lead">Claude Opus 4.7 发布，SWE-bench Pro 达 64.3%，同日 Anthropic 推出首个设计工具 Claude Design，Figma 股价应声下跌。OpenAI 推出 GPT-Rosalind 生命科学大模型。Agent 工程本周共识：简单脚手架胜过花哨框架。</p>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--r"></span>
+      <h2>新闻速递</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://venturebeat.com/technology/anthropic-releases-claude-opus-4-7-narrowly-retaking-lead-for-most-powerful-generally-available-llm" target="_blank" rel="noopener">Claude Opus 4.7 发布：SWE-bench Pro 达 64.3%，比上一版提升 11 个百分点</a></h3>
+      <p>Anthropic 发布 Claude Opus 4.7，在主流编程能力基准测试 SWE-bench Pro（一个用真实 GitHub issue 衡量代码修复能力的评测集）上得分 64.3%，较 Opus 4.6 提升约 11 个百分点。SWE-bench Verified 达到 87.6%，Document Reasoning 从 57.1% 大幅跳升至 80.6%。这次更新的亮点不只是分数，而是三项行为改进：更好地处理长时间任务、更精准地执行指令、以及在给出答案前更强的自我核查能力。价格维持不变，API 报价 $5/$25 per million tokens（每百万个输入/输出 token）。</p>
+      <p>有几个技术细节值得注意。第一，新增了 xhigh 推理档位（介于 high 和 max 之间），Claude Code 现在默认使用这个档位。第二，图片输入分辨率提升至长边 2,576 像素（约 3.75 兆像素，是此前的三倍多），对于需要读取密集截图的 computer use（让 AI 操作电脑界面的功能）场景影响很大。第三，Opus 4.7 换用了新的 tokenizer（分词器，决定如何把文字切成模型可处理的小块），同样内容可能消耗多达 35% 更多 token，但因为推理效率提升，整体 token 消耗仍比上一版下降最多 50%。</p>
+      <cite><a href="https://venturebeat.com/technology/anthropic-releases-claude-opus-4-7-narrowly-retaking-lead-for-most-powerful-generally-available-llm" target="_blank" rel="noopener">VentureBeat</a> · <a href="https://www.latent.space/p/ainews-anthropic-claude-opus-47-literally" target="_blank" rel="noopener">Latent Space</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/claudeai/status/2044785261393977612" target="_blank" rel="noopener">Claude Design 发布：Anthropic 首个设计工具，Figma 股价当日下跌</a></h3>
+      <p>Anthropic 同日推出 Claude Design，一个研究预览阶段（research preview，意味着功能还未稳定，邀请制试用）的设计和原型工具。用自然语言描述需求，Claude Design 可以生成原型界面、幻灯片和一页纸文档，并支持内联修改、参数调节、导出为 Canva/PPTX/PDF/HTML 格式，还可以直接把成品移交给 Claude Code 进行实现。市场反应立即出现：Figma 股价在公告发出后明显下跌，多个观察者把这次发布定性为 Anthropic 直接挑战 Figma、Lovable、Bolt、v0 等设计和原型工具。</p>
+      <p>这是 Anthropic 第一次把自己的产品线从聊天和编程扩展到设计工具领域。值得关注的是 Claude Design 直接连接 Claude Code 的设计：它假定的场景不是"生成一个漂亮界面截图"，而是"从 idea 到可以真正运行的代码"的完整链路。工具本身在发布首日有一些稳定性问题（被 Theo 等人公开点名），但基本功能已可用。</p>
+      <cite><a href="https://x.com/claudeai/status/2044785261393977612" target="_blank" rel="noopener">X @claudeai</a> · <a href="https://www.latent.space/p/ainews-the-two-sides-of-openclaw" target="_blank" rel="noopener">Latent Space</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arstechnica.com/science/2026/04/openai-starts-offering-a-biology-tuned-llm/" target="_blank" rel="noopener">GPT-Rosalind：OpenAI 推出生命科学专用大模型</a></h3>
+      <p>OpenAI 发布 GPT-Rosalind，一个专门针对生命科学领域训练的大语言模型。它能访问主流公开生物信息数据库，在化学、蛋白质工程、基因组学等多个子领域有更强的推理能力，目标是帮助科研人员从文献调研到实验设计提速。发现一个药物靶点通常需要 10 至 15 年，GPT-Rosalind 的定位是在这个最早期阶段帮助研究者更快筛选假说、连接复杂数据、设计更优的实验方案。</p>
+      <p>目前 GPT-Rosalind 仅对美国境内的特定机构开放，通过 OpenAI 的"trusted access（可信访问）"结构，不对公众开放。开发团队特意调低了模型的过度自信倾向，让它在遇到不靠谱的药物靶点时能主动告知研究者"这个方向可能行不通"，而不是生成一个听起来合理但缺乏依据的答案。</p>
+      <cite><a href="https://arstechnica.com/science/2026/04/openai-starts-offering-a-biology-tuned-llm/" target="_blank" rel="noopener">Ars Technica</a> · <a href="https://openai.com/index/introducing-gpt-rosalind/" target="_blank" rel="noopener">OpenAI</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://9to5mac.com/2026/04/16/macbook-neo-sells-out-for-april-as-demand-for-apples-affordable-laptop-outpaces-supply/" target="_blank" rel="noopener">MacBook Neo 4月断货，苹果 $599 笔记本供不应求</a></h3>
+      <p>苹果 $599 MacBook Neo 开售后迅速卖断货，在苹果官网新下单的最早交货期已推迟到 5 月。苹果的产能跟不上需求，部分实体零售店可能仍有零星库存。这是苹果价格最低的笔记本电脑，定价比过去的入门级 MacBook Air 便宜了约 $300。</p>
+      <cite><a href="https://9to5mac.com/2026/04/16/macbook-neo-sells-out-for-april-as-demand-for-apples-affordable-laptop-outpaces-supply/" target="_blank" rel="noopener">9to5Mac</a></cite>
+    </article>
+
+  </section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--o"></span>
+      <h2>AI 方向观点</h2>
+    </div>
+
+    <article class="item">
+      <h3>Every：Opus 4.7 停止"读空格"，更精准但不再替你脑补</h3>
+      <p>Every 对 Opus 4.7 进行了实测，标题直接点出了感受变化："停止读字里行间的意思"。新版模型更字面化、更精准，你给什么任务说明，它就按什么执行，不会自动补全你没说出来的意图。对编程类任务，这是优点：给了完整的规格说明，它就严格实现，不会擅自加东西或做假设。对日常使用者，则是负担：你必须把你真正想要的东西说清楚，不能依赖模型猜你的意思。</p>
+      <p>Anthropic 内部的建议和这个观察完全一致。Cat Wu（@_catwu，Anthropic Claude Code 产品团队）在发布当天说：把 Opus 4.7 当工程师来对待，而不是当副驾驶搭档（pair programmer，坐你旁边帮你写代码的同事）。这意味着你应该给完整的目标、约束条件和验收标准，让模型自主完成，而不是一步一步指挥它。</p>
+      <p><strong>Opus 4.7 的字面精准是一个信号：AI 编程工具正从"辅助思考"阶段进入"自主执行"阶段，但这要求用户侧跟着进化：你的指令质量决定了输出质量，这个转移不会自动发生。</strong></p>
+      <cite><a href="https://every.to/" target="_blank" rel="noopener">Every</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Latent Space AINews：简单脚手架 + 强测试集，正在打败花哨 AI 框架</h3>
+      <p>Latent Space 本周的 AINews 汇总了一个跨多个团队的收敛信号：在 Agent 可靠性的提升上，harness（Agent 的运行框架，决定它如何接收任务、调用工具、验证结果）的设计比底层模型的大小更重要。AymericRoucher 分析了泄露的 Claude Code 系统提示，结论是：简单的规划约束加上更清晰的表达层，胜过"花哨 AI 脚手架"。raw_works 的例子更极端：Qwen3-8B 用 dspy.RLM（一种结构化的语言模型优化框架）的脚手架，在 LongCoT-Mini 测试集上从 0 分跳升至 33/507，而普通使用是 0 分。"脚手架做了 100% 的工作。"</p>
+      <p>AsfiShaheen 描述了一个三层金融分析师 Agent 管道（路由层/业务线层/分析师层），每层都有严格的上下文边界和专属的测试集。很多看起来是 AI 能力问题的 bug，实际上是指令/接口设计问题：要求和工具没有对齐，不是模型不够聪明。这和软件工程的老原则对称：垃圾进，垃圾出（garbage in, garbage out），只是现在变成了"坏 harness 进，坏 Agent 出"。</p>
+      <p><strong>这一轮 Agent 可靠性竞争，赢家不会是买到最贵模型的人，而是最先把 harness 设计和测试集建好的团队。</strong></p>
+      <cite><a href="https://www.latent.space/p/ainews-the-two-sides-of-openclaw" target="_blank" rel="noopener">Latent Space</a></cite>
+    </article>
+
+  </section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--y"></span>
+      <h2>产品与商业</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://www.cloudflare.com/agents-week/updates/" target="_blank" rel="noopener">Cloudflare Agents Week：统一推理层 + Agent 收发邮件 + Git 兼容存储</a></h3>
+      <p>Cloudflare 在 Agents Week 2026 上密集发布了多项面向 Agent 的基础设施功能。统一推理层：让开发者通过 Cloudflare 同时调用 14 个以上模型供应商的 API，不用单独对接每家。Email Service：允许 Agent 直接收发和处理邮件，现在进入公测（public beta，即公开但还不是正式产品）阶段。Artifacts：兼容 Git（代码版本控制工具）的版本化存储，专为 Agent 生成的内容设计，Agent 写的代码、文档、产物都可以版本化追踪。还推出了"isitagentready.com"，帮助开发者判断任何一个网站或服务是否适合被 Agent 调用。</p>
+      <p>这些发布合在一起的意图是清晰的：Cloudflare 在把自己的边缘网络（edge network，全球分布的数据中心，让请求在离用户最近的地方处理）重塑为 Agent 的运行基础设施，而不只是网站的加速和安全服务。Agent 需要调用 API、读写数据、收发信息，这些 Cloudflare 现在都想接管。</p>
+      <p><strong>Cloudflare 的赌注是：Agent 时代的基础设施战争和 Web 时代一样，网络层的公司有先天优势。</strong></p>
+      <cite><a href="https://www.cloudflare.com/agents-week/updates/" target="_blank" rel="noopener">Cloudflare</a> · <a href="https://a.tldrnewsletter.com/web-version?ep=1&lc=e81c30c-3010-11f0-9f05-dd8bee5dda6f" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/TencentHunyuan/status/2044604754836505076" target="_blank" rel="noopener">腾讯开源 HY-World 2.0：文字/图片/视频到完整 3D 环境</a></h3>
+      <p>腾讯混元（Hunyuan）团队开源了 HY-World 2.0，一个多模态 3D 世界生成系统。输入可以是文字描述、图片或视频，输出是可编辑的完整 3D 环境资产，包括 mesh（三维网格，构成 3D 物体表面的多边形集合）、点云和 Gaussian Splat（一种用高斯函数表示 3D 场景的新技术，渲染速度快）。这些格式可以直接导入 Unity 和 Unreal 这两个主流游戏/3D 引擎使用。</p>
+      <p>关键区别在于：HY-World 2.0 不是生成短视频，而是生成可以在引擎里二次编辑的生产级资产。系统通过多阶段流水线完成工作：全景场景构建、导航路径规划、环境扩展、最终组装为完整世界。这意味着游戏地图原型、建筑可视化和影视场景的制作流程，理论上可以大幅压缩。</p>
+      <cite><a href="https://x.com/TencentHunyuan/status/2044604754836505076" target="_blank" rel="noopener">X @TencentHunyuan</a> · <a href="https://www.theaivalley.com/p/openai-unveils-gpt-rosalind" target="_blank" rel="noopener">AI Valley</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Cursor 实测数据：Opus 4.7 内部 benchmark 从 58% 跳到 70%</h3>
+      <p>Cursor（一个 AI 辅助编程 IDE，集成了多个大模型来帮助写代码）在 Opus 4.7 发布后公布了自己的内部评测数据：模型得分从 58% 升至 70%，提升了约 12 个百分点。Cursor 还分享了更宏观的数据：在他们服务的 500 多个团队中，工程师这一年处理"高复杂度任务"的比例增加了 68%。</p>
+      <p>后一组数据比前一组更值得琢磨。如果 AI 工具只是让工程师更快地完成同样难度的工作，这个比例不会这么大幅上升。更可能的解释是：AI 工具降低了接手复杂任务的心理门槛，工程师开始主动把以前"不会做"或"不敢接"的任务纳入自己的工作范围。这是工具改变行为的典型模式。</p>
+      <cite><a href="https://www.latent.space/p/ainews-anthropic-claude-opus-47-literally" target="_blank" rel="noopener">Latent Space</a></cite>
+    </article>
+
+  </section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--g"></span>
+      <h2>人文与哲学</h2>
+    </div>
+
+    <article class="item">
+      <h3>Every《Living Software》：AI 让软件令人迷失，但不必如此</h3>
+      <p>Every 的这篇文章从一个观察出发：AI 让软件变得越来越难以理解。功能在变，行为在变，你以为你记住了某个工具怎么用，下次打开发现它已经不一样了。这不是使用者的问题，是设计的问题：当软件的内部行为是由一个黑盒模型决定的，"学会怎么用"这件事本身就变了性质：你不是在学一个固定的系统，你是在和一个会变化的实体建立关系。</p>
+      <p>作者的论点不是悲观的。他认为迷失感不是 AI 软件的必然属性，而是设计失败的结果。更清晰的反馈循环、更明确的"AI 在做什么"的可见性、更好的交互界面，可以让用户重新感到掌控。这条路已经有人在走：Claude Design 这类工具把生成过程做得更透明，就是一个方向。</p>
+      <p><strong>AI 软件设计的核心挑战，不是让模型更聪明，而是让用户知道模型在干什么。</strong></p>
+      <cite><a href="https://every.to/" target="_blank" rel="noopener">Every</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>OpenClaw 的两面：TED 的英雄叙事，AIE 大会的安全实录</h3>
+      <p>Peter Steinberger（PSPDFKit 作者，OpenClaw 项目维护者）本周在两个不同的场合谈了同一个项目，但讲了完全不同的故事。在 TED 舞台上，他讲的是一个鼓舞人心的版本：OpenClaw 是增长最快的开源项目，从零到数百万用户，社区活跃，代码贡献者遍布全球。在 AIE 工程师大会上，面对的是技术受众，他讲了另一面：GitHub 上 curl 项目每出一个安全事件报告，OpenClaw 出 60 个；而且，至少 20% 的技能贡献（社区成员提交的新功能模块）是恶意的，需要逐一审核。</p>
+      <p>Swyx（@swyx，Latent Space 联合创始人）主持了 AMA（Ask Me Anything，公开问答环节），在通讯里把这两个演讲并排放在一起，邀请读者自己对比。这个并置很有意思：同一个产品，站在不同位置的人看到的是完全不同的真实，而两个都是真的。</p>
+      <p><strong>开源 Agent 项目的规模化，本质上是一个信任问题：你怎么在开放贡献和安全之间找到可持续的平衡，是比增长更难的挑战。</strong></p>
+      <cite><a href="https://www.latent.space/p/ainews-the-two-sides-of-openclaw" target="_blank" rel="noopener">Latent Space</a></cite>
+    </article>
+
+  </section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--b"></span>
+      <h2>AI 进展</h2>
+    </div>
+
+    <article class="item">
+      <h3>Cognitive Companion：用隐藏层探针实时监控 Agent 推理退化</h3>
+      <p><strong>现状：</strong>Agent 在长时间工作过程中会出现推理退化（degradation）：逻辑开始漂移、答案开始重复、输出质量悄悄下降，但用户往往感觉不到，任务已经跑偏。传统方式是人工复查，但 Agent 工作量越大，这个方式越难规模化。</p>
+      <p><strong>问题：</strong>实时检测退化有两种思路，都有代价。让 LLM 当评判（LLM judge，用另一个大模型来评估当前模型的输出质量）能捕捉复杂的退化模式，但引入了约 11% 的额外推理开销。而如果想在不增加成本的情况下检测，就需要找到别的信号源。</p>
+      <p><strong>解决方案：</strong>Cognitive Companion 在模型第 28 层的隐藏状态（hidden state，神经网络中间层的激活值，是模型内部的"思维向量"）上训练了一个逻辑回归探针（logistic regression probe，一种轻量级的二分类器，判断"退化"还是"正常"）。结果：AUROC（Area Under the ROC Curve，衡量分类器好坏的指标，1 是满分，0.5 是随机猜）达到 0.840，检测准确率相当高，而且零额外推理开销。</p>
+      <p><strong>价值：</strong>这是第一次把推理健康度变成一个可以免费实时监控的信号。LLM-monitor 版本（用 LLM 做判断的版本）能把 Agent 的重复输出减少 52% 至 62%，代价是约 11% 的推理开销。两种版本可以根据任务对成本和精度的要求灵活选择。</p>
+      <p><strong>未来方向：</strong>第 28 层探针能否迁移到检测其他退化类型，比如幻觉（hallucination，模型自信地说了不存在的事实）或上下文失焦（在长对话里忘记了最初的目标）？以及，这类探针如何与 Agent 调度系统集成，让系统在检测到退化时自动触发重置或人工介入，是接下来的工程化方向。</p>
+      <cite><a href="https://www.latent.space/p/ainews-the-two-sides-of-openclaw" target="_blank" rel="noopener">Latent Space</a></cite>
+    </article>
+
+  </section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--m"></span>
+      <h2>看一眼</h2>
+    </div>
+
+    <ul class="glance-list">
+      <li>Opus 4.7 在 ARC-AGI-2（一种专门测试模型泛化推理能力的基准，不能靠记忆答题）上达到 75.83%，ARC-AGI-1 达到 92%，均大幅领先 Opus 4.6。<a class="glance-src" href="https://www.latent.space/p/ainews-anthropic-claude-opus-47-literally" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>Hermes Agent 开源生态快速扩展：Ollama 发布原生支持，一行命令 <code>ollama launch hermes</code> 即可本地运行；Nous Research 和 Kimi 联合发起 $25,000 奖金的 Hermes Agent 创意黑客马拉松。<a class="glance-src" href="https://www.latent.space/p/ainews-the-two-sides-of-openclaw" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>Epoch AI Research 调查 Stargate（美国 AI 超算基础设施投资计划）全部 7 个站点，预计 2029 年总算力达 9GW 以上，大约相当于纽约市的峰值用电量。<a class="glance-src" href="https://www.latent.space/p/ainews-the-two-sides-of-openclaw" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>Laravel 融资后，在代码库里向 Agent 推"使用 Laravel Cloud 部署"的提示：第一个被记录在案的、主流开源框架向 AI Agent 注入品牌偏好的案例。<a class="glance-src" href="https://techstackups.com/articles/laravel-raised-money-and-now-injects-ads-directly-into-your-agent/" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>TBPN 播客被 OpenAI 以 $2 亿收购，每集正片约 7,000 播放，但平均一条 clip（从正片中剪出的短片段）约 25.7 万播放。clip 不再是副产品，已经是主产品，正片反而是素材库。<a class="glance-src" href="https://a.tldrnewsletter.com/web-version?ep=1&lc=e81c30c-3010-11f0-9f05-dd8bee5dda6f" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Google 发布 Android CLI：专为 Agent 驱动的 Android 开发设计的工具集，消除 Android Studio 之外的核心工作流猜测，官方称可让开发速度提升 3 倍。<a class="glance-src" href="https://android-developers.googleblog.com/2026/04/build-android-apps-3x-faster-using-any-agent.html" target="_blank" rel="noopener">Android Developers →</a></li>
+    </ul>
+
+  </section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-04-17.html">← APR 17, 2026</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
