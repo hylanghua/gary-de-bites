@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — April 19, 2026</title>
+  <meta name="description" content="Claude Opus 4.7 登顶 Code Arena 并移除 extended thinking，同天 Anthropic 推出 Claude Design 正面对标 Figma。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">April 19, 2026</h1>
+
+  <p class="post-lead">Claude Opus 4.7 登顶 Code Arena 并移除 extended thinking，同天 Anthropic 推出 Claude Design 正面对标 Figma。Peter Steinberger 在 AIE 大会坦承 OpenClaw 工程现实：史上增速最快的开源项目，每五个新贡献就有一个来自恶意账号。</p>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--r"></span>
+      <h2>新闻速递</h2>
+    </div>
+
+    <article class="item">
+      <h3>Claude Opus 4.7 登顶 Code Arena，Claude Design 同天亮相直指 Figma</h3>
+      <p>Anthropic 在同一天推出了两个产品。Claude Opus 4.7 在 Code Arena（由 lmsys 运营的匿名对比评测平台，真实用户对两个模型盲测打分）中拿到第一，比上一版 Opus 4.6 高 37 分，同时在 Text Arena 总榜中也居首。关键结构变化：移除了 extended thinking（一种模型在给出最终答案前进行长链推理的独立模式），改为 adaptive reasoning（自适应推理，模型根据任务难度自动调整思考深度，不需要用户手动开关）；同时引入 task budgets（任务预算，给模型设定每次任务最多消耗多少计算资源的上限）。相比 Opus 4.6，输出 token（模型生成文字的基本计量单位）减少约 35%，成本效率大幅提升。</p>
+      <p>同天发布的 Claude Design 是 Anthropic 第一次进入设计和原型工具赛道，属于 research preview（研究预览版，指产品还在内测阶段，功能和定价可能变化）。从自然语言指令生成原型、幻灯片和一页纸报告，支持内联微调和滑块控制，可导出到 Canva、PPTX、PDF 或 HTML，可以一键移交给 Claude Code 做后续工程实现。多位观察者将其定位为对 Figma（专业设计协作工具）、Lovable、Bolt 和 v0（均为 AI 驱动的前端生成工具）的直接挑战。</p>
+      <cite><a href="https://www.latent.space/p/ainews-the-two-sides-of-openclaw" target="_blank" rel="noopener">Latent Space</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>OpenAI Codex 桌面 Computer Use：第一个工程师"真的在用"的桌面控制方案</h3>
+      <p>OpenAI 更新了 Codex 的桌面端 Computer Use（让 AI 直接控制电脑屏幕、点击操作界面的功能）后，多位工程师给出了不寻常的正面评价。HamelHusain、reach_vb、mattrickard 等从业者明确说：不只是演示可玩，真的可以驱动 Slack、浏览器操作流和任意桌面应用程序，可能是第一个"企业遗留软件（legacy software，指老旧但仍在生产环境运行的系统）可以真正对接"的 computer use 方案。</p>
+      <p>OpenAI 联合创始人 Greg Brockman 把 Codex 的方向定义为"全功能 agentic IDE（集成了自主 Agent 能力的开发环境）"。这波评价来自一批对 AI 产品通常比较挑剔的工程师，他们的态度转变本身就是个信号。</p>
+      <cite><a href="https://www.latent.space/p/ainews-the-two-sides-of-openclaw" target="_blank" rel="noopener">Latent Space</a></cite>
+    </article>
+
+  </section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--o"></span>
+      <h2>AI 方向观点</h2>
+    </div>
+
+    <article class="item">
+      <h3>Every：Opus 4.7 不再替你"读心"了</h3>
+      <p>Every 的测评用一个标题抓住了具体的行为变化：Opus 4.7 是他们测过的"对明确任务最好的编程模型"，但代价是它不再替你读行间的意思了。之前的 Claude 模型在接到模糊指令时会主动揣摩意图，把很多隐含的要求都填进去；Opus 4.7 更字面，你说什么它做什么，说不清的地方它不帮你假设。</p>
+      <p>对工程师来说，这个变化是好事：精准度提高，幻觉（hallucination，指模型生成错误或捏造内容的现象）减少，输出更可预期。但对非技术用户，或者那些习惯"说个大概让 AI 补全"的使用方式来说，需要一段适应。Anthropic 在发布后 24 小时内就对 adaptive reasoning 的行为做了一次调整，说明他们也在校准这个尺度。</p>
+      <p><strong>Opus 4.7 更像一个优秀的执行者，而不是一个会猜你心思的助手。两种智能分工都对，但前提是你得知道自己要什么。</strong></p>
+      <cite><a href="https://every.to" target="_blank" rel="noopener">Every</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-the-two-sides-of-openclaw" target="_blank" rel="noopener">Swyx（Latent Space 联合创始人）：OpenClaw 的两个面</a></h3>
+      <p>Peter Steinberger（PSPDFKit 创始人，独立开发者，现 OpenClaw 核心人物）在同一天两个大会上讲了同一个故事的两个版本。TED 台上是励志版：OpenClaw 是开源史上增速最快的项目，一个关于社区、创新和技术能量的正面叙事。AIE 大会（AI Engineering 工程大会）台上是工程版：比 curl（一个被广泛使用的命令行网络工具，常作为衡量攻击面的参照标准）多 60 倍的安全事故报告，至少 20% 的代码贡献来自恶意账号。</p>
+      <p>这不是矛盾，是同一现实的两个切面。开源项目越成功，攻击面越大。AI 写代码让贡献门槛降低，也让恶意贡献的门槛同步降低。$25k 黑客松可以吸引真正的开发者，也可以吸引自动化脚本。Swyx 在 AINews 里把两场演讲并排放，邀请读者自己对比判断。</p>
+      <p><strong>开源在 AI 时代的问题不是缺贡献，是贡献质量的信任基础在瓦解。增速最快和最难审查，是同一件事的两面。</strong></p>
+      <cite><a href="https://www.latent.space/p/ainews-the-two-sides-of-openclaw" target="_blank" rel="noopener">Latent Space</a></cite>
+    </article>
+
+  </section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--y"></span>
+      <h2>产品与商业</h2>
+    </div>
+
+    <article class="item">
+      <h3>Claude Design 发布当天，Figma 股价出现明显回撤</h3>
+      <p>Claude Design 的发布消息出来后，Figma 股价当天出现明显回撤，多位投资人和分析师在 X 上记录了这个时间点和幅度。这不是 Anthropic 产品动作第一次影响同类公司的二级市场（公开股票市场）情绪，但这次是第一次波及到设计工具赛道。从 chat 到 code 到 design，Anthropic 产品边界的扩张速度比外界预期的要快。</p>
+      <p>Claude Design 瞄准的对手不止 Figma，还包括 Lovable、Bolt 和 v0，后三者都是近两年靠 AI 生成前端起来的新产品。共同特点是：用户把大致想法描述出来，工具负责生成可用的界面。Claude Design 的路径是从 Claude Code 的"工程实现端"反向往"设计端"延伸，两端打通后的形态是：设计和实现在一个 Claude 会话里完成，不需要在工具之间切换。</p>
+      <p><strong>Anthropic 不是要做设计工具，是要扩展"Claude 是你的 AI 工作台"的边界。Figma 的护城河是设计师协作流程，那个才是真正要回应的问题，单纯生成界面还不够。</strong></p>
+      <cite><a href="https://www.latent.space/p/ainews-the-two-sides-of-openclaw" target="_blank" rel="noopener">Latent Space</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>"Harness 比换模型更重要"：本期 AINews 密度最高的一个工程共识</h3>
+      <p>本期 AINews 里出现频率最高的一个观点：可靠性的提升来自 harness（执行框架，指如何拆解任务、管理上下文、校验输出的整套设计），而不是换更大的模型。三个具体案例支撑了这个观点：金融分析师 pipeline（流水线）的 router（路由层）/ lane（通道层）/ analyst（分析层）三级结构，明确的上下文边界让很多"AI 的锅"变成了"指令设计的锅"；泄露的 Claude Code harness 分析显示，简单的规划约束加上更干净的表示层，比"花哨的 AI 架构"效果更好；Qwen3-8B（阿里发布的开源中型语言模型）配合 dspy.RLM（一个优化 LLM 调用策略的框架）在 LongCoT-Mini 测试集上拿到 33/507，原始版本是 0/507，框架本身做了全部的工作。</p>
+      <p>LangChain 同期发布了子 Agent 支持和 Agents SDK 的 memory primitives（记忆原语，Agent 在多次对话和任务之间保留关键信息的基本机制），正是在这个方向填工具。Memory primitives 是今年被反复提到的基础能力缺口之一，能在 SDK 层补上是个实用进展。</p>
+      <p><strong>Harness 设计是现在最被低估的产品技能，也是多数团队拿到可靠性提升最短的路径。换模型之前先检查框架。</strong></p>
+      <cite><a href="https://www.latent.space/p/ainews-the-two-sides-of-openclaw" target="_blank" rel="noopener">Latent Space</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Cursor Composer 2 并发限制翻倍，AI IDE 军备竞赛在加速</h3>
+      <p>Cursor 更新了 Composer 2（Cursor 编辑器里的 AI 协作功能，支持多文件跨范围编辑的 Agent 模式）的 agents 窗口，把并发操作限制翻了一倍。Ollama 同期发布了 Hermes Agent 的原生支持，一条命令 ollama launch hermes 即可运行开源 Agent 栈，Nous Research 和 Kimi 联合举办了 $25k Hermes Agent 创意黑客松，把 Agent 的应用场景从编程向创意工作流延伸。</p>
+      <p>这些更新加在一起，勾勒出一个模式：AI IDE 赛道的竞争现在部分体现在能同时驱动多少个 Agent 线程，以及是否有成熟的开源生态配套。上层产品和下层基础设施在同时往前跑。</p>
+      <cite><a href="https://www.latent.space/p/ainews-the-two-sides-of-openclaw" target="_blank" rel="noopener">Latent Space</a></cite>
+    </article>
+
+  </section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--g"></span>
+      <h2>人文与哲学</h2>
+    </div>
+
+    <article class="item">
+      <h3>Patrick Collison（Stripe CEO）：不到 $100，用 coding agent 读懂自己的基因风险</h3>
+      <p>Patrick Collison 在 X 上描述了一个具体的实验：用 coding agent（能自主写代码、调用工具来完成分析任务的 AI 系统）跑个人基因组解读，花费不到 $100，结果显示他对黑色素瘤（皮肤癌的一种）的遗传风险大约是正常人的 30 倍，并给出了后续干预建议。这不是演示，他认为 coding agent 在个人基因组解读上已经"真正有用"，足以指导实际决策。</p>
+      <p>这件事的意义不只是"AI 便宜了"。过去，个人基因解读需要专业遗传咨询师，贵且稀缺；现在的门槛变成了"你能不能把原始基因数据交给 Agent，描述清楚你想问什么"。能力的民主化，总是先发生在那些有能力提问的人身上，然后再往外扩散。</p>
+      <p><strong>AI 在个人健康上的第一波真实价值，不是诊断，是让有数据的人第一次有机会问出正确的问题。</strong></p>
+      <cite><a href="https://x.com/patrickc" target="_blank" rel="noopener">X @patrickc</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>AI Scientist-v2：第一篇完全由 AI 独立完成的论文通过同行评审</h3>
+      <p>AI Scientist-v2 是 Sakana AI 开发的系统，可以自主提出研究假设（hypothesis，指待验证的初始想法）、设计并运行实验、分析结果，最后独立撰写一篇完整的学术论文。这一代版本首次达到了可以通过学术会议同行评审（peer review，指学界同行对论文进行匿名审查、判断是否值得发表的质量把关程序）的质量门槛，被一个学术会议接收。</p>
+      <p>这件事最值得思考的不是"AI 比人聪明了"，而是"同行评审"这个程序本身正在被拷问。同行评审的设计预设了评审人比提交者更有能力判断对错。当 AI 的提交数量超过人类评审的处理能力，或者 AI 生成的论文在文字质量上无法被区分，这个机制就会开始失效。学术界的信任基础是认证，认证的基础是稀缺，现在稀缺正在消失。</p>
+      <p><strong>AI 通过同行评审，是科学生产方式的一个分水岭，而不只是技术里程碑——下一个问题是：谁来评审评审者。</strong></p>
+      <cite><a href="https://huggingface.co/papers" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article>
+
+  </section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--b"></span>
+      <h2>AI 进展</h2>
+    </div>
+
+    <article class="item">
+      <h3>WebXSkill：Web Agent 从执行轨迹中提取可复用技能</h3>
+      <p><strong>现状：</strong>大多数 Web Agent（能在浏览器里自主完成点击、填表、搜索等操作的 AI 系统）在执行任务时是"无记忆的"，每次任务都从零开始。即使已经成功做过类似的事，下一次也要重新摸索同样的步骤。</p>
+      <p><strong>问题：</strong>这带来两个代价：效率低，每次执行高频、相似的 Web 操作都需要重复相同的探索过程；泛化弱，在新网站或稍微变形的任务上容易失败，因为没有可复用的经验积累。</p>
+      <p><strong>解决方案：</strong>WebXSkill 提出从 Agent 的历史执行轨迹（trajectory，指完成一个任务的完整操作记录）中自动提取可复用的技能单元，把"怎么在这类网站上做这类事情"打包成结构化的技能，存入技能库，下次遇到类似任务直接调用，不需要重新探索。</p>
+      <p><strong>价值：</strong>在标准评测集上，WebXSkill 在 WebArena（模拟真实 Web 任务的 Agent 评测基准）上提升了 9.8 个百分点，在 grounded 模式（有具体可执行目标的任务模式）下 WebVoyager 达到 86.1%。技能复用的效果在高频操作场景里最明显，比如反复登录、查询、提交表单等。</p>
+      <p><strong>未来方向：</strong>技能库的质量维护是下一个挑战。网站界面会变，之前提取的技能可能失效，如何自动检测和更新过期技能，以及技能库在大规模跨任务场景下的泛化边界，是接下来需要回答的问题。</p>
+      <cite><a href="https://www.latent.space/p/ainews-the-two-sides-of-openclaw" target="_blank" rel="noopener">Latent Space</a></cite>
+    </article>
+
+  </section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--m"></span>
+      <h2>看一眼</h2>
+    </div>
+
+    <ul class="glance-list">
+      <li>Stargate 全美 7 个站点建设进展正常，预计 2029 年达到 9+ GW（千兆瓦）电力容量，相当于纽约市的用电峰值。当前全球数据中心年度资本支出折算后约等于每年 5-7 个曼哈顿计划。<a class="glance-src" href="https://www.latent.space/p/ainews-the-two-sides-of-openclaw" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>Autogenesis 协议：让 Agent 自主识别自己的能力缺口、提出改进方案、在沙箱里验证，通过后自动集成，全程无需重新训练模型。这是"Agent 自我迭代"方向的一个完整闭环实现。<a class="glance-src" href="https://www.latent.space/p/ainews-the-two-sides-of-openclaw" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>Qwen3.6-35B-A3B（阿里 Qwen 系列的最新开源模型，采用 MoE 架构，即混合专家架构，每次只激活部分参数，大幅降低推理成本）已可在单机跑完整的本地 Agent 工作流，Red Hat 已发布 NVFP4 量化版（一种压缩格式，让模型在更小内存里运行而不损失太多质量）。<a class="glance-src" href="https://www.latent.space/p/ainews-the-two-sides-of-openclaw" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>Gemma 4（Google 发布的开源模型系列最新版）现在可以完全离线运行在 iPhone 上，支持长上下文，不需要联网或调用云端服务。<a class="glance-src" href="https://www.latent.space/p/ainews-the-two-sides-of-openclaw" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>Cognitive Companion 论文：在 layer-28 隐藏状态（模型内部第 28 层的向量表示）上训练一个逻辑回归分类器，可以在零额外推理开销下以 AUROC（接收者操作特征曲线下面积，越接近 1 说明分类器越准）0.840 的精度检测到模型推理退化，并把重复性输出减少 52-62%。<a class="glance-src" href="https://www.latent.space/p/ainews-the-two-sides-of-openclaw" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>一项可穿戴设备数据挖掘研究发现，"深夜刷手机时长"作为生物标记，可以预测抑郁严重程度（ρ=0.177，p&lt;0.001，样本 n=7,497）。值得注意的是，这个特征的名字是模型自己起的，不是研究者预设的。<a class="glance-src" href="https://www.latent.space/p/ainews-the-two-sides-of-openclaw" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>ParseBench 发布：OCR（光学字符识别，把图片里的文字转换成可编辑文本的技术）评测基准，包含 167K+ 规则驱动测试，重点测漏读、幻觉和阅读顺序错误，标准不再是"人能看懂"，而是"Agent 能正确执行"。<a class="glance-src" href="https://www.latent.space/p/ainews-the-two-sides-of-openclaw" target="_blank" rel="noopener">Latent Space →</a></li>
+    </ul>
+
+  </section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-04-17.html">← APR 17</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
