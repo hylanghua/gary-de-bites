@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — April 21, 2026</title>
+  <meta name="description" content="Vercel 数据泄露让 AI 工具链的安全风险第一次有了一个典型案例：第三方 AI 工具 Context.ai 是入口，CEO Rauchg 说攻击者"被 AI 显著加速"。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+<nav class="back-nav"><a href="../index.html">← All issues</a></nav>
+<div class="page">
+  <h1 class="post-date">April 21, 2026</h1>
+  <p class="post-lead">Vercel 数据泄露让 AI 工具链的安全风险第一次有了一个典型案例：第三方 AI 工具 Context.ai 是入口，CEO Rauchg 说攻击者"被 AI 显著加速"。同一天，Intercom 公布 9 个月 Claude Code 落地数据，工程速度翻倍确实发生了——但只在测试覆盖完整、CI/CD 成熟的团队里。两件事放在一起，指向同一个判断：AI 工具正在成为企业基础设施，但绝大多数组织的安全与治理体系还远没跟上。</p>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--r"></span>
+      <h2>新闻速递</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://www.bleepingcomputer.com/news/security/vercel-confirms-breach-as-hackers-claim-to-be-selling-stolen-data/" target="_blank" rel="noopener">Vercel 遭 AI 加速攻击：第三方 AI 工具 Context.ai 是入口，ShinyHunters 声称出售内部访问权</a></h3>
+      <p>攻击入口是员工使用的第三方 AI 工具 Context.ai 被攻破，进而取得了该员工 Google Workspace 账号的控制权，随即访问了部分 Vercel 内部系统及未标记为"敏感"的环境变量（environment variables，代码运行时读取的配置参数，通常包含 API 密钥和数据库连接信息）。黑客组织 ShinyHunters 随后在犯罪论坛上发帖，声称正在出售 Vercel 基础设施的访问权限，可能波及"数百个用户及组织"。</p>
+      <p>CEO Guillermo Rauchg 在安全公告中说，他"非常确定"攻击团队"被 AI 显著加速"，"他们的行动速度和对 Vercel 内部系统的理解深度都出乎意料"。时间节点敏感：Vercel 正处于 IPO 前期，这次泄露让市场开始讨论 AI 工具供应链（supply chain，软件公司运行时依赖的外部工具和服务的整体）的系统性风险。</p>
+      <cite><a href="https://www.bleepingcomputer.com/news/security/vercel-confirms-breach-as-hackers-claim-to-be-selling-stolen-data/" target="_blank" rel="noopener">Bleeping Computer</a> · <a href="https://techcrunch.com/2026/04/20/app-host-vercel-confirms-security-incident-says-customer-data-was-stolen-via-breach-at-context-ai/" target="_blank" rel="noopener">TechCrunch</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://thenextweb.com/news/meta-layoffs-may-2026-ai-restructuring-thousands" target="_blank" rel="noopener">Meta 5 月 20 日启动 8000 人裁员，全面转向 AI 基础设施重组</a></h3>
+      <p>约占全球员工总数的 10%，覆盖 Reality Labs、Facebook 社交部门、招聘、销售和全球运营。各团队将被重组为以 AI 为核心的"pod"（小型跨职能工作单元）架构，整体划归"超级智能实验室"（Superintelligence Labs）旗下管理。</p>
+      <p>和 Oracle 三月裁员 3 万人的逻辑一致：这不是降本，是主动把人力成本转换为 AI 算力投资的决策。Meta 多了一层结构性重组，AI 优先不只体现在预算上，而是直接重塑了组织汇报关系和工作方式。</p>
+      <cite><a href="https://thenextweb.com/news/meta-layoffs-may-2026-ai-restructuring-thousands" target="_blank" rel="noopener">The Next Web</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-how-intercom" target="_blank" rel="noopener">Intercom 公布 Claude Code 9 个月落地数据：工程速度翻倍，Stanford 合作研究确认代码质量同步上升</a></h3>
+      <p>Intercom 高级首席工程师 Brian Scanlan 在 Lenny 播客上公布了具体数据：9 个月内，每位 R&D 员工合并的 PR（Pull Request，代码审查合并请求）数翻倍。与 Stanford 研究团队合作的测量结果显示，代码质量指标同步上升，不是下降。Intercom 通过 Honeycomb（一款可观测性工具）追踪每个工程师的 Claude Code 使用数据，并用这些数据给工程师提供同伴对比反馈。</p>
+      <p>Scanlan 的核心前提：实现翻倍的条件是已有成熟的 CI/CD（持续集成/持续交付，即代码从提交到测试到部署的自动化流程）和全面的测试覆盖率。他的原话："AI 会放大你的优点和缺点，如果你的部署流程本来就很混乱，AI 只会帮你更快地制造混乱。"</p>
+      <cite><a href="https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-how-intercom" target="_blank" rel="noopener">Lenny's Newsletter</a></cite>
+    </article>
+  </section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--o"></span>
+      <h2>AI 方向观点</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://every.to/chain-of-thought" target="_blank" rel="noopener">Every《我们需要谈谈 AI 自动驾驶》：AI 越可靠，人越不检查</a></h3>
+      <p>这是自动化偏见（automation bias，指人倾向于过度依赖自动化系统的输出，主动放弃独立判断）在 AI 语境下的升级版。AI 工具越来越可靠，人对其输出的审查就越来越少，而每一次"侥幸正确"都会进一步降低下一次检查的概率。这个循环不需要 AI 出大问题，只需要持续积累小错误就能制造真正的麻烦。</p>
+      <p>Every 的核心论点是：自动化偏见不靠意志力克服。研究证明，哪怕明确告知用户"AI 会犯错"，检查频率依然会随着工具可靠性的提升而下降。解法不是"更努力地检查"，而是在流程设计上主动引入摩擦：定期要求人工验证、对高风险决策设置强制审查节点，让检查变成结构性要求，而不是个人自律问题。</p>
+      <p><strong>AI 的可靠性本身正在成为新的风险来源。PM 需要把"审查 AI 输出的频率"当成可设计的流程参数，而不是靠团队自觉——在高风险决策场景里，人类监督的价值恰恰在 AI 最擅长的任务上最容易消失。</strong></p>
+      <cite><a href="https://every.to/chain-of-thought" target="_blank" rel="noopener">Every</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Zara Zhang（a16z 合伙人）：AI 时代团队瓶颈已从内部协调转向外部理解</h3>
+      <p>Zhang 的判断：AI 把执行成本压低之后，团队时间分配的瓶颈就发生了转移。以前，大量精力花在内部协调：谁做什么、怎么做、PR 怎么写、会议怎么开。现在这些 AI 都能处理得很好。真正稀缺的变成了两件事：理解问题本身（客户在想什么、市场在向哪里走），以及对外沟通（向客户、合作方解释你在做的事、赢得信任）。</p>
+      <p>说白了，团队的人力应该向信息边界倾斜，而不是向执行链路倾斜。这不只是工具使用建议，是组织架构调整的方向性判断。那些率先把人力从执行协调抽出来、投入到外部理解的团队，会在情报质量上拉开差距。</p>
+      <p><strong>减少内部执行者、增加"理解外部世界"的角色，这个调整越早做越有先发优势——而且这个转变不等 Headcount 增加，重新分配现有团队的注意力就能开始。</strong></p>
+      <cite><a href="https://x.com/zarazhangrui/status/2045810170245386713" target="_blank" rel="noopener">X @zarazhangrui</a></cite>
+    </article>
+  </section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--y"></span>
+      <h2>产品与商业</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://addyo.substack.com/p/the-agent-stack-bet" target="_blank" rel="noopener">Addy Osmani《Agent Stack Bet》：80% 的企业完全看不见生产环境里的 Agent 在做什么</a></h3>
+      <p>Osmani（Google Chrome 工程总监）点出了现有 Production Agent 的四个核心问题。第一，过度能动性（excessive agency）：Agent 被赋予宽泛权限去完成任务，等工程师发现出了问题，Agent 已经在系统里留下一堆损坏状态。第二，身份缺失：大多数 Agent 借用服务账号或人类的 OAuth token（授权令牌）运行，"在 prompt 里承诺遵守规则"不等于真正的访问控制策略。第三，可见性为零：工程师根本不知道 Agent 调用了哪些工具、移动了哪些数据、使用了哪些凭证。第四，状态脆弱：缺乏跨会话的持久状态和可审计的执行轨迹。</p>
+      <p>数据支撑这个判断：IDC 估计 2026 年 60% 的 AI 系统失败将源于治理（governance，指对系统行为的审查、控制和问责机制）缺口，而不是模型能力问题。Gartner 预测到 2027 年超过 40% 的 Agentic AI 项目会被叫停，主要原因也是治理，不是技术。</p>
+      <p><strong>Agent 部署速度已经跑在治理能力前面，不是差一点，是量级上的差距。在架构决策上提前引入身份管理、审计日志和权限控制，现在是护城河，等出了事再补就是事故处理。</strong></p>
+      <cite><a href="https://addyo.substack.com/p/the-agent-stack-bet" target="_blank" rel="noopener">Addy Osmani</a> · <a href="https://a.tldrnewsletter.com/web-version?ep=1&lc=e81c30c-3010-11f0-9f05-dd8bee5dda6f" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-how-intercom" target="_blank" rel="noopener">Brian Scanlan 的提醒：让你的 SaaS 产品支持 Agent 接入，否则客户 Agent 会暴力穿越你的注册流程</a></h3>
+      <p>Scanlan 做了一个具体演示：他为 Intercom 写了一个 CLI（命令行工具），让 Agent 可以自动完成 Fin 的注册流程，包括访问 Gmail 验证邮件地址、完成全流程安装，全程不需要人工干预。他的测试结论：如果你的产品不主动提供 Agent 接口，客户的 Agent 会暴力遍历你的网页，消耗大量 token，受挫之后直接按下 Escape 键放弃，转向竞争对手。</p>
+      <p>他把这个叫做"隐形漏斗"（invisible funnel）：传统转化率漏斗的最后一步已经不是"用户填完表单"，而是"Agent 能不能顺利走完流程"。用 Claude Code 的开发者现在就在这样做，这不是未来的问题。</p>
+      <p><strong>每个 SaaS 产品的 onboarding 流程都应该回答这个问题：如果一个 Agent 要完成注册和首次设置，它能顺利走完吗？如果不能，你正在主动流失一批高价值的 AI-native 用户。</strong></p>
+      <cite><a href="https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-how-intercom" target="_blank" rel="noopener">Lenny's Newsletter</a></cite>
+    </article>
+  </section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--g"></span>
+      <h2>人文与哲学</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://links.tldrnewsletter.com/lNGxt6" target="_blank" rel="noopener">"Output Isn't Design"：AI 大量生成输出的时代，设计反而更珍贵</a></h3>
+      <p>这篇文章的核心判断：设计被长期误解为"产出物"，线框图、Spec、Mockup——但真正难的部分是理解问题，难到知道"这个东西是否应该存在，如果存在该是什么形状"。工具是手段，但工具本身不在设计过程里。设计是在形式（form）和场景（context）之间找到合适的匹配关系，这需要理解人的需求、技术约束、矛盾需求、使用习惯和边缘情况，这部分要花时间，没有捷径。</p>
+      <p>当 Claude Design 这类工具可以在几分钟内生成一个"看起来像设计"的输出时，这个误解会被放大。生成速度快不等于设计质量高，但在 review 会议上，视觉完成度会影响判断。最危险的状态是：大家都在看输出物讨论细节，没有人在问"我们为什么要做这个、它对谁有用"。</p>
+      <p><strong>Claude Design 让"产出一个设计"的门槛消失了，PM 现在更需要清楚地区分"产出"和"设计"——否则会把真正的问题定义工作绕过去，用高质量的输出掩盖低质量的思考。</strong></p>
+      <cite><a href="https://links.tldrnewsletter.com/lNGxt6" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+  </section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--b"></span>
+      <h2>AI 进展</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2604.03088" target="_blank" rel="noopener">SkVM：把 LLM 技能当成代码来编译，token 消耗减少 40%，延迟降低最高 50 倍</a></h3>
+      <p><strong>现状：</strong>AI Agent 平台（Claude Code、Cursor、各类 harness 框架）越来越依赖可复用的"技能"（Skills，可插入 Agent 工作流的可组合模块）作为基本单元。但现有系统把技能当成原始提示词（raw prompts）处理，同一个技能在不同 LLM 或不同 harness 上行为不一致，既不可移植，效率也低。</p>
+      <p><strong>问题：</strong>每次调用都重新解析整个技能定义，浪费 token；无法利用并行性；当技能库扩大到数万个规模（SJTU 团队分析了 118,000 个真实技能），代价变得无法接受。技能共享是事实，技能执行的一致性却无法保证。</p>
+      <p><strong>解决方案：</strong>SkVM 借鉴传统编译器设计，把技能当成代码，把 LLM 当成异构处理器（不同型号的 LLM 就像不同架构的 CPU），在编译时做能力分析、并发提取和环境绑定，在运行时做 JIT 代码固化（code solidification，把反复执行的推理路径固化成确定性代码，跳过模型调用）和自适应重编译。</p>
+      <p><strong>价值：</strong>在不同模型和环境的任务完成率上显著提升，token 消耗减少最高 40%，并行性带来 3.2 倍吞吐加速，JIT 固化带来 19-50 倍延迟降低。说白了，同样的 Agent 技能库，在更小的模型上也能跑出接近大模型的执行效率。</p>
+      <p><strong>未来方向：</strong>SkVM 的"技能即代码"框架可以成为跨平台 Agent 技能的标准编译层，让 Claude Code 里写的技能直接移植到其他 harness，不需要重写。对企业构建内部 Agent 平台来说，这是基础设施层的提效方向，而不是应用层优化。</p>
+      <cite><a href="https://arxiv.org/abs/2604.03088" target="_blank" rel="noopener">arXiv 2604.03088</a> · <a href="https://github.com/SJTU-IPADS/SkVM" target="_blank" rel="noopener">GitHub</a></cite>
+    </article>
+  </section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--m"></span>
+      <h2>看一眼</h2>
+    </div>
+    <ul class="glance-list">
+      <li>北京第一届人形机器人半程马拉松：冠军以 50 分 26 秒完赛，打破人类历史纪录（男子半马世界纪录约 57 分钟）。<a class="glance-src" href="https://techcrunch.com/2026/04/19/robots-beat-human-records-at-beijing-half-marathon/" target="_blank" rel="noopener">TechCrunch →</a></li>
+      <li>Blue Origin 第三次发射 New Glenn 火箭，首次成功复用一级火箭——但搭载的通信卫星进入了错误轨道，二级火箭可能出了问题。<a class="glance-src" href="https://techcrunch.com/2026/04/19/blue-origin-successfully-re-uses-a-new-glenn-rocket-for-the-first-time-ever/" target="_blank" rel="noopener">TechCrunch →</a></li>
+      <li>Apple WWDC 2026 预告片中透露 iOS 27 重新设计的 Siri 界面：支持单次查询中处理多条指令，以及接入第三方 AI Agent。<a class="glance-src" href="https://links.tldrnewsletter.com/X7B0vu" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Adobe Firefly 全面升级为 Agent 工作流平台：跨 Photoshop/Premiere/Illustrator 执行多步任务，支持 Kling 3.0、Veo 3.1、Runway Gen-4.5 等 30+ AI 模型，用户描述目标，Firefly 规划并执行。<a class="glance-src" href="https://firefly.adobe.com/" target="_blank" rel="noopener">Adobe →</a></li>
+      <li>Nikunj Kothari（FPV Ventures 合伙人）：Vercel 事件只是开始，AI 模型能力每提升一档，网络攻击的速度和精度就加快一档，安全公司即将迎来结构性增长窗口。<a class="glance-src" href="https://x.com/nikunj" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Anthropic 内部调研：员工自报 60% 的工作用到 Claude，生产力提升 50%，是去年同期 2-3 倍——但这只是"自报数据"，不是外部测量，参考时保留这个前提。<a class="glance-src" href="https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic" target="_blank" rel="noopener">Anthropic →</a></li>
+    </ul>
+  </section>
+  <p class="post-end">✦</p>
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-04-20.html">← APR 20</a>
+      <span>—</span>
+    </div>
+  </footer>
+</div>
+</div>
+</body>
+</html>
