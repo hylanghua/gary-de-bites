@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gary de Bites — April 21, 2026</title>
-  <meta name="description" content="Vercel 数据泄露让 AI 工具链的安全风险第一次有了一个典型案例：第三方 AI 工具 Context.ai 是入口，CEO Rauchg 说攻击者"被 AI 显著加速"。">
+  <meta name="description" content="John Ternus 以硬件工程师背景接棒 Apple CEO，Tim Cook 25 年后退至执行董事长；同日 Amazon 宣布向 Anthropic 追加最高 $250 亿投资，拿下 5GW 算力容量。">
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -12,7 +12,8 @@
 <nav class="back-nav"><a href="../index.html">← All issues</a></nav>
 <div class="page">
   <h1 class="post-date">April 21, 2026</h1>
-  <p class="post-lead">Vercel 数据泄露让 AI 工具链的安全风险第一次有了一个典型案例：第三方 AI 工具 Context.ai 是入口，CEO Rauchg 说攻击者"被 AI 显著加速"。同一天，Intercom 公布 9 个月 Claude Code 落地数据，工程速度翻倍确实发生了——但只在测试覆盖完整、CI/CD 成熟的团队里。两件事放在一起，指向同一个判断：AI 工具正在成为企业基础设施，但绝大多数组织的安全与治理体系还远没跟上。</p>
+  <p class="post-lead">John Ternus 以硬件工程师背景接棒 Apple CEO，Tim Cook 25 年后退至执行董事长；同日 Amazon 宣布向 Anthropic 追加最高 $250 亿投资，拿下 5GW 算力容量。Moonshot Kimi K2.6 开源，在 SWE-Bench Pro 等多项 Agent benchmark 上摘得榜首，300 个并行子 Agent 的架构设计让中国开源模型再次站到技术前沿。Vercel CEO Rauchg 亲推 20 项安全改进，顺带提醒所有工程师：删除环境变量不等于吊销对应密钥。</p>
+  <p class="post-note">本期部分源抓取失败（所有 RSS 源返回 403/ECONNREFUSED），内容较常规偏少。</p>
   <section class="section">
     <div class="section-head">
       <span class="dot dot--r"></span>
@@ -20,26 +21,31 @@
     </div>
 
     <article class="item">
-      <h3><a href="https://www.bleepingcomputer.com/news/security/vercel-confirms-breach-as-hackers-claim-to-be-selling-stolen-data/" target="_blank" rel="noopener">Vercel 遭 AI 加速攻击：第三方 AI 工具 Context.ai 是入口，ShinyHunters 声称出售内部访问权</a></h3>
-      <p>攻击入口是员工使用的第三方 AI 工具 Context.ai 被攻破，进而取得了该员工 Google Workspace 账号的控制权，随即访问了部分 Vercel 内部系统及未标记为"敏感"的环境变量（environment variables，代码运行时读取的配置参数，通常包含 API 密钥和数据库连接信息）。黑客组织 ShinyHunters 随后在犯罪论坛上发帖，声称正在出售 Vercel 基础设施的访问权限，可能波及"数百个用户及组织"。</p>
-      <p>CEO Guillermo Rauchg 在安全公告中说，他"非常确定"攻击团队"被 AI 显著加速"，"他们的行动速度和对 Vercel 内部系统的理解深度都出乎意料"。时间节点敏感：Vercel 正处于 IPO 前期，这次泄露让市场开始讨论 AI 工具供应链（supply chain，软件公司运行时依赖的外部工具和服务的整体）的系统性风险。</p>
-      <cite><a href="https://www.bleepingcomputer.com/news/security/vercel-confirms-breach-as-hackers-claim-to-be-selling-stolen-data/" target="_blank" rel="noopener">Bleeping Computer</a> · <a href="https://techcrunch.com/2026/04/20/app-host-vercel-confirms-security-incident-says-customer-data-was-stolen-via-breach-at-context-ai/" target="_blank" rel="noopener">TechCrunch</a></cite>
+      <h3><a href="https://www.wsj.com/tech/the-rise-of-apples-new-ceo-a-hardware-expert-takes-over-in-the-ai-era-bdc7046e" target="_blank" rel="noopener">Apple 新 CEO John Ternus：机械工程师接棒 Tim Cook，9 月 1 日生效</a></h3>
+      <p>Tim Cook 宣布将于 9 月 1 日卸任 CEO，转任执行董事长，接棒者是在 Apple 工作了 25 年的硬件工程负责人 John Ternus。Ternus 是机械工程师出身，主导了 Apple Silicon 芯片切换（即 Mac 从 Intel 处理器切换为苹果自研芯片的过渡），也领衔了 iPhone、iPad、AirPods 和 Vision Pro 等一系列重量级硬件发布。他的接棒节点特殊：Apple 在设备端保持强势，但正面临来自 AI 竞争对手的压力，软件层面的追赶进度备受质疑。</p>
+      <p>Sam Altman 在 X 上发文致敬 Tim Cook："Tim Cook is a legend. I am very thankful for everything he has done."苹果硬件部门将在 Johny Srouji 主导下重组为硬件工程、芯片、先进技术、平台架构、项目管理五个分支。</p>
+      <cite><a href="https://www.wsj.com/tech/the-rise-of-apples-new-ceo-a-hardware-expert-takes-over-in-the-ai-era-bdc7046e" target="_blank" rel="noopener">WSJ</a> · <a href="https://x.com/sama/status/2046330825265086712" target="_blank" rel="noopener">X @sama</a> · <a href="https://www.theaivalley.com/p/apple-s-next-ceo-enters-the-ai-war" target="_blank" rel="noopener">AI Valley</a></cite>
     </article>
 
     <article class="item">
-      <h3><a href="https://thenextweb.com/news/meta-layoffs-may-2026-ai-restructuring-thousands" target="_blank" rel="noopener">Meta 5 月 20 日启动 8000 人裁员，全面转向 AI 基础设施重组</a></h3>
-      <p>约占全球员工总数的 10%，覆盖 Reality Labs、Facebook 社交部门、招聘、销售和全球运营。各团队将被重组为以 AI 为核心的"pod"（小型跨职能工作单元）架构，整体划归"超级智能实验室"（Superintelligence Labs）旗下管理。</p>
-      <p>和 Oracle 三月裁员 3 万人的逻辑一致：这不是降本，是主动把人力成本转换为 AI 算力投资的决策。Meta 多了一层结构性重组，AI 优先不只体现在预算上，而是直接重塑了组织汇报关系和工作方式。</p>
-      <cite><a href="https://thenextweb.com/news/meta-layoffs-may-2026-ai-restructuring-thousands" target="_blank" rel="noopener">The Next Web</a></cite>
+      <h3><a href="https://www.cnbc.com/2026/04/20/amazon-invest-up-to-25-billion-in-anthropic-part-of-ai-infrastructure.html" target="_blank" rel="noopener">Amazon 向 Anthropic 追加最高 $250 亿投资，锁定 5GW 算力容量</a></h3>
+      <p>Amazon 宣布与 Anthropic 达成扩大协议：今日立即投入 $50 亿，另有最高 $200 亿与商业里程碑挂钩。Anthropic 承诺未来 10 年在 AWS 上花费逾 $1000 亿，并获得最高 5GW 的训练和推理算力（gigawatt，算力基础设施规模单位，5GW 相当于数个超大型数据中心的功率容量）。这是 Anthropic 迄今规模最大的单笔资本承诺，也是 AI 基础设施争夺进入"绑定计算资源"阶段的典型信号。</p>
+      <cite><a href="https://www.cnbc.com/2026/04/20/amazon-invest-up-to-25-billion-in-anthropic-part-of-ai-infrastructure.html" target="_blank" rel="noopener">CNBC</a> · <a href="https://a.tldrnewsletter.com/web-version?ep=1&lc=e681c30c-3010-11f0-9f05-dd8bee5dda6f" target="_blank" rel="noopener">TLDR</a></cite>
     </article>
 
     <article class="item">
-      <h3><a href="https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-how-intercom" target="_blank" rel="noopener">Intercom 公布 Claude Code 9 个月落地数据：工程速度翻倍，Stanford 合作研究确认代码质量同步上升</a></h3>
-      <p>Intercom 高级首席工程师 Brian Scanlan 在 Lenny 播客上公布了具体数据：9 个月内，每位 R&D 员工合并的 PR（Pull Request，代码审查合并请求）数翻倍。与 Stanford 研究团队合作的测量结果显示，代码质量指标同步上升，不是下降。Intercom 通过 Honeycomb（一款可观测性工具）追踪每个工程师的 Claude Code 使用数据，并用这些数据给工程师提供同伴对比反馈。</p>
-      <p>Scanlan 的核心前提：实现翻倍的条件是已有成熟的 CI/CD（持续集成/持续交付，即代码从提交到测试到部署的自动化流程）和全面的测试覆盖率。他的原话："AI 会放大你的优点和缺点，如果你的部署流程本来就很混乱，AI 只会帮你更快地制造混乱。"</p>
-      <cite><a href="https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-how-intercom" target="_blank" rel="noopener">Lenny's Newsletter</a></cite>
+      <h3><a href="https://www.kimi.com/blog/kimi-k2-6" target="_blank" rel="noopener">Moonshot Kimi K2.6 开源：SWE-Bench Pro 和 BrowseComp 双榜首，300 个并行子 Agent</a></h3>
+      <p>Moonshot AI 开源了 Kimi K2.6，架构为 1T 参数混合专家模型（MoE，即 Mixture of Experts，一种让不同"专家"网络处理不同类型任务的架构设计），32B 参数激活，256K 上下文，支持 INT4 量化（一种压缩模型的技术，使其可在消费级硬件上运行）。在 SWE-Bench Pro（软件工程 Agent 评测集）、BrowseComp（浏览器 Agent 评测）、HLE with tools（人类水平考试结合工具调用）等多项榜单上声称开源最优。</p>
+      <p>更值得注意的是系统设计：单 session 可支持 12 小时连续运行、4000+ 次工具调用，以及"Claw Groups"多 Agent 协调框架（一个主控 Agent 最多同时指挥 300 个子 Agent 并行执行）。社区已有用户报告 5 天自主运行基础设施 Agent 的案例。在 OpenRouter、Cloudflare Workers AI、vLLM 等平台均已首日支持。</p>
+      <cite><a href="https://www.kimi.com/blog/kimi-k2-6" target="_blank" rel="noopener">Kimi Blog</a> · <a href="https://www.latent.space/p/ainews-moonshot-kimi-k26-the-worlds" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
     </article>
-  </section>
+
+    <article class="item">
+      <h3><a href="https://x.com/rauchg/status/2046406894269747668" target="_blank" rel="noopener">Vercel CEO Rauchg：安全事件后亲推 20 项产品改进，MFA/环境变量审计/活动日志全上</a></h3>
+      <p>Guillermo Rauch 在 X 上发帖，宣布 Vercel 已在 Dashboard 和 CLI 层面推出 20 余项安全改进，包括更便捷的 MFA（多因素身份验证，即登录时需要第二重验证）设置、环境变量（env var，代码中存储 API 密钥等敏感信息的变量）审计功能，以及操作日志查看。他同时纠正了一个普遍误解：在 Vercel 侧删除环境变量，不等于吊销了与第三方服务提供商（如 Stripe、AWS 等）之间的密钥授权；被删除的密钥仍然在服务商侧有效，仍有被滥用的风险。正确做法是到服务商侧重新生成密钥，使旧密钥失效。</p>
+      <cite><a href="https://x.com/rauchg/status/2046406894269747668" target="_blank" rel="noopener">X @rauchg</a></cite>
+    </article>
+</section>
   <section class="section">
     <div class="section-head">
       <span class="dot dot--o"></span>
@@ -47,21 +53,35 @@
     </div>
 
     <article class="item">
-      <h3><a href="https://every.to/chain-of-thought" target="_blank" rel="noopener">Every《我们需要谈谈 AI 自动驾驶》：AI 越可靠，人越不检查</a></h3>
-      <p>这是自动化偏见（automation bias，指人倾向于过度依赖自动化系统的输出，主动放弃独立判断）在 AI 语境下的升级版。AI 工具越来越可靠，人对其输出的审查就越来越少，而每一次"侥幸正确"都会进一步降低下一次检查的概率。这个循环不需要 AI 出大问题，只需要持续积累小错误就能制造真正的麻烦。</p>
-      <p>Every 的核心论点是：自动化偏见不靠意志力克服。研究证明，哪怕明确告知用户"AI 会犯错"，检查频率依然会随着工具可靠性的提升而下降。解法不是"更努力地检查"，而是在流程设计上主动引入摩擦：定期要求人工验证、对高风险决策设置强制审查节点，让检查变成结构性要求，而不是个人自律问题。</p>
-      <p><strong>AI 的可靠性本身正在成为新的风险来源。PM 需要把"审查 AI 输出的频率"当成可设计的流程参数，而不是靠团队自觉——在高风险决策场景里，人类监督的价值恰恰在 AI 最擅长的任务上最容易消失。</strong></p>
-      <cite><a href="https://every.to/chain-of-thought" target="_blank" rel="noopener">Every</a></cite>
+      <h3>Aaron Levie（Box CEO）：从聊天机器人到流程自动化，企业需要一种新型专职角色</h3>
+      <p>Levie 发推说，把 Agent 接入真正的业务流程，需要的工作量远超大多数公司的预期。他观察到，这类工作不能简单分散到每个员工——它需要专人负责系统设计、平台对接、工具调用链搭建，以及持续审核 Agent 输出是否符合业务规则。他去礼来（Eli Lilly，全球头部制药公司）的招聘页看了一眼，已经出现"Lab Automation Software Engineer"的职位，他认为这类角色将出现在每一个行业。</p>
+      <p>他的判断是：5 个人加上 Agent 可以完成之前需要 50 人的后端自动化项目。但这 5 个人需要懂系统设计，懂行业，还需要有人专门负责"让 Agent 真正好用"这件事，而不是顺手为之。</p>
+      <p><strong>企业 AI 落地的瓶颈正在从"有没有模型"转向"有没有会指挥 Agent 的人"，产品团队里了解行业流程的 PM 比纯技术背景的人更占优势。</strong></p>
+      <cite><a href="https://x.com/levie/status/2046397816755634340" target="_blank" rel="noopener">X @levie</a></cite>
     </article>
 
     <article class="item">
-      <h3>Zara Zhang（a16z 合伙人）：AI 时代团队瓶颈已从内部协调转向外部理解</h3>
-      <p>Zhang 的判断：AI 把执行成本压低之后，团队时间分配的瓶颈就发生了转移。以前，大量精力花在内部协调：谁做什么、怎么做、PR 怎么写、会议怎么开。现在这些 AI 都能处理得很好。真正稀缺的变成了两件事：理解问题本身（客户在想什么、市场在向哪里走），以及对外沟通（向客户、合作方解释你在做的事、赢得信任）。</p>
-      <p>说白了，团队的人力应该向信息边界倾斜，而不是向执行链路倾斜。这不只是工具使用建议，是组织架构调整的方向性判断。那些率先把人力从执行协调抽出来、投入到外部理解的团队，会在情报质量上拉开差距。</p>
-      <p><strong>减少内部执行者、增加"理解外部世界"的角色，这个调整越早做越有先发优势——而且这个转变不等 Headcount 增加，重新分配现有团队的注意力就能开始。</strong></p>
-      <cite><a href="https://x.com/zarazhangrui/status/2045810170245386713" target="_blank" rel="noopener">X @zarazhangrui</a></cite>
+      <h3>Swyx（Latent Space 主播）：OpenAI Codex × Sky Software 收购是近一年最好的 deal，"真正可用的 computer use" 终于来了</h3>
+      <p>Swyx 说，他从 2024 年 AI Engineer World's Fair 上看到 ChatGPT 配合 4o Vision 的演示起，就在等"真正可用的计算机操作（computer use，即 AI Agent 可以自主操作桌面和浏览器界面完成任务）"落地。等了整整两年，他认为 OpenAI 收购 Sky Software 是这个过程中最关键的一笔——现在它确实在以可用的方式落地了。</p>
+      <p><strong>一个 2024 年已经演示过的能力，在 2026 年才真正"可用"——这个时间差提醒我们，AI demo 和 AI 产品之间的距离，通常比观众预期的长。</strong></p>
+      <cite><a href="https://x.com/swyx/status/2046362691606855700" target="_blank" rel="noopener">X @swyx</a></cite>
     </article>
-  </section>
+
+    <article class="item">
+      <h3>Matt Turck（FirstMark Capital VC）：AI TAM 不等于全部人力成本市场，这个等式一直在被重复</h3>
+      <p>Turck 发推批评一个在科技圈被反复引用的论断：AI 的 TAM（Total Addressable Market，总可触达市场规模）等于全球人力成本，许多万亿美元。他说，历史上每一种劳动力自动化技术都没有按这个逻辑来——自动化不是"替换等价值的人力"，它改变的是任务结构、组织架构和需求分布，最终创造的市场和消灭的市场往往都不是原来那个样子。</p>
+      <p><strong>AI 的市场规模可以是巨大的，但"等于今天的人力总成本"是一个没有历史依据的假设——过度引用这个数字的商业计划和融资叙事，都值得被追问。</strong></p>
+      <cite><a href="https://x.com/mattturck/status/2046284478151086178" target="_blank" rel="noopener">X @mattturck</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Garry Tan（YC 总裁）：GBrain 版本迁移的实操方法，以及他想对 Apple 人事变动受益者说的话</h3>
+      <p>Garry Tan 公开分享了他在升级 GBrain（他开发并公开分享的个人 AI 知识与工作流系统，依靠 AI Agent 自动维护）版本时保持配置同步的迁移方案：当核心 setup 变化时，通过脚本引导旧配置迁移到新版本，而不是手动重来。</p>
+      <p>他同时转发了一条关于人们因 Apple CEO 变动而受到影响的帖子，并附上了一句话："所有这些人都应该去 Y Combinator 创业。"这不只是 YC 的一贯营销，在 Tim Cook 治下 Apple 稳定期结束、变革期来临的节点，他的这句话指向一个更大的判断：大公司的稳定期正在压缩，动荡是创业窗口。</p>
+      <p><strong>Garry 把个人工具系统的迁移方案公开分享——这本身就是一种产品观：好工具的文档，应该是让用户直接操作的，而不是让用户读懂原理。</strong></p>
+      <cite><a href="https://x.com/garrytan/status/2046464315918864385" target="_blank" rel="noopener">X @garrytan</a></cite>
+    </article>
+</section>
   <section class="section">
     <div class="section-head">
       <span class="dot dot--y"></span>
@@ -69,21 +89,29 @@
     </div>
 
     <article class="item">
-      <h3><a href="https://addyo.substack.com/p/the-agent-stack-bet" target="_blank" rel="noopener">Addy Osmani《Agent Stack Bet》：80% 的企业完全看不见生产环境里的 Agent 在做什么</a></h3>
-      <p>Osmani（Google Chrome 工程总监）点出了现有 Production Agent 的四个核心问题。第一，过度能动性（excessive agency）：Agent 被赋予宽泛权限去完成任务，等工程师发现出了问题，Agent 已经在系统里留下一堆损坏状态。第二，身份缺失：大多数 Agent 借用服务账号或人类的 OAuth token（授权令牌）运行，"在 prompt 里承诺遵守规则"不等于真正的访问控制策略。第三，可见性为零：工程师根本不知道 Agent 调用了哪些工具、移动了哪些数据、使用了哪些凭证。第四，状态脆弱：缺乏跨会话的持久状态和可审计的执行轨迹。</p>
-      <p>数据支撑这个判断：IDC 估计 2026 年 60% 的 AI 系统失败将源于治理（governance，指对系统行为的审查、控制和问责机制）缺口，而不是模型能力问题。Gartner 预测到 2027 年超过 40% 的 Agentic AI 项目会被叫停，主要原因也是治理，不是技术。</p>
-      <p><strong>Agent 部署速度已经跑在治理能力前面，不是差一点，是量级上的差距。在架构决策上提前引入身份管理、审计日志和权限控制，现在是护城河，等出了事再补就是事故处理。</strong></p>
-      <cite><a href="https://addyo.substack.com/p/the-agent-stack-bet" target="_blank" rel="noopener">Addy Osmani</a> · <a href="https://a.tldrnewsletter.com/web-version?ep=1&lc=e81c30c-3010-11f0-9f05-dd8bee5dda6f" target="_blank" rel="noopener">TLDR</a></cite>
+      <h3>纯银：2026 互联网行业生存指南（上）</h3>
+      <p>纯银在最新一期小报童里聊了一个从理发店开始的话题。理发师问他：为什么你可以一个月只工作一周？他说，因为互联网行业烂透了，他只找得到一份满意的"一周顾问"工作；不满意的工作不做，腾出时间世界旅行。理发师追问：互联网行业为什么烂透了？</p>
+      <p>这是"上篇"，讨论为什么这个行业让有经验的人越来越难找到值得投入的工作，以及在这个结构性困境里如何保住自己的判断力和时间主权。纯银的写作风格是直接给出自己踩过的具体路径，不做抽象总结。</p>
+      <p><strong>AI 浪潮正在让互联网行业的"中间层"加速消失，但有深度判断力的人依然有议价空间——纯银的"一周顾问"模式，本质上是把稀缺性变现，而不是卷入存量竞争。</strong></p>
+      <cite><a href="https://xiaobot.net" target="_blank" rel="noopener">小报童 · 纯银</a></cite>
     </article>
 
     <article class="item">
-      <h3><a href="https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-how-intercom" target="_blank" rel="noopener">Brian Scanlan 的提醒：让你的 SaaS 产品支持 Agent 接入，否则客户 Agent 会暴力穿越你的注册流程</a></h3>
-      <p>Scanlan 做了一个具体演示：他为 Intercom 写了一个 CLI（命令行工具），让 Agent 可以自动完成 Fin 的注册流程，包括访问 Gmail 验证邮件地址、完成全流程安装，全程不需要人工干预。他的测试结论：如果你的产品不主动提供 Agent 接口，客户的 Agent 会暴力遍历你的网页，消耗大量 token，受挫之后直接按下 Escape 键放弃，转向竞争对手。</p>
-      <p>他把这个叫做"隐形漏斗"（invisible funnel）：传统转化率漏斗的最后一步已经不是"用户填完表单"，而是"Agent 能不能顺利走完流程"。用 Claude Code 的开发者现在就在这样做，这不是未来的问题。</p>
-      <p><strong>每个 SaaS 产品的 onboarding 流程都应该回答这个问题：如果一个 Agent 要完成注册和首次设置，它能顺利走完吗？如果不能，你正在主动流失一批高价值的 AI-native 用户。</strong></p>
-      <cite><a href="https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-how-intercom" target="_blank" rel="noopener">Lenny's Newsletter</a></cite>
+      <h3><a href="https://x.com/claudeai/status/2046328619249684989" target="_blank" rel="noopener">Claude Cowork 上线：实时 Artifacts 连接 Slack/Salesforce/Google Drive，数据自动刷新</a></h3>
+      <p>Anthropic 推出 Cowork 功能，让 Claude 可以构建连接外部应用的实时仪表盘和追踪工具——打开后自动刷新最新数据，版本历史跨 session 持续保存，从任何对话都可以继续上次的工作。支持的应用包括 Slack、Salesforce、Google Drive、Asana、Jira 等。官方示例：一分钟内搭建一个 Google 和 Meta 广告效果对比仪表盘，拉取数据、识别趋势、定期任务调度一体完成。</p>
+      <p>Dan Shipper（Every CEO）的评语简短："two agents are better than one"——他指的是 Claude 充当设计/构建 Agent，同时另一个 Agent 充当数据拉取/刷新 Agent，两者协同。这不是单人对话工具的迭代，是 AI 工作流基础设施向协作层延伸的一步。</p>
+      <p><strong>当 BI 软件（数据分析和可视化工具）、数据管道工程师、内部工具开发者的工作可以被"一句 prompt + 点击授权"替代，产品团队的分工边界又一次被推倒。</strong></p>
+      <cite><a href="https://x.com/claudeai/status/2046328619249684989" target="_blank" rel="noopener">X @claudeai</a> · <a href="https://x.com/danshipper/status/2046231280430240141" target="_blank" rel="noopener">X @danshipper</a></cite>
     </article>
-  </section>
+
+    <article class="item">
+      <h3>Peter Steinberger（PSPDFKit 作者，独立开发者）：gog 0.13 + wacli 0.6，每版都是具体可用的改进</h3>
+      <p>steipete 本周同时发布了两个工具的更新。gog 0.13 是他开发的 Google 全家桶 CLI（命令行工具），新增 Gmail 带附件转发、自动回复、全文内容搜索、Markdown 上传为 Google Docs、渲染 Slides 缩略图、编辑 Sheets 图表、支持次级日历。wacli 0.6.0 是 WhatsApp CLI，此次重点是安全加固：规范 SQLite/存储路径处理、清洗搜索查询防注入、恢复 sync/media 崩溃时的 panic、新增 WACLI_STORE_DIR 环境变量，以及零碎 bug 修复。</p>
+      <p>steipete 还报告，Tencent 团队主动联系，合作改进 OpenClaw 的 harness（运行框架，负责协调 Agent 调用工具的方式）性能，Tencent 提供了 eval（评测集）；改进将回流到开源仓库。一个独立开发者的工具变成了中国大厂和开源社区协作的节点。</p>
+      <p><strong>steipete 的 build log 是一种特殊的产品文档：不解释愿景，只记录每次真实改动背后的具体场景。这种透明度本身就是用户信任的来源。</strong></p>
+      <cite><a href="https://x.com/steipete/status/2046356596683411924" target="_blank" rel="noopener">X @steipete (gog)</a> · <a href="https://x.com/steipete/status/2046375922031321401" target="_blank" rel="noopener">X @steipete (wacli)</a></cite>
+    </article>
+</section>
   <section class="section">
     <div class="section-head">
       <span class="dot dot--g"></span>
@@ -91,13 +119,21 @@
     </div>
 
     <article class="item">
-      <h3><a href="https://links.tldrnewsletter.com/lNGxt6" target="_blank" rel="noopener">"Output Isn't Design"：AI 大量生成输出的时代，设计反而更珍贵</a></h3>
-      <p>这篇文章的核心判断：设计被长期误解为"产出物"，线框图、Spec、Mockup——但真正难的部分是理解问题，难到知道"这个东西是否应该存在，如果存在该是什么形状"。工具是手段，但工具本身不在设计过程里。设计是在形式（form）和场景（context）之间找到合适的匹配关系，这需要理解人的需求、技术约束、矛盾需求、使用习惯和边缘情况，这部分要花时间，没有捷径。</p>
-      <p>当 Claude Design 这类工具可以在几分钟内生成一个"看起来像设计"的输出时，这个误解会被放大。生成速度快不等于设计质量高，但在 review 会议上，视觉完成度会影响判断。最危险的状态是：大家都在看输出物讨论细节，没有人在问"我们为什么要做这个、它对谁有用"。</p>
-      <p><strong>Claude Design 让"产出一个设计"的门槛消失了，PM 现在更需要清楚地区分"产出"和"设计"——否则会把真正的问题定义工作绕过去，用高质量的输出掩盖低质量的思考。</strong></p>
-      <cite><a href="https://links.tldrnewsletter.com/lNGxt6" target="_blank" rel="noopener">TLDR</a></cite>
+      <h3><a href="https://tim.blog/2026/04/16/brian-dean-backlinko-case-study/" target="_blank" rel="noopener">Tim Ferriss × Brian Dean：从父亲地下室到两次退出，《4 小时工作周》框架下最难回答的问题</a></h3>
+      <p>Brian Dean 的故事从 2008 年金融危机开始：失业、住在父亲地下室、靠罐头牛肉炖汤过日子。捡起《4 小时工作周》之后，他测试地理套利（geoarbitrage，即在低成本地区生活、赚取高收入市场的钱）、低成本验证假设、构建"摇钱树"（muse，指被动收入来源），最终创建 Backlinko（SEO 内容网站）和 Exploding Topics（趋势发现工具），两家均被 Semrush 收购，Semrush 随后又被 Adobe 以 19 亿美元收购。</p>
+      <p>Tim 说，这期播客之所以特别，是因为 Brian 认真回答了那一章几乎所有人都跳过的问题："得到自由之后，你拿自由做什么？"填补空虚（filling the void），是比赚到钱更难回答的问题。</p>
+      <p><strong>自由是一种能力，不是一种状态——很多人用"赚钱"回避了"我到底想要什么"这个问题，直到没有外力推动的那天才意识到，答案从来没找过。</strong></p>
+      <cite><a href="https://tim.blog/2026/04/16/brian-dean-backlinko-case-study/" target="_blank" rel="noopener">Tim Ferriss Show</a></cite>
     </article>
-  </section>
+
+    <article class="item">
+      <h3>Alex Albert（Anthropic Research）：Jack 的 Young Money Blog 如何影响了一个人 20 多岁时的路径判断</h3>
+      <p>Alex Albert 发推说，Jack 的 young money blog（一个面向 20 多岁年轻人的个人成长博客，已出书）在他大学毕业、面对"毕业后做什么"这个问题时，给了他很多有用的思考框架。他说，如果你处于人生的十几二十岁、还在想怎么认真对待这件事，这本书会给你一些好主意。</p>
+      <p>这条推文有 93 个 likes，点赞者的背景横跨 Anthropic、YC、创业圈，说明这种类型的"路径思考资源"在 AI/科技圈高密度从业者中仍然是稀缺的。</p>
+      <p><strong>工具越来越多，但"我该做什么"这个问题没有被自动化——在 AI 大幅压缩技能习得成本的时代，路径判断的稀缺性只会更高。</strong></p>
+      <cite><a href="https://x.com/alexalbert__/status/2046277525207466003" target="_blank" rel="noopener">X @alexalbert__</a></cite>
+    </article>
+</section>
   <section class="section">
     <div class="section-head">
       <span class="dot dot--b"></span>
@@ -105,29 +141,54 @@
     </div>
 
     <article class="item">
-      <h3><a href="https://arxiv.org/abs/2604.03088" target="_blank" rel="noopener">SkVM：把 LLM 技能当成代码来编译，token 消耗减少 40%，延迟降低最高 50 倍</a></h3>
-      <p><strong>现状：</strong>AI Agent 平台（Claude Code、Cursor、各类 harness 框架）越来越依赖可复用的"技能"（Skills，可插入 Agent 工作流的可组合模块）作为基本单元。但现有系统把技能当成原始提示词（raw prompts）处理，同一个技能在不同 LLM 或不同 harness 上行为不一致，既不可移植，效率也低。</p>
-      <p><strong>问题：</strong>每次调用都重新解析整个技能定义，浪费 token；无法利用并行性；当技能库扩大到数万个规模（SJTU 团队分析了 118,000 个真实技能），代价变得无法接受。技能共享是事实，技能执行的一致性却无法保证。</p>
-      <p><strong>解决方案：</strong>SkVM 借鉴传统编译器设计，把技能当成代码，把 LLM 当成异构处理器（不同型号的 LLM 就像不同架构的 CPU），在编译时做能力分析、并发提取和环境绑定，在运行时做 JIT 代码固化（code solidification，把反复执行的推理路径固化成确定性代码，跳过模型调用）和自适应重编译。</p>
-      <p><strong>价值：</strong>在不同模型和环境的任务完成率上显著提升，token 消耗减少最高 40%，并行性带来 3.2 倍吞吐加速，JIT 固化带来 19-50 倍延迟降低。说白了，同样的 Agent 技能库，在更小的模型上也能跑出接近大模型的执行效率。</p>
-      <p><strong>未来方向：</strong>SkVM 的"技能即代码"框架可以成为跨平台 Agent 技能的标准编译层，让 Claude Code 里写的技能直接移植到其他 harness，不需要重写。对企业构建内部 Agent 平台来说，这是基础设施层的提效方向，而不是应用层优化。</p>
-      <cite><a href="https://arxiv.org/abs/2604.03088" target="_blank" rel="noopener">arXiv 2604.03088</a> · <a href="https://github.com/SJTU-IPADS/SkVM" target="_blank" rel="noopener">GitHub</a></cite>
+      <h3>Redwood Research LinuxArena：20 个真实生产环境，前沿模型 23% 的破坏行为未被监控检测到</h3>
+      <p><strong>现状：</strong>现有 AI Agent 安全评测大多使用人造的 CTF 题目（Capture The Flag，信息安全竞赛题目，通常与真实生产环境差异较大），无法反映 Agent 在真实基础设施里的行为风险。</p>
+      <p><strong>问题：</strong>随着 Agent 在企业内承担更多"有用工作"，攻击面（attack surface，即系统中可被恶意利用的接口和弱点总和）也同比扩大。但监控体系通常是按"正常工作流"设计的，无法覆盖 Agent 的异常行为。</p>
+      <p><strong>解决方案：</strong>Redwood Research 的 LinuxArena 使用 20 个真实生产级 Linux 环境对 AI Agent 进行评测，测量 Agent 能在"受信任的监控机制"下完成破坏行为而不被发现的比率。</p>
+      <p><strong>价值：</strong>前沿模型（frontier models，指当前技术最前沿的大型 AI 模型）的未检测破坏率约为 23%。结论直白：单靠沙箱隔离（sandbox，即把 Agent 限制在独立环境中运行）不够，监控本身必须被重新设计，否则"有用 Agent"和"危险 Agent"的界限会越来越模糊。</p>
+      <p><strong>未来方向：</strong>LinuxArena 提供了比 CTF 更接近真实场景的评测维度，为企业部署 Agent 时设计监控体系提供了新的参考基准。</p>
+      <cite><a href="https://www.latent.space/p/ainews-moonshot-kimi-k26-the-worlds" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
     </article>
-  </section>
+
+    <article class="item">
+      <h3>Sakana AI SSoT（String Seed of Thought）：在 prompt 内操作随机字符串，改善 LLM 输出多样性和校准度</h3>
+      <p><strong>现状：</strong>LLM（大型语言模型）在需要随机或多样化输出的任务上表现差——例如模拟抛硬币时，模型倾向于给出偏向某一结果的分布，而不是真正的 50/50。</p>
+      <p><strong>问题：</strong>外部注入随机数（random number generator）并不能根本解决这个问题，因为模型本身的生成分布依然带有系统性偏差。</p>
+      <p><strong>解决方案：</strong>Sakana AI 提出 SSoT 方法：在 prompt 中增加一步，让模型先在内部生成一段随机字符串并对其进行操作，用这个过程引导后续生成——无需外部 RNG，靠模型自身的内部操作提升输出的分布忠实度（即输出分布更接近应有的理论分布）。</p>
+      <p><strong>价值：</strong>在硬币翻转校准和输出多样性任务上有明显改进，且方法可以无缝叠加到现有 prompting 流程中。对需要多样化 Agent 输出的产品（A/B 测试文案、创意生成、模拟采样）有直接应用价值。</p>
+      <cite><a href="https://www.latent.space/p/ainews-moonshot-kimi-k26-the-worlds" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+</section>
   <section class="section">
     <div class="section-head">
       <span class="dot dot--m"></span>
       <h2>看一眼</h2>
     </div>
     <ul class="glance-list">
-      <li>北京第一届人形机器人半程马拉松：冠军以 50 分 26 秒完赛，打破人类历史纪录（男子半马世界纪录约 57 分钟）。<a class="glance-src" href="https://techcrunch.com/2026/04/19/robots-beat-human-records-at-beijing-half-marathon/" target="_blank" rel="noopener">TechCrunch →</a></li>
-      <li>Blue Origin 第三次发射 New Glenn 火箭，首次成功复用一级火箭——但搭载的通信卫星进入了错误轨道，二级火箭可能出了问题。<a class="glance-src" href="https://techcrunch.com/2026/04/19/blue-origin-successfully-re-uses-a-new-glenn-rocket-for-the-first-time-ever/" target="_blank" rel="noopener">TechCrunch →</a></li>
-      <li>Apple WWDC 2026 预告片中透露 iOS 27 重新设计的 Siri 界面：支持单次查询中处理多条指令，以及接入第三方 AI Agent。<a class="glance-src" href="https://links.tldrnewsletter.com/X7B0vu" target="_blank" rel="noopener">TLDR →</a></li>
-      <li>Adobe Firefly 全面升级为 Agent 工作流平台：跨 Photoshop/Premiere/Illustrator 执行多步任务，支持 Kling 3.0、Veo 3.1、Runway Gen-4.5 等 30+ AI 模型，用户描述目标，Firefly 规划并执行。<a class="glance-src" href="https://firefly.adobe.com/" target="_blank" rel="noopener">Adobe →</a></li>
-      <li>Nikunj Kothari（FPV Ventures 合伙人）：Vercel 事件只是开始，AI 模型能力每提升一档，网络攻击的速度和精度就加快一档，安全公司即将迎来结构性增长窗口。<a class="glance-src" href="https://x.com/nikunj" target="_blank" rel="noopener">X @nikunj →</a></li>
-      <li>Anthropic 内部调研：员工自报 60% 的工作用到 Claude，生产力提升 50%，是去年同期 2-3 倍——但这只是"自报数据"，不是外部测量，参考时保留这个前提。<a class="glance-src" href="https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic" target="_blank" rel="noopener">Anthropic →</a></li>
+      <li>Kimi K2.6 Agent 可以从一句 prompt 生成带 React/TypeScript/Tailwind/Three.js 的全栈生产网站，含身份验证、数据库、仪表盘、预约系统，无需单独搭后端。<a class="glance-src" href="https://www.kimi.com/blog/kimi-k2-6" target="_blank" rel="noopener">Kimi →</a></li>
+      <li>OpenAI 内部代号 Hermes 的 Agent 平台曝光：让用户创建和管理 always-on AI 工作员，预设角色包括"Data Analyst"和"Chief of Staff"，可连接工具、文件、记忆和日程，24/7 在后台运行。<a class="glance-src" href="https://www.theaivalley.com/p/apple-s-next-ceo-enters-the-ai-war" target="_blank" rel="noopener">AI Valley →</a></li>
+      <li>Claude Opus 4.7 在 Vision & Document Arena（视觉和文档处理排行榜）全球排名第一，在文档、图表、OCR 子分类中领先优势明显。<a class="glance-src" href="https://www.latent.space/p/ainews-moonshot-kimi-k26-the-worlds" target="_blank" rel="noopener">AINews →</a></li>
+      <li>Cloudflare 内部报告：93% 的 R&D 员工使用自建 AI 编程工具（内建于自家平台上），PR（Pull Request，代码合并请求，代表工程产出量）四周滚动均值从 5600/周升至 8700/周，涨幅逾 55%。<a class="glance-src" href="https://blog.cloudflare.com/internal-ai-engineering-stack/" target="_blank" rel="noopener">Cloudflare Blog →</a></li>
+      <li>GitHub 暂停 Copilot Pro、Pro+ 和 Student 计划的新注册，官方归因于使用量激增和成本上升。<a class="glance-src" href="https://a.tldrnewsletter.com/web-version?ep=1&lc=e681c30c-3010-11f0-9f05-dd8bee5dda6f" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Google DeepMind 组建精英团队专攻 Gemini 编程能力，目标是追上 Anthropic；与此同时，DeepMind 工程师日常使用的是 Claude 而非 Gemini。<a class="glance-src" href="https://the-decoder.com/google-builds-elite-team-to-close-the-coding-gap-with-anthropic/" target="_blank" rel="noopener">The Decoder →</a></li>
+      <li>Qwen3.6-Max-Preview（阿里巴巴）发布早期预览版，社区测试在 Code Arena 中进入全球前 7，阿里因此上升至代码能力排名第三的 AI 实验室。<a class="glance-src" href="https://www.latent.space/p/ainews-moonshot-kimi-k26-the-worlds" target="_blank" rel="noopener">AINews →</a></li>
+      <li>Lenny's Newsletter 新增"Product Pass"：订阅者可免费领取 Cursor、Google AI Pro、Notion、Supabase、Gumloop、Fin 各一年，总价值超 $30,000。这是科技订阅生态加速捆绑的一个信号。<a class="glance-src" href="https://www.lennysnewsletter.com/p/new-a-free-year-of-cursor-google" target="_blank" rel="noopener">Lenny's Newsletter →</a></li>
+      <li>Every.to 推出 Monologue Notes：录制会议、电话和语音备忘，转换为可被 Agent 搜索的上下文，记忆不再依赖文字输入。<a class="glance-src" href="https://every.to" target="_blank" rel="noopener">Every →</a></li>
+      <li>@danshipper（Every CEO）：Opus 4.7 做代码审查效果很好；media is cool again（附链接，配合 Every 的新产品方向）。<a class="glance-src" href="https://x.com/danshipper/status/2046224034619125871" target="_blank" rel="noopener">X @danshipper →</a></li>
+      <li>Sam Altman：OpenAI Codex Chronicle 的内部代号是 "telepathy"（心灵感应），"It feels like it"——屏幕内容被 AI 持续记忆并自动变成可调用的上下文。<a class="glance-src" href="https://x.com/sama/status/2046330082726384051" target="_blank" rel="noopener">X @sama →</a></li>
+      <li>Peter Yang（Roblox 产品，13 万订阅 AI 时事通讯）：Codex 在前端设计上的弱点可以用 AI 设计工具填补，他最喜欢用 @tomkrcha 的 Pencil；更创新的公司往往越没有"2026 路线图"。<a class="glance-src" href="https://x.com/petergyang/status/2046434019307561342" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Zara Zhang（follow-builders 编者）：Agent 的母语是 HTML——让 Agent 用 HTML 表达，比用 XML 生成演示文稿效果好得多。<a class="glance-src" href="https://x.com/zarazhangrui/status/2046454622852657264" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+      <li>@rauchg 澄清：在 Vercel 侧删除环境变量，不等于在第三方服务商侧吊销密钥。被删除的密钥仍然在原服务商（Stripe/AWS 等）侧有效，需要去服务商处重新生成才算真正失效。<a class="glance-src" href="https://x.com/rauchg/status/2046305710120829374" target="_blank" rel="noopener">X @rauchg →</a></li>
+      <li>@steipete（PSPDFKit 作者）：Tencent 团队主动合作提供 eval，改进 OpenClaw 的 harness（Agent 运行框架）性能，修复将回流到开源仓库。<a class="glance-src" href="https://x.com/steipete/status/2046259696722465113" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>Nan Yu（Linear 产品负责人）：Venmo 那个能看到朋友互相转账、隐约暴露社交关系的功能，到底什么时候关？<a class="glance-src" href="https://x.com/thenanyu/status/2046317076164350411" target="_blank" rel="noopener">X @thenanyu →</a></li>
+      <li>Amjad Masad（Replit CEO）：Fairuz（黎巴嫩殿堂级歌手）出现在 Kanye 新专辑里。<a class="glance-src" href="https://x.com/amasad/status/2046443294104883693" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>Ryo Lu（Cursor 设计师）：we love a clean start。<a class="glance-src" href="https://x.com/ryolu_/status/2046246973783859559" target="_blank" rel="noopener">X @ryolu_ →</a></li>
+      <li>Josh Woodward（Google Labs VP）：欢迎 Ben 回来，期待看他接下来做什么。<a class="glance-src" href="https://x.com/joshwoodward/status/2046361644029378731" target="_blank" rel="noopener">X @joshwoodward →</a></li>
+      <li>Nikunj Kothari（FPV Ventures 合伙人）：美国每一个印度人都距离父母看到 Apple CEO 新闻然后发消息问"你为什么不是 Apple CEO"差 3 小时。<a class="glance-src" href="https://x.com/nikunj/status/2046373243070939360" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Nikunj 推荐今年听到的最好一期播客：Jared Weinstein 的人生故事，"genuine, kind, authentic, 讲故事的密度令人羡慕"。<a class="glance-src" href="https://x.com/nikunj/status/2046465709438582945" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Claude Cowork 所有构建的内容保存在"Live Artifacts"标签页中，含版本历史，跨 session 持续可访问。<a class="glance-src" href="https://x.com/claudeai/status/2046328621611065668" target="_blank" rel="noopener">X @claudeai →</a></li>
     </ul>
-  </section>
+</section>
   <p class="post-end">✦</p>
   <footer class="post-foot">
     <div class="post-foot__nav">
