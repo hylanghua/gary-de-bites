@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — April 23, 2026</title>
+  <meta name="description" content="Google Cloud Next 发布 TPU v8 双架构，OpenAI 同日预告代号 SPUD 的新模型并正式上线企业版 Workspace Agents，Alibaba 开源 Qwen3.6-27B——一个 27B 参数模型在编码 benchmark 上超越了 397B 的前辈。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+<nav class="back-nav"><a href="../index.html">← All issues</a></nav>
+<div class="page">
+
+  <h1 class="post-date">April 23, 2026</h1>
+
+  <p class="post-lead">Google Cloud Next 发布 TPU v8 双架构，OpenAI 同日预告代号 SPUD 的新模型并正式上线企业版 Workspace Agents，Alibaba 开源 Qwen3.6-27B——一个 27B 参数模型在编码 benchmark 上超越了 397B 的前辈。Anthropic Claude Code 产品负责人 Cat Wu 接受 Lenny's Newsletter 专访，谈团队如何把出货周期从数月压到几天；Cursor 设计师 Ryo Lu 剖析产品"Overcooking"现象：每个理性叠加的功能决定如何最终变成整体混乱。</p>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--r"></span>
+      <h2>新闻速递</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://arstechnica.com/ai/2026/04/google-unveils-two-new-tpus-designed-for-the-agentic-era/" target="_blank" rel="noopener">Google Cloud Next：TPU v8 双架构发布，一个为训练、一个为推理多 Agent</a></h3>
+      <p>Google 在 Cloud Next 上发布了第八代 TPU 的两个版本：TPU 8t 专为前沿模型训练设计，算力约为上代 Ironwood 的 3 倍，可将训练周期从"数月"压到"数周"；TPU 8i 专为推理设计，单集群最多组 1152 块芯片，用于低延迟 + 高吞吐的多 Agent 并发场景。Sundar Pichai 宣称 8t 集群可扩展至百万芯片级别。</p>
+      <p>两款芯片均兼容 PyTorch、JAX 等主流框架，支持第三方开发者接入，不限于 Google 自家的 Gemini 模型。这不只是硬件升级——配合同日发布的 Gemini Enterprise Agent Platform（企业级 Agent 构建、治理、优化平台），Google 正在把芯片、模型、Agent 工具和企业控制面板整合成一个垂直闭环，与 OpenAI 的逐层产品化路线直接对位。</p>
+      <cite><a href="https://arstechnica.com/ai/2026/04/google-unveils-two-new-tpus-designed-for-the-agentic-era/" target="_blank" rel="noopener">Ars Technica</a> · <a href="https://www.latent.space/p/ainews-tasteful-tokenmaxxing" target="_blank" rel="noopener">Latent Space / AINews</a> · <a href="https://a.tldrnewsletter.com" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.theaivalley.com/p/openai-teases-spud-gpt-5-5" target="_blank" rel="noopener">OpenAI 双更：SPUD（疑似 GPT-5.5）预告 + Workspace Agents 正式上线</a></h3>
+      <p>OpenAI 在 X 上发布神秘预告，内部代号 SPUD 的新模型被广泛猜测是 GPT-5.5——此前 Codex 界面里曾短暂出现未发布的模型名，加之本次预告方式与 ChatGPT Agents 上线前高度一致，市场预期本周内即将发布。与此同时，OpenAI 正式推出面向 Business/Enterprise/Edu 用户的 Workspace Agents：基于 Codex 驱动，企业可创建常驻云端的 AI 工作流，接入 Slack、Salesforce、Google Drive、Calendar 等第三方工具，按计划自动执行汇报、工单分类、线索外发等任务，并由管理员审批敏感操作。</p>
+      <p>Workspace Agents 本质上是 Custom GPTs 的接班人，区别在于从"单次问答"转向"后台常驻 + 团队共享"。这意味着 ChatGPT 的产品边界正在从个人助理扩展至组织基础设施，直接与 Google Gemini Enterprise Agent Platform 和 Cursor 的 Slack 触发功能竞争。</p>
+      <cite><a href="https://www.theaivalley.com/p/openai-teases-spud-gpt-5-5" target="_blank" rel="noopener">AI Valley</a> · <a href="https://venturebeat.com/orchestration/openai-unveils-workspace-agents-a-successor-to-custom-gpts-for-enterprises-that-can-plug-directly-into-slack-salesforce-and-more" target="_blank" rel="noopener">VentureBeat</a> · <a href="https://www.bensbites.com/p/chatgpts-nano-banana" target="_blank" rel="noopener">Ben's Bites</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-tasteful-tokenmaxxing" target="_blank" rel="noopener">Alibaba 开源 Qwen3.6-27B：27B 参数，编码得分超越 397B 前辈，Apache 2.0</a></h3>
+      <p>Alibaba Qwen 团队发布 Qwen3.6-27B，一个 27B 参数的密集模型，支持"思考模式"和"非思考模式"切换，原生多模态（图像 + 视频推理）。关键 benchmark：SWE-bench Verified 77.2（前辈 397B MoE 模型为 76.2）、SWE-bench Pro 53.5（前辈 50.9）、Terminal-Bench 2.0 59.3（前辈 52.5）。更小的模型在编码任务上全面击败更大的模型，标志着 Qwen 系列的参数效率正在跨越一个门槛。</p>
+      <p>发布当天生态迅速跟进：vLLM 提供 day-0 支持（推理框架，负责高效运行大模型的部署工具），Unsloth 发布 18GB 内存可跑的本地量化版本（GGUF 格式，一种适合本地运行的压缩格式），Ollama 也打包了开箱即用的版本。Simon Willison 等早期用户报告前端和图像任务表现出色。</p>
+      <cite><a href="https://www.latent.space/p/ainews-tasteful-tokenmaxxing" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+</section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--o"></span>
+      <h2>AI 方向观点</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-tasteful-tokenmaxxing" target="_blank" rel="noopener">Latent Space：「Tasteful Tokenmaxxing」——用 Agent 该往深走，不是往宽撒</a></h3>
+      <p>Tokenmaxxing（字面意思是"token 用量最大化"）是当前 AI 工程领导者圈子里最热的共识词：让团队用更多 AI、跑更多 token。但如何"有品位地"用，是下一个问题。Shopify CTO Mikhail Parakhin 的判断是：去深度（serial autoresearch loops，串行自循环研究）而不是去广度（parallel runs，一个问题开 5~50 个并行实例抽奖）。</p>
+      <p>Latent Space 的 AIE Miami 系列对话里，AI 工程领导者（CTO/VP/创始人层）的私下共识明显偏向 Zechner 侧——即代码质量、架构合理性仍然重要，"AI 生成速度快"不等于"可以不读代码"。Dex Horthy（Context Engineering 概念的发明者）公开撤回了六个月前的"不用读代码"极端立场，引述了 Z/L 连续谱（Zechner 代表"质量"一端，Lopopolo 代表"速度"一端）作为框架。这个转变值得注意：工程文化里对 vibe coding 的反弹已经从私下讨论变成公开纠偏。</p>
+      <p><strong>Token 用量的增长不代表工程判断力的退场，"tasteful"恰恰是这两年被最快淡忘的词。</strong></p>
+      <cite><a href="https://www.latent.space/p/ainews-tasteful-tokenmaxxing" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Swyx（Latent Space 联创）：image-2-thinking 把文生图变成 agentic loop</h3>
+      <p>Swyx 观察到图像生成领域正在发生与文本生成类似的转变："image-2-thinking"——模型在生成图像后会反思输出、对比参考、自我迭代，而不是一次性输出。这把图像生成从"给 prompt 拿结果"变成了一个自循环的 agentic loop（Agent 闭环，即模型反复观察-行动-评估的迭代过程）。</p>
+      <p>Ben's Bites 本期也印证了这一观察：ChatGPT Images 2.0 内置"生成-反思-改进"能力，可以在 Codex app 里结合思考模型使用，让模型先用代码生成 QR 码或下载 logo，再用这些参考图反复精修最终图像。视觉生成从"一次生成"走向"多步迭代"，是 2026 年图像工具的最大趋势之一。</p>
+      <p><strong>图像生成行业刚刚进入 Agent 时代——过去一年 AI 文本工具走过的路，图像工具接下来要重新走一遍。</strong></p>
+      <cite><a href="https://x.com/swyx/status/2047140362771132544" target="_blank" rel="noopener">X @swyx</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Amjad Masad（Replit CEO）：LLM + 静态分析 = 性能提升 90%+</h3>
+      <p>Replit 发布白皮书，核心结论是把 LLM 输出与静态分析工具（static analysis，一种不运行代码就能检测错误、检查类型和结构的程序分析方法）结合，任务完成率比纯 LLM 方案提升超过 90%。逻辑是：静态分析器能在 LLM 生成代码后立即给出结构性反馈，而不是等到运行时才发现问题，大幅缩短了"生成-修错"的迭代循环。</p>
+      <p>同日 Masad 还宣布 Replit Agent 现在可以从 Gemini Enterprise Agent Platform 直接调用，这意味着 Replit 的编码 Agent 进入了 Google 的企业客户触达渠道。白皮书里的技术路线（LLM + 工具反馈闭环）与这次 Google 合作的商业路线（Agent 即插即用）方向一致：都在押注 Agent 不是孤立运行的，而是需要外部工具约束和质量校验。</p>
+      <p><strong>Replit 把"静态分析"这个老工具重新包装成了 Agent 时代的质量护栏，而且有数据说话。</strong></p>
+      <cite><a href="https://x.com/amasad/status/2047156858214035590" target="_blank" rel="noopener">X @amasad</a></cite>
+    </article>
+</section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--y"></span>
+      <h2>产品与商业</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://www.lennysnewsletter.com/p/how-anthropics-product-team-moves" target="_blank" rel="noopener">Cat Wu × Lenny：Anthropic 产品团队如何把出货周期从"数月"压到"几天"</a></h3>
+      <p>Cat Wu 是 Claude Code 和 Claude Cowork 的产品负责人，背景是工程师转 PM。她在 Lenny's Newsletter 专访里拆解了几个具体机制：出货周期的压缩（从按月到按周再到按天）来自"使命对齐消除了大组织里最慢的那道摩擦"；她称 Anthropic 有一条隐性原则是 "just do things"，拒绝等待完美时机；Claude 的个性被视为产品核心竞争力而不是附加包装。</p>
+      <p>最被低估的 AI 技能，Cat Wu 给出了一个反直觉的答案：让模型反省自己的错误（ask the model to introspect on its own mistakes）。这个用法在产品开发里的含义是：用模型的自我批评作为 eval（评测）数据源，而不是只依赖人工标注。另一个关键判断是：要提前打造那些"现在还跑不好"的产品，因为下一个模型的能力提升会倒推过来让产品成立——错过这个窗口等于错过产品的市场时机。</p>
+      <p><strong>Anthropic 的 PM 不是在"管理功能"，是在和模型一起赌下一个能力跃迁点的时间表。</strong></p>
+      <cite><a href="https://www.lennysnewsletter.com/p/how-anthropics-product-team-moves" target="_blank" rel="noopener">Lenny's Newsletter</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Ryo Lu（Cursor 设计师）：产品"Overcooking"陷阱</h3>
+      <p>Ryo Lu 在 X 上发了一篇长分析，提出"Overcooking"概念：每一个单独来看合理的功能决定——加一个设置项、补一个边缘场景、满足一个细分用户需求——堆叠之后会制造出整体混乱。产品不是因为某个错误决定而崩坏的，而是因为无数个"看起来合理"的决定把核心体验淹没了。</p>
+      <p>这个观察的核心张力在于：产品中最难的不是找到好的想法，而是知道什么东西不该加进去。Ryo 的视角来自他在 Cursor 做设计的第一手感受——一个工具型产品在快速成长期最容易陷入的正是这种"理性的累积混乱"。他把 1121 个点赞的帖子写成了一份反清单：列出哪些"合理的"决定积累下来会变成一个危险。</p>
+      <p><strong>Overcooking 不是做了坏决定，而是没有勇气放弃好决定——这是产品成熟期最难的一课。</strong></p>
+      <cite><a href="https://x.com/ryolu_/status/2046957675079237668" target="_blank" rel="noopener">X @ryolu_</a></cite>
+    </article>
+</section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--g"></span>
+      <h2>人文与哲学</h2>
+    </div>
+
+    <article class="item">
+      <h3>Every / Dan Shipper：你是 AI 三明治里的面包</h3>
+      <p>Dan Shipper 在 Every 的这篇文章（及配套 X 上的同名帖子）提出了一个关于人类在 AI 工作流里位置的隐喻：人类是面包，AI 是中间的馅儿。人类负责开头（定义问题、设定信任边界、提供判断方向）和结尾（验收、决策、承担后果），AI 负责中间的执行填充。消灭面包，三明治就垮掉了。</p>
+      <p>这个隐喻的张力在于它既是安慰（人类不可替代），也是警告（如果你只做中间执行而不做判断两端，你其实在主动成为馅儿而不是面包）。Every 配合的主题是"信任电池"（trust battery）：每次 AI 替你做了一件事并且做对了，信任量就增加；但建立足够信任到愿意让 AI 独立完成高风险任务，需要的周期远比人们想象的长。</p>
+      <p><strong>人类还没有完全找到自己在 AI 协作里真正的位置，但面包这个比喻至少是诚实的——它承认了馅儿的重要，也没有假装面包会消失。</strong></p>
+      <cite><a href="https://every.to" target="_blank" rel="noopener">Every.to</a> · <a href="https://x.com/danshipper/status/2047027507397005367" target="_blank" rel="noopener">X @danshipper</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Peter Yang（Roblox 产品）：Craft > Slop</h3>
+      <p>Peter Yang 的这条推文只有三个词，但背后的判断是清晰的：在 AI 大批量生产"slop"（低品质内容的俚语，指 AI 生成的平庸、同质化输出）成本趋近于零的时候，"craft"（手工打磨、有作者意识的内容）的稀缺性反而上升了。这不是反 AI 的立场，而是对 AI 时代信号与噪声比的一个判断。</p>
+      <p>AI 生成的内容可以足够好、足够快、足够便宜——但这三个优点加在一起，恰恰让它变得可替代。而 craft 代表的是那种"这个人花了时间、做了取舍、有自己主张"的质量感，这在内容消费端会变得越来越容易被识别，也越来越容易溢价。</p>
+      <p><strong>当生产成本趋近于零，区分度就从"能不能做"转移到了"愿不愿意花时间做好"。</strong></p>
+      <cite><a href="https://x.com/petergyang/status/2047124883071816189" target="_blank" rel="noopener">X @petergyang</a></cite>
+    </article>
+</section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--b"></span>
+      <h2>AI 进展</h2>
+    </div>
+
+    <article class="item">
+      <h3>Over-Editing Benchmark：编码模型修 bug 时过度重写是一个系统性问题</h3>
+      <p><strong>现状：</strong>用 AI 辅助代码修复已是日常，但工程师普遍抱怨一件事：模型修一个小 bug 时会顺手重写周边大量代码，造成代码审查（code review）的工作量反而增加。</p>
+      <p><strong>问题：</strong>没有人量化过"过度编辑"这件事——它是感觉，不是数据，导致难以推动训练层面的改进。</p>
+      <p><strong>解决方案：</strong>研究者设计了"最小破坏"场景（minimally corrupted problems），测量模型修复时的 patch 距离（编辑量超过理论最小值多少）和认知复杂度（Cognitive Complexity，衡量代码结构复杂性的指标），构建 Over-Editing 基准。</p>
+      <p><strong>价值：</strong>结论明确——GPT-5.4 过度编辑最严重，Opus 4.6 过度编辑最少；训练方式方面，RL（强化学习）优于 SFT（监督微调）、DPO（偏好优化）和 rejection sampling，在不产生"灾难性遗忘"的前提下学会了"最小必要编辑"风格。</p>
+      <p><strong>未来方向：</strong>这是一个实践中被大量观察到但长期缺乏量化证据的失败模式，有了基准数据之后，针对性的后训练（post-training）优化才有了目标函数。</p>
+      <cite><a href="https://www.latent.space/p/ainews-tasteful-tokenmaxxing" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Neural Garbage Collection：RL 同时学推理 + KV 缓存保留策略</h3>
+      <p><strong>现状：</strong>长上下文推理的内存瓶颈越来越集中在 KV cache（键值缓存，模型在推理过程中记住已处理内容的机制）上，随着上下文变长，缓存占用激增。</p>
+      <p><strong>问题：</strong>现有 KV cache 压缩方案依赖代理目标（proxy objectives，间接优化指标），与推理质量的关联不直接，往往在特定任务上丢失关键信息。</p>
+      <p><strong>解决方案：</strong>Neural Garbage Collection 方法用 RL（强化学习）让模型在生成推理过程的同时，联合学习"哪些 KV 缓存条目值得保留、哪些可以丢弃"，不依赖任何手工设计的代理目标。</p>
+      <p><strong>价值：</strong>模型学到了一种与任务目标直接对齐的缓存淘汰策略，在长上下文场景下减少内存占用的同时保住了推理质量，不再是"压缩 vs 准确性"的两难。</p>
+      <p><strong>未来方向：</strong>将内存管理从基础设施层拉入模型训练目标，是让长上下文 Agent 实际可用的关键工程路径之一。</p>
+      <cite><a href="https://www.latent.space/p/ainews-tasteful-tokenmaxxing" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>MiMo-V2.5-Pro（小米）：SWE-bench Pro 57.2，1000+ 自主工具调用，1M 上下文</h3>
+      <p><strong>现状：</strong>软件工程 Agent 的能力评测（benchmark）正在成为模型发布的核心竞争维度，SWE-bench 系列是目前最权威的编码 Agent 测试集。</p>
+      <p><strong>问题：</strong>此前小米 MiMo 系列主要集中在推理任务，软件工程和长程 Agent 任务的覆盖深度有限。</p>
+      <p><strong>解决方案：</strong>MiMo-V2.5-Pro 专为软件工程和长程 Agent 设计，支持 1000+ 次自主工具调用（autonomous tool calls，指 Agent 在不需要用户介入的情况下连续使用外部工具的能力）和 1M token 的超长上下文窗口。配套的 MiMo-V2.5 非 Pro 版本新增原生全模态支持。</p>
+      <p><strong>价值：</strong>MiMo-V2.5-Pro 在 SWE-bench Pro 上得 57.2，Claw-Eval 63.8，τ3-Bench 72.9；发布后立即进入 LMSYS Arena（大型模型对比评测平台）的文本、视觉、代码多维度评测。</p>
+      <p><strong>未来方向：</strong>中国模型团队（小米、Moonshot、Alibaba）正在 Agent 能力基准上形成密集竞争，与 OpenAI 和 Anthropic 的差距正在被快速压缩。</p>
+      <cite><a href="https://www.latent.space/p/ainews-tasteful-tokenmaxxing" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>W4A8 量化集成进 vLLM 生产环境（Cohere）：TTFT 提速 58%，TPOT 提速 45%</h3>
+      <p><strong>现状：</strong>大语言模型推理的三大指标——吞吐量、延迟、成本——构成工程级部署的核心约束，量化（quantization，用低精度数字表示模型权重，减少内存和计算量）是压缩推理成本的主要手段。</p>
+      <p><strong>问题：</strong>W4A8（权重 4 比特、激活值 8 比特的混合精度量化方案）理论上比 W4A16 更激进，但此前缺乏生产可用的开源实现，真实系统里的加速效果未被验证。</p>
+      <p><strong>解决方案：</strong>Cohere 将 W4A8 推理集成进 vLLM（一个广泛使用的开源 LLM 推理框架），采用逐通道 FP8 缩放量化和 CUTLASS LUT 反量化（CUTLASS 是 NVIDIA 的高性能矩阵运算库；LUT 即查找表，是高效反量化的实现技术），完整开源并提供生产部署指南。</p>
+      <p><strong>价值：</strong>在 Hopper 架构 GPU 上，与 W4A16 相比，首 token 生成时间（TTFT，Time to First Token）提速 58%，每 token 生成时间（TPOT，Time Per Output Token）提速 45%，实际用户体验的响应速度明显改善。</p>
+      <p><strong>未来方向：</strong>vLLM 社区的 W4A8 支持落地，意味着这一量化方案的工程门槛大幅降低，将加速更多团队在生产环境中采用激进量化来降本提速。</p>
+      <cite><a href="https://www.latent.space/p/ainews-tasteful-tokenmaxxing" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Perplexity 后训练流水线：搜索增强 SFT+RL，Qwen-based 模型事实准确率媲美 GPT 系列</h3>
+      <p><strong>现状：</strong>搜索增强生成（RAG，Retrieval-Augmented Generation）是提升 LLM 事实准确率的主流方案，但大多数实现停留在推理层（检索后拼接上下文），没有把搜索能力深入到训练层。</p>
+      <p><strong>问题：</strong>在搜索和引用任务上，通用大模型（包括 GPT 系列）的事实准确率和引用质量在复杂多跳问题上仍有明显局限，且单次推理成本高。</p>
+      <p><strong>解决方案：</strong>Perplexity 公开了一套搜索增强的后训练流水线（post-training pipeline），将搜索能力直接注入 SFT（监督微调）和 RL（强化学习）阶段，同时优化事实准确率、引用质量、指令遵从和推理效率，基底模型使用 Qwen 系列。</p>
+      <p><strong>价值：</strong>Perplexity CEO Arav Srinivas 确认，该流水线训练的 Qwen-derived 模型已在生产环境承接相当比例的搜索流量，事实准确率可与 GPT 系列相媲美，推理成本更低。</p>
+      <p><strong>未来方向：</strong>把搜索能力从推理时注入转移到训练时固化，代表一种更高效的"搜索原生"模型路线，可能成为垂直场景（金融、医疗、法律）LLM 微调的参考范式。</p>
+      <cite><a href="https://www.latent.space/p/ainews-tasteful-tokenmaxxing" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+</section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--m"></span>
+      <h2>看一眼</h2>
+    </div>
+    <ul class="glance-list">
+      <li>Claude Cowork（Anthropic 的协作式 AI 工作台）beta 版新增交互式图表和图解生成功能，支持在文档内直接嵌入可交互的数据可视化。<a class="glance-src" href="https://x.com/claudeai/status/2047047633416397076" target="_blank" rel="noopener">X @claudeai →</a></li>
+      <li>Cursor × SpaceX 的战略逻辑：kwokchain 写了一篇深度分析，核心论点是两家合并可以完成"编码 → 训练算力 → 模型递归改进"的完整闭环，是次级前沿实验室第一次有机会拼成前沿竞争者。<a class="glance-src" href="https://kwokchain.com/2026/04/23/cursor-and-spacex-in-search-of-a-complete-loop/" target="_blank" rel="noopener">kwokchain →</a></li>
+      <li>Agent harness 三方收口：OpenAI Workspace Agents、Google Gemini Enterprise Agent Platform、Cursor Slack 触发——三家独立产品本周同步走向"云端常驻 + 团队共享 + 审批控制"的标准形态，企业 Agent 基础设施的形态正在收敛。<a class="glance-src" href="https://www.latent.space/p/ainews-tasteful-tokenmaxxing" target="_blank" rel="noopener">Latent Space / AINews →</a></li>
+      <li>Sierra AI-native 面试重设计：从手写代码转向"用 Agent 改进真实中型代码库"，候选人被评估的是调试思路和 Agent 调度能力，而不是算法题记忆。<a class="glance-src" href="https://sierra.ai/blog/the-ai-native-interview" target="_blank" rel="noopener">Sierra Blog →</a></li>
+      <li>Tesla 德州研究级芯片厂：约 $30 亿，建在 Giga Texas 园区内，月产能仅数千片晶圆，用 Intel 14A 最先进工艺，定位是新工艺测试场而非量产线。<a class="glance-src" href="https://a.tldrnewsletter.com" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>X 上线 Grok Custom Timelines：Premium 用户可将 75 个 AI 理解的话题主题固定在首页 Tab，Grok 读懂帖子内容而非依赖话题标签分类，并依据历史互动个性化排序；Communities 同日关闭。<a class="glance-src" href="https://techcrunch.com/2026/04/22/hands-on-with-xs-new-ai-powered-custom-feeds/" target="_blank" rel="noopener">TechCrunch →</a></li>
+      <li>Kimi K2.6 Agent Swarm 规格：最多 300 子 Agent 并行、4000 步/次会话，单次可输出 100+ 文件、10 万词研究报告或 2 万行数据集，定位从"聊天机器人"转向"数字团队"。<a class="glance-src" href="https://www.theaivalley.com/p/openai-teases-spud-gpt-5-5" target="_blank" rel="noopener">AI Valley →</a></li>
+      <li>LinkedIn CEO 更替：Ryan Roslansky 卸任，Dan Shapero（LinkedIn 内部晋升的高管，任职逾十年）接任；Roslansky 留任 Microsoft 执行副总裁。<a class="glance-src" href="https://www.cnbc.com/2026/04/22/microsofts-linkedin-makes-executive-daniel-shapero-its-new-ceo.html" target="_blank" rel="noopener">CNBC →</a></li>
+      <li>静止的量子 Vol.20260423（修饼，出版《迷你物理学》的物理科普博主，同时是 AI 短片创作者），小报童今日更新。<a class="glance-src" href="https://xiaobot.net" target="_blank" rel="noopener">小报童 →</a></li>
+      <li>Josh Woodward（Google Labs VP）：对话分支（conversation branching，让用户在同一个对话里分叉出不同方向探索的功能）正在灰度至 20% 用户，即将更大范围开放。<a class="glance-src" href="https://x.com/joshwoodward/status/2047147030351642914" target="_blank" rel="noopener">X @joshwoodward →</a></li>
+      <li>Guillermo Rauch（Vercel CEO）：持续更新 Context.ai 安全事件的深度调查，涉及更广泛的威胁行为者活动，是近期影响 AI 开发工具链的供应链安全事件之一。<a class="glance-src" href="https://x.com/rauchg/status/2047150411170320808" target="_blank" rel="noopener">X @rauchg →</a></li>
+      <li>Aaron Levie（Box CEO）：ChatGPT 企业版 Agent 现在可以访问"任何工具和数据，并提供完整的代码执行能力"——他的判断是这重新定义了 SaaS 护城河的含义。<a class="glance-src" href="https://x.com/levie/status/2047028112626749645" target="_blank" rel="noopener">X @levie →</a></li>
+      <li>Garry Tan（YC 总裁）："Fewer fatter skills" — Agent 的 skill（技能，即 Agent 可以调用的工具或子任务模块）设计，少而精比多而细更能减少上下文膨胀，是当前 Agent 工程设计的一个实用原则。<a class="glance-src" href="https://x.com/garrytan/status/2047184243164651648" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Sam Altman："Most companies will want to use them" — 谈企业采用 Agent 的预期，语气偏向不可避免而不是可选项。<a class="glance-src" href="https://x.com/sama/status/2047017964105597009" target="_blank" rel="noopener">X @sama →</a></li>
+      <li>Amjad Masad 补充：Replit Agent 现已可直接从 Gemini Enterprise Agent Platform 调用，进入 Google 企业客户的分发渠道。<a class="glance-src" href="https://x.com/amasad/status/2047149103294091301" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>Ben's Bites 设计工具实测（Keshav 测试将截图实现为可运行 app）：Claude Design > Magicpath AI > 原始模型（概念理解和可用性）；Gemini 像素复刻最准但功能性弱；Opus 4.7 视觉匹配优于 GPT-5.4，但 GPT-5.4 代码功能性更完整。<a class="glance-src" href="https://www.bensbites.com/p/chatgpts-nano-banana" target="_blank" rel="noopener">Ben's Bites →</a></li>
+      <li>/ultrareview 研究预览版在 Claude Code 上线：合并高风险变更（auth、数据迁移等）前，可在云端跑 bug-hunting agent 做预扫描。<a class="glance-src" href="https://www.bensbites.com/p/chatgpts-nano-banana" target="_blank" rel="noopener">Ben's Bites →</a></li>
+      <li>ChatGPT for Excel 和 Google Sheets 进入 beta：在工作表内直接构建新表格、修复公式、解释模型、原地更新数据，不需要离开 Excel/Sheets 界面。<a class="glance-src" href="https://www.bensbites.com/p/chatgpts-nano-banana" target="_blank" rel="noopener">Ben's Bites →</a></li>
+      <li>ChatGPT Images 2.0 大幅升级：零错别字文字渲染（即使图中有数百个词），带思考推理的图像生成，可在 Codex app 里结合工具调用（搜索 logo、生成 QR 码再合成）；用户已在用它生成 UI 截图、多页杂志、个性化造型推荐。<a class="glance-src" href="https://www.bensbites.com/p/chatgpts-nano-banana" target="_blank" rel="noopener">Ben's Bites →</a></li>
+      <li>Every 快评：GPT-5.5 的"vibe check" —— 顶级高级工程师级别，且比以往的 OpenAI 模型更好说话（"easy to talk to"）。<a class="glance-src" href="https://every.to" target="_blank" rel="noopener">Every.to →</a></li>
+      <li>Xpeng AeroHT 飞行汽车工厂探访：原型机可单摇杆起降悬停，六轮地面载具 + 可拆卸双座 eVTOL（垂直起降电动飞机），全套售价约 $30 万，目标 2026 年底开始交付。<a class="glance-src" href="https://electrek.co/2026/04/22/xpeng-aridge-flying-car-factory-visit/" target="_blank" rel="noopener">Electrek →</a></li>
+      <li>Sony AI 乒乓机器人 Ace：八关节手臂 + 多角度摄像头追踪球的位置和旋转，已击败精英选手，尚输职业顶尖——乒乓是机器人能力测试里物理难度最高的运动之一。<a class="glance-src" href="https://www.theguardian.com/science/2026/apr/22/ai-powered-robot-beats-elite-table-tennis-players-milestone-robotics" target="_blank" rel="noopener">The Guardian →</a></li>
+      <li>OpenAI 开源 Privacy Filter：1.5B 参数 MoE 架构（50M 参数激活），Apache 2.0，用于 PII（个人可识别信息）检测和脱敏，128k 上下文，专为企业/Agent 流水线里的低成本数据预处理设计。<a class="glance-src" href="https://www.latent.space/p/ainews-tasteful-tokenmaxxing" target="_blank" rel="noopener">Latent Space / AINews →</a></li>
+    </ul>
+</section>
+
+  <p class="post-end">✦</p>
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-04-22.html">← APR 22</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
