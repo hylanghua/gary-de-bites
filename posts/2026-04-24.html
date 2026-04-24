@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — April 24, 2026</title>
+  <meta name="description" content="GPT-5.5 正式发布并通过 NVIDIA 完成万人企业部署，DeepSeek V4 同日开源（1.6T MoE，1M 上下文），Anthropic 同步推出 Claude Managed Agents 记忆功能公测。Aaron Levie 的一段话点破了一个反直觉现象：AI 让工作变多，不是变少。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+<nav class="back-nav"><a href="../index.html">← All issues</a></nav>
+<div class="page">
+
+  <h1 class="post-date">April 24, 2026</h1>
+
+  <p class="post-lead">GPT-5.5 正式发布并通过 NVIDIA 完成万人企业部署，DeepSeek V4 同日开源（1.6T MoE，1M 上下文），Anthropic 同步推出 Claude Managed Agents 记忆功能公测。Aaron Levie 的一段话点破了一个反直觉现象：AI 让工作变多，不是变少。</p>
+
+  <p class="post-note">本期部分源抓取失败，内容较常规偏少。</p>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--r"></span>
+      <h2>新闻速递</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://openai.com/index/introducing-gpt-5-5/" target="_blank" rel="noopener">GPT-5.5 正式发布，NVIDIA 同日将 Codex 铺开至 1 万名员工</a></h3>
+      <p>OpenAI 正式推出 GPT-5.5，向 Plus、Pro、Business 和 Enterprise 用户开放。与前代 GPT-5.4 相比，5.5 在推理任务上用更少 token 完成更高难度的工作，延迟持平。Aaron Levie 报告 Box 在金融、医疗、公共部门等实际业务评测中，GPT-5.5 准确率较 5.4 提升了 10 个百分点。Sam Altman 同日分享 Codex 与 NVIDIA 联合部署的案例：NVIDIA 旗下工程、法务、市场、财务等部门共 1 万多名员工已接入由 GPT-5.5 驱动的 Codex，运行在 NVIDIA GB200 NVL72 架构上，相比上代硬件，每百万 token 成本降低 35 倍，每瓦吞吐量提升 50 倍。</p>
+      <p>Peter Yang 用 F-Zero（经典赛车游戏）作为模型测试场景，发现 GPT-5.5 + Codex 是迄今唯一能跑出可玩游戏的组合，且自动加入了多个 NPC 对手。Dan Shipper 则给出一个简洁的行为描述：大多数模型"做了很棒的计划，然后临阵退缩"，GPT-5.5 是目前最接近"直接就做"的模型。</p>
+      <cite><a href="https://openai.com/index/introducing-gpt-5-5/" target="_blank" rel="noopener">OpenAI</a> · <a href="https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/" target="_blank" rel="noopener">TechCrunch</a> · <a href="https://blogs.nvidia.com/blog/openai-codex-gpt-5-5-ai-agents/" target="_blank" rel="noopener">NVIDIA Blog</a> · <a href="https://x.com/sama/status/2047395562501411058" target="_blank" rel="noopener">X @sama</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://api-docs.deepseek.com/news/news260424" target="_blank" rel="noopener">DeepSeek V4 今日开源：1.6T MoE，1M 上下文，Apache 2.0</a></h3>
+      <p>DeepSeek 在 GPT-5.5 发布同日推出 V4 系列：V4-Pro（1.6T 总参数，49B 激活参数）和 V4-Flash（284B 总参数，13B 激活参数），均支持 100 万 token 上下文，Apache 2.0 许可开源。关键架构创新是 Hybrid Attention（混合注意力机制），结合 CSA（压缩稀疏注意力）和 HCA（重度压缩注意力），使 1M context 场景下的单 token 推理计算量仅为 DeepSeek V3.2 的 27%，KV 缓存（键值对存储，推理时的中间记忆）用量降至 10%。</p>
+      <p>V4-Pro 在数学和编码 benchmark 上超过所有开源对手，在知识类任务上接近 Gemini 3.1-Pro，略逊于 GPT-5.4。Amjad Masad 指出：这恰好说明美国政客关于"中国蒸馏"的恐慌叙事站不住脚——中国科学家的实际贡献是架构创新，而非数据盗取，而且是完全开放共享的。</p>
+      <cite><a href="https://api-docs.deepseek.com/news/news260424" target="_blank" rel="noopener">DeepSeek API Docs</a> · <a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://simonwillison.net/2026/Apr/24/deepseek-v4/" target="_blank" rel="noopener">Simon Willison</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://claude.com/blog/claude-managed-agents" target="_blank" rel="noopener">Claude Managed Agents 记忆功能公测上线，记忆体以文件形式存储</a></h3>
+      <p>Anthropic 宣布 Claude Managed Agents（托管式 Agent 平台，4 月 8 日上线，提供沙箱执行、权限管理、端到端追踪等能力）的记忆功能正式进入公测。记忆层挂载到文件系统（即像读写文件一样存取记忆），Claude 可复用 bash 和代码执行能力来管理记忆；记忆以文件形式保存，开发者可通过 API 导出和控制 Agent 保留的内容，也可在多个 Agent 之间共享记忆。这是同类服务里少有的"记忆归开发者所有"设计。</p>
+      <p>同期，Anthropic 被曝将 Claude Code 从 Pro 计划（20 美元/月）的功能列表中悄悄划掉打勾，价格页面更新为仅限 Max 计划（100 美元/月）可用。舆论在 48 小时内炸锅，增长负责人随即澄清这只是针对约 2% 新用户的定价测试，现有用户不受影响，随后价格页面恢复原状。</p>
+      <cite><a href="https://claude.com/blog/claude-managed-agents" target="_blank" rel="noopener">Claude Blog</a> · <a href="https://x.com/claudeai/status/2047421844311949513" target="_blank" rel="noopener">X @claudeai</a> · <a href="https://simonwillison.net/2026/Apr/22/claude-code-confusion/" target="_blank" rel="noopener">Simon Willison</a></cite>
+    </article>
+</section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--o"></span>
+      <h2>AI 方向观点</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://x.com/levie/status/2047540230694350958" target="_blank" rel="noopener">Aaron Levie（Box CEO）：AI 让工作变多，不是变少</a></h3>
+      <p>Levie 在 X 上分享了一个反直觉观察：AI 没有减少工作量，反而让他做了更多以前做不完的事。原因是：AI 大幅降低了"启动一件事"的门槛，让很多原本因为人工成本太高而永远排在待办清单底部的任务，突然变得值得去做。一旦开始，后续的完整执行仍需要人，于是产生更多工作。</p>
+      <p>他还指出一个更有趣的经济逻辑：当 Agent 让某类任务足够便宜，它甚至会让你意识到这件事值得长期雇人专门来做，但在此之前你永远不会尝试。工作总量不是固定的，大多数公司有无限多可以做但一直没做的事，AI 只是把"能不能做"的阈值降低了。</p>
+      <p><strong>AI 时代的生产力方程不是"人减少"，而是"待办清单变无限长"。</strong></p>
+      <cite><a href="https://x.com/levie/status/2047540230694350958" target="_blank" rel="noopener">X @levie</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/amasad/status/2047547275682214384" target="_blank" rel="noopener">Amjad Masad（Replit CEO）：中美 AI 叙事的扭曲</a></h3>
+      <p>Masad 直接点名：美国政客和游说机构正在用"中国蒸馏"（distillation，即从美国模型提炼能力）这个词恐吓公众，但现实是，今天 DeepSeek V4 做的架构创新——Hybrid Attention——与训练数据来源毫无关系，纯粹是底层算法突破，并且是开放给全世界的，包括小型美国实验室。</p>
+      <p>他的隐含论点是：地缘政治恐慌叙事把注意力引向了错误的竞争维度。开放共享的架构创新无法被"保护"，也无需被保护，因为它让所有人都受益。真正的竞争优势在别处。</p>
+      <p><strong>把"开源 AI"包装成"国家安全威胁"，是混淆视听而非清醒的战略判断。</strong></p>
+      <cite><a href="https://x.com/amasad/status/2047547275682214384" target="_blank" rel="noopener">X @amasad</a></cite>
+    </article>
+</section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--y"></span>
+      <h2>产品与商业</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://simonwillison.net/2026/Apr/22/claude-code-confusion/" target="_blank" rel="noopener">Simon Willison：Anthropic 的定价实验，48 小时的混乱</a></h3>
+      <p>Simon Willison 在博客里复盘了这场风波的来龙去脉：用户发现 Anthropic 价格页面上 Claude Code 在 Pro 计划（20 美元/月）一栏的勾被换成了叉，意味着 Claude Code 仅限 Max 计划（最低 100 美元/月）。消息扩散极快，批评声音集中在"无通知涨价"。Anthropic 增长负责人随即在 X 上解释这是针对约 2% 新注册用户的小规模测试，现有订阅者不受影响，"实验"随后快速结束，价格页面恢复。</p>
+      <p>Willison 的核心观察：整件事最值得注意的不是实验本身，而是 Anthropic 在定价策略上几乎没有做任何提前的用户沟通。一个悄悄改了两天的页面触发了如此大的反应，说明 Claude Code 在开发者社区的黏性已经很高，而用户对于"Claude Code 是 Pro 功能"的心智锚定非常牢固。</p>
+      <p><strong>用户心智里"20 美元就能用 Claude Code"这一锚点，比 Anthropic 自己估计的更结实。</strong></p>
+      <cite><a href="https://simonwillison.net/2026/Apr/22/claude-code-confusion/" target="_blank" rel="noopener">Simon Willison</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/nikunj/status/2047336067972624870" target="_blank" rel="noopener">Nikunj Kothari（FPV Ventures）：M&amp;A 进入发烧状态</a></h3>
+      <p>Kothari 观察到四条并发趋势正在同时推高并购交易：Seed 轮融资比以往更容易，但 A 轮成功率比以往更低，中间产生了大量"起步容易但无法规模化"的公司；2021 年估值泡沫遗留的 zombiecorn（虽然存活但表现远低于首轮估值的公司）正在集中出清；大型 AI 实验室持续吸走顶级人才，而这些人才宁可加入已有突破性进展的巨型公司也不愿独自扛 A 轮；公开市场情绪疲软，私有退出的性价比相对更高。</p>
+      <p>他随口说的一句话值得单独摘出："有很多 founder，但 entrepreneur 很少。"区别在于：前者是为了成为 founder 而创业，后者是因为找不到任何其他方式去做这件事而创业。</p>
+      <p><strong>AI 时代的 M&amp;A 热潮不全是信心信号，更多是 2021 年过度融资的后续清算。</strong></p>
+      <cite><a href="https://x.com/nikunj/status/2047336067972624870" target="_blank" rel="noopener">X @nikunj</a></cite>
+    </article>
+</section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--g"></span>
+      <h2>人文与哲学</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://x.com/adityaag/status/2047421448449630379" target="_blank" rel="noopener">Aditya Agarwal（SPC 创始人）：为什么是这座城市，为什么是此刻</a></h3>
+      <p>Agarwal 在 X 上写了一段情感密度很高的文字，试图回答那个老问题：SF 凭什么还是 SF。他的答案不是大学、VC、人才网络这些惯常的结构性解释，而是一种文化特质：这里的人面对"疯狂但如果成了会怎样"时，默认反应是好奇而非畏缩。他举了两个亲历场景：一场设计界传奇人物（soleio 和 Rasmus）的分享活动，以及 SPC 里两个工程师花了很长时间打磨"每个像素实时生成"的 demo，全程没有人问他们"这能商业化吗"。</p>
+      <p>这种氛围并不依赖正式制度，而是弥散在文化基底里——允许人把不切实际的热情当正事投入，且周围的人会认真对待。他的结尾诚实："我希望这座城市治理得更好，但我们很幸运，被一群喜欢 build 的怪人包围着。"</p>
+      <p><strong>SF 的竞争优势本质上是一种许可文化：允许认真对待那些还不知道能不能成的事。</strong></p>
+      <cite><a href="https://x.com/adityaag/status/2047421448449630379" target="_blank" rel="noopener">X @adityaag</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/AmandaAskell/status/2047429629263454377" target="_blank" rel="noopener">Amanda Askell（Anthropic 哲学家）：从内部感受"最关键时期"的重量</a></h3>
+      <p>Askell 的推文只有一句话："身处感觉像是人类历史上最关键时期之一的日子里，从内部感受到它的全部重量，这种感觉很奇怪。"这句话得到了 2000 多个点赞——数量本身说明它触及了一种广泛存在但很少被直接说出来的情绪。</p>
+      <p>她的身份很特殊：既是 Anthropic 内部参与塑造 Claude 价值观的哲学家，又是外部观察者——双重视角让这句话的重量不同于普通人的感叹。她没有说"我们在做对的事"或"令人兴奋"，只说了一个字："重"。</p>
+      <p><strong>比乐观更诚实的状态或许是：承认这件事的重量，不用"令人兴奋"来轻化它。</strong></p>
+      <cite><a href="https://x.com/AmandaAskell/status/2047429629263454377" target="_blank" rel="noopener">X @AmandaAskell</a></cite>
+    </article>
+</section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--b"></span>
+      <h2>AI 进展</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro" target="_blank" rel="noopener">DeepSeek V4 技术报告：Hybrid Attention 让 1M 上下文 token 成本降至 10%</a></h3>
+      <p><strong>现状：</strong>长上下文推理是当前大模型的主要瓶颈，KV cache（键值对缓存，存储推理中间状态的内存结构）随着上下文长度线性增长，内存占用极高。</p>
+      <p><strong>问题：</strong>现有注意力机制在 1M token 场景下推理成本高到不实用，限制了 Agent 在长会话和复杂文档场景中的应用。</p>
+      <p><strong>解决方案：</strong>DeepSeek V4 引入 Hybrid Attention，组合 CSA（压缩稀疏注意力，对远距离 token 大幅压缩）和 HCA（重度压缩注意力，极端降低 KV 用量），在 1M context 下单 token 推理 FLOPs 降至 V3.2 的 27%，KV cache 降至 10%。</p>
+      <p><strong>价值：</strong>V4-Pro（49B 激活参数，1.6T 总参数）在编码和数学 benchmark 超越所有开源对手，在知识类任务上直追 Gemini 3.1-Pro，且以 Apache 2.0 协议完全开源。</p>
+      <p><strong>未来方向：</strong>1M 上下文的高效化为 Agent 长期记忆和大型代码库分析开辟了实际可行的路径，后续看小型量化版本的社区部署速度。</p>
+      <cite><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro" target="_blank" rel="noopener">HuggingFace · DeepSeek-V4-Pro</a> · <a href="https://api-docs.deepseek.com/news/news260424" target="_blank" rel="noopener">DeepSeek API Docs</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2601.12538" target="_blank" rel="noopener">Agentic Reasoning for LLMs：Agent 推理能力综述（arXiv 2601.12538）</a></h3>
+      <p><strong>现状：</strong>LLM 已从单次问答演进为多步骤 Agent，推理能力是 Agent 行为的核心驱动力。</p>
+      <p><strong>问题：</strong>Agent 推理散布在规划、工具调用、记忆、多 Agent 协调等不同模块，缺乏统一的分析框架。</p>
+      <p><strong>解决方案：</strong>这篇综述系统梳理了推理如何整合进 Agent 的各个子系统，包括 MCTS（蒙特卡洛树搜索，一种多步规划算法）、工具调用、长期记忆、反馈驱动的自适应，以及多 Agent 协调机制。</p>
+      <p><strong>价值：</strong>为研究者和工程师提供了统一的 Agent 推理地图，有助于诊断系统中的薄弱环节。</p>
+      <p><strong>未来方向：</strong>作者认为 Agent 推理与 RL（强化学习）的结合是下一个主战场，特别是带有可验证奖励的推理训练（RLVR）。</p>
+      <cite><a href="https://arxiv.org/abs/2601.12538" target="_blank" rel="noopener">arXiv 2601.12538</a> · <a href="https://huggingface.co/papers/2601.12538" target="_blank" rel="noopener">HuggingFace Papers</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2602.11812" target="_blank" rel="noopener">Predicting LLM Output Length：ICLR 2026，低成本预测输出 token 数</a></h3>
+      <p><strong>现状：</strong>推理服务（inference serving，将模型部署为 API 供实时调用的系统）的延迟和吞吐量高度依赖能否预先知道每个请求的输出长度，以便合理分配批次和显存。</p>
+      <p><strong>问题：</strong>现有方法要么需要单独的预测模型（额外开销），要么只能在推理开始后动态估算。</p>
+      <p><strong>解决方案：</strong>论文提出 EGTP（Efficient Generation Token Predictor），在不引入额外模型的前提下，以可忽略不计的延迟和内存代价预测输出长度，并在 GSM8K（数学推理基准）等任务上验证有效性。</p>
+      <p><strong>价值：</strong>推理服务优化的低成本方案，对构建实时 Agent 流水线的工程团队有直接参考价值。</p>
+      <p><strong>未来方向：</strong>结合动态批处理调度，在高并发 Agent 场景中进一步压缩端到端延迟。</p>
+      <cite><a href="https://arxiv.org/abs/2602.11812" target="_blank" rel="noopener">arXiv 2602.11812 · ICLR 2026</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2604.19756" target="_blank" rel="noopener">LLM Agent 推理开销过高问题：高 token 消耗、执行不稳定、组件不可复用（arXiv 2604.19756）</a></h3>
+      <p><strong>现状：</strong>LLM Agent 在实际部署中面临三大系统性障碍。</p>
+      <p><strong>问题：</strong>高推理开销（每次任务消耗大量 token）、不稳定执行（相同输入产出差异大）、组件不可复用（子任务结果难以在后续调用中直接利用）。</p>
+      <p><strong>解决方案：</strong>论文提出结构化的 Agent 架构改进方案，将高频子任务模块化，减少重复推理；引入执行稳定性约束，提高跨调用一致性。</p>
+      <p><strong>价值：</strong>直接针对工程落地中最常见的三个痛点，有助于降低 Agent 产品的运营成本并提升用户体验。</p>
+      <p><strong>未来方向：</strong>与 Agent 框架（如 LangGraph、Claude Managed Agents）的深度集成，将模块化复用变为默认行为。</p>
+      <cite><a href="https://arxiv.org/abs/2604.19756" target="_blank" rel="noopener">arXiv 2604.19756</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2603.15280" target="_blank" rel="noopener">NS-Mem：神经符号长期记忆，提升多模态 Agent 跨会话推理（arXiv 2603.15280）</a></h3>
+      <p><strong>现状：</strong>多模态 Agent（同时处理图像、文本等多种输入的 AI 系统）的长期记忆主要依赖纯神经表示（向量），难以支持精确的逻辑推理。</p>
+      <p><strong>问题：</strong>向量记忆在模糊语义检索上表现好，但在需要精确规则或约束推理的任务（如"上次用户说了什么条件"）上可靠性不足。</p>
+      <p><strong>解决方案：</strong>NS-Mem（Neuro-Symbolic Memory，神经符号记忆）将神经存储与显式符号结构（规则、约束、关系图）结合，跨会话保留结构化知识，既保留语义灵活性，也支持逻辑精确性。</p>
+      <p><strong>价值：</strong>在需要长期追踪用户偏好、任务状态或复杂约束的 Agent（如个人助理、科研助手）中，有望显著提升可靠性。</p>
+      <p><strong>未来方向：</strong>与文件系统式记忆（如 Claude Managed Agents 的实现方式）结合，探索符号结构在实际 Agent 产品中的落地路径。</p>
+      <cite><a href="https://arxiv.org/abs/2603.15280" target="_blank" rel="noopener">arXiv 2603.15280</a></cite>
+    </article>
+</section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--m"></span>
+      <h2>看一眼</h2>
+    </div>
+    <ul class="glance-list">
+      <li>Peter Yang 的 F-Zero 测试：GPT-5.5 + Codex 是目前唯一能跑出可玩 F-Zero 赛车游戏的组合，还自动生成了多个 NPC 对手。<a class="glance-src" href="https://x.com/petergyang/status/2047502885710410159" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Swyx 说今日发布最被低估的不是 GPT-5.5 本身，而是 Codex 那一侧的变化（具体指向 Codex 整体产品重塑）。<a class="glance-src" href="https://x.com/swyx/status/2047536499999346812" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>Swyx：Codex app 已经"面目全非"，感觉本来应该叫 Atlas。<a class="glance-src" href="https://x.com/swyx/status/2047461691580195310" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>Swyx 呼吁 Anthropic 落地新加坡："来全球人均最 AI 化的国家看看。"<a class="glance-src" href="https://x.com/swyx/status/2047545640180445400" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>Aaron Levie 公布 Box 企业评测数据：GPT-5.5 vs GPT-5.4，金融服务 83% vs 64%，医疗 78% vs 61%，公共部门 72% vs 59%，媒体 70% vs 57%。<a class="glance-src" href="https://x.com/levie/status/2047387742951313910" target="_blank" rel="noopener">X @levie →</a></li>
+      <li>Dan Shipper：大多数模型计划做得很好却临阵退缩，GPT-5.5 是目前最接近"直接就做"的模型。<a class="glance-src" href="https://x.com/danshipper/status/2047388883823087633" target="_blank" rel="noopener">X @danshipper →</a></li>
+      <li>Amjad Masad：Apple Safari 历史上最蠢的设计——"页面内搜索"藏在"分享"菜单三层深处，完全不合逻辑。<a class="glance-src" href="https://x.com/amasad/status/2047524053314109600" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>Sam Altman：Codex 在 NVIDIA 全公司铺开，"太好看了，想知道你们公司是否也想这么做？"<a class="glance-src" href="https://x.com/sama/status/2047395562501411058" target="_blank" rel="noopener">X @sama →</a></li>
+      <li>Sam Altman："别转，别转，别转……算了，life imitates art。"（指 GPT-5.5 代号 SPUD 与硅谷 TV 剧情节的巧合。）<a class="glance-src" href="https://x.com/sama/status/2047403771416940715" target="_blank" rel="noopener">X @sama →</a></li>
+      <li>Garry Tan 正在把 OpenClaw 里的定时任务（cron job，按计划自动执行的后台脚本）和子 Agent 迁移到 GBrain Minions，本次推送是稳定性改进。<a class="glance-src" href="https://x.com/garrytan/status/2047578207629819919" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Garry Tan 为 GBrain 建立了新的评测集（eval set）：图搜索 + 向量搜索 + grep 三者组合在知识库查询上比单一方法大幅领先。<a class="glance-src" href="https://x.com/garrytan/status/2047578205528477711" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Nikunj Kothari 称硅谷 TV 剧是"纪录片"（第 237 条证据）——具体剧情与现实的对照留给读者自行对号入座。<a class="glance-src" href="https://x.com/nikunj/status/2047539976766931067" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Nikunj 的当前首选 AI 开发栈：Claude Opus（规划和前端设计）+ Codex（工程实现）+ conductor.build（编排多个 Agent）+ Railway（部署）。<a class="glance-src" href="https://x.com/nikunj/status/2047382587258364204" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Peter Steinberger（PSPDFKit 作者）：称赞 GitHub 团队"太棒了"——具体指 GitHub 在某技术问题上主动协助解决（quote tweet 原始内容已折叠）。<a class="glance-src" href="https://x.com/steipete/status/2047408665888432579" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>Peter Steinberger：贴出"我最喜欢的安全公告"（幽默体裁，具体内容为安全补丁描述里的吐槽式措辞）。<a class="glance-src" href="https://x.com/steipete/status/2047362803560841364" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>Claude（@claudeai）官方：记忆以文件形式存储，开发者可导出、通过 API 管理、精确控制 Agent 保留哪些内容。<a class="glance-src" href="https://x.com/claudeai/status/2047421846463623579" target="_blank" rel="noopener">X @claudeai →</a></li>
+      <li>Cat Wu（Claude Code 负责人）的 Lenny's Newsletter 专访已收录于昨日摘要（Claude Code 如何把出货周期从数月压到数天）。<a class="glance-src" href="https://x.com/_catwu/status/2047427510091366533" target="_blank" rel="noopener">X @_catwu →</a></li>
+      <li>Matt Turck（FirstMark VC）：Data Driven NYC 第 121 期，本周二 18:00 纽约，嘉宾包括 Ramp Labs（agentic 演示）和 Estuary（AI 数据基础设施 CEO）。<a class="glance-src" href="https://x.com/mattturck/status/2047444712546566393" target="_blank" rel="noopener">X @mattturck →</a></li>
+      <li>Zara Zhang 分享了一篇有趣链接（quote tweet，原文未展开），值得自行点开看。<a class="glance-src" href="https://x.com/zarazhangrui/status/2047386837266886872" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+    </ul>
+</section>
+
+  <p class="post-end">✦</p>
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-04-23.html">← APR 23</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
