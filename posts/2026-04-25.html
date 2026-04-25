@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — April 25, 2026</title>
+  <meta name="description" content="Google 拟追投 Anthropic 最高 400 亿美元，Cohere + Aleph Alpha 组成欧美主权 AI 联盟；DeepSeek V4 Flash 的 1M 上下文「便士级定价」被多位研究者视为本次发布的真正颠覆点。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">April 25, 2026</h1>
+
+  <p class="post-lead">Google 拟追投 Anthropic 最高 400 亿美元，Cohere + Aleph Alpha 组成欧美主权 AI 联盟；DeepSeek V4 Flash 的 1M 上下文「便士级定价」被多位研究者视为本次发布的真正颠覆点。Builder 社区正在经历工具切换：Ryo Lu 已全面转向 GPT-5.5 + Composer 2，Aditya Agarwal 称我们正进入「后 Prompt」时代。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+<article class="item">
+  <h3><a href="https://www.ft.com/content/anthropic-google-investment-2026" target="_blank" rel="noopener">Google 拟向 Anthropic 追投最高 400 亿美元</a></h3>
+  <p>《金融时报》引述消息人士称，Google 正就一轮新融资进行谈判，金额最高可达 400 亿美元（约 2800 亿人民币），若成交将成为 AI 领域史上最大单笔企业投资。Anthropic 此前已获 Amazon 最高 250 亿美元承诺，两笔合计算力承诺意味着这家公司的训练与推理规模有望超过大多数独立 AI 实验室。社区讨论焦点在于 Anthropic 届时能部署的算力体量，而非品牌估值本身。</p>
+  <cite><a href="https://www.latent.space/p/ainews-deepseek-v4-pro-16t-a49b-and" target="_blank" rel="noopener">Latent Space AINews</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/mattturck/status/2047721904438493482" target="_blank" rel="noopener">Cohere + Aleph Alpha 欧美主权 AI 合并</a></h3>
+  <p>加拿大 Cohere 与德国 Aleph Alpha 宣布合并，主打「企业级、隐私优先、不依赖美国超大云」定位。两家公司客户均以欧洲政府、金融、医疗机构为主。Matt Turck（FirstMark Capital）认为时机选得很妙：随着美国模型在数据主权问题上受到越来越多监管审查，欧美企业现在有了一个在地备选方案。</p>
+  <cite><a href="https://x.com/mattturck/status/2047721904438493482" target="_blank" rel="noopener">X @mattturck</a> · <a href="https://www.latent.space/p/ainews-deepseek-v4-pro-16t-a49b-and" target="_blank" rel="noopener">Latent Space AINews</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+<article class="item">
+  <h3><a href="https://www.latent.space/p/ainews-deepseek-v4-pro-16t-a49b-and" target="_blank" rel="noopener">DeepSeek V4 Flash 才是真正的颠覆者</a></h3>
+  <p>DeepSeek V4 发布的头条被 Pro（1.6T 参数）占据，但研究者们私下谈的是 Flash：284B 参数，1M 上下文，输入 $0.14 / 输出 $0.28 每百万 token。Luka Blagojevic（@teortaxesTex）说得直接：「他们完成了任务——真正可用的超长上下文」。</p>
+  <p>技术上，V4 引入了 Compressed Sparse Attention（CSA）和 Heavily Compressed Attention（HCA）两层注意力压缩方案，让 1M token KV 缓存从 V3.2 的 83.9 GiB 压到 9.62 GiB，再配合 FP4/FP8 混合量化后再降一半，最终只占约 10%。Flash 版本甚至可以在 256GB Mac 上跑。Arena 数据显示 Flash 的推理得分与 Pro@high 设置几乎持平，但成本便宜 12 倍。</p>
+  <p>这意味着「把 1M 上下文送进每一个 agentic 工作流」在经济上首次真正可行。不过有个隐患：V4 Pro 在 Artificial Analysis 的评测中用掉了 1.9 亿输出 token，按件计费时的实际账单仍可能吓人。</p>
+  <p><strong>开放权重的长上下文战争已经有了第一个真正的民用选手，问题是谁先把它嵌进产品。</strong></p>
+  <cite><a href="https://www.latent.space/p/ainews-deepseek-v4-pro-16t-a49b-and" target="_blank" rel="noopener">Latent Space AINews</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/swyx/status/2047715417867907539" target="_blank" rel="noopener">swyx（Latent Space 创始人）：今天的热门技能，明天就是 posttrain 目标</a></h3>
+  <p>swyx 用一句话击中了 AI 时代学习焦虑的本质：「今天流行的技能，明天就会成为模型 post-training（后训练，即 RLHF/微调等步骤）的标准化目标。」换句话说，你越努力学一项当下最吃香的技能，这项技能被自动化掉的速度就越快，因为大量人类示范数据正在为下一代模型铺路。</p>
+  <p>这个逻辑没有「不学就安全」的出路，而是指向另一个方向：持续向前移动到模型还没覆盖的地方，或者去做模型永远需要人类判断力的事。</p>
+  <p><strong>swyx 描述的不是焦虑，是一张加速时代的漂移路线图。</strong></p>
+  <cite><a href="https://x.com/swyx/status/2047715417867907539" target="_blank" rel="noopener">X @swyx</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/adityaag/status/2047669585667666321" target="_blank" rel="noopener">Aditya Agarwal（SPC 创始人）：我们正在进入「后 Prompt」时代</a></h3>
+  <p>「我们正在接近一个不再需要 prompting（手动写指令）的世界。」Aditya Agarwal 的这句断言背后的逻辑是：随着模型自主性增强，让 AI 理解意图的方式从「写好指令」变成「给出目标和上下文」，再到「让系统自己推断意图」。Prompt 工程作为一项专业技能正在走向平台期。</p>
+  <p>这不代表 prompting 消失，而是它从前台走向幕后，成为框架和系统的内部实现，而非用户日常操作界面。</p>
+  <p><strong>Aditya 指的不是 prompt 写法变了，是 AI 交互的主接口正在位移。</strong></p>
+  <cite><a href="https://x.com/adityaag/status/2047669585667666321" target="_blank" rel="noopener">X @adityaag</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/danshipper/status/2047797874600161334" target="_blank" rel="noopener">Dan Shipper（Every 创始人）：任何 AI 都比任何单个人类知道得更多</a></h3>
+  <p>Dan Shipper 直接说出了那个让人不舒服的事实：就信息量和覆盖范围而言，任何一个 AI 都已经超过任何一个人类个体。这句话的意义不在于「AI 更聪明」，而在于个体知识的垄断性（即「因为我知道你不知道，所以我有价值」）正在被瓦解，真正的竞争优势将越来越依赖判断力、关系和执行力，而非存储式知识本身。</p>
+  <p><strong>Dan 描述的是知识经济的底层重构，不是 AI 能力的炫耀。</strong></p>
+  <cite><a href="https://x.com/danshipper/status/2047797874600161334" target="_blank" rel="noopener">X @danshipper</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+<article class="item">
+  <h3><a href="https://x.com/amasad/status/2047747978690232550" target="_blank" rel="noopener">Amjad Masad（Replit CEO）：几次点击导入 Vercel / Lovable 项目</a></h3>
+  <p>Replit 上线了一键迁移功能，可以直接把 Vercel 或 Lovable 上的项目导入到 Replit 环境，保留文件结构和依赖配置。Vercel 和 Lovable 都是当前 vibe coding（即用自然语言生成代码的快速原型工具）最主流的宿主平台，Replit 此举等于在入口侧开了一个吸管。</p>
+  <p>对用户来说，这意味着可以从「纯生成」工具平滑过渡到 Replit 的「可部署、可运行」环境，而不用手动复制代码。Amjad Masad 一贯的策略是降低切换成本、拓宽用户来源，这次动作延续了这个逻辑。</p>
+  <p><strong>Replit 把自己变成所有 AI 原型项目的第二站，而非第一站，这是一步防守中的进攻。</strong></p>
+  <cite><a href="https://x.com/amasad/status/2047747978690232550" target="_blank" rel="noopener">X @amasad</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/petergyang/status/2047882568520102226" target="_blank" rel="noopener">petergyang：GPT-5.5 + Codex 15 分钟做出《星际火狐》，AI 自测 bug</a></h3>
+  <p>Peter Yang 用 GPT-5.5 和 Codex（OpenAI 的代码 agent 工具）做出了一个可运行的《星际火狐》风格射击游戏，整个 prompting 过程不到 15 分钟。更有趣的是后半段：他让 AI 自己去玩这个游戏进行测试，模型在「玩」的过程中发现了几个逻辑漏洞并自行修复。</p>
+  <p>这个 demo 不是在说游戏有多好玩，而是在演示「生成-测试-修复」闭环在代码 agent 上的实际样子：AI 不只是写代码，还能扮演 QA 工程师对自己的输出负责。</p>
+  <p><strong>一个 agent 能为自己的代码当玩家和测试员，软件开发的最后一道人工环节也在动摇。</strong></p>
+  <cite><a href="https://x.com/petergyang/status/2047882568520102226" target="_blank" rel="noopener">X @petergyang</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/nikunj/status/2047707257073524897" target="_blank" rel="noopener">Nikunj Kothari（FPV Ventures）：代号从来不是临时的</a></h3>
+  <p>Nikunj 给所有产品团队发了一条提醒：项目代号不会消失。工程师用「内部名字」写死了配置、日志、API 路由，等到正式上线时换名字往往会留下一堆遗留引用。他的建议：从第一天起就用你愿意公开的名字。另一条推文则是经典场景：设计师发现 PM「vibe coded 上线了他们的设计稿」（即 PM 用 AI 工具直接生成了本该由设计团队打磨的界面并提交了），配上了一个无语的表情包。</p>
+  <p>两条推文放在一起，描述的是 AI 工具打破原有职能边界之后产生的新型团队摩擦：技术债从代码层向命名层蔓延，交付权从职能专家向任何手边有工具的人扩散。</p>
+  <p><strong>Nikunj 用两条推文记录了 AI 赋能之后的新型 PM-设计师战争。</strong></p>
+  <cite><a href="https://x.com/nikunj/status/2047707257073524897" target="_blank" rel="noopener">X @nikunj</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+<article class="item">
+  <h3><a href="https://tim.blog/" target="_blank" rel="noopener">Tim Ferriss 5-Bullet Friday：从《饮食男女》到技术乐观主义作为一种宗教</a></h3>
+  <p>本期 Tim 推荐了李安 1994 年的《饮食男女》：一个台北老厨师与三个未婚女儿共享每周日晚饭，食物是仪式，饭桌是家庭力学的放大镜。Tim 说他看了至少五遍，每次都饿着肚子出来。电影现在在 YouTube 免费可看。</p>
+  <p>阅读部分，Tim 转发了 Reid Hoffman 新 Substack「Theory of the Game」的首篇《Faith in the Possible》。Reid 把科技乐观主义解剖成一种宗教结构：有信条（创造本身是意义），有宗派（激进加速主义 vs 审慎乐观主义），有异见者。Tim 特别提醒：评论区比正文更值得一读，有不少批判性视角把创业公司作为「进步引擎」这一假设拆得很彻底。</p>
+  <p>Kevin Kelly 的《Some Contemporary Heresies》同样在列，收录了一批「聪明人才敢说出口的离经叛道判断」。聪明不等于正确，但 Kelly 的框架是：只有异见才能在思想上给人留下真正的划痕。</p>
+  <p>本期压轴语录来自拉比哲学家 Jonathan Sacks：「在家庭中，我学会了爱的复杂编排——给予、索取、分享；从服从到责任的成长；犯错、原谅、争吵、和好；赢而不骄，输而知收。」</p>
+  <p><strong>Tim 这一期把三个不同时代的声音串在一起，共同问的是同一件事：什么给生命提供结构，什么给信念提供基础。</strong></p>
+  <cite><a href="https://go.tim.blog/5-bullet-friday-1/" target="_blank" rel="noopener">Tim Ferriss 5-Bullet Friday</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/thenanyu/status/2047751915271020920" target="_blank" rel="noopener">thenanyu：产品的核心是「理解」，不是「输出」</a></h3>
+  <p>Nan Yu 引用了一句设计格言：「核心设计是关于理解，而非输出。」这句话在 AI 产品泛滥的当下尤其扎心——大量工具在拼命优化输出速度、输出质量、输出格式，却跳过了最难的部分：真正理解用户在特定情境下需要什么。</p>
+  <p>他的另一条推文只有三个字：「Cathedrals. Everywhere.」（大教堂随处可见）。读下来像是一种感慨：那种花了几十年、几代人去打磨、从细节到整体都在讲究的造物态度，在这个追求快速迭代的时代依然存在，散落在意想不到的角落。两条推文合在一起，是关于做事态度的一种沉默主张。</p>
+  <p><strong>「理解先于输出」是 Nan Yu 给所有用 AI 加速交付的团队留下的一个反问。</strong></p>
+  <cite><a href="https://x.com/thenanyu/status/2047751915271020920" target="_blank" rel="noopener">X @thenanyu</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2604.14084" target="_blank" rel="noopener">TIP：在线蒸馏中只有 50% 的 token 真正有效（arXiv 2604.14084）</a></h3>
+  <p><strong>现状：</strong>在线蒸馏（on-policy distillation）让学生模型在自己生成的数据上接受教师模型的 token 级监督，是目前压缩大模型能力的主流方法。</p>
+  <p><strong>问题：</strong>全量 token 训练中，大量 token 对学习几乎没有贡献，造成计算和显存浪费。</p>
+  <p><strong>解决方案：</strong>论文提出 TIP（Token Importance in on-Policy distillation）框架，用「学生熵」和「师生分歧」两个维度对 token 打重要性分，高熵（学生不确定）和高分歧（学生自信但和教师不同）的 token 最有效。只选 50% 高价值 token 训练，可节省约 47% 的峰值显存。</p>
+  <p><strong>价值：</strong>在保持或超越全量训练质量的前提下，将训练成本减半，对中小团队跑蒸馏实验意义明显。</p>
+  <p><strong>未来方向：</strong>将 token 选择策略推广到非在线蒸馏场景，以及与 LoRA 等参数高效方法结合。</p>
+  <cite><a href="https://arxiv.org/abs/2604.14084" target="_blank" rel="noopener">arXiv 2604.14084</a> · <a href="https://huggingface.co/papers/2604.14084" target="_blank" rel="noopener">HuggingFace Papers</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2604.21254" target="_blank" rel="noopener">Hyperloop Transformers：参数减半，性能不减（arXiv 2604.21254）</a></h3>
+  <p><strong>现状：</strong>标准 Transformer 每增加深度（层数）都要线性增加参数量，显存和推理成本随之上升。</p>
+  <p><strong>问题：</strong>如何在不损失能力的前提下，大幅压缩参数规模。</p>
+  <p><strong>解决方案：</strong>MIT 团队提出 Hyperloop Transformer，将模型分为「头尾正常层 + 中间循环层」结构，中间部分反复复用同一批权重（looped，即权重共享式循环）。循环层再配合 DeepSeek 在论文中引入的 Hyper-connections（超连接，对残差流做矩阵化扩展）强化信息传递，整体参数约为同深度标准 Transformer 的 50%。</p>
+  <p><strong>价值：</strong>在 240M、1B、2B 三个规模上均超越同深度标准 Transformer，且量化后性能保持稳定，适合显存受限的部署场景。</p>
+  <p><strong>未来方向：</strong>探索更大参数规模的 Hyperloop 架构，以及与 MoE（混合专家）结合的可能性。</p>
+  <cite><a href="https://arxiv.org/abs/2604.21254" target="_blank" rel="noopener">arXiv 2604.21254</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2604.21816" target="_blank" rel="noopener">Tool Attention Is All You Need：每轮工具 token 从 47K 压到 2.4K（arXiv 2604.21816）</a></h3>
+  <p><strong>现状：</strong>Agent 系统通过 MCP（Model Context Protocol，模型上下文协议）或 function calling 接入多个工具时，每个工具的 schema（描述文档）都要塞进 context，120 个工具 / 6 个服务器的场景下每轮高达 47K token，占用近 70% 的有效上下文空间，推理质量明显下降。</p>
+  <p><strong>问题：</strong>每轮给模型「所有工具说明书」既浪费又降效，但提前不知道这轮会用哪个工具。</p>
+  <p><strong>解决方案：</strong>论文提出 Tool Attention，一个运行在中间件层的注意力机制，用 ISO（意图-schema 重叠度）评分实时决定加载哪些工具的 schema，不相关的工具延迟到真正需要时才注入（lazy loading）。120 工具基准测试中，每轮 token 从 47.3K 降至 2.4K，降幅 95%，上下文利用率从 24% 升至 91%。</p>
+  <p><strong>价值：</strong>对在生产环境中接入大量 MCP 服务的团队是直接的成本和质量双优化。</p>
+  <p><strong>未来方向：</strong>将动态 schema 注入与 agent 内存系统结合，支持跨会话 tool 使用历史感知。</p>
+  <cite><a href="https://arxiv.org/abs/2604.21816" target="_blank" rel="noopener">arXiv 2604.21816</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2604.21748" target="_blank" rel="noopener">StructMem：结构化分层记忆，提升 LLM 长对话推理（arXiv 2604.21748）</a></h3>
+  <p><strong>现状：</strong>长对话 agent 需要记住事件之间的关系，不只是孤立事实，才能做时间推理和多跳问答。</p>
+  <p><strong>问题：</strong>平铺记忆（flat memory）省算力但丢关系结构；图结构记忆（graph memory）能建关系但构建代价高且容易出错。</p>
+  <p><strong>解决方案：</strong>StructMem 提出「结构化分层记忆」框架，在事件级做双视角时间锚定，并定期做语义整合。在 LoCoMo 长对话推理 benchmark 上，同时提升了时间推理和多跳问答得分，还减少了 token 用量、API 调用次数和运行时长。</p>
+  <p><strong>价值：</strong>为需要跨对话持久记忆的 agent 提供了一个在质量和成本之间取得平衡的新选项。</p>
+  <p><strong>未来方向：</strong>将结构化记忆推广到工具调用历史和用户偏好的跨会话积累。</p>
+  <cite><a href="https://arxiv.org/abs/2604.21748" target="_blank" rel="noopener">arXiv 2604.21748</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2506.05233" target="_blank" rel="noopener">MesaNet：线性 RNN 新架构，固定内存推理追平 Transformer（arXiv 2506.05233）</a></h3>
+  <p><strong>现状：</strong>标准 Transformer 的 softmax 注意力在推理时显存和计算随序列长度线性增长；线性 RNN 模型（如 Mamba、xLSTM）可以做到固定推理成本，但能力通常略逊。</p>
+  <p><strong>问题：</strong>如何在保持 RNN 固定内存优势的同时，在能力上真正匹配 Transformer。</p>
+  <p><strong>解决方案：</strong>MesaNet 基于 Mesa layer 构建，用共轭梯度法（conjugate gradient solver）在每个时间步做局部最优化，支持分块并行（chunkwise parallelizable）且数值稳定。在 MAD benchmark（测试序列模型多种推理能力的综合基准）上，MesaNet 超越所有现有线性 RNN 架构，并与 Transformer 持平。</p>
+  <p><strong>价值：</strong>为长序列推理场景提供了一个在显存开销上有明显优势的 Transformer 替代方案。</p>
+  <p><strong>未来方向：</strong>在更大规模语言模型上验证，以及与 hybrid attention 架构结合。</p>
+  <cite><a href="https://arxiv.org/abs/2506.05233" target="_blank" rel="noopener">arXiv 2506.05233</a> · <a href="https://iclr.cc/virtual/2026/poster/10006633" target="_blank" rel="noopener">ICLR 2026</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+
+<ul class="glance-list">
+  <li>Ryo Lu（Cursor 设计师）已全面切换到 GPT-5.5 + Composer 2 作为主力工具。<a class="glance-src" href="https://x.com/ryolu_/status/2047879353313431649" target="_blank" rel="noopener">X @ryolu_ →</a></li>
+  <li>Cursor 上线 /multitask 命令可绕开排队，异步启动多个子 agent 并行处理任务。<a class="glance-src" href="https://x.com/ryolu_/status/2047766831105220799" target="_blank" rel="noopener">X @ryolu_ →</a></li>
+  <li>NotebookLM 新增自动打标签和分类来源功能，帮助管理大量研究资料。<a class="glance-src" href="https://x.com/joshwoodward/status/2047795981534847413" target="_blank" rel="noopener">X @joshwoodward →</a></li>
+  <li>Peter Steinberger（PSPDFKit 作者）：GPT 5.5 在角色感（character）上明显比前代更有立体感。<a class="glance-src" href="https://x.com/steipete/status/2047871519762567468" target="_blank" rel="noopener">X @steipete →</a></li>
+  <li>Dan Shipper 用 NotebookLM 基于正在读的书一键生成了播客，称「一次生成即成」。<a class="glance-src" href="https://x.com/danshipper/status/2047674383469093079" target="_blank" rel="noopener">X @danshipper →</a></li>
+  <li>Aaron Levie（Box CEO）：如果 AI 能让员工更高效，生产力提升会先体现在工作量增加，而非工作人数减少。<a class="glance-src" href="https://x.com/levie/status/2047747142308274645" target="_blank" rel="noopener">X @levie →</a></li>
+  <li>Garry Tan（YC 总裁）就左翼激进主义政治言论发表评论，认为此类言辞正在伤害民主党的形象。<a class="glance-src" href="https://x.com/garrytan/status/2047883265516924976" target="_blank" rel="noopener">X @garrytan →</a></li>
+  <li>Sam Altman：「这是美好的一周，团队值得骄傲，继续 build。」<a class="glance-src" href="https://x.com/sama/status/2047823357635354814" target="_blank" rel="noopener">X @sama →</a></li>
+  <li>Nikunj Kothari 推荐了一批他最近新关注的账号，以创业者和研究者为主。<a class="glance-src" href="https://x.com/nikunj/status/2047861559075250687" target="_blank" rel="noopener">X @nikunj →</a></li>
+  <li>swyx 在 jsconf.eu 的 Vercel AI 工程演讲录像已上线，展示了 Vercel 在 AI 基础设施上的最新实践。<a class="glance-src" href="https://x.com/swyx/status/2047749587163877668" target="_blank" rel="noopener">X @swyx →</a></li>
+  <li>Nan Yu：「大教堂随处可见。」（对那些花了几十年把一件事做到极致的团队的感慨）<a class="glance-src" href="https://x.com/thenanyu/status/2047674913557803284" target="_blank" rel="noopener">X @thenanyu →</a></li>
+  <li>ComfyUI（开源图像生成工作流工具）完成 3000 万美元融资，估值 5 亿美元，承诺保持开源本地化定位。<a class="glance-src" href="https://www.latent.space/p/ainews-deepseek-v4-pro-16t-a49b-and" target="_blank" rel="noopener">Latent Space AINews →</a></li>
+  <li>Mechanize 完成 920 万美元融资，估值 5 亿美元，方向是企业级 agent 自动化。<a class="glance-src" href="https://www.latent.space/p/ainews-deepseek-v4-pro-16t-a49b-and" target="_blank" rel="noopener">Latent Space AINews →</a></li>
+  <li>HuggingFace 发布 ML Intern，一款开源 CLI 工具，可自动执行 ML 实验流程最多 300 步，支持搜索论文、写代码、调用 HF Datasets 和 GitHub。<a class="glance-src" href="https://www.latent.space/p/ainews-deepseek-v4-pro-16t-a49b-and" target="_blank" rel="noopener">Latent Space AINews →</a></li>
+  <li>DeepSeek 开源 DeepEP V2 和 TileKernels，前者优化专家并行通信效率，后者引入一种线性扩展的并行内核方案。<a class="glance-src" href="https://www.latent.space/p/ainews-deepseek-v4-pro-16t-a49b-and" target="_blank" rel="noopener">Latent Space AINews →</a></li>
+  <li>Hermes Agent v0.11.0 更新：重写了终端 UI、加入 dashboard 插件、主题支持和更多推理提供商，同日支持 DeepSeek V4 和 GPT-5.5。<a class="glance-src" href="https://www.latent.space/p/ainews-deepseek-v4-pro-16t-a49b-and" target="_blank" rel="noopener">Latent Space AINews →</a></li>
+  <li>OpenAI 为 GPT-5.5 推出 Bio Bug Bounty 计划，邀请安全研究人员测试生物安全边界。<a class="glance-src" href="https://www.latent.space/p/ainews-deepseek-v4-pro-16t-a49b-and" target="_blank" rel="noopener">Latent Space AINews →</a></li>
+  <li>Tim Ferriss 分享 Dr. Tommy Wood 撰写的《如何保持大脑锐利：超越基础的实操手册》，涵盖神经保护和认知提升策略。<a class="glance-src" href="https://tim.blog/2026/04/24/how-to-keep-your-brain-sharp/" target="_blank" rel="noopener">Tim Ferriss Blog →</a></li>
+  <li>Tim Ferriss 关注的眼部淋巴系统（ocular glymphatic system）研究：大脑的「废物清除系统」与神经退行性疾病之间的关联，以及增强其功能的新疗法方向。<a class="glance-src" href="https://go.tim.blog/5-bullet-friday-1/" target="_blank" rel="noopener">Tim Ferriss 5-Bullet Friday →</a></li>
+  <li>Tim Ferriss 推荐 Rory Sutherland（奥美副主席）关于速度感知与安全的短片：仪表盘上的一个细节如何彻底改变我们对速度的心理感受。<a class="glance-src" href="https://www.instagram.com/reels/DQ4JZabjEAL/" target="_blank" rel="noopener">Instagram →</a></li>
+</ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-04-24.html">← APR 24</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
