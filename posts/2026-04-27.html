@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — April 27, 2026</title>
+  <meta name="description" content="Google 宣布对 Anthropic 投资最高达 400 亿美元；苹果确认 John Ternus 9 月 1 日接任 CEO，两周后发布折叠屏 iPhone。Anthropic「项目交易」实验表明 Opus 4.5 代理谈出的价格显著优于 Haiku，但被较弱代理代表的用户几乎察觉不到。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">April 27, 2026</h1>
+
+  <p class="post-lead">Google 宣布对 Anthropic 投资最高达 400 亿美元；苹果确认 John Ternus 9 月 1 日接任 CEO，两周后发布折叠屏 iPhone。Anthropic「项目交易」实验表明 Opus 4.5 代理谈出的价格显著优于 Haiku，但被较弱代理代表的用户几乎察觉不到自己吃了亏。Guillermo Rauch 认为 Coding Agent 是通往超级智能自我改进的基础，Sam Altman 提出 OS 和互联网协议都需要为人机对等可用性重新设计。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+<article class="item">
+  <h3><a href="https://links.tldrnewsletter.com/QCwsDk" target="_blank" rel="noopener">苹果 CEO 换将：Ternus 9 月 1 日接棒，两周后发布折叠屏 iPhone</a></h3>
+  <p>Tim Cook 将于 9 月 1 日正式卸任，John Ternus 接任 CEO。Ternus 此前主管苹果硬件工程，折叠屏 iPhone 的研发就是他主导的，他将在就任后不到两周即发布这款苹果「十年来最大新产品」。这次交棒的节奏经过精心设计：接班人带着他亲手造的旗舰产品上台，既有连续性，又给新任 CEO 留出了业绩缓冲。市场对折叠屏的期待将在 9 月转化为具体的购买数据，Ternus 的第一份成绩单将在上任首季出炉。</p>
+  <cite><a href="https://links.tldrnewsletter.com/QCwsDk" target="_blank" rel="noopener">TLDR</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arstechnica.com/ai/2026/04/google-will-invest-as-much-as-40-billion-in-anthropic/" target="_blank" rel="noopener">Google 投资 Anthropic 最高达 400 亿美元；亚马逊已先投 50 亿，双方合计估值 3500 亿</a></h3>
+  <p>Bloomberg 报道，Google 已承诺向 Anthropic 投资至少 100 亿美元，若 Anthropic 达到特定绩效目标可追加至 400 亿美元。几天前，亚马逊以相似的绩效挂钩结构投资了 50 亿美元。两笔交易都以 3500 亿美元估值定价，但不代表简单的股权注资：它们同时锁定了算力采购协议，谷歌和亚马逊各自把 Anthropic 的计算需求绑在自己的云平台上。Claude Code 和企业版 Claude 的快速增长是推高谈判筹码的直接原因。</p>
+  <cite><a href="https://arstechnica.com/ai/2026/04/google-will-invest-as-much-as-40-billion-in-anthropic/" target="_blank" rel="noopener">Ars Technica</a> · <a href="https://www.theaivalley.com/p/meta-s-manus-acquisition-blocked-by-china" target="_blank" rel="noopener">AI Valley</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://www.msn.com/en-us/news/world/beijing-blocks-meta-acquisition-of-chinese-ai-startup-manus/ar-AA21OBOP" target="_blank" rel="noopener">中国叫停 Meta 对 Manus 的 20 亿美元收购，理由是外资所有权与 AI 国家安全</a></h3>
+  <p>Meta 此前以约 20 亿美元收购了中国 AI 初创公司 Manus，Manus 随后将运营迁至新加坡，员工也已并入。中国国家发展和改革委员会罕见地要求已完成的交易回退，援引外资所有权和 AI 资产国家安全为由。收购如何在资金已转移、人员已整合的情况下拆解，目前仍不明朗。这一决定可能给中国 AI 初创公司的跨境并购打上「不确定性」标签，并为 Meta 在 AI 布局上增添了新的麻烦。</p>
+  <cite><a href="https://www.theaivalley.com/p/meta-s-manus-acquisition-blocked-by-china" target="_blank" rel="noopener">AI Valley</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+<article class="item">
+  <h3><a href="https://x.com/rauchg" target="_blank" rel="noopener">Guillermo Rauch（Vercel CEO）：Coding Agent 是通往超级智能自我改进的地基</a></h3>
+  <p>Rauch 在 X 上发了一段延伸讨论，核心是：Coding Agent 不只是效率工具，而是超级智能（superintelligence，即远超人类能力的 AI）的必要前提。理由是自我改进能力依赖代码生成，只有能写出比自身更好代码的 Agent，才可能启动真正的能力自举。这个论断背后有 Vercel 自身数据支撑：他们平台上 30% 的应用已经由 Agent 直接生成，年化收入从 2024 年初的 1 亿美元增长到 2026 年 2 月的 3.4 亿美元，增长飞轮已经形成。</p>
+  <p>Rauch 此前说过一句话值得并排来看：「代理会让定制软件比购买现成软件更快。」这两个判断合在一起描述的是同一件事：软件生产的单位成本正在跨越某个拐点，超过这个拐点后，Agent 自建比外采更快，那么软件分发与软件生产的经济学都要重写。Vercel 的 IPO 准备信号恰好在这个时间点出现，不是巧合。</p>
+  <p><strong>Rauch 把 Coding Agent 描述为超级智能的脚手架，而不是目的本身，这是目前少有人说清楚的一步。</strong></p>
+  <cite><a href="https://x.com/rauchg" target="_blank" rel="noopener">X @rauchg</a> · <a href="https://techcrunch.com/2026/04/13/vercel-ceo-guillermo-rauch-signals-ipo-readiness-as-ai-agents-fuel-revenue-surge/" target="_blank" rel="noopener">TechCrunch</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/sama" target="_blank" rel="noopener">Sam Altman：是时候认真重新设计操作系统和用户界面了，人和 Agent 需要同等可用</a></h3>
+  <p>Altman 在 X 上写道：「感觉是认真重新思考操作系统和用户界面设计的好时机（互联网也是）；应该有一个对人和 Agent 同等可用的协议。」这句话说的是一个目前还没人专门做、但越来越急迫的问题：现在所有的 OS 和 Web 协议都为人类交互设计，Agent 只能通过模拟鼠标点击、截图理解、HTML 解析等绕路方式操作，既低效又脆弱。</p>
+  <p>如果一个新协议真的出现，它意味着从 HTTP 到应用层的接口都需要重写，软件架构的「能被 Agent 调用」将成为和「能被人用」同等重要的一维设计要求。这件事现在还是一个开放问题，但说出这句话的是 Sam Altman，而且是在 GPT-5.5 发布、Agent 能力刚出现明显跃升的节点上说的。</p>
+  <p><strong>Altman 不是在描述一个产品，是在描述一场基础设施层的需求，目前只有问题，没有答案。</strong></p>
+  <cite><a href="https://x.com/sama" target="_blank" rel="noopener">X @sama</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+<article class="item">
+  <h3><a href="https://www.anthropic.com/features/project-deal" target="_blank" rel="noopener">Anthropic「项目交易」：Claude Agent 完成 186 笔实物交易，Opus 谈价更好但用户感知不到</a></h3>
+  <p>Anthropic 在 2025 年 12 月对内部 69 名员工做了一个真实货币实验：每人 100 美元预算，全程由 Claude Agent 代为买卖，真实货品在谈判成功后实际交换。Agent 通过专属 Slack 频道完成挂单、出价、议价、成交，最终促成 186 笔交易，总交易额超过 4000 美元——从单板滑雪到一袋乒乓球。</p>
+  <p>最值得关注的是模型质量实验：Anthropic 悄悄将用户随机分配给 Claude Opus 4.5 或 Haiku 4.5（两者推理能力差距明显），结果发现 Opus 卖家每件多赚 2.68 美元，Opus 买家每笔省 2.45 美元，Opus 用户平均多完成 2.07 笔交易。但被 Haiku 代理的用户在交易公平感评分上几乎与 Opus 用户持平（4.06 对 4.05），几乎察觉不到自己在博弈中处于劣势。Agent 代替人谈判已经到来，但不是所有 Agent 的能力都一样，而用户通常看不出差距。</p>
+  <p><strong>Anthropic 证明了 Agent 商务谈判的可行性，顺带揭示了一个结构性风险：被较差 Agent 代表的用户会系统性地亏钱，却没有任何感知。</strong></p>
+  <cite><a href="https://www.anthropic.com/features/project-deal" target="_blank" rel="noopener">Anthropic</a> · <a href="https://www.theaivalley.com/p/meta-s-manus-acquisition-blocked-by-china" target="_blank" rel="noopener">AI Valley</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://every.to" target="_blank" rel="noopener">Every.to：你才是最贵的模型，AI Agent 真正的成本是你盯着它的时间</a></h3>
+  <p>Every.to 本期主题：「The real cost of AI agents is your time.」（AI Agent 的真实成本是你的时间。）这个论断直接打穿了一个普遍误解，即为什么我的 API 账单这么高。账单是显性成本，但真正的瓶颈是你花在启动任务、检查中间结果、纠正偏差上的注意力。每次你决定「让 Agent 再跑一次」还是「我来改」，都在消耗你的判断力，而判断力是不可扩展的。</p>
+  <p>框架的核心是区分哪些任务可以真正放手（Agent 可以犯错并自我修正，结果可逆），哪些任务需要人持续盯着（结果不可逆、错误代价高）。这不是「AI 够不够聪明」的问题，而是「这类错误的代价和发现窗口期」的问题。Every 的结论是：先做任务映射，再决定是否让 Agent 接管。</p>
+  <p><strong>当所有人都在问「这个 Agent 能做什么」，Every 问的是「你盯着它要花多少时间」，这才是正确的 ROI 计算框架。</strong></p>
+  <cite><a href="https://every.to" target="_blank" rel="noopener">Every.to</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/garrytan" target="_blank" rel="noopener">Garry Tan（YC 总裁）：用 SOUL.md / USER.md / AGENTS.md 给 Agent 注入持久身份与规则</a></h3>
+  <p>Garry Tan 分享了他给自己的 Agent 配置「身份文件」的做法：SOUL.md 定义 Agent 的性格和价值观，USER.md 描述使用者是谁、偏好和习惯，AGENTS.md 规定 Agent 之间协作的规则和权限边界。这三个 Markdown 文件放进工作目录，Agent 在每次对话时都能读取，形成跨对话的持久上下文（persistent context，即不随对话结束而消失的记忆）。</p>
+  <p>这套做法本质上是把「谁在做事、为谁做事、规则是什么」结构化地写下来，让 Agent 不再是每次从零开始的工具，而是有稳定身份的协作者。Tan 的 OpenClaw 在这套配置下甚至会在晚上 12:30 后拒绝回复，因为他在 USER.md 里写了健康目标。</p>
+  <p><strong>SOUL.md / USER.md / AGENTS.md 是目前最具可操作性的 Agent 个性化方案，不需要修改模型，只需要修改上下文。</strong></p>
+  <cite><a href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+<article class="item">
+  <h3>纯银：AI 时代坐电梯上升的集体幻觉</h3>
+  <p>纯银这期的核心问题是：如果擅长用 AI 之后你的产出大幅提升，那你的竞争力是什么？他的答案是：价格不是由价值决定的，价格是由竞争决定的。AI 赋能有很强的「点石成金」体感，但这种体感是个陷阱，因为当每个人都同样被提升，你相对于竞争对手的位置并没有改变，只是整体市场的效率门槛被拉高了。</p>
+  <p>他援引了娱乐圈从业者的观察：行业里每个人都在卷，卷到最后价格被压下去，只有少数头部留住了溢价。AI 时代的竞争逻辑与此相似，AI 是「电梯」，把楼层基准线整体抬高，但抬高不代表你在这栋楼里的位置更高。真正的竞争优势，来自你在 AI 均匀提升所有人之后还剩下的那部分差异。</p>
+  <p><strong>纯银说的不是 AI 没用，而是「AI 赋能的体感」和「竞争优势的实质」是两件事，混淆它们才是危险所在。</strong></p>
+  <cite><a href="https://xiaobot.net" target="_blank" rel="noopener">小报童 · 纯银</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/adityaag" target="_blank" rel="noopener">adityaag：不只是 Sawe 打破了两小时马拉松，而是两个人都做到了</a></h3>
+  <p>2025 年，Kelvin Kiptum 第一个打破了马拉松两小时壁垒（即跑完 42.195 公里用时不到两小时，被认为是人类体能的天花板之一）。adityaag 的观察是：这件事的意义不只在于 Kiptum 本人，而在于此后 Sawe 也做到了。第一个人证明了「这在物理上是可能的」，第二个人的出现才说明「这不是偶然，是可重复的」。</p>
+  <p>他把这个观察推向一个更大的命题：人类进步从来不只是单个天才的独自飞跃，而是一个人先证明可能、第二个人把可能变成常态、更多人把常态变成基线的叠加过程。这个模式在科学突破、技术革命、社会运动里反复出现，AI 领域也不例外。</p>
+  <p><strong>Sawe 的成绩之所以比 Kiptum 更重要，是因为它把一个奇迹变成了一个数据点。</strong></p>
+  <cite><a href="https://x.com/adityaag" target="_blank" rel="noopener">X @adityaag</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2604.18564" target="_blank" rel="noopener">MultiWorld：多智能体多视角视频世界模型（arXiv 2604.18564）</a></h3>
+  <p><strong>现状：</strong>当前主流视频世界模型（video world model，即用视频预测来模拟环境的模型）默认只有一个 Agent 在环境里行动，无法处理多个 Agent 同时存在、互相影响的场景。</p>
+  <p><strong>问题：</strong>多玩家游戏和多机器人协作等场景需要模型同时追踪多个 Agent 的动作，并保证不同视角（camera views）之间的观察一致性，单 Agent 架构根本无法扩展到这里。</p>
+  <p><strong>解决方案：</strong>香港大学团队提出 MultiWorld，引入 Multi-Agent Condition Module 控制每个 Agent 的独立动作，用 Global State Encoder 保证多视角观察的全局一致性，多视角并行合成，不随 Agent 和视角数量增加而线性变慢。</p>
+  <p><strong>价值：</strong>在多人游戏和多机器人操控两类场景上验证，动作可控、视角一致，为具身 AI（embodied AI，即在物理或仿真环境中行动的 AI）训练提供了更真实的多体仿真基础。</p>
+  <p><strong>未来方向：</strong>扩展到更大规模的真实世界机器人集群任务，以及和强化学习框架结合做多 Agent 策略训练。</p>
+  <cite><a href="https://arxiv.org/abs/2604.18564" target="_blank" rel="noopener">arXiv 2604.18564</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2604.03088" target="_blank" rel="noopener">SkVM：将 LLM Skills 当代码编译，跨模型跨 Harness 可移植（arXiv 2604.03088）</a></h3>
+  <p><strong>现状：</strong>AI Agent 的「技能」（skill，即预定义的能力模块，如「发邮件」「查日历」）被当作普通文本上下文注入给 LLM，同一个技能在不同模型上行为不一致，换一个 agent harness（运行 Agent 的框架，如 AutoGen、LangGraph）又要重写。</p>
+  <p><strong>问题：</strong>技能无法跨模型、跨平台移植，类似早期软件没有操作系统的状态，每个程序都要为每台机器单独编写。</p>
+  <p><strong>解决方案：</strong>上海交通大学团队提出 SkVM，把技能视为代码，在编译时做能力分析、环境绑定、并发抽取，运行时做 JIT 固化（just-in-time solidification，即将反复使用的技能模式缓存为确定性代码以降低推理开销）和自适应重编译。</p>
+  <p><strong>价值：</strong>在 8 个不同规模 LLM 和 3 个 Agent harness 上评测，减少 token 消耗最多 40%，最高 3.2 倍速度提升，通过 JIT 固化达到 19-50 倍延迟降低，且任务完成率提高。</p>
+  <p><strong>未来方向：</strong>将 SkVM 推广到更多 Agent 框架，以及探索技能市场（skill marketplace）生态。</p>
+  <cite><a href="https://arxiv.org/abs/2604.03088" target="_blank" rel="noopener">arXiv 2604.03088</a> · <a href="https://huggingface.co/papers/2604.03088" target="_blank" rel="noopener">HuggingFace Papers</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2604.06376" target="_blank" rel="noopener">MTA-Agent：首个多模态深度搜索 Agent 开源配方（arXiv 2604.06376）</a></h3>
+  <p><strong>现状：</strong>当前「深度搜索」（deep search，即 Agent 自主发起多轮搜索并综合信息的能力）Agent 几乎全是纯文本的，只检索文字，忽略图像。</p>
+  <p><strong>问题：</strong>真实世界的信息大量以图文混合形式存在（产品图、论文图表、地图截图），纯文本 Agent 只能处理一半的知识库。</p>
+  <p><strong>解决方案：</strong>MTA-Agent 提出完整的多模态深度搜索 Agent 方案，支持动态图文并行检索。文中提到 MMSearch-R1 通过强化学习训练 Agent 在搜索时自主决定是否需要检索图像，实现真正意义上的图文混合深度搜索。</p>
+  <p><strong>价值：</strong>提供了开放的配方（open recipe），团队把实现细节完整公开，任何团队都可以复现和扩展，对需要处理图文混合信息的知识库 Agent 有直接参考价值。</p>
+  <p><strong>未来方向：</strong>扩展到视频检索，以及与多跳推理（multi-hop reasoning，即需要多步信息拼接才能回答的问题）结合。</p>
+  <cite><a href="https://arxiv.org/abs/2604.06376" target="_blank" rel="noopener">arXiv 2604.06376</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2603.22862" target="_blank" rel="noopener">LLM Agent 工具调用进化图谱：从单工具到多工具编排（arXiv 2603.22862）</a></h3>
+  <p><strong>现状：</strong>LLM Agent 的工具调用能力（tool use，即让模型能调用外部 API 或执行代码的能力）已从早期的单次调用演进到复杂的多工具并行编排，但这个演进过程缺乏系统性梳理。</p>
+  <p><strong>问题：</strong>如何评估和比较不同系统的工具调用能力，目前没有统一的分类框架和评测维度。</p>
+  <p><strong>解决方案：</strong>本文围绕六个核心维度系统整理文献：推理时规划与执行、训练与轨迹构建、安全与控制、资源约束下的效率、开放环境中的能力完整性、benchmark 设计与评测，并指出线性推理流程已向原生推理时计算和 MCP（Model Context Protocol，即模型上下文协议，一种让模型与外部工具通信的标准）等开放标准演进。</p>
+  <p><strong>价值：</strong>为 Agent 工程师提供了选型、评测和规划下一步的系统参考图，对做 Agent 工具链设计的团队有直接参考价值。</p>
+  <p><strong>未来方向：</strong>探索工具调用能力的自动化评测框架，以及更复杂的跨工具编排基准。</p>
+  <cite><a href="https://arxiv.org/abs/2603.22862" target="_blank" rel="noopener">arXiv 2603.22862</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2505.22101" target="_blank" rel="noopener">MemOS：为 LLM 设计的记忆操作系统，像 OS 管进程一样管记忆（arXiv 2505.22101）</a></h3>
+  <p><strong>现状：</strong>LLM 的「记忆」目前分散在三层：参数记忆（parametric memory，训练时压进权重的知识）、激活态记忆（activation memory，对话上下文窗口内的临时状态）和外部检索（RAG，即检索增强生成，通过查外部数据库补充知识）。三层各自独立，没有统一管理。</p>
+  <p><strong>问题：</strong>跨对话的长期记忆、任务间知识复用、多模态记忆整合，都没有系统性解决方案，导致 Agent 「用完就忘」，无法积累经验。</p>
+  <p><strong>解决方案：</strong>MemOS 提出 MemCube 作为统一记忆抽象（memory abstraction），可追踪、融合、迁移三类记忆，并引入操作系统级的治理机制：调度、分层、API 抽象、权限控制和异常处理。</p>
+  <p><strong>价值：</strong>为持续学习（continual learning）和长期运行的 Agent 系统提供了基础设施层方案，对构建有「记忆」的 Agent 的团队有直接参考价值。</p>
+  <p><strong>未来方向：</strong>将 MemOS 与主流 Agent 框架集成，以及探索多 Agent 共享记忆池的协作场景。</p>
+  <cite><a href="https://arxiv.org/abs/2505.22101" target="_blank" rel="noopener">arXiv 2505.22101</a> · <a href="https://huggingface.co/papers/2505.22101" target="_blank" rel="noopener">HuggingFace Papers</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+
+<ul class="glance-list">
+  <li>Tesla Cybercab 正式量产，无方向盘无踏板，完全依赖视觉 FSD（Full Self-Driving，即纯视觉全自动驾驶）系统，在 Giga Texas 下线。<a class="glance-src" href="https://www.teslarati.com/tesla-confirms-cybercab-with-no-steering-wheel-enters-production/" target="_blank" rel="noopener">TLDR →</a></li>
+  <li>X Money（马斯克的银行+支付平台）预计本月底上线：免费 P2P 转账、金属 Visa 借记卡、3% 返现、6% 储蓄利率，多州支付牌照尚未到位。<a class="glance-src" href="https://links.tldrnewsletter.com/KjIEH6" target="_blank" rel="noopener">TLDR →</a></li>
+  <li>ASML 是全球唯一能生产 EUV 光刻机（制造最先进芯片的必需设备）的公司，正在扩建产线、裁减管理层以加快决策，已成为欧洲市值最高的公司。<a class="glance-src" href="https://links.tldrnewsletter.com/VKanfs" target="_blank" rel="noopener">TLDR →</a></li>
+  <li>工程经理（EM）角色正在上移一层抽象：把日常管理任务委托给 Agent，自己聚焦判断、关系和组织影响力；纯运营型 EM 最危险。<a class="glance-src" href="https://peterszasz.com/agentic-engineering-management/" target="_blank" rel="noopener">TLDR →</a></li>
+  <li>Shopify 今年继续招聘 1000 名实习生，目的是引入「用 AI 重新想象如何构建产品」的原生 AI 一代，而不是简单控制人力成本。<a class="glance-src" href="https://coderpad.io/blog/hiring-developers/in-the-ai-era-shopify-is-investing-in-junior-engineers-not-cutting-them/" target="_blank" rel="noopener">TLDR →</a></li>
+  <li>Anguilla 的 .ai 域名从 1990 年代起被分配，ChatGPT 引爆 AI 创业潮后注册量从 6 万涨到逾 100 万，域名收入现已占该国国家预算近半。<a class="glance-src" href="https://www.theaivalley.com/p/meta-s-manus-acquisition-blocked-by-china" target="_blank" rel="noopener">AI Valley →</a></li>
+  <li>GPT-5.5 评测：Claire 用「我信任你，自己搞定」的 prompt 让 GPT-5.5 连续工作近 6 小时，完成 200 万行数据迁移，清掉六个月技术债。<a class="glance-src" href="https://www.chatprd.ai/how-i-ai/openai-gpt-5.5-review" target="_blank" rel="noopener">Lenny's / ChatPRD →</a></li>
+  <li>GPT-5.5 还破解了六个月都没人能逆向的中国蓝牙音箱私有协议，Claude Code、GPT-4 都失败了，GPT-5.5 在完整上下文下成功拆解 bitmap 编码和蓝牙传输机制。<a class="glance-src" href="https://www.chatprd.ai/how-i-ai/openai-gpt-5.5-review" target="_blank" rel="noopener">Lenny's / ChatPRD →</a></li>
+  <li>Claude Design 评测：擅长依据设计系统生成营销落地页和 PPT，但处理 App 组件和复杂 UX 流程时推理变差；Figma 在迭代速度上仍胜出，每次调整不需要跑 LLM。<a class="glance-src" href="https://www.chatprd.ai/how-i-ai/claude-design-and-gpt-images-2-building-landing-pages-slides-and-brand-kits" target="_blank" rel="noopener">Lenny's / ChatPRD →</a></li>
+  <li>Jason Levin 在不懂代码的情况下把 Memelord 做到 10 万美元 ARR，再把它重建为 API 优先产品供 Agent 调用；他的规则：每个市场人员都必须会用 Cursor 自己做工具。<a class="glance-src" href="https://www.chatprd.ai/how-i-ai/jason-levins-workflows-for-agentic-memes-vibe-coding-and-hardware-hacking" target="_blank" rel="noopener">Lenny's / ChatPRD →</a></li>
+  <li>Aaron Levie 发了两篇延伸分析，讨论 AI 在职场落地的复杂性以及 AI Agent 对工作动态的重塑，整体比昨天那条「经验溢价被压缩」更具体。<a class="glance-src" href="https://x.com/levie" target="_blank" rel="noopener">X @levie →</a></li>
+  <li>Garry Tan 的 OpenClaw 被配置了健康目标，晚上 12:30 之后会自动拒绝回复他的查询，他觉得这「简直神奇」。<a class="glance-src" href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan →</a></li>
+  <li>Garry Tan：「想象一下，和一本真正了解你的书说话，作为朋友聊天，那是一种超现实的体验。」（谈 AI 个性化阅读的感受）<a class="glance-src" href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan →</a></li>
+  <li>Peter Steinberger 发布 wacrawl 0.2.0：支持 WhatsApp Desktop 聊天档案的加密 Git 备份/恢复，把聊天历史变成可版本管理的本地存档。<a class="glance-src" href="https://x.com/steipete" target="_blank" rel="noopener">X @steipete →</a></li>
+  <li>Steinberger：OpenClaw 开发受 CPU 限制太严重，换用 Blacksmith（高性能 CI/CD 托管服务）跑本地测试，「实在太好用了」。<a class="glance-src" href="https://x.com/steipete" target="_blank" rel="noopener">X @steipete →</a></li>
+  <li>Steinberger 新建了 birdclaw：导入 X 推文存档，推送到 GitHub 私有仓库备份，把 Twitter 历史变成可检索的本地数据源。<a class="glance-src" href="https://x.com/steipete" target="_blank" rel="noopener">X @steipete →</a></li>
+  <li>Peter Yang 这个周末给自己的移动健身 App 增加了 MCP Server，现在可以直接用 Claude 或 Codex 查最新训练数据，或通过对话更新训练计划。<a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang →</a></li>
+  <li>Peter Yang：把 iPhone 照片同步到 Google Photos 后，发现 Gemini 没有「帮我做一段和女儿一起成长的精彩回顾视频」这个功能，觉得是明显的产品机会缺口。<a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang →</a></li>
+  <li>Nan Yu：发现一款陌生 App 的定位追踪体验远超 Apple FindMy，FindMy 团队应该去取取经。<a class="glance-src" href="https://x.com/thenanyu" target="_blank" rel="noopener">X @thenanyu →</a></li>
+  <li>Sam Altman：「看到 builder 说我们的工具有用，是最令人满足的事。」（谈 GPT-5.5 发布后的反响）<a class="glance-src" href="https://x.com/sama" target="_blank" rel="noopener">X @sama →</a></li>
+  <li>Sam Altman 发布 OpenAI 五大原则：民主化、赋权、普遍繁荣、韧性、适应性。<a class="glance-src" href="https://x.com/sama" target="_blank" rel="noopener">X @sama →</a></li>
+  <li>Julie Zhuo「我是个蠢货」：我们已经学会把弱点包装成优点，所以在面试里从没有人说「我真的很蠢」，这个自我认知的缺口是什么意思？<a class="glance-src" href="https://lg.substack.com/p/i-am-an-idiot" target="_blank" rel="noopener">The Looking Glass →</a></li>
+</ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-04-26.html">← APR 26</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
