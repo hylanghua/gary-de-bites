@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — April 29, 2026</title>
+  <meta name="description" content="马斯克在法庭上将 OpenAI 转型定性为"掠夺慈善"，同日 OpenAI 宣布模型登陆 Amazon Bedrock；Claude 上线 Adobe、Autodesk 等六大创意工具连接器，打开与专业工作流的接口。算力正从成本中心变为新型资本品，而纯银的一篇更新提醒：困境不在事件本身，而在它所在的结构层次。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">April 29, 2026</h1>
+
+  <p class="post-lead">马斯克在法庭上将 OpenAI 转型定性为"掠夺慈善"，同日 OpenAI 宣布模型登陆 Amazon Bedrock；Claude 上线 Adobe、Autodesk 等六大创意工具连接器，打开与专业工作流的接口。算力正从成本中心变为新型资本品，而纯银的一篇更新提醒：困境不在事件本身，而在它所在的结构层次。</p>
+
+  <section class="section"><div class="section-head">
+      <span class="dot dot--r"></span>
+      <h2>新闻速递</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://links.tldrnewsletter.com/XMefzO" target="_blank" rel="noopener">马斯克出庭作证：OpenAI 转营利是"掠夺慈善"，同日模型登陆 Amazon Bedrock</a></h3>
+      <p>马斯克在联邦法庭亲自出席，指控 OpenAI 背弃非营利初心，将公司转型定性为"掠夺美国每一家慈善机构的先例"。他称当年正是凭借他的资金、声誉和指导，OpenAI 才得以起步，随后却被创始团队抛弃了公益原则、转身套现。OpenAI 律师团则回击称，这场诉讼本质是马斯克旗下 xAI 打压竞争对手的商业动作。</p>
+      <p>同一天，OpenAI 宣布将在未来几周内通过 Amazon Web Services 提供旗下模型，AWS 客户可通过 Amazon Bedrock（亚马逊的云端 AI 服务平台）调用 OpenAI 的模型及 Codex 代理，并推出"Amazon Bedrock Managed Agents powered by OpenAI"，支持跨会话记忆的自定义 Agent 构建。此前 OpenAI 与微软的独家云合作已于近期结束。</p>
+      <cite><a href="https://links.tldrnewsletter.com/XMefzO" target="_blank" rel="noopener">TLDR</a> · <a href="https://www.cnbc.com/2026/04/28/openai-brings-models-to-aws-after-ending-exclusivity-with-microsoft.html" target="_blank" rel="noopener">CNBC</a> · <a href="https://www.theaivalley.com/p/musk-vs-openai" target="_blank" rel="noopener">AI Valley</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/claudeai/status/2049143442601546054" target="_blank" rel="noopener">Claude 接入 6 大创意工具连接器：Adobe、Autodesk Fusion、Blender、Ableton、Splice、Canva</a></h3>
+      <p>Anthropic 宣布 Claude 新增一批面向创意专业人士的连接器：Autodesk Fusion 让设计师和工程师可以通过对话直接创建和修改 3D 模型，Blender 连接器打通了三维建模工作流，Adobe 工具系列、Ableton（音乐制作软件）、Splice（采样素材库）和 Affinity by Canva 也一并上线。这意味着 Claude 开始直接接入设计师、音乐人和工程师的主战场，而不只是通用文字助手。</p>
+      <cite><a href="https://x.com/claudeai/status/2049143442601546054" target="_blank" rel="noopener">X @claudeai</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head">
+      <span class="dot dot--o"></span>
+      <h2>AI 方向观点</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://x.com/levie/status/2049163935182733396" target="_blank" rel="noopener">Aaron Levie（Box CEO）：agentic coding 的维护悖论</a></h3>
+      <p>Levie 今天谈到 agentic coding（由 AI 代理自主编写代码的工作方式）的一个新摩擦点：Agent 极大降低了启动一个新项目的成本，很多以前因为人工成本太高而搁置的想法现在可以快速试验。但随之而来的是：维护这些 Agent 生成的代码本身变成了新的挑战，质量参差不齐，修改起来比从头写可能更费时。</p>
+      <p>这与他上周"AI 让工作变多而非变少"的判断构成一个递进：先是工作总量扩大，再是维护摩擦累积。Agent 不是消除工作，而是把工作从"创建"搬到了"维护"。</p>
+      <p><strong>agentic coding 真正的挑战不在生成，在维护一大堆自己没写的代码。</strong></p>
+      <cite><a href="https://x.com/levie/status/2049163935182733396" target="_blank" rel="noopener">X @levie</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/danshipper/status/2049223943735726150" target="_blank" rel="noopener">Dan Shipper（Every 联合创始人）："agent-native" 应用设计——为 agent 而设计，而非事后接入</a></h3>
+      <p>Shipper 提出一个新的设计概念：真正好的产品应该在架构层预设 agent（AI 自主代理）的参与，而不是把 AI 当成事后贴上去的功能。他区分了两类产品——一类是"在原有产品上加 AI"，另一类是"为 agent 参与而从头设计的产品"，后者在信息组织、操作触发、权限结构上都有本质不同。</p>
+      <p>这个概念对 PM 来说值得认真对待：今天很多团队的 AI 集成是在现有产品形态上硬贴的，真正"agent-native"的产品设计还几乎是空白。</p>
+      <p><strong>"agent-native"不是功能，是一套不同的产品设计哲学。</strong></p>
+      <cite><a href="https://x.com/danshipper/status/2049223943735726150" target="_blank" rel="noopener">X @danshipper</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/garrytan/status/2049351894007710031" target="_blank" rel="noopener">Garry Tan（YC CEO）：2026 年是 agent 的"永恒九月"</a></h3>
+      <p>Tan 写道："如果你已经受够了听到 agent，2026 年对你来说就是永恒的九月。""永恒九月"（Eternal September）是互联网术语，源自 1993 年 AOL 接入 Usenet，导致永无止境的新手涌入——老用户永远在重复解释基础知识的那个九月。</p>
+      <p>这个比喻锋利在于：它既是对抱怨者的反击（你只是老用户），也承认了 agent 正处于大众扩散阶段的基本事实。Garry 不是在说"大家别烦了"，而是在说"这个阶段就是这样，忍着吧"。</p>
+      <p><strong>agent 疲劳是扩散期的噪音，不是信号；抱怨天天听到 agent，和 1993 年抱怨天天讲互联网是一样的位置。</strong></p>
+      <cite><a href="https://x.com/garrytan/status/2049351894007710031" target="_blank" rel="noopener">X @garrytan</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head">
+      <span class="dot dot--y"></span>
+      <h2>产品与商业</h2>
+    </div>
+
+    <article class="item">
+      <h3>纯银：把困境放在结构中观察，是走出困境的最短路径</h3>
+      <p>纯银今天的更新围绕一句话展开："只有在一个结构中，你才能更准确地辨别当下。"他用三段亲历来说明这件事。第一段是 2012-2016 年断断续续做了三年半的旅行 UGC（用户生成内容）产品，产品越做越好，但始终感觉困在某种瓶颈里——后来他意识到，问题不在产品本身，而在于"旅行 UGC"这个赛道的结构性天花板：用户生产内容的动力和消费内容的路径之间存在根本错位，产品再好也无法绕过。</p>
+      <p>他的核心论点是：我们陷入困境时，往往在"事件层"上寻找原因（这个功能没做好、那个决策走错了），却忽略了困境真正所在的"结构层"（这个市场的竞争结构、这个组织的激励结构、这个产品的信息流动结构）。看清结构，才能知道哪些努力是在结构内挣扎、哪些是可以改变结构本身的杠杆。</p>
+      <p>这个视角对 PM 和创业者尤其有用：遇到反复出现的问题时，先问"这是什么结构造成的"，比反复优化执行层有更高的效率天花板。</p>
+      <cite><a href="https://xiaobot.net" target="_blank" rel="noopener">小报童 · 纯银</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://every.to" target="_blank" rel="noopener">Every：算力是新现金——AI 补贴终结后的算力经济学</a></h3>
+      <p>Every 今天的主题文章"Compute Is the New Cash"探讨了一个正在发生的结构性转变：早期 AI 浪潮里，OpenAI、Anthropic 等公司以大幅折扣甚至免费向开发者和企业提供算力，用"补贴算力"换市场占有率。但随着各公司需要真实收入，这波补贴正在退潮。</p>
+      <p>算力从"成本中心"（需要压缩的开销）变成"资本品"（像现金一样可以配置、投资、交换的资源），影响的是整个 AI 公司的财务结构。持有或获取算力的能力，开始成为谈判筹码和竞争壁垒。一篇子文章"你真的想和 Agent 说话吗"则从产品角度质疑了"对话界面"是否是 Agent 交互的最优形式。</p>
+      <p><strong>当算力开始被像现金一样定价和分配，AI 公司的商业逻辑就要用资本结构而非技术优势来理解。</strong></p>
+      <cite><a href="https://every.to" target="_blank" rel="noopener">Every</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/steipete/status/2049356949523730699" target="_blank" rel="noopener">Peter Steinberger（PSPDFKit 作者，独立开发者）：每次向 main 合并，Codex 自动触发审查修复循环</a></h3>
+      <p>Steinberger 今天分享了一个实际在用的工程实践：他在每次代码合并到主分支（main，项目的核心代码库）时，自动启动一个 Codex 实例（OpenAI 的编程 Agent）做代码审查，发现问题后自动尝试修复，再循环。这把 AI 代码审查嵌进了 CI（持续集成，每次提交代码后自动运行的检查流水线）而不是手动触发。</p>
+      <p>他描述自己一边"闻到了内存泄漏的气味"，一边让 Codex 去追查，同时自己继续做其他事。这是 Agent 不改变开发者主流程、只在后台运行的典型形态——不是"AI 写代码"，而是"AI 做代码守卫"。</p>
+      <p><strong>把 AI 审查嵌进 CI 而非靠人工触发，是让 Agent 真正产生持续价值的工程姿态。</strong></p>
+      <cite><a href="https://x.com/steipete/status/2049356949523730699" target="_blank" rel="noopener">X @steipete</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head">
+      <span class="dot dot--g"></span>
+      <h2>人文与哲学</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://x.com/garrytan/status/2049297833594101943" target="_blank" rel="noopener">Garry Tan：AlphaGo 十年，站在此刻的感受</a></h3>
+      <p>Garry Tan 发了一条很简单的推文："AlphaGo 已经过去十年了，令人难以置信。"2016 年 3 月 AlphaGo 击败李世石的那一周，很多人把它标记为 AI 时代开始的时间节点。十年，按原来的速度感，应该是一个完整的科技周期。</p>
+      <p>但站在 2026 年回看，这十年发生的事情密度高到让"十年"这个单位失去了原来的刻度感：GPT-2 到 GPT-5.5，不过七年；Stable Diffusion 到今天多模态 Agent，不过四年。AlphaGo 那一刻的震撼，放在今天的语境里已经像是上上个时代的事。</p>
+      <p><strong>AI 进展的速度正在压缩历史的厚度，十年前的里程碑在今天读起来已像三十年前的事。</strong></p>
+      <cite><a href="https://x.com/garrytan/status/2049297833594101943" target="_blank" rel="noopener">X @garrytan</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/petergyang/status/2049345724559847585" target="_blank" rel="noopener">Peter Yang（产品/创作者视角）：solo AI builders 的时代，世界是他们的游乐场</a></h3>
+      <p>Peter Yang 写道："我非常尊敬 solo AI builders（独自构建 AI 产品的个人开发者）。世界现在是他们的游乐场。"这句话的背后是一个结构性变化：原本需要一个工程师团队才能完成的产品从零到一，现在一个人借助 AI 工具可以在几周内做出来，且有足够质量进入市场。</p>
+      <p>"游乐场"这个词选得准确：不是说一定能赚钱或做大，而是说可以探索的空间和尝试的成本都发生了本质改变。过去很多想法因为"一个人做不了"而死在脑子里，现在这个理由越来越站不住脚。</p>
+      <p><strong>solo builder 的兴起不是小事：它改变的是谁有资格启动一件事，以及谁的想法值得被试验。</strong></p>
+      <cite><a href="https://x.com/petergyang/status/2049345724559847585" target="_blank" rel="noopener">X @petergyang</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head">
+      <span class="dot dot--b"></span>
+      <h2>AI 进展</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B" target="_blank" rel="noopener">NVIDIA Nemotron 3 Nano Omni：30B/3B active 多模态 MoE，256K 上下文，9× 吞吐量</a></h3>
+      <p><strong>现状：</strong>多模态 Agent（同时处理文本、图像、视频、音频的 AI 系统）通常需要多个专用模型协作，部署复杂、延迟高。</p>
+      <p><strong>问题：</strong>现有开源多模态模型要么覆盖模态不全，要么在吞吐量（单位时间处理请求数）上远落后于闭源系统，难以支撑生产级 Agent 工作流。</p>
+      <p><strong>解决方案：</strong>NVIDIA Nemotron 3 Nano Omni 采用 MoE 架构（混合专家，每次推理只激活部分参数），30B 总参数仅激活 3B，256K token 上下文，覆盖文本、图像、视频、音频和文档五大模态，内置语音理解（Parakeet 编码器），在 Open ASR（语音识别）排行榜上词错率 5.95%。发布当天即在 OpenRouter、Ollama、LM Studio、Fireworks 等主流平台同步上线，较同类开源多模态模型吞吐量提升约 9 倍。</p>
+      <p><strong>价值：</strong>一个模型覆盖五种模态，大幅简化多模态 Agent 的部署架构；MoE 设计让推理成本可控，适合实时 Agent 场景。</p>
+      <p><strong>未来方向：</strong>当前英语限定，多语言支持和视频理解深度是下一步看点；在 GB200 等 Blackwell 架构上的硬件加速效果值得持续观察。</p>
+      <cite><a href="https://www.latent.space/p/ainews-not-much-happened-today" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/poolside/Laguna-XS.2" target="_blank" rel="noopener">Poolside Laguna XS.2：33B/3B active MoE 编程模型，Apache 2.0，单 GPU 可运行</a></h3>
+      <p><strong>现状：</strong>高质量开源编程模型通常参数量大、推理成本高，单张消费级 GPU 无法运行，限制了个人开发者和小团队的实际使用。</p>
+      <p><strong>问题：</strong>现有开源编程模型要么精度不足（小模型），要么部署成本过高（大模型），中间档位缺乏真正可用的选项。</p>
+      <p><strong>解决方案：</strong>Poolside 首次公开发布 Laguna XS.2，33B 总参数、仅 3B 激活参数的 MoE 编程模型，完全从零自建训练基础设施、数据管道、RL（强化学习）和推理栈，Apache 2.0 开源，声称性能接近 Qwen-3.5，单张 GPU 可运行；Ollama 在发布当天即完成收录。同批还发布了 Laguna M.1（225B/23B active）和配套 Agent 脚手架（用于快速搭建编程 Agent 的代码框架）。</p>
+      <p><strong>价值：</strong>对个人开发者和小团队最直接：一个够用的编程 Agent 现在可以完全在本地运行，无需 API 调用，无隐私顾虑。</p>
+      <p><strong>未来方向：</strong>Poolside 完全自建训练栈的路线是否可持续，以及模型在真实 SWE-bench 类 benchmark 上的独立验证结果，是后续关注点。</p>
+      <cite><a href="https://www.latent.space/p/ainews-not-much-happened-today" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://github.com/microsoft/TRELLIS" target="_blank" rel="noopener">Microsoft TRELLIS.2：4B 图像转 3D，1536³ PBR 贴图资产，开源</a></h3>
+      <p><strong>现状：</strong>高质量 3D 资产创建是游戏、影视、建筑等行业的核心瓶颈，传统流程需要专业建模师耗费数小时乃至数天，PBR（基于物理的渲染，一种让材质在不同光照下看起来真实的渲染标准）贴图的质量直接决定最终视觉效果。</p>
+      <p><strong>问题：</strong>现有图像转 3D 模型普遍存在分辨率低（几何细节丢失）、贴图质量差（材质不写实）、输出格式受限等问题。</p>
+      <p><strong>解决方案：</strong>TRELLIS.2 是 4B 参数的开源图像到 3D 生成模型，基于原生 3D VAE（变分自编码器，一种将图像压缩再重建为 3D 结构的神经网络）训练，16 倍空间压缩，输出分辨率达 1536³，直接生成带 PBR 材质的完整 3D 资产，可直接导入 3D 软件使用。</p>
+      <p><strong>价值：</strong>开源且输出质量达到专业级，对独立游戏开发者和小型工作室降低 3D 资产制作成本有直接意义；配合上线 Blender 的 Claude 连接器，AI 辅助 3D 创作的工具链正在快速闭合。</p>
+      <p><strong>未来方向：</strong>视频转 3D 和多视角一致性是下一个难关；与 CAD 软件（计算机辅助设计）的集成是工业场景的关键路径。</p>
+      <cite><a href="https://www.latent.space/p/ainews-not-much-happened-today" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>World-R1：视频生成模型通过 RL 激活隐含 3D 结构，无需重新训练</h3>
+      <p><strong>现状：</strong>构建理解三维空间的 AI 通常需要专门的 3D 训练数据和特殊架构，成本极高。</p>
+      <p><strong>问题：</strong>现有视频生成模型被普遍认为只是"表面的像素预测"，不含真正的空间理解能力，导致 3D 感知需要独立建模。</p>
+      <p><strong>解决方案：</strong>World-R1 研究发现，现有视频生成模型的权重中已经隐含编码了真实的 3D 结构信息，只需通过 RL（强化学习，用奖励信号引导模型行为的训练方式）"唤醒"这些隐含能力，不需要修改模型架构、不需要额外视频训练数据、不增加推理成本。</p>
+      <p><strong>价值：</strong>如果结论可复现，这意味着大量已有视频模型可以免费获得 3D 感知能力，大幅降低世界模型（能理解物理世界的 AI）的研发门槛。</p>
+      <p><strong>未来方向：</strong>独立复现验证是当前最紧迫的步骤；结合 RL 的视频模型在机器人规划和自动驾驶场景的应用前景值得持续追踪。</p>
+      <cite><a href="https://www.latent.space/p/ainews-not-much-happened-today" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://github.com/vllm-project/vllm/releases/tag/v0.20.0" target="_blank" rel="noopener">vLLM v0.20.0：TurboQuant 2-bit KV cache，4× KV 容量，FA4 重启</a></h3>
+      <p><strong>现状：</strong>LLM 推理服务（将大模型部署为 API 的系统）的核心瓶颈之一是 KV cache（键值对缓存，存储推理中间状态的显存结构）：上下文越长，KV cache 占用显存越多，同时处理的请求数越少，成本越高。</p>
+      <p><strong>问题：</strong>长上下文和高并发的需求同时增长，KV cache 显存占用成为硬件扩容和成本控制的主要障碍。</p>
+      <p><strong>解决方案：</strong>vLLM v0.20.0 引入 TurboQuant 2-bit KV cache，将 KV cache 的精度从通常的 FP16/FP8 压缩到 2-bit（每个数值用 2 比特表示），在相同显存下可存储 4 倍更多的 KV 状态，配合 FA4（Flash Attention 4，加速注意力计算的算法，针对最新 Hopper 架构 GPU 重新启用）在 SM90+ GPU（NVIDIA Hopper 架构及以上）上优化 MLA prefill（多头潜在注意力的预填充阶段）。同版本还新增 DeepSeek V4 MegaMoE（超大混合专家）在 Blackwell 架构上的支持，端到端延迟报告改善约 2.1%。</p>
+      <p><strong>价值：</strong>对运营推理服务的团队：相同显存可撑住 4 倍的并发长上下文请求，是直接降成本的工程改进。</p>
+      <p><strong>未来方向：</strong>SemiAnalysis 的测试显示 B300 在 DeepSeek V4 workload 上比 H200 快 8 倍；结合 DeepGEMM MegaMoE 的 mega-kernel 融合，vLLM 0.20 的真实吞吐量上限还未被充分测试。</p>
+      <cite><a href="https://www.latent.space/p/ainews-not-much-happened-today" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head">
+      <span class="dot dot--m"></span>
+      <h2>看一眼</h2>
+    </div>
+    <ul class="glance-list">
+      <li>Peter Yang 在讨论如何让 OpenClaw（他的个人 AI Agent 项目）更好地支持"个人 agent"场景，并借鉴了其他 builder 的设计思路。<a class="glance-src" href="https://x.com/petergyang/status/2049347897310003443" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Nan Yu：拥有富余算力（excess compute）本身就是一种奢侈——并非所有团队都有这个条件做实验，算力的不对等正在成为新的竞争分层。<a class="glance-src" href="https://x.com/thenanyu/status/2049075513444999515" target="_blank" rel="noopener">X @thenanyu →</a></li>
+      <li>Thariq（Claude Code 工程师）：找到了 Claude Code 在大文件写入时偶发"假卡住"的根因（一个潜伏已久的 bug），正在修复中。<a class="glance-src" href="https://x.com/trq212/status/2049252080892973563" target="_blank" rel="noopener">X @trq212 →</a></li>
+      <li>Thariq：同时在开发 Claude Code 的无闪烁（no-flicker）渲染器，减少终端 UI 抖动，"我们在追查 Claude Code 里最烦人的 bug"。<a class="glance-src" href="https://x.com/trq212/status/2049234229926695188" target="_blank" rel="noopener">X @trq212 →</a></li>
+      <li>Amjad Masad（Replit CEO）：表态支持某位"教育圈 GOAT"再次重塑教育，语气相当激动——具体指向未透露但值得关注。<a class="glance-src" href="https://x.com/amasad/status/2049245424624820412" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>Amjad Masad：GitHub 的服务压力正在被 AI 代码提交量推到极限，他认为微支付（micropayment，按次极小额收费）可能是限流机器人滥用的有效方案。<a class="glance-src" href="https://x.com/amasad/status/2049242460078100638" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>Guillermo Rauch（Vercel CEO）：正在扩充 Vercel Labs 团队，专门构建 AI 时代的开发者工具，在招人。<a class="glance-src" href="https://x.com/rauchg/status/2049216048831025232" target="_blank" rel="noopener">X @rauchg →</a></li>
+      <li>Aaron Levie：软件相关工作并没有消失，agent 时代带来的是大量新的"人机协作"岗位，但要求已经和两年前完全不同。<a class="glance-src" href="https://x.com/levie/status/2049333853777764495" target="_blank" rel="noopener">X @levie →</a></li>
+      <li>Zara Zhang：推荐用 AI 生成 SVG（矢量图，可无限缩放不失真的图像格式）而非位图来做 AI 插图，效果更干净、可编辑性更强。<a class="glance-src" href="https://x.com/zarazhangrui/status/2049258231042805806" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+      <li>Zara Zhang：分享了一个反直觉观点——有时候分享 GitHub 仓库本身比分享部署好的 web app 更有说服力，因为代码可以被审查、被 fork、被信任。<a class="glance-src" href="https://x.com/zarazhangrui/status/2049186121314415054" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+      <li>Nikunj Kothari（FPV Ventures）："我在构建这个按钮的过程中玩得太开心了"——AI 工具把原本枯燥的 UI 细节工作变得有趣，这本身也是一个信号。<a class="glance-src" href="https://x.com/nikunj/status/2049228229572256236" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Aditya Agarwal（SPC 创始人）：对某个新事物感到震撼但没展开说——结合他一贯关注产品品质与 SF 文化的语境，大概率是对某个设计或产品细节的直觉共鸣。<a class="glance-src" href="https://x.com/adityaag/status/2049259492727234748" target="_blank" rel="noopener">X @adityaag →</a></li>
+      <li>Sam Altman 暗示 @ajambrosino 在"mogmogging"（俚语，意指某人被碾压式超越），并预告"接下来几次更新"——大概率在铺垫新模型或功能发布。<a class="glance-src" href="https://x.com/sama/status/2049315574120055054" target="_blank" rel="noopener">X @sama →</a></li>
+      <li>Dan Shipper 还分享了在 Codex 工作流里直接调用 PostHog（产品分析工具）的实践，让 AI 能在写代码时同时埋入数据埋点。<a class="glance-src" href="https://x.com/danshipper/status/2049236793761976357" target="_blank" rel="noopener">X @danshipper →</a></li>
+      <li>Garry Tan："kind of hilarious this works"——他测试了某个 Agent 行为，结果出乎意料地成功，具体内容未展开，但这种真实的 builder 惊喜感值得记录。<a class="glance-src" href="https://x.com/garrytan/status/2049334723009458388" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>人形机器人正在进入真实仓库：RobotEra 已在 10 个物流中心运行人形机器人做分拣和包裹搬运，融资超 $4 亿，机器人效率达人类约 85%，日本航空也将在羽田机场试点行李搬运和机舱清洁。<a class="glance-src" href="https://www.theaivalley.com/p/musk-vs-openai" target="_blank" rel="noopener">AI Valley →</a></li>
+      <li>研究者训练了一个"以为自己活在 1930 年"的 AI：Talkie 是一个仅用 1931 年前书籍、报纸和公版记录训练的 13B 模型，竟然能写出可运行的 Python——通过把数学符号和早期逻辑结构类比成代码，而非真的"知道 Python"。<a class="glance-src" href="https://talkie-lm.com/introducing-talkie" target="_blank" rel="noopener">AI Valley →</a></li>
+      <li>Addy Osmani 写了一篇长文系统讲解 long-running agents（跨多个上下文窗口持续运行的 Agent）的现状和工程实践，含故障恢复、状态保存、多 sandbox 协作等。<a class="glance-src" href="https://addyosmani.com/blog/long-running-agents/" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>ChatGPT 广告投放机制被拆解：后端向对话流注入结构化广告对象，前端 SDK 追踪用户行为并回传，两端通过 Fernet 加密 click token（点击标识码）对接——这是完整的广告归因闭环。<a class="glance-src" href="https://www.buchodi.com/how-chatgpt-serves-ads-heres-the-full-attribution-loop/" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>GitHub Actions 是开源供应链安全的最薄弱环节：过去 18 个月几乎所有供应链攻击都借道 GitHub Actions，本质问题是它是一个没有锁定文件（lockfile，固定依赖版本的配置文件）、没有完整性校验的"包管理器"。<a class="glance-src" href="https://nesbitt.io/2026/04/28/github-actions-is-the-weakest-link.html" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Mistral 推出 Workflows 公测，定位为企业 AI 流程的编排层（orchestration layer），目标是让 AI Agent 流程变得持久化、可观测、可容错，进入生产级别。<a class="glance-src" href="https://www.latent.space/p/ainews-not-much-happened-today" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>GPT-5.5 Pro 在 FrontierMath（极难数学 benchmark）上创新高：Tiers 1-3 得分 52%，Tier 4 达到 40%，包含两道此前任何模型均未解出的 Tier 4 题目。<a class="glance-src" href="https://www.latent.space/p/ainews-not-much-happened-today" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>Lenny's Newsletter 本期推出播客"The product skill you must now master: Reinvention"——关于产品人在 AI 时代如何重塑自身定位，具体内容在《The Skip》栏目中。<a class="glance-src" href="https://www.lennysnewsletter.com/cp/195894129" target="_blank" rel="noopener">Lenny's Newsletter →</a></li>
+      <li>彼得·蒂尔支持者称"软件正在真正吃掉世界（这次是认真的）"：Agent 开始接管原本由人执行的操作性工作，数据最丰富的应用层将率先获得模型改进的正向飞轮。<a class="glance-src" href="https://links.tldrnewsletter.com/wY7qCz" target="_blank" rel="noopener">TLDR →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-04-28.html">← APR 28</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
