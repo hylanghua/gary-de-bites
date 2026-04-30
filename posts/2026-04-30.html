@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — April 30, 2026</title>
+  <meta name="description" content="四大科技巨头单季合烧 $1300 亿美元算力，供给仍追不上需求；Figure AI 机器人产能 120 天内从日产一台跃升至时产一台。Cloudflare、Stripe、Cursor 同日宣布向 Agent 全面开放基础设施。推理算力正成为新一轮战略资源争夺的核心。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">April 30, 2026</h1>
+
+  <p class="post-lead">四大科技巨头单季合烧 $1300 亿美元算力，供给仍追不上需求；Figure AI 机器人产能 120 天内从日产一台跃升至时产一台。Cloudflare、Stripe、Cursor 同日宣布向 Agent 全面开放基础设施。推理算力正成为新一轮战略资源争夺的核心。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://tomtunguz.com/2026-04-29-the-112-billion-quarter-hyperscalers-bet-the-farm-on-ai/" target="_blank" rel="noopener">四大超级算力玩家单季合烧 $1300 亿，需求仍在供给前方</a></h3>
+      <p>微软、Alphabet、Amazon、Meta 四家公司 Q1 联合资本支出（即固定资产投资，主要用于数据中心和服务器）合计约 $1300 亿，仍报告同一个问题：需求在供给前面跑。Alphabet 季度营收 $1090 亿（同比 +22%），云业务增长 63% 至 $200 亿，积压订单接近 $4600 亿；Amazon AWS 同比增长 28%，Q1 资本支出 $440 亿，自研芯片业务已达 $200 亿年化规模；Meta 季度营收 $560 亿（+33%），将全年资本支出上调至最高 $1450 亿；微软季度营收 $820 亿（+18%），AI 年化收入达 $370 亿，Copilot 用户数 2000 万。</p>
+      <p>Tom Tunguz 的分析指出：拥有模型层的超级算力玩家将增长最快。这些公司的挑战不是卖不出去 AI，而是根本无法足够快地把算力建起来——已有数十亿美元需求坐在积压订单里等待供给落地。</p>
+      <cite><a href="https://tomtunguz.com/2026-04-29-the-112-billion-quarter-hyperscalers-bet-the-farm-on-ai/" target="_blank" rel="noopener">TLDR</a> · <a href="https://www.theaivalley.com/p/humanoid-robots-are-entering-real-production" target="_blank" rel="noopener">AI Valley</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/adcock_brett/status/2049514372264055116" target="_blank" rel="noopener">Figure AI：BotQ 工厂 120 天内从日产一台跃升至时产一台，年产目标 5 万台</a></h3>
+      <p>Figure AI 的人形机器人 BotQ 工厂已经达到每小时生产一台第三代 Figure 03 机器人的速度，120 天前这个数字还是每天一台。工厂有 150 多个工位，配备专属装配流水线和多层质量检查，目前已生产超过 350 台，年产目标 5 万台。</p>
+      <p>机器人规模化的瓶颈在转移。以前的核心问题是没有足够多的真实世界机器人来积累训练数据；现在变成了：大批量部署出去之后，机器能不能在重复劳动中长期稳定运行而不悄悄出故障。可靠性到位了，规模化就形成正向飞轮——每一台在外面跑的机器人都在喂养下一次迭代的改进。</p>
+      <cite><a href="https://www.theaivalley.com/p/humanoid-robots-are-entering-real-production" target="_blank" rel="noopener">AI Valley</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://blog.cloudflare.com/agents-stripe-projects/" target="_blank" rel="noopener">Agent 基础设施三连发：Cloudflare 自助开户 · Stripe Link 一次性支付 · Cursor SDK</a></h3>
+      <p>三家基础设施平台同日宣布向 Agent 开放核心能力。Cloudflare 让 Agent 可以自行注册账号、购买域名、启动付费服务、获取 API token 并部署应用，全程无需人工登录管理后台——人类只需在授权某些条款时介入一次。Stripe 在 Sessions 大会上宣布推出 Agentic Commerce Suite，其中 Link CLI（命令行工具）可让 Agent 从用户的 Link 钱包里获取一次性支付凭证，完成支付而不暴露真实银行卡信息，每笔交易均需用户推送通知批准。Cursor 则发布 TypeScript SDK（软件开发工具包，一套可复用的代码库），开放了与 Cursor 桌面端相同的 runtime（运行环境）、harness（代理执行框架）和模型选择，让外部开发者可以用几行代码搭起自己的编程 Agent，支持本地运行或 Cursor 云端。</p>
+      <p>这是很清晰的一天：基础设施层开始主动把 Agent 当成"一等客户"，而不是需要人工代劳的工具使用者。Agent 在外面跑，基础设施在后面撑着，越来越少需要人工在中间接力。</p>
+      <cite><a href="https://blog.cloudflare.com/agents-stripe-projects/" target="_blank" rel="noopener">TLDR</a> · <a href="https://www.bensbites.com/p/building-gets-easier" target="_blank" rel="noopener">Ben's Bites</a> · <a href="https://www.latent.space/p/ainews-the-inference-inflection" target="_blank" rel="noopener">AINews</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-the-inference-inflection" target="_blank" rel="noopener">swyx / AINews：推理拐点——Noam Brown、Sam Altman、Jensen 三人罕见同日共鸣</a></h3>
+      <p>OpenAI 研究员 Noam Brown 说"推理算力是战略资源，目前被低估"；Sam Altman 说"我们现在必须变成一家 AI 推理公司"；NVIDIA CEO Jensen Huang 更早说，过去两年 AI 计算需求增长了百万倍。这三句话出现在同一时间窗口，swyx 认为不是巧合，而是行业在同一个判断上的收敛信号。</p>
+      <p>更少被注意到的是 CPU（通用处理器，区别于训练专用的 GPU）的需求。Intel CEO 在 Q1 财报上给出数据说明 CPU 需求正在回升。背后逻辑是：Agent（AI 代理）大规模运行时，软件本身跑在 CPU 上；RL gym（强化学习训练环境）做模拟也大量用 CPU。过去两年所有预算都被 GPU 抢走，CPU 严重投资不足，叠上 2020-21 年采购的机器正好到了自然淘汰周期，可能出现 CPU 短缺，而这个趋势在算力讨论里几乎没人提。</p>
+      <p>GPU 之外 prefill/decode 分离（把模型"读取输入"和"生成输出"两个阶段拆到不同芯片上跑）正在成为新的推理架构标配：NVIDIA 收购 Groq、Intel 合并 SambaNova、Amazon 加入 Cerebras，这条线上的整合在加速。</p>
+      <p><strong>推理基础设施的竞争已经从"谁有最好的模型"转移到"谁能最快把算力建起来"，而 CPU 是被遗忘的那块短板。</strong></p>
+      <cite><a href="https://www.latent.space/p/ainews-the-inference-inflection" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/adityaag/status/2049530878083379427" target="_blank" rel="noopener">Aditya Agarwal（SPC 创始人）：Agent 今天仍是开发者产品，"和消费级还差得很远"</a></h3>
+      <p>SPC（South Park Commons）创始人 Aditya Agarwal 投入大量时间亲手试用各种 Agent 工具之后，给出了一个不加修饰的判断："Agent 现在是开发者产品，和消费级还差得很远。"这不是技术悲观，而是一个有大量一手观察支撑的刻度感：能稳定工作的 Agent 场景，目前还几乎都需要用户有能力定义任务、处理异常、理解输出。</p>
+      <p>这个判断和整个行业的营销氛围形成了对比。大多数关于 Agent 的讨论，默认受众是"普通用户可以直接用"。但 Aditya 的亲历感受是：不是的。<strong>Agent 可以改变有技术背景的人的工作方式，但还没有做好迎接真正意义上消费级用户的准备。</strong></p>
+      <cite><a href="https://x.com/adityaag/status/2049530878083379427" target="_blank" rel="noopener">X @adityaag</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/kevinweil/status/2049584046213378229" target="_blank" rel="noopener">Kevin Weil（OpenAI CPO）：放射科医生的本质工作是帮患者做决定，不是分析图像</a></h3>
+      <p>Kevin Weil 在讨论 AI 医疗影像时提出了一个重新定义：放射科医生（专门阅读 CT、X 光等影像的医生）的核心工作不是"分析图像"，而是"帮助患者在信息和不确定性之间做出最好的决定"。</p>
+      <p>这个区分很锋利。如果把医生的工作定义为"分析图像"，AI 一旦准确率够高，替代就是必然结论。但如果核心价值是"帮患者在焦虑、选择和权衡之间找到路"，AI 检测出病灶只是其中一步，解读、沟通、陪伴的那部分，还根本不在 AI 能力圈里。这个框架几乎可以直接套用到任何被讨论"会被 AI 取代"的职业上。<strong>被 AI 取代的是任务，不是角色；角色的核心是人类判断和关系，不是流程执行。</strong></p>
+      <cite><a href="https://x.com/kevinweil/status/2049584046213378229" target="_blank" rel="noopener">X @kevinweil</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://x.com/zarazhangrui/status/2049599305825341518" target="_blank" rel="noopener">Zara Zhang（a16z）+ Aaron Levie（Box CEO）：AI 时代，企业 IT 和内部运营要从头想起</a></h3>
+      <p>Zara Zhang 今天提出一个被低估的问题："我们应该开始认真思考 AI 时代的 IT 和内部运营了。"这个角度通常在讨论 AI 产品时缺席——大家谈外部产品、谈模型能力，但企业内部那一层——IT 工单、流程审批、内部知识库、员工支持——到底怎么被 Agent 重塑，还基本是盲点。</p>
+      <p>Aaron Levie 的推文提供了一个具体落地的信号：他的公司（Box，企业内容管理）已经开始招聘和培训"Agent 工程师"（agent engineering roles），专门负责把 AI Agent 接入内部职能流程。这不是给工程师加的新头衔，而是把原来需要人工处理的内部运营工作，系统性地改造成可以被 Agent 承接的形态。</p>
+      <p><strong>企业 AI 的下一个主战场不是产品，是内部——内部 IT、内部运营、内部知识流通，这些区域被改变的节奏将比外部产品更快，阻力也更小。</strong></p>
+      <cite><a href="https://x.com/zarazhangrui/status/2049599305825341518" target="_blank" rel="noopener">X @zarazhangrui</a> · <a href="https://x.com/levie/status/2049714403050918067" target="_blank" rel="noopener">X @levie</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.bensbites.com/p/building-gets-easier" target="_blank" rel="noopener">Ben Tossell（Ben's Bites）：彻底被 Codex 说服——"和 Agent 协作就是文件加权限两件事"</a></h3>
+      <p>Ben Tossell 今天写道，他把自己"逼着"认真试用了 Codex 应用（OpenAI 的 Agent 工具，与终端 Codex 有所不同），结果是：真的开始喜欢了。他用 Codex 给孩子做了一个恐龙跳跃游戏，搭建了一套 Gmail 自动标签和归档系统，重做了个人记忆系统并持续往里塞书签和 YouTube 文字稿。他给 Codex 设置了一个主文件夹"bites"，存放偏好、记忆、工作方式和每日 todo 列表。总结是一句话："和 Agent 协作就是文件和权限两件事。"</p>
+      <p>Ryo Lu（Cursor 设计师）今天也在推 Cursor SDK 带来的具体变化——用 Cursor 的 runtime 可以同时跑本地 Agent 和云端 Agent，做到模型自由切换。两人的叙述指向同一个方向：Cursor 从一个座位制 IDE 产品，变成了一个可编程的 Agent 基础设施；而日常构建者的工作流，正在从"写代码"变成"配置 Agent 的记忆、文件和权限"。<strong>Builder 阶层已经悄悄进入 Agent-native 工作方式，不是在讨论它，而是在用它。</strong></p>
+      <cite><a href="https://www.bensbites.com/p/building-gets-easier" target="_blank" rel="noopener">Ben's Bites</a> · <a href="https://x.com/ryolu_/status/2049529609725804575" target="_blank" rel="noopener">X @ryolu_</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/danshipper/status/2049512129846530086" target="_blank" rel="noopener">Dan Shipper（Every 联合创始人）：Agent 正在接管交易，Stripe 每周拦截 25 万次 AI 欺诈</a></h3>
+      <p>Dan Shipper 写道，能替人买卖和交易的 Agent 正在变成现实，而这背后是摩擦和风险的重新分布。Stripe 在 Sessions 大会上披露一个数字：每周拦截 25 万次欺诈性免费试用注册，且这些欺诈行为正在以 AI 的速度进化，从静态规则破解到动态攻击的迭代速度明显提速。他引用的数据还显示，今天的 AI 公司增长速度是 2018 年同期 SaaS 公司的三倍。</p>
+      <p>agentic commerce（由 AI 代理执行购买和交易的商业形态）不是未来时态——Stripe 的 Agentic Commerce Suite 和 Link wallet 已经在测这个形态的安全边界。<strong>Agent 经济里最先被压力测试的，是支付和身份，而不是体验。</strong></p>
+      <cite><a href="https://x.com/danshipper/status/2049512129846530086" target="_blank" rel="noopener">X @danshipper</a> · <a href="https://www.bensbites.com/p/building-gets-easier" target="_blank" rel="noopener">Ben's Bites</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://x.com/amasad/status/2049729530059960571" target="_blank" rel="noopener">Amjad Masad（Replit CEO）：当未来的历史学家写下硅谷……</a></h3>
+      <p>Amjad Masad 发了一条短推，语气里有一种罕见的历史感："当未来的历史学家写下硅谷……"然后停住了。他没有把话说完，留下的是一种悬念，或者说，一种重量。</p>
+      <p>这条推文的意味在于它没有说的那部分。我们正在经历一个正在被写入历史的时刻，这件事本身是清楚的。但该如何被写进去，站在当下谁也不知道。Amjad 把这个空缺留给了读者，这比任何具体的预言都更诚实。现在不是兴奋的时刻，是重量的时刻——那种知道自己在历史里但无法从外部看见它的感觉。<strong>身处历史中间的人永远不知道这段历史最终会被怎么命名。</strong></p>
+      <cite><a href="https://x.com/amasad/status/2049729530059960571" target="_blank" rel="noopener">X @amasad</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/nikunj/status/2049638359342133530" target="_blank" rel="noopener">Nikunj Kothari（FPV Ventures）："让我的小 Agent 替我出去接触大自然"</a></h3>
+      <p>Nikunj Kothari 贴了一条带着一点苦中作乐的推文："Having my little 'agent' touch grass for me"——让他的小 Agent 替他去"接触大自然"。"Touch grass"在网络语境里是"别在屏幕前待着了，出去走走"的讽刺说法，他用来描述自己太忙了、连"出去"这件事都快外包出去了。</p>
+      <p>另一条推文里他说：三十岁的人大概都想着拥有一座草莓农场。这两条放在一起，构成了一幅画面：算法最密集、Agent 最活跃的时代里，人反而越来越想要的，是大地、作物和缓慢。不是逃避，是一种真实的渴望。<strong>当一切都在加速，对缓慢的向往不是落后，而是对本性的诚实。</strong></p>
+      <cite><a href="https://x.com/nikunj/status/2049638359342133530" target="_blank" rel="noopener">X @nikunj</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-the-inference-inflection" target="_blank" rel="noopener">Agentic Harness Engineering：Harness 迭代十次，Terminal-Bench 2 pass@1 从 69.7% 升至 77.0%</a></h3>
+      <p><strong>现状：</strong>Agent（AI 代理）的表现不仅取决于底层模型的智能，还深度依赖"harness"——围绕模型的提示结构、工具定义、上下文管理、重试逻辑等执行框架的设计质量。</p>
+      <p><strong>问题：</strong>harness 的优化通常依赖工程师的直觉和反复手调，缺乏系统化方法论，改一处不知道影响哪里，失败了也不好归因。</p>
+      <p><strong>解决方案：</strong>Agentic Harness Engineering 提出让 harness 进化变得可观测：引入可还原组件（revertible components，可回退的模块化 harness 单元）、浓缩执行证据（condensed execution evidence，把 Agent 运行记录压缩成可分析的证据集）和可证伪预测（falsifiable predictions，提前声明改动预期效果）。在 Terminal-Bench 2 上，十次迭代后 pass@1（一次通过率）从 69.7% 提升到 77.0%，超过了人工设计的 Codex-CLI 基线（71.9%）。优化结果还能跨模型族迁移，SWE-bench Verified 上的 token 消耗减少 12%。</p>
+      <p><strong>价值：</strong>对 PM/Builder 来说，这意味着 harness 本身是一个值得独立迭代的工程资产，不是一次性搭完就固定的脚手架。</p>
+      <p><strong>未来方向：</strong>结合自动化评估（evals）做持续 harness 回归测试，是下一步的自然延伸。</p>
+      <cite><a href="https://www.latent.space/p/ainews-the-inference-inflection" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-the-inference-inflection" target="_blank" rel="noopener">HALO：用 trace 分析递归修补 harness 缺陷，AppWorld 从 73.7 升至 89.5（Sonnet 4.6 上）</a></h3>
+      <p><strong>现状：</strong>Agent 在复杂任务上频繁失败，通常被归因于模型能力不足，但实际上许多失败来自 harness 设计缺陷——错误的工具接口、不合理的提示格式、上下文截断等问题。</p>
+      <p><strong>问题：</strong>定位 harness 失败点需要大量人工分析 trace（Agent 运行的完整执行轨迹），耗时且依赖专家经验。</p>
+      <p><strong>解决方案：</strong>HALO（Harness-Adaptive LLM Optimization）提出递归自改进 Agent：用另一个 AI 自动分析失败的 trace，识别 harness 缺陷位置，生成补丁并验证。在 AppWorld benchmark（测试 Agent 完成多步骤应用操作任务的基准）上，Sonnet 4.6 加持下，完成率从 73.7 提升到 89.5，不需要修改底层模型权重。</p>
+      <p><strong>价值：</strong>如果方法可推广，Agent 的 harness 调优将从依赖人工专家，变成可以让系统自己找到改进点。</p>
+      <p><strong>未来方向：</strong>在更多 benchmark 上的复现验证，以及如何防止 harness 自改进引入新 bug，是当前的关键悬问。</p>
+      <cite><a href="https://www.latent.space/p/ainews-the-inference-inflection" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-the-inference-inflection" target="_blank" rel="noopener">IKP（Incompressible Knowledge Probes）：188 个模型、1400 道题，事实容量不随时间"压缩"</a></h3>
+      <p><strong>现状：</strong>业界普遍有一种直觉："模型越来越聪明，是因为更会推理，而不需要死记更多事实"。这暗示知识存储效率在提升，同样大小的模型可以越来越"懂得多"。</p>
+      <p><strong>问题：</strong>这个直觉很难被直接检验，因为大多数 benchmark 混合了推理能力和事实知识，难以拆开。</p>
+      <p><strong>解决方案：</strong>IKP 用 1400 道设计为"只考事实、不考推理"的问题，测试 188 个模型（来自 27 家厂商，参数量从 1.35 亿到 1.6 万亿）。结果：事实知识准确率与模型参数量的对数呈强线性关系，R²=0.917（开源模型），说明事实容量随参数量增长，且这个关系没有随时间被"压缩掉"。副产品：用拟合曲线可以反推闭源模型的参数规模估算。</p>
+      <p><strong>价值：</strong>对做模型选型的 PM/团队：事实密集的任务（客服、知识库问答、合规检查）对模型大小的需求可能比想象中更硬，小模型+RAG 不总是完整答案。</p>
+      <p><strong>未来方向：</strong>多语言和非英语事实知识的测量，以及对微调（fine-tuning）如何影响这个曲线的研究。</p>
+      <cite><a href="https://www.latent.space/p/ainews-the-inference-inflection" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-the-inference-inflection" target="_blank" rel="noopener">FlashQLA（Alibaba/Qwen）：长上下文线性注意力 kernel，前向提速 2–3 倍</a></h3>
+      <p><strong>现状：</strong>Transformer 模型的注意力机制（attention）在长文本场景下计算量随上下文长度平方增长，成为 Agent 处理长文档、长代码库的主要延迟瓶颈。线性注意力（Linear Attention）是一种降低这个成本的架构变体，但工程优化一直落后于标准注意力。</p>
+      <p><strong>问题：</strong>现有线性注意力实现在实际硬件上的效率不理想，在小模型和多卡并行（tensor parallel）场景下尤其明显。</p>
+      <p><strong>解决方案：</strong>Alibaba/Qwen 团队用 TileLang（一种面向 GPU kernel 优化的领域特定语言）实现 FlashQLA，引入门控驱动的自动卡内通信（gate-driven automatic intra-card CP）、代数重构和融合的 warp 专用 kernel。前向速度提升 2–3 倍、反向提速 2 倍，在小模型、长上下文、多卡并行场景下收益最大。明确定位为面向个人设备上的 agentic AI 设计。</p>
+      <p><strong>价值：</strong>长上下文 Agent 在边缘设备（手机、本地服务器）上运行的成本门槛进一步降低。</p>
+      <p><strong>未来方向：</strong>与主流推理框架（vLLM、llama.cpp 等）的集成，以及在多模态长序列场景下的表现。</p>
+      <cite><a href="https://www.latent.space/p/ainews-the-inference-inflection" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-the-inference-inflection" target="_blank" rel="noopener">Zhipu AI GLM-5 服务复盘：KV cache 竞争条件、HiCache 同步 bug、LayerSplit 提升 prefill 吞吐 132%</a></h3>
+      <p><strong>现状：</strong>超长上下文的 Agent 服务（如代码 Agent 要在几十万 token 的代码库里工作）对推理服务系统的稳定性要求极高，任何设计缺陷都会在高并发下暴露。</p>
+      <p><strong>问题：</strong>KV cache（键值缓存，存储推理中间状态的显存结构）在并发请求下出现竞争条件（race condition，多个进程同时抢占同一资源导致状态错误）；HiCache（分层缓存系统）有同步 bug 导致缓存失效；prefill（预填充，模型读取输入阶段）是长上下文服务的主要延迟瓶颈。</p>
+      <p><strong>解决方案：</strong>Zhipu AI 发布了 GLM-5 服务的工程复盘，描述了如何定位和修复这些生产环境中的实际 bug，并引入 LayerSplit（将 prefill 计算拆分到多个层并行处理），报告 prefill 吞吐提升最高 132%。</p>
+      <p><strong>价值：</strong>这类工程复盘对任何在做生产级推理服务的团队都是直接参考——比学术 benchmark 更贴近真实踩坑路径。</p>
+      <p><strong>未来方向：</strong>长上下文服务的 KV 管理和 prefill 优化还有大量工程空间；与 vLLM 等开源框架的协同优化是行业方向。</p>
+      <cite><a href="https://www.latent.space/p/ainews-the-inference-inflection" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>Sam Altman 宣布开始向网络安全防御方滚动发布 GPT-5.5-Cyber——专为帮助防御者的模型，而非进攻工具。<a class="glance-src" href="https://x.com/sama/status/2049712078836170843" target="_blank" rel="noopener">X @sama →</a></li>
+      <li>Claude hackathon 最佳 Managed Agents 应用：ARIA（由 Ben 团队构建）；"Keep Thinking"奖：MaestrIA by Benjamin——Claude 黑客马拉松首批获奖案例亮相。<a class="glance-src" href="https://x.com/claudeai/status/2049523910173966597" target="_blank" rel="noopener">X @claudeai →</a></li>
+      <li>Mayo Clinic 的 REDMOD 模型在近 2000 张已被人工标注为"正常"的历史 CT 扫描中，检测出 73% 的早期胰腺癌迹象，部分案例早于确诊 3 年，两年前的检出率约是放射科医生的 3 倍——发现的不是新病灶，而是已有扫描里被忽视的信号。<a class="glance-src" href="https://www.theaivalley.com/p/humanoid-robots-are-entering-real-production" target="_blank" rel="noopener">AI Valley →</a></li>
+      <li>Josh Woodward 宣布 Gemini 现可在对话中直接生成并导出 Google Docs、Sheets、Slides，以及 Word、Excel 等格式文件——生成即交付，少一步"复制到别处"的摩擦。<a class="glance-src" href="https://x.com/joshwoodward/status/2049524400131838436" target="_blank" rel="noopener">X @joshwoodward →</a></li>
+      <li>Peter Yang 在抱怨 Claude 响应速度近期明显下滑，"不知道 @claudeai 怎么了"——用户真实感知的延迟上升，与算力供需矛盾直接相关。<a class="glance-src" href="https://x.com/petergyang/status/2049517522924474465" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Nan Yu：正在从头重新定义设计到工程的交接流程（design-to-engineering handoff），过去的"交付设计稿"范式在 Agent 参与的工作流里需要被重新设计。<a class="glance-src" href="https://x.com/thenanyu/status/2049593061043265940" target="_blank" rel="noopener">X @thenanyu →</a></li>
+      <li>Garry Tan 终于做完了一个完整的 Obsidian 知识图谱设置："OK，我终于抽出时间搭了个完整的……"——用 frontmatter 属性构建图谱节点关系，在 AI 辅助知识管理上的探索持续深入。<a class="glance-src" href="https://x.com/garrytan/status/2049742376307147110" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Garry Tan：在 Obsidian 里，图谱是通过 frontmatter 属性（笔记元数据字段）连起来的，而不是通过 Wiki 链接——这个设计选择影响整个知识结构的组织方式。<a class="glance-src" href="https://x.com/garrytan/status/2049737217208397925" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Matt Turck：你就知道你在一场 VC 晚餐上——对硅谷 VC 圈特定氛围和话题氛围的一个会心一击，具体内容未展开，但认识圈子的人看了都会心领神会。<a class="glance-src" href="https://x.com/mattturck/status/2049635648575832384" target="_blank" rel="noopener">X @mattturck →</a></li>
+      <li>Peter Steinberger：把 Codex review 集成进了 clawsweeper 项目，支持 automerge（自动合并代码）——每次代码合并触发 Agent 审查，审查通过后自动合入，进一步减少人工干预节点。<a class="glance-src" href="https://x.com/steipete/status/2049518771023360010" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>Peter Steinberger：人们以为 token（模型处理单元）很贵，但实际上……——对 token 成本普遍高估的直接反驳，目前的价格已经让很多以前"太贵"的工作流变得可行。<a class="glance-src" href="https://x.com/steipete/status/2049462793267458219" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>Amjad Masad：现在每个人都能体验到"凌晨被 on-call 告警叫醒"的感觉了——指 Agent 系统也会在意想不到的时间触发通知，工程师文化扩散到普通 builder 的幽默观察。<a class="glance-src" href="https://x.com/amasad/status/2049639259599233173" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>Nikunj Kothari：30 岁的人大概都想着有一座草莓农场——对"在数字最密集时代里，人最渴望的是大地和作物"的轻描一笔。<a class="glance-src" href="https://x.com/nikunj/status/2049519563998703679" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>swyx 记录了给 1931 年前公版文字（书籍+报纸+档案）训练的 AI 的实验：结果产出了"有史以来最自信的种族主义模型"——训练数据里的历史偏见被模型完整地学了下来，没有过滤。<a class="glance-src" href="https://x.com/swyx/status/2049652947408372187" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>Every：GPT-5.5 发布一周，谁还没在用？观察到 CTO-to-IC（技术高管转回一线独立贡献者）的职业路径正在出现，AI 工具改变了"管人"和"自己干"之间的性价比。<a class="glance-src" href="https://every.to" target="_blank" rel="noopener">Every →</a></li>
+      <li>Apple 据报已放弃 Vision Pro，M5 版本销量惨淡后团队已被解散并分散并入其他项目——空间计算这条路，苹果在短期内不再押注。<a class="glance-src" href="https://www.macrumors.com/2026/04/29/apple-vision-pro-m5-flop/" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Apple iOS 27 将上线 AI 相册大改版：扩展图像（填补边缘）、增强（AI 美化）、重构（重新构图），对标 Google Pixel 和三星 Galaxy 多年的 AI 相册功能。<a class="glance-src" href="https://links.tldrnewsletter.com/0Qbfcg" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Tesla Semi 第一台车走下内华达 Gigafactory 的高产量流水线——长续航版售价 $290,000，标准版约 $260,000，是市场上最便宜的 Class 8 纯电动重卡。<a class="glance-src" href="https://electrek.co/2026/04/29/tesla-semi-first-truck-high-volume-production-line/" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>PayPal 将 Venmo 独立成单独事业单元，CEO 换人，为潜在出售做准备——Venmo 被视为 PayPal 最有价值、最容易单独出售的资产。<a class="glance-src" href="https://www.cnbc.com/2026/04/29/paypal-restructures-venmo-standalone-unit.html" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>White House 反对 Anthropic 扩大 Mythos 模型（Anthropic 的政府专用模型）的访问范围，理由是安全顾虑，并担心算力分散后影响政府自身使用能力。<a class="glance-src" href="https://links.tldrnewsletter.com/3qgkHU" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>GitHub is sinking：Copilot 在 DDoS 自己的平台——大量 AI 生成的低质代码提交正在压垮 GitHub 的基础服务，作者把这称为"GitHub 用自己的 AI 产品攻击自己"。<a class="glance-src" href="https://dbushell.com/2026/04/29/github-is-sinking/" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Zig 编程语言社区宣布对 LLM 生成内容的最严格限制：所有 issue、PR 和 bug tracker 评论禁止使用 AI 生成内容，违者直接关闭——开源社区里反 AI 政策的强硬先例。<a class="glance-src" href="https://simonwillison.net/2026/Apr/30/zig-anti-ai/" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Amazon 芯片业务（Trainium、Inferentia 系列）年化规模已达 $200 亿，跻身全球前三大数据中心芯片公司，与 NVIDIA、AMD 并列。<a class="glance-src" href="https://www.theregister.com/2026/04/29/amazon_chips_20b_business/" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>SpaceX 2025 年初发射的一枚猎鹰 9 上面级（火箭上部）将于今年 8 月 5 日凌晨 2:44（北京时间）以 2.43 公里/秒的速度撞击月球正面——轨道已锁定，对月球表面无影响，地球上无法直接观测。<a class="glance-src" href="https://arstechnica.com/space/2026/04/a-falcon-9-upper-stage-will-strike-the-moon-in-august/" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Mistral Medium 3.5 发布：128B dense（稠密，不是混合专家）视觉推理模型，本地运行约需 64GB RAM，Unsloth 已发布 GGUF 格式——企业可靠性和指令遵循是 Mistral 的差异化押注点，非 benchmark 竞争。<a class="glance-src" href="https://www.latent.space/p/ainews-the-inference-inflection" target="_blank" rel="noopener">AINews →</a></li>
+      <li>IBM Granite 4.1 发布三款 Apache 2.0 开源模型（30B / 8B / 3B），8B 版本在 Artificial Analysis Intelligence Index 测试中仅用 4M output tokens，对比 Qwen3.5 9B 的 78M——在成本可控性上做到极致的企业/边缘向开源模型。<a class="glance-src" href="https://www.latent.space/p/ainews-the-inference-inflection" target="_blank" rel="noopener">AINews →</a></li>
+      <li>Ant OSS 的 Ling-2.6-flash 发布：约 107B MoE 架构，MIT 协议，SWE-bench Verified 得分 61.2，当天支持 vLLM 部署——中国开源模型阵营持续在 SWE-bench 上拉高基线。<a class="glance-src" href="https://www.latent.space/p/ainews-the-inference-inflection" target="_blank" rel="noopener">AINews →</a></li>
+      <li>Tencent Hunyuan 开源 Hy-MT1.5：440MB 的离线手机翻译模型，1.25-bit 量化（极致压缩），覆盖 33 种语言、1056 个翻译方向，声称与商用 API 和 235B 大模型性能相当——手机本地跑翻译模型的边界又往前推了一步。<a class="glance-src" href="https://www.latent.space/p/ainews-the-inference-inflection" target="_blank" rel="noopener">AINews →</a></li>
+      <li>修饼（静止的量子）Vol.20260430 更新——出版《迷你物理学》的科普博主兼 AI 短片创作者，今日新一期内容已发出。<a class="glance-src" href="https://xiaobot.net" target="_blank" rel="noopener">小报童 · 修饼 →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-04-29.html">← APR 29</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
