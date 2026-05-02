@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — May 2, 2026</title>
+  <meta name="description" content="开源模型在 agentic coding 场景跨过了"体感门槛"：DeepSeek V4 Pro 成为首款工程师觉得可替代 Codex/Claude Code 的开源权重。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">May 2, 2026</h1>
+
+  <p class="post-lead">开源模型在 agentic coding 场景跨过了"体感门槛"：DeepSeek V4 Pro 成为首款工程师觉得可替代 Codex/Claude Code 的开源权重。Codex 这周产品迭代密集，设备工具栏、CI 集成、宠物系统，OpenAI 在打磨完整产品环境，而 agent 的真实战场正在向运行时设计转移：持久化、沙盒、检查点。Tim Ferriss 本周分享了 Thich Nhat Hanh 把恐惧转化为爱的四句心咒。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-ai-engineer-worlds-fair-autoresearch" target="_blank" rel="noopener">DeepSeek V4 Pro：首款在 agentic coding 场景体感可替代 Codex/Claude Code 的开源权重</a></h3>
+      <p>最有力的一手报告来自测试者把 DeepSeek V4 Pro 嵌入 Pi coding agent（一款 agentic 开发工具）后的描述：这是第一款在多轮 agentic coding 场景里，工程师会觉得"跟 Codex 或 Claude Code 没本质差别"的开源权重。关键系统参数：1M context window、混合 CSA/HCA 注意力机制（一种减少长上下文计算量的注意力变体）、KV cache（键值缓存，加速推理的核心组件）压缩至 10%，长上下文推理浮点运算量降低约 4 倍，在 Fireworks 推理平台上验证可用、trace 稳定。</p>
+      <p>更大的图景：Artificial Analysis 数据显示，上周密集发布的三款头部开源权重（Kimi K2.6、MiMo V2.5 Pro、DeepSeek V4 Pro）Intelligence Index 得分已达 52–54，与 Gemini 3.1 Pro Preview 和 Claude Opus 4.7 的 57 分差距收窄到 5 分以内；最难的任务（HLE、CritPt、TerminalBench Hard）仍有差距，但 coding agent 的日常场景已经进入"体感无差"区域。<strong>开源闭源之间那堵感知的墙，今天基本倒了一半。</strong></p>
+      <cite><a href="https://www.latent.space/p/ainews-ai-engineer-worlds-fair-autoresearch" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-ai-engineer-worlds-fair-autoresearch" target="_blank" rel="noopener">美国"战争部"与七家 AI 及基础设施公司签协议，在机密网络部署 AI 能力</a></h3>
+      <p>美国国防部（现称"战争部"）CTO 宣布已与七家前沿 AI 及基础设施公司达成协议，将在机密网络上部署 AI 能力。消息发出后在 AI 社区引发广泛讨论，这是政府将 frontier AI（前沿人工智能）系统整合进敏感作战系统的最明确公开信号之一。</p>
+      <p>这件事本身的技术细节未披露，但方向是清晰的：军事场景的 AI 部署已从"研究探索"进入"协议落地"阶段。对 AI 公司而言，这是一类特殊的客户，合规、可靠性和安全审查要求与商业场景完全不同。</p>
+      <cite><a href="https://www.latent.space/p/ainews-ai-engineer-worlds-fair-autoresearch" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-ai-engineer-worlds-fair-autoresearch" target="_blank" rel="noopener">swyx / AINews：agent 运行时设计已是真正的竞争护城河，基础模型 IQ 退为次要变量</a></h3>
+      <p>这期 AINews 有一个贯穿所有产品新闻的隐含论点：前端产品的竞争，已经从"谁的模型更聪明"转向"谁的 agent 运行时（runtime）设计更好"。运行时包括：沙盒隔离（sandbox，让 agent 的代码执行与主系统隔离）、回放与检查点（replay/checkpointing，让 agent 出错时可以恢复）、状态持久化（durable execution，让长任务跨越网络中断或超时继续跑）、以及人机协作节点（HITL，human-in-the-loop，在关键决策点暂停等待人类确认）。</p>
+      <p>具体证据：Devin 把 agent 嵌进终端快捷键；Hermes 加了 /goal 循环让 supervisor 模型强制 agent 跑到完成；Cloudflare 宣布 Dynamic Workflows 把持久执行加进 agent plan；LangChain 把 HITL 实现成可以把人类回复直接当 tool result 返回；LangSmith Agent Server 细化了多用户数据隔离、delegated credentials 和 RBAC（基于角色的权限控制）。这不是一两家公司的方向，而是整个生态在同时向同一层靠拢。</p>
+      <p>Theo 描述的 Codex vs Claude Code 差异印证了这一点：GPT/Codex 感觉更直接、更省 tool call；Claude Code 意图和品味更好但速度慢、tool call 多。这不是模型差异，而是 harness（agent 执行框架）设计差异。<strong>谁把运行时做成基础设施，谁就赢得了 agent 时代的平台战争。</strong></p>
+      <cite><a href="https://www.latent.space/p/ainews-ai-engineer-worlds-fair-autoresearch" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/levie" target="_blank" rel="noopener">Aaron Levie（Box CEO）：企业 AI 战略若只盯着"降本"，会在 agent 时代错过真正的杠杆</a></h3>
+      <p>Levie 在两条推文里拆开了一个常见的混淆：企业买 AI 的理由通常被简化成"替人降成本"，但他认为真正的战略定位是"加速和增强（acceleration and augmentation）"而非削减人力。他的逻辑是：AI 主要做的不是砍掉人，而是让每个人能跑得更快——同样规模的团队在更短时间内完成更大的工作量。把 AI 定位成"降本工具"的企业，会因为只盯着效率指标而错过业务增速这个更大的收益。</p>
+      <p>这个观点配合他昨天关于"100 倍 agent 需求将重建企业基础设施"的判断来看，逻辑是一致的：agent 数量乘以 100 倍，但如果企业的应对策略只是"用 agent 替掉 100 个人"，那等于把一个乘法变成了减法。<strong>该用加速框架思考 AI 的地方，别误用成本框架。</strong></p>
+      <cite><a href="https://x.com/levie" target="_blank" rel="noopener">X @levie</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-ai-engineer-worlds-fair-autoresearch" target="_blank" rel="noopener">Codex 本周产品迭代清单：设备工具栏、CI 集成、迁移工具、宠物系统</a></h3>
+      <p>OpenAI 这周往 Codex 里塞了四个独立功能：(1) 设备工具栏（device toolbar），让开发者在 Codex 界面里直接预览不同屏幕尺寸的响应式效果，不需要切出去开浏览器；(2) CI 状态聊天集成（CI status in chat），CI（持续集成，代码合并时自动跑测试的流程）结果现在可以直接在对话框里显示；(3) 迁移和导入工具，支持从其他工具的设置、插件、agent 配置整体迁移进 Codex；(4) Codex Pets，一个虚拟宠物系统，意外地成了这周用户黏性最高的功能。</p>
+      <p>这些功能单独看都不算大，组合起来传递一个信号：OpenAI 在打磨的是一个完整的开发环境（coherent environment），而不只是一个更好的模型端点（model endpoint）。社区反应也印证了这点——多位工程师对比 Codex 和 Claude Code 时，不再只讨论哪个模型更聪明，而是在讨论哪个"跑起来更顺"。<strong>product-market fit 的战场，已经从参数规模转移到 UX 和工具链整合速度。</strong></p>
+      <cite><a href="https://www.latent.space/p/ainews-ai-engineer-worlds-fair-autoresearch" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-ai-engineer-worlds-fair-autoresearch" target="_blank" rel="noopener">Sam Altman：OpenAI 要做"帮人成长的工具"，GPT-5.5 和 Codex 同步交出亮眼营收数字</a></h3>
+      <p>Sam Altman 发推把 OpenAI 的公开立场调整为："我们想做的是帮人类增强和成长的工具（tools to augment and elevate people），不是做替代人的实体（entities to replace them）。"紧接着给出了具体数字支撑：GPT-5.5 是 OpenAI 迄今最强的 API 发布，API 营收增速是此前几款模型的 2 倍；Codex 上线不到 7 天营收翻倍。</p>
+      <p>叙事转向值得注意。在"AI 抢工作"的讨论持续升温的背景下，OpenAI 在公开话语里开始主动与"替代"解绑，转向"增强"的框架。这不只是公关口径调整，配合数据来看——Codex 营收翻倍、API 增速 2×——说明"增强"路线目前在市场上跑通了。<strong>OpenAI 用数字给"AI 不会替代你"这句话加了一层商业背书。</strong></p>
+      <cite><a href="https://www.latent.space/p/ainews-ai-engineer-worlds-fair-autoresearch" target="_blank" rel="noopener">Latent Space / AINews</a> · <a href="https://x.com/sama" target="_blank" rel="noopener">X @sama</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.themarginalian.org/2020/12/01/thich-nhat-hanh-fear-love/" target="_blank" rel="noopener">Tim Ferriss 5-Bullet Friday：佛教四句心咒、回忆录写作课、Schwarzenegger 的名言</a></h3>
+      <p>这期 5-Bullet Friday 有三个值得记住的东西。第一是 Maria Popova 整理的 Thich Nhat Hanh（一行禅师）四句心咒：当恐惧出现时，不是压制它，而是承认它、陪伴它、转化它——四句话依次是"我知道你在"、"我在这里陪你"、"我知道你是恐惧，不是我自己"、"我会照顾你"。用文字而非意志力来处理情绪，这是一种很不一样的实践路径。</p>
+      <p>第二是 Mary Karr 的《The Art of Memoir》，一本写作课，但 Tim 描述它更像一本哲学指南，严肃与好笑并存。任何需要用文字记录或讲述经历的人，这本书都值得读。</p>
+      <p>第三是 Arnold Schwarzenegger 的一句话："I don't follow trends. I outlast them."（我不追趋势，我比趋势活得久。）适合在刷了一天 AI 新闻之后，用这句话洗一下脑。<strong>三件事放在一起：一个情绪实践、一个创作工具、一句时间框架的校正，Tim Ferriss 的策展眼光一如既往准确。</strong></p>
+      <cite><a href="https://tim.blog/" target="_blank" rel="noopener">Tim Ferriss</a> · <a href="https://www.themarginalian.org/2020/12/01/thich-nhat-hanh-fear-love/" target="_blank" rel="noopener">The Marginalian</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/zarazhangrui" target="_blank" rel="noopener">Zara Zhang（a16z）：把 coding agent 当联合创始人对待，协作解题而非发号施令</a></h3>
+      <p>Zara 分享了一个具体的工作方式转变：她不再把 coding agent 当工具来"命令"，而是当联合创始人来"协作"，把问题摆出来一起讨论思路，而不是直接发指令让它执行。这个框架改变了她与 agent 交互的方式，也改变了她对 agent 输出的期待——不是"帮我做这个"，而是"我们一起想这个问题怎么解"。</p>
+      <p>这个细节很实用。很多人对 AI agent 的抱怨是"结果不符合预期"，但问题可能不在模型，而在交互方式：把 agent 当执行机器用，得到的是执行质量；把它当思考伙伴用，得到的是协作质量。<strong>agent 的上限，有时候取决于你用什么框架跟它说话。</strong></p>
+      <cite><a href="https://x.com/zarazhangrui" target="_blank" rel="noopener">X @zarazhangrui</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-ai-engineer-worlds-fair-autoresearch" target="_blank" rel="noopener">ReaLM-Retrieve：推理模型应在推理过程中动态检索，而非只在开始前检索一次</a></h3>
+      <p><strong>现状：</strong>标准 RAG（检索增强生成，先检索相关文档再送入模型）把检索固定在推理开始前，而现有的 IRCoT 方法（固定间隔检索）会产生大量不必要的检索调用。</p>
+      <p><strong>问题：</strong>推理模型在思考过程中产生新的信息需求，预先检索的内容往往不够用，但频繁检索又有开销。</p>
+      <p><strong>解决方案：</strong>ReaLM-Retrieve 让模型在推理过程中动态决定"何时需要检索"，只在推理链出现信息缺口时触发，而不是按固定间隔轮询。</p>
+      <p><strong>价值：</strong>比标准 RAG 高 10.1% 绝对 F1 得分，比 IRCoT 少 47% 检索次数，每次检索的额外开销降低 3.2 倍。</p>
+      <p><strong>未来方向：</strong>推理时检索（retrieval-during-inference）可能成为长上下文 agent 的标准组件，尤其对需要持续查阅外部知识库的任务场景有价值。</p>
+      <cite><a href="https://www.latent.space/p/ainews-ai-engineer-worlds-fair-autoresearch" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-ai-engineer-worlds-fair-autoresearch" target="_blank" rel="noopener">OCR-Memory：把 agent 执行轨迹存成图像而非文字摘要，严格上下文限制下达到 SOTA</a></h3>
+      <p><strong>现状：</strong>长任务 agent 需要记住几百步之前的操作，但上下文窗口（context window，模型一次能看多少内容）有限，通常只能存压缩后的文字摘要。</p>
+      <p><strong>问题：</strong>文字摘要是有损压缩，细节丢失后 agent 无法准确还原之前的状态，导致长任务出错。</p>
+      <p><strong>解决方案：</strong>OCR-Memory 把 agent 执行轨迹的每一步存储为图像（截图），并在图像上建立索引锚点，需要时精确检索对应帧，而不是读取文字摘要。</p>
+      <p><strong>价值：</strong>在 Mind2Web 和 AppWorld 两个 web agent 基准测试上，严格上下文限制条件下达到当前最优（SOTA）。</p>
+      <p><strong>未来方向：</strong>视觉轨迹存储可能是 computer-use agent（控制电脑屏幕的 agent）记忆问题的更自然解法，与纯文字摘要路线形成竞争。</p>
+      <cite><a href="https://www.latent.space/p/ainews-ai-engineer-worlds-fair-autoresearch" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-ai-engineer-worlds-fair-autoresearch" target="_blank" rel="noopener">Recursive Multi-Agent Systems：agent 通过共享潜在空间通信，token 减少 34–75%，速度提升 1.2–2.4×</a></h3>
+      <p><strong>现状：</strong>多 agent 系统（多个 AI 分工协作完成任务）通常让 agent 之间用自然语言对话，但这会产生大量冗余 token（语言模型处理的基本文本单位）。</p>
+      <p><strong>问题：</strong>agent 间通信成本越来越高，尤其是在需要高频交互的复杂任务里。</p>
+      <p><strong>解决方案：</strong>Recursive Multi-Agent Systems 让 agent 通过共享潜在递归计算空间（shared latent recursive computation）通信，而非完整自然语言，相当于在"概念层"而非"文字层"传递信息。</p>
+      <p><strong>价值：</strong>9 个基准测试平均准确率提升 8.3%，端到端速度提升 1.2–2.4 倍，token 使用量减少 34.6–75.6%。</p>
+      <p><strong>未来方向：</strong>如果 agent 间通信成本成为大型 multi-agent 系统的主要瓶颈，潜在空间通信是一条值得追的方向。</p>
+      <cite><a href="https://www.latent.space/p/ainews-ai-engineer-worlds-fair-autoresearch" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-ai-engineer-worlds-fair-autoresearch" target="_blank" rel="noopener">Meta FAIR 自改进预训练：让强模型改写训练语料续写，事实准确率提升 36.2%</a></h3>
+      <p><strong>现状：</strong>预训练（pretraining，用海量文本让模型学习语言）是大模型能力的基础，但传统预训练语料质量参差不齐，包含大量低质量续写。</p>
+      <p><strong>问题：</strong>低质量训练数据会让模型学到不好的行为模式，而人工清洗成本极高。</p>
+      <p><strong>解决方案：</strong>用一个已经训练好的强模型对预训练语料的"续写部分"进行改写，输出更安全、更高质量的版本；再用另一个模型对新旧版本评分，用 RL 风格的预训练信号引导学习。</p>
+      <p><strong>价值：</strong>事实准确率相对提升 36.2%，安全性提升 18.5%，生成质量对比标准预训练胜率 86.3%。</p>
+      <p><strong>未来方向：</strong>把 post-training（训练后微调）的知识反过来改善 pre-training 数据，是数据飞轮（data flywheel）的一个新变体，值得关注。</p>
+      <cite><a href="https://www.latent.space/p/ainews-ai-engineer-worlds-fair-autoresearch" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-ai-engineer-worlds-fair-autoresearch" target="_blank" rel="noopener">Microsoft 合成计算机世界：1,000 台虚拟电脑 + 8 小时 agent 仿真，解决 computer-use 训练数据瓶颈</a></h3>
+      <p><strong>现状：</strong>训练 computer-use agent（能像人一样操控电脑屏幕的 agent）需要大量真实电脑操作的轨迹数据，但收集成本极高，且难以规模化。</p>
+      <p><strong>问题：</strong>computer-use 任务的训练数据瓶颈不是模型能力，而是缺乏足够多样的真实操作场景。</p>
+      <p><strong>解决方案：</strong>Microsoft 生成了 1,000 台合成虚拟电脑，每台都有真实感的文件系统和文档内容，然后在上面运行平均 2,000+ 步的 8 小时 agent 仿真，批量生成训练轨迹。</p>
+      <p><strong>价值：</strong>提供了一条可以大规模复制的 computer-use 训练数据生产流水线，不依赖人工录制真实操作。</p>
+      <p><strong>未来方向：</strong>合成数据（synthetic data）的质量边界正在被持续扩展，computer-use 这类需要多样化环境的任务，合成世界可能比人工录制更经济。</p>
+      <cite><a href="https://www.latent.space/p/ainews-ai-engineer-worlds-fair-autoresearch" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>ARC-AGI-3 基准测试结果出炉：GPT-5.5 得分 0.43%，Claude Opus 4.7 得分 0.18%——ARC Prize 同步发布了两款模型失败模式的分析，顶级模型在这项测试上的得分仍极低，说明 ARC-AGI-3 依然是有效的硬上限测试。<a class="glance-src" href="https://www.latent.space/p/ainews-ai-engineer-worlds-fair-autoresearch" target="_blank" rel="noopener">AINews →</a></li>
+      <li>DeepSeek 发布"在思考时指向视觉"技术报告：推理链中直接嵌入边界框和坐标（而非文字描述），让模型"边想边指"，减少视觉推理中的"引用鸿沟"问题——技术报告发布后 GitHub 仓库随即消失，无官方解释。<a class="glance-src" href="https://www.latent.space/p/ainews-ai-engineer-worlds-fair-autoresearch" target="_blank" rel="noopener">AINews →</a></li>
+      <li>Replit 10 周年：Amjad Masad 宣布 24 小时免费访问，回顾"让编程触手可及"的使命——10 年前的代码编辑器，今天成了最早拥抱 Agent-native 工作流的平台之一。<a class="glance-src" href="https://x.com/amasad" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>Qwen-Scope 发布：Qwen 团队为 Qwen 3.5 系列（2B–35B MoE）开源稀疏自动编码器（sparse autoencoder，一种分析模型内部特征的可解释性工具），支持特征引导、外科式消融（surgical abliteration，精准删除特定概念）、模型调试和数据集分析——目前规模最大的开源密集模型可解释性工具。<a class="glance-src" href="https://www.latent.space/p/ainews-ai-engineer-worlds-fair-autoresearch" target="_blank" rel="noopener">AINews →</a></li>
+      <li>PFlash：用 0.6B 小模型对 27B 大模型的 128K 上下文做稀疏预填充（sparse prefill），RTX 3090 上比 llama.cpp 快 10 倍——有社区用户报告在 RTX 4090 上内存溢出，10 倍加速数字仍待独立验证。<a class="glance-src" href="https://www.latent.space/p/ainews-ai-engineer-worlds-fair-autoresearch" target="_blank" rel="noopener">AINews →</a></li>
+      <li>Cloudflare Dynamic Workflows：给 agent plan 加上持久执行（durable execution）能力，任务在网络中断或超时后可以恢复继续跑，不再从头开始。<a class="glance-src" href="https://www.latent.space/p/ainews-ai-engineer-worlds-fair-autoresearch" target="_blank" rel="noopener">AINews →</a></li>
+      <li>LangChain HITL 新原语：人类在 agent 执行中途的回复可以直接作为 tool result（工具调用结果）返回 agent，不需要中断整个执行流——multi-user 部署中的数据隔离、delegated credentials（委托凭证）和 RBAC（基于角色的权限控制）同步跟进。<a class="glance-src" href="https://www.latent.space/p/ainews-ai-engineer-worlds-fair-autoresearch" target="_blank" rel="noopener">AINews →</a></li>
+      <li>swyx：想要一个 Chrome 扩展，能在任何图片输入框里叠加文字、手绘或 AI 生成内容——这类"在 UI 层增强 AI 输入"的需求正在变多，工具还跟不上。<a class="glance-src" href="https://x.com/swyx" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>swyx：Codex 用作 Slack 内部知识搜索比 Slack 自带的 AI 搜索更好用——这是用通用 coding agent 替代垂直场景专用工具的早期信号。<a class="glance-src" href="https://x.com/swyx" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>Peter Steinberger（PSPDFKit 作者，独立开发者）：Codex 的 /goal 功能"非常好用"（2,020 点赞）——/goal 是一个让 agent 设定目标并持续执行到完成的工作流命令，Hermes 也在同期推出了类似机制。<a class="glance-src" href="https://x.com/steipete" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>Peter Steinberger：幽默地告诉 Codex 自己在 xAI 上付了钱——结果 Codex 理解并接受了这个"上下文"，继续执行任务，引发了关于 agent 权限信任边界的讨论。<a class="glance-src" href="https://x.com/steipete" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>Peter Yang（YouTube creator + PM）：找到 Codex 的第一个明确坏掉的功能——在大量"Codex 太棒了"的声音里，具体的 bug report 反而更有参考价值。<a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Peter Yang：花了约 $3,000 买 MacBook Pro 跑本地模型，结果最后还是跑云端——本地推理的硬件投入与实际使用行为之间的落差，是一个还没被好好讲清楚的现实。<a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Garry Tan（YC CEO）：批评加州提案中的资产扣押措施会反过来损害州政府财政收入——硅谷创投圈对加州税收政策的反对声音持续升温。<a class="glance-src" href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Nikunj Kothari（FPV Ventures）：一个项目到达 $36,500 ARR 里程碑——用 Railway、Conductor、Claude AI、Stripe 构建，成本接近托管费。以近零边际成本构建 SaaS 的个人项目正在成为常态。<a class="glance-src" href="https://x.com/nikunj" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Dan Shipper（Every 联合创始人）：模型拥有的知识比个体人类多，但人类的学习速度比模型更新频率快——这个不对称性意味着人和 AI 之间的"知识领先权"会在不同维度交替出现。<a class="glance-src" href="https://x.com/danshipper" target="_blank" rel="noopener">X @danshipper →</a></li>
+      <li>Aditya Agarwal（SPC 创始人）：忽视产品专注度是公司死亡的原因之一——在 AI 工具爆炸的时代，"什么都能做"的诱惑比以往更强，这个提醒来得及时。<a class="glance-src" href="https://x.com/adityaag" target="_blank" rel="noopener">X @adityaag →</a></li>
+      <li>Sam Altman：GPT-5.5 发布聚会参加人数超出预期，计划以后办更大的——发布派对本身成了社区热度的晴雨表。<a class="glance-src" href="https://x.com/sama" target="_blank" rel="noopener">X @sama →</a></li>
+      <li>Claude 官方：Anthropic "Code with Claude" 开发者大会，可线上直播报名——面向开发者的 Anthropic 首场专属大会，议程尚未完整公布。<a class="glance-src" href="https://x.com/claudeai" target="_blank" rel="noopener">X @claudeai →</a></li>
+      <li>Tim Ferriss 推荐：Polo &amp; Pan 的《Canopée》——法国电子二人组的代表曲，适合拿来替换下一杯咖啡。<a class="glance-src" href="https://www.youtube.com/watch?v=f5IruTV-LGQ" target="_blank" rel="noopener">YouTube →</a></li>
+      <li>Tim Ferriss 推荐：Valentin Delluc 的 speedriding 短片《From Avoriaz with Love》（3 分钟），在废弃雪场滑翔降落，摄影极美——Tim 的原话："近几年见过的最令人叹为观止的东西之一。"<a class="glance-src" href="https://www.redbull.com/us-en/videos/from-avoriaz-with-love-speedriding-valentin-delluc" target="_blank" rel="noopener">Red Bull →</a></li>
+      <li>Tim Ferriss × Elad Gil 最新播客：Elad Gil 是 Color Genomics 创始人、"帝国建造者的谋士"，本期覆盖硬科技、创业和长期判断，4 月 29 日上线。<a class="glance-src" href="https://tim.blog/2026/04/29/elad-gil/" target="_blank" rel="noopener">Tim Ferriss →</a></li>
+      <li>AI Engineer World's Fair 2026 第二波讲者征集开启：新增 Autoresearch（递归自我改进）、Memory、World Models、Tokenmaxxing、Agentic Commerce 专题赛道，在 Moscone West 举办，正值 FIFA 世界杯同周在旧金山——早订票否则没房间。<a class="glance-src" href="https://www.latent.space/p/ainews-ai-engineer-worlds-fair-autoresearch" target="_blank" rel="noopener">Latent Space →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-05-01.html">← MAY 1</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
