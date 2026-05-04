@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — May 4, 2026</title>
+  <meta name="description" content="Meta 收购人形机器人初创 Assured Robot Intelligence，五角大楼敲定 8 家 AI 军事合作伙伴并独家排除 Anthropic，马斯克在法庭承认用 OpenAI 模型蒸馏训练 Grok。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">May 4, 2026</h1>
+
+  <p class="post-lead">Meta 收购人形机器人初创 Assured Robot Intelligence，五角大楼敲定 8 家 AI 军事合作伙伴并独家排除 Anthropic，马斯克在法庭承认用 OpenAI 模型蒸馏训练 Grok。Stripe 设计师 Owen Williams 分享内部 AI 原型工具 Protodash 如何把 PM 变成最大意外用户，Nilay Patel 的"软件大脑"批评从对立角度补全这幅图。五篇论文覆盖 GenericAgent 的自进化范式、单 agent vs 多 agent 的推理效率悖论，以及多模态 agent 基准测试最高 56.3% 的成绩单。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.wsj.com/tech/meta-platforms-acquires-humanoid-robot-startup-assured-robot-intelligence-721423da" target="_blank" rel="noopener">Meta 收购 Assured Robot Intelligence，人形机器人成下一个算力赛场</a></h3>
+      <p>Meta 宣布收购 ARI（Assured Robot Intelligence），一家专注为人形机器人构建基础模型的初创公司，目标是让机器人能够执行真实物理世界的任务。联合创始人 Xiaolong Wang 和 Lerrel Pinto 将加入 Meta 超级智能实验室，与现有机器人团队负责人 Marc Whitten 协同工作。消息发出后 Meta 股价下跌，投资者对其持续扩张的支出计划持怀疑态度。</p>
+      <p>高盛预测 2035 年人形机器人市场规模达 380 亿美元，摩根士丹利的 2050 年预测更高至 5 万亿。在互联网数据训练接近天花板之后，物理世界的交互正在成为 AI 的下一个训练数据源。谁先掌握能在物理世界中边行动边学习的系统，就拥有纯软件模型难以复制的复利优势。</p>
+      <cite><a href="https://links.tldrnewsletter.com/SkmzpQ" target="_blank" rel="noopener">TLDR</a> · <a href="https://www.theaivalley.com/p/meta-is-moving-into-humanoid-robots" target="_blank" rel="noopener">AI Valley</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.washingtonpost.com/technology/2026/05/01/pentagon-ai-deals-microsoft-amazon-google-classified-military/" target="_blank" rel="noopener">五角大楼签约 8 家 AI 公司接入机密网络，Anthropic 独家落选</a></h3>
+      <p>美国国防部将 SpaceX、OpenAI、Google、Nvidia、Reflection、Microsoft、AWS 和 Oracle 接入机密网络，推进"AI-first 军队"战略。令人意外的是，Anthropic 被排除在外，而新合同据报道包含与 Anthropic 被拒时同样的自主武器和监控限制条款。Anthropic 同期正与 Blackstone、Hellman &amp; Friedman、高盛筹备一个 15 亿美元联合风险投资，向私募股权支持的企业销售 AI 工具。</p>
+      <p>Anthropic 并非因为无关紧要而落选，而是因为太重要而不能只依赖它。美国正在把合同分散给多家机构，以避免对单一提供方形成依赖，同时持续追踪前沿模型。这是早期 AI 地缘政治的形态：不是明确的禁令或批准，而是对能力与依赖之间的持续套利。</p>
+      <cite><a href="https://www.theaivalley.com/p/meta-is-moving-into-humanoid-robots" target="_blank" rel="noopener">AI Valley</a> · <a href="https://www.washingtonpost.com/technology/2026/05/01/pentagon-ai-deals-microsoft-amazon-google-classified-military/" target="_blank" rel="noopener">Washington Post</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://techcrunch.com/2026/04/30/elon-musk-testifies-that-xai-trained-grok-on-openai-models/" target="_blank" rel="noopener">马斯克庭审证词：用 OpenAI 模型蒸馏训练 Grok，自评 xAI 排在所有实验室末位</a></h3>
+      <p>在起诉 Sam Altman 和 Greg Brockman 的庭审中，马斯克在宣誓后承认 xAI 使用了 OpenAI 的模型来帮助训练 Grok，称模型蒸馏（distillation，即用强模型的输出来训练弱模型）是"标准操作"。同一庭审中，马斯克给各大实验室排座次：Anthropic 第一，OpenAI、Google 居中，xAI 末位。</p>
+      <p>这打破了顶级实验室各自独立构建 AI 的叙事。即便是竞争对手，也在彼此的模型输出上学习，这让"拥有智能"的概念变得模糊，竞争更像是在对方的地基上加建，而不是各自从零浇筑。<strong>马斯克承认自己用竞争对手的智识打地基，再起诉对方，是这场诉讼最戏剧性的细节。</strong></p>
+      <cite><a href="https://techcrunch.com/2026/04/30/elon-musk-testifies-that-xai-trained-grok-on-openai-models/" target="_blank" rel="noopener">AI Valley · TechCrunch</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://x.com/levie" target="_blank" rel="noopener">Aaron Levie（Box CEO）：企业 agent 落地的复杂性，"非常真实"</a></h3>
+      <p>Levie 发了一条被广泛转发的长线帖（1338 个赞），核心论点是：把 agent（AI 自主执行任务的系统）部署进现有企业，难度远超大多数人的预期。遗留系统现代化、访问控制重设计、工作流重新编排、快速变化的架构决策——每一项都是一个独立的大项目。在他看来，这不是插一个新工具，而是一场系统重构，对应的工程和咨询工作量是巨大的。</p>
+      <p>这与他在另一条推文里的立场呼应："总体上，我们应该把 AI 当成公共设施，而不是一个存在。"这个区分有实际含义：公共设施你接入、依赖、围绕它设计系统，但你不会期待它主动理解你的业务背景。企业落地 agent 时，把 AI 当"存在"去说话的团队，往往是期望落差最大的那批。<strong>Agent 落地的阻力不在模型，在组织——而组织变革从来都比模型迭代慢一个数量级。</strong></p>
+      <cite><a href="https://x.com/levie" target="_blank" rel="noopener">X @levie</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://theverge.com/podcast/917029/software-brain-ai-backlash-databases-automation/" target="_blank" rel="noopener">Nilay Patel（The Verge 联合创始人）："Software Brain" — 把人扁平化的世界观</a></h3>
+      <p>Nilay Patel 在 Verge 播客中提出"software brain"（软件大脑）这个词，专门描述科技圈与公众之间脱节的根源所在。软件大脑的世界观是：任何事情都是一个可以被优化的循环，任何人类体验都能被塞进数据库。Patel 认为这正是人们讨厌 AI 的原因——"它把人扁平化了"。"普通人并不把写代码的机会看成机会。人们并不渴望被自动化。"</p>
+      <p>这是这周读到的最有力的反向声音之一。技术加速派通常从能力出发做论证，Patel 从感受出发：被 AI"理解"的人，和被 AI"扁平化"的人，体验到的是同一个工具的两个面。软件大脑不解决"不是一切都是循环"这道题，公众与技术的裂缝就会持续扩大。<strong>Patel 没有反对技术本身，他在反对用软件的逻辑替代对人的理解。</strong></p>
+      <cite><a href="https://theverge.com/podcast/917029/software-brain-ai-backlash-databases-automation/" target="_blank" rel="noopener">Wisereads · The Verge</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-the-internal" target="_blank" rel="noopener">Stripe 设计师 Owen Williams：Protodash 如何把 PM 变成最大的意外用户</a></h3>
+      <p>Owen Williams 是 Stripe 的设计管理总监，他构建的 Protodash 最初只是几条 Cursor rules（Cursor 是 AI 代码编辑器，rules 是给 AI 的行为约束文件）、一套 React 组件和一个 MCP server，目的是让设计师和 PM 能在浏览器里用 Stripe 自己的设计系统 Sail 生成可交互原型，而不是用 v0 之类通用工具生出"blurple slop"——那些颜色、字体、组件全部偏差的半成品原型，在 Stripe 高质量标准下根本无法用于设计评审。</p>
+      <p>这个工具从降门槛开始：让设计师只需要知道"npm run dev"就能上手，不需要懂终端。随着迭代，它进化成了浏览器内的完整原型平台，支持设计评审模式，可以让多人在同一个原型上评论，AI 生成摘要，再把修改意见直接发给 AI 处理。真正出乎意料的是：现在使用 Protodash 的 PM 和设计师人数相当。PM 们用它在早期就探索真实产品想法，然后拿着原型和设计师讨论"怎么做得更好"，而不是在白纸上争论"要不要配设计师"。</p>
+      <p>Owen 总结了两条工作原则：第一，在第一个 prompt（提示词，给 AI 的指令）里就要足够具体；第二，一旦你觉得想骂人了，就用 slash clear 清除对话上下文重新来——不要把沉没成本带进下一轮对话。<strong>设计系统 + 公司文化 + AI coding agent 深度绑定才能阻止 blurple slop，这道护城河通用工具没法复制。</strong></p>
+      <cite><a href="https://www.lennysnewsletter.com/p/this-week-on-how-i-ai-the-internal" target="_blank" rel="noopener">Lenny's Newsletter</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/teddy_riker/status/2047312986696454584" target="_blank" rel="noopener">Teddy Riker（Ramp Product）："80/20 倒转了"，agent 将成为软件的主要交互层</a></h3>
+      <p>Ramp 内部的 MCP（Model Context Protocol，一种让 AI 模型连接外部工具和数据源的协议）周活跃用户在 3 个月内涨了 10 倍。Riker 在 X 上给出了他的框架："UI 没有死。人们仍然想点击按钮、查看配置、验证已完成的工作。但 80/20 倒转了：软件交互中新的 80% 将通过 agent 完成。这不只改变你要构建什么，也改变你怎么构建。"</p>
+      <p>这是首批有真实规模数据支撑的 agent 采用率样本之一。10x in 3 months 不是预测，是基线——而且这是在一个财务工具的专业场景里，不是玩具项目。对产品经理来说，"为 agent 设计"将从一个抽象讨论变成一个具体的功能规格要求。<strong>Ramp 的数据意味着 agent-first 产品设计现在有了可以对标的增长曲线。</strong></p>
+      <cite><a href="https://x.com/teddy_riker/status/2047312986696454584" target="_blank" rel="noopener">Wisereads · X @teddy_riker</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/steipete/status/2051088325100831046" target="_blank" rel="noopener">Peter Steinberger（PSPDFKit 作者，独立开发者）：RepoBar 0.4.0 — GitHub 状态栏更智能</a></h3>
+      <p>RepoBar 是 Steinberger 构建的 macOS 菜单栏应用，让开发者无需常驻浏览器就能看到 GitHub 仓库的 CI 状态、Issue 和 PR 压力、最新 release、本地检出状态以及 API 速率限制（rate limit，指 GitHub API 每小时允许的最大请求次数）。0.4.0 版本的核心改进是引入 SQLite 本地持久化缓存，减少不必要的 API 调用，同时让速率限制可视化，并改善了 Issues/PR 加载方式和归档仓库的回退支持。</p>
+      <p>"一个很小的菜单栏应用，越来越成为日常必需工具"——这条发布推文拿到了 1486 个赞。独立开发者用工具打磨工具，每个版本都很小但方向持续清晰，这本身就是一种值得观察的产品节奏。<strong>没有 VC、没有团队、有 SQLite 就够了——这条路径在 AI 工具时代正在变得比以往更可行。</strong></p>
+      <cite><a href="https://x.com/steipete/status/2051088325100831046" target="_blank" rel="noopener">X @steipete</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://x.com/garrytan" target="_blank" rel="noopener">Garry Tan（YC CEO）：Personal AI 的终极目标是文明层面的个体自主</a></h3>
+      <p>Garry Tan 在 X 上写道："Personal AI 的目标：一种文明，其中每一个被 AI 增强的普通人，都能在不被提取性机构俘获的前提下，完成有意义的工作。"（"The goal of Personal AI: civilization where individual humans, augmented by AI, can do consequential work without being captured by extractive institutions."）他随后解释了为什么 GBrain（他为自己构建的个人 AI 知识系统）选择开源：这不只是工程决策，而是对这个目标的代码注脚。</p>
+      <p>"提取性机构"这个词选得很重——它包括平台、广告商、也可能包括大型 AI 公司。Tan 把数据所有权和提示词控制（freedom to write your prompt and own your data）定义为一种新的权利诉求，不是功能要求，是政治立场。在 YC 这样的机构里担任 CEO 同时说这句话，本身就是一个值得玩味的张力。<strong>Tan 把 GBrain 做开源，是在用一个工具告诉你：你应该自己掌握这些。</strong></p>
+      <cite><a href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://ky.fyi/posts/ai-burnout/" target="_blank" rel="noopener">Ky Decker（设计工程师）：辞掉远程工作，"摩擦是好的"</a></h3>
+      <p>设计工程师 Ky Decker 辞掉了一份薪资不错的远程工作，在文章里反思了 AI 主导的工作节奏正在悄悄损失什么。他的核心论点不是反对 AI，而是反对用"速度"替代"过程"：代码审查（code review，指团队成员互相检查代码的流程）的意义不只是让好代码进入代码库，而是让人们在辩论、迭代和妥协中建立机构知识。这个过程很慢，但正因为慢，它才有价值。</p>
+      <p>"摩擦是好的。"Decker 说。AI 把很多摩擦消除了，但消除摩擦本身并不总是进步。被 AI 加速的开发流程，有时候也在把让团队慢下来思考的机会悄悄删掉。这篇文章被 Wisereads 收录，意味着它引发了足够多人的共鸣。在加速主义叙事主导的时期，这是少见的刹车声。<strong>代码审查是一个容器，里面装的是组织的学习过程。AI 加速把容器优化掉的时候，可能也把这个过程顺手跳过了。</strong></p>
+      <cite><a href="https://ky.fyi/posts/ai-burnout/" target="_blank" rel="noopener">Wisereads · ky.fyi</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/papers/2604.17091" target="_blank" rel="noopener">GenericAgent：以"上下文信息密度最大化"为原则的自进化 LLM Agent</a></h3>
+      <p><strong>现状：</strong>主流 LLM agent 系统通常依赖手工设计的工具调用策略或固定任务管线（pipeline），面对新任务类型时泛化能力有限，且因为上下文冗余消耗了大量 token。</p>
+      <p><strong>问题：</strong>如何让 agent 在不增加 token 消耗的前提下，自主识别并压缩低价值上下文信息，同时保留对任务有贡献的高密度信息？</p>
+      <p><strong>解决方案：</strong>GenericAgent（GA）围绕"上下文信息密度最大化"这一单一核心原则构建，结合分层记忆和可复用标准操作流程（SOP），让 agent 在每轮交互后自主识别哪些上下文值得保留、哪些可以压缩。系统本身可以随时间持续自进化。</p>
+      <p><strong>价值：</strong>GenericAgent 以显著更少的 token 和更少的交互轮次，持续超越主流 agent 系统——在 HuggingFace 上积累了 8350 个赞，是本周论文页中票数最高的之一。</p>
+      <p><strong>未来方向：</strong>信息密度视角可能比"让模型更大"更有 token 效率的提升空间，值得关注在多步推理和长任务场景的进一步验证。</p>
+      <cite><a href="https://huggingface.co/papers/2604.17091" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2604.17091" target="_blank" rel="noopener">arXiv 2604.17091</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/papers/2604.02460" target="_blank" rel="noopener">等量 Token 预算下，单 Agent 在多跳推理上超过多 Agent 系统</a></h3>
+      <p><strong>现状：</strong>多 agent 系统（MAS，即多个 AI 模型协作完成任务的架构）在多步推理任务上的强大表现频繁被引用，但这些比较通常给 MAS 分配了更多的计算资源（更多 token 预算）。</p>
+      <p><strong>问题：</strong>当计算资源对齐时，单 agent 和多 agent 系统谁更有信息效率？</p>
+      <p><strong>解决方案：</strong>研究提出基于数据处理不等式的信息论论证：在固定推理 token 预算和理想上下文利用率下，单 agent 在信息效率上具有理论优势。实验在 Qwen3、DeepSeek-R1-Distill-Llama、Gemini 2.5 三个模型家族上，将单 agent 与多种 MAS 架构在等量 token 预算下进行对比。</p>
+      <p><strong>价值：</strong>实验结果证实，单 agent 在多跳推理（multi-hop reasoning，指需要多步串联推理才能得到答案的任务类型）上持续超过 MAS，挑战了"多 agent 更强"的默认叙事。</p>
+      <p><strong>未来方向：</strong>MAS 的优势可能主要来自更多的计算资源而非架构本身，在设计 agent 系统时，token 预算对齐是评估的前提条件。</p>
+      <cite><a href="https://huggingface.co/papers/2604.02460" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2604.02460" target="_blank" rel="noopener">arXiv 2604.02460</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/papers/2604.03016" target="_blank" rel="noopener">Agentic-MME：过程验证的多模态 Agent 基准，最强模型总体准确率 56.3%</a></h3>
+      <p><strong>现状：</strong>现有多模态模型（能同时处理图像、文字等多种输入的 AI 模型）基准通常只评估最终答案对错，而 agent 完成复杂任务的过程往往包含多个中间步骤，仅看终态会掩盖大量错误路径。</p>
+      <p><strong>问题：</strong>如何对多模态 agent 的中间过程进行逐步验证，而不只是评判最终结果？</p>
+      <p><strong>解决方案：</strong>Agentic-MME 包含 418 个真实世界任务，覆盖 6 个领域、3 个难度层级，每个任务配套超过 2000 个步骤级检查点（stepwise checkpoints），平均每任务耗费 10 人工小时标注。评估框架支持沙盒代码执行和结构化工具 API，并引入"overthinking"指标，衡量模型相对于人类参考轨迹的步骤冗余程度。</p>
+      <p><strong>价值：</strong>当前最强模型 Gemini3-pro 总体准确率 56.3%，在 Level-3（最难）任务上骤降至 23%，说明多模态 agent 在真实世界复杂任务上还有相当大的能力缺口。</p>
+      <p><strong>未来方向：</strong>过程验证基准比终态评估更能诊断 agent 的失败模式，Agentic-MME 的方法论值得在更多任务域推广。</p>
+      <cite><a href="https://huggingface.co/papers/2604.03016" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2604.03016" target="_blank" rel="noopener">arXiv 2604.03016</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/papers/2604.26355" target="_blank" rel="noopener">Shorthand for Thought：用"超级 Token"压缩 LLM 推理链，8.1% 无损压缩率</a></h3>
+      <p><strong>现状：</strong>思维链推理（chain-of-thought，即让 LLM 逐步写出推理过程再得出答案的技术）能提升准确率，但也大幅增加了推理所需的 token 数量，直接影响速度和成本。</p>
+      <p><strong>问题：</strong>推理 token 的信息结构是否可以分析，从而压缩冗余部分而不损失准确率？</p>
+      <p><strong>解决方案：</strong>研究发现推理 token 分为两类：低熵结构 token（反复出现的套话脚手架，如"首先""因此"）和高熵有机 token（真正推动解题的问题特定内容）。通过熵引导的"超级 token"（supertokens）机制，将低熵结构 token 压缩合并，保留高熵有机 token。在 3 个模型家族、5 个数学推理基准上测试。</p>
+      <p><strong>价值：</strong>平均缩短推理链 8.1%，在所有模型-基准组合上准确率损失均无统计显著性。</p>
+      <p><strong>未来方向：</strong>推理链压缩可能是改善推理成本的一条实用路线，尤其在数学、编程等结构化推理任务中。</p>
+      <cite><a href="https://huggingface.co/papers/2604.26355" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2604.26355" target="_blank" rel="noopener">arXiv 2604.26355</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/papers/2603.15797" target="_blank" rel="noopener">OMNIFLOW：以物理定律接地的多模态 Agent，零样本泛化无需领域参数更新</a></h3>
+      <p><strong>现状：</strong>多模态 LLM（能同时处理文字和图像的大型语言模型）在科学推理任务上往往缺乏物理一致性，容易产生违反基本定律的输出，且需要大量领域特定数据微调才能适应新学科。</p>
+      <p><strong>问题：</strong>如何让冻结的（即不更新参数的）多模态 LLM 输出在物理上一致，同时具备跨域零样本泛化能力？</p>
+      <p><strong>解决方案：</strong>OMNIFLOW 是一种神经-符号混合架构，引入"语义-符号对齐"（Semantic-Symbolic Alignment）机制：把高维流场张量投影到拓扑语言描述符（topological linguistic descriptors）中，用物理定律约束 LLM 的推理空间，无需修改模型参数。</p>
+      <p><strong>价值：</strong>在零样本泛化和少样本适应任务上显著超越传统深度学习基线，并生成透明的、物理一致的推理报告，可用于科学发现场景。</p>
+      <p><strong>未来方向：</strong>神经-符号混合为 AI 科学推理提供了一条无需大量领域数据的路径，对材料科学、气候建模等数据稀缺场景尤其有吸引力。</p>
+      <cite><a href="https://huggingface.co/papers/2603.15797" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2603.15797" target="_blank" rel="noopener">arXiv 2603.15797</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>Sam Altman："Agents SDK 2.0 被低估了"——2773 赞，没有展开，但说话的人是 OpenAI CEO。<a class="glance-src" href="https://x.com/sama" target="_blank" rel="noopener">X @sama →</a></li>
+      <li>Sam Altman 发推向 Greg Brockman 致谢（4058 赞）："很难想象没有 Greg 的 OpenAI 会成功"。时间节点是 Musk 起诉案庭审期间，背景是 Musk 向 Greg 和 Sam 发送了"不祥短信"后对方拒绝和解。<a class="glance-src" href="https://x.com/sama" target="_blank" rel="noopener">X @sama →</a></li>
+      <li>Peter Steinberger："brb calling @sama"（2031 赞）——上下文不明，但 2000 个赞让人好奇背后发生了什么。<a class="glance-src" href="https://x.com/steipete" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>Peter Steinberger："New claw beta is up!"——OpenClaw 新测试版发布，150 赞。<a class="glance-src" href="https://x.com/steipete" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>Peter Yang（YouTube creator / PM）：测试了 Hermes 和 OpenClaw 两个工具，496 赞——具体对比未知，但独立开发者社区正在认真比较 agent 工具选择。<a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Peter Yang：MacBook 合盖后让 agent 继续运行的方法（589 赞，37 转）——本地 agent 持久运行是一个越来越真实的 DevOps 问题。<a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Peter Yang："我发这条推文是为了开玩笑，结果我正在真的做这件事 lol"（50 赞）——无需上下文，自嘲式现实主义。<a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Amjad Masad（Replit CEO）："10 active, 198 draft, 700+ done"——Replit 正在以前所未有的并行规模运行 agent，这是平台的真实负载数字，不是演示。<a class="glance-src" href="https://x.com/amasad" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>Amjad Masad："一整天的马拉松 vibe coding 能实现多惊人的成果"——他对纯靠热情驱动的开发方式的持续迷恋，无需过度解读。<a class="glance-src" href="https://x.com/amasad" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>Amjad Masad："我怀念连续几天不睡觉 hacking 的日子"——创业者对年轻时工作状态的回望，73 赞。<a class="glance-src" href="https://x.com/amasad" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>Aaron Levie（Box CEO）："总体上，我们应该把 AI 当作公共设施，而不是一个存在"（245 赞）——续昨天企业 agent 复杂度讨论，这是他的认知框架底层。<a class="glance-src" href="https://x.com/levie" target="_blank" rel="noopener">X @levie →</a></li>
+      <li>Garry Tan："这就是为什么 GBrain 是开源的"——补充说明他的个人 AI 哲学，作为 Personal AI 开源主张的操作性解释。<a class="glance-src" href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Zara Zhang（a16z 投资人）："这是我很久以来看到的最酷的 demo"（28 赞）——没有说是什么 demo，但 a16z 的眼光值得后续关注。<a class="glance-src" href="https://x.com/zarazhangrui" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+      <li>Zara Zhang："在 AI 之前，你负担不起做一个小东西"——AI coding agent 不需要被说服，会随时帮你把任何想法实现出来，这才是对独立构建者最大的解放（49 赞）。<a class="glance-src" href="https://x.com/zarazhangrui" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+      <li>Nikunj Kothari（FPV Ventures 创始人）："永远不要放弃你的梦想……坚持本身就有巨大的 alpha"（181 赞）——VC 语境下的励志，但说的是真话。<a class="glance-src" href="https://x.com/nikunj" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Dan Shipper（Every 联合创始人）："no mythos this week!"（171 赞）——他的 AI 产品/新闻订阅 Mythos 本周停更，简短通知。<a class="glance-src" href="https://x.com/danshipper" target="_blank" rel="noopener">X @danshipper →</a></li>
+      <li>swyx（Latent Space 联合创始人）：花了 3 年，终于写出了第二篇短篇小说——不是 AI 新闻，但 3 年做一件事、做完了、发出来，值得记一笔。<a class="glance-src" href="https://x.com/swyx" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>SpaceX 在 Starship 上已累计花费超过 150 亿美元，目标是让火箭可靠性接近航班时刻表；2025 年资本支出中 127 亿美元流向 AI。<a class="glance-src" href="https://thenextweb.com/news/spacex-has-spent-more-than-15-billion-on-starship-and-is-racing-to-make-rocketry-resemble-an-airline-schedule" target="_blank" rel="noopener">TNW →</a></li>
+      <li>ByteDance 旗下 Anew Labs 在一次重要免疫学大会上展示了首款 AI 设计药物，靶点是长期被认为"无法成药"的蛋白-蛋白相互作用（protein-protein interaction，一类极难用小分子药物靶向的生化靶标）。<a class="glance-src" href="https://thenextweb.com/news/bytedance-anew-labs-ai-drug-discovery" target="_blank" rel="noopener">TNW →</a></li>
+      <li>美国"电力缺口"深度分析：AI 数据中心需求激增正在放大此前已存在的电力供应短缺，太阳能和储能部署提速是当前最快的补救路径。<a class="glance-src" href="https://www.apricitas.io/p/americas-electricity-gap" target="_blank" rel="noopener">Apricitas →</a></li>
+      <li>Addy Osmani：AI coding agent 极其能干，但缺乏对"diff 以外"工程规范的本能。把资深工程师的判断编码进 agent 无法绕过的约束（skills），是下一个重要工程课题。<a class="glance-src" href="https://addyosmani.com/blog/agent-skills/" target="_blank" rel="noopener">Addy Osmani →</a></li>
+      <li>OpenAI 的 IPO 准备：CFO Sarah Friar 正在修复财务纪律，她质疑了数据中心合约支出的节奏，并对内控是否达到上市标准存疑；Altman 仍希望年内 IPO。<a class="glance-src" href="https://tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>"Specsmaxxing"：规格说明书（spec）的写作过程，才是软件工程真正发生的地方——一篇把 spec 写作视为 AI 时代核心工程工作的文章。<a class="glance-src" href="https://acai.sh/blog/specsmaxxing" target="_blank" rel="noopener">acai.sh →</a></li>
+      <li>"Prompt engineering is permanent"：今天的提示词工程不是过渡期技能，而是关于如何让 AI 系统在有工具、内存、权限和真实后果的环境里可靠运行的工程学科。<a class="glance-src" href="https://yiblet.com/posts/prompt-engineering-is-permanent/" target="_blank" rel="noopener">yiblet.com →</a></li>
+      <li>Gemini App 正在进行全面视觉重设计，覆盖 UI 的每一个部分——截图见文。<a class="glance-src" href="https://9to5google.com/2026/05/03/gemini-full-redesign/" target="_blank" rel="noopener">9to5Google →</a></li>
+      <li>Every：作者让 ChatGPT 读取自己的 OKR、日历、Notion 和 Slack，充当 AI 项目经理管理整周工作——实验报告。<a class="glance-src" href="https://every.to" target="_blank" rel="noopener">Every →</a></li>
+      <li>Koshy John（微软）："你可以把机械动作外包给 AI，加速研究，压缩重复劳动——这些都好，应该做。但你不能跳过技能形成的过程，又期待技能还在。"<a class="glance-src" href="https://koshyjohn.com/blog/ai-should-elevate-your-thinking-not-replace-it/" target="_blank" rel="noopener">Wisereads →</a></li>
+      <li>Francesco Marconi（前 WSJ R&amp;D 负责人）：新闻业的真正资产不是内容而是决策级情报（intelligence）——2025 年全球 7 家情报公司年营收 520 亿美元、利润率超 35%；全美报纸行业同期仅 210 亿、利润率接近零。同样的原材料，天壤之别的经济模型。<a class="glance-src" href="https://www.appliedxl.com/research/who-will-monetize-truth-pdf.pdf" target="_blank" rel="noopener">Wisereads →</a></li>
+      <li>Jonah Berger《无形影响》（Invisible Influence）预览：你以为的理性选择，几乎都在被你没有注意到的社会影响悄悄塑造——Wharton 教授、《疯传》作者的新书，Wisereads 本周书摘。<a class="glance-src" href="https://readwise.io/reader/fd/450748809" target="_blank" rel="noopener">Wisereads →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-05-03.html">← MAY 3</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
