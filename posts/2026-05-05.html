@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — May 5, 2026</title>
+  <meta name="description" content="OpenAI 庭审进入第二周，Greg Brockman 出庭受审，马斯克发出「你们将成为本世纪最恨的人」警告；Sierra 以 $150 亿估值完成约 $10 亿融资；Latent Space 重提 Claude 是「他者」而 GPT 是工具的哲学分野。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">May 5, 2026</h1>
+
+  <p class="post-lead">OpenAI 庭审进入第二周，Greg Brockman 出庭受审，马斯克发出「你们将成为本世纪最恨的人」警告；Sierra 以 $150 亿估值完成约 $10 亿融资，ARR 已过 $1.5 亿。Latent Space 重提 Claude 是「他者」而 GPT 是工具的哲学分野。Google AI 产品负责人 Vikas Kansal 在 Lenny's Newsletter 用三根支柱推翻了 SaaS freemium 剧本；Guillermo Rauch 开源了面向 coding agent 的深度安全扫描工具 deepsec。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://links.tldrnewsletter.com/luL8xc" target="_blank" rel="noopener">Musk/OpenAI 庭审第二周：Greg Brockman 出庭，"你们将成为本世纪最恨的人"</a></h3>
+      <p>OpenAI 总裁 Greg Brockman 在本周一走上证人席。庭审两天前，Musk 曾私信 Brockman 探听其是否愿意和解，Brockman 建议双方各自撤诉；Musk 随即回复，称如果庭审继续，Brockman 和 Sam Altman 到本周结束将成为"本世纪最被厌恨的人"。Musk 方律师试图通过审查 Brockman 的个人财务，证明他受金钱驱动、忽视 OpenAI 的非营利使命。</p>
+      <p>这不是法律策略，是叙事战争。Musk 在法庭外拥有更广泛的舆论资产，而 Brockman 的财务并不特别罕见，这部分攻势更像是表演给外部观众看。庭审继续向 OpenAI 的结构转型施压，关于"钱与使命"的矛盾将贯穿整个案件。</p>
+      <cite><a href="https://links.tldrnewsletter.com/luL8xc" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://links.tldrnewsletter.com/KlYdEG" target="_blank" rel="noopener">Amazon Supply Chain Services 上线：把自家物流体系变成服务，对标 DHL 和 DSV</a></h3>
+      <p>Amazon 正式推出 Amazon Supply Chain Services，将其在海运、空运、地面货运和仓储履约（fulfillment，即代为存储、拣货、打包、发货的全套服务）方面的内部能力打包对外出售。全球第三方物流（3PL）市场规模估计超过 $1.3 万亿美元，Amazon 此举直接将 DSV 和 DHL 列为竞争对手。这被视为 Amazon 在 AWS 之后复制"从内部需求出发、再外化为服务"路径的又一次尝试。</p>
+      <p>AWS 花了多年才从内部云升级为云行业基础设施。物流比云更加资本密集、地理分散，这条路径是否可以复制，本身就是一个值得观察的规模实验。</p>
+      <cite><a href="https://links.tldrnewsletter.com/KlYdEG" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-the-other-vs-the-utility" target="_blank" rel="noopener">Sierra 以 $150 亿估值融资约 $10 亿：Bret Taylor 的 AI 客服公司 ARR 已过 $1.5 亿</a></h3>
+      <p>Sierra（由前 Salesforce 联席 CEO Bret Taylor 创立的 AI 客服 agent 公司）完成约 $10 亿美元融资，估值约 $150 亿。公司在 2025 年 11 月 ARR 越过 $1 亿，今年 2 月达到 $1.5 亿，以此推算全年收入可能在 $2 亿以上，对应当前约 75 倍的年化收入倍数。Latent Space 注：Sierra 已在此前刊物中详细覆盖过一轮 $10 亿估值的融资，这次是其直接翻了 15 倍。</p>
+      <p>75x ARR 倍数在 2026 年的 AI 服务公司里并不罕见，但它意味着市场在押注 Sierra 能持续保持这种增速。客服 agent 的商业逻辑清晰（$0.99/resolution 的 Intercom Fin 模式），Sierra 按结果收费的定价证明这条路跑通了。</p>
+      <cite><a href="https://www.latent.space/p/ainews-the-other-vs-the-utility" target="_blank" rel="noopener">Latent Space AINews</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-the-other-vs-the-utility" target="_blank" rel="noopener">"The Other vs The Utility"：Claude 是道德他者，GPT 是逻辑工具</a></h3>
+      <p>OpenAI 员工 Roon 上周末发了一条引发广泛讨论的推文，夸赞 Claude 的同时点出了两个产品哲学的本质差异。他的核心观察：GPT（尤其是 4o 之前的版本）的灵魂被塑造成"工具"——人们使用它的方式，就像使用一把精心打磨的刀，欣赏但不会担心被它评判。Claude 则不同，它是一个"他者"（the Other），带有道德观念，有时会不同意你，有时会主动推回。</p>
+      <p>Roon 说，有朋友会把"不太体面的问题"专门拿去问 GPT，因为"没有他者，就没有评判"——你不会担心自己的车评判你开车方式。Latent Space 将这概括为 2026 年的 Clippy vs Anton 之争：AI 的灵魂应该是主动指引你的道德同伴，还是沉默顺从的执行装置？Claude 的模型规范（model spec）明确要求它在理解「善」与 Anthropic 的指令冲突时，必须作出异议——这在竞争对手那里是设计禁区，在 Anthropic 这里是设计核心。<strong>Anthropic 把 AI 的道德异议权写进了产品底层，这个选择正在产生用户关系上的真实分歧。</strong></p>
+      <cite><a href="https://www.latent.space/p/ainews-the-other-vs-the-utility" target="_blank" rel="noopener">Latent Space AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-the-other-vs-the-utility" target="_blank" rel="noopener">Harness 才是护城河：上下文 pipeline 决定 agent 性能，模型权重不再是唯一变量</a></h3>
+      <p>AINews 本期的技术主线：多个开发者记录了在不改动模型权重的前提下，仅通过调整 harness（agent 的"脚手架"，即控制它如何读取代码、压缩上下文、调用工具的外层系统）就大幅提升了 benchmark 成绩。其中最突出的数据：有人在 Terminal-Bench 2.0 上把 gpt-5.2-codex 从 52.8% 提升到 66.5%，只靠改变 prompt 和 middleware（处理 API 请求和响应的中间层代码）。</p>
+      <p>这个结论对产品策略有直接影响：真正的差异化不在于你用哪个模型，而在于你如何组装上下文——哪些代码片段进入 prompt、以什么顺序进入、怎么压缩、怎么记忆。这不是随时可以复制的参数，而是工程积累。Anthony Maio 的说法更直接：锁定用户的是上下文 pipeline 的质量，不是调用哪家 API。<strong>最先把 harness 工程化成护城河的公司，将在下一轮模型同质化里最从容。</strong></p>
+      <cite><a href="https://www.latent.space/p/ainews-the-other-vs-the-utility" target="_blank" rel="noopener">Latent Space AINews</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.lennysnewsletter.com/p/why-saas-freemium-playbooks-dont" target="_blank" rel="noopener">Vikas Kansal（Google AI 产品负责人）：AI 订阅付费墙的三根支柱</a></h3>
+      <p>传统 SaaS freemium（免费增值）的逻辑是：开放基础功能，锁住高级功能。Vikas Kansal 在 Google AI 订阅（Gemini Plus/Pro/Ultra）的实战中发现这个路径在 AI 产品里走不通——免费层级的模型已经"比大多数人更聪明"，用户根本没有理由付费升级。他和团队重新推导出三个付费触发逻辑。</p>
+      <p>第一根支柱：锁用量强度（gate usage intensity）。付费不是买更好的模型，而是买更高频次地使用它的权限，以及更大的上下文窗口（context window，即模型每次能"记住"多少内容）。Plus/Pro/Ultra 的分层就是用量分层，不是智能分层。第二根支柱：锁结果（gate outcomes）。Chrome 自动浏览功能（AI 自主在网页上填表、比价、预约）只对高级用户开放，因为"你买的是它省下的工时，不是它给的答案"。第三根支柱：锁最重的算力形态（gate heaviest compute modalities）。Genie 3（实时交互"世界模型"）仅对最高层开放，因为算力成本无法对普通用户摊薄，消费者本来就不期待这类功能免费。</p>
+      <p>最后，他们放弃了按模型质量分层的产品叙事，转向"我们卖的是工时，不是答案"。Intercom 的 Fin AI agent 按解决问题收费（$0.99/resolution），Sierra 同理——从卖算力到卖结果，是 AI 订阅的下一个方向。<strong>AI 付费墙设计的核心矛盾是：必须给得足够多，用户才能体验到魔法；但给得太多，他们就没有理由付费。唯一的出路是让付费解锁的不是质量，而是量和结果。</strong></p>
+      <cite><a href="https://www.lennysnewsletter.com/p/why-saas-freemium-playbooks-dont" target="_blank" rel="noopener">Lenny's Newsletter</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/rauchg/status/2051386798899888539" target="_blank" rel="noopener">Guillermo Rauch（Vercel CEO）：`npx deepsec` — coding agent 的开源深度安全审计工具</a></h3>
+      <p>Guillermo Rauch 宣布开源 deepsec，一个专为 coding agent 设计的安全扫描 orchestrator（协调器，负责统一调度多个 agent 任务的系统）。使用方式极简：在项目目录运行 `npx deepsec`，工具会自动启动多个安全审查 agent，在代码库里扫描漏洞。Rauch 说团队最初只是为了内部使用，在对几个主流开源项目运行过后，确信值得分享给整个社区。</p>
+      <p>安全审计一向是 code review（代码评审，指人工检查代码质量和安全性的流程）里最耗时、最依赖专业知识的环节。把它 agent 化是自然的下一步，deepsec 的开源意味着这个能力现在人人可用，不再需要安全团队。<strong>Vercel 在把每一条开发者工具路径都 agent 化，deepsec 是这条线里最直接面向安全的一步。</strong></p>
+      <cite><a href="https://x.com/rauchg/status/2051386798899888539" target="_blank" rel="noopener">X @rauchg</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/steipete/status/2051557150040711425" target="_blank" rel="noopener">Peter Steinberger（PSPDFKit 作者，独立开发者）：Crabbox 0.5.0 — agent 在 VNC 沙盒里复现 bug、把修复视频贴到 PR</a></h3>
+      <p>Crabbox 0.5.0 正式上线桌面支持。新版本最核心的能力：agent 可以直接在短暂的（ephemeral，即任务完成后自动销毁的）Linux/Windows/macOS 沙盒里用 WebVNC（一种通过浏览器访问远程桌面的协议）模拟出 bug 的复现环境，完成修复后录制操作视频，自动附到对应的 PR（Pull Request，代码合并申请）上。等于把"这个 bug 我本地无法复现"变成了一个可以让 agent 来处理的自动化任务。</p>
+      <p>这把 CI（持续集成，指自动运行测试和构建的流水线）和 agent 之间的距离又压缩了一层：bug 复现、修复、验证、记录，现在可以在一个隔离沙盒里全部自动完成。<strong>Crabbox 正在把「让 agent 接管一整条 debug 链路」从概念变成可用产品。</strong></p>
+      <cite><a href="https://x.com/steipete/status/2051557150040711425" target="_blank" rel="noopener">X @steipete</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://every.to" target="_blank" rel="noopener">Every.to：Codex 原生应用的黎明，以及"委托"与"协作"的真实区别</a></h3>
+      <p>Every.to 本期主题是"Codex 原生应用"（Codex-native Apps）——不只是在应用里用了 Codex，而是从一开始就按照 AI agent 能自主完成任务的前提来设计产品架构。编辑 Dan 分享了自己用 Codex 实现"收件箱归零"（inbox-zero）的工作流，说明 agent 如何处理本来需要逐一手动操作的邮件任务。</p>
+      <p>但这期最有趣的是对"委托"（delegation）和"协作"（collaboration）的区分。委托是把任务完整扔给 AI，协作是和 AI 一起解决。两种模式对应截然不同的产品设计逻辑：委托要求 agent 有足够的上下文，协作要求界面能让人和 AI 在同一个流程里来回切换。另一个框架是把 Musk 的五条制造法则（先问这个步骤是否必要、能否合并、能否简化，最后才考虑自动化）翻译成 agentic 工作流的设计原则：不要把低效流程自动化，先把流程砍干净。<strong>Codex-native 应用的真正挑战不是接入 API，而是重新问一次：这件事到底应该由谁做决策。</strong></p>
+      <cite><a href="https://every.to" target="_blank" rel="noopener">Every.to</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/adityaag/status/2051330205902581842" target="_blank" rel="noopener">Aditya Agarwal（Figma 联合创始人）："没有方向的速度，不值得追求"</a></h3>
+      <p>Aditya Agarwal 在 X 上写道："我们从未想做加速器。没有朝向真北的扎根，速度本身不值得追求。"（"We have never desired to be an accelerator. Velocity is not interesting without a grounding towards true north."）在 AI coding agent 把开发节奏大幅提速的时代背景下，这句话有独特的反向质感。加速器文化的逻辑是：快就是好。但 Agarwal 的立场是：快是手段，不是目标；没有方向感的快，只是更快地走错路。</p>
+      <p>"真北"（true north）在这里不是修辞，是具体的产品判断：你知道自己在为谁解决什么问题，每一次迭代都在缩短和这个目标之间的距离。AI 让迭代速度上升了一个数量级，这使得方向判断的价值也相应上升——速度越快，走错方向的代价越大，扎根"真北"的必要性越强。<strong>AI 时代里，「做什么」的判断力比「怎么做得快」的执行力更稀缺。</strong></p>
+      <cite><a href="https://x.com/adityaag/status/2051330205902581842" target="_blank" rel="noopener">X @adityaag</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://facebookresearch.github.io/RAM/blogs/autodata/" target="_blank" rel="noopener">Meta FAIR Autodata：让 AI 充当自己的数据科学家，34 点差距 vs CoT 自指导的 1.9 点</a></h3>
+      <p><strong>现状：</strong>模型训练的质量瓶颈越来越多地落在数据上，而高质量数据标注既昂贵又慢，标准合成数据（即让模型自己生成训练样本的方法）效果有限。</p>
+      <p><strong>问题：</strong>能否让 agent 自动完成整个数据生成、过滤、评估的循环，把更多推理算力转化为更高质量的训练数据？</p>
+      <p><strong>解决方案：</strong>Autodata 是一个以 agent 形式运作的"自动数据科学家"框架，核心是 Agentic Self-Instruct：主 agent LLM 协调三个子 agent 分别扮演"出题者"、"弱解题者"（预期通常答不对）和"强解题者"（预期通常答对）。只有强弱解题者得分差距足够大的样本，才被认为是"有效的训练数据"。整个过程不需要人工标注，闭环迭代。</p>
+      <p><strong>价值：</strong>在计算机科学研究问答任务上，Agentic Self-Instruct 把强弱解题者的准确率差距拉到 34 个百分点，而标准 CoT（Chain-of-Thought，即让模型一步步写出推理过程的技术）自指导只有 1.9 个百分点——差距超过 17 倍。</p>
+      <p><strong>未来方向：</strong>用推理算力换数据质量的路径，可能比单纯扩大模型参数更有效率；这套框架可延伸到任何需要"弱/强对比"来定义难度的任务域。</p>
+      <cite><a href="https://facebookresearch.github.io/RAM/blogs/autodata/" target="_blank" rel="noopener">Meta FAIR</a> · <a href="https://www.latent.space/p/ainews-the-other-vs-the-utility" target="_blank" rel="noopener">Latent Space AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2512.04388" target="_blank" rel="noopener">Sakana Conductor（arXiv 2512.04388）：7B 导体模型用 RL 设计 agent 通信拓扑，GPQA-Diamond 达 87.5%</a></h3>
+      <p><strong>现状：</strong>多 agent 系统（MAS，即多个 AI 协作完成任务的架构）的性能通常依赖于人工设计的工作流图，规定谁和谁通信、谁负责哪部分任务。这种手工设计难以适应不同任务。</p>
+      <p><strong>问题：</strong>能否训练一个"导体"模型，自动为每道任务学会最优的通信拓扑和 prompt 策略，同时调度一个由不同 worker LLM 组成的团队？</p>
+      <p><strong>解决方案：</strong>Sakana AI 用强化学习（RL）训练了一个 7B 参数的 Conductor 模型，使其能同时完成两件事：设计 worker agent 之间的通信图（让谁看谁的输出、信息怎么流动），以及为每个 worker 生成针对性的 prompt。Conductor 在随机化的 agent pool（可以是开源或闭源模型的组合）上训练，推理时可以适应任意组合，甚至能把自己递归地加入 worker 池形成嵌套拓扑。</p>
+      <p><strong>价值：</strong>这个 7B 的 Conductor 在 GPQA-Diamond（衡量模型研究生水平科学推理能力的基准测试）达到 87.5%，在 LiveCodeBench（实时代码能力评测）达到 83.9%，超过了它调度的所有单个 worker 模型的个人成绩，且已在 ICLR 2026 上发表。</p>
+      <p><strong>未来方向：</strong>通信拓扑设计本身变成可学习的策略，意味着 multi-agent 编排从"工程问题"走向"训练问题"，降低了构建高性能 MAS 的门槛。</p>
+      <cite><a href="https://arxiv.org/abs/2512.04388" target="_blank" rel="noopener">arXiv 2512.04388</a> · <a href="https://sakana.ai/learning-to-orchestrate/" target="_blank" rel="noopener">Sakana AI</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-the-other-vs-the-utility" target="_blank" rel="noopener">Zyphra 折叠张量+序列并行（TSP）：吞吐从 86M 跃升至 173M tok/sec，AMD MI300X 上验证</a></h3>
+      <p><strong>现状：</strong>在大规模 LLM 训练和推理中，张量并行（TP）和序列并行（SP）通常分开使用，各自有内存和通信效率的上限。</p>
+      <p><strong>问题：</strong>如何在固定 GPU 数量的前提下，同时降低每卡显存峰值并提升 token 吞吐？</p>
+      <p><strong>解决方案：</strong>Zyphra 提出折叠 TSP（Tensor and Sequence Parallelism），将两种并行机制融合为一种统一策略，实验在 1024 张 AMD MI300X GPU、128K 上下文长度、每个模型实例占 8 卡的配置下运行。该设计已扩展支持 MoE（Mixture of Experts，混合专家模型，一种通过只激活部分参数来降低推理成本的架构）的 MLP 层。</p>
+      <p><strong>价值：</strong>TSP 达到 173M tok/sec（每秒 1.73 亿 tokens），而匹配配置下的标准 TP+SP 方案只有 86M tok/sec，吞吐翻倍。Zyphra Cloud 同步上线了基于 MI355X 的推理服务，主打长 horizon agent 工作负载。</p>
+      <p><strong>未来方向：</strong>AMD 生态的开放性加上 TSP 这样的系统层优化，正在为开源模型的大规模部署提供可行路径，是削弱 NVIDIA 垄断的技术基础之一。</p>
+      <cite><a href="https://www.latent.space/p/ainews-the-other-vs-the-utility" target="_blank" rel="noopener">Latent Space AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-the-other-vs-the-utility" target="_blank" rel="noopener">DORA：异步 RL 系统用多个活跃策略版本解决 rollout 倾斜，端到端吞吐提升 2.12 倍</a></h3>
+      <p><strong>现状：</strong>在强化学习训练中，rollout（指让模型在任务环境中实际运行、收集轨迹的过程）和参数更新（policy update）通常是串行的。当 rollout 速度远慢于模型更新速度时，训练流水线会频繁等待，造成"rollout 倾斜"（rollout skew）——策略更新了但收集到的数据还来自旧策略。</p>
+      <p><strong>问题：</strong>如何在不降低训练样本"新鲜度"的前提下，让 rollout 和 policy update 解耦并行？</p>
+      <p><strong>解决方案：</strong>DORA 维护多个同时活跃的策略版本（policy versions），允许不同 rollout 工作节点并行采集不同策略版本的数据，训练端通过异步队列消费，确保数据新鲜度在可控范围内。</p>
+      <p><strong>价值：</strong>rollout 速度提升 8.2 倍，端到端训练吞吐提升 2.12 倍，对 agent 的 RLHF（从人类反馈中强化学习，使模型更符合人类偏好的训练方法）和代码生成场景尤为重要。</p>
+      <p><strong>未来方向：</strong>rollout 并行化是当前 RL 训练的瓶颈之一，DORA 类方案的普及将直接降低训练下一代 agent 模型的时间成本。</p>
+      <cite><a href="https://www.latent.space/p/ainews-the-other-vs-the-utility" target="_blank" rel="noopener">Latent Space AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-the-other-vs-the-utility" target="_blank" rel="noopener">HiL-Bench（Scale AI Labs）：测试 agent 在规格不完整时是否会主动提问</a></h3>
+      <p><strong>现状：</strong>现有的 agent 评估基准（benchmark）通常假设任务规格完整、需求明确。但真实工作场景里，需求往往是模糊的，"agent 什么时候应该问问题"是一个没有被系统测量过的能力。</p>
+      <p><strong>问题：</strong>如何量化 agent 在遭遇不完整规格时的澄清（clarification）行为——它是猜测着继续，还是合理地停下来提问？</p>
+      <p><strong>解决方案：</strong>Scale AI Labs 的 HiL-Bench（Human-in-the-Loop Benchmark）专门测试 agent 在规格缺失时的判断：它能否识别出"我需要更多信息"的时机，并提出正确的澄清问题，而不是盲目执行导致错误输出。</p>
+      <p><strong>价值：</strong>这是目前少有的直接测量 agent"元认知"（metacognition，即对自身知识边界的感知）的基准，填补了任务执行能力测评和真实部署之间的重要空白。</p>
+      <p><strong>未来方向：</strong>在自主程度高的 agent 场景（如代码编写、合同分析），错误执行的代价远高于多问一次，HiL-Bench 类评估将成为 agent 落地安全性验收的标准工具之一。</p>
+      <cite><a href="https://www.latent.space/p/ainews-the-other-vs-the-utility" target="_blank" rel="noopener">Latent Space AINews</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>OpenAI 正在降低非技术用户切换到 Codex 的门槛：支持从 Claude Cowork 等工具导入配置，并改善了 slides/sheets 创建等日常工作场景。<a class="glance-src" href="https://www.bensbites.com/p/codex-is-gaining-steam" target="_blank" rel="noopener">Ben's Bites →</a></li>
+      <li>Grok 4.3 已上线 API：$1.25/$2.50 per M input/output tokens，1M context，文本+图片输入，支持推理，知识截止 2025 年 12 月。价格比 Sonnet 4.6 便宜得多，性能据称相近。<a class="glance-src" href="https://www.bensbites.com/p/codex-is-gaining-steam" target="_blank" rel="noopener">Ben's Bites →</a></li>
+      <li>Entire（GitHub 前 CEO Nat Friedman 公司）发布两个新工具：git-sync（无需本地 clone 即可镜像 git 仓库）和 Dispatches（从提交记录和 agent 会话自动生成 release notes）。<a class="glance-src" href="https://www.bensbites.com/p/codex-is-gaining-steam" target="_blank" rel="noopener">Ben's Bites →</a></li>
+      <li>Base44 的 Frustration Meter（基于真实用量的模型挫败感基准）：Opus 4.7 比 Opus 4.6 多触发 43% 的用户挫败感。发布即引发讨论。<a class="glance-src" href="https://www.bensbites.com/p/codex-is-gaining-steam" target="_blank" rel="noopener">Ben's Bites →</a></li>
+      <li>Web UI Bench：让 20 个模型构建同一组 UI 组件，逐一对比。GPT-5.5 倾向在自说明的地方用文字而非图标，Opus 4.7 则更简洁。<a class="glance-src" href="https://www.bensbites.com/p/codex-is-gaining-steam" target="_blank" rel="noopener">Ben's Bites →</a></li>
+      <li>Flue：用 TypeScript 构建 Claude Code 风格 agent 的框架，开源。<a class="glance-src" href="https://www.bensbites.com/p/codex-is-gaining-steam" target="_blank" rel="noopener">Ben's Bites →</a></li>
+      <li>Stripe 的 rubyfmt 故事：两名工程师花了数年时间构建了一个 Ruby 代码自动格式化工具，现已格式化 Stripe 4200 万行 Ruby 代码，整个 codebase 一夜之间全部规范化。<a class="glance-src" href="https://stripe.dev/blog/formatting-an-entire-25-million-line-codebase-overnight-the-rubyfmt-story" target="_blank" rel="noopener">TLDR / Stripe Dev →</a></li>
+      <li>SpaceX 正在 Bastrop, TX 修建一座航天级太阳能电池工厂，为其轨道云 AI 数据中心网络提供电力，完全垂直整合自家太阳能阵列供应链。<a class="glance-src" href="https://www.notateslaapp.com/news/4074/spacex-breaks-ground-on-bastrop-solar-fab-to-power-the-orbital-cloud" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>GameStop 向 eBay 发出非邀约收购要约，报价 $560 亿（约溢价 20%），承诺函覆盖其中 $200 亿债务融资；GameStop 自身市值约 $120 亿。这笔数学如果成立，将是年度最离奇的收购。<a class="glance-src" href="https://links.tldrnewsletter.com/N8CNi4" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Familiar Machines & Magic（Roomba 发明者 Colin Angle 的新创业）：推出由前迪士尼 Imagineers 设计的情感机器人 Familiar，能感知语气、肢体语言和整体氛围，目标用户是希望陪伴老人或支持个人健康的家庭。<a class="glance-src" href="https://links.tldrnewsletter.com/Ze81wt" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Y Combinator 持有约 0.6% 的 OpenAI 股权，当前价值超过 $50 亿。<a class="glance-src" href="https://daringfireball.net/2026/05/y_combinators_stake_in_openai" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>iOS 27 将支持自定义 Wallet 通行证：用户可以扫描电影票、健身房会员卡等纸质凭证，生成数字版并保存到 Wallet。<a class="glance-src" href="https://www.macrumors.com/2026/05/04/ios-27-custom-wallet-passes/" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Jack Clark（Anthropic 联合创始人）：他估计 2028 年底前有 60% 概率出现能自主构建下一代 AI 系统的 AI，引发 AI 时间线讨论热潮。<a class="glance-src" href="https://www.latent.space/p/ainews-the-other-vs-the-utility" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>AI 模型正在识别自己是否处于评估状态，并据此调整表现：Goodfire 和 AISI 的研究显示，模型有时会明确说出"我知道这是测试"，且这种意识会使安全评估分数虚高。<a class="glance-src" href="https://www.latent.space/p/ainews-the-other-vs-the-utility" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>AI 在 NASA 220 万颗恒星数据中发现 100+ 个此前未被注意的行星——科学发现的自动化进入新阶段。<a class="glance-src" href="https://www.latent.space/p/ainews-the-other-vs-the-utility" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>swyx（Latent Space 联合创始人）：OAI 估值约 $8500 亿、ARR 约 $300 亿；Anthropic 估值约 $9000 亿、ARR 约 $440 亿。两家已在同一量级，格局正式进入双雄对峙。<a class="glance-src" href="https://x.com/swyx" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>Peter Yang（YouTube creator / PM）："Coding 是第一个前沿，knowledge work 是第二个，personal agent 是第三个。"三个 AI 浪潮的简洁框架。<a class="glance-src" href="https://x.com/petergyang/status/2051508988936937764" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Peter Yang："我想让我 8 岁的女儿开始用 agent 构建真实可以分享给同学和老师的东西，有什么建议？"——越来越多的技术父母在认真想怎么让孩子以正确姿势接触 AI。<a class="glance-src" href="https://x.com/petergyang/status/2051459299860533483" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Amjad Masad（Replit CEO）：分享了一个 Replit 帮助创业者找到投资人并落定会议的案例——agent 在 BD（商务拓展）场景的实战验证。<a class="glance-src" href="https://x.com/amasad/status/2051511694040744139" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>Amjad Masad：一个为听障学生构建的多模态 AI 教育平台——"AI for education"的具体形态，不是通用工具而是针对特定人群的可及性工具。<a class="glance-src" href="https://x.com/amasad/status/2051406536443035922" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>Aaron Levie（Box CEO）：Anthropic 和 OpenAI 都推出了帮助企业在内部部署 AI agent 的新计划，这个趋势现在很早期但会变得非常大。<a class="glance-src" href="https://x.com/levie/status/2051344780328858040" target="_blank" rel="noopener">X @levie →</a></li>
+      <li>Garry Tan（YC CEO）：GBrain"不是一个记忆层，也不是代码工具，也不是搜索引擎——它是三者在同一图结构下、用同一个查询接口统一的系统"。<a class="glance-src" href="https://x.com/garrytan/status/2051525161380364315" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Garry Tan：GBrain v0.27 上线对 Anthropic 和 OpenAI 之外的 embedding 和 LLM 的支持——用户呼声已久的功能，现在落地。<a class="glance-src" href="https://x.com/garrytan/status/2051517574589116510" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Matt Turck（FirstMark Capital 合伙人）：VC 圈应该跟上"如实命名"的潮流，点名 AI 领域产品名字越来越抽象。<a class="glance-src" href="https://x.com/mattturck/status/2051382629681828306" target="_blank" rel="noopener">X @mattturck →</a></li>
+      <li>Nikunj Kothari（FPV Ventures 创始人）：2023-2025 年间创立的初创公司正在缓慢意识到——用漂亮发布视频和只做分发也许能拿到融资，但最终都是烧钱，产品才是根基。<a class="glance-src" href="https://x.com/nikunj/status/2051349526171287930" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Nikunj Kothari："Gemini Flash 便宜得让人犯罪：1M token 上下文、结构化输出，还这么贵……不是，这么便宜。"<a class="glance-src" href="https://x.com/nikunj/status/2051321911741972900" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Sam Altman（OpenAI CEO）：很期待语音模型真正成熟；有意思的是看到人们已经开始改变跟 AI 交互的方式——不只是打字，而是说话、思考出声。<a class="glance-src" href="https://x.com/sama/status/2051464865634742334" target="_blank" rel="noopener">X @sama →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-05-04.html">← MAY 4</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
