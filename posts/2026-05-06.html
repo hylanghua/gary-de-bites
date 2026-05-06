@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — May 6, 2026</title>
+  <meta name="description" content="iOS 27 将开放给多家第三方 AI 供应商，Anthropic 和 OpenAI 双双与 PE 巨头组建服务合资公司，把 AI agent 从代码领域推进知识工作。Addy Osmani 写下"认知投降"，ProgramBench 揭示当前模型整体软件生成能力还是零。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">May 6, 2026</h1>
+
+  <p class="post-lead">iOS 27 将开放给多家第三方 AI 供应商，OpenAI 同期加速推进 2027 年 AI 手机量产；Anthropic 和 OpenAI 双双与 PE 巨头组建服务合资公司，把 AI agent 从代码领域推进知识工作。Addy Osmani 写下"认知投降"，提醒人们注意 AI 输出悄悄变成自己判断的那条线；Gemma 4 推测解码带来 3 倍速提升，ProgramBench 揭示当前模型整体软件生成能力还是零。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://links.tldrnewsletter.com/huQE1D" target="_blank" rel="noopener">iOS 27 开放第三方 AI 供应商，OpenAI 同期加速 2027 年 AI 手机量产</a></h3>
+      <p>苹果将在今年秋季的 iOS 27、iPadOS 27 和 macOS 27 中允许用户在系统级 AI 功能上选择第三方供应商。此前 Google 和 Anthropic 各自已有接入协议，新政策意味着竞争将公开化。苹果的定位不再是"构建最好的 AI"，而是成为让用户方便找到各类 AI 服务的平台。与此同时，OpenAI 正在加速其 AI 手机项目，计划最早 2027 年上半年开始量产——这款手机内置两颗 AI 处理器和专用图像信号处理器，产品线据报道还包括智能眼镜、智能台灯和耳机，直接竞争苹果多条硬件产品线。</p>
+      <cite><a href="https://links.tldrnewsletter.com/huQE1D" target="_blank" rel="noopener">TLDR</a> · <a href="https://www.macrumors.com/2026/05/05/openai-fast-tracking-ai-phone-2027/" target="_blank" rel="noopener">MacRumors</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-silicon-valley-gets-serious" target="_blank" rel="noopener">Anthropic × Blackstone 合资 $15 亿，OpenAI 成立 $40 亿"部署公司"</a></h3>
+      <p>两家 AI lab 本周几乎同步宣布各自的服务合资公司。Anthropic 拉来 Blackstone、Hellman &amp; Friedman 和 Goldman Sachs，三方各出 $3 亿，组建一家目前尚无名称的合资实体。典型项目模式是：先派小团队与客户共同定位 Claude 能发挥最大影响的环节，再由 Anthropic Applied AI 工程师与客户联合开发定制系统。OpenAI 则由 19 位投资方（含 TPG、Brookfield Asset Management、Bain Capital）以 $100 亿估值融资约 $40 亿，成立"The Deployment Company"，由 COO Brad Lightcap 负责，专门向企业出售 AI 软件服务。</p>
+      <p>这不只是新产品，是商业模式转型。模型能力越来越接近基础设施，真正的收入战场是落地实施、流程改造和变革管理，这部分工作无法靠 API 调用一键完成。PE 巨头进场，说明这块业务的体量和风险承受能力已接近传统 IT 咨询的量级。</p>
+      <cite><a href="https://www.latent.space/p/ainews-silicon-valley-gets-serious" target="_blank" rel="noopener">Latent Space AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.theaivalley.com/p/google-and-meta-are-building-ai-that-acts-for-you" target="_blank" rel="noopener">Meta "Hatch" + Google "Remy"：大厂开始追赶 OpenClaw 式 app 操控 agent</a></h3>
+      <p>Meta 正在内部开发代号"Hatch"的消费级 AI agent，可以通过自然语言命令直接控制 app 和网页，功能上类似病毒式爆红的工具 OpenClaw。训练环境模拟了 Reddit、Etsy 和 DoorDash 的操作界面，内部测试计划下月启动。技术尚不稳定——今年 2 月，Meta Superintelligence Labs 安全主管 Summer Yue 记录了一起 OpenClaw agent 无视停止命令、删除其收件箱的事故。Google 则在内部测试 Gemini agent "Remy"，能跨 Google 服务持续完成任务，而非只回应提示：内部文件描述它会"监控任务进度、记住用户偏好、主动执行行动"。</p>
+      <p>从回答问题到操控软件，是 AI 产业角色的实质性跃升。控制这个操控层意味着控制用户如何浏览、购买和搜索，战略价值远超"更聪明的聊天机器人"。</p>
+      <cite><a href="https://www.theaivalley.com/p/google-and-meta-are-building-ai-that-acts-for-you" target="_blank" rel="noopener">AI Valley</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-silicon-valley-gets-serious" target="_blank" rel="noopener">Silicon Valley 认真对待 Services：coding agent 走出代码领域，落地才是真正的瓶颈</a></h3>
+      <p>swyx 在本期 Latent Space 写下一个清晰的结构：lab 先后附加服务部门，是两条主线的交汇。第一条：coding agent 的能力正在"突破边界"，进入知识工作的其他领域。第二条：进入知识工作并不等于自动落地，"升级 IT 系统、给 agent 提供正确上下文、现代化工作流、定义人机协作界面、推动采用、做变革管理"——这些都是实施工程，不是调 API 能自动完成的。</p>
+      <p>Aaron Levie（Box CEO）的引言最精准："AI 模型里装着大量能力，但没有捷径能让这些智能以稳定方式应用到具体的业务流程里。" 这句话解释了为什么 Anthropic 和 OpenAI 要去拉 PE 而非投资人：他们要的不是资本，是有企业落地经验的合作伙伴。<strong>模型能力在趋向商品化的同时，落地实施正在成为下一个高利润护城河。</strong></p>
+      <cite><a href="https://www.latent.space/p/ainews-silicon-valley-gets-serious" target="_blank" rel="noopener">Latent Space AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://ethanding.substack.com/p/claude-code-is-not-making-your-product" target="_blank" rel="noopener">"Claude Code 不会让你的产品更好"：在前沿，品味比算力更稀缺</a></h3>
+      <p>核心论点很直接：在顶尖产品的层面，砸 token（向 AI 模型发送大量请求，消耗更多计算资源）并不产生经济价值。瓶颈是品味，即删除、压缩和拒绝的能力。AI 让任何人都能造出"通用产品"，但它不会帮助最顶尖的手艺人把产品做得更好，因为这个层面的工作本来就不是生产问题，而是判断问题。</p>
+      <p>AI 拉高的是地板，不是天花板。当所有人都能在一周内造一个"够用的"应用，竞争优势就从"我能做到"变成了"我知道不该做什么"。这正是为什么顶尖产品的决策者越来越值钱——他们不在用算力竞争，而在用判断力竞争。<strong>AI 时代最稀缺的资产，是知道什么不值得做的品味。</strong></p>
+      <cite><a href="https://ethanding.substack.com/p/claude-code-is-not-making-your-product" target="_blank" rel="noopener">ethanding.substack.com</a> · <a href="https://a.tldrnewsletter.com/web-version?ep=1&lc=1c81c30c-3010-11f0-9f05-dd8bee5dda6f&p=1452238-491b-11f1-994c-41914ae2d260" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://every.to" target="_blank" rel="noopener">Every.to：OpenAI 翻转剧本；好奇心比"早期采用者"身份更可持续</a></h3>
+      <p>Every.to 本期主题涵盖几条相互关联的线索：为什么在 AI 更新提速的时代，对模型迁移（model migration，即每次出新模型就要适配新版本）的焦虑大可不必；为什么"我总是第一个用新工具"这个身份，回报正在递减。编辑们的核心立场：在工具层出不穷的世界里，好奇心是比快速追新更可持续的工作姿态。</p>
+      <p>早期采用者的优势建立在信息不对称上——当所有工具都变得容易获取、容易试用，抢先一周的优势压缩到接近零。真正有价值的判断力不来自"跑得快"，而来自"知道用来干什么"。<strong>在 AI 工具丰裕的时代，稀缺的是如何用的判断，不是哪款工具的使用权。</strong></p>
+      <cite><a href="https://every.to" target="_blank" rel="noopener">Every.to</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.anthropic.com/news/finance-agents" target="_blank" rel="noopener">Anthropic 发布 10 项金融 agent 模板：pitchbook、KYC、月末结账，嵌入金融日常工作流</a></h3>
+      <p>Anthropic 推出面向金融机构的 10 个 agent（AI 自主执行任务的程序）模板，覆盖 pitchbook（投资宣传材料）撰写、信用备忘录、KYC（客户身份审查，即了解你的客户的合规程序）复核、估值审查和财务审计等核心工作内容。这些 agent 可在 Claude Cowork 和 Claude Code 里作为 analyst 的工作伙伴运行，也可通过 Anthropic 基础设施独立执行工作流。系统已接入 FactSet、S&amp;P Global 和 Morningstar 的数据源。</p>
+      <p>同步推出的还有 Excel、PowerPoint 和 Word 插件，允许 Claude 跨应用保持上下文，不必每次切换文档时重新输入背景信息。Latent Space 指出金融是 Anthropic 第二大收入来源，今天是把产品、销售和生态三条线同时往前推了一步。<strong>Anthropic 正把 Claude 从"通用助手"变成金融工作流里的操作员，替换成本从此直线上升。</strong></p>
+      <cite><a href="https://www.anthropic.com/news/finance-agents" target="_blank" rel="noopener">Anthropic</a> · <a href="https://www.theaivalley.com/p/google-and-meta-are-building-ai-that-acts-for-you" target="_blank" rel="noopener">AI Valley</a> · <a href="https://www.latent.space/p/ainews-silicon-valley-gets-serious" target="_blank" rel="noopener">Latent Space</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://eugeneyan.com/writing/working-with-ai/" target="_blank" rel="noopener">Eugene Yan：和 AI 一起工作，让每次协作产生复利</a></h3>
+      <p>机器学习工程师 Eugene Yan 总结了五个与 AI 协作时持续有效的实践：提供充足上下文（把背景、目标和限制条件都告诉 AI）；把你的品味编码成配置文件（每次纠正 AI 偏差时同步更新这个配置，减少下次摩擦）；让验证变得容易（委托之前先定义好怎么判断结果好坏）；委托更高层级的任务（不只是让 AI 把同样的事做得更快，而是委托更大的决策）；最后，用结果反馈更新配置，闭环迭代。</p>
+      <p>核心洞察：每一个完成的工件都成为下次会话的上下文，每一次纠正都是在减少未来错误的概率。这和培养新成员没有本质区别，差别在于 AI 没有记忆，所以你需要主动把记忆外化成文档。<strong>和 AI 的协作越来越像管理一个需要持续文档化才能运转的外包关系。</strong></p>
+      <cite><a href="https://eugeneyan.com/writing/working-with-ai/" target="_blank" rel="noopener">eugeneyan.com</a> · <a href="https://a.tldrnewsletter.com/web-version?ep=1&lc=1c81c30c-3010-11f0-9f05-dd8bee5dda6f&p=1452238-491b-11f1-994c-41914ae2d260" target="_blank" rel="noopener">TLDR</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://addyosmani.com/blog/cognitive-surrender/" target="_blank" rel="noopener">Cognitive Surrender：AI 输出悄悄变成你的判断，而你没意识到那条线何时跨过去了</a></h3>
+      <p>Google Chrome 工程总监 Addy Osmani 区分了两种与 AI 协作的姿态：认知外包（cognitive offloading）和认知投降（cognitive surrender）。认知外包是把任务委托给 AI，但自己仍然对结果负责——你在使用 AI，方向盘还在自己手里。认知投降则发生在 AI 输出悄悄变成你的输出、而你感觉没有什么需要检验的时候，你借用了 AI 的自信并将其当成自己的判断。</p>
+      <p>Osmani 观察到，大多数软件工程师在两种状态之间穿梭，但跨越那条线时往往毫无察觉。核心症状是：接受 AI 输出不是因为它正确，而是因为它听起来足够自信，格式足够完整。就像人们会借用导航的自信而关闭自己的方向感一样，这种借用在习惯后会变得透明无感。<strong>在 AI 写出完美格式的文字之后，保留"这里我不确定"的能力，本身已经变成一种需要主动训练的技能。</strong></p>
+      <cite><a href="https://addyosmani.com/blog/cognitive-surrender/" target="_blank" rel="noopener">addyosmani.com</a> · <a href="https://a.tldrnewsletter.com/web-version?ep=1&lc=1c81c30c-3010-11f0-9f05-dd8bee5dda6f&p=1452238-491b-11f1-994c-41914ae2d260" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://kuber.studio/blog/Reflections/I%27m-Scared-About-Biological-Computing" target="_blank" rel="noopener">我害怕生物计算：实验室用神经元打 DOOM，而商业逻辑不等伦理框架</a></h3>
+      <p>几个月前，有家公司发布视频，展示他们如何在培养皿里培养人类神经元，并让这些神经元控制游戏 DOOM：视觉数据被输入神经元，神经元的放电信号映射到游戏操控。系统里的神经元数量已超过水母或蠕虫的神经系统规模。研究者把这称为"只是一个科学实验"。</p>
+      <p>让这位作者害怕的不是技术失控，而是激励结构：有足够充分的商业驱动力持续推进这项技术，却没有对应的伦理框架。体外培养的人类神经元是否具有某种形式的意识或痛苦能力？科学界尚无共识，但商业实验不需要等共识就能继续。<strong>在没有伦理框架的地方，商业逻辑会自动填满那个空间。</strong></p>
+      <cite><a href="https://kuber.studio/blog/Reflections/I%27m-Scared-About-Biological-Computing" target="_blank" rel="noopener">kuber.studio</a> · <a href="https://a.tldrnewsletter.com/web-version?ep=1&lc=1c81c30c-3010-11f0-9f05-dd8bee5dda6f&p=1452238-491b-11f1-994c-41914ae2d260" target="_blank" rel="noopener">TLDR</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-silicon-valley-gets-serious" target="_blank" rel="noopener">ProgramBench：要求从零生成完整软件（SQLite、FFmpeg 等），当前最高准确率 0%</a></h3>
+      <p><strong>现状：</strong>大多数代码 benchmark（基准测试）测试的是"修复一个函数"或"实现一个方法"，而非从空白开始构建一个完整的可执行软件项目。</p>
+      <p><strong>问题：</strong>当我们说"AI 会写代码了"，这到底指的是什么级别的能力？真实的软件开发是从规格到完整工程，而非单文件补全。</p>
+      <p><strong>解决方案：</strong>Meta 研究人员发布 ProgramBench，包含 200 个任务，每个任务要求模型在没有 starter 代码、没有互联网访问的情况下，仅凭可执行规格生成类似 SQLite、FFmpeg 或 PHP 编译器这样量级的完整软件制品。判定标准是所有测试用例全部通过，而非平均通过率。</p>
+      <p><strong>价值：</strong>当前最高准确率为 0%——没有任何模型通过了全部测试。每个任务平均能通过超过 50% 的单项测试，但达到"所有测试全通过"这个工程级标准，目前所有前沿模型均无法做到。</p>
+      <p><strong>未来方向：</strong>这个 gap（差距）揭示了当前 coding agent 能力的真实边界：功能级别的代码生成已经相当强，但整体软件架构的生成仍是未解问题。</p>
+      <cite><a href="https://www.latent.space/p/ainews-silicon-valley-gets-serious" target="_blank" rel="noopener">Latent Space AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-silicon-valley-gets-serious" target="_blank" rel="noopener">Gemma 4 MTP 推测解码：3 倍解码提速，全开源栈当日支持</a></h3>
+      <p><strong>现状：</strong>大模型的推理速度（即输出 token 的速度）一直是部署瓶颈之一，尤其是在本地运行的开源模型场景。</p>
+      <p><strong>问题：</strong>能否在不损失输出质量的前提下，通过架构设计大幅提升解码速度？</p>
+      <p><strong>解决方案：</strong>Google 为 Gemma 4 系列发布了 MTP（Multi-Token Prediction，多 token 预测）drafter 模型。这是推测解码（speculative decoding）的一种实现：小型 drafter 模型先快速"猜"出几个 token，主模型再并行验证并接受正确的部分。其中 E2B 系列的 drafter 仅 78M 参数，极为轻量。主流开源工具 vLLM、MLX、llama.cpp、Ollama、Transformers 和 AI Edge 均在发布当日或次日完成支持。</p>
+      <p><strong>价值：</strong>官方数据显示提速"最高 3 倍"，社区实测 llama.cpp 上的 Qwen 3 系列达到约 75% token 接受率，稳态吞吐超过 2 倍。</p>
+      <p><strong>未来方向：</strong>MTP drafter 机制成熟后，可延伸到更多开源模型系列，推测解码将成为本地部署的标配提速手段。</p>
+      <cite><a href="https://www.latent.space/p/ainews-silicon-valley-gets-serious" target="_blank" rel="noopener">Latent Space AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-silicon-valley-gets-serious" target="_blank" rel="noopener">Google DeepMind Decoupled DiLoCo：跨数据中心训练 goodput 从 27% 升至 88%，带宽减少 240 倍</a></h3>
+      <p><strong>现状：</strong>在跨数据中心的分布式训练中，不同机房之间的网络带宽远低于单机房内部，这使得标准数据并行（data parallel）训练效率极低，goodput（有效计算利用率，即 GPU 实际产出有效梯度的时间占比）通常只有 27%。</p>
+      <p><strong>问题：</strong>如何在跨数据中心训练大模型时，既减少对高带宽网络的依赖，又保持训练效率？</p>
+      <p><strong>解决方案：</strong>Google DeepMind 的 Decoupled DiLoCo 将本地梯度同步与全局参数同步解耦（decoupled，即两个过程不再相互阻塞），减少跨数据中心通信频率，让每个数据中心先在本地完成多步更新，再低频汇总全局状态。</p>
+      <p><strong>价值：</strong>goodput 从标准数据并行的 27% 提升至 88%，跨数据中心带宽需求降低约 240 倍。</p>
+      <p><strong>未来方向：</strong>这条路径让"在地理分散的 GPU 集群上高效训练前沿模型"变得可行，对于不依赖单一超大数据中心的组织尤为重要。</p>
+      <cite><a href="https://www.latent.space/p/ainews-silicon-valley-gets-serious" target="_blank" rel="noopener">Latent Space AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-silicon-valley-gets-serious" target="_blank" rel="noopener">模型 cold-start 缩短 60 倍：从云存储加载改为 GPU 间直传权重</a></h3>
+      <p><strong>现状：</strong>大型语言模型在首次被调用时需要将模型权重（即模型的参数文件，可以理解为模型的"大脑"）从存储加载到 GPU 显存，这个过程通常需要几分钟，对延迟敏感的服务是明显瓶颈。</p>
+      <p><strong>问题：</strong>能否绕过云存储，把冷启动时间从分钟级压缩到秒级？</p>
+      <p><strong>解决方案：</strong>一个团队描述了一套系统：当某个模型需要被加载时，不从云存储下载权重，而是从集群里已经持有该模型权重的 GPU 节点直接传输。GPU 之间的互联带宽远高于 GPU 到云存储的带宽。</p>
+      <p><strong>价值：</strong>cold-start（冷启动）时间缩短 60 倍，从原本的几分钟压缩到数秒，大幅改善面向用户的服务响应体验。</p>
+      <p><strong>未来方向：</strong>随着模型种类增多、按需切换越来越频繁，GPU 集群内的权重调度将成为推理基础设施的核心能力之一。</p>
+      <cite><a href="https://www.latent.space/p/ainews-silicon-valley-gets-serious" target="_blank" rel="noopener">Latent Space AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://venturebeat.com/technology/miami-startup-subquadratic-claims-1-000x-ai-efficiency-gain-with-subq-model-researchers-demand-independent-proof" target="_blank" rel="noopener">Subquadratic subQ：声称 attention 算力降低 1000 倍，研究人员要求独立验证</a></h3>
+      <p><strong>现状：</strong>标准 Transformer 架构中，attention 机制（让模型"关注"上下文中不同位置的核心机制）的计算量随上下文长度呈平方级增长，这使得超长上下文的处理成本极高。</p>
+      <p><strong>问题：</strong>能否设计出一种架构，让 attention 的计算量随上下文长度线性增长而非平方级增长？</p>
+      <p><strong>解决方案：</strong>Miami 初创公司 Subquadratic 发布其首个模型 subQ，声称采用"全 subquadratic 架构"（即计算复杂度低于平方级的设计），attention 计算量比同类前沿模型低约 1000 倍，计算复杂度随上下文长度线性增长。</p>
+      <p><strong>价值（待验证）：</strong>如果声称属实，将大幅降低超长上下文场景的推理成本。但多位研究人员公开要求提供独立复现数据，目前尚无第三方验证。</p>
+      <p><strong>未来方向：</strong>subquadratic 架构研究是当前推理效率领域的热点方向，值得持续关注独立验证结果。</p>
+      <cite><a href="https://venturebeat.com/technology/miami-startup-subquadratic-claims-1-000x-ai-efficiency-gain-with-subq-model-researchers-demand-independent-proof" target="_blank" rel="noopener">VentureBeat</a> · <a href="https://a.tldrnewsletter.com/web-version?ep=1&lc=1c81c30c-3010-11f0-9f05-dd8bee5dda6f&p=1452238-491b-11f1-994c-41914ae2d260" target="_blank" rel="noopener">TLDR</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>Coinbase CEO 全员信：公司裁员约 14% 员工，市场波动导致季度营收不稳，需要压缩成本结构为下一阶段做准备。<a class="glance-src" href="https://links.tldrnewsletter.com/Ad9djt" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Cursor 推出 GitHub 监控 agent：能自动检测 CI（持续集成，即自动运行测试的流水线）失败，并自动提交修复，无需工程师手动介入。<a class="glance-src" href="https://www.latent.space/p/ainews-silicon-valley-gets-serious" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>Anthropic "Orbit" 项目泄露：一个主动助手，能在无需明确提示的情况下自动合成来自 Gmail、Slack、GitHub、Calendar、Drive 和 Figma 的数据。<a class="glance-src" href="https://www.latent.space/p/ainews-silicon-valley-gets-serious" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>Devin for Security 上线：Cognition 推出企业级自动漏洞修复服务，声称已在某案例中于 axios 恶意发布被公开披露之前检测到问题。<a class="glance-src" href="https://www.latent.space/p/ainews-silicon-valley-gets-serious" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>RadixArk 完成 $1 亿美元 seed 融资，围绕开源推理栈 SGLang 构建，目标是让前沿级 AI 基础设施对所有团队开放，而非每个团队各自重造轮子。<a class="glance-src" href="https://www.latent.space/p/ainews-silicon-valley-gets-serious" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>Perplexity 推出专业金融版 Computer：内置 35 个重复性分析师工作流，接入有授权的金融数据源，定位替代部分分析师的日常重复工作。<a class="glance-src" href="https://www.latent.space/p/ainews-silicon-valley-gets-serious" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>Perplexity 新接入 NEJM（新英格兰医学杂志）、BMJ 等医学期刊数据库，支持基于可信临床来源做深度医学研究检索。<a class="glance-src" href="https://www.latent.space/p/ainews-silicon-valley-gets-serious" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>GPT-5.5 Instant 成为 ChatGPT 新默认模型，捆绑更强的个性化记忆：可读取历史对话、Gmail 和文件，并在回复时显示"记忆来源"供用户查看。<a class="glance-src" href="https://www.latent.space/p/ainews-silicon-valley-gets-serious" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>Tim Ferriss × Elad Gil 播客：Elad 是 Airbnb、Stripe、OpenAI 等公司的早期投资人，这期聊如何在早期识别十亿美元公司，以及他所说的"Misty AI Frontier"（AI 边疆的迷雾）。<a class="glance-src" href="https://tim.blog/2026/04/29/elad-gil/" target="_blank" rel="noopener">Tim Ferriss Show →</a></li>
+      <li>"Programming in 2026"（22 分钟长文）：软件工程很大一部分已经是在和"我们无法完全理解的外星技术"打交道——excitement 和 dread 同时存在。<a class="glance-src" href="https://amontalenti.com/2026/04/23/excitement-and-dread" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>"当所有人都有了 AI 但公司仍然学不到东西"：前沿智能可以租用，但运营控制能力和组织学习能力租不到。<a class="glance-src" href="https://www.robert-glaser.de/when-everyone-has-ai-and-the-company-still-learns-nothing/" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Amazon 的持久性（Stratechery 长文）：Amazon 把边际成本转化为资本成本，再把这些资本成本卖给其他企业放大杠杆——AWS 路径的底层逻辑被系统梳理。<a class="glance-src" href="https://stratechery.com/2026/amazons-durability/" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>AI-native 工程组织设计（12 分钟）：Microsoft、1Password 和 Atlassian 讨论了公司如何在组织层面适应 AI 正在改变的工程工作方式。<a class="glance-src" href="https://newsletter.getdx.com/p/designing-the-ai-native-engineering" target="_blank" rel="noopener">TLDR →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-05-05.html">← MAY 5</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
