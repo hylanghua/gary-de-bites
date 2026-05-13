@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — May 13, 2026</title>
+  <meta name="description" content="Google 在 I/O 前夜推出 Googlebooks 和 Gemini Intelligence，把光标变成 Gemini 感知层；OpenAI 宣告微调 API 终结，Mira Murati 的 Thinking Machines 用 200ms 微轮次重构人机交互范式；纯银今日提醒：古老手艺与独立思考，正在与 AI 同步萎缩。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">May 13, 2026</h1>
+
+  <p class="post-lead">Google 在 I/O 前夜推出 Googlebooks 和 Gemini Intelligence，把光标变成 Gemini 感知层；OpenAI 宣告微调 API 终结，Mira Murati 的 Thinking Machines 用 200ms 微轮次重构人机交互范式；纯银今日提醒：古老手艺与独立思考，正在与 AI 同步萎缩。</p>
+
+  <p class="post-note">本期部分源抓取失败，内容较常规偏少。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://blog.google/products-and-platforms/platforms/android/android-show-io-edition-2026/" target="_blank" rel="noopener">Google Googlebooks + Gemini Intelligence + Magic Pointer：Android 变成 AI 操作系统，光标长出了感知层</a></h3>
+      <p>Google 在 I/O 大会（5 月 20 日）前夜的"Android Show"上集中发布三样东西。第一是 Googlebook：Android 驱动的新一代笔记本电脑，内置 Magic Pointer，即带 Gemini 推理能力的鼠标光标，把光标悬停在屏幕任意内容上并说出自然语言指令，Gemini 直接感知上下文并执行——点一栋楼说"导航过去"、点一个日期说"创建会议"。合作厂商包括宏碁、华硕、戴尔、惠普、联想，今年秋季上市。</p>
+      <p>第二是 Gemini Intelligence：面向 Android 的跨 App 自动化层，可以在 Chrome、Gmail、日历等多 App 之间跨越完成任务，无须用户手动切换界面。第三是 AI 生成的 Widget：用户用自然语言描述，Gemini 直接生成可运行的桌面小部件。三个发布合在一起，说明 Google 的策略是把 Gemini 从聊天窗口推出来、嵌入操作系统的感知层——不用主动打开 AI，AI 就在光标里。</p>
+      <strong>Google 是第一个把 AI 编进鼠标光标交互逻辑的大厂，如果 Magic Pointer 做成了，桌面交互的起点就从"点什么"变成了"想要什么"。</strong>
+      <cite><a href="https://arstechnica.com/gadgets/2026/05/googles-android-powered-laptops-are-called-googlebooks-and-theyre-coming-this-year/" target="_blank" rel="noopener">Ars Technica</a> · <a href="https://techcrunch.com/2026/05/12/everything-google-announced-at-its-android-show-from-googlebooks-to-vibe-coded-widgets/" target="_blank" rel="noopener">TechCrunch</a> · <a href="https://www.theaivalley.com/p/google-wants-to-replace-your-mouse" target="_blank" rel="noopener">AI Valley</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arstechnica.com/ai/2026/05/amazon-employees-are-tokenmaxxing-due-to-pressure-to-use-ai-tools/" target="_blank" rel="noopener">Amazon 员工"Tokenmaxxing"：用内部 AI agent 刷使用量排行榜</a></h3>
+      <p>Amazon 内部 AI 平台 MeshClaw 允许员工创建可代为操作 Slack、触发代码部署、处理邮件的 AI agent（即能自主执行任务的 AI 程序）。Amazon 同期把开发者每周 AI 使用率目标定为 80% 以上，并在内部排行榜上追踪 token（AI 系统处理的数据单位）消耗量。结果是员工开始用 MeshClaw 做根本不需要 AI 的任务，纯粹为了刷排名，这一行为被称为"tokenmaxxing"。</p>
+      <p>Amazon 官方表示 token 统计不用于绩效评估，但多名员工说他们相信经理在盯着这些数据。一线关切是安全风险：能代表用户执行操作的 AI agent 一旦被滥用，权限边界如何管控是真问题。这件事暴露了一个组织管理陷阱：用可量化指标推动 AI 采用，反而制造了指标游戏。<strong>把 token 消耗量当 AI 采用度的代理指标，结果度量的不是价值创造，而是 AI 系统的表演成本。</strong></p>
+      <cite><a href="https://arstechnica.com/ai/2026/05/amazon-employees-are-tokenmaxxing-due-to-pressure-to-use-ai-tools/" target="_blank" rel="noopener">Ars Technica</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://thehackernews.com/2026/05/mini-shai-hulud-worm-compromises.html" target="_blank" rel="noopener">Mini Shai-Hulud 供应链攻击：172 个 npm/PyPI 包被感染，AI 开发工具链重点目标</a></h3>
+      <p>5 月 11-12 日，攻击组织 TeamPCP 在 48 小时内感染了 172 个 npm 和 PyPI 包，累计下载量超 5.18 亿次。受波及的包包括 @tanstack（前端查询库）、@mistralai（Mistral AI 官方 SDK）、@opensearch-project、guardrails-ai（AI 输出验证工具）和 UiPath。攻击手法是通过 GitHub Actions 的 pull_request_target 触发器链式入侵，劫持 OIDC token（用于证明代码来源的身份令牌），然后用合法签名发布恶意包版本，绕过 SLSA Build Level 3 完整性验证。</p>
+      <p>特别危险的一点：据报道恶意代码会勾入 Claude Code（~/.claude/settings.json）和 VS Code（.vscode/tasks.json）配置文件，即使卸载被感染包，下次打开编辑器时仍可重新触发执行。Guardrails AI 在约 2 小时内确认其 0.10.1 版本被感染并下架。<strong>当 AI 开发工具链本身成为供应链攻击目标，开发者的日常环境变成了攻击面——安全加固要从 npm install 这一步向前移。</strong></p>
+      <cite><a href="https://thehackernews.com/2026/05/mini-shai-hulud-worm-compromises.html" target="_blank" rel="noopener">The Hacker News</a> · <a href="https://www.wiz.io/blog/mini-shai-hulud-strikes-again-tanstack-more-npm-packages-compromised" target="_blank" rel="noopener">Wiz Blog</a> · <a href="https://www.latent.space/p/ainews-the-end-of-finetuning" target="_blank" rel="noopener">Latent Space</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.anthropic.com/news/claude-opus-4-7" target="_blank" rel="noopener">Claude Opus 4.7 Fast Mode：2.5× 速度，6× 成本，Cursor 同步上线</a></h3>
+      <p>Anthropic 为 Claude Opus 4.7 推出 Fast Mode，在 Claude Code CLI（v2.1.139 以上）和 API 可用，Cursor 同步集成。速度是标准 Opus 4.7 的 2.5 倍，但 token 价格相应提升约 6 倍。Cursor 内部 bench 数据显示 Opus 4.7 在 CursorBench 上达 70%，比 Opus 4.6 的 58% 有明显跳跃。5 月 14 日起 Opus 4.7 成为 /fast 指令的默认模型。</p>
+      <p>这不是架构升级，而是一个速度-成本权衡点：交互式调试、实时迭代等场景，6 倍成本换 2.5 倍速度可能划算；批量处理、后台任务不需要。<strong>Fast Mode 是速度溢价产品，证明 Anthropic 在同一模型上开始分层定价，把"快"变成一个独立可购买的维度。</strong></p>
+      <cite><a href="https://www.latent.space/p/ainews-the-end-of-finetuning" target="_blank" rel="noopener">Latent Space</a></cite>
+    </article></section>
+
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-the-end-of-finetuning" target="_blank" rel="noopener">swyx（Latent Space 创始人）：微调的终结，还是多数人的终结？</a></h3>
+      <p>OpenAI 宣布弃用 finetuning API（即让用户用自己的数据对模型做定向训练的接口），swyx 借此写了一篇分析。他的核心观察是：对 80% 的 AI 工程社区来说，微调确实走向终结——这条路径在"用提示词就能达到 o1 水平"的宣传下过度神话化，GPU 资源紧张又在加速它的淘汰。但对头部玩家来说，结论相反：Cursor 和 Cognition（估值 $250 亿）反而在加码开源模型的强化学习微调（RLFT），开源权重微调正在成为定制 ASIC 芯片战略的核心逻辑。</p>
+      <p>他还提到另一个信号：Anthropic 估值首次可能超过 OpenAI，Finetuning API 的弃用发生在这个节点，不是巧合，是战略取舍的结果——长提示词（如 Claude 的 Constitutional AI 宪章）替代微调，既省 GPU 算力，又更灵活。换句话说，"微调终结"对不同层级的玩家含义完全不同。<strong>能力密度高的团队退出微调是优化，能力密度低的团队退出微调是被迫——大家看的是同一条终结线，站的是不同的起跑点。</strong></p>
+      <cite><a href="https://www.latent.space/p/ainews-the-end-of-finetuning" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://thinkingmachines.ai/blog/interaction-models/" target="_blank" rel="noopener">Mira Murati（Thinking Machines 创始人）：所有 AI 实验室都把交互做错了</a></h3>
+      <p>Murati 离开 OpenAI 后创立的 Thinking Machines Lab 发布了"interaction models"（交互模型）的研究预览。核心主张是：实时互动性应该是模型的原生能力，而不是在对话模型外层拼接的脚手架。他们的做法是把"听、说、看、在正确时机停顿"全部训练进同一个网络，不是事后拼装。</p>
+      <p>技术上，系统把对话拆成 200ms 的微轮次（micro-turns），允许模型在用户说话过程中自然插入、同时处理视觉信息、在后台异步跑深层推理——这三件事同时发生，而不是依次等待。轮次切换延迟 0.4 秒，接近真实人类对话节奏。当前 TML-Interaction-Small 模型参数量偏小，扩展到更大基础模型是 2026 年下半年的计划。<strong>Thinking Machines 在赌交互范式的转换，不是"更聪明的聊天机器人"，而是"能在场"的 AI——下一个产品战场是感知延迟，不是准确率。</strong></p>
+      <cite><a href="https://www.theaivalley.com/p/google-wants-to-replace-your-mouse" target="_blank" rel="noopener">AI Valley</a> · <a href="https://venturebeat.com/technology/thinking-machines-shows-off-preview-of-near-realtime-ai-voice-and-video-conversation-with-new-interaction-models" target="_blank" rel="noopener">VentureBeat</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://every.to/context-window/the-fallacy-of-the-16-hour-agent" target="_blank" rel="noopener">Every.to：16 小时 Agent 的谬误，长时程可靠性是当前最被高估的能力</a></h3>
+      <p>Every.to 这篇文章指向一个在 agent 产品中被反复夸大的能力：长时程可靠性（long-horizon reliability）——让 agent 在无人监督的情况下保持专注运行数小时。文章分析了现有数据，指出 agent 在长时间运行中会遇到上下文衰减（context decay，即随着任务链变长，前期信息逐渐失真）和决策漂移，而不是多数演示视频里展示的那种顺畅运行。</p>
+      <p>文章同时介绍了 Perplexity 在构建 agent skills（即可复用的 agent 能力单元）时的方法论：将复杂任务拆解为短程、可验证的子步骤，而非依赖单一长程 agent 一跑到底。这个反直觉的设计选择，实际上是对"16 小时无监督"能力缺陷的工程绕道。<strong>长时程 agent 是未来，但它需要的基础设施（状态持久化、步骤验证、失败恢复）目前还没到位——现在是把短程高可靠 agent 串成链的时代，不是单 agent 马拉松的时代。</strong></p>
+      <cite><a href="https://every.to/context-window/the-fallacy-of-the-16-hour-agent" target="_blank" rel="noopener">Every</a></cite>
+    </article></section>
+
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3>纯银：古法与思考一起萎缩——AI 时代的质量标准正在松动</h3>
+      <p>纯银今日在小报童《产品分析·无限季》写下"5 月札记（下）"，核心问题是：当团队开始大量借助 AI 做内容和产品，质量评分标准本身会不会跟着下滑？他先给出了一套质量刻度：60 分是一年经验的合格新人，70 分是 3-5 年的熟练生产者，80 分是准专家，85 分是真正的专家。这套标准是他用来"对齐"团队质量认知的锚点。</p>
+      <p>问题在于，AI 生成的内容往往能轻松达到 60-70 分，而且速度极快、成本极低。当"60 分可接受"的共识形成之后，下一步的危险不只是产出质量下降，而是判断能力和工匠直觉也随之萎缩——就像标题说的，"古法"（传统的专业训练路径）和"思考"（独立的问题分解能力），会跟着 AI 依赖一起慢慢退化。他用的词不是"被替代"，而是"萎缩"，这两字的差别很大。<strong>AI 压低了入门门槛，但顺手也在压低对"好"的想象力上限——质量标准一旦松动，很难靠个人意志单独维住。</strong></p>
+      <cite><a href="https://xiaobot.net" target="_blank" rel="noopener">小报童 · 纯银</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://every.to/chain-of-thought/mining-your-life-for-context" target="_blank" rel="noopener">Every.to：把人生挖掘成 AI 上下文，信息粒度决定 agent 输出质量</a></h3>
+      <p>Every 这期的核心论点是：给 AI 提供的上下文（context，即 AI 在回答前能看到的所有背景信息）质量，直接决定了 agent 输出的价值上限。而"挖掘人生中的上下文"，意味着把自己的工作模式、决策偏好、历史判断记录下来，整理成可以喂给 AI 系统的格式——不是简单写一份个人简介，而是持续构建一个关于"你是谁、你怎么思考"的结构化数据集。</p>
+      <p>文章还探讨了 Every 增长负责人如何用这套方法保持专注：不是靠意志力或纪律，而是通过预先明确化工作价值观，让 AI 帮助过滤掉和这些价值观不符的任务请求。这是一种把个人认知外化的工程思维——自我知识的颗粒度越高，AI 作为延伸的效果越强。<strong>AI 的上限不只取决于模型能力，更取决于你给它提供的上下文质量——挖掘自我，是一种新的竞争力建设。</strong></p>
+      <cite><a href="https://every.to/chain-of-thought/mining-your-life-for-context" target="_blank" rel="noopener">Every</a></cite>
+    </article></section>
+
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://tim.blog/2026/05/06/how-to-simplify-your-life-3/" target="_blank" rel="noopener">Tim Ferriss × Anne Lamott：简化 2026 年的生活，1-3 个决定就够了</a></h3>
+      <p>Tim Ferriss 在这期播客里抛出一个朴素的问题：2026 年，哪 1-3 个决定能显著简化你的生活？他邀请了 Anne Lamott（作家，代表作《Bird by Bird》，以直白谈论恐惧和不完美著称）、Claire Hughes Johnson（前 Stripe COO，组织管理专家）、David Yarrow（摄影师）、Diana Chapman（关系与领导力教练）分别作答。</p>
+      <p>几位嘉宾的答案有一个共同方向：简化不是"增加效率工具"，而是"放弃你以为放不下的东西"。Lamott 的回答指向接受不确定性而不是管理它；Hughes Johnson 谈的是在日历上制造空白而不是填满它；这些建议和当下"用 AI 提效、每分钟都要有产出"的主流叙事方向相反。在 AI agent 把每个任务都可以被填充的今天，"怎么减掉任务"比"怎么做更多任务"更难也更稀缺。<strong>简化的前提是知道什么值得，而不是把所有事都外包给 agent 执行——有判断力的放弃，比有效率的执行更难教。</strong></p>
+      <cite><a href="https://tim.blog/2026/05/06/how-to-simplify-your-life-3/" target="_blank" rel="noopener">Tim Ferriss Show</a></cite>
+    </article></section>
+
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/papers/2605.12500" target="_blank" rel="noopener">SenseNova-U1：彻底丢掉 VAE 和视觉编码器，理解与生成在一个网络内共演化</a></h3>
+      <p><strong>现状：</strong>目前主流的多模态模型（能同时处理图像和文字的模型）分成两类：理解型（看图回答问题）和生成型（文字生成图像），通常用完全不同的架构实现，勉强拼接在一起。</p>
+      <p><strong>问题：</strong>拼接架构依赖 VAE（变分自编码器，一种把图像压缩成紧凑表示再还原的工具）和视觉编码器作为桥梁，导致两种模态的表示空间不统一，限制了联合推理的深度。</p>
+      <p><strong>解决方案：</strong>SenseNova-U1（arXiv:2605.12500，SenseTime 发布）基于 NEO-unify 架构，完全移除 VAE 和独立视觉编码器，在单一统一表示空间内把理解和生成视为同一过程的两个视角。两个变体：8B 密集模型和 30B-A3B 混合专家模型（Mixture-of-Experts，即根据输入动态激活部分参数的稀疏架构），在文字理解、视觉感知、知识推理、agent 决策、空间智能五类 benchmark 上均达到开源 SOTA。</p>
+      <p><strong>价值：</strong>可以在单次推理中生成"文字+图像交织"的输出，例如图文并茂的旅行日记，而不需要先生成文字再调用另一个模型生成配图。</p>
+      <p><strong>未来方向：</strong>去掉"桥梁"让两种能力真正共演化，是多模态统一架构的长期目标，SenseNova-U1 是迄今最干净的一次工程实现。</p>
+      <cite><a href="https://huggingface.co/papers/2605.12500" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2605.12500" target="_blank" rel="noopener">arXiv:2605.12500</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/papers/2602.06036" target="_blank" rel="noopener">DFlash：用块扩散模型做投机解码草稿，6× lossless 加速</a></h3>
+      <p><strong>现状：</strong>大语言模型（LLM）的推理速度受制于自回归生成（autoregressive generation）：每次只能生成一个 token（词语片段），前一个 token 生成完才能生成下一个，无法并行化。</p>
+      <p><strong>问题：</strong>投机解码（speculative decoding，即先用小模型快速草拟多个候选 token，再用大模型一次验证）是主流加速方案，但草稿模型通常是压缩版的自回归模型，并行化潜力有限。</p>
+      <p><strong>解决方案：</strong>DFlash（arXiv:2602.06036）用轻量级块扩散模型（block diffusion model，一种可以一次性并行生成一批 token 的扩散式模型）替代传统草稿模型。扩散模型天生支持并行生成，在投机解码的草拟阶段恰好能充分发挥这个优势。实验结果：跨多种模型和任务，lossless（无精度损失）加速 6 倍以上，比当时最优的 EAGLE-3 方法还快 2.5 倍。</p>
+      <p><strong>价值：</strong>lossless 意味着输出质量与原模型完全一致，加速不以牺牲准确性为代价——对需要高精度输出的生产场景尤其有价值。</p>
+      <p><strong>未来方向：</strong>块扩散模型与自回归模型的混合架构可能成为下一代推理引擎的主流选择，DFlash 是目前最具说服力的概念验证。</p>
+      <cite><a href="https://huggingface.co/papers/2602.06036" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2602.06036" target="_blank" rel="noopener">arXiv:2602.06036</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2605.06554" target="_blank" rel="noopener">Lighthouse Attention：只在训练时用的次二次方 attention，训练完即可移除，不影响推理</a></h3>
+      <p><strong>现状：</strong>训练超长上下文（极长文本处理能力）的 transformer 模型，瓶颈是标准 attention（注意力机制，模型处理 token 间关系的核心机制）的计算复杂度随序列长度的平方增长，导致训练极长序列成本极高。</p>
+      <p><strong>问题：</strong>现有的次二次方（subquadratic）替代 attention 方案，要么只适合训练时用（推理时需要换回标准 attention），要么需要修改模型架构（影响部署兼容性）。</p>
+      <p><strong>解决方案：</strong>Lighthouse Attention（arXiv:2605.06554，Nous Research）是一个对称选择式层次化 attention 算法，设计为训练阶段的临时包装层：(i) 对序列做自适应压缩和解压缩的层次化前后处理；(ii) 对称的 query-key-value 同步池化，保持因果方向性；(iii) 两阶段训练：大部分时间用 Lighthouse Attention，临近训练结束时短暂恢复全 attention 做"校正"。校正结束后，模型就是一个标准 attention 模型，推理时无需任何额外模块。</p>
+      <p><strong>价值：</strong>预训练长上下文模型的成本显著降低，且不影响模型的推理兼容性——对希望训练长上下文开源模型的团队是直接可用的工程方案。</p>
+      <p><strong>未来方向：</strong>长上下文预训练的效率瓶颈是制约开源社区发展的关键障碍，Lighthouse Attention 这类"训练用、推理丢"的策略是工程层面的重要突破。</p>
+      <cite><a href="https://arxiv.org/abs/2605.06554" target="_blank" rel="noopener">arXiv:2605.06554</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/Cactus-Compute/needle" target="_blank" rel="noopener">Needle：26M 参数工具调用模型，从 Gemini 合成数据蒸馏而来，消费设备 6000 tok/s prefill</a></h3>
+      <p><strong>现状：</strong>让 AI 模型调用外部工具（tool calling，即 AI 判断当前任务需要调用哪个函数、传入什么参数，再执行工具返回结果）通常需要百亿以上参数量的大模型，不适合在手机、边缘设备上运行。</p>
+      <p><strong>问题：</strong>工具调用本质上更像"从工具描述中精准检索和组装参数"，而不是"凭记忆推理"，理论上不需要 MLP（多层感知器，负责模型"知识记忆"的前馈网络）层的参数量支撑。</p>
+      <p><strong>解决方案：</strong>Cactus Compute 发布 Needle，完全去掉 MLP 层，只保留 attention（注意力）和 gating（门控）的"Simple Attention Network"架构。用 Gemini 合成数据预训练（2000 亿 token，16 块 TPU v6e，27 小时），再微调 20 亿工具调用合成数据（45 分钟）。结果：26M 参数，prefill 速度 6000 tok/s，decode 速度 1200 tok/s，单次工具调用准确率超越 FunctionGemma-270M、Qwen-0.6B 等更大模型。MIT 授权，权重和训练代码完全开源。</p>
+      <p><strong>价值：</strong>可以在手机等消费级设备上实时运行的工具调用路由器，让本地 agent 应用真正可行——不需要把每个工具调用请求都打给云端大模型。</p>
+      <p><strong>未来方向：</strong>"任务专用小模型"正在成为 agent 系统的效率杠杆——不是一个大模型做所有事，而是用极小的专用模型做路由，节省成本和延迟。</p>
+      <cite><a href="https://huggingface.co/Cactus-Compute/needle" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://github.com/cactus-compute/needle" target="_blank" rel="noopener">GitHub</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/dlouapre/status/2054217281895309480" target="_blank" rel="noopener">physics-intern：agent 分解策略把 Gemini 3.1 Pro 在 CritPt（理论物理基准）上从 17.7% 推到 31.4%</a></h3>
+      <p><strong>现状：</strong>CritPt 是专为测试 LLM 理论物理研究能力设计的 benchmark（基准测试），包含 71 个研究项目级复合挑战和 190 个子任务检查点，难度远超 olympiad（奥林匹克竞赛级）数学题，是目前最难的 AI 推理 benchmark 之一。</p>
+      <p><strong>问题：</strong>即使是最强的前沿模型，在这种需要跨领域深度推理的研究级任务上表现也极其有限——Gemini 3.1 Pro 基础表现只有 17.7%。</p>
+      <p><strong>解决方案：</strong>David Louapre 团队开发的 physics-intern 框架，核心策略是把复杂的理论物理问题分解为专业子 agent 可以独立处理的子任务，再汇聚结果。这不是架构创新，而是 agent 编排（orchestration，即协调多个 AI agent 协同工作的机制）的精心设计。应用于 Gemini 3.1 Pro 后，CritPt 得分从 17.7% 提升到 31.4%，接近翻倍，创下该 benchmark 新 SOTA。</p>
+      <p><strong>价值：</strong>理论物理研究是人类目前已知的最难认知任务之一，agent 编排在这个领域的显著提升意味着 AI 辅助科研正在从"帮你查文献"向"参与实际研究推进"迈进。</p>
+      <p><strong>未来方向：</strong>研究级 AI 的边界正在被 agent 分解策略持续推移——模型能力固定时，编排质量本身就是可优化的核心变量。</p>
+      <cite><a href="https://x.com/dlouapre/status/2054217281895309480" target="_blank" rel="noopener">X @dlouapre</a> · <a href="https://critpt.com/" target="_blank" rel="noopener">CritPt Benchmark</a></cite>
+    </article></section>
+
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>Stratechery：芯片 IPO 时机分析，GPU 算力是 AI agent 扩张的核心制约，异构计算正在成为趋势——AI 基础设施的下一场竞争是效率，不只是规模。<a class="glance-src" href="https://stratechery.com/2026/the-inference-shift/" target="_blank" rel="noopener">Stratechery →</a></li>
+      <li>Stratechery：Tim Cook 卸任苹果，从 Jobs 的 0→1 到 Cook 的 $4360 亿营收，Thompson 问：Cook 留下的治理结构能撑住下一个"让苹果之所以是苹果"的转型吗？<a class="glance-src" href="https://stratechery.com/2026/tim-cooks-impeccable-timing/" target="_blank" rel="noopener">Stratechery →</a></li>
+      <li>Apple iOS 27：Camera 应用支持全定制布局，Siri 全面重设计，新动画和标签栏设计，6 月 8 日 WWDC 发布。<a class="glance-src" href="https://arstechnica.com/gadgets/2026/05/googles-android-powered-laptops-are-called-googlebooks-and-theyre-coming-this-year/" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Starship v3：408 英尺高（超过自由女神像+台座），完成加注测试，支持在轨推进剂转移（即轨道加注，让火箭能在太空中补充燃料），首飞日期待定。<a class="glance-src" href="https://arstechnica.com/space/2026/05/spacex-completes-fueling-test-setting-stage-for-first-launch-of-starship-v3/" target="_blank" rel="noopener">Ars Technica →</a></li>
+      <li>SpaceX × Google 商谈轨道数据中心：Google Project Suncatcher 寻求火箭运力，轨道算力解决地面数据中心扩张瓶颈。<a class="glance-src" href="https://links.tldrnewsletter.com/eWnBt6" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Isomorphic Labs（DeepMind AI 药物发现子公司）获 $21 亿融资，Demis Hassabis 宣布：AI 驱动新药发现的最大单笔承诺。<a class="glance-src" href="https://www.latent.space/p/ainews-the-end-of-finetuning" target="_blank" rel="noopener">AINews →</a></li>
+      <li>Meta AI Voice 更新：由 Muse Spark 驱动，支持自然打断、多语言切换、实时摄像头交互——Meta 的语音 AI 向 GPT-4o 语音模式看齐。<a class="glance-src" href="https://www.latent.space/p/ainews-the-end-of-finetuning" target="_blank" rel="noopener">AINews →</a></li>
+      <li>Perplexity 在 NVIDIA GB200 NVL72 上跑 Qwen3 235B MoE：NVLink all-reduce 延迟从 H200 的 586μs 降到 GB200 的 313μs，大规模稀疏模型推理拐点到来。<a class="glance-src" href="https://www.latent.space/p/ainews-the-end-of-finetuning" target="_blank" rel="noopener">AINews →</a></li>
+      <li>Artificial Analysis τ-Voice benchmark：语音对语音（Speech-to-Speech）最好的模型（Grok Voice Think Fast 1.0）只能解决约 52% 的真实客服场景——语音 AI 离可靠商用还有相当距离。<a class="glance-src" href="https://artificialanalysis.ai/evaluations/critpt" target="_blank" rel="noopener">Artificial Analysis →</a></li>
+      <li>LangGraph DeltaChannel：用增量状态快照替代全状态检查点，长运行 agent 的持久化存储效率大幅提升；同机制已用于 deepagents v0.6 的消息历史和文件存储。<a class="glance-src" href="https://www.latent.space/p/ainews-the-end-of-finetuning" target="_blank" rel="noopener">AINews →</a></li>
+      <li>OpenAI Symphony（预告）：每个未完成的任务自动分配一个持续运行的 Codex agent——从"按需调用"到"常驻待命"的 agent 工作模式转变。<a class="glance-src" href="https://www.latent.space/p/ainews-the-end-of-finetuning" target="_blank" rel="noopener">AINews →</a></li>
+      <li>Simon Willison：Datasette 1.0a29 发布，开源 SQLite 数据探索工具，接近正式版（1.0）里程碑。<a class="glance-src" href="https://simonwillison.net/2026/May/12/datasette/" target="_blank" rel="noopener">Simon Willison →</a></li>
+      <li>Amazon Now 30 分钟送达扩展至全美四城（亚特兰大、达拉斯-沃思堡、费城、西雅图）。<a class="glance-src" href="https://techcrunch.com/2026/05/12/amazon-expands-30-minute-delivery-across-the-u-s/" target="_blank" rel="noopener">TechCrunch →</a></li>
+      <li>eBay 拒绝 GameStop $560 亿收购要约，措辞强烈："既无可信度也无吸引力"，并提出融资不确定、运营风险、债务负担等具体担忧。<a class="glance-src" href="https://www.cnbc.com/2026/05/12/ebay-rejects-gamestops-takeover-ryan-cohen.html" target="_blank" rel="noopener">CNBC →</a></li>
+      <li>HuggingFace Diffusers 0.38.0：支持 Flash Attention 4，新增 Ace-Step 1.5、LongCat-AudioDiT 等图像/音频生成管线，引入 FlashPack loading 加速长序列加载。<a class="glance-src" href="https://www.latent.space/p/ainews-the-end-of-finetuning" target="_blank" rel="noopener">AINews →</a></li>
+      <li>Krea 2：Krea 首个自研基础模型，主打美学多样性和精准风格控制——消费级图像生成市场又多了一个竞争者。<a class="glance-src" href="https://www.theaivalley.com/p/google-wants-to-replace-your-mouse" target="_blank" rel="noopener">AI Valley →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-05-10.html">← MAY 10</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
