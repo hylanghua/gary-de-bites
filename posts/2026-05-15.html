@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — May 15, 2026</title>
+  <meta name="description" content="OpenAI 考虑起诉 Apple，ChatGPT-Siri 两年合作预期落空；Google Gemini Spark 泄露，设计成持续后台运行的 AI 操作层；Codex 正式登陆 ChatGPT 移动端。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">May 15, 2026</h1>
+
+  <p class="post-lead">OpenAI 考虑起诉 Apple，两年 ChatGPT-Siri 合作预期落空；Google Gemini Spark 同日曝光，设计成持续在后台运行的 AI 操作层。Codex 正式登陆 ChatGPT 移动端；Aaron Levie 直言：有人花了一年搭 agent 脚手架，如今不得不全部重来。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://links.tldrnewsletter.com/hbByWV" target="_blank" rel="noopener">OpenAI 考虑起诉 Apple：ChatGPT-Siri 合作两年，期待的订阅增长和深度整合都没来</a></h3>
+      <p>OpenAI 已聘请外部法律团队，正在评估对 Apple 采取法律行动的可能性。纠纷的核心是 2024 年 ChatGPT 接入 Siri 时 OpenAI 的预期：用户通过 Siri 转入 ChatGPT 后，应该大量转化为付费订阅者，Apple 生态也应该给 OpenAI 更深的系统整合权限。两年后，这两件事都没有发生。Apple 对此回应是：今年晚些时候将向 Claude、Gemini 等其他 AI 供应商开放 Siri 接入，计划不依赖任何单一合作方。</p>
+      <p>结构性冲突其实从合作第一天就埋在那里。Apple 想要的是多供应商平台，保住控制权和用户关系；OpenAI 想要的是直连用户的分发渠道，不是在别人界面里的一个选项。两种诉求本质上不兼容，法律纠纷不过是把这个矛盾从商务谈判桌搬到了法庭。</p>
+      <strong>OpenAI 在 Apple 生态里始终是访客，而不是合作方——法律行动本身不会改变这个格局，能改变的只有 Apple 把平台彻底开放的那一天。</strong>
+      <cite><a href="https://links.tldrnewsletter.com/hbByWV" target="_blank" rel="noopener">TLDR</a> · <a href="https://www.theaivalley.com/p/gemini-s-spark-agent-has-leaked" target="_blank" rel="noopener">AI Valley</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.theaivalley.com/p/gemini-s-spark-agent-has-leaked" target="_blank" rel="noopener">Google Gemini Spark 泄露：不等你提问，持续在后台运行的 AI 操作层</a></h3>
+      <p>有人在 Gemini 网页应用的 onboarding 流程里挖出了代号"Spark"的新功能界面。与传统聊天机器人"等你输入指令"不同，Spark 的设计是持续在后台运行：它能访问你的浏览器 session（当前网页活动）、连接的 App、日历任务、正在进行的对话和位置数据，主动推进需要跨多步完成的任务，而不需要你每次都重新发起。泄露细节显示，它还能在多个网站间保持登录态，完成需要重复认证的长程操作。</p>
+      <p>这件事的深层含义：一旦 Spark 这类系统成为常态，运营它的公司就不再是你偶尔打开的搜索引擎，而是嵌入你日常操作流的底层基础设施。它会积累你的行为模式、点击习惯、重复任务和消费偏好，这种上下文随时间以指数级复利增长，任何后进入的竞争者都无法追上——不是因为技术不够，而是因为记忆不够。</p>
+      <strong>Spark 若成真，Google 的竞争优势将从"数据最多"变成"上下文最深"——这两者的差距不在规模，而在时间。</strong>
+      <cite><a href="https://www.theaivalley.com/p/gemini-s-spark-agent-has-leaked" target="_blank" rel="noopener">AI Valley</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/sama/status/2055034461591588916" target="_blank" rel="noopener">Sam Altman：Codex 正式进入 ChatGPT 移动端，可远程启动并监控编程任务</a></h3>
+      <p>OpenAI 宣布 Codex（专门处理编程任务的 AI agent，能自主执行多步骤代码操作）现已整合进 ChatGPT 手机 App。用户在电脑上启动一个 Codex 任务后，可以拿起手机继续查看进度、审查输出结果、发出修改指令，或者批准 Codex 下一步要执行的命令。Codex 本身继续在 laptop、Mac mini 或云端 devbox（专用开发环境）上运行，移动端是监控和引导界面，不是执行端。Latent Space 的 AINews 同期报道，OpenAI 还同步开放了 Remote SSH（通过网络远程登录服务器的标准协议）通用访问权限，以及面向 Business/Enterprise 用户的编程自动化接口 token。</p>
+      <strong>Codex 移动端把"人在哪里"和"agent 在哪里"彻底解耦——长时间编程任务第一次真正变成了可以随时放下又随时捡起的后台工作。</strong>
+      <cite><a href="https://x.com/sama/status/2055034461591588916" target="_blank" rel="noopener">X @sama</a> · <a href="https://www.latent.space/p/ainews-everything-is-conductor" target="_blank" rel="noopener">Latent Space</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/amasad/status/2055185058282226146" target="_blank" rel="noopener">Replit 重返 Apple App Store：与 Apple 矛盾解决，中断四个月后重新上架</a></h3>
+      <p>Replit CEO Amjad Masad 宣布，公司与 Apple 达成和解，Replit 应用在下架四个月后重新登陆 App Store。此前 Replit 因 App Store 审核政策问题被迫撤出，与 Apple 长期处于紧张状态。目前双方谈判细节未公开，但上架本身是明确的信号：Replit 仍然认为移动端分发对其用户基础有意义。</p>
+      <strong>Replit 回归 App Store 说明和解是务实选择——无论对 Apple 策略有多少不满，放弃 iOS 用户触达的成本更高。</strong>
+      <cite><a href="https://x.com/amasad/status/2055185058282226146" target="_blank" rel="noopener">X @amasad</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://x.com/levie/status/2055136119969529993" target="_blank" rel="noopener">Aaron Levie（Box CEO）：有人花了一年搭 agent harness 脚手架，现在全要重来</a></h3>
+      <p>Aaron Levie 今日发了一段让很多人沉默的观察："有人花了整整一年时间构建自己的 agent harness（即让 AI agent 稳定执行任务的宿主框架，包括工具调用、状态管理、错误恢复等）……现在一切都要重头再来。"这不是在唱衰 agent 工程，而是在指出一个结构性风险：过去十二个月，相当一部分工程团队把大量精力投入在"如何让 agent 跑得稳"的自建层上，而不是业务逻辑本身。但这个层正在被 Anthropic、OpenAI、LangChain 等平台快速标准化和内置化，自建成本在变成沉没成本。</p>
+      <p>他的另一条帖子进一步延伸：AI 对职业专业化的冲击不是"某个岗位消失"，而是每个岗位内部的职能重新分配，原本需要专业知识才能执行的操作变得可以被自动化，但需要判断力、上下文和责任感的部分反而更难替代。这两条观察放在一起，指向同一个方向：基础设施层的投资期缩短，判断层的投资价值在上升。</p>
+      <strong>自建 agent 脚手架正在成为技术债的新形态——那些把精力押在基础设施自研而非业务逻辑上的团队，正在集体学习一个昂贵的教训。</strong>
+      <cite><a href="https://x.com/levie/status/2055136119969529993" target="_blank" rel="noopener">X @levie</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-everything-is-conductor" target="_blank" rel="noopener">GitHub Copilot App 上线：agent-first 桌面环境，"Conductor"表单因子正在赢</a></h3>
+      <p>GitHub 发布了 Copilot App 的技术预览版：一个以"并行工作流"为中心设计的桌面应用，而不是集成在编辑器里的代码补全工具。用户可以同时跑多个 agent 任务，管理 PR（Pull Request，即代码合并请求）生命周期，在不同模型之间灵活切换。AINews 作者 swyx 把这个设计形态称为"Conductor"（指挥者）：人类坐在上面协调多个 agent，而不是在 agent 旁边一起写代码。他指出，这个 UI 表单因子此前由初创公司 Conductor 率先实践，如今 GitHub 进场，说明这个范式正在被验证。</p>
+      <p>同期，VS Code 也上线了新的 Agents 窗口，支持多 agent 多项目并行，并通过 vscode.dev/agents 把这个界面延伸到了浏览器和移动端。代码编辑器的战场正在从"在哪里写代码"转移到"如何协调多个 agent"。先定义这个新范式的人，会在下一轮产品竞争中占到位置。</p>
+      <strong>IDE 的形态正在被 agent 重写——从"辅助你写代码"到"你来协调多个 agent 工作"，这是产品逻辑的根本翻转，不是功能叠加。</strong>
+      <cite><a href="https://www.latent.space/p/ainews-everything-is-conductor" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://every.to" target="_blank" rel="noopener">Every.to：把 AI agent 发给每一位员工之后，有些做法必须改变</a></h3>
+      <p>Every.to 今日发出标题直接的文章：《We Gave Every Employee an AI Agent. Here's What We're Doing Differently Now.》这件事的背景是 Every 内部孵化了一个 AI agent 产品"Plus One"，并在全公司推广。这不是在谈"我们给员工用了 ChatGPT"，而是每个人有一个持续运行的 agent 角色，参与到日常工作流里。</p>
+      <p>文章的重点不在于"AI agent 很好用"，而在于"我们发现有些以为会奏效的方式，其实行不通"。根据 Every 团队的信条，这类反思通常涉及人与 agent 之间的协作边界、任务分配的粒度、以及 agent 输出质量的监管方式。Every 同期宣布计划下周发布一个关于未来工作形态的大型专题，由 Plus One 的实践经验直接驱动。</p>
+      <strong>Every 是极少数真正把 agent 植入公司骨架、而不是作为工具"提供给"员工的团队——他们的反思比任何 agent 最佳实践文档都有参考价值，因为代价是真实的。</strong>
+      <cite><a href="https://every.to" target="_blank" rel="noopener">Every</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/danshipper/status/2055030691180503152" target="_blank" rel="noopener">Dan Shipper（Every CEO）：理发师主动聊起 Codex，AI 工具已经越过开发者圈层</a></h3>
+      <p>Dan Shipper 昨晚发了一条没什么修饰的推文：他去理发，理发师主动聊起了 Codex，说自己在用。他的反应是停顿一下，意识到这件事意味着什么。这不是一个开发者或科技从业者在聊 Codex，而是一个与 AI 产品圈没有直接关联的人，在日常对话里自然提起了一款六个月前还只有核心开发者才知道的产品。</p>
+      <p>这种"扩散信号"比任何用户增长数字都难造假。当一个工具开始出现在无意之间的对话里，说明它已经越过了"早期采用者"的门槛，进入了普通人的可信工具箱。Codex 花了不到一年时间完成了这一步。</p>
+      <strong>理发师聊 Codex 是 AI 工具的"街头时刻"——一个技术产品从"业内都在聊"到"普通人自然提起"，中间是一条很难有意识跨越的鸿沟，Codex 今天过了。</strong>
+      <cite><a href="https://x.com/danshipper/status/2055030691180503152" target="_blank" rel="noopener">X @danshipper</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/petergyang/status/2055093015304396986" target="_blank" rel="noopener">Peter Yang：AI hackathon 变了，没有设计系统先不要让 AI 出界面</a></h3>
+      <p>Peter Yang 发了一条在 AI hackathon 场景下亲测得出的结论：直接让 AI 开始生成界面，没有提前建立设计系统（即统一的颜色、字体、组件规范），最后的结果是一场视觉灾难——每个 AI 生成的页面都有自己的风格，整个产品像是拼凑出来的。他的建议是：先花时间搭设计系统，再把 AI 放进来做生成工作。</p>
+      <p>这背后是一个更大的规律：AI 擅长在给定约束内快速执行，但糟糕的设计系统（或没有设计系统）不是约束，而是空白——AI 会填满这些空白，但填的方式是随机的。框架先行，执行才有质量。对 PM 来说，这个逻辑不只适用于 hackathon，也适用于任何想用 AI 加速的产品开发过程。</p>
+      <strong>AI 时代的 hackathon 拉开差距的不再是编码速度，而是有没有人在 AI 跑起来之前先定好规则——有系统约束的 AI 生成和没有系统约束的，是两个不同量级的产出质量。</strong>
+      <cite><a href="https://x.com/petergyang/status/2055093015304396986" target="_blank" rel="noopener">X @petergyang</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://x.com/garrytan/status/2055155189766865028" target="_blank" rel="noopener">Garry Tan（YC CEO）：电力 NIMBY 主义者又来了，市场机制是唯一出路</a></h3>
+      <p>Garry Tan 今日对一则关于电力基础设施审批受阻的报道发出直接评论："电力 NIMBY（邻避主义者，即反对在自己附近建设基础设施的群体）再次出击。你们有没有听说过市场？"这条推文触及的背景是：AI 算力中心的电力需求正在以十年未见的速度增长，但新增电力基础设施的审批和建设在美国多个州遭遇了社区反对和行政阻力，拖慢了整个产业链。</p>
+      <p>Garry Tan 的立场一贯清晰：能源、住房、基础设施的供给瓶颈，根本原因是政策阻止了市场正常运作，而不是需求本身出了问题。他相信价格信号和市场竞争能比政治协商更有效地分配稀缺资源。这个观点在科技圈有广泛共鸣，但在政策实践中通常更复杂——基础设施的负外部性是真实存在的，问题是谁来承担，以及谁有权决定。</p>
+      <strong>AI 基础设施的瓶颈正在从算法层转移到物理层——当电力供给跟不上算力增长，"谁的基础设施建得快"将成为下一轮竞争的决定性变量，而这个速度部分由政治意愿决定，不只由技术决定。</strong>
+      <cite><a href="https://x.com/garrytan/status/2055155189766865028" target="_blank" rel="noopener">X @garrytan</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/swyx/status/2055079344632926603" target="_blank" rel="noopener">swyx（Latent Space 创始人）：博客死于"某某团队出品"，AI 时代个人署名反而更有价值</a></h3>
+      <p>swyx 今日发了一个观察，简短但有穿透力："博客死于以'某某团队'代替具名个人来发布内容的那一刻（Blogs die when they come from 'the ___ team' instead of named individuals）。"这句话指向一个传播现象：当内容来自"产品团队"或"公司博客"，读者不知道谁在说话，也不知道这个人是否真的有观点，内容就丧失了可信度和可追溯性。相比之下，来自真实个人的内容自带信任背书——你知道这个人，你信任这个人的判断。</p>
+      <p>这个观察在 AI 时代特别具有张力：AI 正在大规模降低"产出内容"的门槛，组织和公司可以不费力地批量生成文章、报告、更新。但与此同时，真正有个人立场、有名字可以追责的内容，反而因为稀缺而变得更有价值。信号密度在下降，来源可信度在上升——有名字的人，写有观点的文字，这件事在 AI 泛滥的内容海洋里越来越像稀缺品。</p>
+      <strong>当 AI 把"无名内容"的生产成本压到接近零，有名字、有立场的个人声音反而升值——这不是怀旧，而是信任经济的必然逻辑。</strong>
+      <cite><a href="https://x.com/swyx/status/2055079344632926603" target="_blank" rel="noopener">X @swyx</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-everything-is-conductor" target="_blank" rel="noopener">Zyphra ZAYA1-8B-Diffusion-Preview：扩散语言模型解码速度 4.6–7.7× 快于自回归生成</a></h3>
+      <p><strong>现状：</strong>主流大语言模型都采用"自回归生成"（autoregressive generation，即每次生成一个 token，按顺序一个接一个），这决定了生成速度的上限，也限制了大规模推理部署的成本效率。</p>
+      <p><strong>问题：</strong>自回归结构在早期 token 生成上效率较低，且顺序依赖性强，难以充分利用并行计算资源。对于需要大量推理调用的 agent 场景，这是显著的成本瓶颈。</p>
+      <p><strong>解决方案：</strong>Zyphra 发布的 ZAYA1-8B-Diffusion-Preview 是一个基于扩散（diffusion）机制的语言模型——与图片生成中的扩散模型原理相似，文本生成过程不是逐 token 顺序推进，而是通过多轮去噪并行产生输出。实测报告显示，相比自回归基线，解码速度提升 4.6 至 7.7 倍，质量损耗有限。</p>
+      <p><strong>价值：</strong>在 agent 工作流中，生成速度直接影响任务完成时间和 API 调用成本。若扩散 LM 的速度优势能在生产环境中稳定复现，它代表的不只是效率提升，而是 agent 部署成本结构的重写。</p>
+      <p><strong>未来方向：</strong>扩散语言模型目前仍在质量-速度权衡上探索边界，ZAYA1-8B 是目前规模最大、数据最充分的公开演示之一，值得持续关注后续版本的 benchmark 表现。</p>
+      <cite><a href="https://www.latent.space/p/ainews-everything-is-conductor" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-everything-is-conductor" target="_blank" rel="noopener">Datadog Toto 2.0：五个开源时序预测模型，scaling law 首次在时序领域成立</a></h3>
+      <p><strong>现状：</strong>时序预测（time-series forecasting，即根据历史数据预测未来趋势，广泛用于运维监控、供应链、金融等场景）一直缺乏像 NLP 领域那样被广泛接受的基础模型（foundation model）。</p>
+      <p><strong>问题：</strong>时序数据的分布极其多样，不同领域的信号结构差异大，很难用一个通用模型覆盖所有场景。此前研究也未能清晰验证"模型越大越好"的规律是否在时序领域同样成立。</p>
+      <p><strong>解决方案：</strong>Datadog 发布 Toto 2.0，包含五个规模从 4M 到 2.5B 参数不等的开源模型，采用 Apache 2.0 协议。在 BOOM、GIFT-Eval 和 TIME 三个公开 benchmark 上均排名第一。更重要的是，Datadog 团队报告了 scaling law（即模型性能随参数量和训练数据增长的可预测规律）在时序预测任务上的初步成立证据。</p>
+      <p><strong>价值：</strong>对运维、产品分析、供应链团队而言，有了可直接使用的开源时序基础模型，意味着无需从头训练专有模型也能获得接近 SOTA（当前最优水平）的预测能力。</p>
+      <p><strong>未来方向：</strong>若 scaling law 在时序领域的成立得到更多复现，将为时序基础模型的大规模投资提供理论依据，类比 GPT 系列验证语言模型 scaling law 对整个 NLP 领域的推动。</p>
+      <cite><a href="https://www.latent.space/p/ainews-everything-is-conductor" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-everything-is-conductor" target="_blank" rel="noopener">Goodfire 可解释性：Llama 用几何旋转机制做算术，首次用 steering 验证</a></h3>
+      <p><strong>现状：</strong>我们知道大语言模型能做算术，但不知道它们"怎么做"——内部表示是什么，计算过程走的是哪条神经路径，一直是可解释性（mechanistic interpretability，即研究模型内部如何表示和处理信息的方向）领域的核心难题。</p>
+      <p><strong>问题：</strong>大多数可解释性研究停留在"观察"层面，即分析激活值找相关性，但无法直接证明某个机制就是模型用来完成任务的那个路径。</p>
+      <p><strong>解决方案：</strong>Goodfire AI 发布研究，指出 Llama 在处理算术任务时，使用的是一种类似 Fourier 特征（一种可分解的几何周期结构）的"形状旋转计算器"机制。关键是他们不只是描述这个现象，而是用 steering（即主动干预模型内部表示方向）实验来验证这个机制确实在工作——这是比观察性分析更强的因果证据。</p>
+      <p><strong>价值：</strong>对模型如何"计算"有更精准的理解，是构建更可靠模型、防止 hallucination（幻觉，即模型生成错误但自信的内容）的基础工作。Goodfire 的方法论也为其他可解释性研究提供了更严格的验证范式。</p>
+      <p><strong>未来方向：</strong>如果这类机制研究能扩展到更复杂的推理任务，可解释性将从"事后分析"走向"可预测的工程指导"。</p>
+      <cite><a href="https://www.latent.space/p/ainews-everything-is-conductor" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-everything-is-conductor" target="_blank" rel="noopener">Prime Intellect：AI 自主优化器在 nanoGPT 基准接近人类水平（14,000 小时 H200）</a></h3>
+      <p><strong>现状：</strong>nanoGPT speedrun 是一个公开的 ML 优化竞赛 benchmark，目标是以最少训练步数（steps）达到特定模型质量，人类研究者的最优记录是 2990 步。</p>
+      <p><strong>问题：</strong>传统上，找到更优的优化器配置（学习率调度、批大小、架构微调等）需要大量人类专家经验和反复实验，是 ML 工程中最耗人力的部分之一。</p>
+      <p><strong>解决方案：</strong>Prime Intellect 构建了一个自主优化器搜索系统，让 AI 模型（Opus 4.7 达到 2930 步，GPT-5.5 达到 2950 步）自主探索超参数和优化策略，用约 1 万次运行、14,000 小时 H200 GPU 时间，逼近了人类 2990 步的 baseline。</p>
+      <p><strong>价值：</strong>AI 自主搜索优化器是"AI 用于 ML 研究"最具体的早期信号之一。如果 AI 能可靠地找到比人类更好的训练配置，ML 研究的实验周期将大幅压缩。</p>
+      <p><strong>未来方向：</strong>当前成本（14,000 H200 小时）仍然很高，下一步是降低搜索成本，或将搜索结果迁移到更广泛的模型训练场景中复用。</p>
+      <cite><a href="https://www.latent.space/p/ainews-everything-is-conductor" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-everything-is-conductor" target="_blank" rel="noopener">教学强化学习（Pedagogical RL）：用特权信息主动引导有效 rollout，提升训练样本质量</a></h3>
+      <p><strong>现状：</strong>强化学习（RL）用于训练大语言模型时（即 LLM RL），核心挑战之一是"有效 rollout"（rollout 是让模型生成完整回复并评估结果的过程）稀少——大量模型尝试是低质量的随机探索，真正有学习价值的样本比例很低，导致训练效率差。</p>
+      <p><strong>问题：</strong>传统 RL 训练依赖模型自己发现好的策略，对初始策略很差的任务来说，有效信号极其稀疏，训练早期几乎在做无意义的探索。</p>
+      <p><strong>解决方案：</strong>Souradip Chakraborty 等人提出教学强化学习（Pedagogical RL），核心思路是利用训练过程中已知的特权信息（privileged information，即训练时可访问但推理时不可访问的标准答案或提示），主动设计课程，引导模型在早期找到更多有效 rollout，而不是纯粹随机探索。</p>
+      <p><strong>价值：</strong>更高比例的有效训练样本意味着同等算力下更高的训练效率，对资源受限的开源团队尤其有意义。这个方法可以与现有的 PPO、GRPO 等 RL 算法叠加使用。</p>
+      <p><strong>未来方向：</strong>Pedagogical RL 与 LangChain Labs 同期提出的"用生产轨迹持续训练 agent"方向形成呼应，两者都在探索如何让 agent 从真实运行数据中持续学习，而不只是依赖静态数据集。</p>
+      <cite><a href="https://www.latent.space/p/ainews-everything-is-conductor" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>Anthropic Mythos 帮安全研究人员发现了 Apple 的权限提升漏洞——两个 bug 串联加上一组方法，绕过 Apple 安全沙盒（独立隔离运行环境）。Apple 正在审查，研究人员等 Apple 补丁后公开细节。<a class="glance-src" href="https://links.tldrnewsletter.com/wzmRc3" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Netflix INKubator 动画工作室：3 月悄悄开张，由艺术家主导，探索 GenAI-native（原生 AI 生成式）制作流程，专注短片和特辑，不是取代传统动画，而是实验新工作流。<a class="glance-src" href="https://www.animationmagazine.net/2026/05/netflix-staffing-for-inkubator-ai-powered-experimental-animation-studio/" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Xynova Flex 2 机器人手：23 个自由度，传感器实时检测抓握滑脱（slippage）并调节握力，目标是人形机器人处理易碎物、工具和不规则形状，操控能力才是机器人实用性的真正门槛。<a class="glance-src" href="https://www.theaivalley.com/p/gemini-s-spark-agent-has-leaked" target="_blank" rel="noopener">AI Valley →</a></li>
+      <li>VS Code 本轮更新：新增 Agents 窗口（同时管理多个 agent 和多个项目）、通过 vscode.dev/agents 扩展到浏览器和移动端、token 压缩（终端输出压缩以节省 context 用量）、BYOK（Bring Your Own Key，用自己的 API 密钥）改进。<a class="glance-src" href="https://www.latent.space/p/ainews-everything-is-conductor" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>Anthropic Claude Code 限速争议：Theo（T3 Chat 创始人）公开展示取消订阅并号召其他人跟进，核心诉求是平台订阅路径（claude -p 等第三方封装）被突然限速。反方观点：Anthropic 不欠开发者永久补贴价格。实际结论：构建在平台订阅之上的 agent harness 不是稳定基础设施。<a class="glance-src" href="https://www.latent.space/p/ainews-everything-is-conductor" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>Amjad Masad（Replit CEO）："在 Replit 以外振编代码（vibecode）网站？那不明智。"——顺手提醒了一下生态边界。<a class="glance-src" href="https://x.com/amasad/status/2055097107758076254" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>Guillermo Rauch（Vercel CEO）：终端里直接可以渲染图片——开发者工具的体验细节正在被持续打磨，哪些 CLI 工具跟上了，哪些还停在上世纪的纯文本输出里，差距越来越明显。<a class="glance-src" href="https://x.com/rauchg/status/2054989456189648918" target="_blank" rel="noopener">X @rauchg →</a></li>
+      <li>Aaron Levie：AI 对职业分工的冲击不是"岗位消失"，而是每个岗位内部的职能配比重组——原本需要专业知识执行的操作被自动化，判断力和责任感的权重反而上升。<a class="glance-src" href="https://x.com/levie/status/2055143231625818554" target="_blank" rel="noopener">X @levie →</a></li>
+      <li>Matt Turck（FirstMark Capital）：GradiumAI 成立不到 9 个月就达到重大里程碑，AI 基础设施垂直领域的公司增长速度正在压缩传统 B2B SaaS 的成长曲线。<a class="glance-src" href="https://x.com/mattturck/status/2055029555455222199" target="_blank" rel="noopener">X @mattturck →</a></li>
+      <li>Nikunj Kothari（FPV Ventures）：大公司拥有大量数据，但数据墙（data walls）正在走向无头化（headless，即把数据层和展示层分离，允许外部 agent 直接访问数据而不通过界面）——这是 AI agent 接入企业系统的关键基础设施转变。<a class="glance-src" href="https://x.com/nikunj/status/2054924517135540320" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Peter Steinberger（PSPDFKit 作者，独立开发者）：用 Codex 给 discrawl 加了"存储媒体"新功能，Codex 说搞定了，但 agent 一直在循环。一句话的构建日志，却描绘了当下 coding agent 使用体验的真实切面。<a class="glance-src" href="https://x.com/steipete/status/2055203470941061600" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>Dan Shipper：Every 推出高管 AI 技能培训计划（Executive AI Sessions）——不只是"AI 工具入门"，而是面向领导层的 AI 转型能力建设，定价和形式均面向企业高管。<a class="glance-src" href="https://x.com/danshipper/status/2055015466054410400" target="_blank" rel="noopener">X @danshipper →</a></li>
+      <li>Garry Tan：某帖子被大量不了解背景的人冲评论区，他认为这是社交媒体上"话语权短暂劫持"的典型模式——有见解的人反而被噪音淹没。<a class="glance-src" href="https://x.com/garrytan/status/2055093087660286413" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>swyx 在 AI Miami 大会现场：台上有人吐槽 SAP Concur 还是一款死气沉沉的老软件，台下一片共鸣。企业软件的用户体验欠账，在 AI 时代的对比下越来越刺眼。<a class="glance-src" href="https://x.com/swyx/status/2055113979857703350" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>/goal 正在成为 coding agent 的新原语（primitive，即基础操作单元）：用户写下"完成"是什么样子，agent 朝它推进直到达成。Claude Code 和 OpenAI Codex CLI 均已引入该功能。<a class="glance-src" href="https://links.tldrnewsletter.com/Mf7cZO" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>大内存恐慌 2026：AI 功能需求推动内存用量激增，Apple 设备内存的 BOM（物料清单）占比可能从 15% 涨到 40%。Apple 体量大，有议价能力，但供应链铅期（lead time，从下单到交货的时间）被打乱，局面短期难以平复。<a class="glance-src" href="https://asymco.com/2026/05/11/the-great-memory-panic-of-2026/" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>OpenAI x Microsoft 内部邮件曝光：Satya Nadella、Sam Altman、Elon Musk 之间关于 OpenAI 与微软关系的通信记录，在诉讼程序中浮出水面，呈现了这段关系早期的张力和各方诉求。<a class="glance-src" href="https://links.tldrnewsletter.com/vMSufY" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Kimi K2.6 在 Finance Agent Benchmark V2（金融 agent 专项评测）中排名开源模型第一，Moonshot AI 的 Kimi 系列在金融领域的垂直 agent 能力上持续强化。<a class="glance-src" href="https://www.latent.space/p/ainews-everything-is-conductor" target="_blank" rel="noopener">Latent Space →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-05-14.html">← MAY 14</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
