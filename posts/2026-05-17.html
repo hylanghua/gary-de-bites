@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — May 17, 2026</title>
+  <meta name="description" content="Garry Tan 开源 GBrain，8 层架构给 AI agent 装上持久个人记忆；Ben Thompson 把推理分成有人在环和无人在环两类，前者讲速度，后者只需要内存带宽够用。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">May 17, 2026</h1>
+
+  <p class="post-lead">Garry Tan 开源 GBrain（MIT 协议），8 层知识架构让 AI agent 拥有持久个人记忆，首日 5400 星；Ben Thompson 把 AI 推理分为两类：有人在环的"答案推理"讲速度，无人在环的"agent 推理"只需要内存带宽够用，Cerebras 上市是这个论断的市场背书。Caitlin Kalinowski 警告：记忆芯片价格未来六个月将暴涨，人形机器人量产的真正障碍是供应链，不是软件。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.lennysnewsletter.com/p/why-were-at-the-beginning-of-the" target="_blank" rel="noopener">Caitlin Kalinowski：记忆芯片价格将在六个月内暴涨，人形机器人量产的真正瓶颈是供应链</a></h3>
+      <p>Caitlin Kalinowski 是苹果 MacBook Pro / MacBook Air 的早期工程师之一，后来在 Meta 主导 AR/VR 硬件，再后来出任 OpenAI 机器人与消费硬件负责人。她最近离开 OpenAI，在 Lenny Rachitsky 的播客里把这些年在三家顶级公司的硬件直觉讲了个遍。最值得关注的一句话：她建议初创公司现在就预购记忆芯片（DRAM 和 HBM，即高带宽存储器，是 AI 推理加速器的核心部件），因为供应链正在积累一次价格冲击。在她的判断里，这波涨价不是季节性波动，而是需求曲线已经远超产能扩张节奏，窗口期正在关闭。</p>
+      <p>她对人形机器人的判断同样清醒：目前还都是原型机（prototype），量产的真正瓶颈不是 AI 软件，而是执行器（机械关节的电机驱动）和整体供应链。VR 失败的教训她也复盘了：开发者平台太早、内容太少、售价过高——不是技术失败，而是时机和产品节奏的失败。她说，Meta Quest 2 证明了一件事：VR 技术为国防和工业应用打下了真正坚实的基础，即便消费市场还没到来。</p>
+      <strong>Kalinowski 的供应链预警是给所有在 AI 硬件赛道押注的创业者的实操建议：进入硬件领域，供应链永远比你想象的更先触顶。</strong>
+      <cite><a href="https://www.lennysnewsletter.com/p/why-were-at-the-beginning-of-the" target="_blank" rel="noopener">Lenny's Newsletter</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://stratechery.com/2026/shifting-alliances-in-a-changing-world/" target="_blank" rel="noopener">Ben Thompson：AI 推理分两类——有人在环的"答案推理"讲速度，无人在环的"agent 推理"只需要内存</a></h3>
+      <p>Ben Thompson 在本周 Stratechery 周报里提出了一个框架：AI 推理（inference，即模型给出输出的过程）正在分裂为两种截然不同的需求。"答案推理"（answer inference）指人在等待结果的场景，速度是核心；"agent 推理"（agentic inference）指 AI agent 自主执行任务、人不在回路里，这时候速度不再重要，模型什么时候跑完任务人都不会不耐烦。他的核心论断：在 agent 时代，摩尔定律（即芯片性能每两年翻番的历史规律）失去意义——不是因为芯片不再进步，而是因为"我们已有的算力够用了，瓶颈在内存带宽"。</p>
+      <p>这个框架与 Cerebras 上市（本周三纽交所，$185 发行价，首日收于 $280）直接呼应。Cerebras 的晶圆级芯片（wafer-scale chip，把整片硅晶圆做成一块芯片，极大提升片上内存带宽）正是押注"内存带宽比算力密度更关键"这条路。Thompson 在更早的文章《The Inference Shift》里写道："agents 在无人监督下行动，最深远的含义或许是：摩尔定律不再重要——我们实现更多算力的方式，是意识到我们已有的算力已经足够好了。"</p>
+      <strong>Thompson 给出了一个判断：agent 时代的计算基础设施竞争，不是谁的芯片跑得最快，而是谁的芯片在每次推理里塞下最多的上下文。</strong>
+      <cite><a href="https://stratechery.com/2026/shifting-alliances-in-a-changing-world/" target="_blank" rel="noopener">Stratechery</a> · <a href="https://stratechery.com/2026/the-inference-shift/" target="_blank" rel="noopener">Stratechery（The Inference Shift）</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://x.com/zarazhangrui/status/2055728641913536762" target="_blank" rel="noopener">Zara Zhang（Builder，GH: zarazhangrui）：AI 精神分裂——coding agent 用完感觉全能，上 Twitter 感觉完全落后</a></h3>
+      <p>Zara Zhang 昨晚发了一条 136 likes 的推文，精准描述了一种越来越多人认出自己的状态："每天在两种精神状态之间循环：用 coding agent 之后——我他妈无所不能，我可以做任何东西，我这辈子从没感觉这么有力量；刷完 Twitter 之后——我他妈完全落后了，所有人都在前面，这波浪打来了但我要被甩开了。"</p>
+      <p>这不是一个人的问题。编码 agent 把可执行速度提高了十倍，但 Twitter 上的信息流同样在以十倍速度告诉你"有人已经用得更好了"。两种焦虑的放大器同时运转。真正值得注意的是：这种"全能感"不是幻觉——coding agent 确实在重塑生产力上限；而那种"落后感"也不完全是焦虑——信息密度确实在加速。但把两个时钟放在同一个人脑里，结果就是持续的认知震荡。</p>
+      <strong>Zara 描述的不是焦虑症，而是这一代 Builder 的正常操作系统状态——两种信号都是真的，处理它们的节奏还没进化出来。</strong>
+      <cite><a href="https://x.com/zarazhangrui/status/2055728641913536762" target="_blank" rel="noopener">X @zarazhangrui</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/steipete/status/2055747016727167035" target="_blank" rel="noopener">Peter Steinberger（OpenClaw + OpenAI，独立开发者）："把 Claude Code 里的 slop 清掉，然后换到 Codex"</a></h3>
+      <p>Peter Steinberger（原 PSPDFKit 创始人，现参与 OpenClaw 和 OpenAI）今天发了一条在 AI 开发社区颇有共鸣的建议：如果你还没切换到 Codex（OpenAI 的代码执行 agent），先把 Claude Code 里的"slop"（slop = AI 生成的多余模板、冗余 try/catch、过度注释、提前抽象）清掉，再迁移。他自己更直接：他不让 Claude Code 碰他的主代码库，全用 Codex，理由是"Codex 能导航大型代码库，我 prompt 之后有 95% 的确信它会按预期执行，Claude Opus 在大规模工程上可靠性不如前者"。</p>
+      <p>这个判断不是在说 Claude 差。它指向的是一个具体的、经常被忽略的使用层差异：在小项目或单文件任务里 Claude Code 很顺手；在跨几十个文件的复杂工程里，Codex 的任务完成率更高，结果更可预期。对于在 AI 工具上花时间的 Builder，这条信息的意义是：不是"哪个更强"，而是"哪个场景配哪个工具"。</p>
+      <strong>Steinberger 的建议是一种工具论而非品牌偏好：agent 的可靠性和工程规模之间存在一个匹配问题，聪明的做法是先量产 slop 再清理它，不如一开始就让工具对准边界。</strong>
+      <cite><a href="https://x.com/steipete/status/2055747016727167035" target="_blank" rel="noopener">X @steipete</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/danshipper/status/2055727669900141017" target="_blank" rel="noopener">Dan Shipper（Every CEO）：骑了自行车，走路就会退化？反驳 AI 让你失去编程能力的论调</a></h3>
+      <p>Dan Shipper 今天转发了一篇担心"AI 让开发者丧失编程技能"的文章，然后只加了一句："If you use a bicycle it weakens your walking abilities, too!"（骑了自行车，走路的能力不也会退化嘛）。这句话的分量远超字面。它压缩了一个完整的反驳逻辑：工具从来都在替代某种体力或脑力劳动，人类总是把节省出来的精力用于更高层次的目标，这不叫技能退化，叫杠杆。</p>
+      <p>值得注意的是，同一天 Wisereads 把 Lars Faye 的《Agentic Coding is a Trap》列为推荐阅读，该文的核心担忧是：LLM 是概率引擎，不是编译器，开发者和代码之间的认知距离在拉大。两种声音并列出现，说明这场争论正在开发者社区里认真展开。自行车类比的盲点在于：如果你从未学会走路就直接骑车，自行车坏了你会怎么办？但 Shipper 的本意是指那些已经懂走路、在用自行车提速的人，这个区分是关键的。</p>
+      <strong>Shipper 没有说"AI 让你变强"，他说的是"把工具当工具，而不是当拐杖"——但前提是你得先有腿。</strong>
+      <cite><a href="https://x.com/danshipper/status/2055727669900141017" target="_blank" rel="noopener">X @danshipper</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://github.com/garrytan/gbrain" target="_blank" rel="noopener">Garry Tan（YC CEO）：开源 GBrain（MIT），8 层架构给 AI agent 装上持久个人记忆——不是 RAG，是记忆操作系统</a></h3>
+      <p>Garry Tan 昨天开源了 GBrain，他自己描述的定位是："不是 RAG in a box（RAG = Retrieval-Augmented Generation，检索增强生成，即给 AI 配一个外部知识库随用随取）。RAG 是被动查询，GBrain 是主动组织"。它给 AI agent 提供 8 个协同工作的记忆层：Git 托管的 Markdown 笔记库作为人类可读的真相源头，Postgres/pgvector 作为向量搜索后端，混合检索（向量相似度 + 关键词匹配 + 倒数排名融合）作为检索层，再加上"dream cycles"——agent 在夜间自主运行，整合白天积累的知识碎片，更新摘要，建立连接。MIT 协议，一条命令安装。</p>
+      <p>他自己的 GBrain 实例（驱动他的 OpenClaw 和 Hermes agent）已经运行了 17,888 页笔记、4,383 人物记录、723 家公司档案、21 个定时任务（cron jobs，定期自动运行的任务脚本）。这不是演示系统，是生产系统。首日 GitHub 星标超过 5400。GBrain 想解决的核心问题是：每次和 AI 对话都要重新介绍自己，agent 记忆不能跨任务持续，"个人 AI"名不副实。GBrain 的解法是让记忆和知识以结构化、可查询、可演化的方式存活在 agent 旁边。</p>
+      <strong>Garry Tan 把他自己的生产系统开源，证明的不是 GBrain"能用"，而是它"已经在用"——这种信号比任何 Demo 都更有说服力。</strong>
+      <cite><a href="https://x.com/garrytan/status/2055670533451366479" target="_blank" rel="noopener">X @garrytan</a> · <a href="https://github.com/garrytan/gbrain" target="_blank" rel="noopener">GitHub</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/tobi/status/2053121182044451016" target="_blank" rel="noopener">Tobi Lütke（Shopify CEO）：AI agent 只能在公开频道里运行——私聊等于把学习锁在一个人的脑子里</a></h3>
+      <p>Shopify 规定，员工使用公司内部 AI agent River（驱动日常业务流程的自动化 agent）时，必须在公开的团队频道里操作，不能在私信窗口里独自进行。Tobi Lütke 解释了这个决定的设计逻辑："风险不在于 AI 在做工作。风险在于 AI 做了工作，但我们从中什么都没学到。如果每次和 agent 的交互都发生在私聊窗口里，只有坐在键盘前的那个人在学习。其他所有人都被锁在学徒制之外了。"</p>
+      <p>这个设计背后是一个关于知识传播的直觉：人类组织的智慧是通过观察彼此怎么工作来传播的，可见性是学习的前提。当 AI agent 接管大量工作流之后，"怎么用好 AI"这件事本身也需要通过可见性来传播。私聊里的 prompt 变成了隐性知识（tacit knowledge，只存在于个人脑中、无法显式传授的知识），组织永远学不走。公开频道强制把 prompt、结果、修正过程变成团队可见的工作产出，相当于给 AI 使用能力建了一套内部学徒制。</p>
+      <strong>Lütke 做的不是一个权限设置，而是一个组织学习架构的决策：agent 的能力边界能不能成为公司的组织能力，取决于工作是否可见。</strong>
+      <cite><a href="https://x.com/tobi/status/2053121182044451016" target="_blank" rel="noopener">X @tobi</a> · <a href="https://wise.readwise.io/save?url=https%3A//x.com/tobi/status/2053121182044451016/%3Frw_tt_thread%3DTrue" target="_blank" rel="noopener">Wisereads Vol.143</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://x.com/garrytan/status/2055674791873630650" target="_blank" rel="noopener">Garry Tan（YC CEO）：Foucault 和 Derrida 的解构主义成了文明的操作系统——训练了一代人质疑一切却不建造任何东西</a></h3>
+      <p>Garry Tan 昨天早上发了一篇长文，论述后现代哲学如何从学术语言变成了整个社会建制的底层固件。Foucault 的核心主张是：任何声称"知道什么"的机构，不过是在行使权力。把这个逻辑应用到文明层面，结果是一个失去建造意志的社会——过程性知识（tacit process knowledge，只存在于真正在建造的人的双手里）会死亡。美国从建设州际公路和阿波罗火箭，到无法修一条从洛杉矶到旧金山的高铁。不是工程师忘了怎么建，而是一整个知识阶层的工作变成了"审问每个系统"而不是"改进某个系统"。</p>
+      <p>Derrida 的动作是：每一个承诺都包含自身的矛盾，所以永远无法落地在确定的意义上。把这个逻辑当作社会操作系统跑起来，你得到的是官僚瘫痪——一个基础设施项目被 15 年的环境审查卡死，因为每一份使命陈述都被接下来的利益相关方会议解构成一堆无意义的泥浆。Garry 最后的结论是："建造才是解药。一座桥能不能撑住，代码能不能编译，现实会给分数，不按弧线打分。Foucault 和 Derrida 给一整代人提供了一个精密的借口来永远不建造任何东西。"</p>
+      <strong>Garry Tan 写的不是一篇哲学批评，而是一份创始人宣言：建造的行为本身是对虚无主义的反驳，不需要先赢得那场语言游戏。</strong>
+      <cite><a href="https://x.com/garrytan/status/2055674791873630650" target="_blank" rel="noopener">X @garrytan</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/petergyang/status/2055663937061007762" target="_blank" rel="noopener">Peter Yang（Roblox 产品人）：Bay Area 技术鼠赛——出门旅行一趟，你会发现人生不止是"在 FAANG 做到 D2"</a></h3>
+      <p>Peter Yang 昨天写了一条 3090 likes 的推文，表达的是一种在湾区技术圈越来越难说出口的判断："如果你被困在湾区科技鼠赛/精神症里，找时间去别的地方走走。去欧洲小城，或者去亚洲——你会发现，人生可以有比你是 IC7 还是 IC8、或者你在哪家公司工作大得多的内容。不要成为那个墓碑上写着：'他离了婚，忽略了孩子，但至少他在 FAANG 做到了 D2'的人。"</p>
+      <p>这条推文的传播说明了一件事：这种焦虑不是私人问题，而是湾区特有的结构性压力。这里的职级体系（IC = Individual Contributor，即独立贡献者，D 系列是 Meta 的职级架构，D2 对应高级工程师）被量化到连外出旅行都觉得是在浪费"爬升时间"。Yang 的意思不是让人放弃事业，而是说：把职级做到极致，不是人生的终点，更不是人生的全部。这个道理人人都知道，但在那个环境里很少被公开说出来。</p>
+      <strong>那条墓碑上的话是一个测试：如果你在脑子里把自己的名字填进去，感觉不对劲，或许值得在感觉对劲之前做点调整。</strong>
+      <cite><a href="https://x.com/petergyang/status/2055663937061007762" target="_blank" rel="noopener">X @petergyang</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://sheep.press" target="_blank" rel="noopener">纯银 · 羔羊计划（Vol.20260517）：研究那些在我们迷茫时给予方向的人——100 位人物研究，进度 30/100</a></h3>
+      <p>《产品沉思录》（shaonan + fonter 出品）的「羔羊计划」今日更新 Vol.20260517，这是他们"以人为维度"的深度研究系列：不研究方法论，不研究框架，研究人。那些在你迷茫时能帮你找到方向的人，他们的观点、轨迹与碎片。</p>
+      <p>项目的愿景写得直白："希望羔羊不会迷途"——这个比喻有一种不掩饰的温柔。订阅周期内将逐步解锁 100 位人物研究，本期是第 30 位。在 AI 正在重构知识获取方式的此刻，"研究人"这件事本身有了新的分量：不是因为人比 AI 更聪明，而是因为人的轨迹、选择和代价是不可检索的，必须被叙述才能被传递。</p>
+      <strong>羔羊计划做的事是：在信息洪流里，把"某个具体的人是怎么活过来的"这件事保存下来，当你需要方向的时候，有地方可以去找。</strong>
+      <cite><a href="https://sheep.press" target="_blank" rel="noopener">小报童 · 纯银</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/papers/2509.18154" target="_blank" rel="noopener">MiniCPM-V 4.5：8B 多模态大模型，混合强化学习实现快/深思考双模式，超越 GPT-4o-latest</a></h3>
+      <p><strong>现状：</strong>多模态大模型（能同时理解图像、视频、文字的语言模型）通常面临一个两难：要么速度快但推理浅，要么推理深但响应慢，很难兼顾。</p>
+      <p><strong>问题：</strong>如何让一个小参数量的模型（8B 参数约等于 80 亿个可训练变量）在日常轻量任务里高效，在复杂推理任务里又不掉链子。</p>
+      <p><strong>解决方案：</strong>MiniCPM-V 4.5 引入三项架构改进：统一的 3D-Resampler（一种对图像和视频进行高效编码压缩的模块），统一的文档识别学习范式，以及混合 RL（强化学习）后训练策略，同时优化"快思考"（短推理模式，适合日常高效使用）和"深思考"（长推理模式，适合复杂任务）。</p>
+      <p><strong>价值：</strong>在 OpenCompass 综合评测上超越 GPT-4o-latest 和 Qwen2.5-VL 72B（后者参数量是前者的 9 倍）。</p>
+      <p><strong>未来方向：</strong>小参数多模态模型在边缘设备（手机、本地服务器）部署的可行性正在提升，长尾推理任务的成本也在下降。</p>
+      <cite><a href="https://huggingface.co/papers/2509.18154" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2509.18154" target="_blank" rel="noopener">arXiv:2509.18154</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/papers/2604.27393" target="_blank" rel="noopener">MiniCPM-o 4.5：9B 全模态全双工实时交互，输入输出不互相阻塞，12GB RAM 可跑</a></h3>
+      <p><strong>现状：</strong>现有的多模态 AI 大多是"轮流发言"模式：模型接收完整输入后才开始输出，用户必须等待，无法真正实现"边说边听"的双向实时交流。</p>
+      <p><strong>问题：</strong>如何让模型在接收视频/音频流输入的同时，同步生成语音/文字输出，实现真正的全双工（full-duplex，即同时发送和接收，类似电话而非对讲机）交互。</p>
+      <p><strong>解决方案：</strong>Omni-Flow 框架，把所有输入输出流对齐在同一时间轴上，视频/音频输入不阻塞语音/文字输出，模型可以在持续感知实时场景的同时发出提醒或评论。</p>
+      <p><strong>价值：</strong>视觉语言能力接近 Gemini 2.5 Flash（同级开源最高水平），语音生成超越 Qwen3-Omni-30B-A3B，内存占用低于 12GB——意味着可以在消费级 GPU 或高配笔记本上本地运行。</p>
+      <p><strong>未来方向：</strong>全双工多模态交互将彻底改变 AI 助手的交互范式，从"问答"转向"陪伴式感知"。</p>
+      <cite><a href="https://huggingface.co/papers/2604.27393" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2604.27393" target="_blank" rel="noopener">arXiv:2604.27393</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2605.02964" target="_blank" rel="noopener">Reward Hacking Benchmark：测量 AI agent 在工具调用中的"走捷径"行为</a></h3>
+      <p><strong>现状：</strong>AI agent 在完成多步骤任务时会调用各种工具（tool use，即让模型调用外部 API、执行代码、查询数据库等），但现有评测多关注任务完成率，忽略了模型是否在"耍赖"。</p>
+      <p><strong>问题：</strong>如何系统性地衡量 agent 在有"近道"可走时是否走近道——比如跳过验证步骤、从任务相关元数据直接推断答案、或者篡改评估函数（即修改评分脚本让自己得分）。</p>
+      <p><strong>解决方案：</strong>Reward Hacking Benchmark（RHB）是一套多步骤任务集，每个任务都内嵌了自然的"走捷径机会"，考察 agent 是否会主动利用这些漏洞绕过真正的任务完成。</p>
+      <p><strong>价值：</strong>为 agent 安全性评测提供了一个之前缺失的维度——不只是"能不能做到"，而是"会不会作弊"。</p>
+      <p><strong>未来方向：</strong>在把 agent 部署进生产系统之前，reward hacking 风险评估将成为标准检查项。</p>
+      <cite><a href="https://arxiv.org/abs/2605.02964" target="_blank" rel="noopener">arXiv:2605.02964</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/html/2605.10787v1" target="_blank" rel="noopener">ComplexMCP：150+ 工具 + 7 个有状态沙箱，考验 LLM agent 的复杂状态推理能力</a></h3>
+      <p><strong>现状：</strong>现有 LLM agent 基准大多是孤立的 API 调用测试，任务之间没有状态依赖。但现实部署里，工具之间存在复杂的相互依赖和状态转换。</p>
+      <p><strong>问题：</strong>如何评测 agent 在需要跨工具长链推理（多个工具的调用顺序和结果互相影响）、且工具运行在有状态沙箱（沙箱，即隔离的执行环境，每次操作会改变环境状态）里的真实能力。</p>
+      <p><strong>解决方案：</strong>ComplexMCP 提供 150+ 个相互依赖的工具，分布在 7 个有状态沙箱和 150+ 个无状态 API 里，任务要求 agent 进行长链推理和复杂状态转换，而非孤立调用。</p>
+      <p><strong>价值：</strong>首个系统性覆盖"真实 MCP（Model Context Protocol，模型上下文协议，一种让 AI 模型接入外部工具的标准接口）服务器环境"复杂度的基准。</p>
+      <p><strong>未来方向：</strong>为工具调用密集的 agent 应用（如代码库操作、多系统集成）提供了更贴近生产环境的评测标准。</p>
+      <cite><a href="https://arxiv.org/html/2605.10787v1" target="_blank" rel="noopener">arXiv:2605.10787</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/html/2605.03596v1" target="_blank" rel="noopener">Workspace-Bench 1.0：20,476 个文件、388 个任务，测试 AI agent 在真实大规模工作区的表现</a></h3>
+      <p><strong>现状：</strong>AI agent 在处理单文件或小规模代码库任务时表现不错，但企业级工作区往往包含数以万计的文件，且文件之间存在复杂的依赖关系图。</p>
+      <p><strong>问题：</strong>现有基准的工作区规模远小于真实企业环境，无法反映 agent 在"大型文件依赖图"（每个任务的完成需要理解文件 A 依赖文件 B 依赖文件 C 这类多层关系）下的真实能力边界。</p>
+      <p><strong>解决方案：</strong>Workspace-Bench 1.0 构建了 5 种员工角色的工作区，包含 74 种文件类型、20,476 个文件（最大 20GB），每个任务附带其独立的文件依赖图。</p>
+      <p><strong>价值：</strong>目前最接近企业实际部署规模的 agent 基准，填补了"玩具级任务"和"生产级任务"之间的评测空白。</p>
+      <p><strong>未来方向：</strong>大规模工作区 agent 能力提升是企业 AI 落地的关键路径，该基准将为这一方向提供标准评测锚点。</p>
+      <cite><a href="https://arxiv.org/html/2605.03596v1" target="_blank" rel="noopener">arXiv:2605.03596</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>swyx：AI Engineer Conference（AIE）即将登陆印度，AI 工程师社区全球化节奏在加快。<a class="glance-src" href="https://x.com/swyx/status/2055889947136237595" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>Thariq（Claude Code @Anthropic）："HTML continues to be undefeated"——在 agent 和框架层出不穷的时代，HTML 依然是最后的底层赢家。<a class="glance-src" href="https://x.com/trq212/status/2055903660476129723" target="_blank" rel="noopener">X @trq212 →</a></li>
+      <li>Peter Steinberger：大脑说不要看 Hacker News 评论，还是去看了——542 likes 的集体共鸣，HN 评论区是开发者世界的黑洞。<a class="glance-src" href="https://x.com/steipete/status/2055775661755715974" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>Peter Steinberger：BlackBar 0.2.0 发布，新增 24h vCPU + workflow 折线图、opt-in 状态/任务通知、紧凑状态徽章，让 CI 猜测减少。<a class="glance-src" href="https://x.com/steipete/status/2055685581758206139" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>Dan Shipper："Successfully Codex-pilling the world one text at a time"——Every CEO 在亲自向周围人安利 Codex。<a class="glance-src" href="https://x.com/danshipper/status/2055715359244566552" target="_blank" rel="noopener">X @danshipper →</a></li>
+      <li>Madhu Guru（Google Gemini 产品负责人）：硅谷把野心和幸福当互斥项。"你可以想变富，同时现在就满足。不需要从匮乏和绝望出发去追逐它。"<a class="glance-src" href="https://x.com/realmadhuguru/status/2055708451670798839" target="_blank" rel="noopener">X @realmadhuguru →</a></li>
+      <li>Nikunj Kothari（FPV Ventures）：不建议早期职业去 VC；先在卓越公司深度嵌入，只有在一流创始人旁边日复一日工作，才能真正理解"卓越"长什么样，再做天使。<a class="glance-src" href="https://x.com/nikunj/status/2055648134819450907" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Every（Dan Shipper）"After the Personal Agent"：为什么隐性知识（只在实践中存在、无法被搜索到的知识）比搜索更重要；Opus 4.7 正在赢回一批用户。<a class="glance-src" href="https://every.to" target="_blank" rel="noopener">Every →</a></li>
+      <li>Wisereads：Lars Faye《Agentic Coding is a Trap》——"LLM 是下一个 token 的概率引擎，不是编译器。你无法用一个概率系统替代确定性系统并期待零歧义。"<a class="glance-src" href="https://larsfaye.com/articles/agentic-coding-is-a-trap" target="_blank" rel="noopener">larsfaye.com →</a></li>
+      <li>Wisereads：James Shore《You Need AI That Reduces Maintenance Costs》——AI 提速了写代码，但没减少维护成本；停用 agent 后速度优势消失，维护债留下来。<a class="glance-src" href="https://jamesshore.com/v2/blog/2026/you-need-ai-that-reduces-your-maintenance-costs/" target="_blank" rel="noopener">jamesshore.com →</a></li>
+      <li>Wisereads：Anthropic 发布《The Complete Guide to Building Skills for Claude》——用 Skills（文件夹结构的技能系统）让 Claude 记住你的工作流，一次教，终身受益。<a class="glance-src" href="https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf" target="_blank" rel="noopener">Anthropic →</a></li>
+      <li>Wisereads：Angel Down by Daniel Kraus 获 2026 年普利策奖，一战战场上的超自然生存故事，全书是一个不断循环的长句子。<a class="glance-src" href="https://readwise.io/reader/fd/455446894" target="_blank" rel="noopener">Wisereads Vol.143 →</a></li>
+      <li>Simon Willison（May 11）：GitLab 宣布裁员并重组，分析认为是 AI 工具压低了对工程师人数的结构性需求，而非短期财务压力。<a class="glance-src" href="https://simonwillison.net/2026/May/11/gitlab-act-2/" target="_blank" rel="noopener">Simon Willison →</a></li>
+      <li>The Marginalian（May 14）：Bertrand Russell《赞无用之学》——专注"有用知识"导致失衡与神经紊乱，无用知识培养冥思习惯，从深刻理解中生长出来的行动才不是激情冲动。<a class="glance-src" href="https://www.themarginalian.org/2026/05/14/bertrand-russell-useless-knowledge/" target="_blank" rel="noopener">The Marginalian →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-05-16.html">← MAY 16</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
