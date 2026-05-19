@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — May 19, 2026</title>
+  <meta name="description" content="今日 Google I/O 开幕，Gemini Spark 和 Android XR 眼镜正式亮相；陪审团裁定 Musk 起诉 OpenAI 超过诉讼时效，上市路清晰；Anthropic 逾 3 亿美元收购 Stainless，对手 SDK 工具链断供。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">May 19, 2026</h1>
+
+  <p class="post-lead">今日 Google I/O 开幕，Gemini Spark 个人智能体和 Android XR 眼镜正式亮相，AI Ultra 计划降价至 $100/月。与此同时，陪审团裁定 Musk 起诉 OpenAI 超过诉讼时效，IPO 通道打开；Anthropic 逾 3 亿美元收购 Stainless，截断对手的 SDK 工具链。纯银解剖滴滴 AI 打车：功能不蠢，但场景太窄，始终在主路径之外。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.cnbc.com/2026/05/18/musk-altman-openai-trial-verdict.html" target="_blank" rel="noopener">Musk 败诉 OpenAI：陪审团裁定超过诉讼时效，上市通道打开</a></h3>
+      <p>经历三周庭审，陪审团在所有指控上均判 Musk 败诉。核心裁定是诉讼时效已过——Musk 早在 OpenAI 推进营利化转型之前就知晓相关计划，未能及时起诉。OpenAI 方面指出，Musk 当年自己曾支持类似重组方案，在创立竞争对手 xAI 之后才提起诉讼。Musk 声称将上诉，称裁决是"破坏性先例"。对于 OpenAI 而言，这一判决扫清了公司转型为公益公司、最终公开上市的最大法律障碍。</p>
+      <cite><a href="https://www.cnbc.com/2026/05/18/musk-altman-openai-trial-verdict.html" target="_blank" rel="noopener">CNBC</a> · <a href="https://tldr.tech/" target="_blank" rel="noopener">TLDR</a> · <a href="https://www.theaivalley.com/" target="_blank" rel="noopener">AI Valley</a> · <a href="https://www.bensbites.com/p/can-i-get-my-agents-on-the-phone" target="_blank" rel="noopener">Ben's Bites</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://io.google/2026/" target="_blank" rel="noopener">Google I/O 2026 开幕：Gemini Spark、Android XR 眼镜、AI Ultra 新定价</a></h3>
+      <p>Google 年度开发者大会于今日（5月19日）举行主题演讲。核心发布：Gemini Spark，一个运行在专属虚拟机中、7×24 小时在线的个人 AI 智能体，由 Gemini 3.5 Flash 驱动，深度整合 Google Workspace 和第三方工具；Android XR 眼镜正式亮相，全天候接入 Gemini；Googlebooks（专为 Gemini 设计的新形态笔记本）由 Acer、ASUS、Lenovo 联合推出。定价层面，AI Ultra 从 $250/月降至 $200/月，新增 $100/月版本；同步发布 Gemini Omni（全模态视频生成工具）和面向科研的 Gemini for Science。</p>
+      <cite><a href="https://io.google/2026/" target="_blank" rel="noopener">Google I/O 2026</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.anthropic.com/news/anthropic-acquires-stainless" target="_blank" rel="noopener">Anthropic 逾 $3 亿收购 Stainless，竞品 SDK 工具链断供</a></h3>
+      <p>Stainless 是 OpenAI、Google、Cloudflare 均在使用的 SDK 自动生成平台，能将 API 规格转换为 TypeScript、Python、Go、Java 等多语言 SDK 及 MCP 服务器（即让开发者和 agent 调用 API 的连接层）。Anthropic 宣布收购后，将关停所有托管服务。受影响的客户仍保留此前生成的 SDK 所有权和修改权，但未来无法继续使用平台服务。对竞争对手而言，他们正在使用的工具链实际上被断供了——Anthropic 此举既是把核心 SDK 研发能力内化，也间接给对手增加了基础设施迁移成本。</p>
+      <cite><a href="https://www.anthropic.com/news/anthropic-acquires-stainless" target="_blank" rel="noopener">Anthropic</a> · <a href="https://techcrunch.com/2026/05/18/anthropic-has-acquired-the-dev-tools-startup-used-by-openai-google-and-cloudflare/" target="_blank" rel="noopener">TechCrunch</a> · <a href="https://www.bensbites.com/p/can-i-get-my-agents-on-the-phone" target="_blank" rel="noopener">Ben's Bites</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.bensbites.com/p/can-i-get-my-agents-on-the-phone" target="_blank" rel="noopener">Ben Bites：模型越强，harness（运行框架）的角色越要转变</a></h3>
+      <p>Ben Cawley 在今日 Ben's Bites 中写道：当模型足够强，harness 的重要性会下降——但他认为今天还没到那一天。不过转变的方向已经清晰：harness 的职责将从"管理用哪些工具、系统提示怎么写、上下文怎么管理"，向"管理 agent、沙箱（隔离的代码运行环境）、云端/本地资源调度"迁移。</p>
+      <p>他还提到自己现在的手机端 agent 使用习惯：Claude Code 的 /remote-control、Telegram bot、Droid 的移动端——但大多数时候用手机是在"头脑风暴"而非"构建"。他之前每天都在用 OpenClaw bot，但几周没说话了，原因是他现在专注于做一件主要的事：一本关于"如何思考和引导 agent"的参考手册。</p>
+      <strong>harness 不会消失，它在等一次职责重组——从工具管理者变成 agent 的基础设施层。</strong>
+      <cite><a href="https://www.bensbites.com/p/can-i-get-my-agents-on-the-phone" target="_blank" rel="noopener">Ben's Bites</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/petergyang/status/2056381822733595090" target="_blank" rel="noopener">Peter Yang（Roblox 产品负责人）：拆解 Anthropic 的五个构建维度</a></h3>
+      <p>Peter Yang 今日发长推，深度分析 Anthropic 的模型构建方法，列出五个值得关注的维度：模型与 harness 的耦合设计（Claude 的能力边界和部署框架不是分开设计的）；agent"做梦"——让 agent 在非激活状态下也持续处理信息；evaluation 方法论（benchmark 怎么选、怎么防止过拟合）；意识研究（Anthropic 确实在认真对待模型的主观体验问题）；以及用写作文化作为 context 层——团队的书面沟通本身构成了模型训练的隐性基础设施。</p>
+      <strong>Anthropic 把组织文化本身当成了 AI 系统的一部分，这和大多数 AI 公司的想法不一样。</strong>
+      <cite><a href="https://x.com/petergyang/status/2056381822733595090" target="_blank" rel="noopener">X @petergyang</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/levie/status/2056574979236409521" target="_blank" rel="noopener">Aaron Levie（Box CEO）：Agent 成功的关键是"恰当约束的上下文"，不是越多越好</a></h3>
+      <p>Levie 今日在 X 发布延伸分析：让 agent 完成任务的前提，不是给它堆砌更多工具和数据，而是给出"恰到好处的约束上下文"——精确划定边界、提供结构化的数据环境。他认为 agent 的成败，很大程度上取决于上游的数据策略是否到位。</p>
+      <p>实际含义对产品/企业团队而言：在把 agent 接入工作流之前，先要搞清楚哪些数据该暴露、哪些不该，结构化到什么程度，边界划在哪里——这些决策早于 agent 选型。</p>
+      <strong>Agent 工程的真正门槛在于数据治理，而不是模型选型。</strong>
+      <cite><a href="https://x.com/levie/status/2056574979236409521" target="_blank" rel="noopener">X @levie</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://every.to/chain-of-thought/compound-engineering-how-every-codes-with-agents" target="_blank" rel="noopener">Every（Dan Shipper）：100-agent 软件工厂里实际在发生什么</a></h3>
+      <p>Every 今日 newsletter 主题是"Inside the 100-agent Software Factory"。Dan Shipper 分享了 Every 完全转向 agent 原生架构之后的复合工程（compound engineering）实践：传统软件是"写代码定义发生什么"，而 agent 原生软件是"用自然语言定义结果，让 agent 决定怎么实现"。Every 内部现在所有新功能都是 Claude Code 的调用封装，每个按钮背后是一个 agent 的 prompt 链路。</p>
+      <p>他还提到一个 Gas City 的迷你 vibe check，以及 Grok 的 X 草稿质量评分器——后者作为"写作 co-pilot"颇有意思：在你发出去之前，先帮你给自己打分。</p>
+      <strong>agent 原生架构不是一个技术选择，是一个关于"谁在写代码"的组织决策。</strong>
+      <cite><a href="https://every.to/chain-of-thought/compound-engineering-how-every-codes-with-agents" target="_blank" rel="noopener">Every</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://xiaobot.net/post/22f492db-d86b-48ff-be21-28338ec305ae" target="_blank" rel="noopener">纯银（Vol.20260519）：滴滴 AI 打车不蠢，但场景太窄</a></h3>
+      <p>纯银在英国旅行期间看到大 V 吐槽滴滴 AI 打车，回国自己用了之后写下这篇分析。结论：没有吐槽得那么蠢，但场景确实很窄。AI 打车的最大公约数是"选车"，本质是把高级搜索功能下放给普通用户——"空气清新"、"最近的车"、"后排宽敞"这类筛选项，AI 语义理解做起来顺手，降低使用门槛，提高撮合率。</p>
+      <p>但核心问题是：主路径叫车点一次，AI 打车要点三次，还需要集中注意力筛选信息——如果对筛选项不是强需求，就完全想不起来进这个入口。而真正是强需求、高渗透率的筛选项，早就内嵌到主路径去了。其他功能（找附近的店、预约叫车、订单查询）拼在一起心智混乱、场景低频。纯银总结：这是有意义的探索，目的是"回收市场反馈"，而非当下就打造一个高价值功能。相比之下，大众点评的"问点仔"和携程的"AI 问道"更糟糕，是大厂产品力下降的注脚。</p>
+      <strong>AI 功能一旦脱离主路径，用户不是觉得它难用，而是根本不会想起来它存在。</strong>
+      <cite><a href="https://xiaobot.net/post/22f492db-d86b-48ff-be21-28338ec305ae" target="_blank" rel="noopener">小报童 · 纯银</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/rauchg/status/2056549825018310707" target="_blank" rel="noopener">Guillermo Rauch（Vercel CEO）：所有防火墙规则全部免费，专为 agent 设计的 firewall 上线</a></h3>
+      <p>Rauch 今日宣布，Vercel 上所有防火墙防护措施——不只是 DDoS 和系统级缓解，包括用户自定义配置的任何规则——全部免费开放。同时他展示了一个"agent 会喜欢的防火墙"：全球 ~300ms 内即时生效，适合在 agent 工作流中动态调整安全规则而不影响响应速度。</p>
+      <strong>基础设施层把安全从"可选的付费附加"变成默认能力，这对 agent 部署的普及有实质推动作用。</strong>
+      <cite><a href="https://x.com/rauchg/status/2056549825018310707" target="_blank" rel="noopener">X @rauchg</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/garrytan/status/2056584641654751308" target="_blank" rel="noopener">Garry Tan（YC CEO）：GBrain 单次更新合并 22 个社区 PR 和 14 个 issue</a></h3>
+      <p>Garry Tan 分享 GBrain（他开源的 AI agent 个人记忆框架，MIT 协议，上周发布）的最新动态：一次 bugfix 波次合并了 22 个社区 PR 和 14 个 issue，涵盖 28 个修复。他写道"看来我们目前每天都在快速改进 GBrain"，另一推文提到完整的 evaluation 报告和 fixtures 已公开发布。这是社区驱动的开源 agent 基础设施快速进化的一个缩影，开源动员速度远超预期。</p>
+      <strong>开源 agent 框架的社区迭代速度，已经超过了很多闭源团队的内部节奏。</strong>
+      <cite><a href="https://x.com/garrytan/status/2056584641654751308" target="_blank" rel="noopener">X @garrytan</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://x.com/nikunj/status/2056363681798410592" target="_blank" rel="noopener">Nikunj Kothari（YC GP）：X 上写爆款 ≠ 好董事会成员，投资人在用 dopamine 换服务</a></h3>
+      <p>Nikunj 今日写道："'Writes bangers on X, but terrible board member'" — 用在社交媒体上制造 dopamine（多巴胺刺激）来换取创始人的服务，是一种正在扩散的投资人行为模式。他的意思是：X 上的影响力和真正的价值创造之间存在越来越大的鸿沟，而这个鸿沟现在被系统性地利用着。</p>
+      <p>这个观察对创始人选择投资人、对 IC 选择导师、对所有人评估"内容人"的实际能力，都是一个有效的校准提醒。注意力经济的激励结构，让"能讲清楚一件事"和"能做成一件事"变得越来越解耦。</p>
+      <strong>在注意力经济里，能制造 dopamine 和能带来价值，是两种不同的技能，后者越来越稀缺。</strong>
+      <cite><a href="https://x.com/nikunj/status/2056363681798410592" target="_blank" rel="noopener">X @nikunj</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/danshipper/status/2056418217925456170" target="_blank" rel="noopener">Dan Shipper（Every CEO）：people should write better books</a></h3>
+      <p>Dan Shipper 今日一句话推文："people should write better books!" 这句话在 AI 生成内容大量涌现的背景下值得停留一下。当 AI 可以在几秒内生成"够用"的文字，真正费力写就、反复打磨的书，变成了一种越来越稀缺的礼物。</p>
+      <p>这和他今天在 newsletter 里讨论的 agent 原生软件工厂形成有趣的张力：他在建造一个用 AI 写代码的工厂，同时坚持认为人类应该更认真地写书。工具不决定表达的深度，深度取决于你愿意投入多少自己。</p>
+      <strong>AI 把生产成本压到接近零，反而让"花时间去想清楚一件事再写下来"这件事变得更有价值。</strong>
+      <cite><a href="https://x.com/danshipper/status/2056418217925456170" target="_blank" rel="noopener">X @danshipper</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2605.10787" target="_blank" rel="noopener">ComplexMCP：首个大规模 MCP 工具沙箱基准，顶级模型通过率不超 60%</a></h3>
+      <p><strong>现状：</strong>现有 LLM agent benchmark 大多测试的是单独的、相互独立的 API 调用，与真实部署场景差距很大。</p>
+      <p><strong>问题：</strong>现实中，工具之间存在状态依赖和交叉影响——上一步操作的结果会影响下一步可用的工具，API 也可能随机失败。目前没有基准能系统评估这种动态环境下的 agent 能力。</p>
+      <p><strong>解决方案：</strong>ComplexMCP 在 MCP（模型上下文协议，即 agent 调用外部工具的标准接口）上构建基准，提供超过 300 个工具，来自 7 个有状态沙箱（覆盖 office 套件到金融系统）。通过种子驱动的架构模拟动态环境状态和随机 API 失败，同时保证测试可复现。</p>
+      <p><strong>价值：</strong>揭示了当前模型在复杂工具环境中的真实短板：即便是顶级模型，在完整上下文和 RAG（检索增强生成）两种模式下，成功率均低于 60%。</p>
+      <p><strong>未来方向：</strong>对于产品团队来说，这意味着在让 agent 接管多步骤工作流之前，需要认真评估工具的依赖复杂度，而非仅测试单步调用准确性。</p>
+      <cite><a href="https://huggingface.co/papers/2605.10787" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2605.10787" target="_blank" rel="noopener">arXiv 2605.10787</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2605.11453" target="_blank" rel="noopener">多 Agent 推理预测图：如何选对通信拓扑（chain/star/mesh）</a></h3>
+      <p><strong>现状：</strong>在多 agent 系统中，开发者需要选择 agent 之间的通信拓扑——是链式（chain，顺序传递）、星型（star，中枢汇聚）还是网状（mesh，全连接），这个选择直接影响性能，但目前缺乏理论框架。</p>
+      <p><strong>问题：</strong>不同任务的最优拓扑不同，盲目选择会导致通信开销过大或信息丢失。</p>
+      <p><strong>解决方案：</strong>论文提出基于后继表示谱（successor-representation spectrum）的预测图框架，将推理任务的结构特征映射到最优通信拓扑，给出可解释的选择依据。</p>
+      <p><strong>价值：</strong>为多 agent 系统的架构决策提供了一套可操作的分析工具，不再是试错。</p>
+      <p><strong>未来方向：</strong>随着 agent 系统从单 agent 走向多 agent 协同，这类"拓扑选择框架"将成为 agent 基础设施设计的基础组件。</p>
+      <cite><a href="https://arxiv.org/abs/2605.11453" target="_blank" rel="noopener">arXiv 2605.11453</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2605.14153" target="_blank" rel="noopener">ExploitBench：LLM 网络安全能力梯级基准，16 个阶段从漏洞发现到代码执行</a></h3>
+      <p><strong>现状：</strong>LLM 在网络安全领域的能力评估缺乏精细化分级，"会不会找漏洞"是个粗粒度标签，无法指导实际应用决策。</p>
+      <p><strong>问题：</strong>安全漏洞的利用是一个多阶段链条，不同阶段对模型能力的要求差异很大，笼统评估掩盖了真实能力边界。</p>
+      <p><strong>解决方案：</strong>ExploitBench 将利用能力分解为 16 个可测量的"能力标志"（flag，借用 CTF 夺旗赛概念），从覆盖分析、崩溃复现，经由沙箱原语、任意读写、控制流劫持，直到任意代码执行，形成能力阶梯（capability ladder）。</p>
+      <p><strong>价值：</strong>帮助安全研究者和红队精确定位当前模型的能力上限，指导人机协同的安全测试策略。</p>
+      <p><strong>未来方向：</strong>Cloudflare 测试 Mythos 时已发现"模型擅长找真实攻击链，但单模型+弱 harness 仍有大量漏网"，ExploitBench 这类基准正是量化这个差距的基础设施。</p>
+      <cite><a href="https://arxiv.org/abs/2605.14153" target="_blank" rel="noopener">arXiv 2605.14153</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2605.15230" target="_blank" rel="noopener">EnergyAgentBench：首个基于实时电力市场数据的 agent 基准</a></h3>
+      <p><strong>现状：</strong>现有 agent benchmark 大多使用静态或合成数据，无法测试 agent 在动态、高频更新的真实环境中的决策能力。</p>
+      <p><strong>问题：</strong>电力基础设施的运营决策（数据中心选址、电网调度）涉及实时价格信号和复杂约束，是一个典型的"需要 agent 但没有好基准"的场景。</p>
+      <p><strong>解决方案：</strong>EnergyAgentBench 接入实时电力市场数据，设计 70 个任务变体，覆盖 5 个任务族，包括数据中心选址优化和电网管理。</p>
+      <p><strong>价值：</strong>首次把 agent 能力测试锚定到实时数据流，填补了高价值行业场景的评估空白。</p>
+      <p><strong>未来方向：</strong>随着 AI 数据中心能耗占比持续上升，能源管理 agent 将是未来几年基础设施团队的重要工具。</p>
+      <cite><a href="https://arxiv.org/abs/2605.15230" target="_blank" rel="noopener">arXiv 2605.15230</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2605.01687" target="_blank" rel="noopener">MultiBreak：可扩展多轮越狱安全基准，覆盖多样化对抗场景</a></h3>
+      <p><strong>现状：</strong>现有越狱（jailbreak，绕过模型安全限制）测试多数是单轮攻击，而真实世界的攻击者越来越多地采用多轮渐进策略，单轮测试无法评估模型的真实安全边界。</p>
+      <p><strong>问题：</strong>多轮越狱的测试用例生成困难，难以保证覆盖度和多样性，现有基准既不可扩展也不够全面。</p>
+      <p><strong>解决方案：</strong>MultiBreak 提出可扩展的多轮越狱生成协议，自动构建多样化的多轮攻击序列，覆盖不同角色扮演、逐步诱导等对抗策略。</p>
+      <p><strong>价值：</strong>为模型安全团队提供了更贴近真实攻击的评估工具，帮助识别单轮测试无法发现的安全漏洞。</p>
+      <p><strong>未来方向：</strong>随着 agent 具备更长的会话记忆和多轮推理能力，多轮安全测试将成为模型发布前的标准检查项。</p>
+      <cite><a href="https://arxiv.org/abs/2605.01687" target="_blank" rel="noopener">arXiv 2605.01687</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>Meta 7,000 人转岗四个 AI 原生部门，每百人对应经理数量低于公司均值，Zuckerberg 今年资本支出目标高达 $1,350 亿。<a class="glance-src" href="https://links.tldrnewsletter.com/gOrUhj" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Cursor Composer 2.5 发布：SWE-Bench Multilingual 79.8%，与 Opus 4.7 相当，成本仅约 1/10；训练使用了 SpaceXAI（xAI 合作）的计算资源，这只是双方合作的开始。<a class="glance-src" href="https://cursor.com/blog/composer-2-5" target="_blank" rel="noopener">Cursor →</a></li>
+      <li>Ryo Lu（Cursor 设计师）：Composer 2.5 来了，"frontier smart extremely efficient"，更多还在路上。<a class="glance-src" href="https://x.com/ryolu_/status/2056417715448156276" target="_blank" rel="noopener">X @ryolu_ →</a></li>
+      <li>Odyssey 发布 Agora-1：首个多 agent 世界模型，4 个玩家（人类或 AI）共享同一个 AI 生成的 GoldenEye 游戏世界，一个模型维护共享状态，另一个模型分别渲染每个玩家的视角。<a class="glance-src" href="https://odyssey.ml/introducing-agora-1" target="_blank" rel="noopener">Odyssey →</a></li>
+      <li>OpenAI Codex 新增手机端控制：在手机上发起任务，实际运行仍在 Mac/devbox/远程机器，可从手机审批命令、回答问题、查看 diff。同批次更新还加入了 Hooks 功能。<a class="glance-src" href="https://www.bensbites.com/p/can-i-get-my-agents-on-the-phone" target="_blank" rel="noopener">Ben's Bites →</a></li>
+      <li>Anthropic Managed Agents 新增自托管沙箱和 MCP 隧道，在伦敦开发者大会上发布——进一步降低企业自部署 agent 基础设施的门槛。<a class="glance-src" href="https://www.bensbites.com/p/can-i-get-my-agents-on-the-phone" target="_blank" rel="noopener">Ben's Bites →</a></li>
+      <li>Claude Design 所有方案 token 上限翻倍，让创意型工作流中的长上下文任务更可行。<a class="glance-src" href="https://x.com/claudeai/status/2056460045756309820" target="_blank" rel="noopener">X @claudeai →</a></li>
+      <li>Latent Space AINews：Vlad Feinberg 写了一篇如何进入顶级 AI Lab 的指南，核心路径是预训练工程——学 kernel 开发（LLM 最内层的性能优化），手写推导 Chinchilla 规律，以及 agent autoresearch 实验。他说这是"最直接的进入 lab 的路"。<a class="glance-src" href="https://www.latent.space/p/ainews-how-to-land-a-job-at-a-frontier" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>Cloudflare 测试 Anthropic Mythos（针对代码库的安全 AI 模型）：扫描 50+ 内部 repo，Mythos 擅长发现多个小漏洞组成的真实攻击链，但单模型+弱 harness 仍有大量遗漏，建议策略是让漏洞更难被组合利用，而非单纯加快修复速度。<a class="glance-src" href="https://blog.cloudflare.com/cyber-frontier-models/" target="_blank" rel="noopener">Cloudflare →</a></li>
+      <li>Sam Altman：ChatGPT 上次更新之后好很多了。<a class="glance-src" href="https://x.com/sama/status/2056435834333934051" target="_blank" rel="noopener">X @sama →</a></li>
+      <li>Zara Zhang（Builder）：最近 Claude Code 频繁报错"API Error: The socket connection was closed unexpectedly"。<a class="glance-src" href="https://x.com/zarazhangrui/status/2056527354772722127" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+      <li>Thariq（Anthropic Claude Code 工程师）：继续 HTML 时代——跟 Claire 聊长时 agent 任务中怎么保持人在循环（staying in the loop）。<a class="glance-src" href="https://x.com/trq212/status/2056432663125545082" target="_blank" rel="noopener">X @trq212 →</a></li>
+      <li>Swyx：Google I/O 前，押注 Vercel 和 Supabase 今天会有大动作。<a class="glance-src" href="https://x.com/swyx/status/2056626964090466469" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>Nan Yu（@thenanyu）：COVID 把整个中间价位品类整体抹掉了——Everlane 的困境是这个现象的缩影，时尚品牌的韧性来自两个极端（奢侈品 vs 快时尚），中间地带最脆弱。<a class="glance-src" href="https://x.com/thenanyu/status/2056416726783566223" target="_blank" rel="noopener">X @thenanyu →</a></li>
+      <li>Google Labs：用 5 个字以内描述你的产品是做什么的。<a class="glance-src" href="https://x.com/GoogleLabs/status/2056533534614159577" target="_blank" rel="noopener">X @GoogleLabs →</a></li>
+      <li>Dan Shipper：Codex 完整使用指南即将发布，Every 内部在做的 agent 原生 workflow 文档化。<a class="glance-src" href="https://x.com/danshipper/status/2056431972138815842" target="_blank" rel="noopener">X @danshipper →</a></li>
+      <li>Nikunj Kothari：大力推荐 Vlad Feinberg 的预训练求职指南，称其为"推荐给每个找新工作的人的新最爱"。<a class="glance-src" href="https://x.com/nikunj/status/2056566561922826634" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>TLDR 收录报告：今年大厂 AI 资本支出约 $7,000 亿，基础模型商品化加速，真实价值正在向应用层、agent 和工作流迁移，AI 使用广泛但整合较浅，科技和金融之外的深度整合仍罕见。<a class="glance-src" href="https://static1.squarespace.com/static/50363cf324ac8e905e7df861/t/6a0af5d0484fbf5fe9a7743e/1779103184855/2026-Spring-AI.pdf" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Unitree Robotics 申请在上交所科创板（STAR Market）IPO，已是全球出货量最大的人形机器人公司，盈利且快速成长。<a class="glance-src" href="https://www.tanayj.com/p/unitrees-ipo-filing-the-state-of" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>3 AI PM 原型 + 第四种：文章梳理产品经理在 AI 时代的三类演化路径，并提出一个鲜少被讨论的第四种类型。<a class="glance-src" href="https://itamargilad.com/ai-pm-future/" target="_blank" rel="noopener">TLDR →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-05-18.html">← MAY 18</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
