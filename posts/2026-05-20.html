@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — May 20, 2026</title>
+  <meta name="description" content="Google I/O 第二日，Gemini 3.5 Flash 正式 GA，速度提升 4 倍；Karpathy 宣布加入 Anthropic 预训练团队；SpaceX 计划 IPO 后 30 天收购 Cursor。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">May 20, 2026</h1>
+
+  <p class="post-lead">Google I/O 第二日，Gemini 3.5 Flash 正式 GA，速度提升 4 倍但成本涨了 5 倍；Karpathy 宣布加入 Anthropic 预训练团队，SpaceX 计划 IPO 后 30 天以 100 亿分手费条款收购 Cursor。纯银用数据复盘淘宝闪购大战：1000 亿人民币买到即时零售份额第一，但外卖骑手市场的阵地战后反而低于开战前，美团的壁垒更不可动摇了。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://blog.google/products/gemini/gemini-3-5-flash/" target="_blank" rel="noopener">Gemini 3.5 Flash 正式 GA：1M context，4 倍速，但成本涨了 5.5 倍</a></h3>
+      <p>Google 在 I/O 第二日让 Gemini 3.5 Flash 跳过预览期直接 GA，即刻上线 Gemini 应用、Search AI Mode、Antigravity 2.0、Gemini API 和 GitHub Copilot。关键参数：1M token 上下文，65k 最大输出，4 个思考强度挡位（minimal/low/medium/high），跨轮次"思维保留"（thought preservation，即让模型在多轮对话中记住推理过程，减少重复计算）。独立评测机构 Artificial Analysis 报告其 Intelligence Index 达 55 分，比 Gemini 3 Flash 高 9 分，在 MMMU-Pro 得 84%，代码 Arena 排名第 9。代价是定价：$1.50/$9.00 per million tokens（输入/输出），比 Gemini 3 Flash 贵 5.5 倍，比 Gemini 3.1 Pro 贵 75%。官方宣称比同等前沿模型快 4 倍，在 Antigravity 中最高快 12 倍。Google 称当日处理量已达每月 3.2 千万亿（quadrillion）token，同比去年增长 7 倍。</p>
+      <cite><a href="https://tldr.tech/ai" target="_blank" rel="noopener">TLDR</a> · <a href="https://www.latent.space/" target="_blank" rel="noopener">AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/karpathy/status/2056753169888334312" target="_blank" rel="noopener">Karpathy 加入 Anthropic 预训练团队</a></h3>
+      <p>Andrej Karpathy 今日在 X 上宣布加入 Anthropic，回归全职 R&D。他将领衔预训练团队新设的小组，用 Claude 加速预训练研究本身——用 AI 做 AI 研究的闭环。Karpathy 曾是 Tesla Autopilot 团队负责人、OpenAI 创始研究科学家，后来创立 Eureka Labs 教育项目，AI 教育领域的实践让他对"如何用 AI 加速科研"积累了自己的判断。他在 X 中写道是为了"get back to R&D"。Matt Turck 的评论："Anthropic attains sainthood, officially anointed by AI Jesus"——调侃之余，也映射了这次人才流动在社区的震动。</p>
+      <cite><a href="https://x.com/karpathy/status/2056753169888334312" target="_blank" rel="noopener">X @karpathy</a> · <a href="https://tldr.tech/ai" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://tldr.tech/ai" target="_blank" rel="noopener">SpaceX 计划 IPO 后 30 天收购 Cursor，分手费 100 亿美元</a></h3>
+      <p>TLDR 报道，SpaceX 预计最快今日提交 IPO 申请，6 月 12 日上市，随后计划 7 月以现金完成对 Cursor 的收购。若交易失败，SpaceX 需向 Cursor 支付 100 亿美元现金分手费，金额本身就是一则关于 Cursor 估值底线的声明。交易仍需监管审查。Cursor 目前是 AI 编程工具市场的主要玩家，和 SpaceX 的结合让外界对"太空 + AI 原生开发工具"的整合想象空间陡然打开。Swyx 今日也在 X 上简短评论："oh no contextual got windsurfed"——暗指 AI 编程工具赛道另一笔收购动向（Windsurf 收购 Contextual），显示这波整合浪潮不止 SpaceX/Cursor 一条线。</p>
+      <cite><a href="https://tldr.tech/ai" target="_blank" rel="noopener">TLDR</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://every.to/" target="_blank" rel="noopener">Every (Jack Cheng)："模型够用之后，你想要的是什么？"</a></h3>
+      <p>Jack Cheng 在 Every 今日 newsletter 中问了一个很有价值的问题：当一个模型已经聪明到能处理你所有个人任务，你对下一版的期待是什么？他的答案是速度和成本。他在 Google I/O 现场观察到，Gemini 3.5 Flash 如果 benchmark 可信，接近以 4 倍速度提供 Opus 4.7 级别的推理能力，这意味着 AI 的"快感延迟"问题有望消除——你问，它答，不需要等。</p>
+      <p>他把 Google 的 I/O 受众定位和自己所在的"AI 前沿折腾者"圈子区分开来：对折腾者来说，今天的发布意义不大；但对 25 亿人来说，Gemini 3.5 Flash 接入 Search 可能是他们第一次体验到"AI 够快到感觉不像 AI"的时刻。Google 正在为主流用户完成 AI 的无感接入，而不是为前沿用户做功能堆叠。他引用了大会压轴 slide："We are the first generation of builders creating tools for a world where anyone can build anything."</p>
+      <strong>Google 没有在跟 AI 先行者竞争，他们在对 25 亿搜索用户做一次安静的 AI 接入。</strong>
+      <cite><a href="https://every.to/" target="_blank" rel="noopener">Every</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/nikunj/status/2056865808832397344" target="_blank" rel="noopener">Nikunj Kothari（YC GP）：大多数人还没"定价"过 AI 已从 coworker 走向 autonomous worker</a></h3>
+      <p>Nikunj 今日写道："即便在湾区最 AI 化的圈子里，我认为真正把这件事定价进去的人也极少：我们已经从 assistant（助手）走到了 coworker（协同工作者），再走到了 autonomous worker（自主工作者）。" 他的意思是，这不是技术预测，而是已经发生的事实——但大多数人的决策框架、组织设计、招聘逻辑，还停留在"AI 辅助人类"这一阶段，没有跟上"AI 就是工作者"这个实际状态。</p>
+      <p>这个框架对产品经理尤其有现实意义：如果 autonomous worker 是当下，那么"怎么管人"和"怎么管 agent"的分界线已经在消融，而很多团队还在用管理初级员工的方式管理 AI。</p>
+      <strong>AI 从 coworker 到 autonomous worker 这一步，很多组织的结构和文化还没准备好承接。</strong>
+      <cite><a href="https://x.com/nikunj/status/2056865808832397344" target="_blank" rel="noopener">X @nikunj</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/swyx/status/2056877529991205072" target="_blank" rel="noopener">Swyx：AI SDLC 的四个阶段，每个都需要重写</a></h3>
+      <p>Swyx 今日发推，梳理了 AI 软件开发生命周期（SDLC，即软件从需求到上线的完整流程）的四个核心阶段：测试（testing）、规划（planning）、重构（refactoring）、部署（deployment）。他的核心观点是这四个阶段在 AI 时代全部需要系统性重新思考，不能简单把 AI 嵌进旧的工程流程里。</p>
+      <p>结合他另一条推文"RSI is here. Jesus"——连续高强度使用 AI 工具到手腕受伤，这恰好是另一种现实注脚：AI 加速了工程节奏，但工程师的身体和认知模式还没跟上。</p>
+      <strong>用 AI 写代码的效率收益，正在被开发者的工作方式跟不上 AI 节奏的问题所吃掉。</strong>
+      <cite><a href="https://x.com/swyx/status/2056877529991205072" target="_blank" rel="noopener">X @swyx</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://xiaobot.net/post/5adc1232-ba9a-441c-961d-ff3ba9b7361d" target="_blank" rel="noopener">纯银（Vol.20260520）：淘宝闪购大战美团复盘，1000 亿买到一张船票</a></h3>
+      <p>纯银用 Gemini 查数据，复盘了淘宝闪购开战近一年的战果。先说 Gemini 本身：首次回答全错（告诉他淘宝大获全胜），在纯银不断追问数据逻辑之后才拿到相对可信的结论。他的提醒：在自己不懂的领域，怎么鉴定 AI 回答的可信度，是一门手艺——Gemini 犯的不是数据错误，而是用错误逻辑解读数据。</p>
+      <p>数据层面：闪购拉动了淘宝日活（DAU 从 3.75 亿升至 4.37 亿，+20%），但没有证据显示核心 GMV 随之爆发——财报里 CMR 增长的驱动因素是货币化率提升，不是 GMV。亏损巨额，机构测算首年净亏损约 860 至 990 亿元，透支集团 70% 以上自由现金流。更尴尬的是：补贴结束后，按骑手应用停留时长计算的市场份额（23%），居然低于开战前（24.5%）——极端补贴破坏了饿了么的原有价格生态，反而放大了美团的执行力优势。</p>
+      <p>非餐饮即时零售（数码家电、美妆）是可以沉淀的收益：淘宝闪购 GTV 市占率从 38% 升至 45.2%，反超美团的 45%；非餐日均单量从 200 万涨到 1000 万，建立了小时达心智。纯银的总结：这一仗选择打是对的，以复合目标换半年反馈——但终局是"用 1000 亿买了即时零售一张船票，外卖和骑手两块基本盘没有打动"。</p>
+      <strong>淘宝把最有价值的商业决策——打还是不打——做对了，但把补贴结构设计错了，伤了自己人（饿了么），肥了竞争对手。</strong>
+      <cite><a href="https://xiaobot.net/post/5adc1232-ba9a-441c-961d-ff3ba9b7361d" target="_blank" rel="noopener">小报童 · 纯银</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/levie/status/2056965292753146019" target="_blank" rel="noopener">Aaron Levie（Box CEO）：Token 成本正在成为财富 500 强 CIO 们的核心话题</a></h3>
+      <p>Levie 今日写道，刚结束一场与多位财富 500 强企业 CIO 的晚餐，核心话题是 token 成本将成为企业 AI 支出的主要变量。他们说的不是"买不买 AI"，而是"token 用量怎么管"——这标志着企业 AI 从概念期进入了运营期，成本可见性（cost visibility）成了 CIO 们的实际关切。Levie 同日评论 Gemini 3.5 Flash 是"知识工作领域的重大跃升"。</p>
+      <strong>Token 成本从技术参数变成了企业 CFO 和 CIO 的预算行，这是 AI 规模落地成熟度的信号。</strong>
+      <cite><a href="https://x.com/levie/status/2056965292753146019" target="_blank" rel="noopener">X @levie</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/sama/status/2056933166875857290" target="_blank" rel="noopener">Sam Altman：OpenAI 向 YC 全体 batch 提供 200 万美元算力承诺，tokenmaxxing 时代开启</a></h3>
+      <p>Altman 今日宣布，OpenAI 对当期 YC 全体初创公司提供 200 万美元的 token 投入，并将推出 1-3 年的算力锁定套餐（预付折扣换容量保证）。他的逻辑：随着模型越来越有用，算力将持续供不应求，给客户提供确定性需要"产能预订"机制。"tokenmaxxing startups"是他造的词——即把大量 token 消耗作为核心竞争力的公司，无论是产品设计还是内部运营都围绕 token 使用量进行优化。他认为这类公司既有有趣的内部工作方式，也能构建出传统架构无法实现的产品。</p>
+      <strong>把算力承诺卖给 YC batch，OpenAI 在用 token 锁定下一批增长最快的客户——这不是慈善，是渠道投资。</strong>
+      <cite><a href="https://x.com/sama/status/2056933166875857290" target="_blank" rel="noopener">X @sama</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.lennysnewsletter.com/" target="_blank" rel="noopener">Lenny's（Nikhyl Singhal）：高级职位求职的 10 条旧规已打破，AI 让入职从逆风变成了顺风</a></h3>
+      <p>Nikhyl Singhal 在 The Skip（面向高级产品和技术领导者的社区）举办了一场直播，与三位刚完成高级职位跳槽的 PM 深谈。她们是：Dana Ingraham（现在 Harvey 负责 agent 产品）、Briana Ings（现在 Atlassian 负责 Loom）、Pei-Chin Wang（创业中）。</p>
+      <p>最出乎 Nikhyl 意料的发现：三人都描述了一种"smiling exhaustion（含笑的疲惫）"——高强度工作，却感到久违的喜悦。"Joy"这个词在对话前半小时里出现了四次。打破的规则里最有现实感的一条是关于入职：过去，高级岗位的入职期是"一年逆风"——背景空白、历史缺席、政治地图全不熟，imposter syndrome（冒充者综合症，即觉得自己配不上这个位置的心理）在这个知识真空里猛烈生长。AI 工具改变了这个方程：每当需要产品、人员、历史信息的时候，Claude 可以几分钟内建立上下文，把原本六个月的摸索压缩到几天。</p>
+      <p>其他被打破的旧规："头衔和品牌开门"（现在 portfolio 和 AI 能力才开门）、"不要申请低于自己级别的职位"（合理降级换赛道是明智的）、"新工作前 90 天只做观察者"（现在 AI 能让你很快进入贡献状态）。</p>
+      <strong>AI 消灭了高级职位跳槽最贵的隐性成本：知识真空，于是换工作的风险收益比正在被重新定价。</strong>
+      <cite><a href="https://www.lennysnewsletter.com/" target="_blank" rel="noopener">Lenny's Newsletter · The Skip</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/petergyang/status/2056953057066598805" target="_blank" rel="noopener">Peter Yang（Roblox 产品负责人）：在 Google I/O 现场，想清楚了"我不想只做网红"</a></h3>
+      <p>Peter Yang 在 Google I/O 现场与多位创始人、产品负责人交流后发推："我不想只做一个举着自拍杆的网红。我想成为建造者。" 他引用了某位产品人的话："Just try a lot and build to learn（多尝试，在建造中学习）"，说这句话直接击中了他。他认为做一个有影响力的 PM 内容创作者和真正做产品之间的张力，在 AI 快速演进的当下变得更加尖锐——输出内容和实际构建之间的距离，比以前更容易被看穿。</p>
+      <strong>在 AI 大会现场看到别人构建，是最好的镜子——它让"讲清楚"和"做出来"之间的差距变得具体可见。</strong>
+      <cite><a href="https://x.com/petergyang/status/2056953057066598805" target="_blank" rel="noopener">X @petergyang</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/garrytan/status/2056976600294650266" target="_blank" rel="noopener">Garry Tan（YC CEO）：与 Rick Rubin 同台，感受到"代码也可以是艺术"</a></h3>
+      <p>Garry Tan 今日分享了一个让他惊喜的时刻：同一档播客，前一个嘉宾是 Slipknot 的小丑，后一个嘉宾是 Rick Rubin（传奇音乐制作人），而他自己在中间。他说这个奇异的搭配让他有了具体的感受："Code can be art too。"这句话在他嘴里不是比喻，而是真实的产品哲学——他同时在推进 GBrain（开源 agent 个人记忆框架）这个项目，社区合并速度之快让他说"我们目前每天都在快速改进 GBrain"。创作者精神、开源社区动力和技术工艺，在他那里是同一件事。</p>
+      <strong>当"写代码"和"做音乐"之间的心理距离足够小，开源社区才会像乐队一样协作。</strong>
+      <cite><a href="https://x.com/garrytan/status/2056976600294650266" target="_blank" rel="noopener">X @garrytan</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3>NanoGPT-Bench：编码 agent 只能复现人类 AI 研究进步的 9.3%</h3>
+      <p><strong>现状：</strong>AI 编程工具（coding agent）越来越能写代码，但一个关键问题还没被系统测试：它们能否真正推进 AI 研究本身，而不只是执行已知的工程任务。</p>
+      <p><strong>问题：</strong>现有 benchmark 大多测试的是"完成给定编程任务"，而非"在真实开放式研究竞赛中贡献算法创新"。两者差距巨大。</p>
+      <p><strong>解决方案：</strong>Intology AI 发布 NanoGPT-Bench，基于 NanoGPT Speedrun 竞赛（一个真实的开放性 AI 研究加速挑战），让 Codex、Claude Code、Autoresearch 等 coding agent 自主参与，衡量其能复现多大比例的人类研究进步。</p>
+      <p><strong>价值：</strong>旗帜性结论——顶级 coding agent 组合只复现了 9.3% 的人类进步，且主要途径是超参数（hyperparameter，模型训练中的参数调整）调优，而非算法创新。这意味着 agent 做的是"在已知解空间里搜索"，而不是"定义新的解空间"。</p>
+      <p><strong>未来方向：</strong>对于相信"AI 能加速 AI 研究"这个命题的人，这个数字是一个冷水——不是否定，而是标定当前的实际能力边界。</p>
+      <cite><a href="https://www.latent.space/" target="_blank" rel="noopener">AINews · Latent Space</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Google Co-Scientist（Nature）：让科学家保持主导权的 AI 研究助手</h3>
+      <p><strong>现状：</strong>AI 辅助科研的主要痛点之一是"黑箱决策"——模型自动生成假设，科学家不知道推理过程，无法有效把关。</p>
+      <p><strong>问题：</strong>在需要高度专业判断的场景（如药物再定向，即寻找现有药物的新适应症），让 AI 直接输出结论风险极大；但如果 AI 只做信息整理，价值又有限。</p>
+      <p><strong>解决方案：</strong>Google Co-Scientist 的设计哲学是"人在循环（Human-in-the-loop）"——AI 负责处理海量文献和数据，在关键节点请科学家做判断，持续修正研究方向。这不是自动驾驶，而是有人掌舵的辅助导航。</p>
+      <p><strong>价值：</strong>在药物再定向任务中验证有效，让研究者能在更大的假设搜索空间里工作，同时保持对研究路径的控制权。</p>
+      <p><strong>未来方向：</strong>科研 AI 的竞争将从"谁能自动化更多"转向"谁能更好地放大科学家的判断"，人机协作界面的设计本身成为核心竞争力。</p>
+      <cite><a href="https://tldr.tech/ai" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>FutureHouse AI（Nature）：评估生物实验数据、辅助科学家生成可测试假设</h3>
+      <p><strong>现状：</strong>生命科学研究中，实验数据分析周期长，研究者往往在数据层就耗尽大量时间，没有精力系统探索假设空间。</p>
+      <p><strong>问题：</strong>AI 直接"提出科学假设"可靠性存疑，但"帮研究者筛选和整理数据以形成假设"是一个更可定义的任务。</p>
+      <p><strong>解决方案：</strong>FutureHouse 的系统专注于评估特定类别实验的生物数据，辅助科学家从实验结果中系统地提取可检验的推论。它的目标不是替代科学直觉，而是替代数据处理中的低效劳动。</p>
+      <p><strong>价值：</strong>和 Co-Scientist 同期发表于 Nature，共同构成了"AI for Science"这个命题的两种实现路径的公开对比：一个强调研究导航，一个强调数据评估。</p>
+      <p><strong>未来方向：</strong>生命科学是 AI 落地最有系统性价值的领域之一，两篇 Nature 论文同期发表，显示顶级机构已把 AI 科研助手从研究对象变成了标准工具。</p>
+      <cite><a href="https://tldr.tech/ai" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/GoogleLabs/status/2056812957775142985" target="_blank" rel="noopener">AlphaEvolve + ERA（Google Labs）：AI 自主提出科研假设的计算发现引擎</a></h3>
+      <p><strong>现状：</strong>科研假设的生成主要依赖人类研究者，这是科学发现的主要瓶颈之一。AlphaEvolve（演化式 AI 优化器）和 ERA（Empirical Research Agent，即经验性研究 agent）是 Google 用来尝试打破这一瓶颈的两个系统。</p>
+      <p><strong>问题：</strong>科研假设生成需要跨领域知识组合和大量试错，传统 AI 系统在这两点上都有明显局限。</p>
+      <p><strong>解决方案：</strong>Google Labs 今日宣布推出 Computational Discovery 平台，整合 AlphaEvolve 的演化式搜索能力和 ERA 的自主实验设计能力，让 AI 能够系统性地提出新假设并设计验证路径。</p>
+      <p><strong>价值：</strong>这是比 Co-Scientist 和 FutureHouse 更进一步的尝试——不只是辅助科学家，而是尝试让 AI 自主走完"提出假设、验证假设"的闭环。</p>
+      <p><strong>未来方向：</strong>如果这类系统能可靠运行，它改变的不只是研究效率，而是研究的基本单位——"一个科学家+无数 AI agent"的协作模式。</p>
+      <cite><a href="https://x.com/GoogleLabs/status/2056812957775142985" target="_blank" rel="noopener">X @GoogleLabs</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>GRPO + 密集信用分配：RL 训练下一个可扩展突破的方向</h3>
+      <p><strong>现状：</strong>GRPO（Group Relative Policy Optimization，即通过组内对比反馈训练模型的 RL 方法）是目前主流的 LLM 后训练技术，但研究者认为它在信用分配（credit assignment，即准确判断模型哪一步推理贡献了最终的好结果）上存在偏差。</p>
+      <p><strong>问题：</strong>现有 RL 训练给模型的反馈信号太稀疏——通常只有最终答案对了才给奖励，中间推理步骤的好坏无法被精细区分，导致训练信号有噪声。</p>
+      <p><strong>解决方案：</strong>AINews 中 @nrehiew_ 提出，下一个突破可能基于 GRPO 但引入更密集、更低偏差的信用分配，具体方向包括 ECHO（回声训练法）、Composer2（作曲式逐步反馈）、self-distillation（自蒸馏，即用模型自身输出来训练自己）和 OPD（在线偏好蒸馏）。@lateinteraction 提出了"pedagogical RL"框架：训练一个自我教师，让它专门采样"正确且易于理解的推理链"来引导学习。</p>
+      <p><strong>价值：</strong>如果信用分配问题能被解决，RL 训练的效率和可靠性将大幅提升，减少目前"模型不稳定"和"训练崩塌"等已知痛点。</p>
+      <p><strong>未来方向：</strong>这是当前预训练之外最有潜力的扩展方向，Karpathy 加入 Anthropic 专注于此方向，并非巧合。</p>
+      <cite><a href="https://www.latent.space/" target="_blank" rel="noopener">AINews · Latent Space</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>Gemini Omni（全模态视频生成模型）今日在 Gemini 应用和 Flow 向付费用户开放，下周起免费用户可用；未来数周内 API 接入。<a class="glance-src" href="https://tldr.tech/ai" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Antigravity 2.0 桌面版正式发布：macOS（Apple Silicon + Intel 均支持），可编排多个并行 agent，配合 Gemini 3.5 Flash；官方 demo 称 12 小时内用 93 个并行子 agent 构建出一个运行中的操作系统，消耗 26 亿 token，成本不足 $1,000。<a class="glance-src" href="https://tldr.tech/ai" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Google Universal Cart（通用购物车）：跨商家购物车，与亚马逊、Meta、微软共同开发的 Universal Commerce Protocol，自动监控价格变动、库存状态，并主动提示购物车内商品的兼容性问题（如 CPU 和主板不匹配）。<a class="glance-src" href="https://every.to/" target="_blank" rel="noopener">Every →</a></li>
+      <li>Josh Woodward（Google Labs VP）：Gemini Spark 上线，7×24 小时云端个人 AI 代理，"你只管往后抛任务，Spark 负责接住然后跑"。更多口音支持即将上线。<a class="glance-src" href="https://x.com/joshwoodward/status/2056873495116845485" target="_blank" rel="noopener">X @joshwoodward →</a></li>
+      <li>Polymarket 推出私有公司预测市场，交易标的包括 Anthropic 和 OpenAI 的估值、IPO 时间线和二级市场活动；由 Nasdaq Private Market 提供数据，不含股权和投票权。<a class="glance-src" href="https://tldr.tech/ai" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Tesla Semi 早期评测：比竞品重型电动卡车便宜、续航更远，加州物流公司已为 1,200 辆 Tesla 卡车申请州补贴，数量超过该激励计划开设以来所有其他电动卡车的总申请量。<a class="glance-src" href="https://tldr.tech/ai" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Ryo Lu（Cursor 设计师）：我现在用的全是 Composer 2.5——规划、构建迭代、调试全部。另一条：直接在 Jira 里 @cursor_ai，backlog 变 PR。<a class="glance-src" href="https://x.com/ryolu_/status/2056892527626817935" target="_blank" rel="noopener">X @ryolu_ →</a></li>
+      <li>Guillermo Rauch（Vercel CEO）：新 CDN 定价模型，"平滑"流量高峰和病毒式爆发——可预测的带宽费用，不再因为爆红事件突然账单暴增。另：Claude Managed Agents 和 Vercel Sandbox 集成，把沙箱（隔离的代码运行环境）直接接入 agent 工作流。<a class="glance-src" href="https://x.com/rauchg/status/2056802789477740713" target="_blank" rel="noopener">X @rauchg →</a></li>
+      <li>Garry Tan：WinFS 当年（2003-2005）在微软实现不了，现在叫 GBrain——有了 LLM，那个把文件系统变成语义数据库的梦想终于可以落地了。<a class="glance-src" href="https://x.com/garrytan/status/2056967665001082919" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Matt Turck：Gemini 3.5 Flash 是今天真正令人印象深刻的发布——MMMU-Pro 83.6%，对知识工作来说是实质性提升。另：Karpathy 加入 Anthropic，"Anthropic 被 AI 耶稣封圣了"。<a class="glance-src" href="https://x.com/mattturck/status/2056834038946775343" target="_blank" rel="noopener">X @mattturck →</a></li>
+      <li>Google Labs Project Genie 大更新：Street View 空间基准（grounding），内容库，分享功能——这个"AI 生成可交互 3D 世界"的项目在悄悄累积能力。<a class="glance-src" href="https://x.com/GoogleLabs/status/2056872996988756228" target="_blank" rel="noopener">X @GoogleLabs →</a></li>
+      <li>Google Flow 一周年：从最初的文本转视频，到现在的 Omni（全模态生成）、agent 控制、Tools 集成，一年内产品形态几乎完全重建了。<a class="glance-src" href="https://x.com/GoogleLabs/status/2056813720257663354" target="_blank" rel="noopener">X @GoogleLabs →</a></li>
+      <li>Thariq（Anthropic Claude Code 工程师）：Claude 相关内容现在也在 Claude 官方博客发布了。另：继续 HTML 时代——跟 Claire 聊长时 agent 任务中怎么保持人在循环（human-in-the-loop）。<a class="glance-src" href="https://x.com/trq212/status/2056843158965858380" target="_blank" rel="noopener">X @trq212 →</a></li>
+      <li>Dan Shipper（Every CEO）："what did karpathy see（Karpathy 到底看到了什么）"——Karpathy 加入 Anthropic 的消息出来后，他的第一条评论。<a class="glance-src" href="https://x.com/danshipper/status/2056762096352649421" target="_blank" rel="noopener">X @danshipper →</a></li>
+      <li>Nikunj Kothari：今日一条简短的感叹："Earthquake.. well not literally, but wow"——同样是回应 Google I/O 与 Karpathy 消息同日爆发的震动感。<a class="glance-src" href="https://x.com/nikunj/status/2056755713830171023" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Nan Yu（@thenanyu）：Alternate take——他发了一个评论图，内容关于今日某个话题，但原文仅含链接和这两个字，暗示有反向视角，具体指向需点开原推。<a class="glance-src" href="https://x.com/thenanyu/status/2056790880120713432" target="_blank" rel="noopener">X @thenanyu →</a></li>
+      <li>Aditya Agarwal：对 Karpathy 加入 Anthropic 的回应——"The future is bright. We will have amazing things at the intersection of AI+Atoms."<a class="glance-src" href="https://x.com/adityaag/status/2056747510736249162" target="_blank" rel="noopener">X @adityaag →</a></li>
+      <li>Peter Yang 在 Google I/O 现场采访了 Gemini 应用负责人，提前征集了提问——"Just try a lot and build to learn"是他带走的核心金句。<a class="glance-src" href="https://x.com/petergyang/status/2056927645657641378" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Claude 官方：《Problem Solvers》系列——Scott Wu（Cognition/Devin 创始人）希望用 Claude 让每个工程团队的软件构建速度提升 10 倍；同时，自托管沙箱和 MCP 隧道现已在 Claude Platform 开放，隧道需申请。<a class="glance-src" href="https://x.com/claudeai/status/2056805730359931007" target="_blank" rel="noopener">X @claudeai →</a></li>
+      <li>Aaron Levie 二条：Gemini 3.5 Flash 是知识工作领域的重大跃升，他已在 Box 的流程里测试，速度和能力都符合预期。<a class="glance-src" href="https://x.com/levie/status/2056804573449474527" target="_blank" rel="noopener">X @levie →</a></li>
+      <li>GitHub 宣布 Gemini 3.5 Flash 在 Copilot 上线，Google 称其工具调用能力强、响应快、适合迭代式 agent 编程任务，并提到缓存效率对长上下文工作流友好。<a class="glance-src" href="https://www.latent.space/" target="_blank" rel="noopener">AINews →</a></li>
+      <li>Cursor 与 Jira 集成：云端 agent 可直接拉取工作项（Jira issue），自动生成可合并的 PR——把项目管理工具和代码生成闭环连通。<a class="glance-src" href="https://www.latent.space/" target="_blank" rel="noopener">AINews →</a></li>
+      <li>OpenAI Guaranteed Capacity：为关键工作负载预留长期算力的商业产品，支持 1-3 年承诺，折扣换容量保证——企业大客户的算力采购正在向"预购"模式迁移。<a class="glance-src" href="https://www.latent.space/" target="_blank" rel="noopener">AINews →</a></li>
+      <li>Figma 新版 in-canvas agent（画布内 agent）mini Vibe Check：Every 测试评估了它是否能解决"空白页"焦虑，结论见正文，简版是"有所进展，但还没到终结空白页问题的程度"。<a class="glance-src" href="https://every.to/" target="_blank" rel="noopener">Every →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-05-19.html">← MAY 19</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
