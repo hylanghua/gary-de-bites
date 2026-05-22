@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — May 22, 2026</title>
+  <meta name="description" content="Andrej Karpathy 加入 Anthropic 预训练团队，将组建专注用 Claude 加速 Claude 训练的研究小组；Swyx 从数据实证 Agent 营收与模型能力正相关，称 Q4 2025 已出现不连续跳跃。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">May 22, 2026</h1>
+
+  <p class="post-lead">Andrej Karpathy 加入 Anthropic 预训练团队，将带队探索"用 Claude 训练 Claude"的研究路径，Anthropic 正式进入 AI 辅助自身预训练的阶段；Lenny Rachitsky 直接警告 PM："假设你当前的职位已接近到期日。"五篇 AI 进展论文覆盖多智能体自主科研系统、推理时元认知优化与首个实时能源基础设施 Agent 基准。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/" target="_blank" rel="noopener">Karpathy 加入 Anthropic 预训练团队：用 Claude 训练下一代 Claude</a></h3>
+      <p>Andrej Karpathy 本周正式入职 Anthropic，加入预训练（pre-training，即让大模型在海量文本上做初始大规模训练的阶段，是 AI 能力的根基）负责人 Nick Joseph 的团队，并着手组建一个新的研究小组，核心方向是用 Claude 来加速 Claude 自身的预训练研究。这是"AI 辅助自身训练"第一次在顶级大模型实验室以独立团队的形式落地。</p>
+      <p>Karpathy 是 OpenAI 联合创始人，之后主导了特斯拉 Autopilot 的 AI 视觉团队，离开特斯拉后创办 AI 教育平台 Eureka Labs，再到现在选择 Anthropic 而非回归 OpenAI，本身就是一个信号。Ben Tossell 在 Ben's Bites 的原话是：Google I/O 的整个新闻周期都被这条消息盖过了。预训练是大模型最昂贵、最耗算力的阶段，Karpathy 是那种极少数能把 LLM 理论和大规模训练工程两头都搞定的研究者。Anthropic 让他带队做 AI 辅助预训练，意思是：如果 Claude 能帮助自己变得更聪明，那循环会越转越快。</p>
+      <strong>Anthropic 押的不只是一个 hire，而是一条"模型自我加速"的研究路线。</strong>
+      <cite><a href="https://www.bensbites.com/p/googles-take-on-openclaw" target="_blank" rel="noopener">Ben's Bites</a> · <a href="https://techcrunch.com/2026/05/19/openai-co-founder-andrej-karpathy-joins-anthropics-pre-training-team/" target="_blank" rel="noopener">TechCrunch</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.nbcnews.com/tech/tech-news/zuckerberg-warns-success-isnt-10-layoffs-meta-rcna346222" target="_blank" rel="noopener">Zuckerberg：裁员 10% 之后，"成功不是理所当然"</a></h3>
+      <p>Meta 今年早些时候裁减了约 10% 的员工，Zuckerberg 随后向留下来的员工发出内部警示，原话大意是：成功不会自动到来（"success isn't a given"）。他同时向员工保证，2026 年内不会再有大规模裁员。这条警示的语境值得注意：Meta 裁员并非因为业绩差，而是主动清理"测量类"和中间层工作，将精力集中在 AI 驱动的产品和商业化上。</p>
+      <cite><a href="https://www.nbcnews.com/tech/tech-news/zuckerberg-warns-success-isnt-10-layoffs-meta-rcna346222" target="_blank" rel="noopener">TLDR</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://x.com/swyx/status/2057119153337545096" target="_blank" rel="noopener">Swyx（Latent Space 主理人）：Agent Labs 的实证——模型越强，Agent 公司收入越高，Q4 2025 出现不连续跳跃</a></h3>
+      <p>Swyx 今日发推，分享了一个迟来但他认为关键的观察：Sam Altman 曾说过一句话——"打造一家随着模型变强而自动变好的公司"，Swyx 说他早前把这个模式叫做 Agent Labs。回头看数据，他发现模型性能提升和 Agent Lab 营收之间有几乎直接的相关性，而在 2025 年第四季度出现了一个显著的不连续跳跃（discontinuity），意味着这一阶段的模型能力突破直接带来了收入的非线性增长。</p>
+      <p>这个观察对 builder 来说有实际指导意义：在 Agent Lab 模式下，产品本身的护城河是"与模型共进"的设计——不需要比竞争对手聪明，只要确保当模型更强时，你的产品比对手更快受益。Q4 2025 的数据拐点意味着那个时间节点已经验证了这个设计假设。</p>
+      <strong>Agent Lab 模式的本质是把模型能力曲线的斜率变成自己的营收斜率——Swyx 的数据说，这个游戏在 2025 年第四季度正式开始。</strong>
+      <cite><a href="https://x.com/swyx/status/2057119153337545096" target="_blank" rel="noopener">X @swyx</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.lennysnewsletter.com/p/how-ai-will-impact-product-management" target="_blank" rel="noopener">Lenny Rachitsky："假设你当前的职位已接近到期日"——AI 对 PM 的真实威胁</a></h3>
+      <p>Lenny 在最新一期 Newsletter 里直接抛出论点："Assume that your current role is close to its expiration date."（假设你现在的职位已接近到期日。）标题就是"你会在 2027 年失去工作"——这不是标题党，而是 Lenny 给产品经理（PM，product manager，负责产品方向与路径的岗位）的直接警告。他的核心分析是：AI 已经在他建立的 benchmark 里打败了人类 PM 的部分核心技能，包括策略制定和产品规划。</p>
+      <p>他给出的出路同样直接：PM 需要把战场移到 AI 暂时无法触及的地方，即影响力、创意判断和情境感知，同时主动拥抱 AI 工具来扩展自己的输出范围。不转型的 PM 不是被 AI 替代，而是被"用了 AI 的 PM"替代。</p>
+      <strong>Lenny 的论点精确到位：AI 替掉的不是 PM 这个岗位，而是不会用 AI 的那个人。</strong>
+      <cite><a href="https://www.lennysnewsletter.com/p/how-ai-will-impact-product-management" target="_blank" rel="noopener">Lenny's Newsletter</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://arcplane.ai/journal/software-is-not-solved" target="_blank" rel="noopener">arcplane.ai："代码被 AI 解决了，软件还没有"</a></h3>
+      <p>一篇被 TLDR 收录的短文，核心论点只有一句：即便 AI 已经能可靠地写出代码，软件工程（software engineering，即从需求到设计到部署到维护的完整过程）依然没有被解决——开发循环里仍有几个节点需要人类介入，且这些节点不是"还没自动化"而是"性质上需要人类判断"。</p>
+      <p>对于正在思考"AI 会不会拿走我工作"的工程师和 PM 来说，这篇文章提供了一个不那么焦虑的框架：代码生成是软件开发的一个环节，不是全部。Agent 能写出一个函数，但产品判断、系统设计中的权衡、用户反馈的解读，这些节点仍然是人的战场。</p>
+      <strong>代码的廉价化放大了软件工程其他部分的价值，而不是取代了整件事。</strong>
+      <cite><a href="https://arcplane.ai/journal/software-is-not-solved" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.bensbites.com/p/googles-take-on-openclaw" target="_blank" rel="noopener">Ben Tossell（Ben's Bites）：第一支基金 5 倍回报，下一期押注"Agent 优先"的开发工具和基础设施</a></h3>
+      <p>Ben 在本期 newsletter 开头顺手披露了一个数据点：他的第一支 VC 基金实现了 5 倍回报（5x return），第二支基金目前约 3 倍回报，IRR（内部收益率，衡量投资年化回报的指标）55%。第三支基金正在募集，最低投资门槛 10 万美元，聚焦开发者工具和基础设施，具体投资方向是他所说的"agent-first world"（Agent 优先时代）。</p>
+      <p>这个信号本身就是一个市场指向：从事业有成的 AI 内容创作者成长为专注垂直赛道的 VC，Ben 的判断框架与大多数企业 VC 不同——他从用户视角出发，押注那些让 builder 和 agent 开发者每天真正用上、愿意付钱的工具，而不是大平台。连续几支基金的回报率背后，是 2024-2025 年那批最早拥抱 agent 开发工具的公司开始兑现价值。</p>
+      <strong>Agent 基础设施正进入回报验证阶段——第一批押对的人开始公开晒账本。</strong>
+      <cite><a href="https://www.bensbites.com/p/googles-take-on-openclaw" target="_blank" rel="noopener">Ben's Bites</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://links.tldrnewsletter.com/LbjIJa" target="_blank" rel="noopener">穿上 1000 瓦的大腿去徒步——个人外骨骼走进消费市场</a></h3>
+      <p>一篇 WSJ 报道（经 TLDR 收录）讲述了个人外骨骼（exoskeleton，一种穿戴在腿部或腰部、能主动辅助肌肉发力的设备）进入徒步市场的现状。这类设备过去只在军队、重工业和肢体康复领域出现，现在变得足够轻便、足够便宜，让"想爬更陡的山、不想膝盖报废"的普通徒步者能穿上它。文章标题自嘲："你能从我的 1000 瓦大腿看出来"。</p>
+      <p>这件事和 AI 没有直接关系，但它是同一类故事：原来只有精英或特定机构才能拥有的能力，被技术压缩成普通人的日常选择。超能力的民主化，总是先从让人觉得有点好笑的场景开始——电动自行车、GPS 导航、现在是会发力的腿。不觉得应该笑，应该觉得：下一个是什么。</p>
+      <strong>技术的民主化规律不变：先是军用，再是医疗，再是消费者，最后大家习以为常，忘记它曾经是特权。</strong>
+      <cite><a href="https://links.tldrnewsletter.com/LbjIJa" target="_blank" rel="noopener">TLDR</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/papers/2605.20025" target="_blank" rel="noopener">AutoResearchClaw：自强化的多智能体自主科研系统</a></h3>
+      <p><strong>现状：</strong>AI 自主科研（autonomous research）已有 AI Scientist、ARIS 等先例，但早期系统要么推理过程不可靠，要么无法防止结果捏造，要么缺乏人类监督接口。</p>
+      <p><strong>问题：</strong>AI 做科研最大的漏洞是"幻觉成果"——模型用看上去合理的方式生成假数字和假引用，但执行者（agent）和评估者（reviewer）是同一个系统，无法自我校验。</p>
+      <p><strong>解决方案：</strong>AutoResearchClaw 引入五个机制：多智能体结构化辩论（structured debate）生成假设与分析结果、带 Pivot/Refine 决策循环的自愈执行器（把失败转化为信息而不是停机）、可验证的结果报告（禁止捏造数字和幻觉引用）、七种干预模式的人机协作接口（从完全自主到逐步监督），以及跨次实验的进化学习（cross-run evolution，把过去的错误转化为未来的保障）。</p>
+      <p><strong>价值：</strong>在 ARC-Bench（一个包含 25 个主题的实验阶段基准）上，AutoResearchClaw 超过 AI Scientist v2 的 54.7%，是目前公开比较中领先幅度最大的结果之一。</p>
+      <p><strong>未来方向：</strong>多批次并行评估多个候选配置的能力让系统更适合实验密集型科研场景；人机协作接口的设计思路将影响下一代科研 agent 的标准范式。</p>
+      <cite><a href="https://huggingface.co/papers/2605.20025" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2605.20025" target="_blank" rel="noopener">arXiv 2605.20025</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2605.11388" target="_blank" rel="noopener">Deep Reasoning via Structured Meta-Cognition：推理时元认知构建任务专用脚手架</a></h3>
+      <p><strong>现状：</strong>现有通用 agent 在处理多跳推理（multi-hop reasoning，即需要跨多个信息源做连续推断）、长链问答、长文本聚合和深度研究类任务时，常用预定义的固定脚手架（scaffolding，为 agent 提供任务流程结构的模板），但固定脚手架无法适应不同任务的特殊需求。</p>
+      <p><strong>问题：</strong>一刀切的脚手架在简单任务上浪费算力，在复杂任务上反而因结构不匹配而失效。</p>
+      <p><strong>解决方案：</strong>DOLORES（Deep Reasoning 的方法名）是一种推理时（inference-time）方法，通过结构化元认知（meta-cognition，即对推理过程的自我分析和动态调整）为每个具体任务构建专属脚手架，而不是使用预设模板。在四个硬基准（多跳推理、长链问答、长文本聚合、深度研究式信息检索）上评估。</p>
+      <p><strong>价值：</strong>跨三种模型规模、两种模型家族评估，DOLORES 相比最强基线平均提升 24.8%，且提升在不同模型规模上保持稳定，说明方法本身而非特定模型在起作用。</p>
+      <p><strong>未来方向：</strong>推理时的动态脚手架生成，比固定 prompt 工程（prompt engineering，即精心设计给 AI 的指令以提升输出）更灵活，可能成为下一代 agent 框架的基础组件。</p>
+      <cite><a href="https://arxiv.org/abs/2605.11388" target="_blank" rel="noopener">arXiv 2605.11388</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/papers/2511.16719" target="_blank" rel="noopener">SAM 3：Segment Anything with Concepts——概念驱动的通用分割与追踪</a></h3>
+      <p><strong>现状：</strong>SAM（Segment Anything Model，Meta 提出的通用图像分割模型）和 SAM 2 基于视觉 prompt（如点击或框选），能分割用户指定的任意对象，但无法基于语义概念（如"所有黄色校车"）做批量识别和追踪。</p>
+      <p><strong>问题：</strong>现有系统的识别能力和定位能力耦合在同一模块里，导致概念理解受限、在视频中追踪多实例时精度下降。</p>
+      <p><strong>解决方案：</strong>SAM 3 引入 Promptable Concept Segmentation（PCS，概念驱动的可提示分割），输入是短名词短语（如"黄色校车"）或图像样本，输出是所有匹配实例的分割掩码和唯一身份标识。模型将识别（presence head，检测概念是否存在）与定位（定位并分割实例）解耦，共享同一骨干网络。配套构建了 400 万概念标签的数据引擎，含难负样本。</p>
+      <p><strong>价值：</strong>在图像和视频 PCS 任务上，SAM 3 相比现有系统精度翻倍，同时保留了 SAM 系列对视觉分割任务的原有能力。</p>
+      <p><strong>未来方向：</strong>概念驱动的分割将解锁更自然的视频理解交互（用语言描述而非鼠标框选），对多模态 agent 的场景感知能力有直接价值。</p>
+      <cite><a href="https://huggingface.co/papers/2511.16719" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2511.16719" target="_blank" rel="noopener">arXiv 2511.16719</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/papers/2605.02801" target="_blank" rel="noopener">Orchestration Traces for RL in LLM Multi-Agent Systems：用编排轨迹做多智能体强化学习</a></h3>
+      <p><strong>现状：</strong>多智能体 LLM 系统（multi-agent LLM systems，多个 AI 协作完成任务的系统）的训练通常依赖监督学习，但系统的实际行为——子 agent 何时被生成、如何委托、如何通信和终止——往往没有被显式记录和利用。</p>
+      <p><strong>问题：</strong>没有结构化的过程记录，强化学习（RL，通过奖惩信号让模型从经验中改进）难以应用于多 agent 系统的端到端优化。</p>
+      <p><strong>解决方案：</strong>将多 agent 系统的运行过程表示为编排轨迹（orchestration traces），即包含子 agent 生成、委托、通信、工具调用、返回、聚合、停止决策等事件的时序交互图，并用这些轨迹作为 RL 的训练信号，实现对整个多 agent 系统的端到端强化学习。</p>
+      <p><strong>价值：</strong>把过去只能"看结果"的多 agent 黑盒变成可以"看过程并从过程学习"的透明系统，为多 agent 协作的质量优化提供了一条新路径。</p>
+      <p><strong>未来方向：</strong>随着 Agent 系统复杂度增加，如何高效记录、压缩和利用编排轨迹将成为多 agent 训练的工程核心问题。</p>
+      <cite><a href="https://huggingface.co/papers/2605.02801" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2605.02801" target="_blank" rel="noopener">arXiv 2605.02801</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2605.15230" target="_blank" rel="noopener">EnergyAgentBench：首个基于实时电力市场数据的 Agent 基准</a></h3>
+      <p><strong>现状：</strong>LLM Agent 基准（benchmark，用于测量 AI 能力的标准化评测集）大多使用静态数据集或简化的模拟环境，无法反映现实世界中数据持续更新、决策有实际经济后果的场景。</p>
+      <p><strong>问题：</strong>静态基准无法衡量 agent 在面对真实世界不确定性和动态变化时的决策质量，尤其是能源基础设施这类需要长期规划和因果推断的领域。</p>
+      <p><strong>解决方案：</strong>EnergyAgentBench 是第一个基于实时电力市场数据的 agent 评测基准，包含 70 个任务变体，横跨五类任务族：数据中心选址（考量成本-碳排放权衡）、长周期投资组合选址、多十年成本轨迹下的生命周期平准化能源成本（LCOE）排名、30 年投资组合优化，以及电网因果诊断（causal grid diagnosis）。</p>
+      <p><strong>价值：</strong>把 agent 拉进"数据每天在变、决策有真实后果"的场景，能更准确地评估 agent 的长期规划能力和因果推理质量，这两项能力在现有基准里普遍被低估。</p>
+      <p><strong>未来方向：</strong>能源基础设施是 AI 落地最慢、监管最严格但影响最大的领域之一；这类基准的出现，是为了让 AI 在进入真实决策前先接受足够的压力测试。</p>
+      <cite><a href="https://arxiv.org/abs/2605.15230" target="_blank" rel="noopener">arXiv 2605.15230</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">看一眼</span></div>
+<ul class="glance-list">
+  <li>@adityaag（Aditya Agarwal，South Park Commons 联合创始人）：Feross 在 SPC 分享了他的「-1 旅程」，即在找到 PMF（产品市场契合点）之前那段最艰难的挣扎期——把失败期显式命名，本身就是一种认知工具。<a class="glance-src" href="https://x.com/adityaag/status/2057141903334990327" target="_blank" rel="noopener">X @adityaag →</a></li>
+  <li>iPhone Ultra 折叠屏已进入小批量试产，但铰链（hinge）问题持续存在，导致量产时间表无限期延误——苹果第一款折叠机还没到翻越工程关卡的那一步。<a class="glance-src" href="https://9to5mac.com/2026/05/18/new-iphone-ultra-leaks-cover-release-timing-display-breakthrough-more/" target="_blank" rel="noopener">TLDR →</a></li>
+  <li>Vizio 拒绝向用户开放其 Linux 智能电视操作系统的源代码（Linux 是 Vizio 电视的底层操作系统，GPL 开源协议要求提供源码），加州陪审团将于 8 月裁决——开源协议（open-source license）的执行边界正在司法层面被重新厘清。<a class="glance-src" href="https://arstechnica.com/gadgets/2026/05/inside-the-fight-to-force-vizio-to-share-linux-based-source-code-for-its-tvs-os/" target="_blank" rel="noopener">TLDR →</a></li>
+</ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-05-21.html">← MAY 21</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
