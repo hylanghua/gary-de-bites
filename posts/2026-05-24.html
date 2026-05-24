@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — May 24, 2026</title>
+  <meta name="description" content="Dan Shipper 在 Lenny 播客预言 CLI 时代终结，前向部署工程师最抢手，PM 和全栈设计师将成超级个体。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">May 24, 2026</h1>
+
+  <p class="post-lead">Dan Shipper 在 Lenny 播客预言 CLI 时代终结：未来的工作将在 Codex 或 Claude Code 里发生，前向部署工程师是最抢手的新角色，PM 和全栈设计师将成为超级个体。Ben Thompson 以 Cerebras IPO 为锚点论证"推理分裂"：有人在环的答案推理讲速度，无人在环的 Agent 推理只需内存带宽够用，两者是截然不同的硬件生意。纯银《羔羊计划》以 Ada Lovelace 36 年生命打头：史上第一位程序员是诗人拜伦之女，她给机械引擎装上了语言。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://simonwillison.net/2026/May/22/memory-shortage/" target="_blank" rel="noopener">AI 数据中心 HBM 需求暴涨，消费电子涨价潮正在酝酿</a></h3>
+      <p>AI 数据中心大规模扩张带动了对 HBM（高带宽内存，High Bandwidth Memory，专门为 AI 推理和训练设计的高速内存，单位晶圆面积消耗是普通 DDR 的三倍以上）的疯狂需求，预计到 2026 年底 HBM 将占据整体内存晶圆产能的 20%。问题是：晶圆总量不会凭空增加，HBM 占的越多，用于生产普通消费级内存的晶圆就越少。</p>
+      <p>影响最先传导到百元以下智能手机市场，这对非洲、南亚等依赖低价手机的市场尤为关键。Simon Willison 援引供应链分析认为，这种内存供给压力将持续数年，直到新的晶圆产能落地。用户不一定能直接感受到 AI 基础设施建设的代价，但口袋里那部替换手机的价格标签会说话。</p>
+      <strong>AI 算力军备竞赛的账，正在以一种没人预期的方式转嫁到普通消费者身上。</strong>
+      <cite><a href="https://simonwillison.net/2026/May/22/memory-shortage/" target="_blank" rel="noopener">Simon Willison</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://stratechery.com/2026/the-inference-shift/" target="_blank" rel="noopener">Ben Thompson：推理一分为二，Cerebras IPO 是分水岭</a></h3>
+      <p>Ben Thompson 借 Cerebras 上市（IPO 定价从 $115–125 上调至 $150–160，市值逾 300 亿美元）提出一个框架：推理（inference，即模型接到问题后生成答案的阶段）在结构上已经裂变为两类。"答案推理"有人在环（human-in-the-loop），用户盯着屏幕等结果，速度就是产品，Cerebras 的晶圆级超高速芯片打的正是这个市场。"Agent 推理"无人在环，模型自主执行任务，跑完一步才跑下一步，人不等，时间不卡脖子，内存带宽才是真正的瓶颈。</p>
+      <p>两类推理对应两套不同的芯片架构和商业逻辑。Thompson 认为 Agent 推理的市场体量远大于答案推理，因为它不受人的时间制约，可以无限并发扩展。Cerebras 押注的是后者增长中较小的那条腿，但并不意味着错，只是跑道不同。英伟达目前两腿兼顾，长期看硬件栈会进一步分化。</p>
+      <strong>不是"谁的芯片更快"，而是"哪种推理模式需要什么样的内存架构"——这个框架比 benchmark 分数有用得多。</strong>
+      <cite><a href="https://stratechery.com/2026/the-inference-shift/" target="_blank" rel="noopener">Stratechery</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/levie" target="_blank" rel="noopener">Aaron Levie（Box CEO）：AI 替换任务，不取代岗位</a></h3>
+      <p>Aaron Levie 提出一个防止误判的分析框架：任务（task）和工作（job）是两件事。AI 确实在以极快的速度替代具体的任务——写代码、起草合同、整理销售话术——但工作岗位是由一组任务构成的，只要岗位中还有任务没被替代，或者替代之后出现了新的任务需求，岗位就不会消失。他举了三个领域（编程、法律、销售）来说明：AI 接管了执行层，但判断、协调、客户关系这些任务反而变得更值钱了。</p>
+      <p>这个框架对 PM、设计师、运营尤其重要——不是"我的岗位还在吗"，而是"我的岗位里哪些任务已经被替代，剩下的任务难度有没有上升"。答案几乎总是：剩下的更难，也更贵。</p>
+      <strong>AI 在任务层快刀斩乱麻，但岗位层的演化要慢得多——在这个时间差里找到自己的位置才是关键。</strong>
+      <cite><a href="https://x.com/levie" target="_blank" rel="noopener">X @levie</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/adityaag" target="_blank" rel="noopener">Aditya Agarwal（前 Dropbox CTO）：六个月前我们还只是在聊天</a></h3>
+      <p>Aditya Agarwal 发了一条短推，但信息密度很高：六个月前，主流使用 LLM 的方式是发消息、等回复；现在，整个工作流程都搬进了 AI 环境里——写代码、执行任务、管理上下文，全在 Codex 或 Claude Code 这样的 agentic 工具（Agent 工具：可以自主执行多步骤任务、调用工具、修改文件的 AI 工作环境）里完成。这个跨越发生在不到半年内。</p>
+      <strong>从"和 AI 聊天"到"在 AI 里工作"，这不是渐变，是一次静悄悄的范式切换。</strong>
+      <cite><a href="https://x.com/adityaag" target="_blank" rel="noopener">X @adityaag</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/rauchg" target="_blank" rel="noopener">Guillermo Rauch（Vercel CEO）：分析 1400 条回复，OpenAI 在追赶 Anthropic</a></h3>
+      <p>Guillermo Rauch 处理了 1400 条用户回复后输出了一份定量快照：在提到具体 AI 模型的回复中，OpenAI 的提及频次已经显著接近 Anthropic，差距比三个月前明显收窄。这是用户实际使用行为反映出的信号，不是 benchmark 排行榜，也不是 PR 稿。</p>
+      <strong>用户反馈里的模型提及率，是比发布会声量更难造假的市场温度计。</strong>
+      <cite><a href="https://x.com/rauchg" target="_blank" rel="noopener">X @rauchg</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.lennysnewsletter.com/p/the-ai-paradox-dan-shipper" target="_blank" rel="noopener">Dan Shipper × Lenny：CLI 时代终结，PM 和全栈设计师将成超级个体</a></h3>
+      <p>Dan Shipper（Every CEO，约 30 人团队全员 AI early adopter，把公司当成 AI 协作未来的活实验室）在 Lenny 播客里发布了一批预测，每一条都带点反共识的味道。首先是工作发生地的转移：他认为未来大多数工作将在 Codex 或 Claude Code 这样的 agentic 编程环境里完成，而不是在传统的聊天框或 SaaS 界面里——CLI（命令行界面）时代随之终结。</p>
+      <p>人力配置上，他最看好两类角色：前向部署工程师（forward deployed engineer，直接驻扎到客户现场、把 AI 工具落地到具体业务流程的新型工程师）是最抢手的新职位，全栈设计师（能同时做 UI/UX 设计和产品逻辑的人）将借助 AI 成为"超级个体"。PM 也会继续有价值，因为 Agent 里每个工作流都需要人来设定目标和框架，这恰好是 PM 最擅长的。关于 SaaS 的反直觉判断：他说现在正是买入 SaaS 股票的时机，因为用户将把自己的 AI token 带进 SaaS 产品，反而改善了 SaaS 厂商的边际利润。</p>
+      <strong>Shipper 的核心论点不是"AI 取代人"，而是"AI 把人从任务执行者升级成任务设计者"——而设计者的稀缺性更高。</strong>
+      <cite><a href="https://www.lennysnewsletter.com/p/the-ai-paradox-dan-shipper" target="_blank" rel="noopener">Lenny's Newsletter</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://every.to" target="_blank" rel="noopener">Every × Google I/O 现场：押分发，不押 benchmark</a></h3>
+      <p>Every 周日摘要里有两篇 Google I/O 现场报道值得关注。Jack Cheng 的报道点出了 Google 这次战略的核心逻辑：AI Mode（把搜索重建为 Agent 交互）、Gemini Spark（24/7 在后台运行的个人 AI 操作层）、Universal Cart（与 Amazon、Meta、Microsoft 共建的跨平台购物 Agent）——Google 押的不是模型 benchmark，而是把 AI 推到 42% 的网络用户面前，靠规模和分发锁定入口。</p>
+      <p>Alex Duffy 的报道则提供了另一个视角：Demis Hassabis 在会场宣布 AGI（通用人工智能）"还有几年"，把影响力估算为工业革命的 10 倍——但 Duffy 叫了一辆 Uber，司机是一位 54 岁的建筑工人，开口第一句就是问我的工作还会在吗。两种叙事的张力，比任何 benchmark 更真实。</p>
+      <strong>Google I/O 最大的赌注不是新模型，而是把 AI 默认嵌进十亿人的日常路径。</strong>
+      <cite><a href="https://every.to" target="_blank" rel="noopener">Every</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/garrytan" target="_blank" rel="noopener">Garry Tan（YC CEO）：GBrain 评测出炉，reranking 和 embedding 超竞品</a></h3>
+      <p>Garry Tan 发布了 GBrain（他开源的个人 AI Agent 记忆与知识管理系统，MIT 协议）的最新评测数据，在 reranking（对候选结果重新排序）和 embedding（把文本转化为向量以支持语义搜索）两个指标上超过了主要竞品。这是 GBrain 首发后的实证反馈，数据来源是 gbrain-evals 基准套件。</p>
+      <strong>GBrain 的评测数据出来了，向量检索的质量是 Agent 记忆系统能不能用的硬指标，这条数据比发布声明实在。</strong>
+      <cite><a href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/steipete" target="_blank" rel="noopener">Peter Steinberger（PSPDFKit 作者，独立开发者）：大型重构时让 Codex 维护 scratch-log</a></h3>
+      <p>Peter Steinberger 分享了一个防止 Agent 在长时间重构任务中"漂移"的实用技巧：告诉 Codex 在工作过程中维护一份 scratch-log（临时工作日志），把每一步的决策理由、修改意图和当前状态写进去。这样做的好处是双重的：人可以随时审计 Agent 在干什么，Agent 自己也能在上下文窗口（context window，模型一次能处理的文本长度上限）不够用时回溯自己的轨迹，避免重复劳动或偏离目标。</p>
+      <strong>让 Agent 写工作日志，是把"不可见的推理过程"变成可审计记录的最低成本做法。</strong>
+      <cite><a href="https://x.com/steipete" target="_blank" rel="noopener">X @steipete</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://xiaobot.net/p/sheeppress/" target="_blank" rel="noopener">Ada Lovelace「诗意科学」——巴贝奇造了骨架，她给机器装上了语言</a></h3>
+      <p>纯银《羔羊计划》本期研究 Ada Lovelace。她是浪漫主义诗人拜伦的唯一婚生子女，母亲痛恨拜伦的疯狂，决心用数学把女儿改造成理性的人。结果是：数学没有杀死她的想象力，反而成了她想象力的翅膀。她把微积分里相互转化的公式比作精灵和仙女，称自己的思维方式为"诗意科学"（Poetical Science）——想象力与严密逻辑并用的方法论。</p>
+      <p>1833 年，17 岁的 Ada 在一次社交聚会上看到了查尔斯·巴贝奇（Charles Babbage，差分机和分析机的发明者，计算机之父）展示差分机模型。在场众人把它当大玩具，只有 Ada 俯下身，逐一检视每个部件，立刻看穿了机器的数学原理。巴贝奇叫她"数字的魔女"。1842 年，她翻译了一篇关于巴贝奇分析机的意大利文论文，附上的七条注释比原文长一倍，其中 Note G 详尽描述了如何用分析机计算伯努利数（Bernoulli Numbers，一组与数论、级数展开密切相关的数学常数）——这被后世公认为史上第一个公开发表的计算机程序。</p>
+      <p>她在注释里预言：分析机不只能算数，只要把音符、字母间的关系转化为抽象规则，机器就能创作音乐、处理任何符号。这个预言跨越了一百年才被实现。她同时提出了"Lovelace 异议"（Lovelace's Objection）：机器没有原创性，只能执行人类知道如何命令它做的事——图灵在 1950 年专门写了一节来反驳这个判断。1852 年，她因宫颈癌去世，年仅 36 岁，与未曾谋面的父亲拜伦同龄而逝，按遗愿葬在他身旁。</p>
+      <strong>巴贝奇造了一台机器的骨架，是 Ada，给了这台机器一种语言——软件比硬件早生了一百年。</strong>
+      <cite><a href="https://xiaobot.net/post/801c6fff-0310-484b-99a6-e1b74e47d39a" target="_blank" rel="noopener">小报童 · 纯银</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://xiaobot.net/post/9209818a-1d8c-431e-b936-33ab0c5faa68" target="_blank" rel="noopener">MIT 邮票大小的植入装置：把"体内胰岛素工厂"变成现实</a></h3>
+      <p>修饼（《迷你物理学》作者、科普博主）在《静止的量子》介绍了一篇 MIT 论文：研究者开发了一个大约邮票大小的无线植入装置，内含大量胰岛 β 细胞，封装在能阻挡免疫攻击的软凝胶里。1 型糖尿病（I 型糖尿病患者自身无法分泌胰岛素，必须终身注射）此前最大的希望是"胰岛细胞移植"，但移植的细胞在体内因缺氧容易衰退，患者还得长期服用免疫抑制药。</p>
+      <p>MIT 的解决方案是在装置内置一个微型氧气发生器：利用体内水蒸气，通过电化学反应产生氧气供细胞存活，产生的氢气可以安全扩散。装置靠皮肤表面的无线天线供电，原理类似无线充电，无需电池。在小鼠和大鼠上的测试显示，细胞在体内至少存活 90 天并持续产生胰岛素。团队目标是延长到 1–2 年，再推进临床试验。</p>
+      <strong>如果这条路走通，1 型糖尿病患者可以换上一个"体内自动胰岛素工厂"，告别一生的每日注射——这不只是便利问题，是生活质量的重新定义。</strong>
+      <cite><a href="https://xiaobot.net/post/9209818a-1d8c-431e-b936-33ab0c5faa68" target="_blank" rel="noopener">小报童 · 修饼</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://readwise.io/reader" target="_blank" rel="noopener">Wisereads Vol. 144：Brad Stulberg《The Way of Excellence》</a></h3>
+      <p>Readwise 本周精选是 Brad Stulberg 的新书《The Way of Excellence: A Guide to True Greatness and Deep Satisfaction in a Chaotic World》（卓越之道：混乱世界中的真正伟大与深度满足指南）。Stulberg 的核心论点是：被结果定义的卓越是脆弱的，真正的卓越是一种生活状态——对过程本身的深度投入、对当下正在做的事的热爱。在 AI 改写竞争基线的时代，这个框架比"如何赢得更多"更难，也更必要。</p>
+      <strong>当外部成果越来越难锁定，内在的过程质量反而成了唯一真正属于自己的东西。</strong>
+      <cite><a href="https://readwise.io/reader" target="_blank" rel="noopener">Wisereads</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2605.10832" target="_blank" rel="noopener">On-Policy Data Evolution for Visual-Native Multimodal Deep Search Agents</a></h3>
+      <p><strong>现状：</strong>多模态搜索 Agent（能同时处理图片和文字、跨多步骤使用工具解决开放问题的 AI 系统）通常用静态数据集训练，与部署时的实际策略脱节。</p>
+      <p><strong>问题：</strong>训练数据由旧策略生成，新策略训练出来后行为已经偏移，导致数据与策略之间的分布不匹配（distribution mismatch）。</p>
+      <p><strong>解决方案：</strong>ODE（On-Policy Data Evolution，在线策略数据进化）在训练时持续用当前策略生成新数据，形成闭环：策略更新，数据跟着更新，再训练，再更新。论文还引入了图像库引用协议（image bank reference protocol），让每一张工具返回的图片都成为后续工具步骤可复用的地址引用。</p>
+      <p><strong>价值：</strong>在标准 Agent 工作流设置下，Qwen3-VL-8B Agent 从 24.9% 提升到 39.0%，超越了 Gemini-2.5 Pro（37.9%）；30B 版本从 30.6% 提升到 41.5%。</p>
+      <p><strong>未来方向：</strong>把 ODE 扩展到更复杂的多轮视觉推理任务，以及视频和3D场景理解。</p>
+      <cite><a href="https://huggingface.co/papers/2605.10832" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2605.10832" target="_blank" rel="noopener">arXiv 2605.10832</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2605.17342" target="_blank" rel="noopener">Transitivity Meets Cyclicity: Explicit Preference Decomposition for Dynamic LLM Alignment</a></h3>
+      <p><strong>现状：</strong>主流 RLHF（基于人类反馈的强化学习，Reinforcement Learning from Human Feedback，目前最常用的 LLM 对齐方法）假设人的偏好是可传递的标量，即"如果 A 好过 B，B 好过 C，那 A 一定好过 C"。</p>
+      <p><strong>问题：</strong>真实的人类偏好存在循环性（cyclicity）——有时 A 好过 B，B 好过 C，C 却又好过 A——标量奖励无法捕捉这种现象，导致对齐结果不稳定。</p>
+      <p><strong>解决方案：</strong>DSPPO（Dynamic Self-Play Preference Optimization，动态自博弈偏好优化）把对齐建模为一个随时间变化的博弈，策略朝 Nash 均衡（博弈论中各方都不再有改变策略的动机的稳定状态）收敛，同时显式分解传递性偏好和循环性偏好，分别处理。</p>
+      <p><strong>价值：</strong>在 Qwen2.5-7B 上超越了强基线，在自动偏好指标和 LLM-judge 评估上都有显著提升，对齐稳定性提高。</p>
+      <p><strong>未来方向：</strong>把动态博弈框架扩展到多轮对话和群体偏好场景。</p>
+      <cite><a href="https://arxiv.org/abs/2605.17342" target="_blank" rel="noopener">arXiv 2605.17342</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2605.14537" target="_blank" rel="noopener">Cattle Trade: A Multi-Agent Benchmark for LLM Bluffing, Bidding, and Bargaining</a></h3>
+      <p><strong>现状：</strong>现有 LLM 多智能体基准多集中于协作任务，较少涉及竞争性不完全信息博弈（即玩家不知道对方手牌、必须欺骗和推断的场景）。</p>
+      <p><strong>问题：</strong>欺骗、竞拍、谈判等战略推理能力是现实商业和社会场景的核心，LLM 在这类任务上的系统性评测几乎空白。</p>
+      <p><strong>解决方案：</strong>Cattle Trade 是一个 50–60 轮的长程多智能体博弈场景，结合了拍卖（auction）、隐藏出价挑战、讨价还价、虚张声势（bluffing）、对手建模和资源分配，所有机制融合在同一个连续游戏里。</p>
+      <p><strong>价值：</strong>提供了第一个针对 LLM 战略推理（strategic reasoning under adversarial conditions）的端到端长程基准，能区分哪些模型真的会"算计"，哪些只是在模板化地生成文本。</p>
+      <p><strong>未来方向：</strong>扩展到更多文化和语言背景的谈判场景，以及带有欺骗检测的安全评测。</p>
+      <cite><a href="https://arxiv.org/abs/2605.14537" target="_blank" rel="noopener">arXiv 2605.14537</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2605.09262" target="_blank" rel="noopener">Reinforcing Multimodal Reasoning Against Visual Degradation</a></h3>
+      <p><strong>现状：</strong>多模态 LLM（同时处理图像和文本的大模型）在干净图像上推理能力较强，但在噪声、模糊、低分辨率等真实世界图像质量下降条件下表现急剧下降。</p>
+      <p><strong>问题：</strong>现有训练数据以高质量图像为主，模型没有学会在视觉信号退化（visual degradation）时保持推理鲁棒性。</p>
+      <p><strong>解决方案：</strong>通过强化学习（RL）专门训练模型在视觉噪声条件下维持推理质量，引入自适应视觉扰动机制，让模型在训练时暴露于各种图像退化类型，同时保持推理链的连贯性。</p>
+      <p><strong>价值：</strong>在多个多模态推理基准上显著提升了低质量图像条件下的准确率，向落地部署（如医疗影像、监控、用户上传内容）迈近了一步。</p>
+      <p><strong>未来方向：</strong>扩展到视频推理和跨模态噪声的联合鲁棒性训练。</p>
+      <cite><a href="https://arxiv.org/abs/2605.09262" target="_blank" rel="noopener">arXiv 2605.09262</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2605.04356" target="_blank" rel="noopener">Efficiently Aligning Language Models with Online Natural Language Feedback</a></h3>
+      <p><strong>现状：</strong>RLHF 需要大量精细的人工偏好标注（比较两个答案哪个更好），成本高且难以扩展到模糊的专业领域（如医疗诊断、法律分析）。</p>
+      <p><strong>问题：</strong>在"模糊域"（fuzzy domain，即没有明确对错但有质量差异的任务）里，二元偏好标注过于粗粒度，无法捕捉细微的质量维度。</p>
+      <p><strong>解决方案：</strong>用在线自然语言反馈（专家用文字解释为什么这个答案好或不好）代替二元标注，迭代优化代理奖励信号（proxy reward）并在过度优化点停止，再收集新的专家监督，形成低成本闭环对齐流程。</p>
+      <p><strong>价值：</strong>在需要专业判断的模糊领域，对齐质量超过了纯 RLHF 基线，且专家时间投入显著减少，可扩展性更高。</p>
+      <p><strong>未来方向：</strong>把自然语言反馈框架扩展到代码生成、科学推理等需要专业知识的高精度对齐场景。</p>
+      <cite><a href="https://arxiv.org/abs/2605.04356" target="_blank" rel="noopener">arXiv 2605.04356</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+
+    <ul class="glance-list">
+      <li>@trq212 用"省钱提示词"（please save me money prompt）定期扫描旧项目遗留服务，AI 成了基础设施维护的顺手助手。<a class="glance-src" href="https://x.com/trq212" target="_blank" rel="noopener">X @trq212 →</a></li>
+      <li>@amasad：有人说先用 Cursor 建了三款 App 已经够快，但切换到 Replit 之后发现 MVP（最小可行产品）时间还能从天缩到小时。<a class="glance-src" href="https://x.com/amasad" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>Guillermo Rauch 向粉丝发问："你用 AI 建的最让你自豪的东西是什么，附上产品链接。"<a class="glance-src" href="https://x.com/rauchg" target="_blank" rel="noopener">X @rauchg →</a></li>
+      <li>Garry Tan 花了几个小时微调 Qwen3.5-397B（千亿参数级开源模型），亲身感受到多模态 AI 能力的质变。<a class="glance-src" href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Garry Tan 发起行动，反对试图限制旧金山初创公司的新立法，征集 5 万美元配捐，呼吁硅谷社区站出来。<a class="glance-src" href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Nikunj Kothari（YC 合伙人）：一年前写了一篇 B2B 公司叙事差异化的文章，现在越来越多公司正在应验他的判断——AI 饱和时代，同质化死得更快。<a class="glance-src" href="https://x.com/nikunj" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Peter Steinberger 一直想要一个 GitHub 仓库可视化管理面板，现在他自己在造了。<a class="glance-src" href="https://x.com/steipete" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>Peter Steinberger：Codex 在代码里造了一个表情符号 :)——一个有趣的模型行为细节，非预期输出。<a class="glance-src" href="https://x.com/steipete" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>Wisereads 精选：Vulture《The Feed Is Fake》——音乐行业的有机热度大量由"剪辑运营"（clipping campaign）包装，所谓的自发共识很多是几百美元的营销订单。<a class="glance-src" href="https://readwise.io/reader" target="_blank" rel="noopener">Wisereads →</a></li>
+      <li>Wisereads 精选：baldurbjarnason.com《The old world of tech is dying》——软件业的根基正在被改写，旧有的职业路径和组织假设都在动摇。<a class="glance-src" href="https://readwise.io/reader" target="_blank" rel="noopener">Wisereads →</a></li>
+      <li>Ethan Mollick（One Useful Thing）近期文章《Mass Intelligence》探讨：当 AI 把高质量思维变成廉价品，个人和组织的竞争优势将在哪里重新生长。<a class="glance-src" href="https://www.oneusefulthing.org/p/mass-intelligence" target="_blank" rel="noopener">One Useful Thing →</a></li>
+      <li>Simon Willison 5 月 20 日 Google I/O 现场笔记：Gemini Spark、Antigravity 等新产品的第一手观察与技术细节。<a class="glance-src" href="https://simonwillison.net/2026/May/20/google-io/" target="_blank" rel="noopener">Simon Willison →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-05-22.html">← MAY 22</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
