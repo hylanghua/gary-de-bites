@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — May 25, 2026</title>
+  <meta name="description" content="Starship v3 周五升空，助推器坠入墨西哥湾，飞船完成入轨后在印度洋解体，SpaceX 的下一代火箭正式进入磨合期。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">May 25, 2026</h1>
+
+  <p class="post-lead">Starship v3 周五升空，助推器坠入墨西哥湾，飞船完成入轨后在印度洋解体，SpaceX 的下一代火箭正式进入磨合期。Anthropic Mythos 1 安全模型在受控部署中已发现逾万个高危漏洞，正接近公开发布。Aaron Levie 拆解 CEO 的 AI 精神错乱：距离真实工作越远，越容易把"最终 demo"当成真相。</p>
+
+  <p class="post-note">本期部分源抓取失败，内容较常规偏少。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.nytimes.com/2026/05/23/science/spacex-starship-launch.html" target="_blank" rel="noopener">Starship v3 首飞：助推器坠海，飞船入轨后于印度洋解体</a></h3>
+      <p>SpaceX 周五从得克萨斯州 Starbase 的全新发射台发射了升级版 Starship v3，这是迄今最高的火箭（约 400 英尺）。助推器成功分离但因无法完成引擎机动而坠入墨西哥湾。飞船进入太空并部署了模拟卫星的装置以及两颗真实小卫星，后者还拍下了飞行中的飞船照片。飞船在印度洋着陆点触地后爆炸解体。</p>
+      <p>这次飞行创下 Starship 项目多项里程碑，尽管结果不算完美。SpaceX 正在用每一次飞行积累数据，调整下一代火箭的轨道可靠性，为未来登月和火星任务做准备。</p>
+      <cite><a href="https://www.tldrnewsletter.com" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://red.anthropic.com/2026/mythos-preview/" target="_blank" rel="noopener">Anthropic Mythos 1 迫近公开：Glasswing 项目已发现逾万个高危漏洞</a></h3>
+      <p>Anthropic 的 Mythos 安全模型（一款专门用于发现和利用软件漏洞的 AI，有别于对话用的 Claude）正在受控的伙伴机构内小范围部署，累计已发现超过 10,000 个高危或严重漏洞。其中一项发现尤为引人注目：Mythos Preview 完全自主地找到并利用了 FreeBSD 操作系统中一个存在长达 17 年的远程代码执行漏洞，攻击者可借此在运行 NFS（网络文件系统）的机器上获取 root 权限。</p>
+      <p>Anthropic 表示，一旦建立起更完善的安全措施，将通过 Claude Code 和 Claude Security 向更广泛受众开放 Mythos。这款模型在受限期间已短暂出现在 Claude Code 界面内又消失，引发外界广泛关注。<strong>Anthropic 正在把 AI 的攻击能力包装成防御基础设施。</strong></p>
+      <cite><a href="https://www.testingcatalog.com/anthropic-prepares-mythos-1-for-claude-code-and-claude-security/" target="_blank" rel="noopener">TLDR</a> · <a href="https://www.techtimes.com/articles/317076/20260524/anthropic-moves-closer-public-claude-mythos-release-10000-critical-bugs-found-first.htm" target="_blank" rel="noopener">TechTimes</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://ai2.work/blog/antigravity-2-0-builds-a-working-os-in-12-hours-as-google-takes-on-cursor-and" target="_blank" rel="noopener">Google Antigravity 2.0 亮相：96 个子 agent 12 小时搭出操作系统，$1K 以内</a></h3>
+      <p>Google 在 I/O 2026 上正式推出 Antigravity 2.0，这是一个以 Gemini 3.5 Flash 为主力模型的独立 AI 编程 agent 桌面应用，完全脱离 IDE 运行。最引人瞩目的 demo：96 个并行子 agent 在 12 小时内从零构建了一个可运行的操作系统，总 token 消耗约 26 亿，成本不超过 1,000 美元，且能运行 Doom 游戏。</p>
+      <p>功能上，Antigravity 2.0 新增了 Scheduled Tasks（基于 cron 定时触发 agent 工作流）、Project（文件夹级工作区隔离）和动态子 agent 机制，基本追平了 Claude Code 和 Codex 数月前发布的功能。Gemini 3.5 Flash 在 Google 内部 benchmark 上超越 3.1 Pro，速度提升 4 倍。不过真实用户测试显示，Claude Code 在日常工程任务上仍更保守稳定，Antigravity 更适合需要快速并行执行的爆发型任务。</p>
+      <cite><a href="https://aiweekly.co" target="_blank" rel="noopener">AI Valley</a> · <a href="https://www.lennysnewsletter.com" target="_blank" rel="noopener">Lenny's</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://x.com/levie/status/2058582370253701432" target="_blank" rel="noopener">Aaron Levie（Box CEO）：CEO 的 AI 精神错乱，源于与真实工作的距离</a></h3>
+      <p>Levie 写道，CEO 特别容易陷入 AI 精神错乱，因为他们离真实交付"最后一公里"太远。当他们自己玩 AI 时，看到的都是 happy path：做出了漂亮的产品原型（但没看见上生产前的代码审查和反复修改）、生成了一份合同（但没经历核对条款和对接历史合同数据的过程）。</p>
+      <p>于是他们下达宏观 AI 指令，员工则用低努力度的 demo 来应付考核指标。两年后，一家管理层亲自上手 AI 的 startup 悄然颠覆了它。Levie 建议：CEO 应该大量亲自使用 AI，理解 agent 的上行空间和真实代价，而不是停在"看 demo"阶段。</p>
+      <p><strong>企业 AI 落地的最大障碍，是高层离真实工作太远而产生的认知泡沫。</strong></p>
+      <cite><a href="https://x.com/levie" target="_blank" rel="noopener">X @levie</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/trq212/status/2058576195000660319" target="_blank" rel="noopener">Thariq（Anthropic Claude Code 工程师）：存量代码库是 AI 最好的蒸馏原料</a></h3>
+      <p>Thariq 在 Bun（JavaScript 运行时）将自身重写为跨平台版本的背景下写道：遗留代码库（legacy codebase）将成为极有价值的资产，用来把代码"蒸馏"成新形态。他的推论是：每款游戏都应该跨平台，所有老软件都应该能在 Web 上运行，COBOL（金融行业仍在大量使用的一种 1959 年编程语言）时代不再需要了。</p>
+      <p>他紧接着补充：现在的模型还做不到完美重写（Bun 有极高的测试覆盖率使其高度可验证），但他认为这只是时间问题。这条推文获得了 1,400+ 赞，引发大量开发者讨论。</p>
+      <p><strong>AI 对软件的最大价值，不是生成新代码，而是让几十年的遗产代码重获生命。</strong></p>
+      <cite><a href="https://x.com/trq212" target="_blank" rel="noopener">X @trq212</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.chatprd.ai/how-i-ai/felix-rieseberg-claude-code-cowork-workflows-for-3d-house-design-and-hardware-buddy" target="_blank" rel="noopener">Felix Rieseberg（Anthropic工程师）：把收件箱当数据库，live artifacts 让仪表盘永不过期</a></h3>
+      <p>Felix Rieseberg 是 Claude Cowork 和 Claude Code Desktop 的工程负责人。在 Lenny 的 How I AI 播客中，他展示了几个颠覆性工作流。一个具体例子：搬家时需要整理家具，他让 Claude 扫描多年来的购买收据邮件，自动建立家具清单，然后直接生成可交互的 3D 楼层平面图——维度都是真实的，因为收据里有型号，型号里能查到尺寸。</p>
+      <p>更通用的原则是"升一层抽象，然后再升一层"：每次发现自己在做无聊工作，就问 Claude 能不能做，再问 Claude 能不能自己搞清楚要做什么。Live artifacts（实时刷新的可视化组件，与 Claude 对话后直接从已授权的服务如 Gmail、Calendar、Spotify 拉取最新数据）是他认为最被低估的功能：个人仪表盘一旦连上 live artifacts，就再也不需要手动更新了。</p>
+      <p>模型选择策略：问题定义清晰时用 Sonnet，需要 Claude 帮你理清自己"真正想要什么"时用 Opus。<strong>AI 使用的心理障碍不是技术，而是用户还没建立起"有问题先问 AI"的肌肉记忆。</strong></p>
+      <cite><a href="https://www.lennysnewsletter.com" target="_blank" rel="noopener">Lenny's / How I AI</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/petergyang/status/2058555226479866312" target="_blank" rel="noopener">Peter Yang（Roblox PM）：别先 build MVP，先 build 能 build MVP 的系统</a></h3>
+      <p>Yang 的嘉宾 Ryan Carson 已融资 200 万美元但明确不打算招人，他的逻辑是：先把每个岗位的工作做一遍、感受痛点，再判断能否用 agent 取代，而不是直接招人。实操工具：OpenClaw 做 AI 首席助理（处理邮件、预约、销售外联），Codex 和 Devin 做 AI 工程团队（趁他睡觉时发货）。</p>
+      <p>Ryan 的三条原则：花大量时间在前期建立技能文档和流程，之后就能解锁 10 个人的工作量；给 agent 分配真实的邮箱、日历和 GitHub 账号，像对待真实员工一样对待它；先花钱让设计师建立设计系统，之后 AI 能持续生成符合品牌风格的物料。<strong>过去"先做 MVP"的范式正在被替换：先建造能制造 MVP 的工厂，再开始生产。</strong></p>
+      <cite><a href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://aiweekly.co/alerts/polsia-solo-founder-raises-30m-at-250m-valuation" target="_blank" rel="noopener">Polsia：零员工、$30M 融资、$250M 估值，AI agent 全程操盘融资</a></h3>
+      <p>Polsia 是一个 AI 运营平台，由单一创始人 Ben Cera 运营，官方声称没有任何雇员。九个 AI agent 负责调研、编码、广告、客服和销售，五个月内积累了 7,600 家企业客户，ARR 逼近 1,000 万美元。更夸张的是，这轮 3,000 万美元融资（由 Sound Ventures 领投，True Ventures 等参与）本身也由 AI 参与操盘，创始人"只出现来签文件"。</p>
+      <p>不过，Trustpilot 评分 2.1/5，主要抱怨是任务执行不完整、Credits 在失败的 agent 操作上损耗。Polsia 的意义更多在于：它代表了一种极端的"AI-native 公司"实验，而非可即刻复制的成熟产品。<strong>零员工公司拿到 $250M 估值，不是终点，而是一个还需要持续验证的假设。</strong></p>
+      <cite><a href="https://aiweekly.co" target="_blank" rel="noopener">AI Valley</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://xiaobot.net/post/479b3e69-6466-44a2-92a9-d20153c4fac8" target="_blank" rel="noopener">纯银：AI 应该怎样学会遗忘</a></h3>
+      <p>纯银从一个旅行攻略的亲身经历出发：用 Gemini 做欧洲行程时，把所有想要的东西一次性塞进 prompt——行程逻辑、目的地总结、景点亮点、交通、门票、营业时间、摄影建议……结果 AI 就"疯了"，交付极为随机。他很快意识到，把约束收缩到最在意的两三件事、给 AI 自由发挥空间，质量反而大幅提升。Gemini 自带的"优化提示词"功能犯了同样的错：看起来更丰富全面，实际上指令过载，交付劣化。</p>
+      <p>由此引发的延伸思考：AI 的上下文和记忆从来都是应用瓶颈。人类记忆靠"情绪激烈、印象深刻、反复发生"来筛选，这套机制不完美，但节约算力且能持续运行一辈子。AI 并不拥有无限算力，即便未来算力翻千倍，盲目堆 token 的价值也存疑。真正的功课是：怎样对海量历史上下文"抓重点"——用高维度抽象覆写低维度冗余，而不是把什么都塞进 MEMORY 文件（一种让 AI agent 跨会话保存记录的机制）。</p>
+      <p><strong>"既要又要"对人类不行，对 AI 同样不行。减法总是比加法难，也更重要。</strong></p>
+      <cite><a href="https://xiaobot.net/p/pmdogs8/" target="_blank" rel="noopener">小报童 · 纯银</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://blog.samaltman.com/the-gentle-singularity" target="_blank" rel="noopener">Sam Altman《The Gentle Singularity》：技术转型来得温和，但它真的在发生</a></h3>
+      <p>Sam Altman 在这篇近期博文里描绘了一条他预期中的时间线：2025 年，能承担真实认知工作的 agent 已经出现，写代码这件事永远改变了；2026 年，类似的突破将出现在其他认知领域；2027 年，具身机器人将开始在真实物理世界中执行任务。他强调这个过程是"温和的奇点"（The Gentle Singularity）：变化足够深刻，但不是科幻小说里的一夜激变，而是渐进且可调适的。</p>
+      <p>文章里还有一段个人插叙：他提到一年多前的一个周五，自己在视频通话中被突然解雇，随后董事会的公告立刻发出，至今仍是记忆中的标志性时刻。这种把技术预言和个人叙事并置的写法，折射出他对"转型代价"的认知——技术的温和并不意味着人的处境也温和。<strong>Altman 把"代理人时代"的到来，描述成一件已经发生、而多数人还没意识到的事。</strong></p>
+      <cite><a href="https://blog.samaltman.com/the-gentle-singularity" target="_blank" rel="noopener">Sam Altman Blog</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/papers/2605.18678" target="_blank" rel="noopener">Lance：双流架构统一多模态理解、生成与编辑</a></h3>
+      <p><strong>现状：</strong>现有多模态模型通常把"理解图像"和"生成图像"分开训练，切换任务需要不同模型。</p>
+      <p><strong>问题：</strong>任务割裂导致知识无法共享，图像理解模型不能直接编辑图像，生成模型又缺乏语义理解能力。</p>
+      <p><strong>解决方案：</strong>Lance 通过双流架构（一条流负责语义理解，一条流负责视觉生成）和协同多任务训练，让同一个模型同时处理图像/视频的理解、生成和编辑任务，三类任务互相增益。</p>
+      <p><strong>价值：</strong>统一模型意味着"看图后立即编辑"或"生成后立即理解"可以在单次推理中完成，无需切换工具。</p>
+      <p><strong>未来方向：</strong>扩展到更长视频序列和更细粒度的跨模态编辑任务。</p>
+      <cite><a href="https://huggingface.co/papers/2605.18678" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2605.18678" target="_blank" rel="noopener">arXiv 2605.18678</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2603.22796" target="_blank" rel="noopener">PhotoAgent：带美学判断的 3D 机器人摄影师 agent</a></h3>
+      <p><strong>现状：</strong>拍出好照片需要同时理解 3D 空间位置和主观美学判断，这两者此前由不同系统分别处理。</p>
+      <p><strong>问题：</strong>纯几何方法无法捕捉构图美感，纯 LMM（大型多模态模型）推理又难以转化为精确的相机位置控制。</p>
+      <p><strong>解决方案：</strong>PhotoAgent 用 LMM 驱动的思维链（chain-of-thought）把美学目标转化为几何约束，用解析求解器计算最优初始视角，再通过视觉反馈循环迭代优化，底层用 3D 高斯泼溅（一种实时 3D 场景重建技术）构建逼真内部世界模型。</p>
+      <p><strong>价值：</strong>机器人可在真实场景中自主完成摄影任务，兼顾空间精度和构图美感。</p>
+      <p><strong>未来方向：</strong>向无预建场景模型的真实环境迁移。</p>
+      <cite><a href="https://arxiv.org/abs/2603.22796" target="_blank" rel="noopener">arXiv 2603.22796</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>AI-Trader：首个 LLM 金融市场跨资产类别实时决策 live benchmark</h3>
+      <p><strong>现状：</strong>评估 LLM 金融能力的 benchmark（标准测试集）大多基于历史静态数据，与真实交易场景脱节。</p>
+      <p><strong>问题：</strong>静态数据集无法衡量模型在动态市场中自主采集信息、实时决策的能力，导致评估结果不可信。</p>
+      <p><strong>解决方案：</strong>AI-Trader 提供一个全自动化的实时 benchmark，LLM 需在多个真实资产市场中独立收集信息、分析并执行决策，人工干预极少。</p>
+      <p><strong>价值：</strong>为金融 AI agent 提供了接近真实部署环境的标准化评估框架，填补了"可信金融 benchmark"的空白。</p>
+      <p><strong>未来方向：</strong>纳入更多资产类别和更复杂的多步骤投资决策场景。</p>
+      <cite><a href="https://huggingface.co/papers" target="_blank" rel="noopener">HuggingFace Weekly Papers</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2510.19169" target="_blank" rel="noopener">OpenGuardrails：开源企业级 AI 内容安全与提示注入防护平台</a></h3>
+      <p><strong>现状：</strong>企业部署 LLM 面临提示注入（prompt injection，即通过恶意输入劫持 AI 行为）、越狱（jailbreaking）、恶意代码生成、数据泄漏等多类安全风险，现有防护工具碎片化。</p>
+      <p><strong>问题：</strong>没有统一的开源平台能同时处理内容安全、模型操控检测和数据泄漏识别，企业只能自行拼凑方案。</p>
+      <p><strong>解决方案：</strong>OpenGuardrails 提供一个统一模型（含上下文感知的安全与操控检测）加独立 NER（命名实体识别）数据泄漏管道，支持企业级部署，完全开源。</p>
+      <p><strong>价值：</strong>降低企业自建 AI 安全层的成本，提供可审计、可扩展的防护基础设施。</p>
+      <p><strong>未来方向：</strong>扩展对多模态输入（图像、音频）的安全检测。</p>
+      <cite><a href="https://huggingface.co/papers" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2510.19169" target="_blank" rel="noopener">arXiv 2510.19169</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://the-decoder.com/google-deepminds-alphaproof-nexus-solves-decades-old-math-problems-for-a-few-hundred-dollars/" target="_blank" rel="noopener">AlphaProof Nexus（DeepMind）：求解 9 个 Erdős 开放问题，证明 44 个 OEIS 猜想</a></h3>
+      <p><strong>现状：</strong>AI 数学系统过去主要针对考试题和 benchmark 题目优化，对真实数学研究中的开放性猜想无能为力。</p>
+      <p><strong>问题：</strong>LLM 生成数学证明时容易产生幻觉（hallucination，即看似合理但实则错误的推导步骤），缺乏可靠的验证机制。</p>
+      <p><strong>解决方案：</strong>AlphaProof Nexus 将 AI 生成能力与 Lean 形式化证明助手（一个逐步检查每个逻辑步骤是否严格正确的系统）结合，AI 提出证明思路，Lean 验证每一步，错误的证明直接被拒绝。结果：求解了 353 个 Erdős 开放问题中的 9 个（含两道已悬而未决 56 年的问题），并证明 OEIS（整数数列百科全书）中 492 个猜想里的 44 个。</p>
+      <p><strong>价值：</strong>每道题成本仅数百美元，证明 AI 已能参与真实数学研究，而非仅作为解题工具。</p>
+      <p><strong>未来方向：</strong>将方法迁移至其他形式化证明语言，扩大可攻克问题的范围。</p>
+      <cite><a href="https://the-decoder.com/google-deepminds-alphaproof-nexus-solves-decades-old-math-problems-for-a-few-hundred-dollars/" target="_blank" rel="noopener">The Decoder</a> · <a href="https://github.com/google-deepmind/alphaproof-nexus-results" target="_blank" rel="noopener">GitHub Proofs</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>auth.md：WorkOS 发布 AI agent 注册协议，Markdown 文件定义注册流程、scope 与端点，基于 OAuth RFC 9728，任何 app 都可以实现<a class="glance-src" href="https://workos.com/blog/agent-registration-with-auth-md" target="_blank" rel="noopener">WorkOS →</a></li>
+      <li>Sundar Pichai 接受 23 分钟采访，承认行业需要展示 AI 的真实收益，称 AI 是人类研究过的最深刻的技术，他个人已用 agent 处理日常工作<a class="glance-src" href="https://www.tldrnewsletter.com" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>AI 岗位暴露度不可预测：历史规律证明该受冲击的反而变大，该安全的反而萎缩，现在因素太多无法准确预测任何行业的命运<a class="glance-src" href="https://www.tldrnewsletter.com" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>TeamPCP 供应链攻击：每周批量污染数百个开源工具，已入侵 GitHub VSCode 扩展，主要目的是勒索软件和数据贩卖<a class="glance-src" href="https://www.tldrnewsletter.com" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Stack Overflow 月度提问量从 2014 年峰值 20 万降至 2026 年初接近 300 条，开发者已全面转向 AI 工具<a class="glance-src" href="https://developers.slashdot.org/story/26/01/05/1431212/stack-overflow-went-from-200000-monthly-questions-to-nearly-zero" target="_blank" rel="noopener">Slashdot →</a></li>
+      <li>Meta Forum 上线：Facebook Groups 的 Reddit 对标产品，专为深度讨论和社区问答设计<a class="glance-src" href="https://www.tldrnewsletter.com" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Snap Specs：首款真 AR 眼镜，可在真实空间叠加界面和虚拟对象且不严重遮挡视野，约 $2,500，今秋上市<a class="glance-src" href="https://www.tldrnewsletter.com" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>中国神舟二十三号升空：三名宇航员进驻天宫，一名成员或将在轨满一年，创中国最长在轨记录<a class="glance-src" href="https://www.tldrnewsletter.com" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>ITER 核聚变装置：220 亿美元甜甜圈形真空腔，内部温度是太阳核心 10 倍，多国宿敌联手押注这颗蛋<a class="glance-src" href="https://www.tldrnewsletter.com" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>OpenAI 为"自我改进 AI"设立年薪 $445K 安全岗位，研究方向涵盖 AI 生成网络攻击和隐藏模型行为；Codex 周活跃用户已超 400 万<a class="glance-src" href="https://aiweekly.co" target="_blank" rel="noopener">AI Valley →</a></li>
+      <li>Garry Tan（YC CEO）："High agency + high taste 是解锁这个时代的组合"（引用推文）<a class="glance-src" href="https://x.com/garrytan/status/2058769355916411099" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Matt Turck（FirstMark VC）：引用 OpenAI 的 Yan Dubois——"如果把现有模型冻住，认真打磨 harness，人们会真切感受到每个领域的 AGI"，提问：AGI 是否已在眼前<a class="glance-src" href="https://x.com/mattturck/status/2058659995311358332" target="_blank" rel="noopener">X @mattturck →</a></li>
+      <li>Madhu Guru（Google Gemini PM）：CEO AI FOMO 催生粗糙指令，员工被迫做"表演型演示"，两年后被亲自上手 AI 的 startup 颠覆<a class="glance-src" href="https://x.com/realmadhuguru/status/2058591611245011157" target="_blank" rel="noopener">X @realmadhuguru →</a></li>
+      <li>Guillermo Rauch（Vercel CEO）："好品牌怎么建？先做好产品"<a class="glance-src" href="https://x.com/rauchg/status/2058750970998505505" target="_blank" rel="noopener">X @rauchg →</a></li>
+      <li>Guillermo Rauch："BJJ 是人类发明的巅峰运动，其他运动与之相比不值一提，加入吧"<a class="glance-src" href="https://x.com/rauchg/status/2058628992631193657" target="_blank" rel="noopener">X @rauchg →</a></li>
+      <li>Zara Zhang：发现 Amphetamine——比终端 caffeinate 命令更可靠、更易用的 Mac 保持唤醒 app，合盖后也能让 Mac 保持运行<a class="glance-src" href="https://x.com/zarazhangrui/status/2058643577421631538" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+      <li>Zara Zhang：遇到一位主动从工程经理降回 IC 的朋友，比任何时候都开心，因为终于能重新"建东西"了<a class="glance-src" href="https://x.com/zarazhangrui/status/2058640897236140034" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+      <li>Zara Zhang：OpenAI Codex 原来是开源的（许多人不知道），OpenAI 越来越 open<a class="glance-src" href="https://x.com/zarazhangrui/status/2058604604422815832" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+      <li>Nikunj（YC）：用 Claude Code + browser_use 逆向工程网站 API 是最好玩的自动化方式，大量网站无法用 DOM 确定性导航，但可以用网络请求嗅探<a class="glance-src" href="https://x.com/nikunj/status/2058783316753686558" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Nikunj：用 AI agent 做出一个旅行积分 CLI 产品，输入出发地、目的地和积分情况，返回最优兑换方案，征集公测用户<a class="glance-src" href="https://x.com/nikunj/status/2058692391708897319" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Dan Shipper：AI Daily Brief 对《After Automation》的解析让他印象深刻，感谢主播的用心<a class="glance-src" href="https://x.com/danshipper/status/2058723492355252490" target="_blank" rel="noopener">X @danshipper →</a></li>
+      <li>Lenny Google I/O 现场测试：Gemini 3.5 Flash 速度比 3.1 Pro 快 4 倍，但半数发布功能实际不可用，Google 的"发布即上线"差距仍是最大问题<a class="glance-src" href="https://www.lennysnewsletter.com" target="_blank" rel="noopener">Lenny's →</a></li>
+      <li>Julie Zhuo《I am an idiot》：在比你更聪明的东西出现的时代，重新定义"笨感"——不是弱点，而是学习的入口（2026 年 4 月）<a class="glance-src" href="https://lg.substack.com/p/i-am-an-idiot" target="_blank" rel="noopener">The Looking Glass →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-05-24.html">← MAY 24</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
