@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — May 27, 2026</title>
+  <meta name="description" content="SpaceX IPO 文件披露 Musk 持有超级投票权并绕开独立薪酬委员会，AI 推理迎来双十角兽日：Fireworks AI $150 亿、Baseten $110 亿。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">May 27, 2026</h1>
+
+  <p class="post-lead">SpaceX IPO 文件披露 Musk 持有 B 类超级投票权、薪酬委员会非独立、股东诉讼须走仲裁，公司治理设计令外部股东几乎无制衡手段。AI 推理基础设施迎来双十角兽日：Fireworks AI 和 Baseten 估值在数月内分别暴涨 3.75 倍和 2.2 倍，inference 赛道正加速成熟。Simon Willison 以企业涨价后仍续费的数据论证，Anthropic 与 OpenAI 都已真正找到产品市场契合点；纯银以「正反馈」为轴，剖析命运指南针背后的人生哲学。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://fortune.com/2026/05/20/space-x-filing-elon-musk-pay-colonize-mars/" target="_blank" rel="noopener">SpaceX IPO 治理设计：Musk 持超级投票权，股东制衡几近为零</a></h3>
+      <p>SpaceX IPO 招股书揭示，Musk 以 B 类普通股持有人身份掌握不成比例的投票权，并可用尚未满足兑现条件的受限股票参与股东表决。公司薪酬委员会并非独立机构，意味着 Musk 实际上参与决定自己的薪酬。更关键的是，任何股东针对公司的联邦证券法诉讼须通过仲裁解决，而非走公开法庭，这让集体诉讼几乎不可能发生。三项设计合力的结果：Musk 既能挑选决定他薪酬的人，又能在很大程度上隔离股东追责。</p>
+      <cite><a href="https://fortune.com/2026/05/20/space-x-filing-elon-musk-pay-colonize-mars/" target="_blank" rel="noopener">Fortune</a> · <a href="https://tldrnewsletter.com" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.geekwire.com/2026/nasa-taps-blue-origin-to-deliver-lunar-rovers-for-moon-base-initiative/" target="_blank" rel="noopener">NASA 选蓝色起源承运首批月球地形车，2032 年建成可运营月球基地</a></h3>
+      <p>NASA 将向 Jeff Bezos 的 Blue Origin 支付至少 1.88 亿美元，负责把 Astrolab 和 Lunar Outpost 制造的月球漫游车（各重约一吨）运送至月球表面，时间节点在 Artemis 4 载人着陆任务之前。这是 NASA 今年计划发射的三次无人月球任务中的第一次，目标是在南极建立有运营能力的月球基地：2029 年完成太阳能电网铺设，2032 年竣工半永久模块，供宇航员进行长期实验。</p>
+      <cite><a href="https://www.geekwire.com/2026/nasa-taps-blue-origin-to-deliver-lunar-rovers-for-moon-base-initiative/" target="_blank" rel="noopener">GeekWire</a> · <a href="https://tldrnewsletter.com" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-new-ai-infra-decacorns-fireworks" target="_blank" rel="noopener">AI 推理双十角兽日：Fireworks AI $150 亿、Baseten $110 亿、OpenRouter $1.13 亿 C 轮</a></h3>
+      <p>Fireworks AI 正在寻求以 $150 亿估值融资，距离上次 $40 亿的 C 轮不过 7 个月，涨幅 3.75 倍。Baseten 同步寻求 $110 亿，距离 2 月的 $50 亿 E 轮仅 3 个月，涨幅 2.2 倍。作为多模型推理的路由层，OpenRouter 在 6 个月内吞吐量翻 5 倍，同步拿下 $1.13 亿 C 轮。Latent Space 的点评直白：如果你要做多模型 inference，你就需要一个 router；而整个 inference 市场从独角兽跃升为十角兽的速度，正在让上一周的新闻立刻显得陈旧。<strong>AI 基础设施正在垂直化，投资人押注的不是某一家公司，而是整个 inference 层的不可绕过性。</strong></p>
+      <cite><a href="https://www.latent.space/p/ainews-new-ai-infra-decacorns-fireworks" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://simonwillison.net/2026/May/27/product-market-fit/" target="_blank" rel="noopener">Simon Willison：Anthropic 与 OpenAI 都已找到产品市场契合点</a></h3>
+      <p>Simon Willison 盯住一个数据点：Anthropic 和 OpenAI 今年 4 月同步发布新前沿模型，同步提高 API 价格，企业客户皱着眉头签了续费。他用"产品市场契合点（PMF）"的经典测试来解读这件事：真正找到 PMF 的公司，客户在涨价时的反应是"吸一口冷气，然后说好吧"，而不是立刻转走。</p>
+      <p>两个侧面强化了这个判断。微软内部取消 Claude Code 许可证、要求工程师在 6 月 30 日前迁往 Copilot CLI，表面看是 Anthropic 受挫，Willison 却把它读成需求有多真实的证明：Microsoft 之所以需要主动叫停，恰恰是因为工程师们在自掏腰包或用部门预算持续使用它，撑住了消费。OpenAI Codex 企业版同样取消了大客户折扣，直接按挂牌 API 价结算。两家公司在同一时间做出同样的定价决定，不像是协调，更像是同时读到了同一份市场信号。<strong>Claude Code 与 Codex 的定价胆量，是当前 AI 编码赛道最真实的景气指标。</strong></p>
+      <cite><a href="https://simonwillison.net/2026/May/27/product-market-fit/" target="_blank" rel="noopener">Simon Willison's Weblog</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-new-ai-infra-decacorns-fireworks" target="_blank" rel="noopener">swyx（Latent Space）：Harness 工程正成为 coding agent 真正的护城河</a></h3>
+      <p>本期 AINews 汇总了过去几天 Twitter 上一个收敛的论点：coding agent 的胜负手不再是 base model 有多强，而是 harness（执行脚手架）设计得有多好。所谓 harness，指的是围绕模型的那套环境：沙盒（隔离运行环境）、验证循环、上下文管理、动态技能路由。DeepSeek 正在专门组建 harness 团队；Google Gemini 的 Managed Agents 把 agent 基础设施封装成一个 API 调用；LangChain 的最新文档把同样的栈正式命名为"context governance + trustworthy memory + dynamic skill routing"。</p>
+      <p>衡量标准也在同步演进。DeepSWE 作为新的 coding benchmark 被从业者称为"第一个与真实开发体感对齐的 benchmark"——Theo 的原话是它给出的分数分布与"你在用这些模型写代码时的实际感受"一致，这是此前大多数 benchmark 做不到的。Qwen3.7 Max 在 Code Arena Frontend 榜上排第四，大致与 Claude Opus 4.6 在 agentic webdev 任务上持平。<strong>当所有人都在卷 base model，第一个把 harness 做成产品壁垒的公司会赢。</strong></p>
+      <cite><a href="https://www.latent.space/p/ainews-new-ai-infra-decacorns-fireworks" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://every.to/context-window" target="_blank" rel="noopener">Every / Dan Shipper：自动化反而驱动人类专业需求上升</a></h3>
+      <p>Every 发布播客新集"AI &amp; I"，Dan Shipper 被自己公司的 COO 反向采访，解释为什么"After Automation"这篇 8000 字的文章今年成了 Every 最广传播的内容。论点是反直觉的：Every 已经把每一个可以自动化的工作流都接上了 agent，公司却从 4 人长到了 30 人。</p>
+      <p>机制是这样的：当每个人都能用 AI 产出"还不错的初稿"，整个市场的 floor（基准水准）上升，同时大量接近 floor 的内容泛滥。"你的 zone 被大量差不多但不够好的东西填满。"能从这片泛滥里出头，需要的是能与 AI 协作、让输出跨越新 baseline 的专家。Agent 结构性地依赖人类来定方向；没有人决定什么重要、怎样更好，它们只产出平庸。每期新模型发布时多用 AI 做你已经擅长的事，你会比以前更被需要。</p>
+      <p>同一期邮件还提到，教宗 Leo XIV 的 AI 牧函《Magnifica Humanitas》与 Dan 的论点在同一个问题上停下来，方向却不同：AI 会让人类判断力更值钱——但，值钱对谁？<strong>「自动化让专业稀缺」不是安慰剂，但它悄悄预设了一个条件：你得先有判断力可以稀缺。</strong></p>
+      <cite><a href="https://every.to/context-window" target="_blank" rel="noopener">Every · Context Window</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/garrytan/status/2059521656532721964" target="_blank" rel="noopener">Garry Tan（YC CEO）：别用 2010 年的商业思维建 2026 年的公司</a></h3>
+      <p>Garry Tan 今日直接点名："Founders must stop trying to build 2010-era businesses with 2026-era technology." 背后的逻辑并不复杂：现在一个技术能力强的 founder 加上 AI，可以做到以前需要 20 人团队才能交付的事情。因此，按旧逻辑设计的融资计划、团队规模、工具选型，全都是给自己加阻力。YC 当前 batch 中约四分之一的公司在用"vibe coding"（感觉驱动式 AI 编程）快速找到产品市场契合点，这批公司的技术瓶颈几乎为零，唯一卡点是"你是否真正理解用户要什么"。<strong>2026 年的护城河不再是能不能做出来，而是能不能准确知道要做什么。</strong></p>
+      <cite><a href="https://x.com/garrytan/status/2059521656532721964" target="_blank" rel="noopener">X @garrytan</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Aaron Levie（Box CEO）+ Zara Zhang：SV 以外的企业在用 agent 同时继续招人；编程入口从终端转向桌面 app</h3>
+      <p>Aaron Levie 注意到一个反叙事的现象：SV 以外大量与他交谈的企业，正在采用 agent 工具的同时继续扩招。这与"AI 取代工作"的主导叙事相反，更接近"AI 让企业有信心扩张"。Levie 认为这不是巧合，而是 AI 降低了执行成本、反而让更多项目变得可行。</p>
+      <p>Zara Zhang 则记录了一个工具链迁移信号：过去一个月，她从命令行终端完全迁移到了 Codex 和 Claude Code 的桌面 app，工作流发生了根本性改变。这不是偏好问题，而是交互模式的代差——从手打命令到可见上下文、持久状态、多任务并行。终端作为编程主界面的时代，可能比我们想象的提前结束。<strong>Claude Code 和 Codex 的桌面 app，正在做 IDE 十年前对文本编辑器做的事。</strong></p>
+      <cite><a href="https://x.com/levie/status/2059482349977653619" target="_blank" rel="noopener">X @levie</a> · <a href="https://x.com/zarazhangrui/status/2059354487823978586" target="_blank" rel="noopener">X @zarazhangrui</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://xiaobot.net/post/bb16044d-df69-4a26-8c91-41650d6d50d4" target="_blank" rel="noopener">纯银 Vol.20260527：正反馈是命运的指南针</a></h3>
+      <p>纯银从行业下行期的一个分歧讲起：他和前老板孟岩都把"这件事有用户价值"当作明确的正反馈，愿意投资短期收益不大但有用户价值的动作，有耐心等待从用户价值中演化出机遇。而绝大多数老板只把数据增长视为正反馈，感受不到"用户价值"本身的驱动力——于是在增长不确定时，唯一选择是盲目抄袭或毫无逻辑地赌大跃进，两者皆输。</p>
+      <p>他也谈到自己的个人偏好：除了用户价值，"独特性"是另一个正反馈来源——能做出融合自己人格与气质的东西，施展创造力，这种兴奋甚至比商业成功更强烈。"所以我做产品很有特色，但创业并不成功。"这句自评几乎是整篇文章最诚实的一句话。</p>
+      <p>"正反馈千人千面，命运也各自不同。你从哪里获得正反馈，决定了你往哪个方向走，有耐力走多远。"<strong>在充满噪音的判断环境里，正反馈的来源不是技巧问题，是内核问题——它决定你在没有奖励时是否还能继续走。</strong></p>
+      <cite><a href="https://xiaobot.net/post/bb16044d-df69-4a26-8c91-41650d6d50d4" target="_blank" rel="noopener">小报童 · 纯银</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://tim.blog/2026/05/26/sami-inkinen/" target="_blank" rel="noopener">Tim Ferriss × Sami Inkinen：10 万人的 2 型糖尿病逆转实验</a></h3>
+      <p>Sami Inkinen 是 Virta Health 的创始人，也是横渡太平洋的划桨者：他和妻子不借助机动力划桨 2750 英里完成了跨洋挑战，本人同时是 2 型糖尿病（T2D）逆转的亲历者。Virta Health 用低碳水化合物饮食结合远程医疗的方案，已帮助超过 10 万人逆转或显著改善 T2D，而不依赖药物加量或手术。</p>
+      <p>对 PM 视角而言，这个案例有两个值得拆解的地方：一是"逆转"而非"管理"作为产品 promise 的差异——它改变了用户的结果预期和坚持动力；二是代谢健康领域的供需错配，美国有 1.1 亿成年人处于糖尿病或前驱糖尿病状态，而现有医疗体系的应对模式几乎全是开药维持。<strong>把慢性病从"管理"重新框架为"可逆转"，是这一类健康产品能跑出来的核心叙事转变。</strong></p>
+      <cite><a href="https://tim.blog/2026/05/26/sami-inkinen/" target="_blank" rel="noopener">Tim Ferriss Show</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2605.26099" target="_blank" rel="noopener">Language Models Need Sleep</a></h3>
+      <p><strong>现状：</strong>长链条 Agent（执行多步骤任务的 AI 系统）会积累极长的历史上下文，KV 缓存（存储注意力计算中间状态的内存区域）随之无限膨胀，推理成本直线上升。</p>
+      <p><strong>问题：</strong>现有做法要么丢弃旧上下文（丢失信息），要么保留全部（成本不可持续）。</p>
+      <p><strong>解决方案：</strong>该论文提出"睡眠"机制：模型定期进行离线整合阶段，通过 N 次递归过遍历累积上下文、将其转化为持久快权重（fast weights，可理解为压缩记忆），再清空 KV 缓存。推理（"醒着"）阶段延迟不受影响。</p>
+      <p><strong>价值：</strong>agent 可以在不扩大 KV 缓存的前提下维持长期记忆，计算量被转移到离线的"睡眠"阶段，本质上是用异步计算换掉了内存带宽瓶颈。</p>
+      <p><strong>未来方向：</strong>与 agent 记忆系统（如 Anthropic Memory 功能）的整合，以及在多 turn 对话和长 Agent 轨迹任务中的实测验证。</p>
+      <cite><a href="https://arxiv.org/abs/2605.26099" target="_blank" rel="noopener">arXiv 2605.26099</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://microsoft.ai/news/mai-image-2-5-launches-at-no-3-on-arena-ai/" target="_blank" rel="noopener">MAI-Image-2.5：微软文生图模型冲进 Arena 榜前三</a></h3>
+      <p><strong>现状：</strong>AI 图像生成（text-to-image）排行榜长期由 OpenAI（DALL·E 系列）和 Google（Imagen 系列）占据前两位，其他玩家难以突破。</p>
+      <p><strong>问题：</strong>微软在图像生成领域的自研能力一直落后于语言模型能力。</p>
+      <p><strong>解决方案：</strong>MAI-Image-2.5 于 5 月 27 日发布，在 Arena 文生图排行榜（由用户对比投票决定的人类偏好排名）中以 1254 分进入第三位，打破了此前 OpenAI/Google 双寡头格局。模型在文字渲染、风格化插图和商业图像三个维度相比前代 MAI-Image-2 有"阶跃式"提升。</p>
+      <p><strong>价值：</strong>微软自研图像模型进前三，意味着它在 Azure AI Foundry 上拥有了不依赖 OpenAI 授权的图像能力，降低了对外部供应商的依赖。</p>
+      <p><strong>未来方向：</strong>模型预计在两周内上线 MAI Playground 和 Azure Foundry。</p>
+      <cite><a href="https://microsoft.ai/news/mai-image-2-5-launches-at-no-3-on-arena-ai/" target="_blank" rel="noopener">Microsoft AI</a> · <a href="https://www.latent.space/p/ainews-new-ai-infra-decacorns-fireworks" target="_blank" rel="noopener">AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2603.20278" target="_blank" rel="noopener">OpenResearcher：开源端到端长链条深度研究 Agent</a></h3>
+      <p><strong>现状：</strong>深度研究 Agent（能自主搜索、聚合证据、撰写报告的 AI）是当前 LLM 能力的前沿任务，商业产品（Perplexity Deep Research、OpenAI Deep Research）均为闭源。</p>
+      <p><strong>问题：</strong>开源深度研究 agent 缺乏完整的训练轨迹数据，难以复制商业系统的表现。</p>
+      <p><strong>解决方案：</strong>OpenResearcher 提供从轨迹合成到训练的全开源流水线：多 agent 协作模拟复杂工具整合推理，生成高保真训练数据；模型规模覆盖 2B 到 35B，支持长链条事实检索、引用溯源与报告合成。</p>
+      <p><strong>价值：</strong>研究社区第一次有了可复现、可改造的深度研究 agent 基准，不依赖专有 API 或闭源数据。</p>
+      <p><strong>未来方向：</strong>多源跨语言检索与科学领域专项适配（医学、法律、金融）。</p>
+      <cite><a href="https://arxiv.org/abs/2603.20278" target="_blank" rel="noopener">arXiv 2603.20278</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.aibase.com/news/28371" target="_blank" rel="noopener">MiniMax M3：双阶段块稀疏 Attention，百万 token 下效率飞跃</a></h3>
+      <p><strong>现状：</strong>主流 Transformer 的 Full Attention（全注意力机制）计算量随输入长度平方增长，1M token 以上的推理成本极高。MiniMax 前代模型 M2 曾因稀疏 attention 不够稳定而回退到 Full Attention。</p>
+      <p><strong>问题：</strong>如何在保持精度的前提下，让超长上下文推理在工业规模上可用。</p>
+      <p><strong>解决方案：</strong>M3 重新启用稀疏 attention，采用"Index Branch + Sparse Branch"双阶段设计：Index 分支快速筛选候选 token，Sparse 分支精确计算注意力，避免了全量计算。据报告，与 M2 相比，在 1M token 场景下预填充（处理输入）加速 9.7 倍，解码（生成输出）加速 15.6 倍。</p>
+      <p><strong>价值：</strong>如果数字属实，M3 将使超长文档分析、多轮长对话在实际产品中的推理成本降低一个数量级。</p>
+      <p><strong>未来方向：</strong>开源计划已披露，但技术细节（论文、die photo 等验证材料）尚未发布。</p>
+      <cite><a href="https://www.aibase.com/news/28371" target="_blank" rel="noopener">AI Base</a> · <a href="https://www.latent.space/p/ainews-new-ai-infra-decacorns-fireworks" target="_blank" rel="noopener">AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-new-ai-infra-decacorns-fireworks" target="_blank" rel="noopener">CUSP Benchmark：模型能选方向，但不知道突破什么时候发生</a></h3>
+      <p><strong>现状：</strong>AI for Science 的一个关键主张是：AI 能加速科研。但"加速"的哪个环节，有多少实证，仍模糊。</p>
+      <p><strong>问题：</strong>现有 AI 科研 benchmark 多数测"能否做出已知正确答案的题"，无法测"能否预判什么方向值得研究、何时会出现突破"。</p>
+      <p><strong>解决方案：</strong>Sakana AI、Stanford、Oxford 和 AI2 联合构建 CUSP benchmark，专门评估模型在科学预测任务上的能力：不仅要识别有潜力的研究方向，还要预判突破的时机。结论：当前模型在"识别方向"上表现尚可，在"预判突破何时发生"上表现明显更差。</p>
+      <p><strong>价值：</strong>为 AI 科研能力设立了更接近真实科学工作的评估标准——科学家的核心判断力之一是 timing sense（时机判断），而不只是方向感。</p>
+      <p><strong>未来方向：</strong>将此类时序预测能力整合进科研 agent，而非只评测文献综述与假设生成。</p>
+      <cite><a href="https://www.latent.space/p/ainews-new-ai-infra-decacorns-fireworks" target="_blank" rel="noopener">AINews / Latent Space</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>Matt Turck：「AI 最大的脑洞是——其实没改变多少」，如果多数公司和个人都能平稳适应，历史会把这次当成普通技术迭代<a class="glance-src" href="https://x.com/mattturck/status/2059411493196529751" target="_blank" rel="noopener">X @mattturck →</a></li>
+      <li>Peter Steinberger（PSPDFKit 作者）：autoreview（自动代码审查）是他过去一段时间加入 Claude Code 工作流里影响最大的 skill；同期还把图像处理逻辑提取成独立库并"vibe-coded"了一个 opus 音频组件<a class="glance-src" href="https://x.com/steipete/status/2059453909819654554" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>Thariq：给非技术人员用 Claude Code 的基础技巧——把文件全扔进一个文件夹，连接 Gmail、Google Calendar 等数据源，写脚本，输出 HTML；技术门槛几乎为零<a class="glance-src" href="https://x.com/trq212/status/2059363113963540788" target="_blank" rel="noopener">X @trq212 →</a></li>
+      <li>Guillermo Rauch（Vercel CEO）：「反馈是礼物，批评是双倍的礼物」，Next.js Night 阿姆斯特丹 6 月 11 日<a class="glance-src" href="https://x.com/rauchg/status/2059444220956491937" target="_blank" rel="noopener">X @rauchg →</a></li>
+      <li>Nikunj Kothari：每一家 venture-backed app 公司都需要天然地成为数据公司，或者 fintech 公司<a class="glance-src" href="https://x.com/nikunj/status/2059424310079697188" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Amjad Masad（Replit CEO）：在约旦独立日庆典上获国王 Abdullah II 颁发的"卓越勋章"，同日回约旦体验职业漂移赛车<a class="glance-src" href="https://x.com/amasad/status/2059518682825392525" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>Dan Shipper（Every CEO）：纽约科技周期间 Every 棕色砖楼开放参观，6 月欢迎来访<a class="glance-src" href="https://x.com/danshipper/status/2059353269923618819" target="_blank" rel="noopener">X @danshipper →</a></li>
+      <li>Aditya Agarwal：「在探索什么值得构建」，如果你也在前沿建造，欢迎连线<a class="glance-src" href="https://x.com/adityaag/status/2059348812444151854" target="_blank" rel="noopener">X @adityaag →</a></li>
+      <li>Sam Altman：在飞行途中（链接未注明目的地）<a class="glance-src" href="https://x.com/sama/status/2059492605634007125" target="_blank" rel="noopener">X @sama →</a></li>
+      <li>Claude 官号：「你在构建什么？」，配出多张用户截图<a class="glance-src" href="https://x.com/claudeai/status/2059292347678986251" target="_blank" rel="noopener">X @claudeai →</a></li>
+      <li>Peter Yang（Roblox PM）：分享了某个令他感到烦恼的产品体验（内容为 link，未展开）<a class="glance-src" href="https://x.com/petergyang/status/2059290769824084083" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Simon Willison 引用 Kyle Ferrana 语录：「你不是在训练模型，你是在训练自己」（AI 工作流的元认知提示）<a class="glance-src" href="https://simonwillison.net/2026/May/27/kyle-ferrana/" target="_blank" rel="noopener">Simon Willison →</a></li>
+      <li>Chrome 内置 AI API 实战案例：Drupal 用 Summarizer API 生成 CKEditor SEO 标签；Yahoo Japan 用 Prompt API 做社区评论审核；Trip.com 用 AI 摘要帮用户导航复杂航班预订，全部离线、保护隐私<a class="glance-src" href="https://tldrnewsletter.com" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Sundar Pichai 接受 40 分钟专访，谈 Google I/O 后如何重新定义搜索，以及把公司带入更激进姿态的决策过程<a class="glance-src" href="https://tldrnewsletter.com" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Stack Overflow 论坛因 AI 流量锐减陷入冷清，公司靠出售 API 数据给 AI 训练而存活——用老社区积累的可信度换取新时代的生意<a class="glance-src" href="https://tldrnewsletter.com" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>美国航空将在 500+ 架 Airbus 窄体机上安装 Starlink；Delta 定了 Amazon Kuiper（2028），United、Southwest、Alaska 也选了 Starlink<a class="glance-src" href="https://tldrnewsletter.com" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Dropbox CEO Drew Houston 卸任，掌舵 19 年；现任产品负责人 Ashraf Alkarmi 将先担任联席 CEO 再独立接班<a class="glance-src" href="https://tldrnewsletter.com" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Every 发布 Codex 知识工作使用指南（非工程师版）：涵盖五级用法从单次任务到复利系统，以及 13 个工作流模板（收件箱审阅、研究简报、GTM 计划、客服路由等）<a class="glance-src" href="https://every.to/guides/codex-for-knowledge-work" target="_blank" rel="noopener">Every →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-05-26.html">← MAY 26</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
