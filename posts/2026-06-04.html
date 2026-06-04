@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — June 4, 2026</title>
+  <meta name="description" content="SpaceX 以 $135/股定价完成史上最大 IPO，估值 $1.77 万亿；Reve 2 与 Ideogram 4.0 同日发布，图像布局控制这道 AGI-Hard 题被标注 + 代码组合破解；Aaron Levie 拿出就业数据说工程岗位不降反升，AI 让代码能力的价值膨胀。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">June 4, 2026</h1>
+
+  <p class="post-lead">SpaceX 以 $135/股定价完成史上最大 IPO，估值 $1.77 万亿，融资用于轨道数据中心和火星；Reve 2 与 Ideogram 4.0 同日发布，图像布局控制这道 AGI-Hard 题被标注与代码的组合破解；Aaron Levie 拿出就业数据说工程岗不降反升，AI 让代码能力的价值膨胀，不是缩水。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.cnbc.com/2026/06/04/spacex-ipo-pricing.html" target="_blank" rel="noopener">SpaceX 定价 $135/股，史上最大 IPO：$1.77 万亿估值，NASDAQ「SPCX」下周开始交易</a></h3>
+      <p>SpaceX 完成 IPO 定价，每股 $135，计划融资 $744 亿，超过沙特阿美 2019 年的纪录，成为有史以来规模最大的公开发行。公司计划在 NASDAQ 以代码 SPCX 上市，上市时间预计下周。融资用途包括：把 AI 数据中心送入轨道、建设月球工厂，以及推进人类登陆火星的时间表。</p>
+      <p>这次 IPO 的估值基础耐人寻味：SpaceX 的收入主要来自 Starlink 卫星宽带业务，而不是火箭发射本身，投资人赌的是轨道基础设施长期的垄断租金。</p>
+      <cite><a href="https://links.tldrnewsletter.com" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://about.fb.com/news/2026/06/meta-ai-agents-for-business/" target="_blank" rel="noopener">Meta AI 商业代理上线：WhatsApp、Instagram、Messenger 全覆盖，目标接管整个企业运营</a></h3>
+      <p>Meta 面向企业推出 AI 代理（AI agent，指能自主接受任务、规划并执行多步操作的程序），覆盖 WhatsApp、Instagram 和 Messenger 三个平台。代理可以回答客户问题、预约、处理销售，Meta 宣称下一步将拓展到"帮企业运营整个业务"。目前免费，未来将切换为分层付费订阅模式。</p>
+      <p>这是一个从触达工具向业务操作系统转型的明确信号：Meta 拥有全球最大的消息网络，现在把这个网络变成企业 AI 代理的入口，把沟通渠道变成 SaaS 竞争者。</p>
+      <cite><a href="https://links.tldrnewsletter.com" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/thsottiaux/status/2062329981548802523" target="_blank" rel="noopener">Thibault Sottiaux（OpenAI Codex 团队）：24 小时三次故障，我们重置了使用上限，并在修复</a></h3>
+      <p>Codex（OpenAI 的 AI 代码代理产品）在 24 小时内出现三次独立的可靠性事故。Sottiaux 主动发帖承认：「三次太多了，我们正在采取积极措施防止复发，并已重置用户使用上限。」这条帖子获得超过 8700 次点赞，是本日最高互动的 AI 相关推文之一。</p>
+      <p>值得注意的是处理方式本身：不是悄悄修复，而是公开承认、重置配额作为补偿。在 AI 产品的可靠性期待仍在形成阶段，这种透明度姿态正在成为头部产品的一种信号。</p>
+      <cite><a href="https://x.com/thsottiaux/status/2062329981548802523" target="_blank" rel="noopener">X @thsottiaux</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-reve-2-and-ideogram-4-layouts" target="_blank" rel="noopener">swyx（Latent Space 主编）：Reve 2 与 Ideogram 4.0 同日发布——图像布局控制不再是 AGI-Hard 问题</a></h3>
+      <p>四年前，Latent Space 曾将图像合成中的构图控制（按照指定空间关系、精确摆放元素的能力）定性为「部分 AGI-Hard」——意味着这个能力边界短期内无法被 AI 越过。今天，两家独立公司（Reve 和 Ideogram）在同一天发布了都以布局控制为核心卖点的新模型，swyx 的评论直接：「这道关卡今年倒下了，两家同日发布不可能是巧合。」</p>
+      <p>两者的共同突破方向是：用强标注（labeling）和代码化（JSON 化提示词）的方式把「布局意图」显式地传递给模型，而不是让模型从自然语言中猜测空间关系。Ideogram 4.0 在开源图像模型竞技场（Arena）排名第一，Reve 2 仍为闭源但视觉效果被广泛引用。Arena 整体排名上 GPT-Image-2 仍领先，但这条路上的追赶速度已经超出预期。<strong>图像合成的 AGI-Hard 门槛在 2026 年上半年被标注 + 代码组合方法拆解，这不是渐进改进，而是方法论上的范式切换。</strong></p>
+      <cite><a href="https://www.latent.space/p/ainews-reve-2-and-ideogram-4-layouts" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/levie/status/2062335852379066698" target="_blank" rel="noopener">Aaron Levie（Box CEO）：工程就业数据与 AI 替代预测相反；AI token 消费已超历史软件预算数量级</a></h3>
+      <p>Levie 今天发了两条相互印证的数据观察。第一：最新就业数据显示工程岗位数量不降反升，与「AI 将大幅压缩软件工程师需求」的主流预测相悖——他认为 AI 工具目前更像是扩张了需求边界，而不是替代了现有的人力存量。</p>
+      <p>第二：企业在 AI token 上的支出，已经大幅超过同等规模历史软件许可费——一个员工的月均软件许可费通常在 $10-$50 之间，而 AI token 消耗很快突破这个数量级。这组数据的含义是：AI 不是在替代软件预算，而是在创造一个全新的、更大的消费类别。<strong>Levie 的判断是反叙事的：AI 对工程就业的影响比想象中复杂，拿 token 消费和软件授权做对比才是理解 AI 经济影响力的正确刻度。</strong></p>
+      <cite><a href="https://x.com/levie/status/2062335852379066698" target="_blank" rel="noopener">X @levie</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/thsottiaux/status/2062423528927015414" target="_blank" rel="noopener">Thibault Sottiaux（OpenAI Codex 团队）：OpenAI 内部所有小向量指向同一方向，接下来几周会看到它们汇聚</a></h3>
+      <p>Sottiaux 发了一条 760 点赞的预告性推文：「OpenAI 内部很多小的方向向量都在指向同一个地方。很期待看到它们在接下来几周聚合成形。」没有具体内容，但来自 Codex 团队的负责人，结合当天 Codex 故障透明处理、Meta 商业代理发布和 Cursor 40% PR 来自云端代理的数据点，这条预告透露了某种集体跃迁前的节奏感。</p>
+      <p>技术领域的预告推文通常意味着：产品正在内部达到可以对外讲故事的状态，而不只是在开发。<strong>从 Sottiaux 的角度看，OpenAI 的下一步不只是修复 Codex 的可靠性，而是在积聚更大的动作。</strong></p>
+      <cite><a href="https://x.com/thsottiaux/status/2062423528927015414" target="_blank" rel="noopener">X @thsottiaux</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://every.to/on-every/spiral-4-0-goes-agent-native" target="_blank" rel="noopener">Every：Spiral 4.0 上线——写作 harness 的 87% 风格匹配率，MCP/CLI/API 全面 agent-native，$15/月</a></h3>
+      <p>Spiral（Every 旗下的 AI 写作工具）发布 4.0 版本，核心更新有四条：一、新 Style Engine（风格引擎）——通过笔迹分析（stylometry，从用词、句式、标点等特征识别作者风格）计算用户写作指纹，在盲测评估中，生成的草稿混入用户真实样本后有 87% 的概率无法被 AI 识别为 AI 生成；二、支持 MCP（模型上下文协议，允许 AI 代理调用外部工具的标准接口）、CLI 和 API，可作为任何工作流中的写作模块被代理调用；三、团队工作区，共享风格、知识库和草稿；四、降价 $10，个人计划起步价 $15/月。</p>
+      <p>Spiral 的定位比「AI 写作助手」更精准：它是写作过程的 harness（调度框架），在构思验证、起草、编辑三个阶段提供不同深度的介入，系统提示词已迭代 131 次。MCP 接口意味着它可以作为其他 Agent 的写作子模块被调用，而不是只在自己的界面里工作。<strong>Spiral 4.0 的 87% 风格匹配率是目前写作 AI 工具里最可量化的风格保真度指标，agent-native 接口让它从终端产品变成基础设施层。</strong></p>
+      <cite><a href="https://every.to/on-every/spiral-4-0-goes-agent-native" target="_blank" rel="noopener">Every</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/steipete/status/2062390654022332691" target="_blank" rel="noopener">Peter Steinberger（PSPDFKit 作者、OpenClaw 创始人）：「造工具来造工具」，OpenClaw 每周 1000–2000 万 npm 下载</a></h3>
+      <p>Steinberger 在 Microsoft Build 的演讲题目是「Build the thing that builds the thing」（造工具来造工具），视频已公开。同一天他透露 OpenClaw 本周 npm 下载量创历史新高，合并 Docker、GitHub 和企业内部部署后估计每周真实用量在 1000 万到 2000 万次之间。今日 OpenClaw 活动有超过 1300 人报名，同步直播。</p>
+      <p>这组数字的背景是：OpenClaw 是一个开源的 AI 代理运行时（runtime，负责调度代理任务、管理工具调用和上下文的执行环境），它的增长和开发者对 Agent 基础设施的需求正相关。Steinberger 今天同时宣布 Microsoft 将把 OpenClaw 引入企业部署场景，这意味着它从开源工具升格为微软认可的企业级 Agent 运行时。<strong>OpenClaw 的轨迹印证了 Steinberger MS Build 演讲的核心判断：下一个大机会在「帮 Agent 更好地运行」，而不只是训练更好的模型。</strong></p>
+      <cite><a href="https://x.com/steipete/status/2062390654022332691" target="_blank" rel="noopener">X @steipete</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/_catwu/status/2062408623565984209" target="_blank" rel="noopener">Cat Wu（Anthropic 数据团队）：用 Claude 自动化了 95% 的业务分析查询，博客详述 eval、消融实验和线上验证</a></h3>
+      <p>Anthropic 数据团队公开了一个内部实践案例：他们用 Claude 将 95% 的业务分析查询从人工处理转为自动化。博客文章的重点不是「我们用 AI 做了 X」，而是方法论：如何设计评估体系（eval，用自动化测试来衡量 AI 回答质量的机制）、怎样做消融实验（ablation，逐步移除某个变量来确认它是否真正有效的实验设计），以及如何进行线上验证（让真实用户使用，观察生产环境中的行为）。</p>
+      <p>这是 Anthropic 用自家产品的公开自证。值得 PM 关注的不只是「95%」这个数字，而是他们揭示的流程：先跑 eval 再上线、有消融实验支撑而不是靠感觉调参、线上验证是必须的环节。<strong>Anthropic 自己把业务分析自动化到 95% 并公开方法论，这是对「AI 能否可信地处理数据分析工作」这个问题最有说服力的答案之一。</strong></p>
+      <cite><a href="https://x.com/_catwu/status/2062408623565984209" target="_blank" rel="noopener">X @_catwu</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/rauchg/status/2062199585322529108" target="_blank" rel="noopener">Guillermo Rauch（Vercel CEO）：在业务数据上生成前端是 coding AI 的杀手应用，仪表板时代不会回头</a></h3>
+      <p>Rauch 今天发的这条推文（268 次点赞）直接点出了一个具体的杀手级应用场景：把企业内部业务数据变成可交互前端。他的核心判断是：过去仪表板是刚性的、需要工程师专门搭建，现在 coding AI 可以根据自然语言直接在数据之上生成前端界面——这是「语言直接驱动世界」的一个具体落地点。Vercel 已经在其平台上支持这种工作流。</p>
+      <p>这个方向和 Anthropic 数据团队的实践形成了呼应：一个负责自动化分析的后端 + 一个可以按需生成的前端，两者结合就是一个可以被业务团队直接驱动的全栈 AI 分析产品。<strong>从「做完分析给我看报告」到「让我直接在数据上交互」，这是企业 AI 工具下一个容易被低估的演化方向。</strong></p>
+      <cite><a href="https://x.com/rauchg/status/2062199585322529108" target="_blank" rel="noopener">X @rauchg</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://x.com/danshipper/status/2062144269285023839" target="_blank" rel="noopener">Dan Shipper（Every 联创）：凝视机器神，还能站稳脚跟吗——拒绝把自我等同于可被测量的那部分</a></h3>
+      <p>Shipper 今天发了一条 33 字的推文，分量比字数重：「你能凝视机器神的面目、仍然保持脚踏实地吗？你能拒绝把自我混同于那些可以被测量、言说或把握的东西吗？如果可以，你会走得很远。」没有具体 AI 产品的语境，却比大多数 AI 分析文章更准确地描述了这个时代对认知的挑战。</p>
+      <p>在 AI 能力快速膨胀的环境下，一种常见的心理扭曲是：用 AI 输出来定义自我价值。如果模型比我写得好，我是谁？如果代理比我效率高，我还有什么必要性？Shipper 的话指向的是另一条路：自我不等于可测量的那部分。那些无法被 benchmark（基准测试，通过标准化任务评分比较 AI 能力的方法）量化的感受、判断和在场感，正是人的核心地基。<strong>在 AI 输出日益卓越的当下，Shipper 给的提醒是：凝视不等于臣服，站稳不等于抵抗，真正的稳定来自承认自己有一部分是语言和数字抵达不了的地方。</strong></p>
+      <cite><a href="https://x.com/danshipper/status/2062144269285023839" target="_blank" rel="noopener">X @danshipper</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/trq212/status/2062217018187923783" target="_blank" rel="noopener">Thariq（Anthropic 产品）：这个提示词写得好，因为 Suzanne 是个作家——她写了短篇小说《购物中心》</a></h3>
+      <p>Thariq 分享了一个让人稍微愣了一下的细节：某条被广泛传播的、写得异常精准的 Claude 提示词，之所以读起来和其他提示词不一样，是因为写它的人 Suzanne 在业余时间是个小说家。他把她的短篇《Mall of America》（购物中心）的链接附在了推文里，说这是他最喜欢的故事之一。</p>
+      <p>这条推文在技术圈引发了超过 900 次点赞，背后的原因不难理解：它把通常被当作「工程活」的提示词写作，重新放回到了语言和感受的土壤里。写好提示词的人不必是最懂技术的人，而是最懂「用语言精确表达意图」的人——而这恰好是文学训练做的事。<strong>Thariq 的这条帖子是个温和的提醒：AI 时代里，写作能力不只是内容输出的工具，也是和模型对话的基础语法。</strong></p>
+      <cite><a href="https://x.com/trq212/status/2062217018187923783" target="_blank" rel="noopener">X @trq212</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/garrytan/status/2062285811366904091" target="_blank" rel="noopener">Garry Tan（YC 总裁）：San Francisco is healing，我们不再上这种公关的当了</a></h3>
+      <p>Tan 今天转发了一条关于旧金山近况的内容，配文是「旧金山正在愈合。我们不再相信这种荒谬的公关话术了。」没有进一步展开，但语气鲜明：他在记录一种他认为真实发生的城市复苏，并把它和某种否认性叙事对置。</p>
+      <p>这和他过去两年积极参与旧金山治理改革的公众形象一脉相承：Tan 把自己的个人影响力押注在「旧金山能修好」这个判断上，每隔一段时间就会发这类「进度汇报」式的推文。对于在旧金山工作生活的创业者来说，这是一种少见的「城市作为主角」的叙事，背后是对公共治理和创业生态可以互相修复的信念。<strong>Tan 的旧金山叙事不是旅游宣传，而是一个长期信念持有者在记录他投注的那个赌局正在兑现。</strong></p>
+      <cite><a href="https://x.com/garrytan/status/2062285811366904091" target="_blank" rel="noopener">X @garrytan</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://ai.google.dev/gemma" target="_blank" rel="noopener">Gemma 4 12B：去掉独立视觉/音频编码器的多模态架构，16GB VRAM 消费级设备本地运行</a></h3>
+      <p><strong>现状：</strong>多模态大模型（同时处理文字、图像、音频的模型）通常需要独立的编码器（encoder，把图像或音频转换为模型可理解表示的专用模块），架构复杂、参数量大，难以在消费级硬件上本地运行。</p>
+      <p><strong>问题：</strong>独立编码器增加了模型体积和推理延迟，并引入了模态对齐的额外复杂性；消费级设备（16GB VRAM）无法运行大多数多模态模型。</p>
+      <p><strong>解决方案：</strong>Gemma 4 12B 完全移除独立的视觉和音频编码器：图像通过轻量嵌入模块处理，原始音频直接投影到文本 token 空间，所有模态共用同一个主干 LLM（大语言模型）。在量化（quantization，压缩模型权重精度以降低内存占用的技术）后，可在低至 8GB RAM 的设备上运行。Apache 2.0 开源协议，可商用。</p>
+      <p><strong>价值：</strong>多模态能力从云端下沉到个人设备，vLLM、Ollama、llama.cpp/MLX 立即跟进支持。<strong>未来方向：</strong>无编码器的多模态架构设计将成为端侧（on-device）AI 的主流路径，独立编码器模式将被逐步取代。</p>
+      <cite><a href="https://ai.google.dev/gemma" target="_blank" rel="noopener">Google AI</a> · <a href="https://www.latent.space/p/ainews-reve-2-and-ideogram-4-layouts" target="_blank" rel="noopener">AINews</a> · <a href="https://links.tldrnewsletter.com" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://ideogram.ai" target="_blank" rel="noopener">Ideogram 4.0：开源权重图像模型竞技场排名第一，JSON 提示精确控制布局</a></h3>
+      <p><strong>现状：</strong>图像生成模型通常接受自然语言提示词，但模型对空间关系的理解不稳定，元素位置、大小和相对布局难以精确控制，大量试错才能得到想要的构图。</p>
+      <p><strong>问题：</strong>自然语言提示词对空间指令的表达精度有限；模型需要从模糊描述中猜测空间意图，导致布局失控、文字渲染错误。</p>
+      <p><strong>解决方案：</strong>Ideogram 4.0 训练时采用 JSON 格式的结构化提示词，用代码化的方式明确描述每个元素的位置、颜色、文本内容和关系，将布局意图从「人类语言」转换为「程序化规格」传递给模型。9.3B 参数，开源权重，已在 fal 和 Hugging Face 部署。</p>
+      <p><strong>价值：</strong>Arena 竞技场中排开源图像模型第一名，文字渲染和品牌/商业设计场景表现尤为突出。<strong>未来方向：</strong>结构化 JSON 提示成为图像生成领域精确控制的新标准接口，取代纯自然语言提示的模糊性。</p>
+      <cite><a href="https://ideogram.ai" target="_blank" rel="noopener">Ideogram</a> · <a href="https://www.latent.space/p/ainews-reve-2-and-ideogram-4-layouts" target="_blank" rel="noopener">AINews</a> · <a href="https://www.bensbites.com/p/build-tools-to-build-more" target="_blank" rel="noopener">Ben's Bites</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-reve-2-and-ideogram-4-layouts" target="_blank" rel="noopener">Reve 2：布局优先图像生成，与 Ideogram 4.0 同日发布，印证图像合成进入新范式</a></h3>
+      <p><strong>现状：</strong>主流图像生成模型的生成过程对空间布局的控制是事后修正（ControlNet 等技术），而非模型本身的训练目标。</p>
+      <p><strong>问题：</strong>事后布局控制是补丁式方案，与生成过程解耦，限制了空间控制的精度和自然度。</p>
+      <p><strong>解决方案：</strong>Reve 2 将空间布局作为训练时的核心目标，通过强标注数据（包含精确的空间位置信息的训练集）将布局理解嵌入模型的基础能力层，而不是依赖后处理。目前闭源。</p>
+      <p><strong>价值：</strong>与 Ideogram 4.0 同日发布，两家独立团队同时攻克布局控制问题，印证了这个方向的可行性，而非孤例。<strong>未来方向：</strong>布局意图的原生嵌入将成为下一代图像生成模型的基准能力，当前「文字生成，事后控制布局」的主流范式将被颠覆。</p>
+      <cite><a href="https://www.latent.space/p/ainews-reve-2-and-ideogram-4-layouts" target="_blank" rel="noopener">AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.bensbites.com/p/build-tools-to-build-more" target="_blank" rel="noopener">Miso One 8B TTS：单次音色克隆，110ms 延迟，开源权重，直接参与语音合成榜单竞争</a></h3>
+      <p><strong>现状：</strong>开源 TTS（text-to-speech，文字转语音）模型通常在表现力和延迟之间存在明显取舍，要么延迟低但声音平淡，要么表现力强但实时性差；单次音色克隆（one-shot voice cloning，仅需少量样本音频即可复制特定人声的能力）对开源模型来说仍较难实现。</p>
+      <p><strong>问题：</strong>实时语音 Agent 需要低于 150ms 的端到端延迟才能达到自然对话体验，同时需要多样化的声音表现力和快速的音色适配能力。</p>
+      <p><strong>解决方案：</strong>Miso One 是 8B 参数开源权重 TTS 模型，声称 110ms 延迟，支持单次音色克隆，侧重表现力语音合成，面向语音 Agent 大规模部署场景。</p>
+      <p><strong>价值：</strong>8B 参数量在表现力和延迟之间找到新的平衡点，开源权重允许私有部署。<strong>未来方向：</strong>高表现力、低延迟、可私有部署的开源 TTS 将推动语音 Agent 脱离对闭源 API 的依赖，成为 Agent 音频层的默认组件。</p>
+      <cite><a href="https://www.bensbites.com/p/build-tools-to-build-more" target="_blank" rel="noopener">Ben's Bites</a> · <a href="https://www.latent.space/p/ainews-reve-2-and-ideogram-4-layouts" target="_blank" rel="noopener">AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.bensbites.com/p/build-tools-to-build-more" target="_blank" rel="noopener">Harvey + Kimi 2.6 专域精调：法律代理基准超越 Claude Opus 4.7，成本低 11 倍</a></h3>
+      <p><strong>现状：</strong>法律 AI（legal AI）产品通常使用通用前沿模型（如 Claude、GPT），这些模型能力全面但在特定法律任务上未经专门优化，且调用成本高。</p>
+      <p><strong>问题：</strong>通用模型在垂直领域任务上无法充分发挥训练数据和架构的专域优势，成本居高不下——企业级法律场景的 token 消耗量巨大。</p>
+      <p><strong>解决方案：</strong>Harvey 使用 Kimi 2.6（Moonshot AI 的开源/可微调基础模型）进行法律领域专门微调（fine-tuning，在通用模型基础上用领域数据继续训练以适配特定场景），在 Harvey 自建的法律基准测试上超越了 Claude Opus 4.7，同类任务成本约为 Opus 的 1/11。</p>
+      <p><strong>价值：</strong>专域精调路线在成本效率上的优势正在跨越通用前沿模型的能力壁垒，特别是在有明确、可测评的垂直场景中。<strong>未来方向：</strong>「用可精调的基础模型 + 领域数据」击败通用旗舰模型的成本/性能组合将在法律、医疗、金融等知识密集型领域加速复制。</p>
+      <cite><a href="https://www.bensbites.com/p/build-tools-to-build-more" target="_blank" rel="noopener">Ben's Bites</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>swyx：转发带图，配文「你们知道这通向哪里吧」（75L），在图像布局突破这天发出，言下之意是 AI 能力边界正在以他早已预见的方式崩塌。<a class="glance-src" href="https://x.com/swyx/status/2062371515937800468" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>Josh Woodward（Google Labs 副总裁）：Dreambeans 诞生记——一个 Google Labs 小团队的理念是「hope scrolling, not doom scrolling」，这款实验性 app 用 Personal Intelligence（个人智能，接入你的 Google 应用数据来生成个性化内容）代替无尽刷屏，每天推送与你真正有关的故事集。<a class="glance-src" href="https://x.com/joshwoodward/status/2062217728824651848" target="_blank" rel="noopener">X @joshwoodward →</a></li>
+      <li>Peter Yang（产品人）：Codex 在编辑 spreadsheet 上的表现「absolutely killing it」，他同时在问怎样把 Codex 设为打开 ChatGPT 时的默认标签——这两条合起来是用户对某个功能从「惊喜」到「上瘾」的标准轨迹。<a class="glance-src" href="https://x.com/petergyang/status/2062283525542531194" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Google Labs：Dreambeans 上线，实验性移动 app，连接你的 Google 应用，每天推送「属于你的那份内容」而不是平台推的，1057 次点赞说明这个理念击中了不少人。<a class="glance-src" href="https://x.com/GoogleLabs/status/2062206479026069544" target="_blank" rel="noopener">X @GoogleLabs →</a></li>
+      <li>Amjad Masad（Replit CEO）：「App 到 App Store 48 小时」，展示了 Replit Agent 从构思到上架的完整速度——另一条关于 B2B SaaS 「躲不掉」的图片推文（384L）暗示企业软件依然是所有 builder 绕不过去的宿命。<a class="glance-src" href="https://x.com/amasad/status/2062369124609892655" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>Guillermo Rauch（Vercel CEO）：Grok Imagine Video 接入 Vercel AI Gateway，顶级 image-to-video 模型可通过 lmarena.ai 访问。<a class="glance-src" href="https://x.com/rauchg/status/2062332963636060313" target="_blank" rel="noopener">X @rauchg →</a></li>
+      <li>Ryo Lu（Cursor 设计师）：Cursor 招设计工程师，核心要求——品味（taste）、系统思维、对极速精致体验的执着，「尤其是对帮助设计师和工程师构建工具感兴趣的人」，这条职位描述本身就是一份关于 Cursor 产品哲学的说明书。<a class="glance-src" href="https://x.com/ryolu_/status/2062352329903665471" target="_blank" rel="noopener">X @ryolu_ →</a></li>
+      <li>Zara Zhang（GV 合伙人）：Beautiful Feishu Whiteboard 技能上线，agent 可在飞书/Lark 文档里生成 30 余种风格的可编辑 SVG 图形，适用于概念可视化和技术架构图。<a class="glance-src" href="https://x.com/zarazhangrui/status/2062256374730699257" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+      <li>Nikunj Kothari（Figma 产品）：Fitbit Air 带风引发他的愿望清单——Google Health API 接入 + Apple Health 写入权限 + 漂亮表带，他描述的是健康数据可以真正流动起来之后的那个完整产品体验。<a class="glance-src" href="https://x.com/nikunj/status/2062198451086221543" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Dan Shipper（Every 联创）：SaaSpocalypse（SaaS 危机）期间买了 Figma 股票，采访了 Figma 的开发者产品管理总监 Matt Colyer 之后庆幸自己买多了。<a class="glance-src" href="https://x.com/danshipper/status/2062202908306030915" target="_blank" rel="noopener">X @danshipper →</a></li>
+      <li>Aditya Agarwal（前 Dropbox CTO）：欢迎 Harshit Madan 和 Rohan Choudhary 加入团队，两位新成员的背景可见链接博客。<a class="glance-src" href="https://x.com/adityaag/status/2062400706448081342" target="_blank" rel="noopener">X @adityaag →</a></li>
+      <li>Claude AI 官方账号：Ben 在 Claude Code 长时间任务中总被分心，于是用 Arduino + 电磁铁造了个掌心大小的 Clawd 机器人，当 Claude Code 需要输入时它会被顶起来提醒——物理世界里的 AI 反馈循环。<a class="glance-src" href="https://x.com/claudeai/status/2062220049146876347" target="_blank" rel="noopener">X @claudeai →</a></li>
+      <li>Claude AI 官方账号：另一位 builder 用打字机改造了一套终端，拦截键盘信号，后端是 Raspberry Pi Zero，全部运行 Claude Code——AI 时代的复古计算美学。<a class="glance-src" href="https://x.com/claudeai/status/2062220045984346276" target="_blank" rel="noopener">X @claudeai →</a></li>
+      <li>Blue Origin 宣称 New Glenn 火箭年底前恢复发射，称上周爆炸损伤比预期轻，但根本原因仍未公布——若非设计缺陷，则修复周期可控。<a class="glance-src" href="https://links.tldrnewsletter.com" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>中国机器人数据采集：低劳动力成本 + 政府支持 + 本土热情，中国已能在本地大规模采集家庭场景训练数据，美国同类工作依赖离岸外包，本土环境适应性存在结构性差距。<a class="glance-src" href="https://links.tldrnewsletter.com" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>苹果 MacBook Neo 出货量目标从 500 万台翻倍至 1000 万台，需求驱动了创纪录数量的 Mac 新用户；John Ternus 同期将 AR/XR 头显路线图从 7 款砍至 2 款——无显示屏 AI 眼镜 2027 年，AR 智能眼镜 2029 年。<a class="glance-src" href="https://links.tldrnewsletter.com" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Microsoft Scout 构建于 OpenClaw 之上，是一个永远在线的 Microsoft 365 代理，与 Google Gemini Spark 的路线不同——Scout 接管现有工作流，Spark 更多在旁辅助。<a class="glance-src" href="https://www.bensbites.com/p/build-tools-to-build-more" target="_blank" rel="noopener">Ben's Bites →</a></li>
+      <li>Codex 新增 Plugins（预置技能集合，覆盖 Figma 设计师/数据分析/产品设计等特定角色）和 Sites（可生成带数据库、文件存储、权限控制的网站/App），初期仅限企业和团队用户。<a class="glance-src" href="https://www.bensbites.com/p/build-tools-to-build-more" target="_blank" rel="noopener">Ben's Bites →</a></li>
+      <li>Factory Router：模型路由服务，自动为每个 Agent 会话选最优模型，声称在保持近前沿性能的同时降低 20-25% 成本。<a class="glance-src" href="https://www.bensbites.com/p/build-tools-to-build-more" target="_blank" rel="noopener">Ben's Bites →</a></li>
+      <li>Windsurf 更名 Devin Desktop，从编辑器升级为本地和云端 Agent 编队的统一管理界面；Cursor 40% 内部 PR 现在来自云端 Agent，官方博客披露了构建云端代理的经验教训。<a class="glance-src" href="https://www.bensbites.com/p/build-tools-to-build-more" target="_blank" rel="noopener">Ben's Bites →</a></li>
+      <li>ViBench（Replit 推出的 vibe coding 基准）：端到端 app 创建任务上 Claude Opus 4.8 在价格/性能比上优于 GPT-5.5；Alibaba Fun-Realtime-TTS 在 Speech Arena 以 1219 Elo 登顶，$27.59/百万字符。<a class="glance-src" href="https://www.latent.space/p/ainews-reve-2-and-ideogram-4-layouts" target="_blank" rel="noopener">AINews →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-06-03.html">← Jun 3</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
