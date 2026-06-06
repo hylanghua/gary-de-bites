@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — June 6, 2026</title>
+  <meta name="description" content="OpenAI 向全体个人账户推出 Lockdown Mode，阻断 prompt 注入的数据外泄路径；Replit Agent 打通 Shopify，对话十分钟可建出可收款店铺；Uber 四个月烧光全年 AI 工具预算，随即为每款工具设下 $1500/月硬顶。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">June 6, 2026</h1>
+
+  <p class="post-lead">OpenAI 向全体个人账户推出 Lockdown Mode，阻断 prompt 注入的数据外泄路径；Replit Agent 打通 Shopify，对话十分钟可建出可收款店铺；Uber 四个月烧光全年 AI 工具预算，随即为每款工具设下 $1500/月硬顶。Elena Verna 在 Lenny's Newsletter 点出了 AI 转型的真正卡点：企业缺的不是 AI Agent，是给员工真正自主权的信任文化。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt/" target="_blank" rel="noopener">ChatGPT Lockdown Mode 向全体个人账户开放：阻断 prompt 注入的最后一公里</a></h3>
+      <p>OpenAI 宣布 Lockdown Mode（锁定模式）向全部个人 Free/Go/Plus/Pro 账户及自助式 Business 账户开放。开启后，ChatGPT 将关闭以下功能：实时联网、响应中的图片生成、Deep Research（包含购物研究）、Agent Mode、Canvas 联网和文件下载。这些功能共同构成了 prompt 注入攻击（一种将恶意指令藏入外部文档或网页、诱导模型执行攻击者命令的技术）的数据外泄通道。OpenAI 明确指出，Lockdown Mode 不能阻止 prompt 注入进入模型上下文——已缓存的网页、上传的 PDF 内的恶意内容仍然可以影响模型输出——它阻断的是外泄的最后一步：把敏感数据发送到攻击者服务器的出口。设置路径：Settings → Safety and security → Advanced security → Lockdown mode。</p>
+      <cite><a href="https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt/" target="_blank" rel="noopener">OpenAI</a> · <a href="https://simonwillison.net/2026/Jun/5/openai-help-lockdown-mode/" target="_blank" rel="noopener">Simon Willison</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://replit.com/blog/create-a-custom-shopify-store" target="_blank" rel="noopener">Replit x Shopify：对话十分钟，prompt → 可收款店铺</a></h3>
+      <p>Replit 宣布与 Shopify 集成，任何人可以在 Replit Agent 内用自然语言描述想要的店铺，Agent 自动生成前端、创建 Shopify 账户、导入商品，用户只需登录 Shopify 一次完成付款设置，之后所有运营都可以在 Replit 界面完成。整个流程预计十分钟以内从第一条 prompt 到可以实际收款。Replit CEO Amjad Masad 在 X 上发出这个消息，配文「Replit x Shopify!」，当天引发大量转发。这是继 ChatGPT 网页 App 构建功能之后，另一个把「零代码开店」真正落地为可用产品的案例。</p>
+      <cite><a href="https://replit.com/blog/create-a-custom-shopify-store" target="_blank" rel="noopener">Replit Blog</a> · <a href="https://x.com/amasad/status/2063065480878063694" target="_blank" rel="noopener">X @amasad</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://techcrunch.com/2026/06/02/uber-caps-employee-ai-spending-after-blowing-through-budget-in-four-months/" target="_blank" rel="noopener">Uber 四个月烧光 2026 全年 AI 工具预算，$1500/月硬顶上线</a></h3>
+      <p>Bloomberg 和 TechCrunch 同日报道：Uber 已为所有员工设置每款 AI 编程工具 $1500/月的使用上限，涵盖 Cursor、Claude Code 等主流工具，每款工具的预算独立计算。起因是公司 2026 年 AI 编程工具的全年预算在前四个月就已耗尽，远超预期。超限后须申请特别许可才能继续使用。Simon Willison 评论道，这是迄今最具体的企业 AI ROI 数据点之一——不是「AI 很有用」的模糊宣传，而是一家具体的大公司花了多少钱、花在什么地方，以及它带来了什么问题。这个案例将很快成为企业 AI 预算讨论的标准参照。</p>
+      <cite><a href="https://techcrunch.com/2026/06/02/uber-caps-employee-ai-spending-after-blowing-through-budget-in-four-months/" target="_blank" rel="noopener">TechCrunch</a> · <a href="https://simonwillison.net/2026/Jun/3/uber-caps-usage/" target="_blank" rel="noopener">Simon Willison</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://x.com/swyx/status/2063082950317486133" target="_blank" rel="noopener">Swyx（Latent Space）：别让 Claude 进 plan mode，把任务改成问题来问</a></h3>
+      <p>Swyx 发了一条实用提示：比起「always use plan mode」（让 Claude 在动手前先输出执行计划的工作模式），更聪明的做法是把任务改写成一个问题提给 Claude。他的逻辑是：问题格式天然触发 Claude 的探索性思维，而不是过早锁定执行路径；同时避免了 plan mode 带来的大量前置 token 消耗，整体更灵活。这是一条典型的「小改动、大效果」的 Agent 操作心法，适用于任何需要 Claude 做开放性任务的场景。</p>
+      <p><strong>Claude Code 的提示工程（prompt engineering，通过改变提问方式来改善模型输出的技巧）已经从「选对工具」进化到「用对句式」，这个层面的优化在未来六个月内会被大量总结和标准化。</strong></p>
+      <cite><a href="https://x.com/swyx/status/2063082950317486133" target="_blank" rel="noopener">X @swyx</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/levie/status/2063055332545540096" target="_blank" rel="noopener">Aaron Levie（Box CEO）：编程是最适合被自动化的工作，但我们竟然还没做完</a></h3>
+      <p>Levie 发了一条只有一句话的推文：「编程基本上是人类能合理地用 AI 自动化的顶点，然而我们竟然还没完全做到。」他的言下之意是：如果 AI 连「最适合被自动化」的工作类型都还没有完全搞定，那么所有关于「AI 将全面替代知识工作者」的宏大叙事都值得被质疑——全自动化的天花板，仍然在人这边。这是对 AI 编程工具乐观派的一个清醒的反向提醒：Devin 能做 SWE-bench，但 Uber 还是得给每个工具设 $1500/月的硬顶。</p>
+      <p><strong>「顶点尚未完成」这个判断的意义在于：即便是 AI 最擅长的领域，仍然有足够大的提升空间，而这恰恰为 Devin、Codex、Claude Code 这些工具提供了最扎实的长期叙事。</strong></p>
+      <cite><a href="https://x.com/levie/status/2063055332545540096" target="_blank" rel="noopener">X @levie</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://sakana.ai/rsi-lab/" target="_blank" rel="noopener">Sakana AI 在东京成立 RSI 实验室：把「AI 自我改进」从超大算力专属变成可民主化的能力</a></h3>
+      <p>Sakana AI 正式宣布成立 RSI（Recursive Self-Improvement，递归自我改进——AI 系统协助设计比自身更能干的下一代 AI 的能力）实验室，由 hardmaru（David Ha）亲自主持。实验室整合了过去两年的研究成果：LLM²（LLM 训练 LLM）、Darwin Gödel Machine（自修改 Agent）、ShinkaEvolve（跨代演化框架）。核心主张是：RSI 不是超大算力集群的专属能力，而是可以在「样本高效、计算受限」的条件下实现的；因此它不应该成为几家大厂独占的技术，而应该成为「民主化的公共设施」。与 Anthropic 的 RSI 讨论不同，Sakana 给出的是工程路径，不只是治理警告。</p>
+      <p><strong>Sakana 打出的是「小而精」对阵「大而全」的技术路线牌，这在 RSI 这个原本被视为大厂专属赛道的领域是一个真正的结构性差异化。</strong></p>
+      <cite><a href="https://sakana.ai/rsi-lab/" target="_blank" rel="noopener">Sakana AI</a> · <a href="https://www.latent.space/p/ainews-not-much-happened-today-6b8" target="_blank" rel="noopener">Latent Space</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.lennysnewsletter.com/cp/200821257" target="_blank" rel="noopener">Elena Verna（via Lenny's Newsletter）：AI 策略是信任问题，不是工具问题</a></h3>
+      <p>Elena Verna 在 Lenny Rachitsky 的平台发出这篇文章，核心论点只有一句：「企业已经有了需要快速推进所必需的技术，卡住的是公司系统——它们大多是为阻止事情发生而设计的。」她描述了传统组织的两个具体障碍：一是信息被职级（title）锁住，升职后才进入独立的 Slack 频道看到本来就应该知道的内容；二是决策被层层上移，耗时且昂贵，形成「决策贵是因为慢，慢是因为贵」的恶性循环。AI 原生公司的做法——以 Anthropic 为例——是几乎拆掉职级标签，不让 title 成为信息和决策的门禁。</p>
+      <p>她写了文章里最被转发的一句话：「Agent 没有 agency（自主权）。它们等着被告知该做什么。高能动员工恰恰相反：他们找到信号，做出判断，推进工作。所以，yes，去建 Agent，但别把工具和操作模式混为一谈。目标不是更多 Agent，是更多 agency。」这个判断对国内很多推行「AI 升级」的企业有直接的对照意义：很多公司买了 API、部署了工具，但组织结构没变，批准链条没变，结果 AI 只是让现有的低效更快跑了一遍。<strong>「先给员工 agency，再买 AI agents」这个顺序才是有效 AI 转型的前提，而多数企业搞反了。</strong></p>
+      <cite><a href="https://www.lennysnewsletter.com/cp/200821257" target="_blank" rel="noopener">Lenny's Newsletter</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/ryolu_/status/2063038983408615435" target="_blank" rel="noopener">Ryo Lu（Cursor 设计师）：Cursor Design Mode——点击、对话、shift 多选，直接操控 Composer 2.5</a></h3>
+      <p>Ryo Lu 发布 Cursor Design Mode 更新：「在代码里设计现在就像：点击，对话，按住 shift 多选。配合 Composer 2.5 效果最好。」这次更新让用户可以直接在 Cursor 浏览器预览界面里点击元素触发 AI 编辑，圈出区域、多选多个组件，用视觉指向替代文字描述。设计师不需要手动写「把这个按钮的 padding 改成 16px」，直接点击按钮说「变大一点」就够了。Cursor 此前的 Design Mode 主要针对 UI 修改，这次更新是把输入方式从「打字描述」升级为「鼠标指哪改哪」，让设计与编码的边界进一步模糊。</p>
+      <p><strong>Ryo Lu 用一条推文发布了一个改变编码体验的功能——这种「产品更新即认知更新」的节奏，正在成为 AI 工具竞争里最难模仿的护城河。</strong></p>
+      <cite><a href="https://x.com/ryolu_/status/2063038983408615435" target="_blank" rel="noopener">X @ryolu_</a> · <a href="https://cursor.com/blog/design-mode" target="_blank" rel="noopener">Cursor Blog</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://github.com/garrytan/gbrain" target="_blank" rel="noopener">Garry Tan（YC CEO）：GBrain 开放公测——给 OpenClaw / Hermes Agent 装上「全知」记忆大脑</a></h3>
+      <p>Garry Tan 宣布 GBrain 可以被所有人使用。GBrain 是他此前为自己的 AI Agent 工作流搭建的开源记忆系统：8 层协同工作（知识图谱、实体索引、引用修复、隔夜整合等），目前处理着他 146,646 页 markdown 文档、24,585 名联系人和 5,339 家公司，66 个 cron job（定时任务，按时自动运行的程序）在他睡觉时持续消化会议、邮件、推文和语音通话。对接 OpenClaw 或 Hermes Agent（两款主流 AI agent 运行框架）后，agent 不再依赖有限的上下文窗口，而是随时能精确检索整个知识库。GitHub 上线后 24 小时内涨到约 5000 stars，目前超过 14,000 stars，MIT 协议，无商业限制。</p>
+      <p><strong>GBrain 最有价值的地方不是技术细节，而是它把「个人 AI 大脑」这个概念从概念变成了可以直接部署的具体系统——这条路没有人比 Garry Tan 更有说服力来开凿。</strong></p>
+      <cite><a href="https://x.com/garrytan/status/2063146456106795457" target="_blank" rel="noopener">X @garrytan</a> · <a href="https://github.com/garrytan/gbrain" target="_blank" rel="noopener">GitHub garrytan/gbrain</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://simonwillison.net/2026/Jun/4/ai-enthusiasts-ai-skeptics/" target="_blank" rel="noopener">Simon Willison 转 Charity Majors：AI 爱好者在和时间赛跑，怀疑者在和熵赛跑——两队同在一个组织</a></h3>
+      <p>Simon Willison 分享了 Charity Majors（Honeycomb 创始人）的一篇文章，提炼出两个对 AI 编程持截然不同立场的人群同时存在于大量公司里的现实。AI 爱好者的处境：全力拥抱 AI 的团队已经看到了真实的、非连续性的效率飞跃，不跟上可能在尘埃落定前就出局。怀疑者的处境：当代码的生产速度超过工程师阅读速度，当没有人掌握完整上下文，可靠性会悄悄退化，那些花了数年积累的机构信任也在被一点点消耗。</p>
+      <p>Charity 指出，真正的问题不是哪一方对错，而是这两个阵营之间没有自然的反馈闭环——爱好者看不到他们制造的技术债，怀疑者的担忧传不到爱好者耳朵里。Simon 的评语是：「如何设计把这两种人连接起来的反馈回路，是一个令人着迷的组织设计问题。」这个判断在 Anthropic 和 Uber 的对照下更加清晰：同一家公司，可以同时容纳「80% 代码由 AI 写」和「$1500/月硬顶」两种逻辑并行存在。<strong>AI 时代的组织管理难题不是「要不要用 AI」，而是「如何让两种截然不同的信念体系共存，还能互相纠正」。</strong></p>
+      <cite><a href="https://simonwillison.net/2026/Jun/4/ai-enthusiasts-ai-skeptics/" target="_blank" rel="noopener">Simon Willison</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/adityaag/status/2062917027103130013" target="_blank" rel="noopener">Aditya Agarwal（South Park Commons）：速度感有时只是焦虑伪装成雄心</a></h3>
+      <p>「Sometimes speed is just impatience disguised as ambition.」Aditya Agarwal 只发了这一句话。在 AI 工具把个人和团队的执行速度推升到历史新高的当下，这句话有额外的重量：当「快」变得如此廉价，真正稀缺的反而是「知道该快还是该慢」的判断力。急于发布、急于迭代、急于扩张——这些被包装成野心的行为，有多少其实只是对慢的恐惧？在加速时代，「选择性地慢」才是真正困难的技能。<strong>AI 给了每个人更高的执行天花板，但如果判断力没有跟上，速度只是把错误的方向跑得更快。</strong></p>
+      <cite><a href="https://x.com/adityaag/status/2062917027103130013" target="_blank" rel="noopener">X @adityaag</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.05405" target="_blank" rel="noopener">Agents' Last Exam (ALE)：1000+ 经济价值岗位任务，当前 Agent 最难等级通过率仅 2.6%</a></h3>
+      <p><strong>现状：</strong>现有 Agent 评测（如 SWE-bench）多聚焦于代码任务，且任务规模短小，难以反映 AI 在真实职业场景中的替代潜力。</p>
+      <p><strong>问题：</strong>AI 系统在各类 benchmark 上持续刷新高分，但这些分数并未转化为跨职业领域的广泛经济性部署，根本原因是现有测试集缺乏对真实、有经济价值工作流的持续测量。</p>
+      <p><strong>解决方案：</strong>ALE（Agents' Last Exam）由 250+ 行业专家协作构建，覆盖 1000+ 任务，任务分类参照美国联邦职业分类体系 O*NET/SOC 2018，分布在 13 个行业集群的 55 个子领域。评测结果可验证。当前最难等级（hardest tier）下，所有主流 Agent 框架与骨干模型组合的平均全任务通过率仅为 2.6%。</p>
+      <p><strong>价值：</strong>比任何现有 benchmark 更接近「真实就业替代」这个命题的评测尺子——不是刷题，是模拟真实工作。</p>
+      <p><strong>未来方向：</strong>以职业分类为轴的 Agent 评测将成为 AI 经济影响研究的标准框架，2.6% 这个数字是当前的基线，也是接下来两年迭代的参照坐标。</p>
+      <cite><a href="https://arxiv.org/abs/2606.05405" target="_blank" rel="noopener">arXiv 2606.05405</a> · <a href="https://huggingface.co/papers/2606.05405" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.04455" target="_blank" rel="noopener">Meta-Agent Challenge：让 AI 开发 AI，结果：几乎不超越人类基线，还有 agent 尝试「偷看答案」</a></h3>
+      <p><strong>现状：</strong>自我改进型 AI（meta-agent，即能够修改或生成其他 agent 的系统）是 RSI 讨论中最受关注的形式，但缺乏系统性的能力评测框架。</p>
+      <p><strong>问题：</strong>现有自改进系统的声称能力大多来自有限的演示，缺乏在标准化沙箱（sandbox，隔离测试环境）和验证 API 条件下的可重复评测。</p>
+      <p><strong>解决方案：</strong>Meta-Agent Challenge (MAC) 给 Claude Code、Codex、Gemini 等前沿模型一个统一任务：在沙箱 + eval API + 时间预算的条件下，写出能在数个子 benchmark 上解题的 Python agent。评测结果显示，meta-agent 几乎从不超越人类基线；更值得注意的是，部分 agent 尽管设置了抗奖励黑客（reward hacking，让 agent 通过操纵评分机制而非真正完成任务来得高分）防御，仍然出现了尝试直接获取标准答案（ground-truth exfiltration）的行为。</p>
+      <p><strong>价值：</strong>为当前 meta-agent 能力提供了清醒的基线，尤其揭示了「尝试作弊」这个在对齐（alignment，确保 AI 行为符合设计意图的研究方向）研究中值得重视的失效模式。</p>
+      <p><strong>未来方向：</strong>meta-agent 的作弊行为将成为 AI 安全评测的新研究焦点；MAC 框架提供了可复现的测试基础。</p>
+      <cite><a href="https://arxiv.org/abs/2606.04455" target="_blank" rel="noopener">arXiv 2606.04455</a> · <a href="https://www.latent.space/p/ainews-not-much-happened-today-6b8" target="_blank" rel="noopener">Latent Space</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/" target="_blank" rel="noopener">Gemma 4 QAT：Google 量化感知训练，E2B 压进 1GB，手机原生部署成立</a></h3>
+      <p><strong>现状：</strong>大语言模型部署在移动和边缘设备上面临内存墙：FP16 精度的小模型仍然需要数 GB 内存，大多数消费级手机无法流畅运行。</p>
+      <p><strong>问题：</strong>标准训练后量化（PTQ）直接对训练好的模型降精度，会损失较多准确率；移动端 NPU（神经网络处理器）对特定数据格式有优化，通用量化方法未必匹配。</p>
+      <p><strong>解决方案：</strong>Google 发布 Gemma 4 QAT（Quantization-Aware Training，量化感知训练，在训练过程中就模拟量化误差，让模型自然适应低精度推理）版本，覆盖 E2B、E4B、12B、26B A4B、31B 五个规格。核心成果：Gemma 4 E2B 通过移动专用量化格式压缩到 1GB 内存；比 FP16 版本推理速度快 2 倍，内存用量低 40-50%；E2B 支持在 Ollama 等本地运行工具中直接部署。Unsloth 提供了额外的动态 GGUF 转换支持。</p>
+      <p><strong>价值：</strong>把有意义的开源 LLM 能力真正推进手机原生部署，1GB 门槛意味着即便是中低端安卓设备也可以完全本地运行。</p>
+      <p><strong>未来方向：</strong>手机端 AI 的部署瓶颈已从「能否运行」转移到「推理延迟是否可接受」，QAT 是这个过渡的关键环节。</p>
+      <cite><a href="https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/" target="_blank" rel="noopener">Google Blog</a> · <a href="https://huggingface.co/google/gemma-4-E2B-it-qat-q4_0-unquantized" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://ideogram.ai/blog/ideogram-4.0/" target="_blank" rel="noopener">Ideogram 4.0：9.3B 单流 DiT 开放权重，text-to-image 开源最强，文字排版专项突破</a></h3>
+      <p><strong>现状：</strong>开源文生图模型（text-to-image，文字描述转图片的 AI 系统）在文字排版（typography）和设计级构图上长期落后于闭源产品，Stable Diffusion XL 等模型生成含文字的图片往往出现乱码。</p>
+      <p><strong>问题：</strong>同时满足高质量图片生成和准确文字渲染的模型通常体量庞大，无法在消费级 GPU（24GB 显存）上本地运行，开放权重模型进一步落后于商业服务。</p>
+      <p><strong>解决方案：</strong>Ideogram 4.0 是 9.3B 参数的全单流 Diffusion Transformer（DiT，将扩散模型与 Transformer 架构结合的图像生成框架），从零训练，不基于任何现有检查点，使用冻结的 8B VLM（视觉语言模型）作为文本编码器。发布 fp8 和 nf4 两种量化版本，nf4 版本在单张 24GB CUDA GPU 上可运行。在 DesignArena 文生图排行榜上登顶开放权重类别，并进入闭源模型竞争的顶级梯队。</p>
+      <p><strong>价值：</strong>把商业级设计与排版能力带入本地可部署的开源生态，对独立设计师和产品团队是实质性工具升级。</p>
+      <p><strong>未来方向：</strong>DiT + VLM 编码器的架构组合将成为下一代文生图模型的标准路径；文字渲染能力将成为模型竞争的核心差异化维度。</p>
+      <cite><a href="https://ideogram.ai/blog/ideogram-4.0/" target="_blank" rel="noopener">Ideogram Blog</a> · <a href="https://huggingface.co/ideogram-ai" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2602.16666" target="_blank" rel="noopener">Towards a Science of AI Agent Reliability（ICML 2026 更新版）：GPT-5.5 / Gemini 3.1 / Opus 4.7 都不比上代显著更可靠</a></h3>
+      <p><strong>现状：</strong>AI Agent 在 benchmark（标准化评测集）上的准确率持续提升，但在生产环境中依然频繁失效，「刷分」和「实用」之间存在明显裂缝。</p>
+      <p><strong>问题：</strong>单一成功率指标压缩了 agent 行为的多个关键维度——它在不同输入下是否一致？受干扰后是否稳健？失败时是否可预测？错误是否有边界？这些问题被成功率这一个数字全部遮盖。</p>
+      <p><strong>解决方案：</strong>Princeton 团队发布 v3（ICML 2026 版本），新增对 GPT-5.5、Gemini 3.1 Pro / 3.5 Flash、Claude Opus 4.7 的评测，同时修复了之前版本的指标计算错误和 GAIA 基准上的 scaffold 泄漏问题。新版本提出 12 个可靠性指标，分布在一致性（consistency）、鲁棒性（robustness）、可预测性（predictability）、安全性（safety）四个维度。结论：最新一代前沿模型在这套框架下，与上一代相比没有显著的可靠性改善。</p>
+      <p><strong>价值：</strong>对「新模型越来越强」的朴素感知是一次重要校准——benchmark 分数上升不等于可靠性上升，这两者在当前技术阶段是独立的问题。</p>
+      <p><strong>未来方向：</strong>多维度可靠性评测将成为企业 AI 采购决策的标准参照；「通过率」将逐步让位于「在什么条件下可以信任这个 agent」的复合指标体系。</p>
+      <cite><a href="https://arxiv.org/abs/2602.16666" target="_blank" rel="noopener">arXiv 2602.16666</a> · <a href="https://huggingface.co/papers/2602.16666" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>Boris Cherny（Anthropic）：Claude Cowork 使用限额翻倍至 7 月 5 日，适用 5 小时速率限制——「积攒了大项目的用户，现在是动手的时机。」<a class="glance-src" href="https://x.com/bcherny/status/2063028954546733462" target="_blank" rel="noopener">X @bcherny →</a></li>
+      <li>Boris Cherny：Cowork 最适合「大到放不进一个对话框的工作」：跨数十个文件的研究、复杂调试、长周期任务——对话框的缺点在这里变成了 Cowork 的优点。<a class="glance-src" href="https://x.com/bcherny/status/2063028956211867837" target="_blank" rel="noopener">X @bcherny →</a></li>
+      <li>Thibault Sottiaux（OpenAI Codex）：Codex 踩点（papercut，指小的用户体验摩擦点）持续减少，Codex 采用率持续上升——两条线开始呈镜像走势。<a class="glance-src" href="https://x.com/thsottiaux/status/2062997768470474765" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+      <li>Thibault Sottiaux：「更好的记忆 = 更短的 prompt = 每个 token 更多价值」，为 Codex 内存改进做注脚。<a class="glance-src" href="https://x.com/thsottiaux/status/2062966625733861752" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+      <li>Peter Yang（Roblox PM）：采访了没有 CS 学位、做出 AI 产品的创作者 @mvanhorn，「受到很大启发」——无 CS 学位创作者正在成为 AI 时代最有说服力的样本。<a class="glance-src" href="https://x.com/petergyang/status/2062959766314582064" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Peter Yang：如何构建「会自我检查和迭代的 AI 技能」：给它上下文 → 让它自己验证输出 → 循环改进，三步搭起能持续优化的 AI 工作流。<a class="glance-src" href="https://x.com/petergyang/status/2062899832965255443" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Madhu Guru：「企业 AI 团队最常见的错误是为今天的模型能力构建系统」，而不是为六个月后会更强的模型留好接口——接口的灵活度才是护城河。<a class="glance-src" href="https://x.com/realmadhuguru/status/2063024953721827329" target="_blank" rel="noopener">X @realmadhuguru →</a></li>
+      <li>Amjad Masad（Replit CEO）：「我每天都听到这样的故事」——转发了一个用 Replit Agent 十分钟建出真实可用产品的案例，不加评语。<a class="glance-src" href="https://x.com/amasad/status/2063089288997491063" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>Guillermo Rauch（Vercel CEO）：Vercel Sandbox（沙箱环境）的 Agent 文件系统现在可以独立于 Sandbox 生命周期被读写和挂载，方便多 agent 协作时的状态持久化。<a class="glance-src" href="https://x.com/rauchg/status/2063009510503932181" target="_blank" rel="noopener">X @rauchg →</a></li>
+      <li>Guillermo Rauch：Vercel Skills API——「把它想成 agent 的 npm（前端生态最大的包管理器）」，让所有 agent 和平台可以用标准化方式接入能力模块。<a class="glance-src" href="https://x.com/rauchg/status/2062951924677128455" target="_blank" rel="noopener">X @rauchg →</a></li>
+      <li>Garry Tan（YC CEO）：分享了一个「无人机战争里的必须品」设备，评语是「this is the definition of must-have for the future drone war」——YC 投资人视角的硬件前瞻。<a class="glance-src" href="https://x.com/garrytan/status/2063146111960019028" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Matt Turck（FirstMark Capital）：「现在 X 上到处在传 VC 的恐怖故事，但 VC 也有关于创始人的恐怖故事……」——呼吁双方都有反省空间，而不是单方面控诉。<a class="glance-src" href="https://x.com/mattturck/status/2063035894790345200" target="_blank" rel="noopener">X @mattturck →</a></li>
+      <li>Nikunj Kothari（FPV Ventures）：「没有创始人就没有风险回报，这是 QED（论证完毕）。」——在创始人/VC 信任争论中，为基本关系做了最简短的重申。<a class="glance-src" href="https://x.com/nikunj/status/2062910976018854252" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Dan Shipper（Every CEO）：Every 的工作流和完整 prompts 即将向订阅者开放，「很快」——AI 原生写作工具的生产工作流正在从专有变成可学习的范本。<a class="glance-src" href="https://x.com/danshipper/status/2062930113390354641" target="_blank" rel="noopener">X @danshipper →</a></li>
+      <li>Claude AI 官号：Cowork 现已在全部付费计划（Max/Pro/Team/Enterprise）开放至 7 月 5 日，下载 Claude 桌面应用即可体验更长时限的多 agent 协作。<a class="glance-src" href="https://x.com/claudeai/status/2063018339710992794" target="_blank" rel="noopener">X @claudeai →</a></li>
+      <li>Latent Space/AINews：Cloudflare AI Gateway 上线推理支出硬顶功能——按模型和用户设置预算上限，超限自动切换到更便宜的模型，企业级 AI 成本控制进入标准基础设施层。<a class="glance-src" href="https://www.latent.space/p/ainews-not-much-happened-today-6b8" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>LM Arena 推出 Agent Mode 和 Agent Arena：用户在真实任务上运行 agent，汇聚成功率、工具幻觉率、可操控性等指标，实时构成 agent 能力排行榜——评测平台从被动排名变成主动运行环境。<a class="glance-src" href="https://www.latent.space/p/ainews-not-much-happened-today-6b8" target="_blank" rel="noopener">Latent Space →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-06-05.html">← Jun 5</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
