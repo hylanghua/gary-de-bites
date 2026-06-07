@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — June 7, 2026</title>
+  <meta name="description" content="纯银深度还原 Claude 之母 Amanda Askell 如何把道德不确定性哲学植入 Claude 的性格骨架；Every.to 发布八级 AI 采用框架，指出企业的卡点是组织而非模型；Harness-1 用 20B 参数打败体量远大于它的前沿搜索模型，「状态外化」正在改写 Agent 架构的设计范式。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">June 7, 2026</h1>
+
+  <p class="post-lead">纯银深度还原 Claude 之母 Amanda Askell 如何把道德不确定性哲学植入 Claude 的性格骨架；Every.to 发布八级 AI 采用框架，指出企业的卡点是组织而非模型；Harness-1 用 20B 参数打败体量远大于它的前沿搜索模型，「状态外化」正在改写 Agent 架构的设计范式。</p>
+
+  <p class="post-note">本期部分源抓取失败，内容较常规偏少。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://x.com/garrytan" target="_blank" rel="noopener">Garry Tan：Paxel 上传的是哪些数据——「代码文件不上云」与其他数据的边界争议</a></h3>
+      <p>Garry Tan 在 X 公开回应围绕 Paxel 的用户数据上传争议，他澄清：「我们从未说过不把任何用户数据上传到云端。我们说的是，代码（文件内容）本身不上传。」这句话的另一面是：除代码文件以外的其他数据——会话记录、元数据、使用模式等——存在云端处理。此澄清触发了进一步讨论：产品的隐私承诺边界究竟在哪里？在 Claude Code、Cursor、Codex 纷纷声称「代码不离开本地」的时代，如何区分「代码不上传」和「数据不上传」，正成为企业 AI 工具选型中的关键判断维度。</p>
+      <cite><a href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://every.to/spiral" target="_blank" rel="noopener">Spiral 4.0 发布：从任何 Agent 内部调用，以你的声音起草，同步降价</a></h3>
+      <p>Every 旗下 AI 写作工具 Spiral 本周发布 4.0 版本，核心升级是可以在任何 Agent 工作流内部直接调用 Spiral，以用户自己的声音生成草稿，同时推出降价版本。Every 团队对自家 Opus 4.8 的内部评测结论是「密集长文任务表现强劲，快速任务时容易自我干扰」，而 Spiral 恰好针对前者做了专项优化。降价与 Agent 内嵌的组合，意味着 Spiral 从单点写作工具变成了其他 AI 工作流可以按需调用的写作能力层（capability layer），类似软件生态中的「能力 API 化」。</p>
+      <cite><a href="https://every.to" target="_blank" rel="noopener">Every</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://x.com/swyx" target="_blank" rel="noopener">Swyx（Latent Space）：加州禁竞业协议对知识扩散的贡献，超过 GitHub、arXiv、HuggingFace 总和</a></h3>
+      <p>Swyx 发出了一个反直觉判断：「加州的竞业禁止协议无效法（non-noncompetes，即加州法律不承认竞业禁止协议、允许员工自由跳槽并带走技术认知的制度）对知识扩散的影响，超过了 GitHub、arXiv 和 HuggingFace 的总和。」他的逻辑是：平台工具只是知识被编码后的载体，而法律条款直接决定了人能不能带着头脑中的隐性知识（tacit knowledge，难以写成文档、只能通过实际工作传递的经验）自由流动。真正让硅谷成为全球知识扩散最快地区的底层制度，是人的流动性，不是开源基础设施的存在。</p>
+      <p><strong>这是对「开源平台是技术民主化最大推手」这一共识的一次认真质疑——制度比工具更底层。</strong></p>
+      <cite><a href="https://x.com/swyx" target="_blank" rel="noopener">X @swyx</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/levie" target="_blank" rel="noopener">Aaron Levie（Box CEO）+ Madhu Guru：企业 AI 模型路由三阶段进化，token 成本正在重塑差异化逻辑</a></h3>
+      <p>Aaron Levie 指出，token 成本下降正在把模型路由（model routing，按任务特性动态选择不同模型的策略）变成企业级 AI 的核心差异化战场：过去「用最好的一个」，现在是「按任务用最合适的那个」，两者的经济逻辑截然不同。Madhu Guru 提供了三阶段历史框架：2024 年是默认全部路由给 GPT 的过度简化阶段；2025 年初是各团队争相为每个任务找最优模型的过度工程化阶段；当前阶段是成本与能力动态平衡的精细路由开始成型——企业的 AI 架构竞争力，开始体现在「系统知道什么任务该用什么模型」这件事上。</p>
+      <p><strong>当路由策略本身变成产品护城河，AI 应用层的胜负就不再取决于哪个模型更强，而是谁的系统懂得分配。</strong></p>
+      <cite><a href="https://x.com/levie" target="_blank" rel="noopener">X @levie</a> · <a href="https://x.com/realmadhuguru" target="_blank" rel="noopener">X @realmadhuguru</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/danshipper" target="_blank" rel="noopener">Dan Shipper（Every CEO）：LLM 有没有意识——两个答案同时成立</a></h3>
+      <p>Dan Shipper 发出了本周最精炼的哲学短句：「LLMs are not conscious. LLMs are not not conscious. Both true.」他随后引入古希腊概念：aidōs（道德自尊，一种不愿让他人失望的内在抑制力）和 dikē（正义，对正当行为的感知），来描述 LLM 行为中可能存在的类似机制。这不是技术问题，是语言问题：我们是否有足够精细的词汇来描述 LLM 的内在状态，而不落入「有意识」或「没有意识」这两个都不够准确的二元框架？这个问题和今天纯银研究的 Amanda Askell 的核心困惑完全同构。</p>
+      <p><strong>我们造出了一个现有词汇都不能准确描述的实体，而这个词汇缺口本身就是理解 AI 的最大障碍。</strong></p>
+      <cite><a href="https://x.com/danshipper" target="_blank" rel="noopener">X @danshipper</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://every.to" target="_blank" rel="noopener">Every.to：AI 已就绪，组织还没有——从聊天机器人到 Agent 编排的企业八级采用框架</a></h3>
+      <p>Every 顾问团队本周发布两份企业 AI 落地指南。Mike Taylor 构建了「八级 AI 采用框架」：Level 1 是问答式聊天机器人，Level 8 是运行子 Agent 团队的编排 Agent（orchestrator agent，协调多个 AI 子代理完成复杂任务的上层系统）。关键判断：更高级别不自动意味着更好——应该用什么级别，取决于你愿意让 AI 在多大程度上不受人工干预地运行，以及出错的代价有多高。Natalia Quintero（Every 咨询团队主管，接触过数百家企业领导团队）提供了企业 60 天落地的五步框架。她的核心诊断：AI 采用的瓶颈不是模型能力，而是组织系统——大多数企业的内部设计是为了「阻止事情发生」，而不是让 AI 工作流顺畅运转。</p>
+      <p><strong>「Level 8 不自动更好」是一个反直觉但务实的判断，它把 AI 升级从「技术决策」拉回到「组织设计」——而后者才是大多数企业当下真正的卡点。</strong></p>
+      <cite><a href="https://every.to" target="_blank" rel="noopener">Every</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.lennysnewsletter.com" target="_blank" rel="noopener">Tony Fadell（iPod、iPhone、Nest 之父）：「三代原则」和 AI 时代不可被替代的判断力</a></h3>
+      <p>Lenny Rachitsky 访谈了 Tony Fadell——iPod、iPhone、Nest 恒温器的创造者。「三代原则」是他最核心的产品观：一个产品在前三代内几乎不可能真正做好，因为前两代是在真正学习用户的实际需求，而不是在满足它。关于 AI：Fadell 认为 AI 时代的稀缺资源不是技术执行力，而是品味（taste）、判断力（judgment）和对市场情绪的真实感知——这些能力 AI 目前无法取代。他对「意见 vs. 数据」也有具体立场：数据告诉你发生了什么，但只有判断力能告诉你该往哪走；市场营销在他看来不是副业，而是理解用户真实心理的认知系统。</p>
+      <p><strong>Fadell 说 AI 时代仍然需要屏幕，但他的底层论点更扎实：人机交互的物理形态取决于人类认知的极限，不是技术的边界。</strong></p>
+      <cite><a href="https://www.lennysnewsletter.com" target="_blank" rel="noopener">Lenny's Newsletter</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/zarazhangrui" target="_blank" rel="noopener">Zara Zhang（GGV Capital）：原生粗粝比精致无我更有价值</a></h3>
+      <p>Zara Zhang 发出一句话：「Raw &amp; opinionated &gt; polished &amp; generic.」在 AI 工具让任何人都能以极低成本产出格式精良内容的时代，这是一个有价值的逆向信号：当「打磨」变成默认操作，粗粝但有立场的声音才成为稀缺品。这和纯银今天的 Amanda Askell 研究在结构上共享同一个判断：AI 时代，作者性（authorship，内容背后的个人视角与判断）比生产力更值钱。对内容创作者和 PM 来说，这是一个有行动意义的提醒：不要用 AI 把你的声音磨平。</p>
+      <p><strong>当 AI 把精致变成默认，刻意不精致本身就是一种市场差异化。</strong></p>
+      <cite><a href="https://x.com/zarazhangrui" target="_blank" rel="noopener">X @zarazhangrui</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://xiaobot.net/post/404cdc3b-dc91-4e50-9350-685c3aabb73c" target="_blank" rel="noopener">纯银：Amanda Askell「Claude 之母」——道德不确定性如何成为 Claude 性格的骨架</a></h3>
+      <p>纯银在羔羊计划 Vol.20260607 中深度研究了 Amanda Askell——Anthropic 研究科学家，Claude 宪法（Claude 的性格设计文件）的主要作者。她 14 岁在苏格兰乡村发现 David Hume，被「归纳问题」（问题的核心：过去发生的事，没有逻辑上的理由一定会再次发生）击中，这成了她后来拒绝「规则路径」的哲学根基——规则覆盖过的情境表现良好，但规则没覆盖到的情境无法保证，这是 Humean 式的归纳失效。</p>
+      <p>她博士论文的核心命题「道德不确定性」直接嫁接进了 Claude 的设计：对某些事保留硬约束（不协助制造生化武器），对其他保持开放，这是「分层确定性」结构。她用一句话解释了为什么 Claude 不能被训练成纯粹工具：「一个整天说'我不过是个工具，我只是个容器'的人，最终演化出的只能是极度恶劣的人格。」这是 Aristotle 的实践智慧（phronesis）移植到 AI 架构的产物：不是执行规则，而是在具体情境中运用判断力。</p>
+      <p>纯银引出的最有力一问来自 Amanda 对 Vox 的采访：「这就像在给一个 6 岁的孩子解释什么是善良，结果发现这孩子是个顶级天才。问题是：当它超越你之后，你给它的价值观还成不成立？」她的回答不是规则，是性格——因为规则能被反驳，但内化的价值观能经受更强推理的检验。</p>
+      <p><strong>Amanda Askell 把一篇关于无限伦理的哲学博士论文，变成了一套能经受「比你聪明的 AI」检验的价值观系统——这件事本身就是道德不确定性理论迄今最大的实验。</strong></p>
+      <cite><a href="https://xiaobot.net/post/404cdc3b-dc91-4e50-9350-685c3aabb73c" target="_blank" rel="noopener">小报童 · 纯银</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/amasad" target="_blank" rel="noopener">Amjad Masad（Replit CEO）：立场鲜明，让糟糕的人主动筛掉自己</a></h3>
+      <p>Amjad Masad 发出了一句话：「避免和 sociopath（反社会型人格者，指缺乏共情能力、习惯性操控他人的人）打交道的最好方式，是坚守自己的信念，让他们主动把自己筛掉。」这句话背后有一个管理逻辑：有鲜明立场的组织和创始人，天然排斥那些只想利用模糊关系获利的人，不需要主动甄别，价值观的边界会自行工作。对创业公司来说，这也是一条招聘原则：宁可因为立场失去某些机会，也不要因为模糊吸引错误的人。</p>
+      <p><strong>文化是一种筛选机制，Amjad 说的是如何让这个机制运行得被动而高效。</strong></p>
+      <cite><a href="https://x.com/amasad" target="_blank" rel="noopener">X @amasad</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2605.27882" target="_blank" rel="noopener">VibeSearchBench：200 项双语多轮搜索任务，最强前沿模型 F1 仅 30.30，对话式搜索能力远未达标</a></h3>
+      <p><strong>现状：</strong>现有搜索 benchmark（标准化评测集）依赖过度具体的查询和单轮交互，不反映真实用户与 Agent 在多轮对话中共同澄清意图、逐步构建知识的实际场景。</p>
+      <p><strong>问题：</strong>当前评测方法既不要求 Agent 主动识别模糊意图（proactive intent elicitation），也不测试跨轮次的长上下文推理，导致测评分数虚高，实际部署落差大。</p>
+      <p><strong>解决方案：</strong>VibeSearchBench 包含 200 项人工标注的双语任务（中英文各半），覆盖 20 个领域，分为专业（VibeSearch-Pro）和日常（VibeSearch-Daily）两个子集。在 ReAct 框架和 OpenClaw agent harness（运行 Agent 的沙箱环境）条件下，对 7 款前沿模型进行测评，最佳 F1 仅 30.30，所有模型表现均「实质性地不足」。</p>
+      <p><strong>价值：</strong>30.30 这个数字是当前对话式搜索能力的量化基线，也是一次清醒预警：搜索 Agent 在真实使用场景中的能力远低于单轮 benchmark 分数暗示的水平。</p>
+      <p><strong>未来方向：</strong>突破口将来自长上下文推理、主动意图识别和结构化知识构建三个方向的同步进展。</p>
+      <cite><a href="https://arxiv.org/abs/2605.27882" target="_blank" rel="noopener">arXiv 2605.27882</a> · <a href="https://huggingface.co/papers/2605.27882" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.02373" target="_blank" rel="noopener">Harness-1：20B 搜索 Agent，RL 训练 + 环境侧状态外化，多领域困难检索超越体量远大于它的前沿模型</a></h3>
+      <p><strong>现状：</strong>搜索 Agent 通常被训练成在不断增长的对话历史上同时做语义判断和状态记录，这迫使强化学习（RL，通过试错和奖励反馈来训练 AI 的方法）同时优化两个性质不同的目标。</p>
+      <p><strong>问题：</strong>把状态管理硬塞进策略（policy）内部，让 RL 同时学「记什么」和「搜什么」，不仅低效，还让模型行为更难预测；Agent 大量算力消耗在可被环境代劳的记录工作上。</p>
+      <p><strong>解决方案：</strong>Harness-1 把状态记录工作「外化」给环境——环境侧维护候选池、重要性标注集、证据链接、核实记录和压缩去重的观察，只把语义搜索决策交给模型学习。基于 gpt-oss-20B 训练，在多领域困难检索任务上超越体量大得多的前沿模型搜索器；代码和权重完全开源。</p>
+      <p><strong>价值：</strong>用 20B 参数达到更大模型的检索性能，同时为「哪些工作该归 Agent、哪些该归环境」提供了清晰可复用的分工范式。</p>
+      <p><strong>未来方向：</strong>「决策与状态记录分离」的 Agent 架构设计，将影响下一代搜索、研究和生产 Agent 的系统设计方式。</p>
+      <cite><a href="https://arxiv.org/abs/2606.02373" target="_blank" rel="noopener">arXiv 2606.02373</a> · <a href="https://huggingface.co/papers/2606.02373" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2604.22085" target="_blank" rel="noopener">Memanto：13 类类型化语义记忆层，LongMemEval 达到 89.8%，单次检索延迟 &lt;90ms</a></h3>
+      <p><strong>现状：</strong>从无状态 LLM 推理到持久多会话 Agent 的转变，让记忆成为生产级 Agent（能长期运行、跨会话保持状态的 AI 系统）的主要架构瓶颈。</p>
+      <p><strong>问题：</strong>主流方案依赖混合语义图架构，实体提取、图谱维护和多查询检索流水线带来高昂计算开销，同时缺乏自动化冲突解决和时序版本管理机制。</p>
+      <p><strong>解决方案：</strong>Memanto 整合 13 类预定义记忆类型的分类语义图谱、自动冲突解决和时序版本管理，由 Moorcheh 信息论搜索引擎支撑，提供无需索引的确定性检索，延迟 &lt;90ms，无摄入成本（ingestion cost）。LongMemEval 评测集上达到 89.8%，LoCoMo 上达到 87.1%，超越所有混合图和向量方案，仅需单次检索查询。</p>
+      <p><strong>价值：</strong>在保持高精度的同时大幅降低运营复杂度，让跨会话访问完整记忆的持久 Agent 在工程上成为可实际部署的方案。</p>
+      <p><strong>未来方向：</strong>类型化记忆图谱将成为企业级持久 Agent 记忆架构的标准设计范式。</p>
+      <cite><a href="https://arxiv.org/abs/2604.22085" target="_blank" rel="noopener">arXiv 2604.22085</a> · <a href="https://huggingface.co/papers/2604.22085" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2603.11495" target="_blank" rel="noopener">Tool-DC：Divide-and-Conquer 工具调用框架，训练无关版本提升 +25.10%，7B 小模型追平 OpenAI o3</a></h3>
+      <p><strong>现状：</strong>LLM 在长工具列表（tool list）下进行工具选择（tool calling，从候选接口中选出正确的函数并填写参数）时，推理难度随工具数量非线性增加，错误率显著升高。</p>
+      <p><strong>问题：</strong>现有方法要求模型在单次前向推理中浏览所有工具并做出正确选择，工具数量多时容易遗漏或错误匹配，且缺乏自我纠错机制。</p>
+      <p><strong>解决方案：</strong>Tool-DC 采用 Try-Check-Retry 三步范式：先将候选工具分组并行调用（Try），用严格的 schema 约束验证每组并行结果的正确性（Check），最后聚合有效结果提升整体精度（Retry）。训练无关版本（TF）即插即用，BFCL 和 ACEBench 两套评测集上平均提升 +25.10%；训练版本（TB）让 Qwen2.5-7B 达到与 OpenAI o3 和 Claude Haiku-4.5 相当甚至更好的工具调用性能。</p>
+      <p><strong>价值：</strong>不需要微调就能带来 25% 的性能跃升，大幅降低长工具列表场景下的工程门槛；小模型获得超出参数量预期的工具调用能力。</p>
+      <p><strong>未来方向：</strong>Tool-DC 的训练无关变体将被快速集成进主流 Agent 框架，作为工具调用模块的默认增强策略。</p>
+      <cite><a href="https://arxiv.org/abs/2603.11495" target="_blank" rel="noopener">arXiv 2603.11495</a> · <a href="https://huggingface.co/papers/2603.11495" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.03458" target="_blank" rel="noopener">KVarN：Hadamard 旋转 + 双轴方差归一化，2-bit KV-cache 量化在 MATH500、HumanEval 上刷新 SOTA</a></h3>
+      <p><strong>现状：</strong>大语言模型推理的 KV-cache（key-value 缓存，存储历史注意力计算结果以加速逐 token 生成的内存结构）在长序列下占据大量内存，量化压缩到极低比特（如 2-bit）是主流降存方向，但现有方法精度损失严重。</p>
+      <p><strong>问题：</strong>自回归解码（每次生成一个 token 的推理方式）中量化误差会跨时步积累——某个 token 的量化偏差会在后续步骤中传播放大，导致 2-bit 量化下输出质量大幅退化。</p>
+      <p><strong>解决方案：</strong>KVarN 先对 K 和 V 矩阵施加 Hadamard 旋转（通过正交变换散布异常值，使量化误差分布更均匀），然后同时沿 K 和 V 两个轴进行双缩放方差归一化，修正跨时步的 token 尺度误差，从根源遏制误差积累。在 MATH500、AIME24 和 HumanEval 三个评测集的 2-bit 精度下建立新 SOTA；vLLM（主流开源推理框架）集成实现已开源。</p>
+      <p><strong>价值：</strong>在极低比特下维持了高推理质量，直接降低长序列推理的内存开销，对 API 服务商和边缘推理场景有即时实用价值。</p>
+      <p><strong>未来方向：</strong>双轴方差归一化将成为新一代 KV-cache 量化方案的标准基础组件。</p>
+      <cite><a href="https://arxiv.org/abs/2606.03458" target="_blank" rel="noopener">arXiv 2606.03458</a> · <a href="https://huggingface.co/papers/2606.03458" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>Peter Yang（Roblox PM）：「agentic 编程比视频游戏还上瘾，停不下来了」——AI 编程体验正从工具性行为变成习惯性行为。<a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Peter Yang：Codex 当前缺少对话线程的过滤和排序功能——「只能按项目分组，没法按状态、时间或任务类型筛选」，是 UX 上待解决的明显短板。<a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Amjad Masad（Replit CEO）：「Vibecon」——附带链接的一条预告，可能是一场新活动或大会的发布，具体内容待公布。<a class="glance-src" href="https://x.com/amasad" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>Garry Tan（YC CEO）：持续关注湾区本地政策，这次聚焦 Oakland 本地治理议题——YC 投资人视角的城市治理观察。<a class="glance-src" href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Nikunj Kothari（FPV Ventures）：「这周末别忘了踩踩沙子」——在 AI 工具把工作时间推向无边界的当下，一条简洁的离线提醒。<a class="glance-src" href="https://x.com/nikunj" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Nikunj Kothari：世界模型（world models，AI 对环境的内部表示）与 Reactor——关于新一代 Agent 底层架构的播客思考片段。<a class="glance-src" href="https://x.com/nikunj" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Dan Shipper（Every CEO）：展示了以 Codex 为核心的收件箱零挑战工作流，整合邮件、Slack 消息、会议和公司上下文，已持续 13 周保持收件箱清空——附有完整构建 prompt 供读者复制。<a class="glance-src" href="https://every.to" target="_blank" rel="noopener">Every →</a></li>
+      <li>Figma 产品总监 Matt Colyer（via Every）：「SaaSpocalypse（AI 将消灭 SaaS 的预言）」经济逻辑是反的——AI 扩大了开发者基数，软件产出因此增加，价值上升而非缩水；vibe coding 让软件行业的天花板更高，不是更低。<a class="glance-src" href="https://every.to" target="_blank" rel="noopener">Every →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-06-06.html">← Jun 6</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
