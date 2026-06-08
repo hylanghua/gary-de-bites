@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — June 8, 2026</title>
+  <meta name="description" content="苹果内部「无 Cook 会议」首度曝光：高管建议 Siri 交由 Vision Pro 之父 Mike Rockwell 接管，本届 WWDC 成 Cook CEO 任上最后一场开发者大会；Google 月付 SpaceX 9.2 亿美元算力协议将于 10 月生效；Peter Steinberger「别再 prompt 了，设计 loop」获 13K 点赞，dots.tts 以 2B 参数自校正训练刷新 TTS 基准。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">June 8, 2026</h1>
+
+  <p class="post-lead">苹果内部「无 Cook 会议」首度曝光：高管建议 Siri 交由 Vision Pro 之父 Mike Rockwell 接管，本届 WWDC 成 Cook CEO 任上最后一场开发者大会；Google 月付 SpaceX 9.2 亿美元算力协议将于 10 月生效；Peter Steinberger「别再 prompt 了，设计 loop」获 13K 点赞，dots.tts 以 2B 参数自校正训练刷新 TTS 基准。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://links.tldrnewsletter.com/MdV5Jj" target="_blank" rel="noopener">苹果内部「无 Cook 会议」曝光：高管力推 Mike Rockwell 接管 Siri，本届 WWDC 成 Tim Cook CEO 任上最后一场</a></h3>
+      <p>2025 年初，苹果数位高管在 Tim Cook 不知情的情况下私下开会，核心议题是公司的 AI 策略已经落后到危险的地步。会议最终给 Cook 提出了一条建议：将 Siri 的控制权交给 Mike Rockwell——Vision Pro 头显的创造者，内部公认最认真对待 AI 的高管。与此同时，CNBC 报道称，本届 WWDC 将是 Tim Cook 在 CEO 职位上主持的最后一届开发者大会：Cook 正准备转任董事长，接班人是现任硬件工程高级副总裁 John Ternus。WWDC 的核心看点是 Siri 的重大改版，对投资者而言是 Apple Intelligence 能否成为下一轮 iPhone 换机驱动力的测验，对开发者是 Siri 能否在 Agent 时代成为值得押注的平台。</p>
+      <cite><a href="https://links.tldrnewsletter.com/MdV5Jj" target="_blank" rel="noopener">TLDR</a> · <a href="https://www.cnbc.com/2026/06/05/apple-wwdc-tim-cook-ai-siri-ternus.html" target="_blank" rel="noopener">CNBC</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://links.tldrnewsletter.com/onaiyh" target="_blank" rel="noopener">Google 月付 SpaceX 9.2 亿美元：租 11 万张 Nvidia 芯片，协议 2026 年 10 月生效，SpaceX 6 月 12 日上市</a></h3>
+      <p>Google 将从 2026 年 10 月起向 SpaceX 支付每月 9.2 亿美元，租用其数据中心算力，协议期限至 2029 年 6 月。合同核心标的是 11 万张 Nvidia GPU（GPU，图形处理器，现为 AI 训练和推理的核心硬件）；若 SpaceX 未能在约定时间交付，Google 有权在 10 月终止协议。双方均可在次年起以 90 天通知取消合同。这是 SpaceX 近期达成的第二笔大规模算力出租协议，第一笔是与另一家竞争对手。SpaceX 定于 6 月 12 日上市，发行价隐含估值约 1.77 万亿美元。</p>
+      <cite><a href="https://links.tldrnewsletter.com/onaiyh" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://spyglass.org/chatgpt-is-dead-long-live-chatgpt/" target="_blank" rel="noopener">「聊天已死」：OpenAI 月活突破 10 亿后转向超级 App，Agent 执行任务替代对话机器人</a></h3>
+      <p>OpenAI 正在将产品重心从聊天界面转向超级 App 形态。这不意味着「聊天」功能消失，而是 OpenAI 越来越相信 AI 的未来在于 Agent（代理，能自主规划和执行多步任务的 AI 系统）而不是对话机器人。这一转向发生在 OpenAI 月活用户据报突破 10 亿之后，公司正借助用户规模向 IPO（首次公开发行股票）冲刺。「聊天机器人」与「超级 App」的本质区别在于：前者响应指令，后者为用户完成任务。</p>
+      <cite><a href="https://spyglass.org/chatgpt-is-dead-long-live-chatgpt/" target="_blank" rel="noopener">TLDR</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://x.com/steipete/status/2063697162748260627" target="_blank" rel="noopener">Peter Steinberger（OpenClaw @OpenAI）：别再 prompt 了，设计让 Agent 自循环的 loop</a></h3>
+      <p>Peter Steinberger 发出了本周最炸的一条技术判断，获得 13,734 个点赞：「你不该再 prompt 编程 Agent 了。你应该设计的是让 Agent 自动运行的 loop（循环，指无需人工干预、由代码或触发器持续驱动 Agent 工作的工作流架构）。」</p>
+      <p>这句话触碰了一个真实的分水岭：大多数人仍在把 AI 当成问答工具——有问题才开聊，聊完关掉。而「设计 loop」意味着把 Agent 变成基础设施：你定义目标、设定验证条件、安排触发节点，然后退出来，让它自己跑。Boris Cherny 同天发布的帖子（见下条）从工程操作层面给出了具体方法，二者形成互补。</p>
+      <p><strong>从「问 AI」到「设计让 AI 自转的系统」，这是 AI 使用方式的代际跃迁，而不是技巧升级。</strong></p>
+      <cite><a href="https://x.com/steipete" target="_blank" rel="noopener">X @steipete</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/bcherny/status/2063792263067754658" target="_blank" rel="noopener">Boris Cherny（Claude Code @Anthropic）：Opus 长时自主运行的五条配置原则</a></h3>
+      <p>Boris Cherny（Claude Code 的核心开发者之一）在观察到多项 benchmark 显示 Opus 在长时工作上表现最强后，总结了让 Opus 能运行数小时乃至数天的五条具体配置：① auto 权限模式，让 Claude 不必反复询问批准；② 动态工作流，驱动 Claude 编排数百乃至数千个子 Agent 完成任务；③ 使用 /goal 或 /loop 指令，提示 Claude 持续推进直到完成；④ 在云端运行 Claude Code，这样你可以合上笔记本；⑤ 给 Claude 提供端到端的自我验证手段——网页用 Chrome 扩展，移动端用 iOS/Android 模拟器 MCP（模型上下文协议，让 AI 工具访问外部服务的接口），后端则是能完整启动的服务器或服务。</p>
+      <p><strong>自主运行的上限由「自验证」决定：Claude 能检查自己做对了，才能真正放手跑。</strong></p>
+      <cite><a href="https://x.com/bcherny" target="_blank" rel="noopener">X @bcherny</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://addyosmani.com/blog/intent-debt/" target="_blank" rel="noopener">Addy Osmani「意图负债」：模型不知道「为什么」，改变了「不写文档」的经济逻辑</a></h3>
+      <p>Addy Osmani 提出了「意图负债」（intent debt）概念：技术债（technical debt，因赶工或省事积累的代码质量问题）已被广泛讨论，但真正贵的是「意图负债」——那些从来没被写下来的目标、约束和决策背景，只存在于某些人的头脑或散落的会议记录里，不成体系，残缺不全。</p>
+      <p>在人工编程时代，这种债务成本是隐性的：老员工离职，知识蒸发。但在 Agent 工程时代，成本被急剧放大。模型只知道代码是什么，不知道代码为什么这样。当 Agent 被要求修改一个系统时，它会根据表面特征做决策，而不知道有哪些约束是不能碰的、哪些设计是因为某次特定事故而生的。「不写」的经济学因此彻底改变：过去你可以赌团队成员记得，现在 Agent 不会记得，而且 Agent 的失误是批量的。</p>
+      <p><strong>AI 把「写 vs 不写」的判断从「沟通成本」变成了「系统可靠性」问题——意图是人能给 Agent 的唯一燃料。</strong></p>
+      <cite><a href="https://addyosmani.com/blog/intent-debt/" target="_blank" rel="noopener">TLDR</a> · <a href="https://readwise.io" target="_blank" rel="noopener">Wisereads</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://every.to/working-overtime/my-editor-caught-me-sounding-like-ai-now-ai-catches-me-first" target="_blank" rel="noopener">Every.to「我的编辑抓出了 AI 腔，现在 AI 先于编辑抓出我」：把写作坏习惯训练成一个 AI skill</a></h3>
+      <p>Every.to 的 Working Overtime 专栏本周分享了一个具体的工作流：作者把自己的写作坏习惯整理成清单——那些反复被编辑标注、让文章读起来像 AI 写的措辞和句式——然后把这份清单喂给模型，训练出一个专门针对自己声音问题的批评 skill（技能，Claude Code 或 Claude 中的自定义专项指令集）。结果是：以前需要等编辑反馈才发现的问题，现在在初稿阶段就被模型拦下。</p>
+      <p>这是一个在 AI 写作工具泛滥之后才有意义的工作流。过去「听起来像 AI」是工具的问题，现在成了作者的问题——因为作者自己也在大量使用 AI，声音正在被工具拉平。让 AI 监督 AI 的影响，是这个工作流成立的前提。</p>
+      <p><strong>用 AI 抵抗 AI 对声音的侵蚀，这条路的本质是：把自我认知做成可执行的 skill。</strong></p>
+      <cite><a href="https://every.to/working-overtime/my-editor-caught-me-sounding-like-ai-now-ai-catches-me-first" target="_blank" rel="noopener">Every</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.lennysnewsletter.com/p/how-i-ai-gemini-omni-clone-yourself" target="_blank" rel="noopener">Lenny's How I AI：15 分钟用 Gemini Omni 克隆自己，AI 视频工具对非视频专业人士的门槛已经消失</a></h3>
+      <p>How I AI（Lenny's Podcast Network 旗下专注 AI 工作流的播客）本期由 Claire 主理，全程实操展示用 Google Flow 和 Gemini Omni（谷歌的多模态 AI 模型）克隆自己并生成完整宣传视频的过程——从面部扫描、场景生成、奇怪输出的 debug，到最终剪辑成片，总共 15 分钟。Claire 自述是「有创意感但没有视频制作经验」的人，这个工作流让她在没有摄影或剪辑背景的情况下完成了一条专业一分钟 hype reel。</p>
+      <p>最大的判断是：AI 视频工具正在把「高质量创意生产」的入场券从专业技能变成普通想法。门槛不再是软件、设备或工艺，而是你有没有想说的东西。这对内容创作者和产品 PM 的含义是：以后不会做视频不再是理由。</p>
+      <p><strong>当「克隆自己」变成 15 分钟可完成的操作，内容生产的稀缺资源从技能彻底变成了视角。</strong></p>
+      <cite><a href="https://www.lennysnewsletter.com/p/how-i-ai-gemini-omni-clone-yourself" target="_blank" rel="noopener">Lenny's Newsletter</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/levie/status/2063756386572681606" target="_blank" rel="noopener">Aaron Levie（Box CEO）：AI 让开发成本下降，但 GTM 成本分毫未减——「可能反而更贵了」</a></h3>
+      <p>Aaron Levie 反驳了「AI 会消灭企业软件」的论断。他的分析切入点不是技术，而是成本结构：大多数企业软件公司，研发（把软件做出来）只是成本的一部分，GTM（go-to-market，市场进入，包括销售、营销、客户成功、实施支持等获客和留客成本）才是花钱的大头——因为企业级软件的销售天然是重度咨询和关系驱动的。</p>
+      <p>AI 把开发效率提上去了，让更多软件诞生；但 AI 没有减少买家在复杂市场里做决策的困难，甚至因为市场更拥挤、选项更多，差异化和被发现的难度反而上升。他的结论：「如果你让一件东西（开发）更便宜、更丰富，那么那件东西（在市场里脱颖而出）就成了最难的部分。」</p>
+      <p><strong>AI 消灭的是开发成本，不是销售成本——那些把「AI 写代码」等同于「不需要 GTM」的判断，搞错了企业软件的成本重心。</strong></p>
+      <cite><a href="https://x.com/levie" target="_blank" rel="noopener">X @levie</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://x.com/adityaag/status/2063731771284619521" target="_blank" rel="noopener">Aditya Agarwal（前 Dropbox CTO）：经历两次 IPO 的人会说——财富放大的是早已存在的欲望，不创造新的</a></h3>
+      <p>Aditya Agarwal 参与过 Meta 和 Dropbox 两次 IPO（首次公开募股），见过大规模财富兑现对人的真实影响。他的观察是：主流叙事说「早期员工发财后就去买豪宅、躺着休息」，这对有些人确实成立，但对更多人来说，钱不是让他们停下来的东西，而是让他们做更疯狂事情的资本——创立新公司、投资新东西、继续硅谷这个「疯狂循环」。</p>
+      <p>他说的「循环」是一个具体的系统：IPO 让早期员工获得流动性，流动性流向新创业、新投资，新投资孵化下一批公司，下一批公司再走向 IPO。这不是抽象理论，是他见过的真实轨迹。他的结论：财富放大的是欲望，不是创造欲望。想休息的人有了可以休息的底气，想继续做事的人有了更大的子弹。</p>
+      <p><strong>财富是放大器，不是转化器——在 IPO 之前你是什么样的人，你之后还是那种人，只是规模更大。</strong></p>
+      <cite><a href="https://x.com/adityaag" target="_blank" rel="noopener">X @adityaag</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://readwise.io" target="_blank" rel="noopener">Wisereads · Stephen M.R. Covey《信任与激励》：领导力的真正杠杆是对人潜力的信任，而非命令与管控</a></h3>
+      <p>Wisereads Vol. 146 本周精选了 Stephen M.R. Covey（《信任的速度》作者，管理学经典《高效能人士的七个习惯》的作者之子）的新书《Trust and Inspire》（信任与激励）。Covey 的核心论点：多数管理者默认的姿态是「命令与管控」（command and control），给任务、设约束、监督执行；而真正释放人潜力的姿态是「信任与激励」（trust and inspire）——相信人有能力做好，然后给出空间。</p>
+      <p>这不是软性口号。Covey 认为，当你领导的是一个家庭、一个团队、还是一家公司，决定成果上限的往往不是策略有多精准，而是信任关系有多深。信任是效率，不是风险；对人潜力的轻视，是大多数组织最隐蔽的成本。在 AI Agent 已经可以自主执行任务的时代，「管控」的冲动会被进一步放大——Covey 的框架对人的管理成立，也在提醒我们对 Agent 的设计不要只想着约束。</p>
+      <p><strong>「信任是效率」这个判断，放在 AI Agent 部署的语境下比任何时候都更有操作意义。</strong></p>
+      <cite><a href="https://readwise.io" target="_blank" rel="noopener">Wisereads</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.07080" target="_blank" rel="noopener">dots.tts：2B 参数自校正后训练，刷新文本转语音基准，本周 HuggingFace 最高票论文</a></h3>
+      <p><strong>现状：</strong>文本转语音（TTS，text-to-speech）模型通常依赖奖励信号或强化学习来对齐生成质量，训练复杂度高，音质和自然度难以同步优化。</p>
+      <p><strong>问题：</strong>传统自回归 TTS 模型在全历史条件（full-history conditioning，生成每一帧时参考所有之前音频帧）下计算开销大；奖励模型的引入又增加了管道复杂性和对高质量奖励标注的依赖。</p>
+      <p><strong>解决方案：</strong>dots.tts 是一个 2B 参数的连续自回归 TTS 基础模型，结合 Audio-VAE（将音频压缩进潜空间的变分自编码器）和带全历史条件的 flow-matching（流匹配，一种无需逐步去噪的生成建模方法）。训练后阶段采用「无奖励自校正后训练」（reward-free self-corrective post-training）：模型通过自我对比和纠错提升质量，完全不依赖外部奖励信号。</p>
+      <p><strong>价值：</strong>以较小参数量达到当前 SOTA（state-of-the-art，最优水平）的语音生成质量；无奖励训练路线大幅降低了高质量 TTS 的落地门槛，本周在 HuggingFace 获得 210 颗星，是当日最高。</p>
+      <p><strong>未来方向：</strong>无奖励自校正路线有望推广到其他生成式多媒体任务，不只是语音。</p>
+      <cite><a href="https://arxiv.org/abs/2606.07080" target="_blank" rel="noopener">arXiv 2606.07080</a> · <a href="https://huggingface.co/papers/2606.07080" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.05761" target="_blank" rel="noopener">SubtleMemory：长时 Agent 关系记忆辨别基准，测试「矛盾记忆并存时 Agent 能否做对」</a></h3>
+      <p><strong>现状：</strong>长期运行的 AI 助手（如 OpenClaw 类系统）在与用户持续交互后，会积累大量相互关联的记忆片段，这些片段之间可能互相强化、也可能在不同语境下发散、甚至直接矛盾。</p>
+      <p><strong>问题：</strong>现有长期记忆 benchmark（标准化评测集）很少测试 Agent 在复杂记忆关系下的表现——大多数评测只检查单条记忆的召回，不测试当多条关联记忆并存时 Agent 能否做出正确区分和判断。</p>
+      <p><strong>解决方案：</strong>SubtleMemory 构建了包含 1,522 个评测实例的基准，跨越 10 段长期交互历史，覆盖「互补关系」「细微差异关系」「直接矛盾关系」三种记忆变体类型，以及用户相关和非用户相关两类查询。对 6 个独立记忆系统、5 个带记忆模块的 Claw 风格 Agent 进行评测。</p>
+      <p><strong>价值：</strong>评测结果显示，当前所有系统在细粒度关系记忆辨别上表现「持续薄弱」——这是长时 Agent 走向真实部署前必须正视的能力缺口。</p>
+      <p><strong>未来方向：</strong>关系感知记忆架构（而非纯向量检索）将成为企业级持久 Agent 的下一代基础设施方向。</p>
+      <cite><a href="https://arxiv.org/abs/2606.05761" target="_blank" rel="noopener">arXiv 2606.05761</a> · <a href="https://huggingface.co/papers/2606.05761" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.05806" target="_blank" rel="noopener">ToolMaze / When Tools Fail：工具失效时的动态重规划基准，LLM Agent 的异常恢复能力系统测评</a></h3>
+      <p><strong>现状：</strong>LLM Agent 在执行多步任务时高度依赖工具调用（tool use，调用外部 API、函数或服务来完成任务的能力）。实验室环境下工具通常可靠，但生产部署中工具会超时、返回错误、或行为与预期不符。</p>
+      <p><strong>问题：</strong>现有评测集假设工具始终正常工作，缺乏对「工具失效后 Agent 能否诊断原因、重新规划、完成任务」这一核心生产场景的系统化测评。</p>
+      <p><strong>解决方案：</strong>ToolMaze 构建了一个覆盖多种工具异常模式（超时、错误码、部分返回、格式异常等）的 benchmark，测量 LLM Agent 在工具失效后的动态重规划（dynamic replanning）和异常恢复（anomaly recovery）能力，开源于 GitHub（Zhudongsheng75/ToolMaze）。</p>
+      <p><strong>价值：</strong>填补了从「玩具环境」到「真实工具链」之间的评测空白，为 Agent 框架选型和鲁棒性优化提供量化基础。</p>
+      <p><strong>未来方向：</strong>工具异常感知将成为生产级 Agent 的必备能力层，而非可选优化项。</p>
+      <cite><a href="https://arxiv.org/abs/2606.05806" target="_blank" rel="noopener">arXiv 2606.05806</a> · <a href="https://huggingface.co/papers/2606.05806" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.06476" target="_blank" rel="noopener">Astra「用想象力思考」：VLM 主动向世界模拟器查询缺失视角，把空间推理变成主动视觉证据采集</a></h3>
+      <p><strong>现状：</strong>视觉语言模型（VLM，能同时处理图像和文字的大模型）在做空间推理时，往往受限于输入图像提供的固定视角，无法主动获取回答问题所需的缺失观测。</p>
+      <p><strong>问题：</strong>空间推理问题（如「从另一个角度看，这个物体遮挡了什么？」）常常需要从当前输入中不可见的视角获取信息，而现有方法只能被动处理已有输入，无法主动「去看」。</p>
+      <p><strong>解决方案：</strong>Astra 把这个问题重新定义为「用想象力思考」（thinking with imagination）：系统将 Astra-VL（基于 Qwen3-VL 的 RL 强化学习训练策略模型）与 Astra-WM（基于 Bagel 的世界模拟器，World Model，对环境的内部表示）耦合，让 VLM 在需要时主动查询世界模拟器获取缺失视角，用返回的「想象观测」来回答空间问题。</p>
+      <p><strong>价值：</strong>把视觉空间推理从被动处理变成主动证据采集，与具身认知（enactive cognition）的理论框架共鸣：理解不是内部运算，而是主动寻找所需观测的过程。</p>
+      <p><strong>未来方向：</strong>模拟器介导的主动感知将成为下一代具身 Agent 和机器人视觉推理的核心框架。</p>
+      <cite><a href="https://arxiv.org/abs/2606.06476" target="_blank" rel="noopener">arXiv 2606.06476</a> · <a href="https://huggingface.co/papers/2606.06476" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.06741" target="_blank" rel="noopener">OpenSkill：LLM Agent 从开放世界资源中自主合成技能，无需外部目标任务监督</a></h3>
+      <p><strong>现状：</strong>LLM Agent 通常需要针对特定任务进行微调或提供人工标注的示例才能习得新能力，泛化到陌生任务时成本高昂。</p>
+      <p><strong>问题：</strong>依赖「外部目标任务监督」意味着每进入一个新领域就要重新收集数据或设计奖励，限制了 Agent 在开放世界（open-world，任务分布未知、不断变化的真实环境）中的自主成长空间。</p>
+      <p><strong>解决方案：</strong>OpenSkill 是一个让 LLM Agent 自我进化的框架：Agent 从开放世界资源（如代码库、文档、网页）中自主合成 grounded skill（有地基的技能，即与真实执行路径锚定的可调用能力单元）和验证信号，完全不需要外部为目标任务提供监督。代码开源于 OpenLAIR/OpenSkill。</p>
+      <p><strong>价值：</strong>提供了一条无需人工干预的 Agent 能力扩充路线，令 Agent 的技能库可以随接触到的资源自然生长。</p>
+      <p><strong>未来方向：</strong>「从资源中自学技能」将成为通用 Agent 基础设施的关键组件，与工具调用和记忆管理并列。</p>
+      <cite><a href="https://arxiv.org/abs/2606.06741" target="_blank" rel="noopener">arXiv 2606.06741</a> · <a href="https://huggingface.co/papers/2606.06741" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>Thibault Sottiaux（Codex @OpenAI）：接下来 100 天，每天选出一名用 Codex 做出精彩工作的人，给予一个月 10 倍使用额度——Codex 的社区激励实验正式启动。<a class="glance-src" href="https://x.com/thsottiaux/status/2063748242681307611" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+      <li>Sam Altman：「这里也许有个有趣的递归 loop」——转发了 Codex 100 天计划，一句话点出了 AI 评选 AI 用户这件事的自指性。<a class="glance-src" href="https://x.com/sama/status/2063779477419901071" target="_blank" rel="noopener">X @sama →</a></li>
+      <li>Peter Yang（Roblox PM）：「我老婆让我倒垃圾，我说：你不该再 prompt 我了，你应该设计一个 loop。」——「设计 loop」话题的最佳爸爸笑话。<a class="glance-src" href="https://x.com/petergyang/status/2063818032280170721" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Madhu Guru（前 Google Gemini/Veo PM）：训练数据是高技能工作，不是体力活——Labs 需要高经济价值任务的数据，但这类任务的文档和工具往往稀碎，这才是 SWE Agent 已有而 knowledge work Agent 尚无的原因。<a class="glance-src" href="https://x.com/realmadhuguru/status/2063704354910347520" target="_blank" rel="noopener">X @realmadhuguru →</a></li>
+      <li>Amjad Masad（Replit CEO）：「Replit 的核心是移除所有干扰，让你专注于最重要的事——进市场和拿到收入。」——回复了一名创始人晒出的里程碑。<a class="glance-src" href="https://x.com/amasad/status/2063744208587125142" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>Guillermo Rauch（Vercel CEO）：Vercel AI Gateway 每月帮助恢复超过 1 万亿 tokens，零加价于 Labs 成本；原理类似 Stripe 的支付重试——在失败请求上自动补救，为 AI 层加冗余、零数据留存、可观测性和用量管理。<a class="glance-src" href="https://x.com/rauchg/status/2063714700618334260" target="_blank" rel="noopener">X @rauchg →</a></li>
+      <li>Aaron Levie（Box CEO）：Box 现在有 markdown 编辑器、完整 CLI、注释和版本历史，Box Drive 可挂载为本地驱动，直接接入 Claude Code、Codex、Obsidian、Cursor 等工具。<a class="glance-src" href="https://x.com/levie/status/2063649508681224367" target="_blank" rel="noopener">X @levie →</a></li>
+      <li>Garry Tan（YC CEO）：「AI 工具的使用教育已成为严重瓶颈」——转推了关于 AI 工具普及障碍的观察，并附链接，指向他们为此专门创建的资源。<a class="glance-src" href="https://x.com/garrytan/status/2063786111588323780" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Garry Tan：GBrain v0.42.30 新功能：可以生成「你的思维方式如何随时间演变」的详细摘要——个人知识管理工具向自我认知镜子的方向延伸。<a class="glance-src" href="https://x.com/garrytan/status/2063785286367392095" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Zara Zhang（Builder）：Frontend Slides skill 有机增长的原因：「幻灯片天然具有社交属性，别人看到就会问'你是怎么做的'，而用 HTML 幻灯片的人会被认为更具 AI 原生感。」<a class="glance-src" href="https://x.com/zarazhangrui/status/2063638307586662539" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+      <li>Nikunj Kothari（FPV Ventures）：从「tokenmaxxing（囤积 token 额度）」到「tokenoptimizing（精简 token 用量）」的氛围转变只花了几周；他的反向判断是：公司仍应给员工充足的 token 预算，否则太容易退回「用老方法做事」。<a class="glance-src" href="https://x.com/nikunj/status/2063630238123483195" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Wisereads · Addy Osmani「编排税」：多 Agent 系统（orchestration，让多个 AI 协同完成任务的架构）隐藏着比表面 API 调用成本更高的协调开销——延迟、上下文传递、错误传播都是账单的一部分。<a class="glance-src" href="https://readwise.io" target="_blank" rel="noopener">Wisereads →</a></li>
+      <li>Wisereads · Bret Horsting：「领域专业知识永远是真正的护城河」——AI 能给领域专家编程能力，但给不了工程师多年的现场经验和对业务真相的感知。<a class="glance-src" href="https://readwise.io" target="_blank" rel="noopener">Wisereads →</a></li>
+      <li>TLDR：机器人学仍处于「范式前阶段」（pre-paradigm field，缺乏统一底层理论的领域）——今天选择的工具框架编码了关于「具身智能是什么」的隐性理论，选错框架就是选错了世界观。<a class="glance-src" href="https://whattotelltherobot.com/p/why-robotics-is-a-pre-paradigm-field" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>TLDR：小型模块化核反应堆首次测试达到临界态（Antares 初创公司）——「临界」意味着核反应可以自持，发电测试预计明年进行。<a class="glance-src" href="https://arstechnica.com/science/2026/06/first-us-test-of-modular-reactor-reaches-criticality/" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>TLDR：Google Chrome 测试直接将用户导入 AI 模式而非传统搜索——目前仍是探索阶段，代码注释明确表示暂无上线计划。<a class="glance-src" href="https://9to5google.com/2026/06/05/google-tests-sending-users-straight-to-ai-mode-instead-of-search-in-chrome/" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>TLDR：Jevons 误解——AI 让软件开发提速后，市场反馈速度并没有同步加快；扩张的红利被企业吸收，而非传递给工人，就业条件趋于恶化而非改善。<a class="glance-src" href="https://platforms.substack.com/p/the-jevons-misunderstanding" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>TLDR：HTML-in-canvas——Chrome 实验性 API，将标准 HTML 渲染进 canvas（画布，原本只能绘图的 Web 元素）环境，保留 DOM 可访问性；网页有望长得更像它所描述的真实事物。<a class="glance-src" href="https://www.jonoalderson.com/conjecture/weirdly-human/" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>TLDR：「为什么软件自动化很难」——开发提速不一定有用，如果市场反馈速度还是那么慢。<a class="glance-src" href="https://www.lesswrong.com/posts/KzXptMbuDsYLrppss/why-software-automation-is-hard" target="_blank" rel="noopener">TLDR →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-06-07.html">← Jun 7</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
