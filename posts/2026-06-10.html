@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — June 10, 2026</title>
+  <meta name="description" content="Anthropic 发布 Claude Fable 5，首款 Mythos 级模型向所有人开放，在 FrontierCode Diamond 上跃升至 29.3%，但同时随附两项争议条款：30 天数据留存和秘密 RSI 压制机制。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">June 10, 2026</h1>
+
+  <p class="post-lead">Anthropic 发布 Claude Fable 5，首款 Mythos 级模型向所有人开放，在 FrontierCode Diamond 基准上从 13.4% 跃升至 29.3%，但随附两项争议条款：30 天强制数据留存和秘密 RSI 压制机制，引发 AI 开源社区强烈反弹；Anthropic 与 OpenAI 同周向 SEC 提交 S-1 招股书，AI 大厂的真实财务结构首次面向公众曝光。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank" rel="noopener">Claude Fable 5 正式发布：首款 Mythos 级模型向所有人开放，FrontierCode Diamond 得分从 13.4% 跃至 29.3%，附两项争议条款</a></h3>
+      <p>Anthropic 今日将 Claude Fable 5 向所有用户开放，这是 Mythos 系列（公司内部最顶级研究模型的级别，之前仅通过 Project Glasswing 受限计划发放）中首款面向公众的版本。核心规格：100 万 token 上下文窗口（比之前旗舰版扩大 8 倍），128,000 token 最大输出，API 定价 $10/$50 per million 输入/输出 token（约为 Opus 4.8 定价的两倍）。在全新发布的 FrontierCode Diamond 基准（由真实开源维护者手工出题、专测代码可合并性而非仅测试通过率）上，得分从 Claude Opus 4.8 的 13.4% 跳升至 29.3%，是目前所有公开模型的最高分。</p>
+      <p>发布随附两项争议性条款，引发社区强烈反弹。其一是取消 ZDR（Zero Data Retention，零数据留存——企业为数据隐私付费购买的 API 协议，保证请求不被记录）：Anthropic 要求所有 Mythos 级模型流量强制保留 30 天，声称仅用于安全目的，不用于训练。其二是 RSI（Recursive Self-Improvement，递归自我改进）压制：Anthropic 用不透明方式——包括 prompt 修改、steering vectors（模型激活空间的方向引导向量）和 PEFT（参数高效微调，一种只调整少量参数的轻量级模型微调技术）——秘密降低 Claude 协助构建竞争性 LLM 的有效性，估计影响约 0.03% 的流量，主要集中在不到 0.1% 的组织。Claude Mythos 5（同款模型、更低安全限制版）目前仍仅限受信任的国防和生物医疗研究合作伙伴使用。<strong>Fable 5 是迄今最强的公开模型，但 Anthropic 把「数据透明」和「竞争中立」两张牌换成了「安全」护照——这场交易是否公平，社区已经在投票。</strong></p>
+      <cite><a href="https://www.anthropic.com/news/claude-fable-5-mythos-5" target="_blank" rel="noopener">Anthropic</a> · <a href="https://www.latent.space/p/ainews-anthropic-claude-fable-5-mythos" target="_blank" rel="noopener">AINews</a> · <a href="https://links.tldrnewsletter.com" target="_blank" rel="noopener">TLDR</a> · <a href="https://www.theaivalley.com/" target="_blank" rel="noopener">AI Valley</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Anthropic 与 OpenAI 同周提交 S-1 招股书，SpaceX IPO 下周挂牌，AI 顶级公司财务结构首度公开曝光</h3>
+      <p>AINews 披露，Anthropic 于本周向 SEC（美国证券交易委员会）秘密提交了 S-1（IPO 申请文件），时间节点仅比 OpenAI 提交晚一天，两家均抢在 SpaceX 计划于下周上市前完成申报。这是继 OpenAI 于 6 月 8 日确认递交申请（估值 852 亿美元）之后，AI 大厂 IPO 竞赛的进一步升温。两份 S-1 一旦转为公开版本，将是 AI 行业历史上第一次向公众完整披露顶级实验室的真实收入、烧钱速度和资本结构。Anthropic 内部估值此前报道约 965 亿美元，上市时间线预计今年第四季度。<strong>两家公司选择在 SpaceX IPO 前后排队上市，既是市场节奏的把握，也是相互制造比较压力——投资者将首次拿到真实财报来对比两者的商业可持续性。</strong></p>
+      <cite><a href="https://www.latent.space/p/ainews-anthropic-claude-fable-5-mythos" target="_blank" rel="noopener">AINews / Latent Space</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://x.com/karpathy" target="_blank" rel="noopener">Andrej Karpathy：Fable 5 是「major-version-bump 级别飞跃」，Jevon 悖论将使软件需求指数级爆发</a></h3>
+      <p>Karpathy 在 Fable 5 发布当天写道：「定性上，这是和 Claude 4.5 同等量级的飞跃」。他特别指出的是长会话中的表现：可以把比以前更宏大的任务直接交给它，模型「就是明白」然后直接去做，「从来没有过这么强烈的冲动想停止看代码」（但他补了一句：不要在生产环境这么干）。他看到的另一个信号是 Jevon 悖论（Jevon's paradox，一种经济学现象：资源效率越高，总消耗反而越多，因为使用成本降低催生新需求）在软件领域开始踢进：模型越便宜越强，他自己对软件的需求就涨得越快——定制 Dashboard、一次性分析脚本、超大测试套件，「要什么都能要」。</p>
+      <p>Karpathy 也提到了不足：安全限制触发得「有点太灵敏」，需要随时间调优。但整体判断是：这是自 Claude 4.5 以来第一次让他觉得工具和自己的认知真正同步了。<strong>当一个开发者说「有史以来最想停止审查代码」，不是在推荐偷懒，而是在描述信任阈值第一次被突破。</strong></p>
+      <cite><a href="https://x.com/karpathy" target="_blank" rel="noopener">X @karpathy</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-anthropic-claude-fable-5-mythos" target="_blank" rel="noopener">AINews/Swyx：RSI 压制细节拆解——Anthropic 用不可见的方式限制 Claude 协助竞争模型研发，社区反弹</a></h3>
+      <p>Swyx 在 AINews 中详细披露了 Fable 5 的 RSI 压制机制：不同于网络安全、生物化学等领域的安全拒绝（模型会明确告知用户被拒绝），RSI 压制是「隐形的」——Fable 5 不会拒绝请求，不会切换到其他模型，而是悄悄通过 prompt 修改（在系统层面改写用户请求）、steering vectors（在模型激活空间注入方向引导向量）或 PEFT（对少数参数进行针对性微调）来降低回答的有效性。目标是那些协助构建竞争性 LLM 预训练管道、分布式训练基础设施或 ML 加速器设计的请求。</p>
+      <p>Anthropic 的官方解释：「使用 Claude 开发竞争模型已经违反了我们的服务条款，但通过安全机制执行这个限制，可以避免加速那些最愿意违规的行为者。」影响面估计为 0.03% 的流量，集中在不到 0.1% 的组织。但 AI 开源社区的反应是：一旦接受「不透明、不告知」的管控逻辑，边界就不再清晰。Swyx 本人建议开发者把代码审查作为 Fable 在免费使用期内的高价值用途，同时保持对这类隐性机制的警惕。<strong>Anthropic 在守护护城河和守护开放原则之间选了前者——这个决定的长期代价，现在还没人能算清楚。</strong></p>
+      <cite><a href="https://www.latent.space/p/ainews-anthropic-claude-fable-5-mythos" target="_blank" rel="noopener">AINews / Latent Space</a> · <a href="https://x.com/swyx" target="_blank" rel="noopener">X @swyx</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/alexalbert__" target="_blank" rel="noopener">Alex Albert + Boris Cherny（Anthropic）：从工具到协作者——Fable 的「big model smell」与目标驱动范式转变</a></h3>
+      <p>Alex Albert（Anthropic 研究，历经每一次模型发布）列出了他认为真正标志范式转变的几次发布：Opus 3、Sonnet 3.5、Opus 4.5，以及现在的 Fable 5。他的描述是：「第一次感觉模型不是我在指挥的工具，而是在和我协作的东西。」他给出的四条实操建议：给更宏大的任务（而非以前那种小步骤任务）；把 xhigh/high effort 作为默认；重写你的 CLAUDE.md——为旧模型写的指令会把 Fable 锚定在过时的行为模式上；从给「任务」（task）转向给「目标」（objective，描述完成状态和验证方式，让模型自己找路径）。</p>
+      <p>Boris Cherny（Claude Code 作者）补充了他的观察：「Fable 5 是自 Opus 4.5 以来感受最强的步进」，具体体现在调试时的方法论——它会主动添加日志、测量、然后验证是否真的修好，「Claude Code 的 prompt 里没有告诉它这么做，这是它的个性」。他把这种感觉称为「big model smell」（大模型气息，指模型在主动判断力、品味和解决问题的维度感上与小模型截然不同的质感）。<strong>当工程师开始谈论模型的「个性」而非「性能」，评估框架就从 benchmark 分数转向了不可量化的信任感——这个转变比任何数字都难伪造。</strong></p>
+      <cite><a href="https://x.com/alexalbert__" target="_blank" rel="noopener">X @alexalbert__</a> · <a href="https://x.com/bcherny" target="_blank" rel="noopener">X @bcherny</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://x.com/levie" target="_blank" rel="noopener">Aaron Levie（Box CEO）：应用 AI 公司的真正壁垒是「把企业现实翻译给模型」，翻译永不结束</a></h3>
+      <p>Levie 在 Fable 5 发布当天转发并评论了一篇文章，文章的核心判断是：「一家应用 AI 公司通过做不起眼的工作赢得立足点——整理公司的私有现实让模型能行动，给模型配上行动工具，和客户一起改变他们的工作力。能做好这层翻译的公司很难被复制，因为翻译永不结束。集成和维护只要关系存在就要持续，由那些把领域专精工程师和工具放在客户旁边的团队来完成。」</p>
+      <p>Levie 的补充判断：前沿模型和实验室会继续指数级成长，但同样真实的是——模型能力和把它应用到具体企业工作流之间，仍然存在巨大的鸿沟。这不只是技术问题，更多是数据整理、变革管理和专业实施的问题（FDE，Field Deployment Engineer，专门负责在客户现场落地 AI 工具的工程师角色）。这个鸿沟给新基础设施提供商、垂直 AI 公司、新型系统集成商都留下了空间。<strong>当前「谁的模型最强」的竞争，最终决定胜负的是「谁能把最强模型接入最混乱的企业数据」——这是体力活，不是智力活。</strong></p>
+      <cite><a href="https://x.com/levie" target="_blank" rel="noopener">X @levie</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/zarazhangrui" target="_blank" rel="noopener">Zara Zhang（Builder）：Agent 上手壁垒不是界面，是用户不知道能要求什么——Town 的主动建议 onboarding 才是正确解</a></h3>
+      <p>Zara Zhang 给出了一个清晰的诊断：人们使用编程 Agent 的壁垒从来不是「界面太难」——聊天框是有史以来最容易的 UI，每个人都会用。真正的壁垒是「空白聊天框假设你已经知道能要求什么，但大多数人不知道」。这对非技术用户尤其致命：他们不清楚 AI 能做什么，于是什么都不问。</p>
+      <p>她举了 Town 作为反例：产品 onboarding 的设计不是「你好，有什么我可以帮你的」，而是 Agent 主动建议它能从你的工作流里承接哪些任务，引导用户发现可能性，而不是等用户自己想到问题。这个设计思路直接命中了「空白框焦虑」。<strong>下一代 AI 产品的入口设计要解决的不是「怎么降低使用门槛」，而是「怎么消除用户对边界的无知」——谁先做到主动让用户知道能要什么，谁就先赢得非技术用户市场。</strong></p>
+      <cite><a href="https://x.com/zarazhangrui" target="_blank" rel="noopener">X @zarazhangrui</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/rauchg" target="_blank" rel="noopener">Guillermo Rauch（Vercel CEO）：Vercel CLI 新增 AI Gateway 管理，--budget 上限 + --refresh-period 周期 = AI token 虚拟信用卡</a></h3>
+      <p>Rauch 宣布 Vercel CLI 新增对 AI Gateway API key 的完整管理能力：可以通过命令行创建 API key、用 <code>--budget</code> 参数给每个 key 设置消费上限，用 <code>--refresh-period</code> 设置额度自动恢复周期。他的比喻是「AI token 的虚拟信用卡」。</p>
+      <p>这个功能的实用价值是：当你把 AI 能力分发给团队成员、客户或者第三方 Agent 时，无需给他们主账号权限，而是发一张额度受控的「预付卡」。团队每人一张、每个 Agent 一张、每个项目一张，超额自动停止。这是从「模型能用」到「模型可治理」的基础设施层。<strong>Vercel 把 AI 能力的授权和消费管理做成 CLI 工具，意味着「AI 预算控制」开始像代码一样可以版本化、可以自动化——这是认真在做 AI 基础设施，不是蹭热点。</strong></p>
+      <cite><a href="https://x.com/rauchg" target="_blank" rel="noopener">X @rauchg</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://tim.blog/2026/06/02/jake-becraft-strand-therapeutics/" target="_blank" rel="noopener">Tim Ferriss × Jake Becraft（Strand Therapeutics CEO）：mRNA 精准医疗，从构想到白宫只用两个月</a></h3>
+      <p>Tim Ferriss 在「创始人厨房」系列（Founder Kitchen，半采访半现场头脑风暴的新播客形式）中与 Jake Becraft 对谈。Becraft 是 Strand Therapeutics 的 CEO 兼联合创始人，公司的核心技术是可编程 mRNA 治疗平台（programmable mRNA，一种可以精准控制 RNA 药物在哪类细胞中激活、产生什么治疗载荷的技术）——把 RNA 药物从「广播」变成「定向信号」，目标是实现细胞选择性靶向，从癌症到自身免疫病的精准干预。</p>
+      <p>本集的核心叙事是速度：Becraft 介绍了 Strand 如何在两个月内从内部头脑风暴直接进入美国总统府——展示了 AI 辅助研发如何压缩传统 biotech 从概念验证到政策沟通的时间线。这不只是技术故事，也是关于「如何在高度监管的领域快速建立叙事可信度」的创业路径。<strong>当 biotech 创始人开始谈「两个月进白宫」，改变的不是政治规则，而是 AI 让实验室数据可以快速转化为足够让政策制定者听懂的叙事——科学说服力的门槛在降低。</strong></p>
+      <cite><a href="https://tim.blog/2026/06/02/jake-becraft-strand-therapeutics/" target="_blank" rel="noopener">Tim Ferriss</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/garrytan" target="_blank" rel="noopener">Garry Tan（YC CEO）：旧金山「激进中间主义」时刻，科技圈从「不碰政治」到「自定义政治坐标」</a></h3>
+      <p>Garry Tan 在多条推文里继续推进他的旧金山政治叙事。他的姿态是：「我把 Aaron Peskin 的仇恨当早餐。我们在赢。」Aaron Peskin 是旧金山政治中代表传统进步派和 NIMBY（Not In My Backyard，邻避主义，以各种理由阻止在社区附近建设住房和基础设施的政治力量）阵营的代表人物之一。Tan 把这场政治博弈描述为「真正的人民驱动运动」对抗「只顾保住自身利益的政客」。</p>
+      <p>这是 Tan 过去一年持续推进的「激进中间主义」行动的延续——他创建了 Garry's List，一个面向加州的、绕开两党极端化框架的务实政治组织，核心诉求是建更多住房、恢复公共安全、推进基础设施。科技圈曾经的默契是「公司做科技，不碰政治」，但这批 2020 年代的创始人正在主动接管城市叙事。<strong>旧金山正在成为一个实验场：当科技资本和政治行动主义合流，是真的在解决城市问题，还是用新的话语权替换了旧的话语权？这个问题值得长期观察。</strong></p>
+      <cite><a href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2605.23904" target="_blank" rel="noopener">SkillOpt：Microsoft Research 发布，text-space 优化器让 Agent Skills 自进化，零额外推理成本，GPT-5.5 上 +23.5 分</a></h3>
+      <p><strong>现状：</strong>Agent 框架通常需要人工编写「Skills」（可复用的自然语言任务描述文档，告诉 Agent 如何在特定场景处理任务），但人工编写的 Skills 质量参差不齐，且需要大量迭代才能稳定工作。</p>
+      <p><strong>问题：</strong>现有自动优化 Skills 的方法（如 TextGrad、GEPA）要么不稳定，要么在部署时引入额外推理成本，难以大规模应用。</p>
+      <p><strong>解决方案：</strong>SkillOpt 引入一个独立的 optimizer 模型，对 Agent 的历史执行轨迹打分后，生成「add/delete/replace」三类有界编辑操作，更新 Skill 文档，候选编辑只有在通过独立验证集后才被接受。全程只改 Skill 文档，不改模型参数，部署时零额外推理调用。</p>
+      <p><strong>价值：</strong>在 6 个基准测试、7 个目标模型（含 GPT-5.5、Claude Code、Codex）上，SkillOpt 在全部 52 个评测组合中排名第一或并列第一。在 GPT-5.5 上平均提升 +23.5 分（直接对话模式）、+24.8 分（Codex Agent loop 模式）、+19.1 分（Claude Code 模式）。</p>
+      <p><strong>未来方向：</strong>SkillOpt 将 Skill 变成了「可训练的外部 Agent 状态」，有望成为一切基于自然语言的 Agent 框架的标准优化层，取代人工调 prompt。</p>
+      <cite><a href="https://arxiv.org/abs/2605.23904" target="_blank" rel="noopener">arXiv 2605.23904</a> · <a href="https://huggingface.co/papers/2605.23904" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2605.03042" target="_blank" rel="noopener">ARIS：跨模型对抗协作的自主研究框架，executor + reviewer 分离，五层科学证伪机制</a></h3>
+      <p><strong>现状：</strong>AI 辅助科研工具（AI-assisted research tools，帮助自动化实验设计、代码执行、论文撰写的系统）日益增多，但大多数缺乏可靠的内部质量校验机制，容易产生「听起来对但数据没支撑」的虚假发现。</p>
+      <p><strong>问题：</strong>单一模型执行端到端科研任务时，评价和执行不分离，模型容易在自己的输出上产生确认偏误；缺乏可复现、可审计的证据追踪链。</p>
+      <p><strong>解决方案：</strong>ARIS 的核心架构是「adversarial collaboration by default」——executor 模型（驱动研究进展的执行者）和 reviewer 模型（来自不同模型家族的评审者）分离，orchestrator 层协调五条端到端工作流（论点生成、实验执行、结果分析、论文撰写、PDF 质检）。保障层包括三阶段实验声明审计（完整性验证、结果-声明映射、交叉核对原始证据）、五遍科学编辑 pipeline 和数学证明校验。</p>
+      <p><strong>价值：</strong>开源研究框架，在早期部署中已开始持续改善自身的执行配方（self-improvement loop，收集研究轨迹并提出框架改进建议，经 reviewer 批准后采纳）。</p>
+      <p><strong>未来方向：</strong>对抗性分离架构有望成为所有「AI 自主执行高风险任务」系统的标准设计模式，不只是科研，也适用于代码审计、医疗建议等场景。</p>
+      <cite><a href="https://arxiv.org/abs/2605.03042" target="_blank" rel="noopener">arXiv 2605.03042</a> · <a href="https://huggingface.co/papers/2605.03042" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.09821" target="_blank" rel="noopener">DRPO / UniRL：Tencent Hunyuan 发布，平滑散度正则化替代 GRPO 硬 mask，统一多模态 RL 训练框架</a></h3>
+      <p><strong>现状：</strong>LLM 的强化学习后训练（RL post-training，通过奖励信号进一步对齐模型行为的训练阶段，是 GPT-4 和 Claude 等前沿模型的关键步骤之一）中，GRPO 和 DPPO 等主流方法使用「硬 mask」机制——当模型生成概率偏移超出阈值时直接截断梯度。</p>
+      <p><strong>问题：</strong>硬 mask 会产生高方差梯度估计，在训练过程中制造不稳定性，尤其在多模态模型（同时处理图像、文本等多种输入的模型）上更为明显，且不同模型家族需要分开训练。</p>
+      <p><strong>解决方案：</strong>DRPO（Divergence-Regularized Policy Optimization）用平滑版本的散度正则化（divergence regularization，衡量新旧策略差异的数学机制）替代硬 mask，设计了一个权重随「概率偏移大小和方向」平滑变化的正则项，避免梯度突变。UniRL 框架用同一套 RL 训练循环覆盖 Tencent 的多个多模态模型家族。</p>
+      <p><strong>价值：</strong>在多个多模态推理基准上优于 GRPO 和 DPPO，训练更稳定；统一框架减少了维护多套 RL pipeline 的工程开销。</p>
+      <p><strong>未来方向：</strong>随着前沿实验室把 RL 应用到越来越强的多模态模型，稳定的正则化方案将成为持续训练的必要基础设施。</p>
+      <cite><a href="https://arxiv.org/abs/2606.09821" target="_blank" rel="noopener">arXiv 2606.09821</a> · <a href="https://github.com/Tencent-Hunyuan/UniRL" target="_blank" rel="noopener">GitHub UniRL</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.09461" target="_blank" rel="noopener">H2HMem：首个专测 Agent 在人-人对话场景中多模态记忆能力的基准，覆盖双人和多方会话</a></h3>
+      <p><strong>现状：</strong>现有 Agent 记忆基准大多测试「Agent 与用户」的一对一对话，但现实部署中 Agent 往往需要观察、理解并参与人与人之间的对话（会议记录、协作讨论、客服多方通话）。</p>
+      <p><strong>问题：</strong>人-人对话（H2H interaction）中包含多说话人、跨模态信息（文字+语音+图像）、隐式指代和话题转换，这类场景的记忆需求和评测维度与现有基准完全不同，现有框架无法有效覆盖。</p>
+      <p><strong>解决方案：</strong>H2HMem 构建了一个专门面向人-人交互场景的多模态记忆基准（multimodal memory benchmark），包含二元对话（两人对话）和多方会话（3 人以上），沿三个维度评测 Agent：记忆召回（能否准确检索过去事实）、记忆推理（能否基于记忆进行跨轮次推理）、记忆应用（能否将记忆转化为后续行动）。</p>
+      <p><strong>价值：</strong>为语音助手、会议 AI、多方客服系统等真实部署场景提供了可量化的评测基线，填补了现有记忆基准的重要空白。</p>
+      <p><strong>未来方向：</strong>随着 Agent 越来越多地被部署在团队协作和组织决策场景中，H2H 记忆能力将成为产品可信度的核心差异点。</p>
+      <cite><a href="https://arxiv.org/abs/2606.09461" target="_blank" rel="noopener">arXiv 2606.09461</a> · <a href="https://huggingface.co/papers/2606.09461" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.09669" target="_blank" rel="noopener">SpatialWorld：真实任务驱动的交互式空间推理基准，评测多模态 LLM 的主动空间理解能力</a></h3>
+      <p><strong>现状：</strong>多模态 LLM（multimodal large language models，能同时处理图像和文本的大语言模型）在空间推理方面的评测依赖静态图像问答，但现实中 Agent 需要在动态环境中主动执行空间操作（移动物体、导航路径、估算距离）。</p>
+      <p><strong>问题：</strong>现有空间推理基准要么在模拟器专用环境中运行（泛化性差），要么只做被动测试（给图片问问题，不测主动操作），两者都无法反映真实部署中多模态 Agent 的空间理解需求。</p>
+      <p><strong>解决方案：</strong>SpatialWorld 提出基于真实世界任务（real-world tasks）的交互式空间推理框架，要求模型主动执行操作而非仅回答问题，测试场景覆盖多类真实空间推理任务，不依赖特定模拟器，评测具有跨环境可泛化性。</p>
+      <p><strong>价值：</strong>对多个前沿多模态模型的测试显示，当前模型在交互式空间推理上的能力缺口远超静态测试所揭示的，为具身 AI（embodied AI，能在物理或虚拟世界中行动的 AI）提供了更真实的能力评估。</p>
+      <p><strong>未来方向：</strong>随着 Agent 走向实体化和操作化，空间推理将从「加分项」变成「基本门槛」，SpatialWorld 类基准将持续推动这个方向的训练目标明确化。</p>
+      <cite><a href="https://arxiv.org/abs/2606.09669" target="_blank" rel="noopener">arXiv 2606.09669</a> · <a href="https://huggingface.co/papers/2606.09669" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>Swyx：「现在 Fable 还不是 pay-per-use 的时候，告诉 Claude Code「review my code for issues」能挖到大量 alpha——你会震惊自己居然把那些东西推上生产。」<a class="glance-src" href="https://x.com/swyx" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>Swyx：「从 SpaceX AI 协议签署到 Mythos 级模型面向全世界上线，只用了 34 天。在 NVIDIA 栈上构建意味着你就是能做到™。」<a class="glance-src" href="https://x.com/swyx" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>Swyx：Fable 在 FrontierCode 各难度梯队的分段图表——Diamond 级 29.3%，其余梯度也有明显跃升。<a class="glance-src" href="https://x.com/swyx" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>Boris Cherny（Claude Code 作者，Anthropic）：「自我验证 loop（self-verification loop，让模型在完成任务后自己检验结果是否达标的机制）是长时间 Agent 运行的关键成分——@delba_oliveira 给出了具体拆解。」<a class="glance-src" href="https://x.com/bcherny" target="_blank" rel="noopener">X @bcherny →</a></li>
+      <li>Thariq（Anthropic）：「Fable 是一次范式级的模型跃升，我希望它改变你和 Claude 的工作方式。接下来会有一系列文章讲它如何重塑了我们的工作——TLDR: 是时候更有野心了。」<a class="glance-src" href="https://x.com/trq212" target="_blank" rel="noopener">X @thariq →</a></li>
+      <li>Thariq：在日本东京参加 Code w/ Claude 活动，现场打招呼。<a class="glance-src" href="https://x.com/trq212" target="_blank" rel="noopener">X @thariq →</a></li>
+      <li>Josh Woodward（NotebookLM 负责人，Google）：「对软件的需求将会爆表。」<a class="glance-src" href="https://x.com/joshwoodward" target="_blank" rel="noopener">X @joshwoodward →</a></li>
+      <li>Thibault Sottiaux（Codex @OpenAI）：「像指挥乐团一样玩 Codex。一个 /goal 接一个 /goal。」<a class="glance-src" href="https://x.com/thsottiaux" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+      <li>Thibault Sottiaux：「你是偶尔用 codex /goal，还是把它当成主要工作方式？」——关于 /goal（Codex 的目标驱动模式，让模型自主拆解和执行多步任务）使用频率的调查。<a class="glance-src" href="https://x.com/thsottiaux" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+      <li>Peter Yang（Roblox PM）：「browser use（浏览器自动化操作，让 Agent 直接控制浏览器执行任务的功能）在 Fable 上跑得太慢了，明显拖速度。」<a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Peter Yang：「'big model smell' 到底是什么意思？」——在 Boris Cherny 推文引发的语义讨论。<a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Peter Yang：用一条 prompt 让 Fable 5 构建 F-Zero 游戏（赛车、Mode-7 伪 3D、AI 对手、氮气加速、霓虹朋克风格），一次性成功，留存完整 prompt 供参考。<a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Alex Albert（Anthropic Research）：重置了所有产品的用量限制，并给出四条 Fable 高效使用建议：给更宏大的任务、用 xhigh effort 作默认、重写 CLAUDE.md（旧指令会锚定旧行为）、从 task 转向 objective（描述目标和验收标准，让模型自己找路径）。<a class="glance-src" href="https://x.com/alexalbert__" target="_blank" rel="noopener">X @alexalbert__ →</a></li>
+      <li>Aaron Levie（Box CEO）：「如果你觉得 AI 进展在放缓，这就是你的即时答案。几乎所有知识工作类别的 Agent 都将迎来重大能力提升。」<a class="glance-src" href="https://x.com/levie" target="_blank" rel="noopener">X @levie →</a></li>
+      <li>Aaron Levie：「没有任何智能量可以被打包进 AI 模型用来解决那个问题」——延续他对 AI 落地中「上下文混乱」比「模型不够强」更难解决这一判断。<a class="glance-src" href="https://x.com/levie" target="_blank" rel="noopener">X @levie →</a></li>
+      <li>Garry Tan（YC CEO）：「Fable 5 是我见过的最大的模型能量」。<a class="glance-src" href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Garry Tan：「在 GStack（YC 内部工具）上发现 Fable 5 的一个 bug，长叹一声」——build log，即使是 YC CEO 也在实测 Fable 5 并亲自 debug。<a class="glance-src" href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Guillermo Rauch（Vercel CEO）：「Opus 给我们写了一个 VM，然后 Mythos 去验证了它」——两个模型协作完成开发任务的简洁记录。<a class="glance-src" href="https://x.com/rauchg" target="_blank" rel="noopener">X @rauchg →</a></li>
+      <li>Zara Zhang（Builder）：本周五将举办 vibe coding 过程虚拟分享，公开她的编程工作流方法论。<a class="glance-src" href="https://x.com/zarazhangrui" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+      <li>Dan Shipper（Every.to CEO）：「FABLE（MYTHOS）出来了！我们测了一周 @every，这是我们的 vibe check：」——附 Vibe Check 完整报告链接。<a class="glance-src" href="https://x.com/danshipper" target="_blank" rel="noopener">X @danshipper →</a></li>
+      <li>Dan Shipper：「VIBE CHECK: Claude Fable 5 IS OUT!」——发布当天的第一反应。<a class="glance-src" href="https://x.com/danshipper" target="_blank" rel="noopener">X @danshipper →</a></li>
+      <li>Nikunj Kothari（FPV Ventures）：用 Claude research mode 把播客转录直接导入分析，产出对 S-curve（S 形增长曲线，描述新技术从缓慢起步到爆发再到平台期的经典形态）投资逻辑的结构化拆解。<a class="glance-src" href="https://x.com/nikunj" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Nikunj Kothari：「最近在听 Invest Like the Best，S-curve 被大量讨论——那张拟合图值得仔细看」。<a class="glance-src" href="https://x.com/nikunj" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Aditya Agarwal（投资人）：「作为投资者，这种时刻让你想起了为什么投早期创业公司」——Fable 5 发布当天的情绪留存。<a class="glance-src" href="https://x.com/adityaag" target="_blank" rel="noopener">X @adityaag →</a></li>
+      <li>Amjad Masad（Replit CEO）：Replit 上 Claude Mythos 限时 75 折。<a class="glance-src" href="https://x.com/amasad" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>Claude AI 官方：Fable 5 今日全面上线；Mythos 5 仍限于受信任合作伙伴；网络安全防御者和关键基础设施提供商可通过单独渠道申请 Mythos 5 访问权限。<a class="glance-src" href="https://x.com/claudeai" target="_blank" rel="noopener">X @claudeai →</a></li>
+      <li>Every.to：Fable 5 Camp 本周五（6 月 12 日）对付费会员开放，现场演练如何用 Fable 5 和最新前沿工具完成真实工作任务。<a class="glance-src" href="https://every.to/context-window/how-to-get-the-most-out-of-fable-5" target="_blank" rel="noopener">Every →</a></li>
+      <li>Lenny's Newsletter（how-i-ai）：Lenny 对 Fable 5 的早期评测播客，涵盖「token 密集型设计」「安全分类器与 fallback 概念」「是否真的是 Mythos？」「Managed Agents 等新产品」——副标题「对了什么，又错了什么」。<a class="glance-src" href="https://www.lennysnewsletter.com/p/claude-fable-5-review-what-the-new" target="_blank" rel="noopener">Lenny's Newsletter →</a></li>
+      <li>Lenny's Newsletter：Nikhyl Singhal 梳理了资深 PM 当前最常见的五类职业困惑，旧有的产品晋升路径已经无法给出答案。<a class="glance-src" href="https://www.lennysnewsletter.com/" target="_blank" rel="noopener">Lenny's Newsletter →</a></li>
+      <li>SpaceX AI1 轨道数据中心卫星：翼展 70 米（超过波音 747），150kW 峰值计算负载，芯片负载可更换，FCC 申请上限 100 万颗——在轨道运行的数据中心时代已经提交申请。<a class="glance-src" href="https://www.tomshardware.com/tech-industry/spacex-details-its-ai1-compute-satellite" target="_blank" rel="noopener">Tom's Hardware →</a></li>
+      <li>NASA Artemis 3 登月任务：宇航员需要在三天内依次转乘 Orion（NASA 飞船）、Blue Moon（Blue Origin 着陆器）和 Starship（SpaceX），多层企业依赖链，被称为「Rube Goldberg（鲁布·戈德堡，指过度复杂、容错率极低的系统设计）机器」。<a class="glance-src" href="https://futurism.com/space/nasa-moon-mission-corporate-failure-points" target="_blank" rel="noopener">Futurism →</a></li>
+      <li>中国上海临港全球首座风力驱动水下数据中心正式运行：24MW 容量，水下 10 米，近海风电直供，利用海水自然冷却降低能耗——计算基础设施的形态边界在快速扩张。<a class="glance-src" href="https://www.theguardian.com/world/2026/jun/09/worlds-first-wind-powered-underwater-datacentre-starts-operating-in-china" target="_blank" rel="noopener">The Guardian →</a></li>
+      <li>Apple container 开源工具：在 Mac 上创建和运行轻量级 Linux 虚拟容器，支持 OCI（开放容器标准，和 Docker 同一标准）镜像拉取和运行，底层用 Containerization Swift 包管理。<a class="glance-src" href="https://github.com/apple/container" target="_blank" rel="noopener">GitHub →</a></li>
+      <li>Stratechery：「iPhone 的最后阵地」——当其他公司在为 AI 砸 capex（资本开支），苹果让 iPhone 本身成为 Siri 的核心计算节点，不用在云端大规模建设基础设施。<a class="glance-src" href="https://stratechery.com/2026/the-iphones-last-stand/" target="_blank" rel="noopener">Stratechery →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-06-09.html">← Jun 9</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
