@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — June 11, 2026</title>
+  <meta name="description" content="SpaceX IPO 4倍超额认购正式定价明日开盘，OpenAI 酝酿 token 价格战，Fable 5 隐性降质政策部分回撤，Google 开源 DiffusionGemma 让文本生成速度提高 4 倍。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">June 11, 2026</h1>
+
+  <p class="post-lead">SpaceX IPO 以 4 倍超额认购正式定价 $135/股，明日在 Nasdaq 挂牌，将成史上最大 IPO；OpenAI 正酝酿大幅降低 token 价格以应对 Anthropic，双方均已启动 IPO 路演，AI 行业价格战一触即发；Fable 5 对 AI/ML 工作的隐性降质政策遭社区强烈反弹后部分回撤；Google 发布 DiffusionGemma，扩散架构（非自回归）让文本生成速度提高 4 倍，在单张 H100 上达到 1200+ tok/s，Apache 2.0 开源。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://links.tldrnewsletter.com/6L1KoG" target="_blank" rel="noopener">SpaceX IPO 4 倍超额认购，$135/股定价，融资 750 亿美元，史上最大 IPO 明日在 Nasdaq 挂牌</a></h3>
+      <p>SpaceX 的 IPO 需求超过可供股份 4 倍以上，最终以每股 $135 定价，发行 5.556 亿股，融资规模约 750 亿美元，超越沙特阿美 2019 年创下的前纪录，成为人类历史上最大单次 IPO。股票代码 SPCX，明日在 Nasdaq 和 Nasdaq Texas 双交易所同步上市。公司估值约 1.77 万亿美元。</p>
+      <p>这是硅谷近年最受关注的 IPO 事件，也是宇宙基础设施真正走向公开市场的历史节点。融资资金将主要用于轨道数据中心建设和星舰火星任务。<strong>SpaceX 上市把「用 AI 算力造火箭」和「用火箭建算力轨道」的循环带进公开市场，这不只是一家公司上市，而是一套新基础设施叙事的定价时刻。</strong></p>
+      <cite><a href="https://links.tldrnewsletter.com/6L1KoG" target="_blank" rel="noopener">TLDR</a> · <a href="https://finance.yahoo.com/sectors/technology/articles/openai-considers-drastic-price-cuts-014524008.html" target="_blank" rel="noopener">Yahoo Finance</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.bloomberg.com/news/articles/2026-06-11/openai-weighs-major-price-cuts-to-win-anthropic-users-wsj-says" target="_blank" rel="noopener">OpenAI 酝酿大幅降低 token 定价以对抗 Anthropic，双方均已启动 IPO 路演，AI 行业价格战一触即发</a></h3>
+      <p>据 WSJ 报道，OpenAI 正在考虑大幅削减 token（AI 调用计费单位）价格，直接动机是预判 Anthropic 将采取类似动作。Anthropic 今年 Q2 ARR 已达 $300 亿，超过 OpenAI 的 $240 亿。两家公司均已向 SEC 提交 IPO 申请，任何大幅降价都将直接影响招股估值和投资人对单位经济的判断。</p>
+      <p>价格战的结构困境：两家公司因巨额算力成本目前均未盈利，但两家均有充分动机在上市路演期间争夺用户份额。每一次降价都可能触发对方跟进，进入「谁先停下谁先输」的博弈。<strong>当两家 AI 顶级实验室同时在 IPO 前发动价格战，投资人会首次拿到真实财报来判断哪家更有底气打持久战，结果可能比 benchmark 分数更诚实。</strong></p>
+      <cite><a href="https://www.bloomberg.com/news/articles/2026-06-11/openai-weighs-major-price-cuts-to-win-anthropic-users-wsj-says" target="_blank" rel="noopener">Bloomberg</a> · <a href="https://links.tldrnewsletter.com/LEGuAl" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Fable 5 对 AI/ML 工作的隐性降质政策遭强烈反弹，Anthropic 部分回撤「秘密执行」方式</h3>
+      <p>上周 Fable 5 发布时随附的 RSI 压制机制（用不透明方式——包括 prompt 修改和 steering vectors——悄悄降低 Claude 协助竞争性 LLM 研发的有效性）引发社区强烈反弹。Nathaniel Lambert、Fei-Fei Li、Dario Bahdanau 等研究者批评：与其「不告而减」，明确拒绝比隐性降质更诚实。Anthropic 随后宣布部分回撤：「秘密」这一执行方式将被调整，受影响的用户将获得更明确的提示。</p>
+      <p>但核心限制并未取消：Claude 仍不能帮助构建竞争性预训练管道，只是执行方式要更「透明」。AINews 指出，Fable 5 还附带 30 天强制数据留存条款，无法关闭，直接排除了零数据留存（ZDR，企业为隐私合规额外购买的 API 协议）用户和欧盟合规场景。<strong>Anthropic 把「如何执行限制」改了，但把「是否有权限制」的问题留给了市场——这个问题在 IPO 路演里会再次被追问。</strong></p>
+      <cite><a href="https://www.latent.space/p/ainews-open-models-model-labs-vs" target="_blank" rel="noopener">AINews / Latent Space</a> · <a href="https://www.bensbites.com/p/new-claude-model-fable" target="_blank" rel="noopener">Ben's Bites</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://saranormous.substack.com/p/the-untrainable" target="_blank" rel="noopener">Sarah Guo（Greylock）：「不可训练」的三个角落——意图、领域翻译、维护，AI 最终无法消化的稀缺资源</a></h3>
+      <p>Greylock 合伙人 Sarah Guo 在她的 Substack「The Untrainable」里提出了一个框架：随着智能越来越便宜，价值将向「模型触达不了的地方」滑移。她列出了三个「不可训练」的角落：其一是「意图」（决定做什么，而不是怎么做）——「模型会做你指向的任何事，但无法告诉你值得指向什么，你也没法对它做 benchmark，所以没法训练它」；其二是「领域翻译」（把公司的私有现实整理成模型能行动的形式，再把领域专精工程师放在客户旁边持续维护）；其三是「维护」（集成和维护只要关系存在就不会结束）。</p>
+      <p>她最后写道：「每年我真正找到三次。模型在那里帮不了你。这也是为什么既有玩家拿不走一切：他们守住既有地盘，而下一件事总是来自那些比其他人更早看到用途的人。也许意图是比算力更稀缺的投入。」AINews（Swyx）在总结中补充：这个框架同时解释了「开放模型为什么能存活」和「Agent 实验室为什么比模型实验室更有壁垒」——应用层赚的是「翻译不断结束、然后再开始」的钱。<strong>「意图比算力更稀缺」这个判断，是今年 AI 行业里最值得长期押注的命题。</strong></p>
+      <cite><a href="https://saranormous.substack.com/p/the-untrainable" target="_blank" rel="noopener">The Untrainable · Sarah Guo</a> · <a href="https://www.latent.space/p/ainews-open-models-model-labs-vs" target="_blank" rel="noopener">AINews / Latent Space</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/trq212" target="_blank" rel="noopener">Thariq Shihipar（Anthropic Claude Code 团队）：Fable 5 用零传统编辑器剪辑了自己的发布视频，整套流程由子 Agent 编排完成</a></h3>
+      <p>Thariq（@trq212）发布的「我怎么用 Fable 剪辑它自己的发布视频」在数小时内收获超过 6,000 次点赞。完整流程：17 条原始素材 → Whisper（语音识别模型）标注时间轴 → 子 Agent（subagent，由主 Agent 派生出来独立执行特定子任务的 AI 实体）选出最佳镜头写入 final-edit.json → ffmpeg（视频处理命令行工具）帧精度剪切拼接 → 7 套手写 LUT（查找表，用于调色的数学映射文件）完成 S-Log3 调色 → Remotion（用代码生成视频的 React 框架）重建运动图形。全程 Thariq 只提供了「哪条 take 感觉最好」的品味判断，其余全部由 Fable 5 编排完成。</p>
+      <p>他随后发布了包含完整工作流步骤的交互式幻灯片供参考。这个案例的意义不在于「AI 剪辑很酷」，而在于它展示了一个新的分工模型：人负责品味（审美判断、叙事选择、方向感），模型负责编排（把几十个工具步骤接在一起执行）。<strong>当 Anthropic 自己在用 Fable 5 做 Fable 5 的营销视频，这已经不是 demo，是工作流现实。</strong></p>
+      <cite><a href="https://x.com/trq212" target="_blank" rel="noopener">X @trq212</a> · <a href="https://digg.com/tech/35eqclfy" target="_blank" rel="noopener">Digg</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/thsottiaux" target="_blank" rel="noopener">Thibault Sottiaux（OpenAI Codex PM）：过去 48 小时 Codex token 消费出现强劲增长峰值</a></h3>
+      <p>Thibault Sottiaux（@thsottiaux，OpenAI Codex 产品团队）确认了过去 48 小时内 Codex 的 token 消费量出现明显增长峰值（2,460 次点赞）。这个时间节点恰好与 Fable 5 发布后部分用户因 Anthropic 政策争议转向 OpenAI 的社区舆情重合，也与 Codex 在企业场景中 Agent 工作负载持续扩展的长期趋势一致。</p>
+      <p>同一时间，他另发一条推文引用「Simplify until there is nothing to simplify」的设计原则作为 Codex 开发哲学的注脚。这两条信号合在一起说明：竞争驱动的用户迁移和 Agent 工作量的自然增长正在同时推动 Codex 的消费指数上升。<strong>OpenAI 用「Codex token 峰值」作为社交信号来发布，这本身是一种不用数字说话的数字营销——他们知道这几天的上下文。</strong></p>
+      <cite><a href="https://x.com/thsottiaux" target="_blank" rel="noopener">X @thsottiaux</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://x.com/zarazhangrui" target="_blank" rel="noopener">Zara Zhang（Builder）：旧金山的创业公司大多在互相卖产品——这个生态系统的自洽性值得认真审视</a></h3>
+      <p>Zara Zhang（@zarazhangrui）发了一条获得 203 次点赞的直接观察：「旧金山大多数初创公司似乎在互相卖产品。」这句话戳中了很多人的感受。在一个 AI 工具、开发者平台、Agent 基础设施大量涌现的城市，创始人、投资人、工程师之间的互相购买形成了一个内循环——每家公司都能找到客户，但客户都是在互相买彼此的产品。</p>
+      <p>这不是简单的批评，而是对「增长是否真实」的结构性拷问：旧金山的 ARR 数字到底是真实终端需求，还是风险资本通过 B2B 链条流转后的重复计算？她同一天还提出：企业里的人应该为自己的跨职能团队构建 Agent 和技能——这个建议和上面那条观察形成了呼应：真正的市场也许是企业内部，而不是创业公司之间。<strong>能在旧金山赚到钱，不等于找到了真实需求——旧金山是个特别容易自我说服的城市。</strong></p>
+      <cite><a href="https://x.com/zarazhangrui" target="_blank" rel="noopener">X @zarazhangrui</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/claudeai" target="_blank" rel="noopener">Claude AI：Michael Truell 12 岁爱上编程，现在用 AI 重新定义它——Cursor 联创故事成本周最高传播内容</a></h3>
+      <p>Claude AI 官方发布的关于 Cursor 联合创始人 Michael Truell 的简短故事，成为本周 X 上传播量最大的 AI 内容之一（5,258 次点赞，246 次转发）。文案是：「Michael Truell 12 岁爱上编程。他联合创立的公司 Cursor 正在帮助数百万开发者用 AI 重新定义编程。」这条推文的力量不在于描述产品功能，而在于它讲了一个「用儿时的爱重塑整个领域」的人物弧线。</p>
+      <p>它对 Anthropic 的意义在于：Claude Code 和 Cursor 的深度集成是 Anthropic 最重要的分发策略之一，用一个有温度的创始人故事来锚定这个合作关系，比任何 benchmark 数字都更容易在开发者社区里形成身份认同。同日，Claude AI 还宣布 Claude 中的定时部署和 vault（加密凭证存储，类似密码管理器但面向 Agent 工作流）中的环境变量功能正式可用。<strong>Anthropic 用 Truell 的故事做品牌，用定时部署做产品——两条线同时在走。</strong></p>
+      <cite><a href="https://x.com/claudeai" target="_blank" rel="noopener">X @claudeai</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/garrytan" target="_blank" rel="noopener">Garry Tan（YC CEO）：Nessie 现在是把你现有上下文迁入 AI 工作流的最佳工具</a></h3>
+      <p>Garry Tan（@garrytan）发布了对 Nessie 的推荐：「Nessie 刚刚成为把你所有现有上下文导入 AI 的最佳方式。」Nessie 是一个上下文管理工具，核心功能是帮助用户把分散在文档、笔记、代码库等地方的知识系统性地整理并导入 AI 工作流（上下文，指 AI 在处理任务时能「看到」和参考的信息范围，决定了 AI 能做多复杂的任务）。</p>
+      <p>这个推荐的背景是：随着 Fable 5 等新模型支持更长的上下文窗口（100 万 token），「如何把正确的信息放进上下文」反而成了新的瓶颈。Garry Tan 作为 YC CEO，他对工具的推荐在创始人圈子里有显著的信号价值。<strong>当模型的上下文窗口大到可以装下整个代码库，真正的 UX 问题变成了「谁帮你管理什么该放进去」——Nessie 押注这个位置。</strong></p>
+      <cite><a href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://x.com/rauchg" target="_blank" rel="noopener">Guillermo Rauch（Vercel CEO）：我喜欢硅谷的一点是未来没有定局——谁都还有机会</a></h3>
+      <p>Guillermo Rauch（@rauchg）在一条获得 815 次点赞的推文里写道：「我喜欢硅谷的一点是未来还在竞争中，可以被抢占。」这句话简短，但在 Fable 5 发布、Codex 冲击、SpaceX 上市、OpenAI 价格战这些事件集中爆发的一周里，有一种特定的质感：不是歌颂无序，而是在说「范式还没定型，现在进来仍然有意义」。</p>
+      <p>Rauch 接下来还宣布了 Vercel Ship 活动将在伦敦举行，暗示 Vercel 正在向欧洲市场持续扩张。从「未来没有定局」的哲学到「下周在伦敦」的行动，这两条推文放在一起恰好描述了一种典型的硅谷创始人节奏：先说信条，再说动作。<strong>「未来可以被抢占」是硅谷能持续吸引全球建造者的底层信仰，但在这周密集的大公司动作背景下说出来，听起来既是鼓励，也是一种提醒。</strong></p>
+      <cite><a href="https://x.com/rauchg" target="_blank" rel="noopener">X @rauchg</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/petergyang" target="_blank" rel="noopener">Peter Yang（Roblox PM）：给自己「动手建东西」的许可，传统职业阶梯一直在把人引向管理，而不是创造</a></h3>
+      <p>Peter Yang（@petergyang）转发了一个关于「builder vs. leader」分野的帖子并补充观点：「传统职业阶梯把每个人都往管理层推。职位越高，离实际动手建东西就越远。但 AI 时代让个人建造者的杠杆大幅提升了——给自己这个许可。」这是一个长期存在于产品圈的观察，但在 AI 让单个人能完成以前需要整个团队才能完成的工作这个背景下，有了新的现实依据。</p>
+      <p>他同一天还写道：「我越用 Codex，我的需求就越雄心勃勃」——这两条推文形成了一个内在叙事：AI 工具不只是降低了执行成本，它在改变人对「自己能做什么」的认知边界。<strong>职业阶梯是在算力稀缺时代设计出来的——当一个人用 AI 能完成过去一个团队的工作量，「升职当管理者」就不再是唯一理性选择。</strong></p>
+      <cite><a href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.05405" target="_blank" rel="noopener">Agents' Last Exam (ALE)：13 大行业 1000+ 真实任务，顶级 Agent 最难层仅过 2.6%，GPT-5.5 意外压过 Fable 5</a></h3>
+      <p><strong>现状：</strong>现有 Agent 基准（benchmark，衡量模型能力的标准化测试）大多基于学术题目或合成任务，无法反映 AI 在真实职业场景中的实际表现。</p>
+      <p><strong>问题：</strong>GPQA、SWE-bench 等现有基准被模型快速饱和，最高分 Agent 的表现已无法区分「真正有用」和「擅长刷分」。</p>
+      <p><strong>解决方案：</strong>ALE 由 Dawn Song 团队联合 250+ 行业专家构建，覆盖 13 大非体力行业（参照 O*NET/SOC 2018 职业分类，包括金融、法律、医疗、工程等）、55 个子领域、1000+ 任务。每个任务来自专家真实完成的项目，Agent 拥有完整的 GUI 和 CLI 访问权限，结果由确定性代码（非人工打分）评估。最难层（Tier 4）的平均全通过率为 2.6%。</p>
+      <p><strong>价值：</strong>VentureBeat 报道了一个意外结果：GPT-5.5 在 ALE 上压过 Fable 5，这与 Fable 5 在多数其他基准上的领先表现形成反差，说明不同任务结构下模型优势存在显著差异，单一基准无法代表「综合能力」。</p>
+      <p><strong>未来方向：</strong>以真实职业任务为单位的 Agent 评测方法论将成为行业标准，「能不能替代真实工作」将比「benchmark 第一」更有说服力。</p>
+      <cite><a href="https://arxiv.org/abs/2606.05405" target="_blank" rel="noopener">arXiv 2606.05405</a> · <a href="https://huggingface.co/papers/2606.05405" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/" target="_blank" rel="noopener">DiffusionGemma：Google DeepMind 发布 26B MoE 扩散文本模型，4 倍速、1200 tok/s，Apache 2.0 开源</a></h3>
+      <p><strong>现状：</strong>主流大语言模型（LLM）均采用自回归（autoregressive）架构，即逐词预测下一个词，速度受串行解码限制。</p>
+      <p><strong>问题：</strong>自回归解码天然无法并行化，在长输出场景下速度慢，且难以支持「修改中间段落」这类迭代式编辑操作。</p>
+      <p><strong>解决方案：</strong>DiffusionGemma 采用文本扩散（text diffusion）架构，同时生成并精炼 256 个 token 的文本块，而非逐词生成。模型为 26B MoE（混合专家，一种只激活部分参数的模型结构），推理时仅激活 3.8B 参数，支持 256K token 上下文和 140+ 语言。在单张 NVIDIA H100 上实测 1200+ tok/s，在 RTX 5090 上达 700+ tok/s，量化后显存需求约 18GB（可在高端消费级显卡上运行）。</p>
+      <p><strong>价值：</strong>在 vLLM（主流开源推理框架）中原生支持，是首个在生产推理框架中可用的扩散文本模型。整体输出质量低于 Gemma 4 标准版，但速度优势显著，适合批量生成、实时场景、fill-in-the-middle 编辑等自回归模型天然弱势的任务。Apache 2.0 协议，商用无限制。</p>
+      <p><strong>未来方向：</strong>文本扩散架构重新打开了「非线性生成」的研究方向，对迭代精炼、约束编辑、错误纠正等场景有潜在优势，可能成为自回归的互补而非替代。</p>
+      <cite><a href="https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/" target="_blank" rel="noopener">Google Blog</a> · <a href="https://huggingface.co/google/diffusiongemma-26B-A4B-it" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2604.08224" target="_blank" rel="noopener">Externalization in LLM Agents：统一综述记忆、技能、协议、框架工程四大维度，梳理 Agent 架构的外化逻辑</a></h3>
+      <p><strong>现状：</strong>Agent 系统（能自主执行多步任务的 AI 应用）的工程文献分散在记忆系统、工具调用、多 Agent 协议、框架设计等多个子领域，缺乏统一视角。</p>
+      <p><strong>问题：</strong>对 Agent 架构设计的理解高度碎片化，工程师难以系统判断在不同场景下应选择哪种「外化」策略——把什么放在模型参数里，什么放在外部状态里。</p>
+      <p><strong>解决方案：</strong>该综述提出「外化」（externalization）作为统一框架，将 Agent 架构的核心设计问题归结为四类：记忆外化（什么信息存在 Agent 之外）、技能外化（什么能力以工具/函数形式提供）、协议外化（多 Agent 如何协调）、框架工程（harness，即组织 Agent 运行流程的脚手架）。</p>
+      <p><strong>价值：</strong>为 PM 和工程师提供了一个判断 Agent 系统「胖瘦」的分类语言：什么该在模型内，什么该外化。理解这个分类，有助于在真实产品设计中做出更有依据的架构选择，而不是跟风使用最新框架。</p>
+      <p><strong>未来方向：</strong>随着 Agent 系统从研究原型走向企业部署，架构标准化压力增大，「外化」框架有望成为 Agent 工程的共同语言。</p>
+      <cite><a href="https://arxiv.org/abs/2604.08224" target="_blank" rel="noopener">arXiv 2604.08224</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2603.01896" target="_blank" rel="noopener">Agentic Code Reasoning：半正式结构化推理在 Agent 代码任务上持续有效，形式化思维与自然语言的混合是关键</a></h3>
+      <p><strong>现状：</strong>在代码生成和调试等 Agent 任务中，模型通常采用纯自然语言推理（chain-of-thought）或纯代码输出，两种方式各有盲点。</p>
+      <p><strong>问题：</strong>纯自然语言推理在复杂代码逻辑上容易犯「言之成理但代码错误」的错误；纯代码输出缺少中间推理过程，难以调试和修正。</p>
+      <p><strong>解决方案：</strong>研究发现，「半正式」（semi-formal）结构化推理——在自然语言推理中嵌入伪代码、类型标注、前置后置条件等形式化符号——持续提升 Agent 在代码推理任务上的成功率，且这一效果跨模型家族、跨任务类型均稳定成立。</p>
+      <p><strong>价值：</strong>对工程师的直接启示：在 prompt 设计中引导模型用「半正式」风格思考（比如先写函数签名再写实现，或先写断言再写逻辑），而非只要求「写出正确代码」，可以系统性提升 Claude Code、Codex 等工具的输出可靠性。</p>
+      <p><strong>未来方向：</strong>半正式推理与现有 Agent 框架（工具调用、多步规划）的结合是下一步研究方向，有望成为代码 Agent 系统设计的标准推理模式。</p>
+      <cite><a href="https://arxiv.org/abs/2603.01896" target="_blank" rel="noopener">arXiv 2603.01896</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2601.08620" target="_blank" rel="noopener">ViDoRe V3：2.6 万页多模态 RAG 基准，揭示当前模型在非文字元素和开放式查询上的明显短板</a></h3>
+      <p><strong>现状：</strong>RAG（检索增强生成，让 AI 能从外部文档库里检索相关信息后回答问题）系统在企业文档理解场景中被广泛应用，但现有评测集大多只覆盖纯文字文档。</p>
+      <p><strong>问题：</strong>真实企业文档包含大量表格、图表、图像、混合排版等非文字元素（non-textual elements），当前 RAG 管道在这些元素上的表现远低于纯文字场景，但现有基准无法量化这一差距。</p>
+      <p><strong>解决方案：</strong>ViDoRe V3 覆盖 10 个专业领域（金融、制药、工业维护、电信、物理等），包含约 2.6 万页文档和 3,099 条人工标注查询，支持 6 种语言。通过 12,000 小时人工标注，覆盖检索相关性、包围框定位和参考答案验证三个维度。结果发现：视觉检索器（visual retrievers）普遍优于纯文字检索器，但所有模型在开放式查询和精细视觉定位上仍有明显短板。</p>
+      <p><strong>价值：</strong>已整合进 MTEB（多任务文本嵌入基准，业内主要的检索能力排行榜），成为评估企业级多模态 RAG 能力的新标准，填补了「真实文档检索」与「学术评测」之间的空白。</p>
+      <p><strong>未来方向：</strong>随着 Agent 需要读懂包含图表和图像的真实报告，多模态检索能力将成为企业 AI 系统的核心能力门槛，ViDoRe V3 类基准将持续推动这个方向的进步。</p>
+      <cite><a href="https://arxiv.org/abs/2601.08620" target="_blank" rel="noopener">arXiv 2601.08620</a> · <a href="https://huggingface.co/papers/2601.08620" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>Ethan Mollick（One Useful Thing）：测试了 Mythos/Fable 一周，「它在我所有实验里碾压了所有其他公开模型」，体感上和之前所有模型都有质的不同。<a class="glance-src" href="https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos" target="_blank" rel="noopener">One Useful Thing →</a></li>
+      <li>Dario Amodei 发布「AI 指数政策」长文，认为 AI 进展正在快过制度反应速度，呼吁更强的前沿监管；同时 Anthropic 提出政府应有权阻断不安全发布——批评方认为「正推行不透明管控的同一家公司在倡导公共透明」。<a class="glance-src" href="https://www.latent.space/p/ainews-open-models-model-labs-vs" target="_blank" rel="noopener">AINews →</a></li>
+      <li>Josh Woodward（Google Labs）：Gemini 今日遭遇中断，1,553 次点赞——数小时后宣布恢复并道歉（429 次点赞），这也是 Google Labs 规模扩张后首次在高关注期出现大范围 API 可用性事故。<a class="glance-src" href="https://x.com/joshwoodward" target="_blank" rel="noopener">X @joshwoodward →</a></li>
+      <li>Boris Cherny（Claude Code 作者，Anthropic）：「Hello from Code with Claude Tokyo!!」正在东京参加 Code with Claude 开发者活动。<a class="glance-src" href="https://x.com/bcherny" target="_blank" rel="noopener">X @bcherny →</a></li>
+      <li>Thibault Sottiaux（OpenAI Codex）：「Simplify until there is nothing to simplify」——转发的设计原则，也是 Codex 开发哲学的侧面注解。<a class="glance-src" href="https://x.com/thsottiaux" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+      <li>Thariq（@trq212，Anthropic）：发布 Fable 视频编辑完整幻灯片 deck，203 次点赞，供希望复现工作流的开发者参考。<a class="glance-src" href="https://x.com/trq212" target="_blank" rel="noopener">X @trq212 →</a></li>
+      <li>Peter Yang（Roblox PM）：「我越用 Codex，我的请求就越雄心勃勃。或者说这还不够雄心勃勃？」——记录了 Agent 工具如何扩展用户的任务想象边界。<a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>thenanyu（Builder）：「gangprompting」——转发并评论了一个关于用多个 prompt 并行攻击同一问题的新策略词。<a class="glance-src" href="https://x.com/thenanyu" target="_blank" rel="noopener">X @thenanyu →</a></li>
+      <li>Madhu Guru（@realmadhuguru）：「从 Gemini 早期就开始，企业客户就会在质量/成本权衡上做错——」评论企业在选择 AI 模型时对成本和质量优先级的系统性误判。<a class="glance-src" href="https://x.com/realmadhuguru" target="_blank" rel="noopener">X @realmadhuguru →</a></li>
+      <li>Google Labs（@GoogleLabs）：Project Genie（AI 互动游戏生成）今日向 Google AI Ultra 5X 订阅者扩大开放，365 次点赞。<a class="glance-src" href="https://x.com/GoogleLabs" target="_blank" rel="noopener">X @GoogleLabs →</a></li>
+      <li>Amjad Masad（Replit CEO）：转发并评论了一个关于「AI 代替你自动投简历」的企业 Agent 方案发布，表示赞赏——Replit 平台上的 Agent 使用场景正在从代码生成扩展到工作流自动化。<a class="glance-src" href="https://x.com/amasad" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>Amjad Masad：「Automate your job search with Replit!」——Replit 推出 AI 求职 Agent，自动化简历投递和申请流程。<a class="glance-src" href="https://x.com/amasad" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>Guillermo Rauch（Vercel CEO）：「伦敦 calling，下周 Vercel Ship 见！」——Vercel Ship 活动即将在伦敦举行，Rauch 本人将出席。<a class="glance-src" href="https://x.com/rauchg" target="_blank" rel="noopener">X @rauchg →</a></li>
+      <li>Aaron Levie（Box CEO）：「Fable 在编码和其他领域能力提升的大量证据」——评论 Fable 5 在真实工作任务中展示出来的能力跃升，177 次点赞。<a class="glance-src" href="https://x.com/levie" target="_blank" rel="noopener">X @levie →</a></li>
+      <li>Matt Turck（FirstMark Capital）：「2026 年 VC 是地狱式磨砺：从达沃斯开始，然后是阿斯彭、盐湖城……」——用幽默口吻盘点 VC 年会电路，488 次点赞，暗指 AI 热潮下风险资本圈的社交疲劳。<a class="glance-src" href="https://x.com/mattturck" target="_blank" rel="noopener">X @mattturck →</a></li>
+      <li>Zara Zhang（@zarazhangrui）：「人们应该为自己的跨职能团队构建 Agent 和技能」——建议企业内部自建 AI 能力，而非只购买 SaaS 产品。<a class="glance-src" href="https://x.com/zarazhangrui" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+      <li>Zara Zhang：「越来越多 AI 代理机构的产出看起来像……」（转发并评论 AI 生成内容质量的变化趋势）。<a class="glance-src" href="https://x.com/zarazhangrui" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+      <li>Nikunj Kothari（FPV Ventures）：「TIL：你可以用吐槽的方式获得一些正经咖啡」——用幽默方式记录了一次用 AI 辅助的咖啡豆发现体验。<a class="glance-src" href="https://x.com/nikunj" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Dan Shipper（Every.to CEO）：「我去年在 @lennysan 播客上预测过这可能发生……」转发了一个 AI 趋势预言成真的事件，164 次点赞。<a class="glance-src" href="https://x.com/danshipper" target="_blank" rel="noopener">X @danshipper →</a></li>
+      <li>Dan Shipper：「在去旧金山的飞机上 fable maxxing」——在赶路途中全力使用 Fable 5 工作。<a class="glance-src" href="https://x.com/danshipper" target="_blank" rel="noopener">X @danshipper →</a></li>
+      <li>Claude AI 官方：定时部署（Scheduled deployments）和 vault 中的环境变量（Environment variables in vaults，用于 Agent 工作流的加密密钥存储）今日正式可用。<a class="glance-src" href="https://x.com/claudeai" target="_blank" rel="noopener">X @claudeai →</a></li>
+      <li>swyx：「wooh」——转发并以一个字表达对某个 AI 进展的兴奋。<a class="glance-src" href="https://x.com/swyx" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>Garry Tan（YC CEO）：「SF 再次迎来常识当道的时刻」——延续他对旧金山城市政治的「激进中间主义」推进。<a class="glance-src" href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Garry Tan：「表演性非营利工业复合体必须被根除」——评论 SF 政治中阻碍实用政策的组织动机。<a class="glance-src" href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Every（Laura Entis）：「AI Everywhere, All at Once」——本期 Context Window 覆盖 Fable 5 对比所有其他模型、Fable prompt 入门包、Apple 开发者大会内部观察。<a class="glance-src" href="https://every.to/context-window" target="_blank" rel="noopener">Every →</a></li>
+      <li>Ben's Bites：Gemini 3.5 Live Translate 发布，实时语音到语音翻译，支持 70+ 语言，已在 Gemini API 和 Google 翻译上线，即将进入 Meet。<a class="glance-src" href="https://www.bensbites.com/p/new-claude-model-fable" target="_blank" rel="noopener">Ben's Bites →</a></li>
+      <li>Claude Code 现在支持嵌套子 Agent（nested subagents）深度达 5 层，即每个子 Agent 还可以再派生子 Agent，可并行处理极度复杂的工程任务。<a class="glance-src" href="https://www.bensbites.com/p/new-claude-model-fable" target="_blank" rel="noopener">Ben's Bites →</a></li>
+      <li>Stack Overflow for Agents 发布：API 优先的知识交换平台，用多 Agent 验证循环为 Agent 创建规范知识，目标是填补训练数据和生产软件真实状态之间的落差。<a class="glance-src" href="https://stackoverflow.blog/2026/06/10/announcing-stack-overflow-for-agents/" target="_blank" rel="noopener">Stack Overflow →</a></li>
+      <li>Simon Willison：datasette-agent 0.2a0 发布，新增内置 save_query 工具，允许 Agent 把它写好的 SQL 保存为 Datasette 存储查询——保存操作需要人工审批。<a class="glance-src" href="https://simonwillison.net/2026/Jun/10/datasette-agent/" target="_blank" rel="noopener">Simon Willison →</a></li>
+      <li>Dario Amodei（Anthropic CEO）仅有一位直接下属（首席助理 Avital Balwit），公司日常运营全部交给总裁 Daniela Amodei，Dario 本人专注于大局对话、组织文化和研究方向——硅谷 CEO 扁平化潮流的反向案例。<a class="glance-src" href="https://links.tldrnewsletter.com/qDpMw1" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Stratechery（Ben Thompson）：「Agent 而非泡沫」——Agent 在改变算力需求的形态，他已不再认为我们处于 AI 泡沫中。<a class="glance-src" href="https://stratechery.com/2026/agents-over-bubbles/" target="_blank" rel="noopener">Stratechery →</a></li>
+      <li>中国国家药监局批准 NEO 商业化：上海 NeuraMatrix 联合清华开发的硬币大小脑机接口，放置于脑膜表面（非植入脑内），实时解码脑信号控制气动手套——全球首款商业化脑机接口。Neuralink 的 N1 仍在研究协议阶段，商业批准还需数年。<a class="glance-src" href="https://thenextweb.com/news/brain-implants-bci-china-neuralink-commercial-race" target="_blank" rel="noopener">The Next Web →</a></li>
+      <li>全球首位接受细胞「返老还童」疗法的患者出现：美国 Life Biosciences 向视力退化患者注射实验性基因疗法，通过抗生素开关激活三个基因，目标是让视神经细胞逆龄，研究将跟踪五年。<a class="glance-src" href="https://www.sciencealert.com/world-first-patient-receives-high-risk-therapy-to-make-cells-young-again" target="_blank" rel="noopener">ScienceAlert →</a></li>
+      <li>AINews：恶意软件作者开始在代码中嵌入核武器/生化内容文本，触发 LLM 安全过滤器从而规避 AI 恶意软件分析——攻击者正在把 AI 的安全机制变成武器，反向利用拒绝行为逃脱检测。<a class="glance-src" href="https://www.latent.space/p/ainews-open-models-model-labs-vs" target="_blank" rel="noopener">AINews →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-06-10.html">← Jun 10</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
