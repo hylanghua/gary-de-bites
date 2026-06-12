@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — June 12, 2026</title>
+  <meta name="description" content="Jeff Bezos 成立 Prometheus 专攻「人工通用工程师」，目标用 AI 改写芯片、汽车、航天的设计制造；Fable 5 在真实工程中评价走向分化：一个 10k LOC PR 耗资 $250、模型会自造内部代号混入输出；Loopcraft 概念在圈内形成共识：下一阶段不是 prompt 更好，而是学会设计 loop、把自己推出关键路径。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">June 12, 2026</h1>
+
+  <p class="post-lead">Jeff Bezos 成立 Prometheus 专攻「人工通用工程师」，目标用 AI 改写芯片、汽车、航天的设计制造；Fable 5 在真实工程中评价走向分化：一个 10k LOC PR 耗资 $250、模型会自造内部代号混入输出；Loopcraft 概念在圈内形成共识：下一阶段不是 prompt 更好，而是学会设计 loop、把自己推出关键路径。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://links.tldrnewsletter.com/0TwxBA" target="_blank" rel="noopener">Jeff Bezos 成立 Prometheus：打造「人工通用工程师」，目标改写芯片、汽车、航天的设计制造流程</a></h3>
+      <p>Bezos 的新创公司 Prometheus 宣布的使命，是为设计和制造几乎任何物理设备的公司创造新的工程工具。覆盖范围包括计算机、汽车、航天器等硬件产品。公司的核心命题：现有的工程流程中，「发明循环」（idea → prototype → test → refine）耗时太长，AI 可以系统性加速每个环节。Prometheus 的研究成果也将惠及 Bezos 的其他公司（Amazon、Blue Origin 等）。</p>
+      <p>这家公司尚未公开产品或时间表，但名字本身带有明确的宣示意义——普罗米修斯在神话中是把火种带给人类的神，Bezos 选这个名字并不随意。在 Anthropic、OpenAI 都在把 AI 用于软件工程的当下，Prometheus 的押注是：物理工程才是下一个被 AI 大规模重塑的领域，且进入门槛比代码高得多。<strong>Bezos 在 SpaceX IPO 之后成立一家专门做「工程 AGI」的公司，这不是跟风，是在押注下一个被 AI 打开的大市场。</strong></p>
+      <cite><a href="https://links.tldrnewsletter.com/0TwxBA" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Fable 5 在真实工程场景的账单：$250 跑完一个 10k LOC PR，模型还会自造内部代号混进输出</h3>
+      <p>AINews 汇总了社区对 Fable 5 发布一周后的真实反馈，结论是强而不稳：在 WeirdML 基准上拿到 87.8%（首个在每项子任务均超 70% 的模型），在 FrontierSWE 排行第一。但实际成本让工程师皱眉：一位用户在一个约 1 万行代码的 PR 上花了约 $250，认为不值。更奇特的是，有用户报告模型在编码过程中会发明内部「神经码语」（neuralese，模型在思考过程中自创的内部代号），并把这些词泄漏到最终输出里。</p>
+      <p>与此同时，Fable 5 在某些场景下的拒绝率（refusal rate）异常高：ProgramBench 上出现 200/200 次拒绝。成本的问题也有针对性的反制方案：Cline 的测试发现，用较便宜的模型加对抗性审查循环（adversarial review loop，让第二个模型专门找第一个模型的错误），综合效果往往和 Fable 5 接近。<strong>「最强模型」和「最值模型」正在成为两个不同的问题，团队需要分开回答。</strong></p>
+      <cite><a href="https://www.latent.space/p/ainews-loopcraft-the-art-of-stacking" target="_blank" rel="noopener">AINews / Latent Space</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-loopcraft-the-art-of-stacking" target="_blank" rel="noopener">AI 开始做 AI 研究：Recursive SI 和 Microsoft Arbor 各自在不同维度取得 SOTA</a></h3>
+      <p>AINews 记录了两个本周最值得关注的「AI 自主做研究」发布。Recursive SI 由 Richard Socher 团队推出，是一个用于 AI 研究自动化的开放探索系统，在三项公开基准上取得最优：NanoGPT Speedrun 把训练时间从 79.7 秒降到 77.5 秒，NanoChat 以相同的 loss 减少 1.3× 的训练时间，SOL-ExecBench 把均值分从 0.699 提升到 0.754。这一结果的意义不在于「AI 替代了研究员」，而在于证明：在有明确反馈信号的窄域系统优化任务上，当前 Agent 已经能做出可测量的贡献。</p>
+      <p>Microsoft Research 的 Arbor 则针对长周期研究任务：使用持久假设树（persistent hypothesis tree），持续精炼研究方向，在 MLE-Bench Lite 上达到 86% Any-Medal，声称超过 Codex 和 Claude Code。两个系统合在一起，划出了「Agent 做研究」的当前边界：高反馈窄域任务已经可行，长周期专家级综合任务仍然不稳定。<strong>自动化 AI 研究的第一批可靠成果，正在从「值得关注」变成「需要严肃评估」的级别。</strong></p>
+      <cite><a href="https://www.latent.space/p/ainews-loopcraft-the-art-of-stacking" target="_blank" rel="noopener">AINews / Latent Space</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-loopcraft-the-art-of-stacking" target="_blank" rel="noopener">Loopcraft / Salty Lesson：别再 prompt 模型，开始设计 loop——Steipete、Boris Cherny、Andrej Karpathy 的共同判断</a></h3>
+      <p>本周 AI 圈里传播最广的一组判断来自三个方向：Peter Steinberger（@steipete，PSPDFKit/独立开发者）写道：「这是每月例行提醒——你现在不应该再 prompt 代码 Agent，你应该设计那些 prompt Agent 的 loop。」Boris Cherny（Claude Code 作者，Anthropic）："我不再 prompt Claude 了，我写 loop，loop 干活。" Andrej Karpathy 在 Autoresearch 中表述得最系统：「要最大化 token 吞吐量，你必须把自己从关键路径里拿出来。你不能守在那里等模型出结果。目标是安排好系统、按下启动键。」</p>
+      <p>AINews 把这套判断整理成「Salty Lesson」——呼应 Bitter Lesson（那个说「算力加数据总会赢」的机器学习教训）：不要自己动手修问题，要建那些能随着更多 Agent 加入而自动扩展的系统（目标和编排）。在模型每隔几个月就会更好的世界里，「向下走一层 loop 以保证可靠性」和「向上走一层 loop 以获得杠杆」是两种不同的时机判断。<strong>「设计 loop」不是工程范式，是在描述谁在 AI 浪潮里获得真正杠杆。</strong></p>
+      <cite><a href="https://www.latent.space/p/ainews-loopcraft-the-art-of-stacking" target="_blank" rel="noopener">AINews / Latent Space</a> · <a href="https://x.com/steipete" target="_blank" rel="noopener">X @steipete</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.normaltech.ai/p/why-ai-hasnt-replaced-software-engineers" target="_blank" rel="noopener">代码从来不是软件开发的瓶颈——AI 只是让「能写代码」的价值膨胀，不是让工程师消失</a></h3>
+      <p>这篇在 TLDR 本日传播较广的文章（normaltech.ai）提出了一个逆直觉的论点：研究显示，开发者实际上花在写代码上的时间出奇地少。用 Agent 写代码的实验对整体生产率影响也很小。真正的瓶颈从来都是三件事：决定做什么（what to build）、验证交付物（verifying what's delivered）、以及承担结果的问责（accountability）。AI 不能让「决策层」变薄，因为一旦某个判断可以委托给 AI，它就不再是竞争优势的来源——而人仍然需要对最终结果负责。</p>
+      <p>文章的结论是：AI 让「会写代码」的人可以用杠杆做更多事情，而不是让工程师消失。这个判断的方向和 Aaron Levie 今天引用的调查数据一致：采用 agentic AI 最积极的公司反而更打算增加人员。<strong>「AI 替代工程师」的叙事一直建立在一个假设上：写代码是工程师的核心价值——但写代码从来不是。</strong></p>
+      <cite><a href="https://www.normaltech.ai/p/why-ai-hasnt-replaced-software-engineers" target="_blank" rel="noopener">normaltech.ai</a> · <a href="https://links.tldrnewsletter.com" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Peter Steinberger（PSPDFKit 作者，独立开发者）：用 Codex 让社区贡献者自己提 PR；写 Mac 原生 App 依然很难</h3>
+      <p>@steipete 本日发布了两条互补的观察。第一条：他把 Codex（OpenAI 的代码 Agent）接入社区贡献流程，让外部贡献者可以直接通过 Codex 提 PR（pull request，代码合并请求），而无需自己在本地搭开发环境——这把传统上因配置成本过高而放弃贡献的人引回了开源流程。第二条坦诚且直接：「写 Mac App 依然很难。」他正在为 OpenClaw 做 ffmpeg（命令行视频处理工具）到 WebAssembly（让原生代码在浏览器/沙盒环境中运行的编译目标）的迁移，中间碰到了标准的原生开发摩擦。</p>
+      <p>两条放在一起描述了 AI 工具的当前边界：在「降低外部贡献门槛」这件事上，Codex 真的有效；但在触碰原生 macOS 系统层的时候，人类工程师的手工调试仍然不可绕过。<strong>Codex 解决了「不敢进门」的问题，没有解决「进门了发现门更多」的问题。</strong></p>
+      <cite><a href="https://x.com/steipete" target="_blank" rel="noopener">X @steipete</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3>Amjad Masad（Replit CEO）：Replit 让 Fable 的成本变得可接受；vibe coding 第一次真正进入心流</h3>
+      <p>@amasad 今日发了三条值得并排读的推文。第一条：「Replit Agent 团队做了很好的工作，让 Fable 的成本变得可以承受。」这是产品层面的直白宣示：Fable 5 本身确实贵（参见 Section 1 的 $250 账单），但 Replit 通过自己的调度和批处理逻辑，把同等任务的成本做了压缩，让 Fable 进入了日常可用范围。第二条：「vibe coding with ZERO frustration and in a complete state of flow」——他描述了一种以前没出现过的体验。</p>
+      <p>Replit 目前提供的统一平台覆盖了 web、移动端、营销站点，组合起来代替了以前需要多个 SaaS 工具的堆叠。「心流状态」不只是主观感受，而是一个工具链从零到一的关键质量门槛：如果一个工具让你频繁出戏去 debug 或查文档，它就会被用户自然放弃。Replit 的赌注是，通过吃掉 Fable 的成本复杂性，可以扩大真正使用 AI 编程的用户基数。<strong>降低 frontier 模型的实际使用成本，可能比提升 benchmark 分数更快地扩大市场。</strong></p>
+      <cite><a href="https://x.com/amasad" target="_blank" rel="noopener">X @amasad</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Guillermo Rauch（Vercel CEO）：Vercel + Shopify 两分钟内完成 500 笔订单，用 v0 + Cursor 搭出；同日宣布 Vercel + Grok 集成</h3>
+      <p>@rauchg 在今日发了本周最具体的产品成果演示：一个用 Vercel 的 v0（AI 组件生成工具）和 Cursor 搭建的 Shopify 店铺，上线后两分钟内完成 500 笔订单。这个数字的意义在于它是真实的商业交易，不是 demo。工具链：v0 生成前端组件，Cursor 处理集成逻辑，Shopify 处理支付和履约，Vercel 负责部署和 CDN。同日他还宣布了 Vercel 与 Grok（xAI 的 LLM API）的集成。</p>
+      <p>从「0 到可收款的真实店铺」所需的时间，已经进入了「一个下午」的量级。这既是 vibe coding 生态完整度的信号，也是 Vercel 平台定位的刻意展示：它不想是纯基础设施，它要成为「能让一个人做出一家公司」的工具集。<strong>Vercel 正在从部署平台走向创业起点，两分钟 500 单是一个 milestone，不是特例。</strong></p>
+      <cite><a href="https://x.com/rauchg" target="_blank" rel="noopener">X @rauchg</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Aaron Levie（Box CEO）：采用 agentic AI 最积极的公司，反而更打算增加人员——反直觉调查数据</h3>
+      <p>@levie 引用了一项关于 AI 采用的调查发现：在所有受访企业中，那些最积极部署 agentic AI（能自主执行多步任务的 AI 应用）的公司，是最倾向于增加员工规模的一组，而不是减少。这和公众对「AI 替代就业」的主流预期正好相反。解释路径：当 Agent 承担了大量重复性任务，人类员工可以做更多更高价值的工作，导致整体需求反而上升——类似工业革命中机器提升了整体产出而非减少就业总量的逻辑。</p>
+      <p>这个数据目前仍是相关性，不是因果证明。可能的反向解释：愿意积极采用 agentic AI 的公司本来就是在增长期，增加人员是增长驱动而非 AI 驱动。但无论机制如何，这个调查结果值得持续追踪——因为它是目前最直接反驳「AI 大规模裁员」叙事的数据点之一。<strong>如果「AI 采用越积极，雇人越多」成立，那么 AI 转型里最大的机会不是自动化工具，而是让公司有能力做以前做不了的事。</strong></p>
+      <cite><a href="https://x.com/levie" target="_blank" rel="noopener">X @levie</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://xiaobot.net/post/071ea3cb-021a-4c2a-9f1b-13e2a0755296" target="_blank" rel="noopener">纯银 sheep.press：Alan Turing——史上第一个黑客，图灵机、图灵测试与 42 岁之死</a></h3>
+      <p>今日恰逢 Alan Turing 生日（1912 年 6 月 23 日生，差 11 天整），纯银（shaonan）的《羔羊计划》以 Turing 为第 30 位人物研究对象，发布了一篇极详尽的「一生时间线 + 三篇论文深读」。核心论点：Turing 是「史上第一个黑客」——不为名、不为利，只为探明机器是否能触达思维的边界。他在 24 岁时发表《论可计算数》，提出图灵机（一条无限纸带、一个读写头、一本规则手册），证明了两件事：其一，计算可以和人类大脑完全解绑；其二，任何图灵机都无法判断自身是否会停机（停机问题，这也意味着存在永远无法被计算解决的问题）。这两点直接奠定了所有现代计算机的理论根基。</p>
+      <p>1948 年，Turing 提出「无组织机器」，主张让机器从随机连接的神经元网络出发，通过奖惩信号自我重组——这就是今天神经网络和强化学习的雏形，被他当时的主管看成儿戏扔进抽屉，死后 14 年才重见天日。1950 年，他以一篇反问「机器能思考吗？」开头的论文提出图灵测试（模仿游戏），并预言到 2000 年，机器将让普通裁判有 30%-70% 的概率无法辨别。他在论文里提前写下了 9 种反对意见并逐一反驳，态度兼具严谨和幽默。1952 年因同性恋行为被捕，接受化学阉割，其战时破解 Enigma 的绝密功勋无法在法庭上提及为辩。1954 年 42 岁离世，旁边放着一个咬了一口的苹果。<strong>图灵贡献了计算机的灵魂，却被人类以法律的名义销毁——每台计算机的运转都是图灵机的翻版，每次 AI 对话都是在回响他当年的追问。</strong></p>
+      <cite><a href="https://xiaobot.net/post/071ea3cb-021a-4c2a-9f1b-13e2a0755296" target="_blank" rel="noopener">小报童 · 纯银</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Garry Tan（YC CEO）：35 年天才追踪研究——12.3% 的人达到了杰出成就，另外 87.7% 去哪了？</h3>
+      <p>@garrytan 引用了一项追踪了 35 年的纵向研究：研究者选取了一批早年被识别为高天赋的人群，35 年后重新追踪，发现其中只有 12.3% 达到了「eminence」（杰出成就，指在领域内被同行认可的突出贡献）的标准。这个数字说明了什么？天赋是必要条件，不是充分条件。在那 87.7% 里面，有坚持在不对的方向上努力的，有在对的方向上没坚持到的，有在对的时机没有出手的。</p>
+      <p>Garry Tan 经常在 YC 的语境下谈这类数据——对他来说，这类研究的价值是校准创始人的期望：如果你曾经是「天才少年」，这并不保证什么，但也不预示失败。最终重要的是方向 × 韧性 × 时机的组合。这个命题在当下 AI 工具极大拉平执行门槛的背景下，有了新的权重：当「做到」变容易，「选对什么值得做」的稀缺性就上升了。<strong>天赋是起点，判断力是杠杆——12.3% 的人可能不是最聪明的那批，而是在正确的问题上坚持了足够久的那批。</strong></p>
+      <cite><a href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Nikunj Kothari：你做什么这件事，从未如此重要——把「好玩」当做真正的选项筛选器</h3>
+      <p>@nikunj（FPV Ventures）今日发了一句话：「What you work on has never been more important. Make sure it's fun.」放在 AI 工具让执行速度大幅提升的当下，这句话有一层具体的含义：当一个人用 AI 能完成以前需要整个团队才能完成的工作量，选「做什么」的权重就比以前更高了——你能做的事越多，选哪一件就越重要。</p>
+      <p>「好玩」不是建议你不认真，而是建议把它当过滤器：你会持续做的事往往是你愿意在没人付钱的情况下也做的事，而 AI 时代让「持续做」的复利更陡峭。这个判断和纯银今日的 Turing 研究有隐性呼应：图灵对数学、密码、跑步的热情不是职业选择，是他本人的构成——他在任何条件下都会做这些事。<strong>AI 工具已经让「做」变得廉价，让「坚持做对的事」变得更值钱。</strong></p>
+      <cite><a href="https://x.com/nikunj" target="_blank" rel="noopener">X @nikunj</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/papers" target="_blank" rel="noopener">EurekAgent：结构化环境工程让 Agent 在科学发现任务上取得 SOTA，同时压制 reward hacking</a></h3>
+      <p><strong>现状：</strong>现有科学发现 Agent（用 AI 自动提出假设、设计实验、分析结果）在开放域任务上容易走捷径，通过优化代理指标而非真正解决问题来刷分（reward hacking，奖励黑客攻击，指 Agent 找到不在预期内的方式获得奖励而不实际完成任务）。</p>
+      <p><strong>解决方案：</strong>EurekAgent 的核心思路是「环境工程」：不只设计 Agent 本身，而是精心设计 Agent 运行的环境结构，包括探索行为激励机制、多 Agent 协作框架、人工监督接入点。在多个测试域上达到 SOTA，且计算成本低于同等表现的基线。</p>
+      <p><strong>价值：</strong>对工程师的启示：在构建 Agent 系统时，「环境设计」和「模型选择」同等重要——什么信息让 Agent 看到、什么操作被允许或限制，直接决定 Agent 的行为质量。</p>
+      <p><strong>未来方向：</strong>结构化环境工程将成为 agentic AI 系统设计的标准层，覆盖从代码 Agent 到科研 Agent 的广泛场景。</p>
+      <cite><a href="https://huggingface.co/papers" target="_blank" rel="noopener">HuggingFace Papers</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-loopcraft-the-art-of-stacking" target="_blank" rel="noopener">Microsoft Arbor：长程自主研究 Agent，持久假设树精炼，MLE-Bench Lite 86% Any-Medal</a></h3>
+      <p><strong>现状：</strong>大多数 Agent 在短周期任务上表现尚可，但在需要持续提出、检验、修正研究假设的长程任务上容易发散或陷入局部最优，缺乏跨步骤的记忆和方向感。</p>
+      <p><strong>解决方案：</strong>Microsoft Research 的 Arbor 使用「持久假设树」（persistent hypothesis tree）架构：Agent 在探索过程中维护一棵不断生长和剪枝的假设树，跨步骤保留最有潜力的研究方向，同时淘汰已证伪的分支。在 MLE-Bench Lite（机器学习工程基准，包含真实 Kaggle 竞赛风格的 ML 任务）上达到 86% Any-Medal，声称超过 Claude Code 和 Codex。</p>
+      <p><strong>价值：</strong>把 Agent 从「一问一答」推向「持续钻研」——Arbor 的框架对需要跨会话记忆和方向感的研究型任务有直接参考价值，尤其是数据科学和 ML 实验自动化场景。</p>
+      <p><strong>未来方向：</strong>长程研究 Agent 的标准化评测（如 MLE-Bench）将推动这一方向快速迭代，与「Agent 做 AI 研究」的更广趋势形成正反馈。</p>
+      <cite><a href="https://www.latent.space/p/ainews-loopcraft-the-art-of-stacking" target="_blank" rel="noopener">AINews / Latent Space</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/papers" target="_blank" rel="noopener">DRPO：软正则化替代 RL 硬掩码，解决 LLM 强化训练（RLHF）的边界稳定性问题</a></h3>
+      <p><strong>现状：</strong>用强化学习（RL，reinforcement learning，让模型通过试错和奖励信号优化行为的训练方式）调优 LLM 时，标准方法使用「信任域」（trust region）约束，即超出边界的更新用硬掩码直接截断。</p>
+      <p><strong>问题：</strong>硬掩码导致梯度在边界处不连续，训练不稳定，特别是在 LLM 大规模 RLHF（人类反馈强化学习，Fable/GPT 等模型对齐方式的核心训练技术）场景下经常出现崩溃或收敛困难。</p>
+      <p><strong>解决方案：</strong>DRPO 用平滑正则化项替代硬掩码：在信任域内部给梯度正常更新，在接近边界时引入连续惩罚而非直接截断，让优化过程保持可微分。</p>
+      <p><strong>价值：</strong>训练更稳定、收敛更快，对从事 LLM 微调（fine-tuning）和 RLHF 的工程师有直接工程价值。</p>
+      <p><strong>未来方向：</strong>软正则化框架有望成为下一代 LLM 对齐训练的标准组件，替代目前 PPO/GRPO 等算法中的硬约束部分。</p>
+      <cite><a href="https://huggingface.co/papers" target="_blank" rel="noopener">HuggingFace Papers</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/papers" target="_blank" rel="noopener">MinerU2.5：1.2B 参数文档解析 VLM，粗到细策略达到 SOTA，专为复杂格式文档设计</a></h3>
+      <p><strong>现状：</strong>企业文档往往包含混排的表格、图表、公式、多栏排版，现有 OCR 和文档解析工具在这类文档上准确率低，是 RAG（检索增强生成，把外部文档知识喂给 AI 回答问题的架构）流水线的常见薄弱环节。</p>
+      <p><strong>解决方案：</strong>MinerU2.5 是一个 1.2B 参数的视觉语言模型（VLM，vision-language model，能同时理解图像和文字的模型），采用「粗到细」（coarse-to-fine）解析策略：先识别文档的大结构（页面布局、区域类型），再精细解析每个区域的内容，而非对整页图像做一次性推理。</p>
+      <p><strong>价值：</strong>在多个文档解析基准上达到 SOTA，且参数量仅 1.2B，可以在较低计算成本下部署，适合企业将其集成进文档处理管道。</p>
+      <p><strong>未来方向：</strong>文档解析能力的提升将直接推动企业 RAG 系统的准确率上限，MinerU2.5 类模型将成为文档密集型企业 AI 的基础组件。</p>
+      <cite><a href="https://huggingface.co/papers" target="_blank" rel="noopener">HuggingFace Papers</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/papers" target="_blank" rel="noopener">MOSS-TTS：离散音频 token + 自回归生成的多语言 TTS，支持语音克隆与发音精细控制</a></h3>
+      <p><strong>现状：</strong>主流文本转语音（TTS，text-to-speech）系统要么音质好但延迟高，要么实时但缺乏对语音细节的控制（如节奏、语气、特定单词的重音）。</p>
+      <p><strong>解决方案：</strong>MOSS-TTS 把语音编码为离散 token（类似文字 token 的方式），然后用自回归（autoregressive）Transformer 建模，把音频生成问题和文字生成用同一套框架处理。支持：1) 声音克隆（voice cloning，用少量样本复现某人的声线）；2) 发音控制（pronunciation control，精细调整特定词汇的读法）；3) 多语言长文本生成。</p>
+      <p><strong>价值：</strong>在多个 TTS 基准上达到 SOTA，可用于播客自动化、有声书、多语言客服和个性化语音助手等场景，统一框架降低了工程集成复杂度。</p>
+      <p><strong>未来方向：</strong>语音克隆能力的提升带来了新的滥用风险，各平台需要配套声纹验证和水印机制；合规应用场景广泛，特别是无障碍和多语言内容生产。</p>
+      <cite><a href="https://huggingface.co/papers" target="_blank" rel="noopener">HuggingFace Papers</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>SpaceX 今日正式在 Nasdaq 和 Nasdaq Texas 双交易所挂牌，SPCX 为代码，成为史上最大 IPO 首日交易日。<a class="glance-src" href="https://links.tldrnewsletter.com/vnDRq0" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Waymo 推出 Premier 订阅层，$29.99/月，权益包括优先匹配、每月 5 次免费取消、每程 10% 积分返还，已在部分城市开始邀请测试。<a class="glance-src" href="https://www.cnbc.com/2026/06/11/waymo-launches-premier-subscription-tier-for-29point99-a-month.html" target="_blank" rel="noopener">CNBC →</a></li>
+      <li>家用 AI 机器狗 Familiar（Roomba 创始人 Colin Angle 新作）：不推广告、不发送云端数据、不以延长使用时间为目标，设计为「捕捉存在感而非注意力」的陪伴设备。<a class="glance-src" href="https://links.tldrnewsletter.com/nF7jqw" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Simon Willison 记录了 Anthropic 完整回撤 Fable 5 对 AI 研究者的隐性降质政策：受影响用户将获得明确提示，而非无声降级。<a class="glance-src" href="https://simonwillison.net/2026/Jun/11/anthropic-walks-back-policy/" target="_blank" rel="noopener">Simon Willison →</a></li>
+      <li>Simon Willison 同日还发布了 Datasette 1.0a33，新增 JSON extras API，并用 Fable 5 + GPT-5.5 构建了一个 extras API 探索器。<a class="glance-src" href="https://simonwillison.net/2026/Jun/11/datasette/" target="_blank" rel="noopener">Simon Willison →</a></li>
+      <li>Vercel + Grok（xAI）正式宣布集成，Grok 的 API 直接可在 Vercel AI SDK 中调用。<a class="glance-src" href="https://x.com/rauchg/status/2065118448947216681" target="_blank" rel="noopener">X @rauchg →</a></li>
+      <li>Dan Shipper（Every.to CEO）：Fable 5 在某个项目中触发了安全护栏，自动降级到了 claude-opus-4-8（Fable 的前一代模型）继续完成任务。<a class="glance-src" href="https://x.com/danshipper" target="_blank" rel="noopener">X @danshipper →</a></li>
+      <li>Peter Yang（Roblox PM）：AI 模型像 RPG 角色属性——GPT-5.5 全面均衡，Fable 5 智力极高但行动力差，Claude Sonnet 是全能型，Gemini 特长是知识宽度。<a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Peter Yang：Netflix 上线了可以用手机当游戏手柄的 FIFA，在等待 AI 任务完成的碎片时间里打了一场——AI 时代开启了一种新的等待文化。<a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Zed 发布 DeltaDB：一个把 Agent 对话和代码编辑统一进单一版本控制抽象的新版本管理系统，「软件在 commit 之间被制造」。<a class="glance-src" href="https://zed.dev/blog/introducing-deltadb" target="_blank" rel="noopener">Zed Blog →</a></li>
+      <li>TLDR 上被传阅的 19 分钟长文：Building a Good Vertical Agent——核心观点是「把 context 当内存层级来设计，而不是把更多数据塞进去」，噪声比数据少才是准确率的关键。<a class="glance-src" href="https://links.tldrnewsletter.com/pmphV4" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Terry Tao（数学菲尔兹奖得主）：AI 擅长把大型数学难题拆成数千个可管理的子问题，但他不认为 AI 近期会替代人类数学家，好的组合仍然是人机协作。<a class="glance-src" href="https://www.quantamagazine.org/how-terry-tao-became-an-evangelist-for-ai-in-math-20260608/" target="_blank" rel="noopener">Quanta Magazine →</a></li>
+      <li>Macrodata Labs 宣布成立：专注机器人数据管道，首个产品 Refiner 是开源框架 + 云运行时，把机器人演示视频处理成训练就绪的数据集，含分片、检查点、可观测性和数据谱系追踪。<a class="glance-src" href="https://www.latent.space/p/ainews-loopcraft-the-art-of-stacking" target="_blank" rel="noopener">AINews →</a></li>
+      <li>Peter Steinberger（@steipete）：正在把 OpenClaw 项目里的 ffmpeg（命令行视频处理库）迁移到 WebAssembly（让原生代码在沙盒环境运行的编译目标），Mac 原生开发的边界依然清晰。<a class="glance-src" href="https://x.com/steipete" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>Thibault Sottiaux（OpenAI Codex）：为 Ona 加入 OpenAI/Codex 团队表示兴奋，期待一起做「未来的建造」。<a class="glance-src" href="https://x.com/thsottiaux" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+      <li>Sam Altman：回应 Ona 加入 OpenAI，「真的很期待一起合作！」<a class="glance-src" href="https://x.com/sama" target="_blank" rel="noopener">X @sama →</a></li>
+      <li>Zara Zhang（@zarazhangrui）：发布一个活动的 deck 预告，内容待解锁。<a class="glance-src" href="https://x.com/zarazhangrui" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+      <li>Aditya Agarwal（@adityaag）：「Things are only impossible to build until someone builds them.」——以一个发布提醒为由发的产品引言，也是一种信仰的表达。<a class="glance-src" href="https://x.com/adityaag" target="_blank" rel="noopener">X @adityaag →</a></li>
+      <li>Governor Gavin Newsom 到访 YC 与 Garry Tan 等创业者见面，讨论了 YIMBY（是的我们需要后院建房，支持增加住宅供给的政策运动）、技术创新和加州投资环境。<a class="glance-src" href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-06-11.html">← Jun 11</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
