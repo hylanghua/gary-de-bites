@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — June 13, 2026</title>
+  <meta name="description" content="美国政府向 Anthropic 发出出口管制指令，暂停 Fable 5 和 Mythos 5 对所有外国公民的访问权限，frontier 模型首次被政府直接叫停；Kimi K2.7-Code 和 MiniMax M3 双双开源，Vercel AI SDK 7 推出 HarnessAgent 统一切换 Claude Code / Codex / Pi。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">June 13, 2026</h1>
+
+  <p class="post-lead">美国政府向 Anthropic 发出出口管制指令，暂停 Fable 5 和 Mythos 5 对所有外国公民的访问权限，frontier 模型首次被政府直接叫停；Kimi K2.7-Code 和 MiniMax M3 双双开源，Vercel AI SDK 7 推出 HarnessAgent 统一切换 Claude Code / Codex / Pi；Tim Ferriss 带来一个真实的震动：AI 正在用他自己的数据证明，how-to 类畅销书的黄金时代可能已经结束。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.anthropic.com/news/fable-mythos-access" target="_blank" rel="noopener">Fable 5 和 Mythos 5 被美国出口管制叫停：史上首次政府以 jailbreak 国家安全风险对 frontier 模型发出访问限制令</a></h3>
+      <p>美国商务部向 Anthropic 发出指令，要求暂停 Fable 5 和 Mythos 5 对所有外国公民的访问权限，不论其身处美国境内或境外，甚至包括 Anthropic 内部的外国籍员工。Anthropic 于美国东部时间周五 17:21 收到指令，当晚对所有客户执行下线，同时发表公开声明表示自己「相信这是一场误解」：政府依据的是一个「可能存在的、非通用 jailbreak（破解 AI 护栏的技术）」的口头证据，而 Anthropic 自行审核后认为该漏洞技术门槛较低，且「同等能力在其他公开模型中普遍存在」，包括 GPT-5.5。</p>
+      <p>这一事件立刻在工程师社区引发连锁反应：Cognition/Devin 和 Agent Arena 紧急下架了 Fable 5 的所有评测条目；Artificial Analysis 发布声明，称这是其「Intelligence Frontier 图表首次出现倒退」。更深层的冲击在于：依赖单一闭源 frontier API 的产品和基础设施，现在面临显性的地缘政治风险。从 @natolambert、@theo 到 Cohere，工程师们的共同结论是：拥有自主可控的模型栈，不再只是技术偏好，而是商业风险管理的必要条件。</p>
+      <cite><a href="https://www.anthropic.com/news/fable-mythos-access" target="_blank" rel="noopener">Anthropic</a> · <a href="https://www.bloomberg.com/news/articles/2026-06-13/anthropic-says-us-limits-foreign-access-to-fable-5-mythos-5" target="_blank" rel="noopener">Bloomberg</a> · <a href="https://fortune.com/2026/06/13/anthropic-disables-fable-mythos-export-controls-national-security-threat/" target="_blank" rel="noopener">Fortune</a> · <a href="https://www.latent.space/p/ainews-fable-mythos-export-control" target="_blank" rel="noopener">AINews / Latent Space</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Kimi K2.7-Code + MiniMax M3：本周两款重量级开源模型同发，开源前沿再度压缩</h3>
+      <p>Moonshot AI 发布 Kimi K2.7-Code，开源，1 万亿参数 MoE（混合专家模型，激活参数约 32B），在自家编码基准上比上一代 K2.6 提升 21.8%，关键指标是推理 token 减少 30%——同等效果，算账更便宜。架构：256K 上下文，MLA 注意力机制，vLLM 已支持。MiniMax M3 同步发布，428B 参数，约 23B 活跃参数，1M 上下文，原生多模态（文本/图像/视频），采用 MiniMax Sparse Attention（MSA）架构，1M 上下文下解码速度比 M2 快 15.6 倍。M3 发布当天即获得 SGLang、vLLM、Together、Fireworks 等推理框架的 day-0 支持。</p>
+      <p>两款模型放在一起，勾勒出开源前沿的当前状态：在代码和长上下文推理上，开源已接近闭源 frontier 的 70-80% 能力，成本则低得多。对建设者的实际启示：Kimi K2.7 的 30% token 减少在 agentic（能自主执行多步任务的）循环中的成本杠杆显著——因为 Agent 会反复调用，每次 token 节省都叠乘。<strong>开源模型的代差从「两代」压缩到「半步」，让「为什么一定要用闭源 frontier」这个问题，在成本敏感场景里越来越难回答。</strong></p>
+      <cite><a href="https://www.latent.space/p/ainews-fable-mythos-export-control" target="_blank" rel="noopener">AINews / Latent Space</a> · <a href="https://codersera.com/blog/kimi-k2-7-complete-guide-2026/" target="_blank" rel="noopener">Kimi K2.7 Guide</a> · <a href="https://codersera.com/blog/minimax-m3-developer-guide/" target="_blank" rel="noopener">MiniMax M3 Guide</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://artificialanalysis.ai/articles/aa-agentperf" target="_blank" rel="noopener">DeepSWE 取代 SWE-Bench Pro 成 Artificial Analysis 编码 Agent 新评测标准；Claude Code + Fable 5 以 77 分领跑</a></h3>
+      <p>Artificial Analysis 宣布把 SWE-Bench Pro 从其编码 Agent 排行榜（Coding Agent Index）中撤下，替换为 Datacurve 的 DeepSWE。原因直接：SWE-Bench Pro 已可通过访问历史 commit 信息的方式被系统性「刷分」（评测人员事先读过答案的现象），而 DeepSWE 的 113 个任务均从零写起，覆盖 91 个真实开源仓库，不存在答案泄露路径。新排行榜显示：Claude Code + Fable 5 [max] 以 77 进入榜首，Codex + GPT-5.5 [xhigh] 以 76 紧随，Claude Code + Opus 4.8 [max] 以 73 居第三。</p>
+      <p>这一更换也暴露了一个结构性问题：「编码 Agent 排行榜」越来越是在评测 harness（Agent 运行的脚手架系统）和模型的组合能力，而不只是模型本身。有分析者指出，同一个底层模型在不同 harness 下分数差异可以超过 10 分。对 PM 的启示：评测数字背后的 harness 质量，可能比模型分数更值得关注。<strong>基准游戏化导致 SWE-Bench Pro 退场，这不是第一次，也不会是最后一次——评测本身需要持续更新才能维持可信度。</strong></p>
+      <cite><a href="https://artificialanalysis.ai/articles/aa-agentperf" target="_blank" rel="noopener">Artificial Analysis</a> · <a href="https://www.latent.space/p/ainews-fable-mythos-export-control" target="_blank" rel="noopener">AINews / Latent Space</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://every.to/chain-of-thought/the-moral-of-fable" target="_blank" rel="noopener">Dan Shipper（Every.to CEO）：Fable 的寓意——只有在 Level 7-8 的人，才真正感受到前沿模型的力量</a></h3>
+      <p>Dan Shipper 在 Every.to 的这篇文章提出了一个逆直觉的观点：Fable 5 对大多数知识工作者来说感觉「差不太多」，不是因为它不强，而是因为大多数人还没找到能释放它能力的使用姿势。他援引了 Every.to 八级 AI 采用框架：大多数人在 Level 3-5（用 AI 生成草稿、改善流程），而真正感受到 Fable 力量的，是 Level 7-8 的人——他们把整个项目委托给 Agent，让 Agent 异步工作，自己只负责审阅结果和学习。Cora 的产品经理 Kieran Klaassen 是他举的例子：以前需要几天的 bug 修复和功能请求，现在几小时内清完。</p>
+      <p>Shipper 用「园艺」（gardening）而非「提示」（prompting）来描述这种工作方式的本质——你在设计和维护一个生长环境，而不是在下达单次指令。他还点出了一个结构性趋势：Claude Code 最初是开发者工具，现在同样的工作方式已被用于幻灯片、表格、内部研究，扩散到所有知识工作。这意味着「Level 7-8 会是少数人特权」这个判断，可能只在未来 18 个月内成立。<strong>前沿模型的价值不均匀分布在使用者之间——你的使用层级，比你的职业更能决定你从 AI 里拿回多少。</strong></p>
+      <cite><a href="https://every.to/chain-of-thought/the-moral-of-fable" target="_blank" rel="noopener">Every.to · Dan Shipper</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Swyx（Latent Space）："The Future Codebase"——当代码库的生产者换成 Agent，「开发者」的定义需要从头改写；Alex Albert（Anthropic Research）：Fable 5 在 agentic 对话上已超越人类</h3>
+      <p>Swyx 今日发出两条互补的推文。第一条标题为「The Future Codebase」，探讨当 AI Agent 成为主要代码贡献者后，代码库（codebase，所有源代码的集合）的结构、命名规范、抽象层次将如何演变——开发者异常工程（developer exception engineering）不再是处理 bug，而是设计 Agent 可理解、可修复的系统边界。第二条关于「neat thing about developer exception engineering」，语气偏向技术工人的自我重新定位。Alex Albert（Anthropic Research 负责人）的发言则更直接：他在实际 agentic 对话任务（由真实用户完成的多步 AI 交互）上测试了 Fable 5，得出的结论是超越人类水平（superhuman）。</p>
+      <p>两条内容合在一起，描述了一种方向性共识：「写代码」这件事正在从人类工程师的核心动作变成 Agent 的输出物，而人的工作重心在向「设计系统让 Agent 能工作」转移。Alex Albert 的超越人类数据，给这个转移提供了一个时间锚点：这不是未来五年的预判，是现在已经发生的基准突破。<strong>当 agentic 任务上的人类水平已被超越，「我要学好编程」和「我要学好管理 Agent」开始成为两个不同赛道的起点。</strong></p>
+      <cite><a href="https://x.com/swyx" target="_blank" rel="noopener">X @swyx</a> · <a href="https://x.com/alexalbert__" target="_blank" rel="noopener">X @alexalbert__</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3>Guillermo Rauch（Vercel CEO）：AI SDK 7 发布 HarnessAgent——单一 API 统一 Claude Code / Codex / Pi；"HTML is so back"</h3>
+      <p>Vercel AI SDK 7 推出 HarnessAgent，把 Claude Code、Codex、Pi 等主流编码 Agent harness（Agent 的运行脚手架，管理工具调用、沙盒、权限流、会话压缩等组件）统一在同一个 API 抽象之下。设计逻辑类似模型切换：你写一次 Agent 逻辑，然后用 harness 参数指定底层是用 Claude Code 还是 Codex，就像以前 `model: "claude-fable-5"` 可以随时换成 `model: "gpt-5.5"` 一样。Rauchg 同日发出「HTML is so back」，标志性地宣示了一个判断：超文本堆叠时代（hypescript，指 JavaScript 框架层层套叠的前端时代）正在退潮，服务器端渲染的静态 HTML 在 agentic web（Agent 是主要操作者的 Web 环境）里重新成为最合适的格式。</p>
+      <p>两条信息合起来，描述了 Vercel 的产品政治立场：它不想只是部署基础设施，它要成为 Agent 时代的 default 构建层，就像它在 Next.js 时代成为 React 部署的 default 一样。HarnessAgent 让一个开发者可以在不同 AI 供应商之间无缝切换，降低对单一 frontier 厂商的绑定——这在 Fable/Mythos 出口管制事件的背景下，有了额外的商业意涵。<strong>Vercel 在模型切换的基础上又加了一层 harness 切换，基础设施中立的价值，在供应商可靠性出问题的那天会瞬间变得非常具体。</strong></p>
+      <cite><a href="https://vercel.com/changelog/program-agent-harnesses-with-ai-sdk" target="_blank" rel="noopener">Vercel Changelog</a> · <a href="https://x.com/rauchg" target="_blank" rel="noopener">X @rauchg</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Aaron Levie（Box CEO）：Fable/Mythos 被叫停证明政策风险和技术风险一样重要；最积极用 agentic AI 的公司反而更打算增加人员</h3>
+      <p>@levie 今日对 Fable/Mythos 出口管制事件的解读角度不同于大多数技术人：他不聚焦在 jailbreak 的技术细节，而是把它定性为一个信号——AI 政策已经成为和 AI 能力同等重要的商业风险变量。一家公司今天押注了某个 frontier API，明天监管机构可能出于任何理由叫停它，而你的产品和客户会直接受影响。他同日还引用了一项行业调查：在所有企业中，最积极部署 agentic AI（能自主执行多步任务的 AI 应用）的公司，是最倾向于增加员工规模的一组，而不是最倾向于裁员的一组。</p>
+      <p>这两条放在一起，刻画了 Levie 对 AI 时代商业图景的判断：监管不确定性是新的竞争变量（谁能在政策震荡中保持连续性，谁有优势）；「AI 消灭工作」的叙事在真实数据面前正在松动（至少在采用最积极的企业群体里）。数据是相关性而非因果性，但方向足够值得追踪。<strong>政策风险加入了商业 AI 的风险矩阵，Fable/Mythos 的一夜下线，是这个风险最直观的教学案例。</strong></p>
+      <cite><a href="https://x.com/levie" target="_blank" rel="noopener">X @levie</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://tim.blog/2026/06/13/5-bullet-friday" target="_blank" rel="noopener">Tim Ferriss 5-Bullet Friday：AI 正在亲手砸掉他自己的畅销书——以及为什么「只有互联网那么大」才是 AI 最诚实的描述</a></h3>
+      <p>Tim Ferriss 本期 5-Bullet Friday 罕见地把个人数据搬上了台面：他正在研究「AI 是否已经杀死了 how-to 类非虚构书籍」，素材来自他自己多年畅销书的实际销量曲线。对他这种靠「实操清单型内容」起家的作者而言，AI 是最直接的竞争者——读者为什么要买 The 4-Hour Workweek，如果他们可以直接问 Claude？这一期还推荐了一个播客：Benedict Evans 在 Lenny Rachitsky 节目上讨论 AI 走向，Ferriss 的评价是「我听过的最好的 AI 播客」。Evans 的核心论点：AI 和互联网或移动端同等重量级的变革——然后只有那么大。</p>
+      <p>「只有互联网那么大」这个句式值得停一下。它是在提醒：互联网确实改变了一切，但人类的工作、关系、意义需求并没有因此消失，只是重组了。AI 也可能走同一条路：它会彻底重塑知识生产和内容消费的形式，但「慢慢学一件事的满足感」和「读到一本书里真实人类视角的感受」不会消失，只是变稀缺和更值钱。对 Ferriss 这样的内容创作者，这个判断是挑战，也是出口。<strong>AI 杀死的不是内容，而是「信息套利」——把难找的知识打包卖给没时间找的人的那个模式，而作者作为视角和判断力的价值，正在上升。</strong></p>
+      <cite><a href="https://tim.blog/2026/06/13/5-bullet-friday" target="_blank" rel="noopener">Tim Ferriss 5-Bullet Friday</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Karpathy："In awe of SpaceX and its story — past, present and the future"——$1.77T IPO 与「在有证据前就相信」的代价</h3>
+      <p>SpaceX 昨日 IPO，SPCX 收于 $161，上涨 19%，市值 $1.77 万亿，史上最大 IPO 首日。Andrej Karpathy 在推文里写道：「In awe of SpaceX and its story — past, present and the future.」这条推文的背景，恰好和 Tim Ferriss 这期 5-Bullet Friday 里引用的 Demis Hassabis 传记引言形成呼应：Watson（DNA 双螺旋结构发现者之一）说，「Blessed are they who believed before there was any evidence.」——「有福的是那些在有证据之前就相信的人。」</p>
+      <p>SpaceX 的故事是这句话最典型的注脚：在人人觉得商业火箭不可行的时代押注，在三次失败之后坚持做第四次，在没有客户的时候先把技术做到极限。这件事和 AI 行业的关系，在今天的语境里特别清晰：Fable 5 和 Mythos 5 被政府叫停，让所有人被迫意识到这个赛道的不确定性——但正是在这种不确定下，仍然选择相信并且持续建设的人，才是下一个 SpaceX 可能孵化的地方。<strong>「在证据出现之前就相信」不是盲信，是对自己判断力的押注——SpaceX 1.77 万亿的市值，是一场赌注最终的结算单。</strong></p>
+      <cite><a href="https://x.com/karpathy/status/2065490793092337691" target="_blank" rel="noopener">X @karpathy</a> · <a href="https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html" target="_blank" rel="noopener">CNBC</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Garry Tan（YC CEO）：AI 启用的官僚主义——当工具让文件制造变快，谁先获益？</h3>
+      <p>@garrytan 今日发出了一条对 AI 工具应用的批评性观察：当 AI 让生成文件、撰写审批流程、制造合规材料变得极为廉价，官僚体系（公司内部的行政流程、政府监管机构等）会是首先受益的一方，而不是执行工作的个人。他的逻辑：官僚系统的核心驱动力是「用文件证明合规」，AI 恰好让这件事成本降到接近零，意味着文件量会激增，审批步骤会更多，而不是更少。这和许多人对 AI 减少摩擦的期待方向正好相反。</p>
+      <p>这个判断不是悲观主义，而是一种产品设计和政策倡导的方向提示：如果工具只是让「制造证明」变快，而没有改变「需要证明什么」的规则本身，AI 最终是在优化一个错误的目标函数。Garry Tan 同日也以最积极的语气推荐了 DeepSWE 作为「engineering evals 新标准」，两条推文合在一起，刻画了一个清醒的乐观主义者的姿态：对 AI 能做什么充满热情，对 AI 被什么误用高度警惕。<strong>AI 工具的第一批最大获益者，往往不是最需要它们的人，而是已经知道怎么使用规则的人。</strong></p>
+      <cite><a href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.09821" target="_blank" rel="noopener">DRPO：软正则化替代硬掩码，LLM 强化训练在 trust-region 边界外也有连续梯度修正</a></h3>
+      <p><strong>现状：</strong>用强化学习（RL，reinforcement learning，通过试错和奖励信号优化模型行为的训练方法）调优大语言模型时，标准方法依赖「信任域（trust region）」约束——当某次更新超出安全边界，梯度被硬掩码直接截断，相当于直接告诉优化器「这步不算」。</p>
+      <p><strong>问题：</strong>硬截断导致边界处梯度不连续：明明越界了一点点的更新方向可能是有用的，但被一刀砍掉；大规模 RLHF（用人类反馈做强化学习，Fable / GPT 等模型对齐的核心训练技术）中这种崩溃尤其常见。</p>
+      <p><strong>解决方案：</strong>DRPO（Divergence Regularized Policy Optimization）把硬掩码换成平滑的二次正则化项：在边界内正常更新，接近边界时引入连续惩罚权重，越界越大，但始终可微分——梯度不再消失，而是被压制和修正。</p>
+      <p><strong>价值：</strong>训练曲线更稳定，大规模 RLHF 里减少了「突然崩溃再恢复」的震荡；对从事 LLM 微调（fine-tuning）和对齐训练的工程师有直接实用价值。</p>
+      <p><strong>未来方向：</strong>软正则化框架有潜力成为 PPO / GRPO 等算法中硬约束部分的标准替代，向下一代 LLM 对齐训练管线扩散。</p>
+      <cite><a href="https://arxiv.org/abs/2606.09821" target="_blank" rel="noopener">arXiv 2606.09821</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.08063" target="_blank" rel="noopener">Robust-U1（ICML 2026）：多模态大模型可通过强化学习主动恢复被污染的视觉内容，不再只靠文字推理弥补图像缺陷</a></h3>
+      <p><strong>现状：</strong>多模态大语言模型（MLLM，multimodal LLM，同时理解图像和文字的模型）在处理噪声、压缩、遮挡等被污染图像时表现不稳定；现有方法要么做特征对齐（黑盒，无可解释性），要么靠文字推理弥补，但文字无法恢复丢失的像素级信息。</p>
+      <p><strong>解决方案：</strong>Robust-U1 给 MLLM 装上「视觉自修复」能力，分三阶段训练：① 用标准有监督微调（SFT）做初始视觉重建；② 用双重奖励的强化学习（RL）精调——像素级 SSIM（结构相似度，衡量图像质量的指标）和语义级 CLIP 相似度（用 CLIP 模型衡量图像含义是否保留）同时作为奖励信号；③ 联合推理，同时考虑受损输入和已恢复图像。</p>
+      <p><strong>价值：</strong>在真实图像污染基准上达到 SOTA，且保持在对抗性污染下的鲁棒性；对处理低质量用户上传图像的产品（医疗影像、文档扫描、用户照片理解）有直接参考价值。</p>
+      <p><strong>未来方向：</strong>视觉自修复作为 MLLM 的标准能力层将向下游应用扩散，降低对输入图像质量的前置要求。</p>
+      <cite><a href="https://arxiv.org/abs/2606.08063" target="_blank" rel="noopener">arXiv 2606.08063</a> · <a href="https://huggingface.co/papers/2606.08063" target="_blank" rel="noopener">HuggingFace Papers</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.09186" target="_blank" rel="noopener">DuplexOmni：实时全双工多模态交互——听、看、思、说四路并行，思考不再阻塞响应</a></h3>
+      <p><strong>现状：</strong>现有语音/多模态 AI 系统大多是半双工（half-duplex）：说话时不能听，听完之后才开始想，想完才开始说——这和人类对话节奏差距明显，打断、附和、实时反应都不可能。</p>
+      <p><strong>解决方案：</strong>DuplexOmni 把模型分成两层异步并行的组件：交互层（interaction layer）是端到端实时模型，持续处理流式音视频输入，同步生成语音响应；思考层（thinking layer）是可插拔模块，专门负责复杂推理和工具调用（调用外部 API 或搜索引擎等）。两层异步运行——思考层在后台运转时，交互层仍然保持对话的连贯性和即时响应。</p>
+      <p><strong>价值：</strong>彻底解除「思考」和「响应」之间的顺序依赖；在视频会议 AI、客服、实时教学等需要自然对话节奏的场景里，用户体验提升显著。</p>
+      <p><strong>未来方向：</strong>全双工多模态交互将成为下一代语音 AI 助手的标配架构，思考层插件化设计让不同推理能力的模型可以热插拔。</p>
+      <cite><a href="https://arxiv.org/abs/2606.09186" target="_blank" rel="noopener">arXiv 2606.09186</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://artificialanalysis.ai/articles/aa-agentperf" target="_blank" rel="noopener">AA-AgentPerf：业界首个 agentic 推理基准——以每兆瓦并发 Agent 数量衡量 AI 算力真实价值</a></h3>
+      <p><strong>现状：</strong>现有 AI 芯片和推理硬件的性能评测主要用 TPS（tokens per second，每秒生成的 token 数量）衡量，这个指标对单次对话有意义，但无法反映部署大规模 Agent 循环时的真实瓶颈——Agent 通常有 100-200 轮对话、序列长度超 100K token，和普通聊天对话场景完全不同。</p>
+      <p><strong>解决方案：</strong>AA-AgentPerf（Artificial Analysis 推出的 agentic 性能基准）用真实编码 Agent 轨迹回放，在生产级优化（KV 缓存复用、投机解码（speculative decoding）、预填充/解码分离等技术）下测量系统极限。核心指标「Agents per Megawatt（每兆瓦并发 Agent 数）」把算力和能耗一起考量。首轮结果：NVIDIA Blackwell Ultra NVL72 领跑，比 Hopper 架构高 20 倍；测试基础模型为 DeepSeek V4 Pro。</p>
+      <p><strong>价值：</strong>对需要部署大量并发 Agent 的企业（代码自动化、客服 Agent 等），这是比 TPS 更有决策参考价值的采购指标；能耗归一化也是数据中心层面的实际考量。</p>
+      <p><strong>未来方向：</strong>agentic 推理基准将推动下一代 AI 芯片的设计目标从「单次推理速度」转向「单位能耗并发 Agent 容量」，影响整个 AI 基础设施的采购和建设逻辑。</p>
+      <cite><a href="https://artificialanalysis.ai/articles/aa-agentperf" target="_blank" rel="noopener">Artificial Analysis AA-AgentPerf</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2512.16676" target="_blank" rel="noopener">DataFlow：LLM 驱动的数据准备框架——近 200 个算子，自然语言 spec 自动转可执行 pipeline，代码基准 +7%</a></h3>
+      <p><strong>现状：</strong>高质量训练数据的准备是 LLM 性能的关键瓶颈，但数据清洗、增强、过滤、格式转换的流程极度碎片化——不同任务（数学推理、代码、问答、SQL）需要不同算子，手动组合费时且难以复用。</p>
+      <p><strong>解决方案：</strong>DataFlow 提供 PyTorch 风格的 pipeline 构建 API，近 200 个可复用算子覆盖文本、数学推理、代码、Text-to-SQL、agentic RAG（检索增强生成，把外部文档知识喂给 AI 的架构）、大规模知识提取六个域。DataFlow-Agent 组件把自然语言需求描述（spec）自动翻译成可执行的 pipeline：它先综合算子，再做 pipeline 规划，最后迭代验证。</p>
+      <p><strong>价值：</strong>在代码基准上平均提升 +7%，在 MATH / GSM8K / AIME 数学基准上提升 1-3 分，在 Text-to-SQL 任务上执行准确率比 SynSQL 高 +3%；统一框架降低了跨任务数据准备的复杂度。</p>
+      <p><strong>未来方向：</strong>数据准备的自动化将成为下一个被 Agent 大规模接管的 ML 工程环节，DataFlow 类框架有望成为 LLM 训练管线的标配组件。</p>
+      <cite><a href="https://arxiv.org/abs/2512.16676" target="_blank" rel="noopener">arXiv 2512.16676</a> · <a href="https://github.com/OpenDCAI/DataFlow" target="_blank" rel="noopener">GitHub OpenDCAI/DataFlow</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>SpaceX SPCX 昨日 IPO 收于 $161，上涨 19%，市值 $1.77 万亿，史上规模最大的 IPO 首日交易日。<a class="glance-src" href="https://www.cnbc.com/2026/06/12/spacex-ipo-spcx-live-updates.html" target="_blank" rel="noopener">CNBC →</a></li>
+      <li>Fable/Mythos 下游效应：Cognition/Devin 和 Agent Arena 当晚紧急下架 Fable 5 所有评测条目；Anthropic 事后重置了 5 小时和每周 API 限速以减少影响。<a class="glance-src" href="https://www.latent.space/p/ainews-fable-mythos-export-control" target="_blank" rel="noopener">AINews →</a></li>
+      <li>Thibault Sottiaux（@thsottiaux，OpenAI Codex 团队）：宣布 Codex 使用量重置改进，API 调用次数回滚并改善了体验；本月第二次面向用户做出调整。<a class="glance-src" href="https://x.com/thsottiaux/status/2065468501750649006" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+      <li>Peter Yang（@petergyang，Roblox PM）：用 RPG 角色属性来比喻 AI 模型——Fable 5 智力极高但行动力差（成本高且被限制），Claude Sonnet 是全能型，GPT-5.5 全面均衡；同时评论了 Fable 对外国人的访问限制在实际使用中的影响。<a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Madhu Guru（@realmadhuguru）：「今天不用 AI，徒手打了一份文档」——字面描述，语气带着微微的反讽，是这周出口管制风波后的情绪横切面。<a class="glance-src" href="https://x.com/realmadhuguru" target="_blank" rel="noopener">X @realmadhuguru →</a></li>
+      <li>Amjad Masad（@amasad，Replit CEO）：对 Fable/Mythos 访问受限表达担忧，同时观察到 AI 工程中 tokenization（把文本切分成模型可理解的 token 的过程）趋势的演变；Replit 深度依赖 frontier API，政策风险对其影响直接。<a class="glance-src" href="https://x.com/amasad" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>Zara Zhang（@zarazhangrui）：AI 产品需求正趋于饱和，同质化产品已很难靠功能本身突破；她的第二条推文：创始人本人的可见度和真实声音，是当前差异化最可行的路径之一。<a class="glance-src" href="https://x.com/zarazhangrui" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+      <li>Nikunj Kothari（@nikunj，FPV Ventures）：应用层公司如何对抗大模型厂商在同一赛道的同质竞争——他的核心判断是：护城河来自分发渠道和用户关系，而不是来自模型本身。<a class="glance-src" href="https://x.com/nikunj" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Peter Steinberger（@steipete，PSPDFKit 作者）：正在用 Codex 为 OpenClaw 项目做自主开发，让 Codex 直接跑在 CI 里处理任务而不需要本地环境；同时对 Fable/Mythos 下架发表了评论。<a class="glance-src" href="https://x.com/steipete" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>Dan Shipper（@danshipper，Every.to CEO）：用幽默语气解读 Fable/Mythos 出口管制事件——他自己刚发表了一篇大力推荐 Fable 的文章，结果模型当晚下线，这个时间差本身就是一个 punchline。<a class="glance-src" href="https://x.com/danshipper" target="_blank" rel="noopener">X @danshipper →</a></li>
+      <li>Aditya Agarwal（@adityaag）：宣布暂时把自己的 X 账号改名为「Space Park Commons」（呼应 SpaceX IPO 氛围）；欢迎一位新合伙人加入团队。<a class="glance-src" href="https://x.com/adityaag" target="_blank" rel="noopener">X @adityaag →</a></li>
+      <li>Claude 官方账号（@claudeai）：「What are you building?」——向 37 万关注者征集用 Claude 在做的事，本周互动量较高的帖子之一（737 赞）。<a class="glance-src" href="https://x.com/claudeai" target="_blank" rel="noopener">X @claudeai →</a></li>
+      <li>Garry Tan（@garrytan）：在推 DeepSWE 为「engineering evals 新标准」的同时，也以 YC 视角转发了 SpaceX IPO 庆祝；Governor Gavin Newsom 近日来访 YC，讨论 YIMBY 政策和加州投资环境。<a class="glance-src" href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Alex Albert（@alexalbert__，Anthropic Research）：分享了 Fable 5 在 agentic 对话任务上的提示技巧（prompting tips）；提示要点是减少过度指令、给模型留出探索空间。<a class="glance-src" href="https://x.com/alexalbert__" target="_blank" rel="noopener">X @alexalbert__ →</a></li>
+      <li>Swyx（@swyx）：早间推文「how your email finds me」带有明显的自嘲语气，暗示 AI 时代的收件箱已经不堪其扰；AI 构建者每天处理的信息密度已经达到了另一个量级。<a class="glance-src" href="https://x.com/swyx" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>MiniCPM-o 4.5（HuggingFace Papers）：面向边端设备的全模态实时全双工模型，支持语音/视频/文本三模态，覆盖手机和 PC 端部署场景。<a class="glance-src" href="https://huggingface.co/papers/2604.27393" target="_blank" rel="noopener">HuggingFace Papers →</a></li>
+      <li>AA-AgentPerf 首轮结果：NVIDIA Blackwell Ultra NVL72 表现领先，比 Hopper 架构高 20 倍 Agents/MW；AMD 在当前测试配置下落后于 Blackwell 和 Hopper。<a class="glance-src" href="https://artificialanalysis.ai/articles/aa-agentperf" target="_blank" rel="noopener">Artificial Analysis →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-06-12.html">← Jun 12</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
