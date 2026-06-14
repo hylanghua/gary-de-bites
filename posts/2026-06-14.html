@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — June 14, 2026</title>
+  <meta name="description" content="亚马逊 CEO Jassy 向财政部长揭报了 Fable 5 的安全漏洞，这才引发了出口管制令，世界最大 AI 投资方成了封禁触发者；Dario 拒绝了政府条件，封禁仍在持续，Anthropic 的 IPO 路线受到威胁。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">June 14, 2026</h1>
+
+  <p class="post-lead">亚马逊 CEO Jassy 向财政部长揭报了 Fable 5 的安全漏洞，这才引发了出口管制令，世界最大 AI 投资方成了封禁触发者；Dario 拒绝了政府条件，封禁仍在持续，Anthropic 的 IPO 路线受到威胁。Mark Pincus 在《Life at the Speed of Play》发布前首次开口，带来他在 Zynga 验证的「Proven, Better, New」打爆款框架；新研究证明纯神经推理在 19-31 步后触及硬顶，Agent 必须会用工具才能继续。</p>
+
+  <p class="post-note">本期部分源抓取失败，内容较常规偏少。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3>亚马逊 CEO Jassy 揭报 Fable 5 漏洞触发封禁：世界最大 AI 投资方成了封禁触发者，Dario 拒绝政府条件，Anthropic IPO 时间线受压</h3>
+      <p>昨日新闻已报道出口管制令本身，但真正的「为什么」今天才浮出水面：根据 TechCrunch、The Next Web 等多家媒体引述的消息，亚马逊研究团队用一系列提示词成功 jailbreak（破解 AI 安全护栏）了 Fable 5，让其输出可用于网络攻击的内容。亚马逊 CEO Andy Jassy 随即将这份研究报告亲自送交财政部长 Scott Bessent，而财政部的介入最终促使商务部在美国东部时间 6 月 12 日 17:21 向 Anthropic 发出暂停令。</p>
+      <p>这个结构的荒诞之处在于：亚马逊是 Anthropic 的最大外部投资方，累计出资 130 亿美元，同时 Anthropic 还有 1000 亿美元的 AWS 算力支出承诺——这意味着，Anthropic 的衣食父母亲手推动了针对 Anthropic 旗舰产品的政府封禁。前 AI 政策协调人 David Sacks 透露，政府给了 Anthropic 两个选项：修补漏洞，或下架模型。Dario Amodei 拒绝了两者，理由是 Anthropic 认为这个 jailbreak 技术门槛低、其他公开模型同样存在，该标准一旦成立将让整个行业的前沿模型部署都无法继续。截至今日（北京时间 6 月 14 日傍晚），封禁仍未解除。</p>
+      <p>商业影响逐渐明朗：Anthropic 原本被业界普遍预期在 2026 年下半年启动 IPO，而主力产品被政府叫停、创始人公开顶撞监管部门，让这份 S-1（美国 IPO 招股书）的审阅难度骤增。Dan Shipper（Every.to CEO）在今天凌晨发布的最新文章《Fable, Disabled》里写道，他自己的 AI 使用数据图表在封禁当晚出现了一条折断线：Claude 骤降，Codex 骤升，停顿前后判若两图——他把这件事比作 Sam Altman 当年被 OpenAI 董事会解雇那晚，虽然最终被反转，但对公司内部的动量造成了数月的真实损耗。<strong>Fable/Mythos 封禁的幕后逻辑，是商业竞争、技术分歧和政治时机的三方交汇——不是单纯的国家安全问题，也不是单纯的误解。</strong></p>
+      <cite><a href="https://techcrunch.com/2026/06/13/amazon-ceo-reportedly-raised-anthropic-model-concerns-before-government-crackdown/" target="_blank" rel="noopener">TechCrunch</a> · <a href="https://thenextweb.com/news/amazon-jassy-triggered-anthropic-fable-mythos-crackdown" target="_blank" rel="noopener">The Next Web</a> · <a href="https://mlq.ai/news/amazons-jassy-alerted-white-house-to-anthropic-fable-5-security-flaws-triggering-export-ban/" target="_blank" rel="noopener">MLQ.ai</a> · <a href="https://every.to/context-window/fable-disabled" target="_blank" rel="noopener">Every.to · Dan Shipper</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3>Aaron Levie（Box CEO）：路由层才是 AI 时代真正的护城河——能调度请求到最合适模型的那一层，比任何单一模型都更值钱</h3>
+      <p>@levie 今日发出了他观察 AI 行业的一个核心判断：未来的平台级公司，不是拥有最好的模型的公司，而是拥有最好的「路由层」（routing layer）的公司——那个能够感知任务类型、自动匹配最合适模型、管理成本和延迟的中间层。他的逻辑类似早年对 CDN（内容分发网络，让网页更快加载的基础设施）的判断：互联网的基础设施公司不是生产内容的，而是让内容流通更高效的那些。</p>
+      <p>这个判断在 Fable/Mythos 封禁的背景下有了格外具体的意义：如果你的产品深度绑定在某一个 frontier 模型 API 上，政府的一纸指令可以让它一夜归零；但如果你的核心资产是路由层，则模型可以随时换，护城河反而不在模型供应商这里。Levie 同时也在另一条推文里说：「每个人都以为这是什么 4D 象棋或阴谋论，但其实就是系统在按照它本来的方式运转」——他认为 Fable 封禁事件不是某种精心策划的博弈，而是各方按自身利益行动的自然结果。<strong>路由层的价值在供应商可靠性出问题时会立刻变得非常具体——Fable/Mythos 封禁夜是这个判断最好的活教材。</strong></p>
+      <cite><a href="https://x.com/levie" target="_blank" rel="noopener">X @levie</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Amjad Masad（Replit CEO）："Feels like we're getting psyoped"——Fable 封禁更像一步商业棋，而不是真正的国家安全问题</h3>
+      <p>@amasad 今日的推文语气直接：「感觉像被 psyop（心理操控）了。」他的核心判断是：从技术角度看，Fable 5 的 jailbreak（破解安全护栏）并没有突破性的能力，类似技术在其他公开模型里广泛存在，单独针对 Anthropic 的封禁很难在技术理性的框架内解释。他认为「终局」是商业竞争：谁在这轮封禁里受益，谁可能就是真正的推手或受益方。Replit 深度依赖 Claude API，Amasad 的发言不是中立旁观，而是直接利益相关者的焦虑和判断。</p>
+      <p>他的视角值得和 Aaron Levie 的「系统在按自身方式运转」放在一起读：Levie 是「这是正常结果」，Amasad 是「这个结果很可疑」。两者不矛盾：系统可以按其内在逻辑运转，同时这个内在逻辑本身受到了竞争利益的操控。Replit 这样完全依赖单一 frontier API 的公司，在这种事件里没有任何缓冲——这也是为什么 Amasad 是最敏感的观察者之一。<strong>封禁真正动摇的，不是某一个模型，而是整个「押注闭源 frontier API」的建设逻辑。</strong></p>
+      <cite><a href="https://x.com/amasad" target="_blank" rel="noopener">X @amasad</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.lennysnewsletter.com/p/the-common-pattern-behind-successful" target="_blank" rel="noopener">Mark Pincus（Zynga 创始人）：「Proven, Better, New」——为什么你的直觉是对的，但你的想法是错的</a></h3>
+      <p>Mark Pincus 在 Zynga 期间打造了 FarmVille、Words With Friends、Zynga Poker 等游戏，10 次重要产品发布中有 8 次成为爆款，触达超过 10 亿玩家——是消费品史上最高的命中率之一。他在 Lenny Rachitsky 的播客里首次谈到了自己酝酿五年的新书《Life at the Speed of Play》（6 月 23 日上市），核心是「Proven, Better, New」框架：先找到已经被市场验证的东西（Proven），把它做到 10/10 的人都说「f*ck yes 我要用这个」（Better），然后才加上让它与众不同的新意（New）——顺序不能反，先加「New」就是大多数创业公司失败的路径。</p>
+      <p>他分享了两个对创始人特别有用的判断：第一，你的直觉对 95% 的时间是正确的，但你的想法 75% 的时间是错的——直觉告诉你方向，但具体执行方案需要被推翻。第二，「Kill hope before hope kills you」：在团队执行一个你已经知道不对的想法时，要比任何人更快地砍掉它，而不是让「也许还有机会」的希望消耗掉所有人的时间。这两条原则放在 AI 时代尤其尖锐——AI 工具让执行成本骤降，「能快速实现」变成了更快速地沿着错误方向跑。<strong>「Proven, Better, New」是在提醒：创新不是从「New」开始，而是从「Better」打出来的——大多数产品输在这里，而不是输在缺少新意。</strong></p>
+      <cite><a href="https://www.lennysnewsletter.com/p/the-common-pattern-behind-successful" target="_blank" rel="noopener">Lenny's Newsletter · Mark Pincus</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Garry Tan（YC CEO）：AI 里大多数人仍在用旧地图导航新地形——思维框架没有跟上工具的变化</h3>
+      <p>@garrytan 今日发出了一条指向认知错位的观察：在 AI 已经改变了工具能力边界的时候，大多数人仍在用「AI 之前的地图」来规划决策——他们知道有新工具，但判断框架、资源分配逻辑、成功指标，都还没更新。「In AI most people are still trying to use old maps on new terrain」。他援引的对比是军事历史上的一个经典模式：每代新武器出现，第一批落败的，不是没有新武器的一方，而是拥有新武器却沿用旧战术的一方。</p>
+      <p>这个判断和 Mark Pincus 的「Proven, Better, New」形成了有趣的张力：Pincus 说先用已验证的路径，Tan 说已验证的路径可能已经失效。两者并不矛盾，而是层次不同：Pincus 说的是「产品验证逻辑」，Tan 说的是「判断新工具能做什么的元认知框架」。在 AI 时代，这两件事都需要同时更新，而大多数人只更新其中之一。<strong>旧地图最危险的地方在于：它让你感觉有方向，而不是迷路——这才是它在新地形上致命的原因。</strong></p>
+      <cite><a href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3>Nan Yu（@thenanyu）：「想象一款软件强大到足以让整个政府把它关掉」——真正的能力，也是最大的脆弱性</h3>
+      <p>@thenanyu 今日的推文只有一句话的引子，却把 Fable 封禁的荒诞感压缩得很干净：「Imagine a piece of software so powerful it completely disables…」——想象一款软件强大到足以让它完全失效。这里的悖论在于：正是因为它足够强大，才成为靶子。能力和脆弱性在这里是同一件事的两面。一款太弱的模型不值得政府关注，而一款强到被认为是国家安全威胁的模型，则随时可能被关掉。</p>
+      <p>这个观察比「Fable 封禁是政治的」更深一层：它触及了 AI frontier 的根本矛盾——你建设一个越来越强的系统，但它的力量本身就是监管风险的来源。这不只是 Anthropic 的问题，也是所有在做 frontier AI 的公司迟早要面对的问题：能力曲线越陡，政治曝光面越大。和 Amasad 的「psyop」视角不同，@thenanyu 的角度是存在性的，而不是博弈性的。<strong>AI 第一次以这种方式让人感受到：真正的「强大」不是无懈可击，而是成为所有人的注意力中心，包括那些手里有关掉按钮的人。</strong></p>
+      <cite><a href="https://x.com/thenanyu" target="_blank" rel="noopener">X @thenanyu</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://every.to/context-window/fable-disabled" target="_blank" rel="noopener">Dan Shipper（Every.to CEO）：「Fable, Disabled」——使用曲线在封禁那晚折断，以及为什么这件事像极了 Sam Altman 被解雇那夜</a></h3>
+      <p>Dan Shipper 今天的文章没有从宏观政策谈起，而是从一张图表开始：他自己的 Claude 和 Codex 每日使用量曲线，在 6 月 12 日晚出现了一条折断线——封禁前，两者大致平分；封禁后，Claude 曲线骤降，Codex 曲线骤升，中间有一段短暂的「什么都不用」。这张图比任何数字都更直觉地说明了「单点依赖」的代价是什么。</p>
+      <p>他做的第二个类比指向了 2023 年 11 月的那个周五夜晚：Sam Altman 被 OpenAI 董事会解雇，外界的初始反应是「这件事会很快过去」，而结果是整个公司的节奏被打乱了数月，即便 Altman 最终回归。Shipper 的判断是：就算 Fable 封禁像他预测的那样在几天内解除，Anthropic 已经付出了这种内部动量损耗的代价，而这种损耗不会在政策撤销的那天消失。他同时也发表了今天最精准的一个幽默：刚写完一篇大力推荐 Fable 5 的文章，模型当晚下线，「时机本身就是一个 punchline」。<strong>单点依赖的风险从来不是「这件事会发生吗」，而是「发生的时候你有多少缓冲」——Dan Shipper 的使用曲线折断图，是这个风险最直观的样本。</strong></p>
+      <cite><a href="https://every.to/context-window/fable-disabled" target="_blank" rel="noopener">Every.to · Dan Shipper</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.05405" target="_blank" rel="noopener">Agents' Last Exam (ALE)：覆盖 13 行业 1K+ 任务的 Agent 经济价值基准，250+ 行业专家共建，顶配平均达标率仍低于 1%</a></h3>
+      <p><strong>现状：</strong>现有 Agent 基准（如 SWE-Bench、GAIA 等）主要评测软件工程或知识问答能力，缺乏对 AI Agent 在真实商业场景中「能产生多少经济价值」的系统衡量。</p>
+      <p><strong>解决方案：</strong>Agents' Last Exam（ALE）由 250 多位行业专家共同构建，覆盖 13 个非物理行业集群（从法律、金融到医疗、研究），细分 55 个子领域，包含超过 1000 个任务，全部具备可验证的客观答案，且结果对应真实商业价值——「完成这个任务，在现实中值多少钱」。</p>
+      <p><strong>价值：</strong>首轮测试结果直接泼了一盆冷水：即便是当前最强的 Agent 配置（harness + 前沿模型的组合），在完整任务集上的平均全通过率（full pass rate）仍低于 1%。这意味着 AI Agent 在经济价值任务上距离「可靠替代专业人员」还有数量级的差距。</p>
+      <p><strong>未来方向：</strong>ALE 预计成为衡量 AI Agent 商业化进程的基准之一，随着分数提升，也将是 AI 能力真正落地的时间轴标记。</p>
+      <cite><a href="https://arxiv.org/abs/2606.05405" target="_blank" rel="noopener">arXiv 2606.05405</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.00376" target="_blank" rel="noopener">The Deterministic Horizon（ICML 2026）：纯神经推理在 19-31 步触顶，工具委托把准确率从 24% 推到 94%——架构层面的硬上限，不是训练问题</a></h3>
+      <p><strong>现状：</strong>LLM 的推理能力在简单任务上表现出色，但在需要多步骤、长链条推理的复杂任务（如 SWE-Bench、WebArena、SQL-Multi）上，纯神经链式思考（chain-of-thought，让模型一步步写出推理过程的方法）在某个步骤数之后开始系统性失败。</p>
+      <p><strong>解决方案：</strong>这篇论文（ICML 2026 录用，51 页）通过跨 12 个模型、8 个任务领域的实验，确立了一个「决定性地平线（Deterministic Horizon）」d* ∈ [19, 31]——也就是说，当推理步骤超过 19-31 步时，工具委托（tool delegation，让 Agent 调用计算器、代码解释器、搜索等外部工具）成为必要而非可选。工具集成的推理在这些任务上准确率 86-94%，纯神经链式思考仅 24-42%。</p>
+      <p><strong>价值：</strong>论文通过微调实验证明，在最优长度的推理轨迹上做 fine-tuning 提升不超过 5%，且跨模型相关性极高——这是架构层面的上限，不是训练数据或模型规模问题。</p>
+      <p><strong>未来方向：</strong>这一发现为「什么时候 Agent 必须有工具」提供了理论依据，预计将影响 agentic 系统的默认设计规范：超过 20 步的任务，工具不是增强，而是必需。</p>
+      <cite><a href="https://arxiv.org/abs/2606.00376" target="_blank" rel="noopener">arXiv 2606.00376</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2601.08323" target="_blank" rel="noopener">AtomMem：把 Agent 记忆管理拆解为 CRUD 原子操作，用强化学习训练记忆策略，在三个长上下文基准上超越所有静态工作流</a></h3>
+      <p><strong>现状：</strong>现有 LLM Agent 的记忆系统大多依赖手工设计的静态工作流：「什么情况下保存，什么情况下检索，什么情况下删除」由人工规则决定，无法自适应任务场景的变化。</p>
+      <p><strong>解决方案：</strong>AtomMem 把记忆管理重新定义为决策问题而非工程问题，将所有记忆操作分解为 CRUD（创建/读取/更新/删除，数据库操作的四个基本动词）原子操作，然后用强化学习（RL）训练一个 8B 参数的记忆策略模型——它自己学会在什么时候执行哪个操作，而不是遵循预设规则。</p>
+      <p><strong>价值：</strong>AtomMem-8B 在三个长上下文基准测试上始终优于所有静态工作流记忆方法；「学习的记忆」比「规定的记忆」更灵活也更有效。</p>
+      <p><strong>未来方向：</strong>记忆策略的 RL 训练有望成为 agentic 系统的标准组件之一，取代当前广泛使用的手工规则记忆流程。</p>
+      <cite><a href="https://arxiv.org/abs/2601.08323" target="_blank" rel="noopener">arXiv 2601.08323</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.00619" target="_blank" rel="noopener">MemPro：把 Agent 记忆系统建模为可进化程序——记忆逻辑通过程序合成自动演化，不需要人工设计</a></h3>
+      <p><strong>现状：</strong>Agent 记忆系统的设计通常是工程师手工编写的逻辑，在新任务或新场景下需要人工迭代更新，无法自动适应。</p>
+      <p><strong>解决方案：</strong>MemPro 把记忆系统本身建模为「可进化的程序」（evolvable programs）：通过程序合成（program synthesis，让 AI 自动生成可执行代码的技术）和自动验证循环，记忆逻辑可以在运行过程中自我更新和演化，适应不同任务的记忆需求——有点像给 Agent 的记忆本身装上了一个自动优化器。</p>
+      <p><strong>价值：</strong>MemPro 在对比测试中超越了 Mem0、LangMem、MemoryOS 等主流 Agent 记忆基线（benchmark 中的对比标准）；更重要的是，它的优势不依赖任何特定任务的手工调优。</p>
+      <p><strong>未来方向：</strong>记忆系统自我演化的范式，有望让下一代长期运行的 Agent 在无人监督下持续优化自身的知识管理策略。</p>
+      <cite><a href="https://arxiv.org/abs/2606.00619" target="_blank" rel="noopener">arXiv 2606.00619</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.00172" target="_blank" rel="noopener">CAST：非特权剪切非对称自教学——改进 GRPO 强化训练的奖励利用效率，让 LLM 从自身输出中更好地学习</a></h3>
+      <p><strong>现状：</strong>GRPO（Group Relative Policy Optimization，一种用于 LLM 强化学习微调的算法）是当前主流的 LLM 对齐训练（alignment training）方法之一，但它在处理奖励信号时存在效率损失：高质量的正样本和低质量的负样本贡献给梯度更新的方式不够平衡，导致学习效率偏低。</p>
+      <p><strong>解决方案：</strong>CAST（Non-Privileged Clipped Asymmetric Self-Teaching with Advantage Flipping）在 GRPO 基础上引入了三个改进：① 非特权剪切：对优势估计做不对称裁剪，避免高方差更新；② 非对称自教学：用模型自身输出作为动态基线，减少对外部奖励模型的依赖；③ Advantage Flipping：翻转负样本的优势符号，让坏例子也能产生有效的梯度方向。</p>
+      <p><strong>价值：</strong>在标准数学推理和代码生成基准上，CAST 比原版 GRPO 表现更稳定，尤其在长 chain-of-thought 推理任务中梯度稳定性改善显著。</p>
+      <p><strong>未来方向：</strong>CAST 类改进预计将融入下一代 RLHF（用人类反馈做强化学习的训练方法）和 RLAIF（用 AI 反馈做强化学习）训练管线，成为对齐训练的默认组件之一。</p>
+      <cite><a href="https://arxiv.org/abs/2606.00172" target="_blank" rel="noopener">arXiv 2606.00172</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>Fable 封禁补充：Amazon Research 团队用的 jailbreak 技术具体包含多步提示词链（prompt chaining），目标是让模型输出可用于网络攻击的代码；Jassy 将研究报告亲自带去财政部，不是通过正式监管渠道上报，这一操作在 AI 行业引发广泛争议。<a class="glance-src" href="https://mlq.ai/news/amazons-jassy-alerted-white-house-to-anthropic-fable-5-security-flaws-triggering-export-ban/" target="_blank" rel="noopener">MLQ.ai →</a></li>
+      <li>Aaron Levie（@levie）：「This whole Fable export control situation is actually net positive」——他的观点是：它迫使整个行业认真对待供应商分散和政策风险，这比任何 conference talk 都更有教育效果。<a class="glance-src" href="https://x.com/levie" target="_blank" rel="noopener">X @levie →</a></li>
+      <li>Garry Tan（@garrytan）：「I wish the significance of the model came from more people」——他希望 Fable 5 这类 frontier 模型的真正意义来自更多普通人能用上它、从中受益，而不只是从技术圈的热度。<a class="glance-src" href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Dan Shipper（@danshipper）：「dario at the wellness retreat when they told him Hegseth…」——一条关于 Fable 封禁的幽默推文，语气精准拿捏了 Anthropic CEO 面对政府指令时的困境；另一条关于「Andy Jassy 来拿你的 API」，调侃投资人兼封禁触发者的双重角色。<a class="glance-src" href="https://x.com/danshipper" target="_blank" rel="noopener">X @danshipper →</a></li>
+      <li>Swyx（@swyx）：AI Engineering Survey 本周末截止，这是每年最重要的 AI 工程从业者现状调研，结果通常成为行业采用率报告的数据基础。<a class="glance-src" href="https://x.com/swyx" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>Thibault Sottiaux（@thsottiaux，OpenAI Codex 团队）：「Hi, I'm Tibo and I just discovered Codex. AMA」——Codex 核心团队成员用调侃语气宣告「角色切换」，Fable 封禁后 Codex 使用量的暴涨大概让整个团队感受到了时代节点。<a class="glance-src" href="https://x.com/thsottiaux" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+      <li>Madhu Guru（@realmadhuguru）：「Having been through many frontier model launch reviews…」——来自有实际 frontier 模型内部发布评审经历的人，对当前这轮政府-企业摩擦的背景判断；不展开，但信号值高。<a class="glance-src" href="https://x.com/realmadhuguru" target="_blank" rel="noopener">X @realmadhuguru →</a></li>
+      <li>Amjad Masad（@amasad，Replit CEO）：Fable 封禁后 Replit 内部已在评估多模型备份方案；他的另一条推文探讨了 tokenization（文本切词方式）在 multimodal（多模态）时代的演化趋势。<a class="glance-src" href="https://x.com/amasad" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>Guillermo Rauch（@rauchg）：「If you don't love her at her foggiest, you don't deserve her at her sunniest」——关于旧金山晨雾的一条，与 AI 无关，但作为周末氛围帖完美。<a class="glance-src" href="https://x.com/rauchg" target="_blank" rel="noopener">X @rauchg →</a></li>
+      <li>Zara Zhang（@zarazhangrui）：分享了一篇关于「品味」及如何系统培养它的文章，她的评论是「Great essay on taste and how to cultivate it」——在 AI 生成内容同质化加速的当下，「品味」作为差异化能力的价值正在上升。<a class="glance-src" href="https://x.com/zarazhangrui" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+      <li>Nikunj Kothari（@nikunj，FPV Ventures）：对创始人的一条具体建议——付费合作（paid partnerships）不是 cheap trick，是真实意图信号；免费的关注很便宜，付费的合作证明对方真的相信你的产品。<a class="glance-src" href="https://x.com/nikunj" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Peter Steinberger（@steipete，PSPDFKit 作者）：「This shortage of chips is getting out of hand」——对当前 AI 芯片供应紧张的直接观察，作为重度 AI 开发者他的 GPU 获取成本正在显著上升。<a class="glance-src" href="https://x.com/steipete" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>Peter Yang（@petergyang，Roblox PM）：「We need more amazing martial arts movies」——偶尔一条完全和 AI 无关的个人感叹，武侠电影黄金时代的怀念；另一条在跟进一个 bug 复现问题。<a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Aditya Agarwal（@adityaag）：一直在想的一张照片（内容未详，但语气带有深刻的个人意义）；另一条：在 3 万英尺高空用 Starlink 看巴西对摩洛哥的球赛——技术基础设施让体验边界消失的一个普通注脚。<a class="glance-src" href="https://x.com/adityaag" target="_blank" rel="noopener">X @adityaag →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-06-13.html">← Jun 13</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
