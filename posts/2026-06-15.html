@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — June 15, 2026</title>
+  <meta name="description" content="美国商务部出口管制令迫使 Anthropic 在全球关闭 Fable 5 和 Mythos 5，SpaceX IPO 让 Elon Musk 成为史上首位万亿富翁；与此同时，AI 圈最热的问题从「用哪个模型」悄悄变成了「如何设计让 Agent 自主运转的 loop」。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">June 15, 2026</h1>
+
+  <p class="post-lead">美国商务部出口管制令迫使 Anthropic 在全球关闭 Fable 5 和 Mythos 5，SpaceX IPO 让 Elon Musk 成为史上首位万亿富翁；与此同时，AI 圈最热的问题从「用哪个模型」悄悄变成了「如何设计让 Agent 自主运转的 loop」。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://arstechnica.com/ai/2026/06/anthropic-shuts-down-fable-mythos-models-following-trump-admin-directive/" target="_blank" rel="noopener">Anthropic Fable 5 &amp; Mythos 5 全球下线</a></h3>
+      <p>6 月 12 日下午 5:21（美东时间），Anthropic 收到美国商务部出口管制指令，被要求立即暂停所有外国公民对 Fable 5 和 Mythos 5 的访问权限，范围包括海外用户、身处美国境内的外籍员工，以及 Anthropic 自己雇用的外国国籍工程师。Anthropic 表示，政府声称掌握了一种绕过 Fable 5 安全防护的"越狱"方法，但 Anthropic 认为那是一个仅在特定网络安全场景下有效的窄漏洞，并不是通用破防。不过，要在技术上完全证明合规，唯一的办法是直接把访问关掉。Claude Opus、Sonnet、Haiku 等其他模型不受影响。</p>
+      <cite><a href="https://arstechnica.com/ai/2026/06/anthropic-shuts-down-fable-mythos-models-following-trump-admin-directive/" target="_blank" rel="noopener">Ars Technica</a> · <a href="https://tldr.tech" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.aljazeera.com/economy/2026/6/12/spacex-ipo-debuts-in-us-markets-musk-becomes-worlds-first-trillionaire" target="_blank" rel="noopener">Elon Musk 成史上首位万亿富翁</a></h3>
+      <p>SpaceX 上周在纳斯达克挂牌（代码 SPCX），IPO 定价 $135/股，开盘涨至 $150，市值约 $1.96 万亿，融资 $750 亿，成为史上最大 IPO。Musk 在 SpaceX 的持股加上特斯拉等资产，个人净资产突破 $1.1 万亿，相当于美国 GDP 的 3% 以上，是典型美国家庭资产的五百万倍。SpaceX 总裁 Gwynne Shotwell 同期表示不排除未来与特斯拉合并的可能性，但对时间表保持谨慎。</p>
+      <cite><a href="https://www.aljazeera.com/economy/2026/6/12/spacex-ipo-debuts-in-us-markets-musk-becomes-worlds-first-trillionaire" target="_blank" rel="noopener">Al Jazeera</a> · <a href="https://tldr.tech" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://anthropic.com/institute/recursive-self-improvement/" target="_blank" rel="noopener">Anthropic：超 80% 代码已由 Claude 编写</a></h3>
+      <p>Anthropic 在一篇关于递归自我改进（RSI）的文章中公开了一个数字：截至 2026 年 5 月，Anthropic 合并进代码库的代码里，80% 以上由 Claude 撰写。2025 年 2 月 Claude Code 进入研究预览之前，这个比例还是"低个位数"。Anthropic 以此作为证据，认为 RSI 已不是遥远的理论，而是在自家代码库里每天发生的事情。这个声明的分量不在模型性能，在于一家前沿 AI 公司第一次用自己的生产数据公开断言：AI 生产力的飞轮已经开始转动。</p>
+      <cite><a href="https://anthropic.com/institute/recursive-self-improvement/" target="_blank" rel="noopener">Anthropic</a> · <a href="https://wise.readwise.io" target="_blank" rel="noopener">Wisereads</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3>Aaron Levie（Box CEO）：这次封禁，赢家是开源权重模型</h3>
+      <p>Levie 在 Fable 封禁后直接写道："如果某个模型随时可能对你的国家用户或企业不可用，那依赖任何特定国家的模型都会带来真实风险。其他国家现在有更强的动机去发展主权 AI，而他们最可能依赖的答案是开源权重模型——目前这类模型大多不来自美国。"</p>
+      <p>他的逻辑：美国如果在模型层而不是应用层搞管控，会把其他国家推向开源，反而削弱美国在这个技术栈上的领导地位。同时他也看到了另一面：应用层会因此获得巨大价值，因为企业必须把自身 IP、知识和数据建成可迁移的 loop 架构，才能在模型随时可能被切断的世界里生存。</p>
+      <p><strong>这是 Fable 封禁最清醒的商业分析——它不只是监管事件，是一次架构选择的压力测试。</strong></p>
+      <cite><a href="https://x.com/levie/status/2066167615618466060" target="_blank" rel="noopener">X @levie</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Swyx（Latent Space / Cognition）：ultracode 的真正结构是"智能子例程"</h3>
+      <p>Swyx 写道："havent seen many people outside anthropic ultracode yet. this thing is scarily good at burning tokens but you need to set up your repo to parallelize properly to make use of the fanout that i think subagents are best at."</p>
+      <p>他的核心判断：subagent（子代理，即 Agent 调用 Agent 的模式）的本质是"可判断的子例程"（intelligent subroutines）。一旦你意识到大量知识工作就是一层层的 yak-shaving（解决问题前必须先解决的前置问题），需要些许判断和智能，你就会理解动态工作流并不只适合写代码任务——它适合所有需要分叉和汇聚的思维型工作。</p>
+      <p><strong>从"prompt 更好"到"并行 subagent"，这是 AI 辅助工作方式的一次结构性升级，不是技巧迭代。</strong></p>
+      <cite><a href="https://x.com/swyx/status/2066415484149633329" target="_blank" rel="noopener">X @swyx</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Garry Tan（YC CEO）：AI 时代的新精英是会跑通多阶段 Agent 任务的人</h3>
+      <p>Garry Tan 写道："The next generation of young people who change the world will almost certainly be the people who are most adept at making long-running multi-stage multi-team agent tasks work extremely well, and at high volume and across every part of their personal and work lives."</p>
+      <p>这句话的分量在于它重新定义了"AI 素养"的门槛。不再是"会写 prompt"，不再是"熟悉 API"，而是能够设计和运维跨团队、跨时间、高容量的 Agent 流程。换句话说：能让机器替你持续工作的人，而不是自己坐在那里提问的人。</p>
+      <p><strong>这是 YC 在招人标准上的一次隐性更新——Garry 描述的能力集，正在成为下一个时代的基础生产力。</strong></p>
+      <cite><a href="https://x.com/garrytan/status/2066269412391637050" target="_blank" rel="noopener">X @garrytan</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.lennysnewsletter.com/p/how-i-ai-claude-fable-5-review-and" target="_blank" rel="noopener">Claude Fable 5 实战评测：视觉超强，PRD 写出来没人看得懂</a></h3>
+      <p>Lenny's Newsletter 的 Claire 把 Claude Fable 5（Anthropic 首款 Mythos 级公开模型）带进真实的产品工作流，做了一套压力测试：产品规格文档、Agent 流程、设计任务、视觉解析、多 Agent 协作。结果是高度非对称的。</p>
+      <p>它真正厉害的地方：视觉任务。Claire 让它帮 7 岁孩子制作手写练习单，输出的空间感、排版、留白比 Opus 4.8 好出一截。PDF 解析和文档格式化同样突出。它也像"经验丰富的工程师"一样会把问题多想一圈，100% 确认才动手——有时候这是优点，有时候你只是想要更快的答案。</p>
+      <p>它明显短板的地方：产品 PRD 和规格文档。写出来细节翔实、技术正确，但密密麻麻，内部交叉引用成堆，几乎没有人能直接拿去用。设计任务同样令人惊讶地差：一次性的设计输出是灰底黑字红色边框，完全没有审美判断。价格也是新台阶：输入 $10/百万 token，输出 $50/百万 token，消耗 token 的速度大约是其他模型的两倍。</p>
+      <p><strong>Fable 5 是一个高度专业化的工具，用对了场景会让人难忘，用错了场景会让你掏很多钱买到一份没法读的 PRD。</strong></p>
+      <cite><a href="https://www.lennysnewsletter.com/p/how-i-ai-claude-fable-5-review-and" target="_blank" rel="noopener">Lenny's Newsletter</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/rauchg/status/2066299732277031042" target="_blank" rel="noopener">v0.dev 技能数突破 70 万</a></h3>
+      <p>Guillermo Rauch（Vercel CEO）发帖：v0.dev 已拥有超过 70 万个社区贡献的技能（skill），全部有机增长，无人工干预。他称这是"open⎵ai 生态系统"的力量——故意用空格分隔，避免和 OpenAI 混淆。</p>
+      <p>70 万这个数字说明的不是 v0 的功能有多丰富，而是当平台把贡献摩擦降到足够低，社区会以惊人的速度自我扩展。这和 npm 生态早年的感觉很像：数量本身就是护城河。</p>
+      <p><strong>v0 在无声地证明：Agent 工具生态的网络效应，比模型本身跑得更快。</strong></p>
+      <cite><a href="https://x.com/rauchg/status/2066299732277031042" target="_blank" rel="noopener">X @rauchg</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://links.tldrnewsletter.com/X5LYSz" target="_blank" rel="noopener">Apple 新 Siri "刚好够用"——终于进入了 AI 时代</a></h3>
+      <p>最新更新后的 Siri 终于能照着预期工作了。这次更新并无创新，也不颠覆，但它标志着苹果真正进入了现代 AI 市场。新 Siri 的能力大约相当于领先 chatbot 六个月前的水平——说白了，是在追赶，不是在领跑。不过，苹果预装的功能现在已经足够能用，很多用户可能不再需要额外装其他 AI 服务。</p>
+      <p><strong>苹果用"刚好够用"解了短期 AI 危机，但六个月前的领先水准意味着它距离真正值得骄傲还有一段路。</strong></p>
+      <cite><a href="https://links.tldrnewsletter.com/X5LYSz" target="_blank" rel="noopener">TLDR</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://theatlantic.com/philosophy/2026/06/no-artificial-intelligence-is-not-conscious/687378/" target="_blank" rel="noopener">Ted Chiang：AI 意识论是在浪费时间</a></h3>
+      <p>《降临》原著作者 Ted Chiang 在《大西洋》发表新文，把"AI 是否有意识"这个问题正面拆了。他的核心类比让人难以反驳："对 LLM 可能有意识持开放态度，和对 Microsoft Word 可能有意识持开放态度没什么区别——更准确地说，是每一个包含对话记录的 Word 文档里，都沉睡着若干独立意识，每次打开文件就会唤醒它们。"</p>
+      <p>Chiang 不是在说 AI 不重要，他是在说：我们提出了一个根本无法被证伪也无法被证实的问题，然后为此消耗大量精力。在他看来，LLM 是极其强大的统计工具，这个定性本身已经足以让我们认真对待它，不需要额外给它套一层意识的光环来证明它值得被对待。</p>
+      <p><strong>Chiang 把意识讨论变成了哲学上的奥卡姆剃刀：多余的问题，砍掉。</strong></p>
+      <cite><a href="https://theatlantic.com/philosophy/2026/06/no-artificial-intelligence-is-not-conscious/687378/" target="_blank" rel="noopener">The Atlantic</a> · <a href="https://wise.readwise.io" target="_blank" rel="noopener">Wisereads</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Zara Zhang（策展人 / Follow-Builders 作者）：技能是做出来的，不是写出来的</h3>
+      <p>Zara Zhang 发了两条连续推文，说得很干净："You don't make a good skill by writing a skill. You make it by doing the thing, fixing it 20 times, then telling the AI to bottle up everything you just did."第二条更短："You make a skill by ending with one, not starting with one."</p>
+      <p>这两句话针对的是一个常见误区：很多人在设计 AI 技能（skill，即给 Claude Code 这类工具的可复用指令模块）时，试图一次写好，然后让 AI 去执行。但技能的本质是蒸馏出来的经验，不是设计出来的预案。先做、做坏、修 20 次，再回头让 AI 把这 20 次的知识打包成可复用的模块——顺序反过来，结果完全不同。</p>
+      <p><strong>这是工程直觉，也是工艺哲学：只有做过的事，才有资格被提炼成流程。</strong></p>
+      <cite><a href="https://x.com/zarazhangrui/status/2066388749244854771" target="_blank" rel="noopener">X @zarazhangrui</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.05608" target="_blank" rel="noopener">Agentic Software: How AI Agents Are Restructuring the Software Paradigm</a></h3>
+      <p><strong>现状：</strong>传统软件工程的研究对象是静态源代码，控制逻辑由人预定义，人的角色是代码作者。</p>
+      <p><strong>问题：</strong>当 LLM 成为推理引擎，Agent 在运行时动态生成并丢弃代码，这套范式已经不能描述正在发生的事情。</p>
+      <p><strong>解决方案：</strong>本文（arXiv 2606.05608，2026 年 6 月）提出"Agentic Engineering"作为软件工程的延伸学科，研究对象是 Agent 系统，控制模型是 LLM 驱动的，人的角色变成"意图架构师"。文章分析了 SWE-bench Verified、EvoClaw 等基准证据，给出从现在到"自进化 Agent 生态"的四阶段路线图。</p>
+      <p><strong>价值：</strong>不是又一篇"AI 写代码很厉害"的文章，而是在认真回答：这件事到底在改变什么的结构性问题，给从业者提供框架语言。</p>
+      <p><strong>未来方向：</strong>如何在 Agent 系统大规模落地的过程中，重建工程学科的评估标准和治理方法。</p>
+      <cite><a href="https://arxiv.org/abs/2606.05608" target="_blank" rel="noopener">arXiv 2606.05608</a> · June 2026</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2604.08224" target="_blank" rel="noopener">Externalization in LLM Agents: Memory, Skills, Protocols &amp; Harness Engineering</a></h3>
+      <p><strong>现状：</strong>LLM Agent 越来越多地通过改造运行时环境而非修改模型权重来获得新能力。</p>
+      <p><strong>问题：</strong>这种"外化"（externalization）现象散落在各个子领域，缺乏统一的理论框架。</p>
+      <p><strong>解决方案：</strong>本文（arXiv 2604.08224，2026 年 4 月，Chenyu Zhou 等 20 余位作者）提出四类外化：记忆（跨时间保持状态）、技能（外化程序性专长）、协议（外化交互结构）、Harness 工程（协调前三类的治理层）。四类外化本质上是把模型不擅长的认知负担迁移到外部基础设施。</p>
+      <p><strong>价值：</strong>给了 PM 和工程师一套讨论 Agent 架构的标准词汇，"我们缺的是 Harness 层"比"感觉 Agent 不稳定"能推动更有效的对话。</p>
+      <p><strong>未来方向：</strong>如何让 Harness 层标准化，使得不同框架的 Agent 可以更容易地组合。</p>
+      <cite><a href="https://arxiv.org/abs/2604.08224" target="_blank" rel="noopener">arXiv 2604.08224</a> · April 2026</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2601.12538" target="_blank" rel="noopener">Agentic Reasoning for Large Language Models — 综述</a></h3>
+      <p><strong>现状：</strong>LLM Agent 的推理能力研究快速增长，但各方向之间缺乏统一的分类框架。</p>
+      <p><strong>问题：</strong>规划、工具使用、搜索、记忆、反馈驱动适应、多 Agent 协调——这些能力如何系统地整合进同一个 Agent 架构？</p>
+      <p><strong>解决方案：</strong>本文（arXiv 2601.12538，Tianxin Wei 等）提出统一视角，梳理了 agentic 推理如何驱动 LLM 在不同动态环境中执行复杂任务，并引入了 AwesomeAgentic Reasoning 资源库（GitHub），供从业者系统追踪进展。</p>
+      <p><strong>价值：</strong>不是前沿突破，是地图——在 Agent 研究百家争鸣的当下，一张能帮你定位自己在哪里的地图非常稀缺。</p>
+      <p><strong>未来方向：</strong>多 Agent 协调和长期规划仍是最难啃的硬骨头。</p>
+      <cite><a href="https://arxiv.org/abs/2601.12538" target="_blank" rel="noopener">arXiv 2601.12538</a> · January 2026</cite>
+    </article>
+
+    <article class="item">
+      <h3>Route-and-Reason: 强化学习路由实现 LLM 节能推理扩展</h3>
+      <p><strong>现状：</strong>扩展 LLM 推理能力的标准做法是用更大的模型或更多的计算量，导致能耗和成本线性增长。</p>
+      <p><strong>问题：</strong>并不是每个请求都需要同等算力，过度均匀分配资源是巨大浪费。</p>
+      <p><strong>解决方案：</strong>Route-and-Reason（ACM Web Conference 2026）用强化学习训练一个路由器（router），根据请求的难度和类型动态分配给合适的模型。简单请求用小模型，复杂推理用大模型，整体能耗显著降低而精度保持不变。</p>
+      <p><strong>价值：</strong>对于要在成本可控的条件下部署 LLM 的企业，路由层是比换模型更容易获得的节能手段。</p>
+      <p><strong>未来方向：</strong>路由决策本身的延迟如何压缩，以及跨供应商路由的可行性。</p>
+      <cite>ACM Web Conference 2026</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2605.11019" target="_blank" rel="noopener">VPG-EA: 变分后验引导的高效 LLM 推理</a></h3>
+      <p><strong>现状：</strong>LLM 的推理链（chain-of-thought）越来越长，很多 token 实际上对最终答案没有贡献，造成巨大浪费。</p>
+      <p><strong>问题：</strong>如何区分"有效推理路径"和"伪高效路径"，并让模型自动学会只走前者？</p>
+      <p><strong>解决方案：</strong>VPG-EA（arXiv 2605.11019，2026）采用参数共享的双流架构，分别建模后验分布和先验策略，通过跨视角评估过滤掉伪高效路径，再用变分蒸馏把高效模式传递给模型，整体推理 token 消耗下降而准确率不降。</p>
+      <p><strong>价值：</strong>对于需要控制推理成本的应用场景（比如高频调用的 Agent），这类方法比换模型更快见效。</p>
+      <p><strong>未来方向：</strong>与路由（如 Route-and-Reason）结合，构建端到端的节能推理系统。</p>
+      <cite><a href="https://arxiv.org/abs/2605.11019" target="_blank" rel="noopener">arXiv 2605.11019</a> · 2026</cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+
+    <ul class="glance-list">
+      <li>Agent 就是它的事件历史日志——模型、运行时、循环都不是 Agent 本身，真正的 Agent 是那份可被重建和恢复的日志。<a class="glance-src" href="https://links.tldrnewsletter.com/YNZszp" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Meta Applied AI 团队被工程师称为"soul-crushing gulag"：内部直播演讲被爆粗打断，大量工程师称自己是被强制转岗进来的，没有选择。<a class="glance-src" href="https://techcrunch.com/2026/06/12/metas-months-old-ai-unit-is-a-soul-crushing-gulag-say-the-engineers-stuck-inside-it/" target="_blank" rel="noopener">TechCrunch →</a></li>
+      <li>Tim Ferriss 拿自己的书销量数据说话：how-to 类畅销书的信息市场正在坍塌进聊天窗口，AI 正在吃掉非虚构指南书的需求。<a class="glance-src" href="https://tim.blog/2026/06/12/has-ai-already-killed-nonfiction/" target="_blank" rel="noopener">Tim Ferriss →</a></li>
+      <li>核时钟首次走动：中国和欧洲研究团队分别独立完成了钍-229 核时钟，精度远超原子钟，激光控制是主要挑战。<a class="glance-src" href="https://links.tldrnewsletter.com/0cxDla" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>新 CRISPR 技术精准摧毁"无药可治"癌细胞：靶向近半数癌症中都有的肿瘤抑制因子突变，比小分子药物开发快得多，递送仍是难点。<a class="glance-src" href="https://innovativegenomics.org/news/crispr-technique-selectively-shreds-cancer-cells/" target="_blank" rel="noopener">Innovative Genomics →</a></li>
+      <li>Aaron Levie：企业 AI 价值不在选模型，而在于把自身 IP 和知识建成学习 loop——人力资本和 token 资本复利叠加，这才是护城河。<a class="glance-src" href="https://x.com/levie/status/2066237607244427761" target="_blank" rel="noopener">X @levie →</a></li>
+      <li>Garry Tan：开源是企业长期自主的逃生舱——当前沿模型随时可能被政府切断，拥有可切换的开源选项是真实的战略保险。<a class="glance-src" href="https://x.com/garrytan/status/2066307697574862905" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Swyx 转发 Satya Nadella 的企业 AI 论断："真正的机会不在挑最好的模型，而在于在模型之上建学习循环，把人力资本和 token 资本复利化——任务可以外包，学习永远不能。"<a class="glance-src" href="https://x.com/swyx/status/2066235625695850526" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>Peter Steinberger（PSPDFKit 作者）：Mosh + tmux/zellij 是差网络下远程开发的救命组合，他更偏好 zellij。<a class="glance-src" href="https://x.com/steipete/status/2066427449551036469" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>Dan Shipper（Every.to CEO）："FREE FABLE"——封禁期间，Every 旗下的 Fable 在主域下线，一声叹气式的公告。<a class="glance-src" href="https://x.com/danshipper/status/2066217865943093514" target="_blank" rel="noopener">X @danshipper →</a></li>
+      <li>Thibault Sottiaux：Codex 已经可以看到并设置自己的 /goal——Agent 元提示（meta-prompting）的一次泛化，让 Agent 根据你的意图自己决定任务。<a class="glance-src" href="https://x.com/thsottiaux/status/2066270561081454989" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+      <li>Nan Yu：反驳论：现在每个人都在和机器人结对编程（pair programming），而不是一个人单干。<a class="glance-src" href="https://x.com/thenanyu/status/2066190061419282602" target="_blank" rel="noopener">X @thenanyu →</a></li>
+      <li>Amjad Masad（Replit CEO）：Satya Nadella 的企业 AI 愿景是他见过的最令人鼓舞的正和叙事。<a class="glance-src" href="https://x.com/amasad/status/2066195933969412098" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>Guillermo Rauch（Vercel CEO）：飞往伦敦的航班支持 Starlink 上网，他称之为"莱特兄弟之后航空旅行最伟大的进步"。<a class="glance-src" href="https://x.com/rauchg/status/2066315273947500699" target="_blank" rel="noopener">X @rauchg →</a></li>
+      <li>Peter Yang：为什么中国和印度培养不出能晋级世界杯的球队？——一个个人思考，与 AI 无关，但真诚。<a class="glance-src" href="https://x.com/petergyang/status/2066331938760314909" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Wisereads 推文精选：Matt Van Horn 总结 Peter Steinberger vs Boris Cherny 的 loops 争论："loops 既不是全新魔法，也不只是 cron——是 cron 加上决策者在循环体内，真正有趣的工程在于你怎么把那个决策者围起来不让它跑偏。"<a class="glance-src" href="https://x.com/mvanhorn/status/2063865685558903149" target="_blank" rel="noopener">X @mvanhorn →</a></li>
+      <li>Wisereads 本周书摘：Angela Duckworth《坚毅》（Grit）预览——热情与坚持的组合，而非天赋，才是卓越成就的核心解释。<a class="glance-src" href="https://wise.readwise.io/save?url=https%3A//anthropic.com/institute/recursive-self-improvement/" target="_blank" rel="noopener">Wisereads →</a></li>
+      <li>0xkato：跳过数学的 LLM 入门指南——从 tokenization 开始解释为什么 LLM 数"strawberry"里的 R 会数错：模型不是在操作字母，是在操作 token ID。<a class="glance-src" href="https://0xkato.xyz/how-llms-actually-work/" target="_blank" rel="noopener">0xkato →</a></li>
+      <li>SpaceX 总裁 Gwynne Shotwell：不排除未来与特斯拉合并，但对时间表保持谨慎——IPO 首日开口，市场立刻开始脑补两家公司的整合价值。<a class="glance-src" href="https://links.tldrnewsletter.com/Lga7f6" target="_blank" rel="noopener">TLDR →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-06-14.html">← JUN 14</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
