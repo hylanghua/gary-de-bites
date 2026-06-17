@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — June 17, 2026</title>
+  <meta name="description" content="OpenAI 泄露财报显示 2025 年亏损 $192 亿，ChatGPT 双向语音 GPT-Bidi 即将到来，Anthropic 与特朗普政府谈判恢复 Fable 访问权；Z.ai 的 GLM-5.2 成为首个在前端编程上超越所有 Claude Opus 版本的开源模型，MIT 授权。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">June 17, 2026</h1>
+
+  <p class="post-lead">OpenAI 泄露财报显示 2025 年收入 $130 亿、亏损却高达 $192 亿，距 2030 年盈利目标愈发遥远；ChatGPT 双向语音模式 GPT-Bidi 正在内测，Anthropic 与特朗普政府悄悄推进恢复 Fable 模型访问权的谈判；与此同时，Z.ai 开源的 GLM-5.2 以 MIT 授权打破闭源模型对前端编程的垄断，成为 Fable 下线期间事实上的全球 #1 开源前端编码模型。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.testingcatalog.com/openai-prepares-major-chatgpt-voice-upgrade-with-gpt-bidi-1/" target="_blank" rel="noopener">GPT-Bidi：ChatGPT 正在内测真正的双向语音，可以同时说话和聆听</a></h3>
+      <p>OpenAI 内部代号 GPT-Bidi-1 的新语音模型已在 iOS 和 Android 客户端留下痕迹，研究人员和测试人员扒出了三档智能模式：Instant（即时响应）、Medium（中等推理）、High（深度推理），和文字端的分级逻辑一致。最大的技术突破是"双向"：当前的 Advanced Voice Mode 说话时会停止聆听，用户打断就卡顿；GPT-Bidi 可以边说边听，支持实时插话、中途调整语气，对话节奏接近真人通话。</p>
+      <p>OpenAI 原计划 Q1 2026 上线，目前已推迟至 Q2 或更晚。但信号面已覆盖全平台，消费端上线的时间窗口可能近了。</p>
+      <cite><a href="https://www.testingcatalog.com/openai-prepares-major-chatgpt-voice-upgrade-with-gpt-bidi-1/" target="_blank" rel="noopener">Testing Catalog</a> · <a href="https://www.theaivalley.com/p/chatgpt-is-about-to-sound-a-lot-more-human" target="_blank" rel="noopener">AI Valley</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year" target="_blank" rel="noopener">OpenAI 泄露财报：2025 年收入 $130 亿，亏损 $192 亿，盈利期限成问题</a></h3>
+      <p>一名独立记者获得 OpenAI 的审计财务报表。数据显示：2024 年收入 $37 亿，2025 年跃升至 $130 亿，增速惊人；但支出同步膨胀，2024 年 $78 亿，2025 年达 $192 亿，亏损总额远超收入。这些数字背后是大规模模型训练的算力成本。OpenAI 对投资人承诺 2030 年实现盈利，但按当前亏损轨迹，这个目标需要收入再翻数倍同时压住成本，难度陡升。</p>
+      <cite><a href="https://arstechnica.com/ai/2026/06/leaked-financial-docs-show-openai-is-losing-billions-of-dollars-a-year" target="_blank" rel="noopener">Ars Technica</a> · <a href="https://tldr.tech" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://tldr.tech" target="_blank" rel="noopener">Anthropic 与特朗普政府谈判：双方寻求恢复 Fable 模型访问权的协议</a></h3>
+      <p>据报道，Anthropic 和特朗普政府官员仍在积极接触，试图解决导致 Fable 系列模型访问受限的安全争议。白宫承受着向外界证明其能负责任监管 AI 的压力；本次限制的起因，是亚马逊研究人员发现了一个绕过 Fable 安全护栏的方法，触发了政府的管制动作，至今仍未解除。双方都在加快推进。</p>
+      <cite><a href="https://tldr.tech" target="_blank" rel="noopener">TLDR</a> · <a href="https://www.latent.space/p/ainews-glm-52-the-top-frontend-coding" target="_blank" rel="noopener">Latent Space</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-glm-52-the-top-frontend-coding" target="_blank" rel="noopener">GLM-5.2：开源模型第一次在前端编程上打败所有 Claude Opus 版本</a></h3>
+      <p>Z.ai 在周末发布了 GLM-5.2，MIT 开源授权，744B 参数（混合专家架构，MoE），具备 1M token 上下文窗口，提供两种推理力度：High 和 Max。官方定价和 GLM-5.1 持平，每百万输入 token $1.4、输出 $4.4，大约是 Claude Opus 4.8 同类任务成本的 1/6。</p>
+      <p>评测结果让业内意外：在 Design Arena（前端设计代码综合评测）GLM-5.2 排名 #1，Elo 分 1360，超过因管制下线的 Fable 5；Code Arena Frontend 排名 #2，仅次于 Fable 5，领先 Opus 4.8；FrontierSWE（软件工程 Agent 基准测试）全球 #3。第一位独立测试者称："这是我第一次可以认真考虑用开源模型替代 Opus 和 GPT-5.5 的工作流。" 值得注意的是，GLM-5.2 的胜利主要集中在编程和 Agent 任务，通用文字排名仍在 #25，算是有节制的优势。</p>
+      <p>技术亮点是 IndexShare：把一个稀疏注意力层的索引在相邻四层之间共享，在 1M token 长上下文时将每 token 的浮点运算量降至原来的 1/2.9；多 token 预测（MTP）的接受率（即推测解码命中率）提升了 20%，推理速度显著加快。<strong>开源模型从未在编程正面战场上这样靠近过闭源前沿，GLM-5.2 把"低成本用好模型"的选项真正打开了。</strong></p>
+      <cite><a href="https://www.latent.space/p/ainews-glm-52-the-top-frontend-coding" target="_blank" rel="noopener">Latent Space AINews</a> · <a href="https://venturebeat.com/technology/z-ais-open-weights-glm-5-2-beats-gpt-5-5-on-multiple-long-horizon-coding-benchmarks-for-1-6th-the-cost" target="_blank" rel="noopener">VentureBeat</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Aaron Levie（Box CEO）：开源 vs 闭源的差距，到底是 3-6 个月还是数年？</h3>
+      <p>Levie 今天提出了一个他认为被低估的关键判断：如果开源模型始终只落后闭源前沿 3-6 个月，那么押注闭源专有 API 的基础设施策略就需要重新考量——但如果这个差距扩大到多年，情况则完全相反。他指出这一判断直接决定了：应该把推理基础设施建在哪家 API 上，芯片采购策略应该怎么做，以及自建模型是否值得。</p>
+      <p>GLM-5.2 的发布恰好提供了一个数据点：今天的开源模型在特定领域（前端编程）已经与闭源持平甚至超越，但通用能力仍有差距。这是 3-6 个月的差距，还是会扩大？这是每个 AI 产品团队都需要在 2026 年做出判断的问题。<strong>Levie 把一个听起来是技术问题的选择，变成了每家公司都无法回避的战略押注。</strong></p>
+      <cite><a href="https://x.com/levie/status/2067070918300664161" target="_blank" rel="noopener">X @levie</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Nikunj Kothari（FPV Ventures 合伙人）：每个构建者都要回答——你在判断路径上，还是 token 路径上？</h3>
+      <p>Nikunj 提炼出 AI 时代最干净的一个框架："判断路径"（judgement path）是指人凭借上下文、经验和关系做出决策的流程；"token 路径"（token path）是 AI 模型通过 token 处理和生成完成任务的流程。他的观点：真正有价值的位置，是坐在这两条路径的交叉点上，既能输入判断来校准 AI，又能从 AI 输出的 token 里放大影响力。</p>
+      <p>这个框架有实操意义。一个每天用 AI 批量产出内容的人，可能完全在 token 路径上，缺乏稀缺性；一个完全靠人工判断、不借助 AI 的人，在速度上竞争不过。最好的位置是"判断赋能 token 生成，token 生成反哺判断"的闭环。<strong>Nikunj 给出的不是技术建议，是一个帮你判断自己在 AI 时代是否稀缺的坐标系。</strong></p>
+      <cite><a href="https://x.com/nikunj/status/2066905445974102384" target="_blank" rel="noopener">X @nikunj</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3>Guillermo Rauch（Vercel CEO）：Vercel 沙盒运行时上限延长至 24 小时，compute 边界再扩张</h3>
+      <p>Rauch 宣布 Vercel Functions（无服务器函数）的沙盒（sandbox，即隔离执行环境）运行时从此前的 60 秒上限延长至 24 小时。他在 X 的一系列帖子把这个更新放在更大的框架里说：一个 sandbox、一个 function、一个 server、一次 build，底层都是同一套 compute 基础设施，只是在负载均衡、并发、持久化参数上做调整。Vercel 历时数年自研的 microVM（微型虚拟机）Fluid Compute 基础设施已先后撑起 Builds、Sandbox 和 Functions 三条产品线。</p>
+      <p>24 小时沙盒意味着什么：一个 Agent 可以在 Vercel 上跑半天、自主完成分支任务，而不必依赖本地服务器或外部 cron（定时任务调度器）。这是面向 AI 原生开发者的产品扩展，不只是性能升级。<strong>Vercel 用一个参数变更，悄悄把自己的竞争定位从"托管静态网站"扩到了"AI Agent 运行平台"。</strong></p>
+      <cite><a href="https://x.com/rauchg/status/2067137678772937000" target="_blank" rel="noopener">X @rauchg</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Zara Zhang（红杉资本 VP）：AI 时代产品的反直觉——做小而尖锐，不要大而通用</h3>
+      <p>Zara 连发两条 X：第一条说"Build small and sharp, not big and generic"（做小而尖锐，不要大而通用）；第二条说"Do whatever you're already doing so well it becomes cool"（把你已经在做的事做得极好，好到它变得酷）。两条放在一起，是同一个判断：AI 工具同质化的大背景下，做一个"什么都能做"的通用 Agent 几乎必败，有独特立场和锋利角度的小产品反而能杀出来。</p>
+      <p>这个观点和 GLM-5.2 的策略不谋而合：Z.ai 没有声称要做最强通用模型，而是聚焦编程和 Agent 任务，在那个战场打赢了。产品角度同理：声称"AI for everything"的公司越来越多，用户反而找不到记忆点。<strong>Zara 的建议不是变得更小，而是变得更尖——锋利比全面更难模仿。</strong></p>
+      <cite><a href="https://x.com/zarazhangrui/status/2066936706281206165" target="_blank" rel="noopener">X @zarazhangrui</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3>Garry Tan（Y Combinator 总裁）："如果害怕被嘲笑，就永远不会成就任何事"</h3>
+      <p>Garry Tan 今天连发三条相关内容，核心是一句："You will never achieve anything if you are afraid of being cringe（如果你害怕被嘲笑，你就永远不会成就任何事）。" 他同时转发了 9Mothers 的案例——这是一家用技术扩展女性生育时间窗口的公司，他认为这种应用代表了技术最有意义的方向：不是效率，而是改变人生的可能性边界。</p>
+      <p>他还引用了系统论中的"Bowen differentiation of self"（自我分化，即一个人在保持情感连接的同时维持自主判断的能力）：这不是孤立，而是在不被情绪和外界期待淹没的情况下，知道自己是谁、要做什么。对创业者的类比不难看出：最难的不是找到市场，而是在所有人叫你"这是 cringe"的时候还能坚持做下去。<strong>Garry Tan 把"不怕被嘲笑"从个人心态提炼成了创业的前提条件。</strong></p>
+      <cite><a href="https://x.com/garrytan/status/2067101283493040518" target="_blank" rel="noopener">X @garrytan</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Ryo Lu（Cursor 设计师）："头衔已经不再说明任何问题了"</h3>
+      <p>Ryo Lu 在 X 分享：她用 Cursor 把正式产品的大部分真实代码亲手写了出来。这对一个设计师来说不是小事——她不是在搭 prototype（原型），而是在写 production code（生产环境代码）。她另一条帖子说："what if X and Cursor were the same thing?"——在 SpaceX 宣布收购 Cursor 的背景下，这句话有了一层额外的意思。</p>
+      <p>AI 工具正在把过去需要专门工程师才能完成的代码任务，变成设计师可以独立完成的日常操作。Ryo Lu 的经历不是个例：Cursor Compile 大会上，许多设计师和 PM 都在分享类似故事。这不代表工程师失业，代表的是：团队分工的逻辑正在重写，"你负责什么"越来越取决于你愿意拿起什么工具，而不是你的 title（头衔）。<strong>Ryo Lu 用一条推文说清楚了 AI 时代职业流动性变化的本质：工具的门槛在降，执行的边界在模糊。</strong></p>
+      <cite><a href="https://x.com/ryolu_/status/2067124871226929526" target="_blank" rel="noopener">X @ryolu_</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.17861" target="_blank" rel="noopener">GameCraft-Bench：Agent 能从头建一个可玩游戏吗？140 个真实 Godot 任务说了算</a></h3>
+      <p><strong>现状：</strong>现有代码 benchmark（基准测试）主要评估"给定需求，能否生成可运行代码"，但不测试 Agent 是否能端到端完成一个有状态、有逻辑、可交互的复杂系统。</p>
+      <p><strong>问题：</strong>游戏是对 Agent 整合能力的严苛检验：需要同时处理 UI 设计、物理逻辑、状态管理、碰撞检测、角色行为，任何一个模块出错，游戏都不可玩。</p>
+      <p><strong>解决方案：</strong>GameCraft-Bench 在真实游戏引擎 Godot（开源跨平台游戏开发框架）上设计了 140 个任务，从简单的"移动方块"到完整的平台跳跃游戏，要求 Agent 生成并验证可运行的游戏代码。</p>
+      <p><strong>价值：</strong>结果是当前最优 AI Agent 在复杂游戏任务上完成率仍然有限，揭示了代码 Agent 从"写函数"到"建系统"之间的能力断层。11 upvotes，本周 HF 日榜第一。</p>
+      <p><strong>未来方向：</strong>端到端可运行系统的创建能力，将成为衡量下一代 Agent 的核心指标之一。</p>
+      <cite><a href="https://arxiv.org/abs/2606.17861" target="_blank" rel="noopener">arXiv 2606.17861</a> · <a href="https://huggingface.co/papers/2606.17861" target="_blank" rel="noopener">HuggingFace Papers</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.15236" target="_blank" rel="noopener">Show the Signal, Hide the Noise：频谱过滤让像素空间扩散模型变得更聪明</a></h3>
+      <p><strong>现状：</strong>像素空间扩散模型（直接在图片像素上做生成，而非 latent space 隐空间）被认为训练难度大，对高频噪声（图像中难以感知的细节噪声）过度敏感。</p>
+      <p><strong>问题：</strong>训练时让模型同等对待信号（有意义的图像结构）和噪声（无意义的高频像素抖动），浪费了大量模型容量。</p>
+      <p><strong>解决方案：</strong>Spectral Forcing（频谱强制过滤）在训练过程中按时间步动态压制高频分量，让模型把注意力集中在有意义的图像结构上，无需增加任何额外参数。</p>
+      <p><strong>价值：</strong>ImageNet 和文本生成图像（text-to-image）基准上均有提升，且是在不增加模型体量的前提下实现的。6 upvotes。</p>
+      <p><strong>未来方向：</strong>频谱感知训练策略可能对其他需要多尺度信号分离的生成任务同样有效。</p>
+      <cite><a href="https://arxiv.org/abs/2606.15236" target="_blank" rel="noopener">arXiv 2606.15236</a> · <a href="https://huggingface.co/papers/2606.15236" target="_blank" rel="noopener">HuggingFace Papers</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.15142" target="_blank" rel="noopener">MotionVLA：开源人形机器人的视觉-语言-动作预训练框架</a></h3>
+      <p><strong>现状：</strong>人形机器人运动控制通常需要大量特定平台的数据和专有训练流程，开源可复用的方案稀缺。</p>
+      <p><strong>问题：</strong>VLA（Vision-Language-Action，视觉-语言-动作）模型虽然在固定场景下表现良好，但跨环境的泛化能力和开放性不足。</p>
+      <p><strong>解决方案：</strong>MotionVLA 提供开源的预训练框架，整合视觉感知和自然语言指令，为人形机器人动作生成建立统一的训练管线，研究者可直接复用。</p>
+      <p><strong>价值：</strong>在多个人形机器人动作基准上达到 SOTA（最优表现），开源权重可直接下载微调。3 upvotes，机器人方向本周热度最高。</p>
+      <p><strong>未来方向：</strong>随着人形机器人硬件成本下降，开源 VLA 预训练将成为快速迭代的关键基础设施。</p>
+      <cite><a href="https://arxiv.org/abs/2606.15142" target="_blank" rel="noopener">arXiv 2606.15142</a> · <a href="https://huggingface.co/papers/2606.15142" target="_blank" rel="noopener">HuggingFace Papers</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.18249" target="_blank" rel="noopener">Unified Multimodal Autoregressive Modeling：共享 tokenizer 统一多模态生成</a></h3>
+      <p><strong>现状：</strong>多模态（文本、图像、视频）生成通常需要为每种模态分别训练独立的 tokenizer（编码器），导致各模态表征空间难以对齐。</p>
+      <p><strong>问题：</strong>分离的 tokenizer 使得模型在理解跨模态指令（如"生成一张像这段文字描述的图"）时存在表征断层。</p>
+      <p><strong>解决方案：</strong>提出 Shared Context-Visual Tokenizer（共享上下文-视觉编码器），让文字和视觉信息共享同一套 token 表示空间，实现统一的自回归（autoregressive）多模态生成。</p>
+      <p><strong>价值：</strong>在多个多模态理解和生成基准上优于分离 tokenizer 基线，特别在需要视觉-文字深度对齐的任务上收益显著。</p>
+      <p><strong>未来方向：</strong>统一 tokenizer 架构是下一代多模态基础模型的关键设计选择。</p>
+      <cite><a href="https://arxiv.org/abs/2606.18249" target="_blank" rel="noopener">arXiv 2606.18249</a> · <a href="https://huggingface.co/papers/2606.18249" target="_blank" rel="noopener">HuggingFace Papers</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.17321" target="_blank" rel="noopener">ProCUA-SFT：310 万条合成数据，让 Agent 真正学会操控电脑桌面</a></h3>
+      <p><strong>现状：</strong>CUA（Computer-Use Agent，计算机操控 Agent）的训练数据严重匮乏：让人标注"如何用鼠标完成某个桌面任务"成本极高，合成数据质量参差不齐。</p>
+      <p><strong>问题：</strong>现有 CUA 模型在真实桌面交互场景中的泛化能力不足，特别是在需要跨应用、跨窗口的复杂任务上表现不稳定。</p>
+      <p><strong>解决方案：</strong>ProCUA-SFT 构建了 310 万条高质量合成训练样本（SFT，监督微调数据），覆盖真实软件界面的截图-动作对，用于专项训练计算机操控能力。</p>
+      <p><strong>价值：</strong>在桌面交互任务基准上性能显著提升，证明大规模合成数据可以有效弥补 CUA 的真实数据稀缺问题。</p>
+      <p><strong>未来方向：</strong>大规模合成数据将成为专项能力 Agent（CUA、浏览器 Agent、代码 Agent）的标准训练路线。</p>
+      <cite><a href="https://arxiv.org/abs/2606.17321" target="_blank" rel="noopener">arXiv 2606.17321</a> · <a href="https://huggingface.co/papers/2606.17321" target="_blank" rel="noopener">HuggingFace Papers</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+
+    <ul class="glance-list">
+      <li>Meta 的"移动时代最佳工程组织"正以"最高效的方式"被瓦解：快速行动文化砍掉，工程师自主权收缩，4 月以来变化巨大。<a class="glance-src" href="https://tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Apple 计划 2027 年同时发布摄像头 AirPods、可折叠 iPhone 和 20 周年纪念 iPhone，称为史上最大产品波次。<a class="glance-src" href="https://tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Snap 发布 $2,195 AR 眼镜 Specs，今年内在美英法出货，把数字图层叠加进真实视野，比 2016 年相机款贵 17 倍。<a class="glance-src" href="https://tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Amazon S3 上线 annotations 功能：每个对象最多附加 1,000 条标注，每条最大 1MB，支持 JSON/XML/YAML，随时修改不需重写对象，全球可用。<a class="glance-src" href="https://tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>AWS Blocks 开放预览：开源 TypeScript 框架，让应用开发者无需学 Terraform / CDK 就能在 AWS 上组合后端能力。<a class="glance-src" href="https://tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>iOS App Store 现在记录用户每一次点击行为，不加密，与账户绑定，用于广告定向——这是系统级 keylogger（键盘记录器）的行为。<a class="glance-src" href="https://tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Android 17 今天开始推送 Pixel 手机和手表，带来小幅新功能并为未来版本奠基。<a class="glance-src" href="https://tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Genesis AI 推出通用机器人 Eno，背后是前 Google CEO Eric Schmidt，已与 LG 集团咨询部门合作，年底前向工业客户部署。<a class="glance-src" href="https://tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Origin：Cursor 发布的 Git 替代方案，专为 AI 原生开发和 Agent 工作负载设计，意在解决多 Agent 并发修改代码时的版本管理混乱。<a class="glance-src" href="https://www.theaivalley.com/p/chatgpt-is-about-to-sound-a-lot-more-human" target="_blank" rel="noopener">AI Valley →</a></li>
+      <li>Growbot：一位开发者把 ChatGPT 接进摄像头、传感器、电机和记忆系统，造了一个可以聊天、感知、记忆和移动的机器人——缺的是"世界模型"来预判物理动作结果。<a class="glance-src" href="https://www.theaivalley.com/p/chatgpt-is-about-to-sound-a-lot-more-human" target="_blank" rel="noopener">AI Valley →</a></li>
+      <li>Tim Ferriss：AI 已经在用他自己书的销售数据证明，how-to 类非虚构书的黄金时代可能已经结束——他把自己的书当解剖台，数据是第一手的。<a class="glance-src" href="https://tim.blog/2026/06/12/has-ai-already-killed-nonfiction/" target="_blank" rel="noopener">Tim Ferriss Blog →</a></li>
+      <li>Tim Ferriss × Max Levchin 播客：PayPal 联合创始人、Affirm 创始人，从苏联移民到芝加哥，到连续创业并主导百亿级公司，周期性创业心理学值得一听。<a class="glance-src" href="https://tim.blog/2026/06/10/max-levchin-2/" target="_blank" rel="noopener">Tim Ferriss Podcast →</a></li>
+      <li>@swyx：AI Engineer World's Fair 观众对 WorkOS 内容的反应非常热烈——对 auth/identity（身份认证）基础设施感兴趣的开发者多于很多人预期。<a class="glance-src" href="https://x.com/swyx/status/2067057648617538037" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>@joshwoodward（Google Labs VP）：Google 通过 Gama Fund 向巴西 AI 初创公司提供最高 $200 万联合投资加云资源，AI 地理扩张继续。<a class="glance-src" href="https://x.com/joshwoodward/status/2067025851829330076" target="_blank" rel="noopener">X @joshwoodward →</a></li>
+      <li>@thsottiaux（OpenAI Codex 负责人）：Codex 的限速（rate limit）已复位，24 小时内；同时宣布最令人兴奋的新功能正在欧洲开始滚动上线。<a class="glance-src" href="https://x.com/thsottiaux/status/2067064381855187231" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+      <li>@petergyang（Peter Yang）：正在制作教程，教如何把 Codex 或 Claude Code 变成你的私人 AI 顾问，预告即将发布。<a class="glance-src" href="https://x.com/petergyang/status/2067056979974160749" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>@realmadhuguru：SpaceX 收购 Cursor 的真正价值不是估值，是"生产级 agentic harness（Agent 执行框架）"——Cursor 的产品不只是 IDE 插件，而是一整套让 AI 在真实工程环境跑起来的基础设施。<a class="glance-src" href="https://x.com/realmadhuguru/status/2066935654500671499" target="_blank" rel="noopener">X @realmadhuguru →</a></li>
+      <li>@trq212（Thariq）：Slack 现在可以原生渲染 HTML 附件了，不再强制下载——对内部工具和邮件转 Slack 的工作流是个小但实用的改进。<a class="glance-src" href="https://x.com/trq212/status/2067021344341098670" target="_blank" rel="noopener">X @trq212 →</a></li>
+      <li>@amasad（Amjad Masad，Replit CEO）：Replit 获评 Databricks 年度合作伙伴奖。<a class="glance-src" href="https://x.com/amasad/status/2066956074360426622" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>@danshipper（Dan Shipper，Every CEO）：从 Atlas AI 浏览器切回了 Dia——产品对比：Atlas 的 AI 功能深度好，但 Dia 的日常使用体验更顺滑。<a class="glance-src" href="https://x.com/danshipper/status/2066914130863473048" target="_blank" rel="noopener">X @danshipper →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-06-16.html">← JUN 16</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
