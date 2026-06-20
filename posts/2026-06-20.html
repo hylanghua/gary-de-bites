@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — June 20, 2026</title>
+  <meta name="description" content="Anthropic 递交 IPO 招股书进入最终冲刺阶段，Swyx 预测上市定价将超 $2T；Claude Code 同日被用于辅助破解 3500 年前克里特线性 A 文字；AI 编码战场进入白热化，Peter Yang 公开从 Claude Code 转向 Codex，Guillermo Rauch 宣告下一个热门编程语言就是 Markdown。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">June 20, 2026</h1>
+
+  <p class="post-lead">Anthropic 递交 IPO 招股书进入最终冲刺阶段，Swyx 预测上市定价将超 $2T；Claude Code 同日被用于辅助破解 3500 年前克里特线性 A 文字；AI 编码战场进入白热化，Peter Yang 公开从 Claude Code 转向 Codex，Guillermo Rauch 宣告下一个热门编程语言就是 Markdown。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/" target="_blank" rel="noopener">Anthropic 递交 IPO 招股书，swyx 预测上市定价将超 $2T</a></h3>
+      <p>Anthropic 于 6 月 1 日正式递交 S-1 文件（即 IPO 招股说明书，上市前必须提交的核心披露文件），此前公司于 5 月底完成 $650 亿 H 轮融资，私募估值接近 $965 亿——接近 $1T。招股书递交意味着公司已进入上市倒计时，预计公开发行将在今年内完成。</p>
+      <p>Swyx（Latent Space 播客主理人）今日转发相关报道并直接预判："Anthropic is going to IPO at $2T"——他认为公开市场的定价将远超当前私募估值。背后的逻辑：GPT-5.5 和 Codex 的强势崛起反而验证了 AI 模型赛道的商业体量，而 Anthropic 在 Enterprise 和 API 层面的渗透正处于加速期，定价窗口随 AI 工程大会（AIE WF）开幕而时机成熟。<strong>Anthropic IPO 不只是一个融资事件，而是 AI 基础设施公司能否按科技平台估值的一次真实压测。</strong></p>
+      <cite><a href="https://x.com/swyx/status/2068084391260426345" target="_blank" rel="noopener">X @swyx</a> · <a href="https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/" target="_blank" rel="noopener">TechCrunch</a> · <a href="https://www.latent.space/p/ainews-not-much-happened-today-e7b" target="_blank" rel="noopener">Latent Space AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/bcherny/status/2068064304503660962" target="_blank" rel="noopener">Claude Code 辅助破解线性 A 文字：3500 年前克里特文明古文字首次被 AI 介入解读</a></h3>
+      <p>Boris Cherny（Anthropic 工程师，Claude Code 核心贡献者）今日分享了一个出乎意料的用法：研究人员用 Claude Code 辅助解读线性 A 文字（Linear A，米诺斯文明于约公元前 1800-1450 年使用的文字系统，至今未被完全破译）。这篇论文正在等待同行评审，Cherny 附上了一句"希望经得住同行检验"。</p>
+      <p>这条推文获得了 1460 个点赞，远超他日常的技术分享。信号不只来自 AI 圈：历史学者和考古学家也在讨论这件事的含义。线性 A 的解读之所以困难，是因为没有双语对照文本（类似解读埃及象形文字所依赖的罗塞塔石碑），AI 可能通过统计模式和跨语言推断找到新路径。<strong>如果结果经得住同行评审，Claude Code 将成为打开一扇 3500 年未解谜题的工具——这比任何基准分数都更能说明当前 AI 的能力边界在哪里。</strong></p>
+      <cite><a href="https://x.com/bcherny/status/2068064304503660962" target="_blank" rel="noopener">X @bcherny</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/thsottiaux/status/2068120572673077274" target="_blank" rel="noopener">Codex 实现本地/远程无缝切换：让模型掌舵，基础设施反而变精简</a></h3>
+      <p>Thibault Sottiaux（OpenAI Codex 工程师）今日分享了 Codex 的新功能：本地与远程任务之间的无缝切换（remote/local handoff，即在用户本地机器和云端 Agent 之间无摩擦地转移执行权）。他的判断是："当你让模型当司机，实际上你需要的基础设施反而更少。"</p>
+      <p>这句话点出了一个反直觉的架构转变：传统的 AI 工具假设人类是决策者，需要大量基础设施来"协调"AI 的每一步动作。一旦模型被授予足够的自主权，很多协调层就变得多余。Sottiaux 同日还转发了 @danshipper 关于 Codex 使用技巧的推文，说自己在 Mac 上花在 Codex App 的时间已超过其他所有 App 的总和。<strong>Codex 的本地/远程切换不只是一个功能更新，而是 AI 工具在工作流主导权上又向前推进了一步。</strong></p>
+      <cite><a href="https://x.com/thsottiaux/status/2068120572673077274" target="_blank" rel="noopener">X @thsottiaux</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3>Guillermo Rauch（Vercel CEO）：下一个热门"编程语言"是 Markdown</h3>
+      <p>Rauch 今日发布了一个极简 Agent 文件结构示意图：一个 <code>agent/</code> 目录，里面是 <code>instructions.md</code> 和 <code>skills/</code> 子目录，技能文件全部是 <code>.md</code>。然后他加了一句："用一行命令部署到 Vercel。"他的结论："这是最易接近的编程范式。"</p>
+      <p>这个观察触及了 Agent 工程正在发生的一次隐秘迁移：以前"写代码"意味着用 Python 或 TypeScript 实现逻辑；现在越来越多的 Agent 行为是通过 Markdown 文件定义的——指令、上下文、技能描述、输出格式都可以用 Markdown 表达。对于 PM 和设计师而言，这是第一次"写代码"可以不涉及任何语法错误的机会。<strong>Rauch 说的不只是 Vercel 在卖什么，而是他看到了一个入口：程序员和非程序员之间的那堵墙正在被 Agent 范式从底部凿穿。</strong></p>
+      <cite><a href="https://x.com/rauchg/status/2068165988005380478" target="_blank" rel="noopener">X @rauchg</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Aaron Levie（Box CEO）：Agent 成功的主变量是上下文，不是模型</h3>
+      <p>Levie 今日明确指出：在实际部署 Agent 时，"能不能让 Agent 拿到完成任务所需的上下文（context，即执行任务时所需的背景信息、历史记录和相关数据）"才是决定成败的主变量，而不是用哪个模型。他进一步说，实现这一点的关键是为 Agent 创建一个"共享工作区"（shared working area）——Agent 的所有操作、产出和状态都在一个统一的位置发生，而不是散落在不同工具和接口之间。</p>
+      <p>这个判断对构建 AI 工作流的团队有直接操作价值：你在"选模型"上花的时间，可能比不上你在"怎么让 Agent 看到对的信息"上投入的工程量重要。许多 Agent 失败案例不是因为模型不够强，而是因为模型在关键时刻拿不到它需要的东西。<strong>Levie 把 Agent 工程的核心问题从"哪个模型最好"重新定位成了"怎么设计上下文传递系统"，这是 2026 年最值得 PM 记下来的一句话。</strong></p>
+      <cite><a href="https://x.com/levie/status/2068068247413694532" target="_blank" rel="noopener">X @levie</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Peter Yang（AI 教学者，每日 AI 实践）：从铁杆 Claude Code 用户转向 Codex 的完整自述</h3>
+      <p>Peter Yang 今日发了一条详细的切换报告。他自称曾是铁杆 Claude Code 用户，但 Codex 最终凭三点赢得了他：GPT-5.5 的整体能力、快速模式（fast mode，即更快的响应速度与更宽松的用量限制的组合）带来的高密度练习机会，以及 Codex 的浏览器和电脑操作能力（browser and computer use，即 Agent 可以直接操控浏览器和系统界面）。他说这两项能力让他构建了大量依赖自动化操作的工作流，省去了寻找 API 的麻烦。</p>
+      <p>不过他并没有彻底放弃 Claude Code：他认为 Claude Code 的设计与前端能力仍然领先，尤其期待 Fable 模型恢复访问后的表现。他的结论是："希望这两家永远竞争下去。" 他补充说，Cursor/Grok、Gemini 等其他选手保持竞争力对开发者只有好处。<strong>Peter Yang 的切换不是因为 Claude Code 变差了，而是 Codex 在实际工作流闭环上暂时跑在了前面——这是 2026 年 AI 工具竞争最真实的温度计。</strong></p>
+      <cite><a href="https://x.com/petergyang/status/2068175172960690266" target="_blank" rel="noopener">X @petergyang</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3>Guillermo Rauch（Vercel CEO）：Agents 正在逼迫所有好的软件工程习惯归位</h3>
+      <p>Rauch 今日的另一条推文把视野拉到了更大的架构层面。他观察到：Agents 正在激励大量健康的软件工程实践回归——开放 API（open APIs，即第三方可调用的标准接口）、文档（documentation，即 Agent 需要读懂的技能描述文件）、测试与评估（tests/evals）、Unix 哲学（CLI 优先，即命令行接口，Agent 最容易调用的交互方式）、支付与商业协议，甚至 HTTP 的 Accept 头（用于协商返回格式是 Markdown、JSON 还是 HTML）。</p>
+      <p>这个观察揭示了一个有趣的因果关系：过去十年，很多团队因为"先跑起来再说"而欠下了大量工程债——没有文档、没有 CLI、API 不稳定。但当 Agent 开始代替人类调用你的服务时，这些"债务"立刻变成了不可接受的阻塞。Agent 的到来不是在给糟糕的工程锦上添花，而是在强制执行一次工程纪律复审。<strong>Rauch 说的是：Agent 不只是一种新工具，而是一种让工程团队没有退路的新标准——你之前欠下的技术债，现在必须还了。</strong></p>
+      <cite><a href="https://x.com/rauchg/status/2067936390285807940" target="_blank" rel="noopener">X @rauchg</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Garry Tan（YC CEO）：把你最怕给董事会看的东西做成第一张幻灯片</h3>
+      <p>Tan 今日分享了一条董事会沟通技巧：挑出你最不想在董事会上提及的那件事，把它放在第一张幻灯片上，并把它定义成一件大事——你在主动处理的大事。他补充了一个前提："当然，这只能在一个好的董事会里这样做。"</p>
+      <p>这个建议的本质是控制叙事的主导权。大多数创始人倾向于把坏消息压在后面、藏在乐观数据后面，希望用好消息的惯性稀释坏消息的冲击。结果是，当董事会成员在第 15 张幻灯片时挖出那个问题，提问者就成了叙事的主导者，而创始人只能被动应对。Tan 的方法反过来：你先提出问题，你就定义了问题的框架、严重程度和解题路径。<strong>激进透明的核心不是展示软弱，而是掌握定义权——把"最差的事情"说出来，比被人挖出来早十分钟。</strong></p>
+      <cite><a href="https://x.com/garrytan/status/2068007205102842238" target="_blank" rel="noopener">X @garrytan</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3>Amanda Askell（Anthropic 伦理研究员）：我被慢性疼痛折磨了 30 年，可能只因为医生觉得我不配知道扫描结果</h3>
+      <p>Askell 今日分享了一段个人经历：她被慢性疼痛困扰了大半生，直到一位医生做了核磁共振（MRI），发现了一个先天性病因，手术后才彻底解决。她的追问是：这 30 多年的疼痛，是否只因为此前的医生认为让患者知道扫描结果"不合适"？</p>
+      <p>她的第二条推文延伸了这个问题：有观点认为，扫描更多会导致"偶然发现"（incidental findings，即无症状的异常发现），从而造成过度诊疗和不必要的焦虑。Askell 不认同。她的反驳是：问题从来不是"扫描太多"，而是"我们对扫描结果的响应规范（norms）还没调整好"。如果发现了没有症状的异常，可以选择忽略——这是一个可以训练的认知，而不是扫描本身的错误。在她看来，随着扫描越来越普及，社会对"不是每个发现都需要行动"的接受度也会自然演化。<strong>Askell 把医疗信息壁垒的问题说得非常透：被剥夺知情权的代价，不只是焦虑，有时是 30 年的疼痛。</strong></p>
+      <cite><a href="https://x.com/AmandaAskell/status/2068162191740764622" target="_blank" rel="noopener">X @AmandaAskell</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Zara Zhang（红杉资本 VP）：AI 时代让你脱颖而出的三件事：Agency、Taste、Distribution</h3>
+      <p>Zara 今日以三个词定义了 AI 时代的人才差异化要素：Agency（主动性，即不等待指令、主动推进的行动力）、Taste（品味，即在无限选项中找到"好的"的判断力）、Distribution（传播力，即让你的想法和产品触达正确受众的能力）。</p>
+      <p>在工具日益民主化的背景下，这三个特质的稀缺度不降反升。因为当每个人都能"做出东西"时，做出来的质量和能不能被看见，就成了真正的分水岭。Agent 可以帮你执行，但你得知道要执行什么（Agency）；AI 可以生成，但你得知道哪个版本是对的（Taste）；工具可以发布，但你得知道怎么让人知道（Distribution）。<strong>Zara 的三件套是对"AI 会取代人"的最简洁反驳：AI 取代的是执行层，而执行之上的判断力、品味和连接力，是下一个时代最贵的稀缺品。</strong></p>
+      <cite><a href="https://x.com/zarazhangrui/status/2068094591220531583" target="_blank" rel="noopener">X @zarazhangrui</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Tim Ferriss 5-Bullet Friday：David Hockney 的贪婪哲学，以及 Demis Hassabis 传记新书专访</h3>
+      <p>本周 Tim Ferriss 的 5-Bullet Friday 里有两个值得单独记下来的东西。一是大卫·霍克尼（David Hockney，英国当代艺术家，以泳池画作闻名）的一句话："我想我是贪婪的，但我对金钱不贪婪——那会成为负担——我对精彩的生活贪婪。"这句话的力量在于它区分了两种贪婪：一种是对积累的贪婪（可以无限填充但不能满足），一种是对体验的贪婪（明确地知道自己想要什么）。</p>
+      <p>另一个是 Tim 与 Sebastian Mallaby（纽约时报畅销书作者）的新访谈，主题是 Mallaby 关于 Demis Hassabis（谷歌 DeepMind 联合创始人兼 CEO）的传记，以及正在进行的超级智能竞赛（race to superintelligence）。这本书的时间节点颇为敏感：DeepMind 在 2025-2026 年的 AI 研究产出已成为整个领域的核心参照之一，而 Hassabis 本人也在 2025 年获得诺贝尔化学奖。这次访谈是目前关于 AGI 竞赛最接近第一视角的公开叙述之一。<strong>Hockney 和 Hassabis 放在同一期里，是一个小小的奇妙并置：一个艺术家和一个科学家，各自以不同方式在追逐"精彩的生活"。</strong></p>
+      <cite><a href="https://tim.blog/2026/06/17/sebastian-mallaby/?utm_source=convertkit&utm_medium=convertkit&utm_campaign=5bf" target="_blank" rel="noopener">Tim Ferriss Blog</a> · <a href="https://tim.blog/" target="_blank" rel="noopener">5-Bullet Friday</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.17053" target="_blank" rel="noopener">Context-Aware RL：RL 训练模型在长上下文中锁定决定性证据</a></h3>
+      <p><strong>现状：</strong>LLM 在处理长上下文或复杂上下文（如几百行工具调用轨迹、含细节差异的图像对比）时，经常无法识别"那一个决定性线索"——它能读完整个上下文，但找不到最关键的那一句话或那一个像素细节。</p>
+      <p><strong>问题：</strong>标准的 RL（强化学习，即通过奖励信号训练模型改进行为的方法）通常以最终任务结果为奖励信号，无法直接告诉模型"你应该更关注上下文的第 X 行"，这使得模型在粗粒度上能完成任务，但在细粒度上依然会漏失关键证据。</p>
+      <p><strong>解决方案：</strong>论文提出"上下文感知 RL"：给模型提供一个 query、一个 answer、以及两个高度相似但关键差异在细节处的上下文，奖励模型选出真正支持 query-answer 对的那个上下文。两个训练域：coding agent 用工具轨迹（1k 对，通过条件过滤构造）、多模态推理用图像对（7k 对，通过生成编辑和相似度搜索构造）。</p>
+      <p><strong>价值：</strong>让模型学会"主动锁定证据"，而非"被动扫描全文"——对依赖长上下文推理的 Agent 工作流（如代码库级别的理解、多文档知识整合）有直接提升效果。</p>
+      <p><strong>未来方向：</strong>上下文感知能力的专项训练，将成为下一代长上下文 Agent 的标准组件，与通用推理训练并列。</p>
+      <cite><a href="https://arxiv.org/abs/2606.17053" target="_blank" rel="noopener">arXiv 2606.17053</a> · <a href="https://huggingface.co/papers/2606.17053" target="_blank" rel="noopener">HuggingFace Papers</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.19531" target="_blank" rel="noopener">ImageWAM：机器人世界模型不需要视频生成，图像编辑模型已经足够</a></h3>
+      <p><strong>现状：</strong>当前主流的机器人世界模型（World Action Model，即能预测"执行某个动作后世界会变成什么样"的模型）通常基于视频生成框架——模型输出的是一段动态视频，然后从中提取动作信号，这套路径计算量大、推理慢、对硬件要求高。</p>
+      <p><strong>问题：</strong>视频生成框架为了表达"连续变化"而引入了大量视频 token 和时序建模开销，但机器人控制任务实际上需要的是"当前状态到下一状态"的离散跳跃，而非平滑的视觉过渡——这是一个解法与需求不匹配的过度工程问题。</p>
+      <p><strong>解决方案：</strong>ImageWAM 将预训练的图像编辑模型（image editing model，即"给定当前图像和指令，输出编辑后图像"的模型）重新用作机器人动作预测的视觉主干，用图像间的差异编码动作信号。提供 1.1B（Ovis-U1）至 9B（FLUX.2）共四个模型变体，最小模型在多个机器人基准上与更大模型竞争力相当。</p>
+      <p><strong>价值：</strong>证明了"替代视频生成"是可行路线，计算成本大幅降低；为资源受限的机器人研究团队提供了一条更实用的世界模型路径。</p>
+      <p><strong>未来方向：</strong>图像编辑基础模型将成为 Physical AI 世界模型的高效预训练骨干，视频生成框架的必要性将受到系统性质疑。</p>
+      <cite><a href="https://arxiv.org/abs/2606.19531" target="_blank" rel="noopener">arXiv 2606.19531</a> · <a href="https://huggingface.co/papers" target="_blank" rel="noopener">HuggingFace Papers</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2605.20530" target="_blank" rel="noopener">AgentAtlas：挑战 LLM Agent 的单一结果排行榜范式</a></h3>
+      <p><strong>现状：</strong>当前 LLM Agent 的评测主要依赖"完成率排行榜"——任务完成了得 1 分，没完成得 0 分，然后按正确率排序。这张榜单简单直观，但提供的信息极为有限：它告诉你"哪个 Agent 最后答对了"，但不告诉你"失败的 Agent 在哪一步出了什么问题"。</p>
+      <p><strong>问题：</strong>对于要在生产环境部署 Agent 的团队来说，单一完成率排行榜根本不够用。你需要知道：这个 Agent 在哪类任务上会以哪种方式失败？失败是因为推理错了，还是因为工具调用时序不对，还是因为上下文丢失？目前没有标准框架回答这些问题。</p>
+      <p><strong>解决方案：</strong>AgentAtlas 提出四个组件：六状态控制决策分类法（Six-state control-decision taxonomy）、九类轨迹失败分类法（Nine-category trajectory-failure taxonomy）、分类法感知的评测方法论，以及 benchmark 覆盖度审计工具，让 Agent 评测从"结果排名"升级为"失败模式诊断"。</p>
+      <p><strong>价值：</strong>第一次为 Agent 失败提供了可重复使用的分类语言，让不同团队之间对 Agent 缺陷的描述可以对齐和对比，是 Agent 工程走向成熟的必要基础设施。</p>
+      <p><strong>未来方向：</strong>"失败模式诊断"将逐步替代单一完成率，成为生产级 Agent 评估的行业标准。</p>
+      <cite><a href="https://arxiv.org/abs/2605.20530" target="_blank" rel="noopener">arXiv 2605.20530</a> · <a href="https://huggingface.co/papers/2605.20530" target="_blank" rel="noopener">HuggingFace Papers</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.13673" target="_blank" rel="noopener">SpatialClaw：给 VLM 一个有状态 Python 内核，空间推理变成可操作的逐步计算</a></h3>
+      <p><strong>现状：</strong>视觉语言模型（VLM，能同时理解图像和文字的模型）在空间推理上的表现远不如语言推理：要判断两个物体的相对位置、估算角度、追踪多视角下同一物体的位置，对当前 VLM 来说都是挑战，因为这些判断需要维持跨帧的状态，而 VLM 天然是无状态的单轮处理模式。</p>
+      <p><strong>问题：</strong>现有的 VLM 空间推理通常是"单步感知"——看一眼图像，给出判断。对于需要多步累积证据的空间任务（如"从三个视角分别看这个物体后，推断它的完整 3D 结构"），这种方法不可靠，错误会随步骤积累。</p>
+      <p><strong>解决方案：</strong>SpatialClaw 维护一个预载了输入帧和感知/几何工具包的有状态 Python 内核（stateful Python kernel），允许 VLM 支持的 Agent 每步写一个可执行的代码单元（executable cell），并在所有先前输出的基础上进行条件处理——把空间推理从"单步感知"变成"有状态的逐步计算"。</p>
+      <p><strong>价值：</strong>让 VLM 获得了空间任务中"记住之前看过什么"的能力，在机器人感知、AR 空间定位、多视角 3D 重建等场景有直接应用价值。</p>
+      <p><strong>未来方向：</strong>有状态的计算内核将成为 VLM 应对复杂多步任务的标准增强方式，不限于空间推理。</p>
+      <cite><a href="https://arxiv.org/abs/2606.13673" target="_blank" rel="noopener">arXiv 2606.13673</a> · <a href="https://huggingface.co/papers/2606.13673" target="_blank" rel="noopener">HuggingFace Papers</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/papers" target="_blank" rel="noopener">LedgerAgent：结构化状态让工具调用 Agent 真正遵守复杂策略</a></h3>
+      <p><strong>现状：</strong>工具调用 Agent（tool-calling agent，即能调用外部 API、数据库或系统接口的 Agent）在执行多步任务时，经常违反业务策略约束——比如在没有满足前置条件时就调用某个工具，或者在已触发某个状态时仍重复调用。这类违规在单步任务里不明显，但在多轮长任务中会造成严重逻辑错误。</p>
+      <p><strong>问题：</strong>现有的工具调用 Agent 通常把策略约束塞进提示词（prompt），依赖模型自己记住规则。但随着任务长度增加，模型在长上下文中遗忘约束的概率显著上升，"遵守策略"变得不可靠。</p>
+      <p><strong>解决方案：</strong>LedgerAgent 引入结构化的策略状态账本（ledger，即对当前任务中所有已满足/未满足约束的显式记录），在每次工具调用前自动查询账本，确保调用决策与当前策略状态一致。状态不存在提示词里，而是在账本里持久化。</p>
+      <p><strong>价值：</strong>把"遵守策略"从"依赖模型记忆"变成"依赖外部账本校验"，在合规要求严格的企业场景（如金融审批流、医疗操作流）下，Agent 的可靠性从根本上提升。</p>
+      <p><strong>未来方向：</strong>策略状态显式化（policy state externalization）将成为企业级 Agent 部署的必要安全层，类似传统软件的权限中间件。</p>
+      <cite><a href="https://huggingface.co/papers" target="_blank" rel="noopener">HuggingFace Daily Papers 2026-06-20</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>@swyx 回忆 10 年前写下第一篇博客的那个时刻：那是 @bendhalpern 和 @jessleenyc 向他发出的邀约，他说"回答这个邀约非常重要"。现在 @MLHacks 在 AI 工程世界大会（AIE WF）上出版第一份实体日报。<a class="glance-src" href="https://x.com/swyx/status/2068233518858342887" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>@thsottiaux（OpenAI Codex 工程师）："这些天我在 Codex App 上花的时间，比 Mac 上其他所有 App 加起来都多。"转发了 @danshipper 的 Codex 使用技巧合集。<a class="glance-src" href="https://x.com/thsottiaux/status/2068144722460475527" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+      <li>@amasad（Amjad Masad，Replit CEO）：Vibecon 大会结束，他引用一条评语"今年最棒的会议体验"，并发出了精华 recap 链接。<a class="glance-src" href="https://x.com/amasad/status/2068177018479403065" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>@mattturck（Matt Turck，FirstMark Capital）发了一张 VC 出席董事会后精疲力竭的图片——作为董事会季周末的当日吐槽，时机绝妙。<a class="glance-src" href="https://x.com/mattturck/status/2068087153091858801" target="_blank" rel="noopener">X @mattturck →</a></li>
+      <li>@nikunj（Nikunj Kothari）："SF 我有个想法…"——一个悬念，没有更多内容，但已足够引人好奇。<a class="glance-src" href="https://x.com/nikunj/status/2068204606119874728" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>@steipete（Peter Steinberger，PSPDFKit 作者）：转发了团队成员 Hannes 的内容，称他"同时懂开发者和 Agent，能有他加入很幸运"——Agent 时代里，"懂两种语言"的工程师正在成为稀缺品。<a class="glance-src" href="https://x.com/steipete/status/2068199277277401419" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>AINews 今日标题"not much happened today"（今天没太多发生），但 GLM 5.2 依然在开发者社区强势趋势中，AI 工程世界大会明日开幕将是下一个信息高峰。<a class="glance-src" href="https://www.latent.space/p/ainews-not-much-happened-today-e7b" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>Tim Ferriss 新访谈：与 Sebastian Mallaby 谈 Demis Hassabis（谷歌 DeepMind 联合创始人兼 CEO）传记，以及超级智能竞赛（race to superintelligence）的内幕视角。<a class="glance-src" href="https://tim.blog/2026/06/17/sebastian-mallaby/" target="_blank" rel="noopener">Tim Ferriss →</a></li>
+      <li>Tim Ferriss 分享科学综述："我们是在幻觉，还是迷幻药真的可以通过调节免疫系统来控制炎症？"——这篇论文已发表在《British Journal of Pharmacology》。<a class="glance-src" href="https://tim.blog/" target="_blank" rel="noopener">Tim Ferriss →</a></li>
+      <li>Tim Ferriss 本周推荐电影《斯大林之死》（The Death of Stalin，2017）：Rotten Tomatoes 94%，历史上罕见的黑色政治喜剧，Steve Buscemi 主演，"残忍而好笑"。<a class="glance-src" href="https://tim.blog/" target="_blank" rel="noopener">Tim Ferriss →</a></li>
+      <li>Tim Ferriss 在重读《Buffalo for the Broken Heart》（Dan O'Brien 著）：一个南达科他州牧场主把土地还给野牛的故事，同时也是一堂关于生态学和人与土地关系的叙事课。<a class="glance-src" href="https://tim.blog/" target="_blank" rel="noopener">Tim Ferriss →</a></li>
+      <li>Tim Ferriss 本周引述 Claude Monet："每个人都在讨论我的艺术，假装在理解它——好像理解是必要的。其实只需要爱。"<a class="glance-src" href="https://tim.blog/" target="_blank" rel="noopener">Tim Ferriss →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-06-19.html">← JUN 19</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
