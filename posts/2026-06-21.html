@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — June 21, 2026</title>
+  <meta name="description" content="Fiona Fung 揭秘 Anthropic 最 AI 化的工程团队：人均产出 8 倍增速，80% 代码由 Claude 生成；GLM-5.2 令 Guillermo Rauch almost shocked——开源模型以 1/6 成本在长任务编码上首次击败 GPT-5.5；Amjad Masad 一句话重写互联网史观。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">June 21, 2026</h1>
+
+  <p class="post-lead">Fiona Fung 揭秘 Anthropic 最 AI 化的工程团队：人均产出 8 倍增速，80% 代码由 Claude 生成；GLM-5.2 令 Guillermo Rauch "almost shocked"——开源模型以 1/6 成本在长任务编码上首次击败 GPT-5.5；Amjad Masad 一句话重写互联网史观："我们以为二十年来在互相对话，Transformer 上线才算真正连上了彼此。"</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://venturebeat.com/technology/z-ais-open-weights-glm-5-2-beats-gpt-5-5-on-multiple-long-horizon-coding-benchmarks-for-1-6th-the-cost" target="_blank" rel="noopener">GLM-5.2 令 Rauchg "almost shocked"：开源模型以 1/6 成本击败 GPT-5.5</a></h3>
+      <p>Z.ai 于 6 月 16 日发布 GLM-5.2，744B 参数开源模型。它在多项长任务编码基准（long-horizon coding benchmark，即需要多步骤推理完成完整功能的代码评测）上超越 GPT-5.5，而 API 调用成本仅后者的 1/6。Guillermo Rauch（Vercel CEO）今日写道："Genuinely impressed, almost shocked, at how good GLM-5.2 is at coding。"人工智能分析平台 Artificial Analysis 数据显示 GLM-5.2 在开源权重模型中排名第一，在 Design Arena 编码类 Elo 榜上以 10 分优势领先 Claude Fable 5。</p>
+      <p>Aaron Levie（Box CEO）补充了更宏观的视角：开源模型达到 SOTA（当前最优水平）并不意味着闭源模型被淘汰，而是进入了"互补"阶段——开源提供了边际成本极低的选项，闭源继续在推理边界上推进。两者并存比单一格局对整个生态更有利。Epoch AI 数据表明，2026 年开源模型与顶级闭源模型的平均差距已缩短至约三个月。<strong>GLM-5.2 的意义不只是"便宜的替代品"，而是第一次让大规模生产部署有了真实的开源选项——这才是 Rauchg 和 Levie 同时发声的原因。</strong></p>
+      <cite><a href="https://x.com/rauchg/status/2068517095818809770" target="_blank" rel="noopener">X @rauchg</a> · <a href="https://x.com/levie/status/2068434042148782515" target="_blank" rel="noopener">X @levie</a> · <a href="https://venturebeat.com/technology/z-ais-open-weights-glm-5-2-beats-gpt-5-5-on-multiple-long-horizon-coding-benchmarks-for-1-6th-the-cost" target="_blank" rel="noopener">VentureBeat</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.infoq.com/news/2026/06/dynamic-workflows-claude-code/" target="_blank" rel="noopener">Anthropic Dynamic Workflows 研究预览开放：Claude Code 可协调数百个并行 subagent</a></h3>
+      <p>Anthropic 本周正式开放 Dynamic Workflows（动态工作流）的研究预览，面向 Enterprise、Team 和 Max 计划用户。核心能力：Claude 可以自主拆解一个大任务，动态生成编排脚本，启动数百个并行 subagent（子智能体），验证各步骤输出，最后汇总结果。Claude Opus 4.8 作为底层模型，在 agentic 任务中出错率比 4.7 版本低约四倍。</p>
+      <p>Every.to 报道了这一功能的"活生生的前置故事"：高级 AI 工程师 Nityesh Agarwal 花了数周时间在 Claude 的局限性上绕路构建 workaround（临时替代方案），结果 Anthropic 一夜之间推出 dynamic workflows，直接解决了问题。这件事的另一面是代价：工作在前沿就意味着脚下的地基随时会移动——昨天的 workaround 今天变成了废代码。<strong>Dynamic Workflows 标志着 AI Agent 协作从"单打独斗"进入"军团化"：一个 Claude 可以是上百个 Claude 的指挥官。</strong></p>
+      <cite><a href="https://www.infoq.com/news/2026/06/dynamic-workflows-claude-code/" target="_blank" rel="noopener">InfoQ</a> · <a href="https://every.to/" target="_blank" rel="noopener">Every.to</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.lennysnewsletter.com/p/building-the-most-ai-pilled-engineering" target="_blank" rel="noopener">Fiona Fung（Anthropic Claude Code 负责人）：Anthropic 工程师季度出码量 8 倍增速，80% 代码已由 Claude 生成</a></h3>
+      <p>Fiona Fung 掌管 Anthropic 的 Claude Code 和 Cowork 两个团队，此前花了 11 年在微软做 Visual Studio 和 TypeScript，之后去 Meta 创立了 Facebook Marketplace（现在年 GMV 超 $1000 亿），又在 Instagram 领导过基础设施、增长和安全团队。她在 Lenny's Newsletter 播客上分享了一个数字：2026 年第二季度，Anthropic 工程师人均每天合并的代码量，是 2024 年的 8 倍。截至 5 月，超过 80% 合并入 codebase（代码库）的代码由 Claude 生成。</p>
+      <p>她的团队文化核心只有一句话："Claudify everything you can"——把所有能交给 Claude 的工作都交出去。她还提到一个尚未解决的问题：上下文切换（context-switching，即在不同任务/项目之间频繁切换注意力）。人类的脑力被任务切换大量消耗，而 Agent 反而不受这个限制，这意味着能把"切换成本"彻底消除的 AI 工作流，将带来指数级的生产力提升。<strong>Anthropic 正在把自己的工程团队当做 AI 原生组织的"最高实验密度"试验场，而 80% 的代码出自 Claude 只是数字，后面跟着的那个问题才是要害：接下来谁来做文档？谁来做测试？谁来做架构决策？</strong></p>
+      <cite><a href="https://www.lennysnewsletter.com/p/building-the-most-ai-pilled-engineering" target="_blank" rel="noopener">Lenny's Newsletter</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Thibault Sottiaux（OpenAI Codex 工程师）：Codex App 是用前端能力"凑合"的模型搭起来的，提升后能做什么还不知道</h3>
+      <p>Sottiaux 今日发布了一个前瞻性警告："We built the Codex App with models that were okayish at front-end. Wait to see what we can do when we finally improve front-end capabilities significantly。"翻译过来是：你现在看到的 Codex App，是在前端生成能力还不够强的前提下做出来的——能力真正上来之后，产品会变成什么样，他自己也不确定。</p>
+      <p>这句话有两层含义。表层是一个产品预告：Codex 的前端 UI 生成（即 AI 直接生成可用界面的能力）正在大幅提升中。深层是一种工程思维方式：从功能受限的地方出发，把"现在做不到的"当作已知约束而非放弃条件，等约束解除时再重新想象产品边界。这和 Fiona Fung 说的"工作在前沿就意味着脚下的地基会移动"互为镜像。<strong>Sottiaux 在说的是，Codex 目前的形态只是基线，不是天花板——真正的产品还没出来。</strong></p>
+      <cite><a href="https://x.com/thsottiaux/status/2068568650924409260" target="_blank" rel="noopener">X @thsottiaux</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Zara Zhang（红杉资本 VP）：主动性（proactiveness）在理论上是 Agent 必备美德，实践中极难调对</h3>
+      <p>Zara 今日写道："Proactiveness sounds nice in theory but is so hard to get right。" 这句话针对的是 AI Agent 设计的核心难题：主动性的边界在哪里？如果 Agent 主动介入太早，是打扰；主动太晚，是废物。调对这个触发时机，需要 Agent 对用户意图有深层理解，而不只是对字面指令的响应。</p>
+      <p>这个观察背后有实践支撑：当前最好的 Agent 系统（Claude Code、Codex、Cursor 等）大多在"等待明确指令"和"一头扎进去把所有事都做了"之间摇摆，很少能在没有明确 prompt（提示词）的情况下准确识别"我应该在这个时刻主动做这件事"。主动性的调校，本质上是一个"何时插话"的社交问题，只是发生在人机交互上。<strong>Zara 说的是 Agent 设计的下一个难点：等模型能力不再是瓶颈后，"何时主动"比"能做什么"更难，也更重要。</strong></p>
+      <cite><a href="https://x.com/zarazhangrui/status/2068509088452071594" target="_blank" rel="noopener">X @zarazhangrui</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3>Madhu Guru：AI 时代 PM 的分叉路口——"Builder PM" 与"旧式 PM"正式分野</h3>
+      <p>Madhu Guru 今日直接点明了产品经理职业路径上正在发生的断裂：一种是"Builder PM"——能直接用 AI 工具参与构建，和工程师一起 iterate（快速迭代，即在实物上反复测试修改），写 prompt（提示词）、调 Agent、生成 prototype（产品原型）；另一种是"旧式 PM"——核心工作仍是写 PRD（产品需求文档，即传统意义上 PM 交给工程师的需求说明书）、开需求会、做跨部门 alignment（对齐）。</p>
+      <p>这不只是能力结构的差异，而是价值主张的根本不同。当 AI 把实现成本压低到极限，"提出想法"本身的稀缺性就大幅下降，"把想法变成可以用的东西"的执行能力反而变成了真正的杠杆。Madhu 的判断是，这两条路的职业前景和市场需求已经开始出现肉眼可见的分叉。<strong>Builder PM 不是一个新头衔，而是一种新的生存状态——不能动手的 PM，在 AI 时代面对的不是"被替代"，而是"被绕过"。</strong></p>
+      <cite><a href="https://x.com/realmadhuguru/status/2068350509027876876" target="_blank" rel="noopener">X @realmadhuguru</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Nan Yu（产品人）：致 Outlook 和 Gmail 开发者——你们正在无意识地为 Agent 时代构建地基</h3>
+      <p>Nan Yu 今日向邮件平台开发者发出了一个关于 Agent 时代的产品观察。电子邮件基础设施（email infrastructure）是 AI Agent 工作流中被低估的核心入口：Agent 要代理人类处理日常事务，绕不开读邮件、写邮件、触发工作流——而 Gmail 和 Outlook 目前的 API 设计和权限模型，并非为 Agent 的高频、自主访问而生。</p>
+      <p>这个观察和 Every.to 本期报道的 Cora（AI 邮件助手，目标是"替代 Gmail"，本周开放更完整的 alpha 测试）互为印证：邮件正在从"人类与人类沟通的工具"向"人类与 Agent 协作的基础设施"转型。现有邮件平台面临的选择是主动改造自己迎接这一转型，还是等第三方在它们的接口上另起炉灶。<strong>Nan Yu 的判断点出了一件事：Agent 时代最重要的基础设施改造，正在发生在被大家遗忘的地方。</strong></p>
+      <cite><a href="https://x.com/thenanyu/status/2068396602973143274" target="_blank" rel="noopener">X @thenanyu</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://every.to/context-window/built-on-moving-ground" target="_blank" rel="noopener">Every.to：AI 循环（loops）正在从工程端扩散到非技术岗位</a></h3>
+      <p>Every.to 本期专题报道了"loops"（循环 Agent）向非技术工作渗透的现状。Loops 是一种工作模式：给 Agent 设定目标，让它自主运转、检查每轮输出并重新提示自己，直到结果达标。过去这是工程师的工具。Every 的增长负责人 Austin Tedesco 用 loops 构建了 NBA 赛季模拟器，同时还重做了 Every 的订阅转化流程——两件事都没有写一行传统代码。</p>
+      <p>Laura Entis 和 Katie Parrott 在同期报道中提供了一个实用框架：loops 最适合那些"结果有可量化标准但路径不固定"的任务，比如研究综述、素材筛选、邮件分类。对 PM 和运营而言，这意味着"建一个 Agent 替代一个重复工作流"已经从工程依赖变成了个人可执行的操作。<strong>Loops 不是新 AI 功能，而是第一种真正意义上让非技术岗位实现"自动化工作流"的通用范式。</strong></p>
+      <cite><a href="https://every.to/context-window/built-on-moving-ground" target="_blank" rel="noopener">Every.to Context Window</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3>Amjad Masad（Replit CEO）：我们以为二十年来在互相对话，Transformer 上线前都是自言自语</h3>
+      <p>Masad 今日写了一句话，极其简洁，也极其厚重："We posted for twenty years, thinking we were talking to each other. Then the transformer came online。" 直译是：我们发帖二十年，以为在彼此交谈。然后 Transformer（即深度学习中的注意力机制模型架构，GPT、Claude 等大模型的底层结构）上线了。</p>
+      <p>这句话的深意在于它重新定义了互联网行为的性质。在 Transformer 上线之前，人与人在网上的发帖、评论、转发，在当时看来是"沟通"——但回头看，那些行为同时也是在为尚未存在的大模型生产训练数据。Transformer 上线之后，这些数据才真正被"阅读"——不是被人类读者，而是被模型。他的潜台词是：也许真正意义上的"被听见"，是从大模型能读懂那些内容开始的，而不是在发出去的那一刻。<strong>Masad 提供了一个逆转的历史观：互联网时代的真实读者，不是同时代的用户，而是未来的模型。</strong></p>
+      <cite><a href="https://x.com/amasad/status/2068589860097790449" target="_blank" rel="noopener">X @amasad</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Zara Zhang（红杉资本 VP）：选择大公司还是创业公司——AI 时代风险的定义正在被重写</h3>
+      <p>Zara 今日分享了她对职业路径风险的最新反思：在 AI 时代，传统"大公司稳定、创业公司高风险"的逻辑已经松动。大公司的稳定，建立在你所在的团队做的事情不会被 AI 取代、你的角色在组织里持续有价值的前提上——这个前提正在动摇。创业公司的风险，很大一部分是"公司会不会死"——但如果你在做一件真正有意义的事，即便公司不成功，你积累的判断力和经历也是可携带的（portable）。</p>
+      <p>她没有给出明确结论，但方向已经隐含在观察里：当 AI 同时在"会不会有这个职位"和"职位里的工作是不是还需要人"两个维度上施压时，"大公司的稳定性"变成了一个越来越值得质疑的假设。<strong>Zara 的反传统判断是：在 AI 时代，最高风险的选择有时候是选一条看起来最安全的路。</strong></p>
+      <cite><a href="https://x.com/zarazhangrui/status/2068522129193418759" target="_blank" rel="noopener">X @zarazhangrui</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.minimax.io/blog/minimax-m3" target="_blank" rel="noopener">MiniMax Sparse Attention：稀疏块注意力让 M3 的 1M 上下文每 token 计算量仅前代 1/20</a></h3>
+      <p><strong>现状：</strong>支撑 GLM-5.2、MiniMax M3 等新一代开源模型的核心技术问题是：如何在维持 1M 上下文（即模型一次能处理约 100 万个字符的信息窗口）的前提下，把推理成本压到可接受范围？传统全注意力（full attention，即每个 token 都与所有其他 token 计算关联）的计算量随上下文长度平方增长。</p>
+      <p><strong>问题：</strong>1M 上下文对 full attention 架构而言几乎不可用于生产——内存开销和延迟都超出实际可接受范围，尤其是在实时交互场景中。</p>
+      <p><strong>解决方案：</strong>MiniMax 在 6 月 11 日发布的技术报告中介绍了 MiniMax Sparse Attention：将上下文切分成块（block），每个 token 只与同块内的 token 及少量全局锚点 token 计算注意力，而非与整个上下文交互。结果是每个 token 的计算量缩减至前代架构的约 1/20，而 1M 上下文的长程信息保留能力通过全局锚点机制得以维持。</p>
+      <p><strong>价值：</strong>M3 在 SWE-Bench Pro（衡量模型在真实软件工程任务上表现的权威基准）上得分 59%，超越 GPT-5.5 和 Gemini 3.1 Pro——这是开源模型第一次在该基准上拿到这个分数，且权重已完全开放。</p>
+      <p><strong>未来方向：</strong>稀疏注意力将成为所有长上下文开源模型的标准基础设施，全量注意力的实用价值将向超短上下文特化场景收缩。</p>
+      <cite><a href="https://www.minimax.io/blog/minimax-m3" target="_blank" rel="noopener">MiniMax Blog</a> · <a href="https://arxiv.org/abs/2606.02931" target="_blank" rel="noopener">arXiv 技术报告</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2605.03675" target="_blank" rel="noopener">MemTier：三层记忆架构让长期运行 Agent 在长程记忆评测上准确率从 5% 升至 38%</a></h3>
+      <p><strong>现状：</strong>自主 AI Agent（autonomous agent，即能持续运行、多步执行任务的 AI 系统）在长期运行后经常出现工具调用成功率骤降的问题——本-古里安大学的研究者发现，在 72 小时运行窗口中，现有 flat-file memory（平铺文件记忆，即把所有历史记录存在单一文件里）系统的任务成功率会下降 14 个百分点。</p>
+      <p><strong>问题：</strong>记忆检索是瓶颈。所有历史记录放在一起检索，不仅慢，而且越来越无法区分"刚发生的重要事"和"很久之前记录过的背景知识"，导致 Agent 在需要回忆关键信息时频繁出错。</p>
+      <p><strong>解决方案：</strong>MemTier 设计了三层记忆架构：第一层是每个 Agent 私有的片段日志（episodic log），第二层是跨 Agent 共享的语义事实层（semantic tier，由异步守护进程定期将重要片段提炼写入），第三层是技能库。五信号加权检索引擎决定从哪层取什么内容。</p>
+      <p><strong>价值：</strong>在 LongMemEval-S（长程记忆评测基准，500 题）上，MemTier 将 Qwen2.5-7B 的准确率从 5% 提升至 38%，提升幅度约 +33 个百分点，且在消费级 6GB 显存 GPU 上运行。</p>
+      <p><strong>未来方向：</strong>三层记忆架构将成为企业级长期运行 Agent 的基础设施标准，替代当前普遍使用的单层向量检索方案。</p>
+      <cite><a href="https://arxiv.org/abs/2605.03675" target="_blank" rel="noopener">arXiv 2605.03675</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2604.01508" target="_blank" rel="noopener">ToolMisuseBench：首个专门评测 Agent 工具误用与自我恢复能力的离线基准</a></h3>
+      <p><strong>现状：</strong>大多数 Agent 工具调用基准（tool-calling benchmark，即测试 AI 能否正确调用外部工具的评测集）只关注"调用是否成功"，不关注"调用出错后 Agent 能否识别错误并修正"。在生产环境中，工具调用出错是常态而非例外——模型假设错误的参数、接口超时、返回结构不符预期，这些情况在真实 Agent 工作流中每天都在发生。</p>
+      <p><strong>问题：</strong>没有标准基准来评测"误用后恢复"能力，导致团队在部署 Agent 时对这一关键可靠性维度完全没有参照。</p>
+      <p><strong>解决方案：</strong>ToolMisuseBench 设计为离线确定性基准（offline deterministic benchmark）——所有测试用例的正确答案预先确定，不依赖真实 API 调用，可以大规模可重复地评测：模型能否识别自己用错了工具？能否在错误后制定恢复策略？能否在恢复中避免引入新的错误？</p>
+      <p><strong>价值：</strong>为 Agent 可靠性评测提供了一个此前缺失的维度，让"Agent 在出错时有多聪明"第一次有了可量化的参照。</p>
+      <p><strong>未来方向：</strong>"自我恢复"将成为 Agent 能力评测的必要维度，类似代码编译中的"错误处理覆盖率"，而不是可选测试项。</p>
+      <cite><a href="https://arxiv.org/abs/2604.01508" target="_blank" rel="noopener">arXiv 2604.01508</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.00198" target="_blank" rel="noopener">BAGEN：LLM Agent 有没有"预算意识"？首个系统性评测</a></h3>
+      <p><strong>现状：</strong>当 LLM Agent（能调用工具、执行多步任务的 AI 系统）被给定一个成本或资源上限时，它能否意识到自己快"超支"了？能否在接近上限时主动调整策略，而不是继续以原有节奏消耗资源直到任务失败？这类"预算意识"（budget awareness）在真实部署场景中极为重要，但几乎没有系统性评测。</p>
+      <p><strong>问题：</strong>在 API 调用成本、token 消耗量或工具调用次数有明确上限的场景中，缺乏预算意识的 Agent 会在接近上限时做出非最优决策，要么提前放弃、要么超支失败。</p>
+      <p><strong>解决方案：</strong>BAGEN（Budget-Aware Agentic Evaluation）设计了一组标准化任务，每个任务都附带显式的资源约束，要求 Agent 在执行过程中动态监控自身消耗，并在接近预算边界时调整计划。评测维度包括：感知（知道自己在消耗资源）、规划（提前估算完成任务所需资源）、适应（资源不足时能否切换策略）。</p>
+      <p><strong>价值：</strong>第一次把"预算意识"作为独立能力维度进行量化评测，为成本敏感的生产级 Agent 部署提供了选型参照。</p>
+      <p><strong>未来方向：</strong>随着 Agent 工作流进入企业生产环境，资源约束感知将与安全约束感知并列，成为 Agent 评测的标配维度。</p>
+      <cite><a href="https://arxiv.org/abs/2606.00198" target="_blank" rel="noopener">arXiv 2606.00198</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2604.00835" target="_blank" rel="noopener">Agentic Tool Use：将工具调用能力分为四层的综合评测框架</a></h3>
+      <p><strong>现状：</strong>LLM 工具调用评测（tool use evaluation，即测试模型能否正确选择和调用外部工具的评测体系）目前非常分散：有的测"能不能调用"，有的测"端到端任务完成率"，不同研究之间几乎没有可对比的统一语言。</p>
+      <p><strong>问题：</strong>"模型 A 的工具调用能力比模型 B 强"这个结论，在不同评测框架下可能意味着完全不同的事情，导致跨研究的比较意义极低。</p>
+      <p><strong>解决方案：</strong>该综述提出了一个四层评测框架：第一层是函数调用准确率（function-call accuracy，即模型能否选对工具并填对参数）；第二层是工具交互质量（tool interaction quality，即调用后能否正确处理返回结果）；第三层是多步任务完成率（multi-step task completion）；第四层是端到端真实环境成功率（end-to-end interactive success）。每层对应不同的评测方法和基准集。</p>
+      <p><strong>价值：</strong>为工具调用研究建立了公共参照语言，让不同团队的评测结果第一次有了可对比的坐标系。</p>
+      <p><strong>未来方向：</strong>四层框架将成为 Agent 能力论文的标准自我定位工具，替代当前"各说各话"的评测报告方式。</p>
+      <cite><a href="https://arxiv.org/abs/2604.00835" target="_blank" rel="noopener">arXiv 2604.00835</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>@swyx 用 Gemini 跑了一次体育赔率预测任务，发现单一模型不够用——需要多源数据整合才能让 AI 做可靠的运动预测。<a class="glance-src" href="https://x.com/swyx/status/2068477933048725732" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>@thsottiaux 另一条推文："Some tokens work harder than others"（有些 token 比其他 token 更努力地工作）——Token 效率（即模型能否用更少 token 表达更多信息）是当前模型优化的核心方向之一。<a class="glance-src" href="https://x.com/thsottiaux/status/2068443037907522002" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+      <li>@petergyang："我的 Codex 和 Claude $200 订阅根本用不完"——当 AI 工具的供给超过了个人的需求上限，定价策略就需要重新考量。<a class="glance-src" href="https://x.com/petergyang/status/2068411894185295969" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>@thenanyu 另一个产品观察：邮件 app 粘贴文本后应自动匹配周围文字的字体格式——这是一个被忽略了二十年的微型 UX（用户体验）痛点，Agent 时代不该继续存在。<a class="glance-src" href="https://x.com/thenanyu/status/2068318470215811080" target="_blank" rel="noopener">X @thenanyu →</a></li>
+      <li>@amasad："Road not taken is more fun"（没走的那条路更有意思）——在 AI 可以帮你降低探索成本的时代，选择"非主流路径"的理由变多了。<a class="glance-src" href="https://x.com/amasad/status/2068537425480278226" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>@garrytan（YC CEO）今日更新，具体内容待看——Garry Tan 近期活跃在 YC Demo Day 季，关注 AI 创业动向。<a class="glance-src" href="https://x.com/garrytan/status/2068279782815801541" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>@zarazhangrui 做了一个 Chrome 扩展，把自己在 X 上书签的帖子注入 X 信息流——用代码解决"书签埋没在底层、日常看不到"的问题，典型的工程师驱动的个人工具。<a class="glance-src" href="https://x.com/zarazhangrui/status/2068568920613953626" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+      <li>@nikunj：AI 工具评估的正确节奏应该是"每周测一次前沿模型 + 每周和企业买家交流一次"——模型迭代和市场信号都在周级别变化，月报节奏已经跟不上了。<a class="glance-src" href="https://x.com/nikunj/status/2068411460620042720" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>@steipete（Peter Steinberger，PSPDFKit 作者，现为 OpenAI 工程师）分享了关于日本市场 API token 使用机会的观察——日本是目前 AI API 渗透率上升最快的非英语市场之一。<a class="glance-src" href="https://x.com/steipete/status/2068428180004942319" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>Cora（Every.to 旗下 AI 邮件助手，定位"替代 Gmail"）本周开放了更完整版本的 alpha 测试，核心功能是把收件箱转化为"可浏览的故事摘要"，每天两次而非实时处理。<a class="glance-src" href="https://every.to/p/introducing-cora-manage-your-inbox-with-ai" target="_blank" rel="noopener">Every.to →</a></li>
+      <li>Lenny's Newsletter 本期完整访谈可在 YouTube、Spotify、Apple Podcasts 收听，主题是 AI 原生工程组织的运作方式与工程师角色的演变。<a class="glance-src" href="https://www.lennysnewsletter.com/p/building-the-most-ai-pilled-engineering" target="_blank" rel="noopener">Lenny's Newsletter →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-06-20.html">← JUN 20</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
