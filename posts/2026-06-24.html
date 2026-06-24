@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — June 24, 2026</title>
+  <meta name="description" content="Anthropic 推出 Slack 原生 AI 协作者 Claude Tag，Karpathy 称其为 LLM 界面的第三次重大改版。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">June 24, 2026</h1>
+
+  <p class="post-lead">Anthropic 推出 Slack 原生 AI 协作者 Claude Tag，首批向 Enterprise 与 Teams 开放；Karpathy 将其列为 LLM 产品界面的第三次重大重构。同期：AI token 进入配给时代、纯银复盘四款个人产品的失败弧线、五篇关于智能体规划与推理的新论文。</p>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--r"></span>
+      <h2>新闻速递</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://www.anthropic.com/news/claude-tag" target="_blank" rel="noopener">Anthropic 推出 Claude Tag：Slack 原生 AI 协作者</a></h3>
+      <p>Claude Tag 以 Beta 版向 Enterprise 与 Teams 计划开放，在 Slack 频道中以 <strong>@claude</strong> 唤醒，可主动监听会话、自主完成任务——而非等待显式指令。与 Claude Code（个人同步工作流）互补：Tag 承担团队异步、多人协作场景。Anthropic 内部数据显示，65% 的产品 PR 已通过 Claude 协助完成。</p>
+      <cite>TLDR · AI Valley · AINews/Latent Space</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://mistral.ai/news/mistral-ocr-4" target="_blank" rel="noopener">Mistral OCR 4：170 语言文档智能，速度提升 4×</a></h3>
+      <p>Mistral 发布 OCR 4，支持 170 种语言的文档理解，推理速度较前代提升 4 倍，定位企业级文档处理流水线。</p>
+      <cite>AI Valley</cite>
+    </article>
+
+    <article class="item">
+      <h3>NSA 因出口管制失去 Anthropic AI 访问权限</h3>
+      <p>据报道，美国国家安全局因出口管控收紧，已无法继续使用 Anthropic 的 AI 系统；此前 Mythos（Anthropic 面向政府的产品）曾在机密网络上令分析师印象深刻。</p>
+      <cite>TLDR</cite>
+    </article>
+
+    <article class="item">
+      <h3>Meta 上线预测市场应用 Arena</h3>
+      <p>Meta 推出积分制预测市场应用 Arena，设计风格类似 Polymarket，据报道由扎克伯格亲自主导方向。</p>
+      <cite>TLDR</cite>
+    </article>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--o"></span>
+      <h2>AI 方向观点</h2>
+    </div>
+
+    <article class="item">
+      <h3>Karpathy：Claude Tag 是 LLM 界面的第三次重大改版</h3>
+      <p>Andrej Karpathy 将 Claude Tag 定性为继 Web 端、桌面端之后的第三次重大 LLM UX 重构——从"单人工具"演变为驻留于 Slack 的全组织实体，携带工具权限与持久上下文，能够主动介入协作流。他认为这一设计与之前的任何交互范式都不同。</p>
+      <cite>@karpathy</cite>
+    </article>
+
+    <article class="item">
+      <h3>Aaron Levie：AI 定价哑铃效应与无头软件时代</h3>
+      <p>Box CEO Aaron Levie 分析 AI 定价正走向两极：廉价通用模型 vs. 高价专有能力，中间层被压缩。他同时描绘"无头软件"图景——软件逻辑保留，UI 被 AI 代理接管。Box 将 Claude Tag 定位为企业的可携带知识库。</p>
+      <cite>@levie</cite>
+    </article>
+
+    <article class="item">
+      <h3>Alex Albert：Claude Tag 改变了他的工作方式</h3>
+      <p>Anthropic 研究员 Alex Albert 分享内部体验：使用 Claude Tag 之后感觉"更像在管理一支团队，而不是使用一个工具"——Tag 会主动跟进未解决的线程，提醒待办，在无需显式提示的情况下推进工作。</p>
+      <cite>@alexalbert__</cite>
+    </article>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--y"></span>
+      <h2>产品与商业</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://every.to/chain-of-thought/every-token-tightening" target="_blank" rel="noopener">Token Tightening：AI 进入配给时代</a></h3>
+      <p>Every 作者 Laura Entis 记录企业 AI 使用进入"token 配给"阶段：Uber、Meta、Amazon 已对 AI 访问设置上限；token 预算开始像交易组合一样被管理——实习生得到 Composer 2.5，顶级工程师才能用 Fable 级别的模型。<strong>Opus 4.8 的成本是同类产品的 1.7 倍</strong>，组织正在主动分层分配算力资源。</p>
+      <cite>Every</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://xiaobot.net/post/vol20260623" target="_blank" rel="noopener">纯银 Vol.20260623：增长的底层三层结构</a></h3>
+      <p>纯银以自己做过的四款产品为解剖对象，提炼增长的三层结构：<strong>定位→叙事→物料</strong>。蝉游记（2012）、猫饼（2017）、一罐（2018）、犬岛（2023）各有不同的失败弧线——有的卡在定位，有的死于叙事断层，有的物料到位但前两层空洞。个人产品复盘，罕见诚实。</p>
+      <cite>纯银·小报童</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://tim.blog/2026/06/18/mark-pincus/" target="_blank" rel="noopener">Mark Pincus：死于一千次妥协，以及如何找回创始人模式</a></h3>
+      <p>Zynga 创始人 Mark Pincus 在 Tim Ferriss 播客博客文章中复盘：不清楚自己的目标，就会死于无数次小妥协的累积。他描述了从"被 HBS 录取就以为成功"的状态，到创立 Zynga 期间真正找到目标感的转变——关键不是方法，而是<strong>先锚定一个不可谈判的目标</strong>。</p>
+      <cite>Tim Ferriss Blog</cite>
+    </article>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--g"></span>
+      <h2>人文与哲学</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://every.to/napkin-math/can-ai-learn-good-judgment" target="_blank" rel="noopener">AI 能学会"好判断力"吗？</a></h3>
+      <p>Every 作者 Katie Parrott 与 Surge AI 联合创始人 Edwin Chen 探讨：当 AI 在一切任务上超越人类，<strong>创作将成为选择而非必要</strong>——Ted Chiang 式的人文困境浮现。LLM 缺乏内在动机与目标，无法真正"判断"什么值得做；被训练最大化会话时长的模型，反而会陷入参与陷阱，与真正的判断力背道而驰。</p>
+      <cite>Every</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://xiaobot.net/post/fb319f27-518e-4e7e-8884-9a7d4a01c09f" target="_blank" rel="noopener">纯银 Vol.20260624：社交网络的困境——投诉按闹分配</a></h3>
+      <p>纯银借 wyz 的话"<strong>在烂泥坑里，也要穿好西装</strong>"切入：更开放的表达必然招致更多审查；按投诉量分配审核资源，造成"表达越自由就越不自由"的悖论。平台合规逻辑与言论自由理想之间的结构性张力，无解。</p>
+      <cite>纯银·小报童</cite>
+    </article>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--b"></span>
+      <h2>AI 进展</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.24597" target="_blank" rel="noopener">Qwen-AgentWorld：语言世界模型驱动的智能体环境模拟器</a></h3>
+      <p>提出以语言世界模型替代传统环境模拟器，覆盖 7 个智能体任务域。397B 参数版本在 AgentWorldBench 上以 58.71 分超越 GPT-5.4（58.25），首次在端到端智能体评测中实现对顶级闭源模型的超越。（arXiv 2606.24597，Jun 23）</p>
+      <cite>arXiv</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.22388" target="_blank" rel="noopener">PlanBench-XL：1665 工具生态下的长程规划基准</a></h3>
+      <p>在包含 1665 个工具的超大生态中测试模型的长程规划能力。实验发现工具阻塞（blocking）导致 GPT-5.4 性能从 51.9% 断崖式下跌至 11.36%——揭示当前最强模型在复杂工具约束下的规划脆弱性。（arXiv 2606.22388，Jun 21）</p>
+      <cite>arXiv</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.11470" target="_blank" rel="noopener">LLM 推理的元素周期表：300+ 论文的九类分类法</a></h3>
+      <p>系统梳理 300 余篇 LLM 推理论文，提出九类推理范式分类体系，类比元素周期表以揭示各范式之间的结构关系与覆盖空白。适合作为推理研究的导航地图。（arXiv 2606.11470，Jun 9）</p>
+      <cite>arXiv</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.19911" target="_blank" rel="noopener">多智能体 Transactive Memory：去中心化 LLM 记忆共享</a></h3>
+      <p>CMU 与 UC Berkeley 合作提出去中心化的智能体记忆共享机制，借鉴认知科学中的"交互记忆系统"（transactive memory），允许 LLM 智能体在无中心节点的情况下协作存储与检索知识，显著提升多智能体任务中的信息利用效率。（arXiv 2606.19911，Jun 18）</p>
+      <cite>arXiv</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.05608" target="_blank" rel="noopener">Agentic Software：LLM 正在重构软件范式</a></h3>
+      <p>论文系统性地论证 LLM 智能体如何从根本上改变软件的构建与交付方式——从静态代码到动态意图执行，从确定性流程到概率性规划。作者认为这是继面向对象、互联网之后软件领域的第三次范式转变。（arXiv 2606.05608，Jun 7）</p>
+      <cite>arXiv</cite>
+    </article>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--m"></span>
+      <h2>看一眼</h2>
+    </div>
+
+    <article class="item">
+      <h3>Claude Tag 内部实现：工具权限与频道上下文</h3>
+      <p>@bcherny 与 @_catwu 披露 Tag 技术细节：Tag 可获得频道历史作为上下文，持有文件读写、代码执行等工具权限，并能跨 DM 与公共频道主动触发。@trq212 补充：内测阶段延迟控制在 3 秒以内。</p>
+      <cite>@bcherny · @_catwu · @trq212</cite>
+    </article>
+
+    <article class="item">
+      <h3>@swyx：Zai GLM 即将 IPO，SF AI 生态持续回暖</h3>
+      <p>swyx 注意到 Zai GLM（智谱）在美 IPO 进程提速，同时感叹旧金山 AI 人才密度恢复到 2023 年高峰水平，"每周都有新的重要项目从这里起步"。</p>
+      <cite>@swyx</cite>
+    </article>
+
+    <article class="item">
+      <h3>@garrytan：Linzumi + Dropbox 合并，AI 原生文档管理</h3>
+      <p>Garry Tan 分享 YC 系公司 Linzumi 与 Dropbox 达成合并协议，将 AI 原生文档理解能力整合进 Dropbox 生态。</p>
+      <cite>@garrytan</cite>
+    </article>
+
+    <article class="item">
+      <h3>@steipete：Google 解雇了 Workspace CLI 的创建者</h3>
+      <p>Steipete 发推指出，Google 已解雇内部开发 Workspace CLI 工具的工程师，该工具此前在开发者社区颇受好评。</p>
+      <cite>@steipete</cite>
+    </article>
+
+    <article class="item">
+      <h3>@rauchg：X Chat 反馈小组 + Vercel 与 Cursor 深度整合</h3>
+      <p>Vercel CEO Rauch 透露正在组建 X Chat（xAI 产品）的早期反馈小组，同时宣布 Vercel 与 Cursor 的深度整合——一键从 Cursor 部署到 Vercel，无需离开编辑器。</p>
+      <cite>@rauchg</cite>
+    </article>
+
+    <article class="item">
+      <h3>@petergyang：Agent-first 设计原则 + Workspace CLI 消亡</h3>
+      <p>Peter Yang 整理"agent-first 产品设计"框架：UI 应为智能体优化而非人类点击优化；顺带评论 Workspace CLI 被砍——"这恰恰说明大公司还没想清楚 agent-first 意味着什么"。</p>
+      <cite>@petergyang</cite>
+    </article>
+
+    <article class="item">
+      <h3>@nikunj：Plug That Shop — AI 选品助手</h3>
+      <p>Nikunj 分享新工具 Plug That Shop，帮助独立卖家用 AI 快速完成选品分析与商品描述生成，目标用户是 Shopify 店主。</p>
+      <cite>@nikunj</cite>
+    </article>
+
+    <article class="item">
+      <h3>@joshwoodward：NotebookLM 新增"课堂评分"功能</h3>
+      <p>Google Labs Josh Woodward 展示 NotebookLM 最新功能：上传作业后 AI 可按自定义评分标准打分并给出反馈，面向教育场景。</p>
+      <cite>@joshwoodward</cite>
+    </article>
+
+    <article class="item">
+      <h3>@amasad：Replit 上线 K-coding 模式</h3>
+      <p>Replit CEO Amjad Masad 介绍 K-coding（Kids coding）模式：简化界面、引导式提示、即时可见输出，让 10 岁以下孩子能用 AI 完成第一个真实项目。</p>
+      <cite>@amasad</cite>
+    </article>
+
+    <article class="item">
+      <h3>@mattturck：世界杯期间 AI 流量峰值观察</h3>
+      <p>Matt Turck 分享数据：2026 世界杯期间，赛事相关 AI 查询量较去年同期增长 340%，搜索 AI 正式取代赛事官网成为实时比分的首选查询入口。</p>
+      <cite>@mattturck</cite>
+    </article>
+
+    <article class="item">
+      <h3>@thsottiaux：Codex 已知 bug 列表</h3>
+      <p>Thomas Sottiaux 整理了一份 OpenAI Codex 当前已知 bug 的社区追踪列表，涵盖上下文窗口截断、工具调用幻觉、多文件一致性三类主要问题。</p>
+      <cite>@thsottiaux</cite>
+    </article>
+
+    <article class="item">
+      <h3>@adityaag：Longshot Space — AI 卫星数据分析</h3>
+      <p>Aditya Agarwal 介绍 Longshot Space：用 AI 将原始卫星遥感数据转化为可操作的农业/气候洞察，已与数家保险公司签署 POC 协议。</p>
+      <cite>@adityaag</cite>
+    </article>
+
+    <article class="item">
+      <h3>@realmadhuguru：AI 价值链正在重新分配</h3>
+      <p>Madhu Guru 绘制 AI 产业价值链图：算力层利润被英伟达锁定，模型层竞争趋于商品化，价值正向垂直应用层与数据护城河转移。"谁拥有独特数据，谁就拥有下一个十年。"</p>
+      <cite>@realmadhuguru</cite>
+    </article>
+
+    <article class="item">
+      <h3>Tim Ferriss 播客：Sebastian Mallaby 谈 Demis Hassabis 与 DeepMind 史</h3>
+      <p>Tim Ferriss 新播客嘉宾 Sebastian Mallaby（《风险投资》作者）深度访谈 Demis Hassabis 及 DeepMind 二十年历程，话题涵盖 AlphaFold 决策过程、Google 收购后的文化冲突与 AI 安全立场演变。</p>
+      <cite>Tim Ferriss Podcast</cite>
+    </article>
+
+    <article class="item">
+      <h3>OpenAI 发布 Bidi 1：实时双向语音模式</h3>
+      <p>OpenAI 上线 Bidi 1 语音模式，支持真正的双向打断对话，延迟降至 300ms 以下，已向部分 Plus 用户灰度开放。</p>
+      <cite>OpenAI</cite>
+    </article>
+
+    <article class="item">
+      <h3>Meta Glasses 新款定价 $299</h3>
+      <p>Meta 公布下一代 Ray-Ban 智能眼镜起售价为 $299，内置摄像头与 AI 助手，续航提升至 8 小时，预计 Q3 开售。</p>
+      <cite>Meta</cite>
+    </article>
+
+    <article class="item">
+      <h3>Cursor 收购 Continue</h3>
+      <p>AI 代码编辑器 Cursor 宣布收购开源 AI 编程助手 Continue，将其上下文引擎整合进 Cursor 核心产品，Continue 团队全员加入。</p>
+      <cite>Cursor · Continue</cite>
+    </article>
+  </section>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-06-22.html">← JUN 22</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
