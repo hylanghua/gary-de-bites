@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — June 25, 2026</title>
+  <meta name="description" content="OpenAI 与 Broadcom 联合发布首款推理专用 AI 芯片 Jalapeño，AlphaFold 诺奖得主 John Jumper 加入 Anthropic。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">June 25, 2026</h1>
+
+  <p class="post-lead">OpenAI 与 Broadcom 联合发布首款推理专用 AI 芯片 Jalapeño，从设计到流片仅用九个月，正式宣告向全栈独立进发；AlphaFold 主创、诺贝尔化学奖得主 John Jumper 离开 DeepMind 加入 Anthropic，AI 科学研究人才战进入新阶段。同期：Meta 用 nightly agent 替代层层信息压缩链条重构 PM 角色，AINews 宣布"元调度层之夏"到来，GLM-5.2 以六分之一的价格对齐顶级闭源模型代码能力。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank" rel="noopener">OpenAI × Broadcom：首款推理专用 AI 芯片 Jalapeño 正式亮相</a></h3>
+      <p>OpenAI 与 Broadcom 联合发布 Jalapeño，一款专为 LLM 推理（inference，即把训练好的模型跑起来服务用户的计算过程）设计的定制 ASIC（专用芯片）。从零开始设计到流片仅用九个月，据称是高性能半导体史上最快的设计周期，OpenAI 自己的模型也参与了加速设计过程。社区对芯片规格的逆向推测显示：近全掩膜尺寸晶片、约 216GB HBM3E 内存、带宽约 7.1 TB/s。配合 Qualcomm 宣布收购编译器公司 Modular（Mojo 语言母公司），同一天内推理全栈的竞争格局被彻底重写。<strong>OpenAI 的战略意图一目了然：把算力变成自己可以控制的成本，而不是英伟达的利润。</strong></p>
+      <cite><a href="https://openai.com/index/openai-broadcom-jalapeno-inference-chip/" target="_blank" rel="noopener">OpenAI</a> · <a href="https://www.cnbc.com/2026/06/24/openai-and-broadcom-reveal-jalapeno-first-ai-chip-in-partnership.html" target="_blank" rel="noopener">CNBC</a> · <a href="https://x.com/swyx" target="_blank" rel="noopener">TLDR · AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/" target="_blank" rel="noopener">AlphaFold 主创 John Jumper 离开 DeepMind，加入 Anthropic</a></h3>
+      <p>2024 年诺贝尔化学奖得主、AlphaFold 的核心设计者 John Jumper 在 DeepMind 工作近九年后宣布离职，加入 Anthropic。这一消息与 Noam Shazeer（Gemini 联合主创）离开 Google 加入 OpenAI 发生在同一周，成为 2026 年前沿人才流动最密集的一轮。Anthropic 此前已开始在 AI for Science 方向布局，建立湿实验室、发布生物工作流 agent 研究，并与 Allen Institute 及霍华德休斯医学研究所达成合作协议。<strong>一位现役诺贝尔奖得主跳槽，不是行业常规招募，而是 Anthropic 押注 AI 科学研究赛道的标志性动作。</strong></p>
+      <cite><a href="https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/" target="_blank" rel="noopener">TechCrunch</a> · <a href="https://x.com/bensbites" target="_blank" rel="noopener">Ben's Bites</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://venturebeat.com/technology/z-ais-open-weights-glm-5-2-beats-gpt-5-5-on-multiple-long-horizon-coding-benchmarks-for-1-6th-the-cost" target="_blank" rel="noopener">GLM-5.2 在代码竞技场登顶：1/6 的价格，持平甚至超越 GPT-5.5</a></h3>
+      <p>Z.ai（智谱）发布的 753B 参数开源模型 GLM-5.2 以 MIT 许可证开放，API 定价约为 GPT-5.5 的六分之一，但在多项长程编码基准上已与闭源顶尖模型并肩甚至领先：SWE-bench Pro 得分 62.1（领先），Code Arena: Frontend 排名第一，ARC-AGI-2 得 22.8%（fchollet 称为开源模型迄今最强结果）。CoreWeave、Baseten、Cursor 同步跟进推出 GLM-5.2 的托管/集成服务。<strong>开源模型正式结束"追赶者"身份，闭源定价护城河在代码场景被凿开了一个洞。</strong></p>
+      <cite><a href="https://venturebeat.com/technology/z-ais-open-weights-glm-5-2-beats-gpt-5-5-on-multiple-long-horizon-coding-benchmarks-for-1-6th-the-cost" target="_blank" rel="noopener">VentureBeat</a> · <a href="https://x.com/swyx" target="_blank" rel="noopener">AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.figma.com/blog/config-2026-recap/" target="_blank" rel="noopener">Figma Config 2026：Code Layers、原生动效、AI GPU Shader 三连发</a></h3>
+      <p>Figma 在年度大会上推出三项能力：Code Layers 让设计师把任意图层一键转换为可运行的 React 代码，配套内联代码编辑器与 AI Chat，支持 npm 包与 3D 框架；Figma Motion 将动效时间轴内置进设计文件，输出格式覆盖 CSS/React/MP4/GIF；AI Shader 允许用自然语言或参考图片生成 GPU 着色器（可实时调参）。同时新增对 Notion、GitHub 等外部工具的 agent 集成，以及允许 Cursor/Codex 等外部 agent 直接在共享 Figma 文件中操作。<strong>设计与开发之间的文件边界正在消失，Figma 的赌注是：成为人与 agent 协作的统一画布。</strong></p>
+      <cite><a href="https://www.figma.com/blog/config-2026-recap/" target="_blank" rel="noopener">Figma Blog</a> · <a href="https://techcrunch.com/2026/06/24/figma-adds-code-layers-support-for-animations-more-ai-features-in-new-update/" target="_blank" rel="noopener">TechCrunch</a> · <a href="https://x.com/bensbites" target="_blank" rel="noopener">Ben's Bites</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3>Aaron Levie（Box CEO）：Claude Tag 的真正难点是 agent 身份与权限隔离</h3>
+      <p>Levie 拆解了 Claude Tag 架构中常被忽视的细节：这不是"你的 Claude 扩展到了 Slack"，而是一个在团队工作空间里拥有自己身份（credentials，即访问令牌与权限凭证）的独立 agent。每位用户无法把自己的私有工具和数据暴露给这个共享 agent，否则任何人都能通过 Tag 间接读取；agent 需要像团队普通成员一样被单独授权——它能访问哪些销售资料、哪些产品路线图文档、哪些法务合同，必须在授权层面显式决定。</p>
+      <p>Levie 预判下一步：随着越来越多团队把 agent 接进企业内容与数据系统，"给 agent 开账号、设权限、做审计"将成为 IT 和安全团队的标配工作，而不是 AI 产品的附加功能。<strong>把 agent 当同事管理，而不是当工具使用，这个心智模型的切换才是企业 AI 真正落地的门槛。</strong></p>
+      <cite><a href="https://x.com/levie/status/2069975251476422664" target="_blank" rel="noopener">X @levie</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/ainews-its-meta-harness-summer" target="_blank" rel="noopener">AINews：Meta-Harness Summer — 元调度层（meta-harness）正在被 1000 家公司独立重新发明</a></h3>
+      <p>Latent Space / swyx 的 AINews 将本周命名为"元调度层之夏"：在 Claude Code SDK、Cursor、OpenAI Codex 等各家 agent harness（调度框架，即管理多个 AI 的执行环境与权限系统）之上，正在出现 harness of harnesses——统一调度各家 agent 的更高一层编排系统。Databricks CTO Matei Zaharia 主导的 Omnigent 是目前最受关注的开源尝试：插件化架构、可接入任意 coding 或 knowledge work agent、内置安全与可靠性层。</p>
+      <p>AINews 的核心观察不是 Omnigent 本身会不会成功，而是这个架构模式正在被至少 1000 家 AI 原生公司独立重新发明——这意味着某种开源协调层的胜出已经不可避免，问题只是谁来定义标准。类比：MCP（Model Context Protocol）的成功有其架构必然性，元调度层也正走向类似轨迹。<strong>AI 基础设施的下一层抽象不在模型侧，在编排侧——这是今年最值得追踪的架构演化方向之一。</strong></p>
+      <cite><a href="https://www.latent.space/p/ainews-its-meta-harness-summer" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Guillermo Rauch（Vercel CEO）：AI 将带来史上最大规模的创业浪潮</h3>
+      <p>Rauch 在 X 上发表了一则观察：从独立创业者（solopreneurs）到中小企业复兴，再到有史以来规模最大的公司诞生，AI 将同时在创业生态的三个层次引发结构性变化——而 Vercel 把自己定位为"这一切的底层基础设施"。这个判断的背后逻辑是：AI 大幅降低了启动成本、拓展了单人能撬动的杠杆，小团队第一次拥有了与大公司竞争的工具层。<strong>创业经济的扩张不靠人口红利，靠 agent 密度——这句话今年开始有了实证基础。</strong></p>
+      <cite><a href="https://x.com/rauchg/status/2070001110866354345" target="_blank" rel="noopener">X @rauchg</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.lennysnewsletter.com/p/how-meta-is-reinventing-product-management" target="_blank" rel="noopener">Meta 如何重塑 PM 角色：夜间 agent 取代信息压缩链条</a></h3>
+      <p>Lenny Rachitsky 对话 Meta VP of Product Jagjit Chawla（负责 Facebook Feed、Reels 与 Search），核心洞察是：Meta 已经把 PM 工作的机械层完全 agent 化。Chawla 将过去的信息传递机制称为"压缩算法"：工程师知道 commit 的真相，经理提炼，到 VP 层已经是三手摘要。现在，一个 nightly agent（每晚自动运行一次的 AI 程序）直接扫描原始代码提交，告诉高管昨晚真正发生了什么，没有中间层。</p>
+      <p>PRD（产品需求文档）从几十页缩成一段话加一个原型，高管的周会从看团队准备的 deck 变成审阅 agent 写的文档。Chawla 的结论是：当想法变得廉价（ideas got cheap），判断好想法就成了 PM 最核心的工作，而 PM 正在变成整个研发流程的最大瓶颈。这些变化不是从总部颁布的，是各团队自己在一个晚上用现有工具搭起来的。<strong>当 agent 接管了信息传递，管理层的价值不再是"让信息流动"，而是"判断什么值得做"。</strong></p>
+      <cite><a href="https://www.lennysnewsletter.com/p/how-meta-is-reinventing-product-management" target="_blank" rel="noopener">Lenny's Newsletter</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://every.to/chain-of-thought/codex-for-everything-and-everyone" target="_blank" rel="noopener">Every：Codex 走出开发者圈——知识工作者增速是开发者 3 倍，但 onboarding 仍是软肋</a></h3>
+      <p>Every 作者 Katie Parrott 更新了 Codex（OpenAI 的 agent 编程工具）使用指南，并附上了关键数据：Codex 目前有 500 万周活用户，其中知识工作者（非工程师）占约 20%，但增速是开发者的三倍以上。OpenAI 正在押注这个趋势：上线了面向财务分析师、PM 等角色的插件，以及 Sites 功能（让 agent 把任何输出直接发布为可浏览的页面）。</p>
+      <p>Parrott 的核心批评是：Codex 的灵活性是优势，也是新用户的拦路虎。"我接触过的很多人对 AI 感兴趣，但对 Codex 不知道从哪里开始"——没有足够的上手引导，产品的强大反而让人无从入手。<strong>Codex 正在从工程师工具变成知识工作平台，但还没解决"第一个项目"的冷启动问题。</strong></p>
+      <cite><a href="https://every.to/chain-of-thought/codex-for-everything-and-everyone" target="_blank" rel="noopener">Every</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://xiaobot.net/post/56ccbaea-57cb-46e9-be02-4a6bfebd08c7" target="_blank" rel="noopener">静止的量子 Vol.20260625：清华 DISH——3D 打印从"逐层制造"到"瞬间制造"</a></h3>
+      <p>修饼介绍了清华大学最新发明的 DISH（Dynamic Illumination Simultaneous Holographic）3D 打印技术：不再一层一层堆积材料，而是从四面八方同时投射数千幅精确计算的光图案，让液态光敏树脂在 0.6 秒内于三维空间中同时固化。整个过程几乎没有机械运动，精度可达十几微米（比头发丝还细），因为液体始终保持静止，还能使用水凝胶等低粘度生物材料。</p>
+      <p>修饼把这个技术转变用一句话概括："过去是在二维平面上一层层堆出三维世界，现在是第一次真正实现了整个三维空间同时成型。"目前的限制：仅适用于毫米级小尺寸物体，距离工业级大尺寸还有距离。<strong>DISH 不是把 3D 打印做得更快，而是根本改变了"制造"这件事的时间逻辑。</strong></p>
+      <cite><a href="https://xiaobot.net/post/56ccbaea-57cb-46e9-be02-4a6bfebd08c7" target="_blank" rel="noopener">小报童 · 静止的量子（修饼）</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Zara Zhang：拖延的根源不是时间，而是勇气</h3>
+      <p>"The root cause of procrastination is not the lack of time. It's the lack of courage." Zara Zhang 用一句话精准戳破了"没时间"这个最常见的自我叙事——大多数时候，我们不是时间不够，而是面对某件值得做的事感到恐惧，然后用忙来填满那个空间。Figma Config 上她引述的另一个洞察形成了互文："Community is your users' relationships with you and with each other... Community is the new moat. Features get copied. Belonging can't." 一个关于内部阻力，一个关于外部护城河，底层都是同一种东西：无法复制的关系。<strong>时间管理工具解决不了勇气问题，行动所需要的不是更多计划，而是更少回避。</strong></p>
+      <cite><a href="https://x.com/zarazhangrui/status/2069908420384428132" target="_blank" rel="noopener">X @zarazhangrui</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.24855" target="_blank" rel="noopener">OpenThoughts-Agent：agentic 模型训练数据配方，100+ 消融实验</a></h3>
+      <p><strong>现状：</strong>训练 agentic 模型（能在真实环境中执行多步任务的 AI）的数据来源分散，缺乏系统对比实验。</p>
+      <p><strong>问题：</strong>不清楚哪类任务数据、哪种数据多样性、哪种训练规模策略对 agent 能力提升贡献最大。</p>
+      <p><strong>解决方案：</strong>Stanford 团队开源了 OpenThoughts-Agent v2，整合完整数据筛选流水线，构建 100K 样本训练集并进行 100+ 受控消融实验，系统比较不同数据源、指令格式、执行轨迹长度对结果的影响。</p>
+      <p><strong>价值：</strong>在 Qwen3-32B 上微调后，七项 agentic 基准平均得分 44.8%（对比最强现有开源数据集 Nemotron-Terminal-32B 的 40.9%，提升 3.9 个百分点），且在每个训练规模下均领先替代数据集。</p>
+      <p><strong>未来方向：</strong>研究者称这是 DataComp/OpenThoughts 系列的延伸，将持续开放数据配方以支持开放 agentic 研究生态。</p>
+      <cite><a href="https://arxiv.org/abs/2606.24855" target="_blank" rel="noopener">arXiv 2606.24855</a> · <a href="https://huggingface.co/papers/2606.24855" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.19755" target="_blank" rel="noopener">SafeSpec：把越狱攻击建模为分布偏移，在 speculative decoding 内实现安全与速度兼得</a></h3>
+      <p><strong>现状：</strong>LLM 推理加速常用 speculative decoding（推测解码，先用小模型草拟输出再用大模型验证）提升吞吐量，但安全防护与推理加速通常相互竞争。</p>
+      <p><strong>问题：</strong>越狱攻击（jailbreak）会在输出分布上引入可检测的偏移，但现有防护机制要么拖慢推理，要么只在最终输出层介入。</p>
+      <p><strong>解决方案：</strong>SafeSpec 将越狱信号建模为动态分布变化，在 speculative decoding 流程内部做风险感知的轨迹恢复，无需额外安全检查。</p>
+      <p><strong>价值：</strong>在 Qwen3-32B 上，攻击成功率降低 15%，正常任务的推理速度仍保持 2.06x 加速——安全不以吞吐量为代价。</p>
+      <p><strong>未来方向：</strong>将框架扩展到多模态推理场景。</p>
+      <cite><a href="https://arxiv.org/abs/2606.19755" target="_blank" rel="noopener">arXiv 2606.19755</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.24649" target="_blank" rel="noopener">Agentic Collaborative Cognition：多 MLLM agent 协作实现零样本三维场景理解</a></h3>
+      <p><strong>现状：</strong>三维场景理解（3D scene understanding）需要整合视觉、空间推理与多视角信息，单一多模态大模型（MLLM，即可以同时理解图像与文字的 AI）难以覆盖所有维度。</p>
+      <p><strong>问题：</strong>如何在零样本（zero-shot，不针对特定任务额外训练）条件下，利用现有 MLLM 完成三维理解？</p>
+      <p><strong>解决方案：</strong>提出 Agent Collaborative Cognition 框架，让多个 MLLM agent 各自负责不同感知维度（空间关系、物体属性、场景结构），通过结构化协作与信息聚合完成整体判断。</p>
+      <p><strong>价值：</strong>零样本场景下显著超越单模型基线，无需针对三维数据额外微调。</p>
+      <p><strong>未来方向：</strong>扩展到具身 agent（embodied agent）的实时环境理解场景。</p>
+      <cite><a href="https://arxiv.org/abs/2606.24649" target="_blank" rel="noopener">arXiv 2606.24649</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.19308" target="_blank" rel="noopener">Multi-Agent Fictitious Play：用博弈论框架让 LLM 多智能体决策迭代收敛</a></h3>
+      <p><strong>现状：</strong>多智能体系统（multi-agent system）中，多个 LLM 协同做决策时常陷入震荡或不收敛，缺乏理论保证。</p>
+      <p><strong>问题：</strong>如何让 LLM 多智能体在对抗或协作场景中的决策行为具有可预测的收敛性？</p>
+      <p><strong>解决方案：</strong>借用博弈论中的虚构博弈（fictitious play）机制——每个 agent 根据对手过去行为的历史分布更新自己的策略，逐轮迭代直至纳什均衡。</p>
+      <p><strong>价值：</strong>在多种博弈任务上显示 LLM agent 可以通过此机制达到稳定策略，为多智能体 AI 系统的可靠性分析提供了理论抓手。</p>
+      <p><strong>未来方向：</strong>应用于现实中的谈判、协商与资源分配 agent 场景。</p>
+      <cite><a href="https://arxiv.org/abs/2606.19308" target="_blank" rel="noopener">arXiv 2606.19308</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2603.07670" target="_blank" rel="noopener">Memory for Autonomous LLM Agents：write-manage-read 循环与五类记忆机制综述</a></h3>
+      <p><strong>现状：</strong>LLM agent 的记忆能力（即在多轮任务中保留、检索、更新信息的机制）是 2026 年 agent 基础设施争论最激烈的层次之一。</p>
+      <p><strong>问题：</strong>记忆的设计空间太分散，缺乏统一的分类框架和评估标准。</p>
+      <p><strong>解决方案：</strong>本综述将 agent 记忆形式化为 write-manage-read 循环，整理五类核心机制：上下文压缩（context-resident compression）、检索增强存储（retrieval-augmented stores）、反思式自我更新（reflective self-improvement）、层次虚拟上下文（hierarchical virtual context）、策略学习管理（policy-learned management）。</p>
+      <p><strong>价值：</strong>提供 2022–2026 年 agent 记忆研究的完整导航地图，并指出记忆应作为完整数据管理层（含存储/检索/更新/生命周期）来评估，而非仅靠端任务成功率判断。</p>
+      <p><strong>未来方向：</strong>记忆正在从"上下文拼接"演进为异步基础设施——Weaviate Engram 等系统已将记忆提炼/去重/生命周期管理作为独立服务层。</p>
+      <cite><a href="https://arxiv.org/abs/2603.07670" target="_blank" rel="noopener">arXiv 2603.07670</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+
+    <ul class="glance-list">
+      <li>@swyx：软件工厂（Software Factory）时代到来，计算、存储、网络的端到端基础设施需要从头重建 <a class="glance-src" href="https://x.com/swyx" target="_blank" rel="noopener">@swyx</a></li>
+      <li>@thsottiaux：OpenAI 内部 Slack 的精彩程度不输 Twitter，大模型公司的信息密度果然不同 <a class="glance-src" href="https://x.com/thsottiaux" target="_blank" rel="noopener">@thsottiaux</a></li>
+      <li>@petergyang：用 Claude 在 Artifacts 中复现多款移动端 UI，视觉还原度令人惊讶 <a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">@petergyang</a></li>
+      <li>@AmandaAskell：世界杯现场：Brazil 保住领先，实时发出"No more goals plz brazil, thank you" <a class="glance-src" href="https://x.com/AmandaAskell" target="_blank" rel="noopener">@AmandaAskell</a></li>
+      <li>@GoogleLabs：Project Genie 赢得戛纳 AI 创意大奖，交互式生成游戏世界的概念首次在广告节亮相 <a class="glance-src" href="https://x.com/GoogleLabs" target="_blank" rel="noopener">@GoogleLabs</a></li>
+      <li>@rauchg：GLM-5.2 超快推理版本现已在 Vercel 平台上线，可直接调用 <a class="glance-src" href="https://x.com/rauchg" target="_blank" rel="noopener">@rauchg</a></li>
+      <li>@ryolu_：Cursor × Notion 双向集成上线，可在 Cursor 内直接浏览与编辑 Notion 文档 <a class="glance-src" href="https://x.com/ryolu_" target="_blank" rel="noopener">@ryolu_</a></li>
+      <li>@garrytan：SF 市政：城市检察官 Brooke Jenkins 公开支持 Jackie Fielder 辞职，政治局势持续紧张 <a class="glance-src" href="https://x.com/garrytan" target="_blank" rel="noopener">@garrytan</a></li>
+      <li>@zarazhangrui：Figma Config 感想——社区是新的护城河，归属感与被认可感无法被代码复制 <a class="glance-src" href="https://x.com/zarazhangrui" target="_blank" rel="noopener">@zarazhangrui</a></li>
+      <li>@nikunj：发现天然优势——对你显而易见、但对别人极难的事，往往就是你该做的事 <a class="glance-src" href="https://x.com/nikunj" target="_blank" rel="noopener">@nikunj</a></li>
+      <li>@danshipper：Edwin Chen 播客视频版：AI 没有内在动机，人类创作将从"必要"变成"选择"，重新成为一种意义 <a class="glance-src" href="https://x.com/danshipper" target="_blank" rel="noopener">@danshipper</a></li>
+      <li>@adityaag：领导力观察——此时做决策需要恐惧与谦逊并存，引自 Snowflake CEO 近期采访 <a class="glance-src" href="https://x.com/adityaag" target="_blank" rel="noopener">@adityaag</a></li>
+      <li>GPT-5.5 Instant 小版本更新：聊天更自然，意图理解更准确 <a class="glance-src" href="https://x.com/aibrief" target="_blank" rel="noopener">AI Valley</a></li>
+      <li>Claude Fable 5 继续小范围灰度，仍无官方发布公告 <a class="glance-src" href="https://x.com/aibrief" target="_blank" rel="noopener">AI Valley</a></li>
+      <li>Intercept 项目：Stripe + Anthropic 联合出资 5 亿美元，目标是用 AI 消灭普通感冒 <a class="glance-src" href="https://tldr.tech/ai" target="_blank" rel="noopener">TLDR</a></li>
+      <li>Tesla + Sunrun 宣布 16 GW 规模虚拟电厂计划，应对数据中心电力需求激增 <a class="glance-src" href="https://tldr.tech/ai" target="_blank" rel="noopener">TLDR</a></li>
+      <li>Gemini 3.5 Flash 新增计算机控制（Computer Use）功能，已在 Gemini API 开放 <a class="glance-src" href="https://bensbites.com" target="_blank" rel="noopener">Ben's Bites</a></li>
+      <li>Notion 开发者平台升级：支持外部 agent 通过 API 访问并修改工作空间内容 <a class="glance-src" href="https://bensbites.com" target="_blank" rel="noopener">Ben's Bites</a></li>
+      <li>Qualcomm 宣布收购 Modular，Mojo 语言保持开源，AI 编译器栈整合加速 <a class="glance-src" href="https://x.com/swyx" target="_blank" rel="noopener">AINews</a></li>
+      <li>Anthropic 起诉 Alibaba 旗下运营商，指控其用约 2800 万次 Claude 对话蒸馏 Qwen 能力 <a class="glance-src" href="https://x.com/swyx" target="_blank" rel="noopener">AINews</a></li>
+      <li>Engram：每日更新你个人 AI 模型的新实验室，把"记忆层"做到极致 <a class="glance-src" href="https://bensbites.com" target="_blank" rel="noopener">Ben's Bites</a></li>
+      <li>Harvey Labs：法律 AI 基础模型 Harvey-1 与开放评估集同步发布 <a class="glance-src" href="https://bensbites.com" target="_blank" rel="noopener">Ben's Bites</a></li>
+    </ul>
+  </section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-06-24.html">← JUN 24</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
