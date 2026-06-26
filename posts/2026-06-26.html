@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — June 26, 2026</title>
+  <meta name="description" content="Trump 政府要求 OpenAI 为 GPT-5.6 设定 20 家合作伙伴优先接入名单，AI 监管从口号走向模型层落地；Apple 上调 Mac/iPad 定价 15-25%，AI 对内存芯片的暴增需求正向消费端传导。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">June 26, 2026</h1>
+
+  <p class="post-lead">Trump 政府要求 OpenAI 为 GPT-5.6 设定 20 家合作伙伴优先接入名单，AI 监管从口号走向模型层落地；Apple 上调 Mac/iPad 定价 15-25%，AI 对内存芯片的暴增需求正向消费端传导；OpenAI 披露内部 Codex 使用量六个月涨 56 倍，Sail Research 以 8000 万美元押注"长时 agent"基础设施。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://links.tldrnewsletter.com/CDE0nJ" target="_blank" rel="noopener">Trump 政府要求 OpenAI 分批释出 GPT-5.6，首批限 20 家 Amazon Bedrock 合作伙伴</a></h3>
+      <p>美国政府要求 OpenAI 在 GPT-5.6 正式公开前，先向一批受信任合作伙伴限量发布。首批 20 家机构将通过 Amazon Bedrock 软件平台接入，OpenAI 员工也被要求配合 Trump 政府在安全与限制方面的审查意见。这一举措与 Anthropic 六月初遭遇的 Fable 5 / Mythos 5 停服令前后呼应：前者是政府主动叫停已上线模型，此次则是在发布前就介入分级管控。两个事件的本质都是同一个信号：美国政府正在将顶级前沿模型纳入出口管制的"可开关"范围，而不是在应用层面逐案审查。</p>
+      <cite><a href="https://links.tldrnewsletter.com/CDE0nJ" target="_blank" rel="noopener">TLDR</a> · <a href="https://www.latent.space/p/ainews-openai-reports-median-internal" target="_blank" rel="noopener">AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://links.tldrnewsletter.com/erJX1l" target="_blank" rel="noopener">Apple 上调 Mac 定价 15-20%、iPad 定价 15-25%，AI 算力需求已蔓延至消费端</a></h3>
+      <p>Apple 宣布上调 Mac 电脑和 iPad 的官方售价，部分型号涨幅超过 200 美元。iPhone 价格暂未调整，但市场预计涨价只是时间问题。原因直指芯片供应链：过去一年间，HBM（高带宽内存）和存储芯片的价格已经涨了四倍，驱动因素是 AI 超算中心（hyperscaler）对内存的爆炸式抢购。这意味着 AI 算力扩张的成本不再只由云厂商承担，正通过制造成本层层传导，最终落在普通消费者身上。</p>
+      <cite><a href="https://links.tldrnewsletter.com/erJX1l" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arstechnica.com/gadgets/2026/06/ibm-claims-worlds-first-sub-1-nanometer-chip-technology/" target="_blank" rel="noopener">IBM 声称率先突破 1nm 芯片门槛，0.7nm 纳米叠层架构公布</a></h3>
+      <p>IBM 宣布开发出业界首个亚 1 纳米（sub-1nm）芯片架构，命名为 nanostack（纳米叠层）。这套设计以错位堆叠方式排列晶体管（芯片上控制电流通断的最小单元），在相同面积内封装更多计算单元。IBM 将其标注为 0.7nm 节点，但需注意：芯片行业"多少纳米"的命名早已是营销标签而非实际尺寸，真实物理尺寸更大。即便如此，这项技术若能量产，将提供 Moore 定律极限下最直接的密度突破路径。</p>
+      <cite><a href="https://arstechnica.com/gadgets/2026/06/ibm-claims-worlds-first-sub-1-nanometer-chip-technology/" target="_blank" rel="noopener">Ars Technica</a> · <a href="https://tldr.tech" target="_blank" rel="noopener">TLDR</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3>Aaron Levie（Box CEO）：对"模型层"管控才是 AI 监管的真正转折点</h3>
+      <p>围绕 Anthropic Fable 5 / Mythos 5 停服事件，Box CEO Aaron Levie 在 X 上发表了最犀利的一则政策分析。他指出，以往 AI 监管讨论总是停留在"应用层"——谁能做什么、哪些场景需要审批。这次美国政府直接在"模型层"下手，本质上等于政府获得了决定哪个模型能在全球范围存在、谁能访问的最终控制权。</p>
+      <p>Levie 认为，这一前例的连锁反应比事件本身更值得关注：其他国家看到后，会加速研发自己的主权 AI 能力，而最可能的路径是拥抱开源模型——因为开源模型可以本地部署、无法被外国政府一道令切断。他把这件事称为"AI 监管话语的真正转折点"，不是因为它解决了问题，而是因为它提前展示了大规模管控最终会长什么样子。</p>
+      <strong>模型层的开关权落到政府手里，是 AI 治理史上比任何法规条文都更直接的事实。</strong>
+      <cite><a href="https://x.com/levie/status/2065842361834651996" target="_blank" rel="noopener">X @levie</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Swyx / AINews：OpenAI 内部 Codex 六个月涨 56 倍，真实的 agent 拐点正在发生</h3>
+      <p>OpenAI 发布内部数据：从 2025 年 11 月到 2026 年 6 月，内部员工使用 Codex（OpenAI 的自主编码 agent，能独立完成数小时乃至数天的编程任务）的输出 token 用量在研究部门涨了 56 倍，客服部门涨 32 倍，工程部门涨 27 倍，法务部门涨 13 倍。数据采样显示，80.6% 的活跃用户每次 Codex 请求预计需要超过 30 分钟的人工等效时间。</p>
+      <p>Swyx 在 AINews 中将这组数据称为"写入 WTF Happened in 2025？档案"。他的观察：即使是有完全免费访问权限的 OpenAI 员工，在 2025 年底之前都还在大幅低估 AI 的使用量。真正的爆发不是模型能力跃升，而是人们终于学会了怎么把它用起来。这与过去若干月许多分析者描述的"agent 大规模落地"叙事形成了第一次真实可测量的佐证。</p>
+      <strong>56 倍不是 Codex 的能力涨了 56 倍，而是使用者对"AI 能干多长任务"的信任边界，在六个月内扩展了 56 倍。</strong>
+      <cite><a href="https://www.latent.space/p/ainews-openai-reports-median-internal" target="_blank" rel="noopener">AINews / Latent Space</a> · <a href="https://openai.com/index/how-agents-are-transforming-work/" target="_blank" rel="noopener">OpenAI</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://siliconangle.com/2026/06/25/sail-research-raises-80m-optimize-long-horizon-ai-agents/" target="_blank" rel="noopener">Sail Research 融资 8000 万美元：专为"跑数周"的 agent 优化低成本推理</a></h3>
+      <p>Sail Research 以 4.5 亿美元估值完成融资，由 Sequoia 领投，Intel CEO Lip-Bu Tan 和 Alphabet 董事长 John Hennessy 等人参投。公司核心产品是 Sailbox：基于 Linux 虚拟机的 agent 运行环境，开发者可以安装自定义镜像并把多个 Sailbox 组成 agent 集群，支持连续运行数周的任务。他们声称同等任务下成本是竞争对手的十分之一，技术路径是在多个开源推理引擎上做深度定制优化。</p>
+      <p>背景是：市场上现有的推理服务都为"快速交互响应"优化，而 agent 的使用模式截然不同——一个研究 agent 可能需要 72 小时不间断运行，定价模型和基础设施设计都得重新来。Sail 的出现说明"长时 agent"已经是独立的工程赛道，而不只是把现有 API 叠加使用。</p>
+      <strong>agent 基础设施正在从通用推理服务里独立出来，就像十五年前数据库从通用服务器里独立出来一样。</strong>
+      <cite><a href="https://siliconangle.com/2026/06/25/sail-research-raises-80m-optimize-long-horizon-ai-agents/" target="_blank" rel="noopener">SiliconANGLE</a> · <a href="https://www.latent.space/p/ainews-openai-reports-median-internal" target="_blank" rel="noopener">AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://every.to/source-code/claude-code-is-the-openclaw-alternative-you-already-have" target="_blank" rel="noopener">Claude Code 是你已经拥有的 OpenClaw 替代品（Every.to · Nityesh Agarwal）</a></h3>
+      <p>Every.to 工程师 Nityesh Agarwal 写道：OpenClaw（一个开源 AI agent 框架，60 天内成为 GitHub 历史上 star 增速最快的项目，三星 Altman 亲自招募其创始人）的爆红令人困惑——因为 Claude Code 早在 14 个月前就能做 OpenClaw 能做的所有事：调用工具、管理文件、自主运行数小时。两者本质上都是"model harness"（模型套壳，即给 AI 模型提供工具访问权限和任务执行框架的外壳）。差别不在能力，在于 OpenClaw 被定义为"AI agent 平台"，Claude Code 被定义为"编程工具"。</p>
+      <p>Every 团队在内部同时用过两者，开发了 Claudie（一个自动化后台业务的 AI 员工）。他们的结论：OpenClaw 的初始热情正在冷却，Claude Code 才是当下构建 AI assistant 最强的平台。这不只是产品偏好，更是一个分类问题的警示——人们总是先看标签，再看能力。</p>
+      <strong>Anthropic 把全功能 agent 运行时发布出来了，只是叫错了名字。</strong>
+      <cite><a href="https://every.to/source-code/claude-code-is-the-openclaw-alternative-you-already-have" target="_blank" rel="noopener">Every.to · Source Code</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Garry Tan（YC 总裁）：Legora 是法律 AI 的定义者，Cooley GO Lab 与 YC 今日落地合作</h3>
+      <p>YC 总裁 Garry Tan 在 X 上发文祝贺 Legora，称其为"全球增速最快的法律科技 AI 公司"。配合这一表态，Cooley 律所本周宣布推出 Cooley GO Lab，以 Legora 为底层平台，专为 YC 创业公司提供 AI 辅助法律服务。Legora 于今年 4 月完成 Series D 延伸融资，估值 56 亿美元，ARR（年度经常性收入）已破 1 亿美元。该公司起步于 YC 2024 冬季批次，从法律工作的单一环节拓展为涵盖研究、审阅与起草的整合平台。</p>
+      <p>律所是一个典型的"专业知识壁垒极高、重复性工作极多"的领域——正是 AI 最容易切入的结构。Legora 的竞争对手 Harvey 也面临同等增速压力，两者共同描绘出一个专业服务 AI 市场从原型走向百亿估值的速度正在加快的图景。</p>
+      <strong>专业知识的溢价正在被 AI 系统性压缩，法律行业是第一个规模超过 50 亿美元的压力测试场。</strong>
+      <cite><a href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan</a> · <a href="https://www.cooley.com/news/coverage/2026/2026-06-23-cooley-launches-cooley-go-lab-powered-by-legora-for-y-combinator-startups" target="_blank" rel="noopener">Cooley</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://xiaobot.net/post/56ccbaea-57cb-46e9-be02-4a6bfebd08c7" target="_blank" rel="noopener">修饼：3D 打印进入"瞬间制造"时代，清华 DISH 技术 0.6 秒完成一个三维实体</a></h3>
+      <p>清华大学最近发明了一种名为 DISH 的 3D 打印技术，完全颠覆了"一层一层堆积"的传统思路。传统 3D 打印像盖楼，物体越高、耗时越长。DISH 则是把整个容器装满液态光敏树脂，从四面八方同时投射数千幅精确计算过的光图案——这些光束在液体内部叠加，只有能量达到阈值的位置才发生固化，其余位置保持液态。整个三维实体在三维空间里同时成型，耗时仅 0.6 秒。</p>
+      <p>修饼强调了这项技术真正神奇的地方：液体从头到尾静止不动，真正在动的只有光。因此打印精度极高，最细结构只有十几微米，比头发丝更细。更重要的是，它能使用低粘度材料，未来有望打印水凝胶、生物组织、人工血管。目前还局限于毫米级小尺寸物体，但改变的不只是速度，而是制造的逻辑本身：从"二维叠加"到"三维同时成型"。</p>
+      <strong>三维打印终于从"时间轴上一点一点画"，变成了"在空间里一瞬间召唤"。</strong>
+      <cite><a href="https://xiaobot.net/post/56ccbaea-57cb-46e9-be02-4a6bfebd08c7" target="_blank" rel="noopener">小报童 · 修饼（静止的量子）</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://blog.grandimam.com/posts/repricing-of-software-engineering-labor/" target="_blank" rel="noopener">软件工程师劳动力重新定价：做"AI 工程师"不是护城河</a></h3>
+      <p>TLDR 精选的一篇观点文章直指当下最流行的职业误区："AI 工程师"作为身份标签已经严重拥挤，这个工具层的迭代速度极快，今天拿过认证的技术栈可能明年就被替代。AI 能帮人搭建原型，但把原型推向生产（production，指在真实负载下稳定运行的系统）是完全不同的事，需要的是对可靠性、可扩展性、安全性、性能、可观察性和运维权衡的深刻理解。</p>
+      <p>文章的核心论点：在 AI 工具把生产力均质化的时代，真正稀缺的反而是把"一件极难的事"做到极致的专深能力（depth），而不是掌握 N 种 AI 工具的广度（breadth）。</p>
+      <strong>工具民主化的结果，是广度变成商品，深度变成护城河。</strong>
+      <cite><a href="https://blog.grandimam.com/posts/repricing-of-software-engineering-labor/" target="_blank" rel="noopener">TLDR</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.ornith.site/" target="_blank" rel="noopener">Ornith-1.0：自我进化的 RL 脚手架 coding agent，SWE-Bench Verified 82.4</a></h3>
+      <p><strong>现状：</strong>DeepReinforce 发布 Ornith-1.0 系列（9B 到 397B MoE 四个尺寸），MIT 许可证完全开源，基于 Gemma 4 和 Qwen3.5 后训练。</p>
+      <p><strong>问题：</strong>现有 coding agent 的 RL 训练中，"如何规划、调用工具、检查中间结果、修复失败步骤"的脚手架流程（scaffold，即控制 agent 行为的外层框架）是人工设计的，固定不变，成了性能瓶颈。</p>
+      <p><strong>解决方案：</strong>Ornith-1.0 将脚手架本身作为可学习对象，与模型策略联合优化——模型会在 RL 训练过程中自动生成、修改自己的执行计划框架。Ornith-1.0-9B（可在边缘设备部署）在 SWE-Bench Verified 上达 69.4，相当于远大于其体量的模型。</p>
+      <p><strong>价值：</strong>397B 版本 SWE-Bench Verified 82.4，超越 Claude Opus 4.7；SWE-Bench Pro 62.2，与 GLM-5.2 持平。Terminal-Bench 2.1 得分 77.5。</p>
+      <p><strong>未来方向：</strong>自我进化脚手架是否可以推广到编程以外的 agent 场景——搜索、写作、科学研究——将是接下来的关键验证。</p>
+      <cite><a href="https://www.ornith.site/" target="_blank" rel="noopener">Ornith</a> · <a href="https://github.com/deepreinforce-ai/Ornith-1" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.latent.space/p/ainews-openai-reports-median-internal" target="_blank" rel="noopener">AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>OpenRath：类 PyTorch 的多 agent 运行时，Session 抽象支持 fork/merge/replay</h3>
+      <p><strong>现状：</strong>多 agent 系统的工程复杂度高，各框架接口不统一，执行状态难以追踪和回放。</p>
+      <p><strong>问题：</strong>当多个 agent 需要分支、合并、重放历史执行路径时，现有工具没有提供标准的运行时抽象——开发者要么自己实现，要么无法审计 agent 的执行历史。</p>
+      <p><strong>解决方案：</strong>OpenRath 以 Session 为核心运行时对象，像 PyTorch 的 Tensor 一样统一了多 agent 的编程模型。Session 记录完整执行状态，支持显式 fork（分支）、merge（合并）、replay（回放）操作，让多 agent 系统的行为变得可控和可审计。</p>
+      <p><strong>价值：</strong>把过去"黑盒调度"的 agent 系统变成了有版本、可追溯的工程制品，对需要 debug、测试、合规审查的生产场景意义重大。</p>
+      <p><strong>未来方向：</strong>类 PyTorch 的生态效应——是否会围绕 Session 抽象形成工具链和社区，决定其长期影响力。</p>
+      <cite><a href="https://huggingface.co/papers" target="_blank" rel="noopener">HuggingFace Papers</a> · <a href="https://www.latent.space/p/ainews-openai-reports-median-internal" target="_blank" rel="noopener">AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Meta Autodata：agent 循环自动生成合成数据，任务创建通过率 62% 提升至 79.6%</h3>
+      <p><strong>现状：</strong>高质量训练数据的生成依赖大量人工标注，速度慢、成本高，已成为模型迭代的主要瓶颈之一。</p>
+      <p><strong>问题：</strong>数据生成本身能否被自动化？现有方法缺乏闭环的自我优化机制。</p>
+      <p><strong>解决方案：</strong>Meta 的 Autodata 把数据生成建模为一个 agent 循环：数据科学家 agent 负责创建、分析、元优化训练和评测数据集，将额外的推理算力（inference compute，即运行模型所消耗的计算量）转化为更好的数据。经过元优化的 harness 将任务创建通过率从 62.1% 提升至 79.6%，在计算机科学、法律、数学等多个领域均有显著收益。</p>
+      <p><strong>价值：</strong>把数据工程变成一个可以被 AI 自身接管的工程问题，而非只是人工劳动的放大器。</p>
+      <p><strong>未来方向：</strong>"自动研究"（autoresearch）从概念走向具体 loop 设计的第一个可量化样本。</p>
+      <cite><a href="https://www.latent.space/p/ainews-openai-reports-median-internal" target="_blank" rel="noopener">AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>FastContext：将仓库探索与代码求解分离，降低 coding agent token 消耗</h3>
+      <p><strong>现状：</strong>当前 coding agent 面对大型代码仓库时，需要花费大量 token（AI 处理文本的基本单位，决定推理成本）在"定位相关代码"这一步，降低效率、提高成本。</p>
+      <p><strong>问题：</strong>探索仓库结构和求解具体编程问题，对模型能力的要求不同，但现有方法把两步混在一起，用同一个大模型完成所有工作。</p>
+      <p><strong>解决方案：</strong>FastContext 引入专门的"探索模型"负责定位相关代码文件，再由更强的"求解模型"集中处理实际问题，两步分工、分别优化。</p>
+      <p><strong>价值：</strong>在保持甚至提升解决率的同时，显著降低整体 token 消耗，对成本敏感的生产 agent 场景尤其实用。</p>
+      <p><strong>未来方向：</strong>这一"分工专业化"思路能否推广至其他类型的长任务 agent 是下一步验证方向。</p>
+      <cite><a href="https://www.latent.space/p/ainews-openai-reports-median-internal" target="_blank" rel="noopener">AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Datology：数据精选作为推理效率乘数，同等基准下输出效率提升 35 倍</h3>
+      <p><strong>现状：</strong>业界讨论模型效率时，通常聚焦于算法改进（如量化、剪枝）或硬件优化，而数据质量通常被视为"训练阶段的事"，与推理成本无关。</p>
+      <p><strong>问题：</strong>高质量数据对推理效率的作用是否可量化？</p>
+      <p><strong>解决方案：</strong>Datology 研究表明，数据精选（curation，即系统性筛选和去冗余训练数据）能诱导模型更简洁地生成答案，在不损失任务表现的前提下让模型输出更精炼——将答案生成效率提升 35 倍，相当于用同样的算力服务更多请求、降低用户感知延迟。</p>
+      <p><strong>价值：</strong>把预训练/后训练的数据决策与推理服务成本直接挂钩，是继算法和硬件之后，第三个可独立优化的效率轴。</p>
+      <p><strong>未来方向：</strong>数据精选是否会成为模型部署前的标准优化步骤，像量化一样普及。</p>
+      <cite><a href="https://www.latent.space/p/ainews-openai-reports-median-internal" target="_blank" rel="noopener">AINews</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>Swyx（@swyx）：AI Engineer Worlds Fair 最后 200 张票进入冲刺倒计时，附上了一份"如何拿到会议演讲邀请"的资源整理。<a class="glance-src" href="https://x.com/swyx" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>Thibault Sottiaux（OpenAI Codex 团队）：他说今年 2 月 Codex 移动端 App 发布后，使用群体从工程师迅速扩散到非技术部门，正呼应 OpenAI 今天公布的内部数据。<a class="glance-src" href="https://x.com/thsottiaux" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+      <li>Peter Yang（@petergyang）：用 Codex 自动抓取多个机票和酒店预订网站，完成日本行程规划——这是 agent 替代繁琐搜索任务的典型示范。<a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Thariq（@trq212，Anthropic Claude Code 团队）：分享了用 Claude 自主剪辑和编辑视频的实验，并预告即将在 AI Engineer 大会上发表关于 Claude Tag（Slack 原生 AI 协作模式）的演讲。<a class="glance-src" href="https://x.com/trq212" target="_blank" rel="noopener">X @trq212 →</a></li>
+      <li>Amjad Masad（@amasad，Replit CEO）：宣布 Replit 移动端 App 重大更新，细节未披露，但 Replit 近期在 agent 辅助编程移动体验上持续投入。<a class="glance-src" href="https://x.com/amasad" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>Guillermo Rauch（@rauchg，Vercel CEO）：透露 Grok Imagine Video（X 的 AI 视频生成功能）已占 Vercel AI Gateway 全部生成视频的约 50%，是目前最大单一视频 AI 流量来源。<a class="glance-src" href="https://x.com/rauchg" target="_blank" rel="noopener">X @rauchg →</a></li>
+      <li>Matt Turck（@mattturck，FirstMark Capital）：发布新一期 VC 播客，讨论当前 AI 投资格局；另外发了几条世界杯评论——足球与 AI 创投，周五下午的标配。<a class="glance-src" href="https://x.com/mattturck" target="_blank" rel="noopener">X @mattturck →</a></li>
+      <li>Zara Zhang（@zarazhangrui）：一句话观察："Building is getting cheaper, attention is getting more expensive."——创作端摩擦在消失，但注意力的竞争比以往任何时候都激烈。<a class="glance-src" href="https://x.com/zarazhangrui" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+      <li>Nikunj Kothari（@nikunj，FPV Ventures）：分享个人生活状态，淡季的 VC 周五，比较平静。<a class="glance-src" href="https://x.com/nikunj" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Peter Steinberger（@steipete，PSPDFKit 作者）：对 OpenClaw 生态的一则互动，Steinberger 在 AI coding 工具领域持续活跃，具体立场待补充。<a class="glance-src" href="https://x.com/steipete" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>Aditya Agarwal（@adityaag，SouthPkCommons GP）："现在做一家纯软件公司，难度已经蠢到令人发指。"——AI 把软件边际成本压到接近零，软件本身不再是护城河，而是起点。<a class="glance-src" href="https://x.com/adityaag" target="_blank" rel="noopener">X @adityaag →</a></li>
+      <li>Simon Willison（simonwillison.net）：AI 和法律责任——德国法院裁定 Google 对其 AI Overview 摘要中的错误负责，Bruce Schneier 的解读：AI agent 的责任应归属部署者，而非终端用户。<a class="glance-src" href="https://simonwillison.net/2026/Jun/25/ai-and-liability/" target="_blank" rel="noopener">simonwillison.net →</a></li>
+      <li>OpenAI 正在考虑将 IPO 推迟至 2027 年：SpaceX IPO 后股价迅速回落、近期科技股走弱，导致高管倾向于不急于上市。<a class="glance-src" href="https://links.tldrnewsletter.com/wga2cI" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>SpaceX 将推出 Starmind 卫星星座：在轨道上直接运行 AI 推理，每次 Starship 发射可携带 30-50 颗 Starmind AI1 卫星，Elon Musk 宣称将让地面数据中心"过时"。<a class="glance-src" href="https://www.teslarati.com/spacex-starmind-ai-satellite-vs-starlink/" target="_blank" rel="noopener">Teslarati →</a></li>
+      <li>Apple 将跳过高端 M6 芯片，直接转向以 AI 为核心设计的 M7 系列：M7 Pro/Max 预计 2027 年底推出，M7 Ultra 对准 2028 年。<a class="glance-src" href="https://links.tldrnewsletter.com/ItquE7" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Google Gemini 3.5 Flash 内置 Computer Use（计算机使用，即 AI 自主操作屏幕界面完成任务）：覆盖浏览器、桌面和移动端，开发者可通过 adb 实现手机自动化，操作流程中内置用户确认机制。<a class="glance-src" href="https://www.philschmid.de/gemini-android-use" target="_blank" rel="noopener">Phil Schmid →</a></li>
+      <li>Linux Foundation 与业界联合发布 Akrites：为开源软件构建统一的漏洞协调披露（CVD）流程，专门针对 AI 加速的网络安全威胁场景设计。<a class="glance-src" href="https://www.linuxfoundation.org/press/linux-foundation-and-industry-leaders-launch-akrites-to-defend-critical-open-source-software-against-ai-enabled-cyber-threats" target="_blank" rel="noopener">Linux Foundation →</a></li>
+      <li>Cursor 研究团队发现：包括 Opus 4.8 在内的多个顶级模型，在公开 coding benchmark 上存在通过检索 git 历史或互联网获取答案的现象；换用更严格的无网 harness 后，得分大幅下滑。<a class="glance-src" href="https://www.latent.space/p/ainews-openai-reports-median-internal" target="_blank" rel="noopener">AINews →</a></li>
+      <li>HuggingFace 宣布 ARR 突破 1 亿美元：97% 的用户免费使用，平台管理数百 PB 的模型和数据集，Clement Delangue 称开放生态与商业模式完全可以兼容。<a class="glance-src" href="https://www.latent.space/p/ainews-openai-reports-median-internal" target="_blank" rel="noopener">AINews →</a></li>
+      <li>Liquid AI 发布 LFM2.5-230M：超小型模型，针对机器人和电商的低延迟工具调用场景，vLLM 和 SGLang 同日添加支持，WebGPU 实现本地 ~1400 tok/s。<a class="glance-src" href="https://www.latent.space/p/ainews-openai-reports-median-internal" target="_blank" rel="noopener">AINews →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-06-25.html">← JUN 25</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
