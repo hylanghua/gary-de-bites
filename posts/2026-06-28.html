@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — June 28, 2026</title>
+  <meta name="description" content="Codex 重大功能更新推送；Flask 作者 Armin Ronacher 警告 agent 自主循环将放大模型缺陷；纯银以 Bob Taylor 为镜，重提一个 AI 浪潮遮住的问题：连接人与人，才是管理者最稀缺的职能。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">June 28, 2026</h1>
+
+  <p class="post-lead">Codex 重大功能更新推送；Flask 作者 Armin Ronacher 警告 agent 自主循环将放大模型缺陷；纯银以 Bob Taylor 为镜，重提一个 AI 浪潮遮住的问题：连接人与人，才是管理者最稀缺的职能。</p>
+
+  <p class="post-note">本期部分源抓取失败，内容较常规偏少。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3>Codex 推出导航栏重构、长对话支持、Slack 格式保留等重大更新，连宠物专属面板也来了</h3>
+      <p>OpenAI Codex 团队成员 Thibault Sottiaux 在 X 上宣布了一批功能更新：导航侧边栏（navigation rail）全面重构、长对话（long thread）处理显著改善、设置搜索（settings search）上线、Slack 消息格式（markdown）在粘贴时得到正确保留、tooltip 对齐问题修复，以及——出人意料的——专门为用户宠物设计的 Pets Panel。与此同时，他用一句话侧面说明了 Codex 的产品哲学："Talking to your plants isn't weird anymore. You can just codex things."——把"自动化日常"的边界拉到了植物护理层面，带着一股刻意的荒诞感。</p>
+      <p>上述更新中，UI 层的系统性重构是信号：Codex 不再只是一个编程 agent，它正在把自己建设成一个通用的知识工作驾驶舱，界面复杂度的上升也说明用户的任务深度已经超出了早期简单的 prompt-reply 模式。</p>
+      <cite><a href="https://x.com/thsottiaux" target="_blank" rel="noopener">X @thsottiaux</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Every Compound Engineering：单一计划文档取代双文档体系，agent 独自跑满 6 小时完成 PR</h3>
+      <p>Every.to 本周宣布对其 Compound Engineering（化合物工程，一种用 AI agent 搭建软件的协作方法论）进行重要更新。原先的工作流需要维护两份文档，一份写"要做什么"，一份写"怎么做"，两份文档随着构建进展经常失步。更新后改为单一计划文档，详细程度足以让 agent 接手并独立推进。测试结果：agent 能在无人介入的情况下独立运行多达 6 小时，完成功能开发、写好测试、开出合并请求（PR，即 pull request，代码合并申请）。</p>
+      <p>同期，Every Studio 还重构了 Compound Engineering 的工具兼容性，使其不再绑定 Claude Code，而能在 Codex 和 Cursor 等其他编程工具上同样顺畅运行，减少了跨工具切换的配置摩擦。</p>
+      <cite><a href="https://every.to" target="_blank" rel="noopener">Every.to</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://lucumr.pocoo.org/2026/6/23/the-coming-loop/" target="_blank" rel="noopener">Armin Ronacher（Flask 作者）："The Coming Loop" — agent 循环不是魔法，是放大镜</a></h3>
+      <p>Flask（一个被全球数百万开发者使用的 Python Web 框架）的作者 Armin Ronacher 写了一篇尖锐的文章，直接挑战 agent 自主循环（agentic loop，即让模型在没有人类干预的情况下持续调用工具、迭代执行任务的模式）的技术乐观主义。他的核心论点：人们热衷于搭建"让 Claude 来决定下一步"的循环，但这些循环并不会修复模型已有的弱点，只会让弱点在更多迭代中放大、累积、最终失控。</p>
+      <p>他区分了两种循环：agent loop（模型内部的工具调用迭代）和 harness loop（外部系统决定何时重启 session 或把任务路由到其他机器）。他坦率承认，对于他真正在意的代码，他没能用这种方式得到满意的结果——原因在于品味（taste）和控制（control）：他设了很高的代码质量标准，而且需要理解他所交付的系统。他最后的问题不是技术的，而是认知的："当工程师不再在循环中时，发生了什么？"</p>
+      <p>Readwise 本周把这篇文章列为社区最高亮内容之一，和 Derek Thompson 的《增强自我崇拜》放在同一期。</p>
+      <strong>agent 循环是对模型能力的诚实测试，结果是把你已经知道的缺陷用更大的字体印出来。</strong>
+      <cite><a href="https://lucumr.pocoo.org/2026/6/23/the-coming-loop/" target="_blank" rel="noopener">Armin Ronacher · lucumr.pocoo.org</a> · <a href="https://readwise.io" target="_blank" rel="noopener">Wisereads Vol. 149</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Guillermo Rauch（Vercel CEO）：前沿 AI 的网络安全能力需要用 deepsec harness 专门测试</h3>
+      <p>Vercel CEO Guillermo Rauch 在 X 上发出一个并不热闹但颇具专业性的观点：讨论前沿 AI 模型的网络安全（cybersecurity，即攻击与防御相关能力）时，推荐使用 deepsec harness 这类专门的测试框架，而不是用通用的 benchmark（基准测试，通常评估数学推理或编码任务的综合测试集）来推断。言下之意是：模型在 HumanEval 或 MMLU 上的表现，跟它能不能识别漏洞、分析恶意代码之间，相关性比人们以为的低得多。</p>
+      <p>他在另一条推文里则显出不同侧面："bought a custom domain for my kids to email family members" ——专门为孩子给家人发邮件买了个自定义域名，折射出他对互联网产品形态的个人品味：域名作为身份锚点，即使在家庭使用场景里也值得认真对待。</p>
+      <strong>AI 安全评测的工具不通用——用错框架测出来的结论，在真实攻防场景里可能彻底失效。</strong>
+      <cite><a href="https://x.com/rauchg" target="_blank" rel="noopener">X @rauchg</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.lennysnewsletter.com" target="_blank" rel="noopener">Andrew Ambrosino（OpenAI Codex 负责人）：软件越来越便宜，品味越来越贵</a></h3>
+      <p>Lenny Rachitsky 这期访谈邀请了 OpenAI Codex 产品负责人 Andrew Ambrosino，话题是 AI 重构产品工作的方式。Ambrosino 提出的几个论点值得记录：第一，当每个人都能写代码的时候，"你想构建什么"的判断力，比"你能构建什么"的执行力更稀缺——这让品味（taste）的价值以一种意想不到的方式上升。第二，他在 OpenAI 内部采用"区域防守"（zone defense）模型——不是把 PM 绑在某个功能上，而是让 PM 负责某个问题域，然后随着工具和技术演变灵活调整执行路径。</p>
+      <p>他也谈到了角色压缩的边界：把"工程师"和"PM"的概念完全消融是个错误，因为不同的认知角色需要不同的思维框架，混为一谈会让每个人都变成全才但没有深度的人。他还分享了自己如何用 Codex 管理个人工作流——不是把 Codex 当编程工具，而是当成一个能跨越 ChatGPT、文件、应用程序的工作协调者。</p>
+      <strong>Codex 的 PM 正在悄悄颠覆 PM 这个职位本身的定义，但他不认为这是"消灭 PM"，而是"进化 PM"。</strong>
+      <cite><a href="https://www.lennysnewsletter.com" target="_blank" rel="noopener">Lenny's Newsletter</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Swyx（AI Engineer World's Fair 创始人）：向公司和个人创作者开放会员申请；讨论开源与闭源模型推理成本透明度</h3>
+      <p>Swyx 在 X 上同时做了两件不同层次的事。一是业务层：他的 Swyx Inc 正式向公司和个人创作者开放会员申请，配套了一场临时组织的"AI engineer 预演大厅游览与 AMA"（问答直播）。这个动作说明他在把从 newsletter、播客和年度峰会积累的关注度，转化为有会员收入支撑的机构型资产。</p>
+      <p>另一件是方向性讨论：他在 X 上就开源和闭源 AI 模型在"推理预算报告"（inference budget reporting，即公开说明模型单次推理消耗多少算力）方面的透明度差异展开分析。这个话题听起来技术，实际上是商业逻辑：闭源模型没有动力公开推理成本，因为这会直接暴露定价空间；开源模型的透明度反而成为一种差异化信任资产。</p>
+      <strong>AI 基础设施的透明度不只是技术问题，是商业护城河的组成部分。</strong>
+      <cite><a href="https://x.com/swyx" target="_blank" rel="noopener">X @swyx</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://xiaobot.net/post/7a9362ad-0420-42b3-b74c-7b384fffe384" target="_blank" rel="noopener">纯银：Bob Taylor · 最强经理人 — ARPAnet 之父、Xerox PARC 掌门，他唯一做的事是连接人</a></h3>
+      <p>纯银（《产品沉思录》作者）的「羔羊计划」系列今天聚焦 Bob Taylor，一个可能是硅谷史上最被低估的关键人物。Taylor 从没写过代码，没有计算机科学学位，却在美国国防高级研究计划局（ARPA）主导了互联网前身 ARPAnet 的诞生——他向局长申请 100 万美元启动这个项目，整个会议只开了 20 分钟，没有表格、没有委员会、没有律师。Eric Schmidt 曾是他的下属，评价他"几乎发明了我们今天在办公室和家里使用的所有形式的东西"。</p>
+      <p>他后来掌管施乐 PARC 的计算机科学实验室（CSL），聚集了 Butler Lampson、Alan Kay、Bob Metcalfe 等一代天才，创造出 Alto 个人电脑、以太网和 Smalltalk 语言，比苹果 Macintosh 早了整整十年。1983 年他与 PARC 新任主任在预算分配上发生冲突后辞职，全体科学家集体离职声援，随后他在 DEC（数字设备公司）再度复制了同样的研究生态。</p>
+      <p>纯银提炼的 Taylor 管理哲学有几个值得单独记录的细节：其一是"第一类分歧"法则——在他的团队里，你无法反驳对手，除非你能让对手点头确认"你准确描述了我的立场"；其二是每周全员"Dealer Meeting"，所有人的研究都要接受其他人无情的交叉盘问；其三是四分位淘汰法：他会定期让研究员互相进行保密排名，持续出现在同事"底层四分之一"名单里的人，他会温和地帮他们找别的工作。</p>
+      <p>他的招聘哲学："十个优秀的人加起来，也做不到一个伟大的人能做的事。"他为了让 Larry Roberts 加入 ARPAnet 项目，在 Roberts 多次拒绝后，直接利用 ARPA 掌握林肯实验室 51% 资金的杠杆逼林肯实验室主任"建议" Roberts 接受。Taylor 后来戏称："我是把他敲诈进了名人堂。"</p>
+      <strong>Taylor 证明了一件事：改变世界的不一定是最好的工程师，而是那个知道去哪里找最好的工程师、并且给他们挡住所有烂事的人。</strong>
+      <cite><a href="https://xiaobot.net/post/7a9362ad-0420-42b3-b74c-7b384fffe384" target="_blank" rel="noopener">小报童 · 纯银</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.derekthompson.org/" target="_blank" rel="noopener">Derek Thompson："The Cult of the Enhanced Self" — 健康优化成身份标志，代价是越来越小的社交半径</a></h3>
+      <p>记者 Derek Thompson 这篇文章触到了一个被忽视的现代现象：2020 年代中期，美国人从没这么健康过，也从没这么孤独过。健身追踪器、肽类补剂、创纪录的健身房会员数和健康网红，正在改变人们和自己身体、以及和他人的关系。</p>
+      <p>他写的那句话被 Readwise 社区大量划线："睡更多的最好方式，是晚上少见朋友。一周多训练的最好方式，是取消午餐社交来保护我的健身时间。要变成一个可量化的增强自我，往往意味着消除那些不可量化的意义来源和幸福感。"</p>
+      <p>Thompson 没有反对健康追求本身，他指出的是一种滑坡：当身体变成需要持续优化的项目，它就从人际联结的媒介，变成了一个把人往内封闭的工程。他称之为"不只是自我增强的崇拜，而是自私增强的崇拜"。</p>
+      <strong>当健康成为身份而不是手段，它就开始消耗它本来应该服务的那个人。</strong>
+      <cite><a href="https://www.derekthompson.org/" target="_blank" rel="noopener">Derek Thompson</a> · <a href="https://readwise.io" target="_blank" rel="noopener">Wisereads Vol. 149</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2603.19461" target="_blank" rel="noopener">Hyperagents（Meta · ICLR 2026）：让元机制本身可编辑，AI 系统实现跨领域自我改进</a></h3>
+      <p><strong>现状：</strong>现有自我改进 AI 系统（self-improving AI，即能修改自身代码或策略的系统）通常把"任务执行"和"元学习"（meta-learning，即学习如何学习）分离，前者跑在 agent 层，后者由人工设计好的固定机制约束。</p>
+      <p><strong>问题：</strong>固定的元机制意味着每进入一个新领域，都需要人工重新工程化，无法实现真正的跨领域泛化。</p>
+      <p><strong>解决方案：</strong>Meta Research 提出 HyperAgents（DGM-H），把元机制本身也变成可编辑的程序，任务 agent 和元 agent 集成在同一个可修改的代码库里。系统在面对从未遇到过的新领域（如数学竞赛评分）时，能调用它在完全不同领域（如代码调试）里积累的元策略，并产生可测量的改进。</p>
+      <p><strong>价值：</strong>在 SWE-bench、GAIA、WebArena、Mind2Web、OSWorld、AgentBench、Agent-SafetyBench 和 IMO-GradingBench 多个基准上综合评测，是首批在如此宽领域上验证跨领域自我改进的系统之一。</p>
+      <p><strong>未来方向：</strong>元机制可编辑性是通向真正开放式自我改进的关键缺口，它的突破意味着 AI 系统可以不需要人工为每个新任务类型重新设计框架。</p>
+      <cite><a href="https://arxiv.org/abs/2603.19461" target="_blank" rel="noopener">arXiv:2603.19461</a> · <a href="https://huggingface.co/papers/2603.19461" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2602.17547" target="_blank" rel="noopener">KLong：106B 参数 agent 用思维链蒸馏训练，在 PaperBench 上超越 1T 参数的 Kimi K2 Thinking</a></h3>
+      <p><strong>现状：</strong>训练 LLM agent（大语言模型智能体）完成极长时间跨度的任务（long-horizon tasks，即需要数十到数百步才能完成的任务），面临训练数据匮乏和轨迹过长导致的优化困难。</p>
+      <p><strong>问题：</strong>现有强化学习（reinforcement learning，通过奖惩信号改进模型行为的训练方法）方法在任务轨迹超过一定长度后，梯度信号（指导模型改进方向的计算信号）会严重衰减，模型无法有效学习。</p>
+      <p><strong>解决方案：</strong>KLong 分两阶段：先用"轨迹分割 SFT"（trajectory-splitting SFT，把长轨迹切成带重叠区间的子段分别训练，保留早期上下文、逐步截断后期上下文）做冷启动；再引入 Research-Factory 流水线，从研究论文自动构建训练数据，蒸馏自 Claude 4.5 Sonnet 的思维链（thinking）输出，生成数千条高质量长轨迹。</p>
+      <p><strong>价值：</strong>KLong（106B 参数）在 PaperBench（评估模型能否复现学术论文研究结果的基准）上超越 Kimi K2 Thinking（1T 参数）11.28%，并在 SWE-bench Verified 和 MLE-bench 上同样领先。以六分之一的参数量赢过 10 倍大的模型。</p>
+      <p><strong>未来方向：</strong>用小模型蒸馏大模型思维链、分段训练超长轨迹，是当前最经济的 agent 能力提升路径之一。</p>
+      <cite><a href="https://arxiv.org/abs/2602.17547" target="_blank" rel="noopener">arXiv:2602.17547</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2603.27813" target="_blank" rel="noopener">MuSEAgent：多模态推理 agent 用"状态经验"替代零次序列规划，比 Reflexion 高 8%</a></h3>
+      <p><strong>现状：</strong>多模态 agent（能处理图像、视频等多种输入形式的 AI agent）在复杂任务中依赖"逐步推理链"（思维链）或"反思重试"（Reflexion，让模型根据失败结果自我反思并重新尝试），但两者都缺乏对历史交互状态的系统性复用。</p>
+      <p><strong>问题：</strong>每次推理基本上是从头开始，过去交互产生的有效决策经验被丢弃，导致效率低、犯重复性错误。</p>
+      <p><strong>解决方案：</strong>MuSEAgent 把历史交互数据抽象为"原子决策经验"（atomic decision experiences），通过"事后推理"（hindsight reasoning，即回顾结果来评估每个决策节点的价值）提取，构建多视角嵌入（multi-viewpoint embeddings）的经验库（experience bank）。推理时执行"深度与广度搜索"（deep-and-wide search）来调用经验，而不是从零规划。</p>
+      <p><strong>价值：</strong>在 Qwen3-VL-32B 上达到 65.30% 平均准确率，超过最强轨迹级基准方法 Reflexion（57.33%）约 8 个百分点。</p>
+      <p><strong>未来方向：</strong>经验库驱动的多模态 agent，是比"更大模型"更经济的多模态能力提升方向，尤其在推理成本敏感的应用场景下有优势。</p>
+      <cite><a href="https://arxiv.org/abs/2603.27813" target="_blank" rel="noopener">arXiv:2603.27813</a> · <a href="https://huggingface.co/papers/2603.27813" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2506.01341" target="_blank" rel="noopener">TurnBench-MS：多轮多步推理基准，极难模式下最佳模型仅 17.8%，人类 100%</a></h3>
+      <p><strong>现状：</strong>现有 LLM 基准测试大多是单轮或单步任务——给一个问题，模型一次给出答案，无需跨轮次整合信息或在反馈中修正推理链。</p>
+      <p><strong>问题：</strong>真实的人机交互场景要求模型在接收反馈后调整假设、跨多个回合维持一致的推理轨迹，这是现有基准衡量不到的。</p>
+      <p><strong>解决方案：</strong>TurnBench-MS 以"图灵机棋盘游戏"为原型设计了一套交互式破解任务（code-breaking task）：模型需通过序列猜测来揭露隐藏的逻辑或数学规则，每轮获得结构化反馈并在多轮间整合线索。分两种难度：Classic（标准推理）和 Nightmare（高复杂度，要求稳健的推理链）。</p>
+      <p><strong>价值：</strong>当前最强模型在 Classic 模式达到 81.5% 准确率，但在 Nightmare 模式骤降至 17.8%；人类参与者两种模式均达 100%。差距约 5 倍，揭示了当前模型在跨轮次一致推理上的系统性缺陷。</p>
+      <p><strong>未来方向：</strong>多轮交互推理是 agent 在真实世界任务中最频繁遇到的模式，TurnBench 类基准将成为评估 agent 实际可用性的更合适工具。</p>
+      <cite><a href="https://arxiv.org/abs/2506.01341" target="_blank" rel="noopener">arXiv:2506.01341</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2603.14987" target="_blank" rel="noopener">Beyond Benchmark Islands：提出 agentic AI 五维可信度框架 HAAF，反驳"一榜天下"评测逻辑</a></h3>
+      <p><strong>现状：</strong>AI agent 系统的评测高度碎片化——安全性、可靠性、社会伦理对齐分别由不同的孤立基准衡量，没有统一框架定义"什么叫一个可信的 agent"。</p>
+      <p><strong>问题：</strong>"可信度"（trustworthiness）被频繁引用但从未被操作性定义，也没有一个可测量的方式说明某个 agent 比另一个更可信、以及为什么。</p>
+      <p><strong>解决方案：</strong>论文定义了 agentic 可信度的五个属性：可靠性（Reliability）、鲁棒性（Robustness，即在对抗和噪声环境下维持性能的能力）、安全性（Safety）、社会伦理对齐（Social-Ethical Alignment）和运营完整性（Operational Integrity）。在此基础上提出 HAAF（Holographic Agent Assessment Framework，全息 agent 评估框架），在一个场景流形（scenario manifold，即覆盖多种真实场景的评估空间）上测量这五个维度的综合表现。</p>
+      <p><strong>价值：</strong>为 agent 可信度评测提供了第一个系统化的多维框架，把"我的 agent 安全吗？"这类模糊问题转化为可测量、可比较的操作定义。</p>
+      <p><strong>未来方向：</strong>随着 agent 系统进入高风险应用场景（医疗、法律、金融），HAAF 式的综合可信度框架将成为监管合规和部署决策的必要工具。</p>
+      <cite><a href="https://arxiv.org/abs/2603.14987" target="_blank" rel="noopener">arXiv:2603.14987</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>Zara Zhang（@zarazhangrui）GitHub 粉丝突破 1 万，她在帖子里特别说明自己是"non-engineer builder"（非工程师建造者），强调这个里程碑属于用 AI 工具而不是靠写代码实现项目的那类创作者。<a class="glance-src" href="https://x.com/zarazhangrui" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+      <li>Peter Yang（@petergyang）分享了他搭建的个人健康监测系统，整合了 Withings（体重/血压追踪设备）、Fitbit（运动手环）、Google Health（健康数据聚合平台）和自定义指标追踪，是一套完整的量化自我（quantified self）工作流。<a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Nan Yu（@thenanyu）引用了多条关于解决问题框架的高质量推文，延续他一贯的策展风格——不发原创长文，而是把别人的好思考拼成一条值得停下来读的动态。<a class="glance-src" href="https://x.com/thenanyu" target="_blank" rel="noopener">X @thenanyu →</a></li>
+      <li>Aaron Levie（Box CEO，@levie）分析企业 AI token 优化最佳实践，涵盖工作流整合策略与成本分配逻辑，紧跟他一贯的企业 AI 产品视角。<a class="glance-src" href="https://x.com/levie" target="_blank" rel="noopener">X @levie →</a></li>
+      <li>Matt Turck（FirstMark Capital，@mattturck）用讽刺口吻绘制了智能眼镜 2013-2026 年的失败全景图——从 Google Glass 到每一代后继者，每次都"即将突破"，每次都悄悄消失。（配合世界杯评论一起发，分裂感十足。）<a class="glance-src" href="https://x.com/mattturck" target="_blank" rel="noopener">X @mattturck →</a></li>
+      <li>Nikunj Kothari（FPV Ventures，@nikunj）大力称赞了一条视觉效果极佳的冰淇淋相关内容，无关 AI 但带着他一贯对美学细节的在意。<a class="glance-src" href="https://x.com/nikunj" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Peter Steinberger（PSPDFKit 作者，独立开发者，@steipete）引用了一句关于访问限制的格言，核心是"越是限制访问，越会激发执意用户的创造力"，配上他的 Dell+Apple 双屏开发配置晒图，透着一股开发者的恬淡。<a class="glance-src" href="https://x.com/steipete" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>NYT / Adam Grant：RTO（返回办公室）政策的真实原因不是生产力，而是领导者在全员同等大小的屏幕格子里找不到被仰视的感觉——"Instead of standing out in the corner office, leaders are lost in a sea of equal squares on a screen." 远程工作让权力展示失去了物理空间。<a class="glance-src" href="https://readwise.io" target="_blank" rel="noopener">Wisereads Vol. 149 →</a></li>
+      <li>Wisereads Vol. 149 精选《The Plunge》（作者 Chris Ballard）节选预览：追踪一群痴迷冷水游泳的极客社群与他们寻找极限体验的旅程，关于身体、意志和超越舒适区的哲学。<a class="glance-src" href="https://readwise.io" target="_blank" rel="noopener">Wisereads →</a></li>
+      <li>Every.to "Token Tightening"：AI 算力配给时代正在到来，Mike Taylor 认为计算资源将被像投资组合那样管理，最大份额给能证明最大回报的人，前沿模型访问权将被按比例分配。<a class="glance-src" href="https://every.to" target="_blank" rel="noopener">Every.to →</a></li>
+      <li>Every.to：Cora 邮件客户端进入内测（beta），支持桌面和 iPhone 端的读写、搜索和回复，配合每日两次的摘要功能（Briefs），感兴趣的用户可发邮件至 kieran@every.to 申请。<a class="glance-src" href="https://every.to" target="_blank" rel="noopener">Every.to →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-06-27.html">← JUN 27</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
