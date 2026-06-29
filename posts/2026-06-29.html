@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — June 29, 2026</title>
+  <meta name="description" content="美国政府为 Anthropic Mythos 5 部分解禁，约 100 家受信企业重获访问权；SpaceX 宣布以 $196 亿频谱入场独立美国移动市场；纯银发现活人味内容也卷不过算法，好故事永远稀缺。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">June 29, 2026</h1>
+
+  <p class="post-lead">美国政府为 Anthropic Mythos 5 部分解禁，约 100 家受信企业重获访问权；SpaceX 宣布以 $196 亿频谱入场独立美国移动市场；纯银发现活人味内容也卷不过算法，好故事永远稀缺。</p>
+
+  <p class="post-note">本期部分源抓取失败，内容较常规偏少。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3>美国政府部分解禁 Anthropic Mythos 5：约 100 家受信企业和联邦机构重获访问权，Fable 5 仍被限制</h3>
+      <p>6月12日，特朗普政府以"Fable 5 被破解"为由对 Anthropic 发出出口管控指令，Anthropic 随即在全球范围内关闭了 Fable 5 和 Mythos 5 的访问——尽管 Anthropic 公开否认了"破解"说法。6月26日，政府作出部分回调：约 100 家经过审核的美国企业和联邦机构可重新使用 Mythos 5，未列入白名单的用户依然无法访问，Fable 5 的解禁时间表至今未定。</p>
+      <p>更大的背景是：联邦政府正在快速推进一项行政令，授权网络安全官员在 AI 模型上市前进行评估，等于在现有法规之外新增了一道政府审批环节。企业正在以逐案决策应对一个尚未有通用标准的新监管真空，这种"先禁后谈"的节奏将成为未来高能力 AI 模型发布的新常态。</p>
+      <cite><a href="https://tldr.tech" target="_blank" rel="noopener">TLDR</a> · <a href="https://techcrunch.com/2026/06/26/trump-admin-releases-anthropic-mythos-to-be-used-by-more-than-100-us-companies-agencies/" target="_blank" rel="noopener">TechCrunch</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>SpaceX 计划在美国推出 Starlink 独立移动服务，直接叫板 Verizon 和 AT&amp;T</h3>
+      <p>在 IPO 路演期间，SpaceX 披露了 Starlink 在美国推出独立直连消费者移动套餐的计划，以此前 196 亿美元收购 EchoStar 的地面频谱资产为基础，搭建独立于 T-Mobile 补充协议之外的自有地面网络。这意味着 SpaceX 将直接与美国三大运营商（Verizon、AT&T、T-Mobile）展开正面竞争，Oppenheimer 将其定性为对 1.6 万亿美元美国电信市场的潜在颠覆。分析人士对此持保留意见：地面网络基础设施需要数十亿美元投入，这也可能是 SpaceX 逼迫现有电信合作伙伴给出更好条件的谈判筹码。</p>
+      <cite><a href="https://tldr.tech" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Intel 芯片业务复苏：营收 136 亿美元超预期，Nvidia 和 Apple 确认成为 18A 节点客户</h3>
+      <p>Intel Q1 2026 营收 136 亿美元，超出市场预期，代工部门同比增长 16%，股价在过去 12 个月累计涨幅约 445%。这场转型的转折点是去年夏天美国政府以 10% 股权入场，随后 Nvidia 和 Apple 先后签约：Nvidia 首款集成 x86 RTX 芯片计划在 Intel 18A 节点生产，目标是 2026 年底至 2027 年初量产；Apple 则于 2026 年 5 月签署初步协议，以对冲对台积电的产能依赖。</p>
+      <cite><a href="https://tldr.tech" target="_blank" rel="noopener">TLDR</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://every.to/chain-of-thought/ai-could-do-anything-then-it-met-powerpoint" target="_blank" rel="noopener">Every.to Mike Taylor："AI Could Do Anything. Then It Met PowerPoint" — AI 系统性失手于需要品味和叙事的内容</a></h3>
+      <p>Every.to 咨询团队的 Mike Taylor 写了一篇罕见诚实的「AI 自动化失败记录」。他从第一次让 Claude Code 生成 PowerPoint 开始讲起，结论是：AI 在"从空白构建幻灯片"上表现惊人，因为幻灯片本质是 HTML 布局问题，而 Claude 写 HTML 极为流利。但一旦涉及客户已有模板，或者需要叙事弧线（narrative arc，即让整套幻灯片讲出一个有起承转合的故事），就会系统性失手——超过 20 万 token（约 15 万字）的上下文会触发"上下文腐化"（context rot），模型开始犯低级错误；而 .pptx 格式是 XML 而非 HTML，模型实际上无法"看见"它在编辑什么。</p>
+      <p>Every 最终的解法不是找到一个更好的现成 AI 工具，而是自己搭建了"Claudie"——一个运行在纽约办公室 Mac Mini 上的 agent，整合了 Anthropic 官方 pptx 技能（59 个文件、16 个 Python 脚本、4000 字 skill.md），并加入"先出蓝图再执行"（blueprint-first）的人工审核步骤：Claudie 先在 Slack 发出幻灯片大纲等待确认，再开始实际生成。Opus 4.7 发布是一个关键节点，质量因此出现了一次显著跳升。Mike 可以登机途中开始请求，落地后幻灯片已经生成完毕，这才算进入真正可用的状态。</p>
+      <p>这篇文章的核心信息不是"AI 不行"，而是："AI 把容易的部分（布局、执行）做得很好，但'什么是一套有说服力的演示'这个判断本身，仍然属于人的工作。"而且，一个 80% 完成度的 AI 幻灯片往往比从头手做更危险——因为看起来精致让人降低了检查的警惕性。</p>
+      <strong>AI 自动化的收益集中在执行层，叙事层和品味层仍是人类的主场，而这恰恰是高客单价服务最后可收费的部分。</strong>
+      <cite><a href="https://every.to" target="_blank" rel="noopener">Every.to</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Aaron Levie（Box CEO）：限制 AI 模型访问权，只会不对称地削弱美国自己</h3>
+      <p>Aaron Levie 在 X 发了一条少有的政策立场长推：无论政府如何管控，先进 AI 模型迟早会走向开放；如果美国单方面对本国公司施加访问限制，而竞争对手没有同等约束，结局就是"你在自我边缘化，不是在保护自己"。他的原话是："你的选择要么是在最好的模型周围设立门槛，这意味着你在不对称地削弱自己；要么是努力确保你始终在前沿。"</p>
+      <p>这条推文没有大量互动，但时机微妙——发出时间是 Anthropic Mythos 5 解禁令落地后两天，实际上是对这轮"先禁后谈"政策节奏的直接回应。Levie 的论点代表了相当一部分企业 AI 采购方的真实焦虑：不是担心 AI 太危险，而是担心管控的不确定性让他们无法做产品规划。</p>
+      <strong>Levie 把模型访问权管控的代价说得很直白——这不是安全问题，是战略失误问题。</strong>
+      <cite><a href="https://x.com/levie" target="_blank" rel="noopener">X @levie</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.lennysnewsletter.com" target="_blank" rel="noopener">How I AI：GLM-5.2 评测 + Gusto 用 Claude Code 搭出新产品线</a></h3>
+      <p>Lenny's Podcast Network 旗下的"How I AI"这期覆盖两个不同层次的内容。首先是 GLM-5.2 评测：这是智谱 AI（Zhipu AI）发布的最新开源 MoE（混合专家，Mixture-of-Experts，一种让不同"专家子网络"分别处理不同类型任务的架构）模型，参数规模约 744B 总体 / 40B 活跃，MIT 开源协议，上下文窗口从前代的 200K 一跃至 100 万 token，同时支持两种推理模式（Fast / Max）。在 BenchLM.ai 的 124 个模型排行上位居第4，定价 $1.40/$4.40 per million tokens，被认为是开源阵营正面竞争 Claude Opus 4.8 和 GPT-5.5 的实际选手。</p>
+      <p>另一块是 Gusto（美国薪酬 SaaS 公司）如何用 Claude Code 搭建了一条全新产品线——这是企业将 AI coding agent（编程智能体）用于非原型验证阶段、而是直接切入主线产品开发的案例。Claude Code 作为代码协作工具，让 Gusto 团队能够快速评估和推进此前资源不足的产品方向。</p>
+      <strong>GLM-5.2 的开源 + 超长上下文 + 低定价，是在用价格和许可证打开源模型的差异化通道；Gusto 案例则说明 coding agent 的价值洼地在"原来做不了的事"，不在"原来做的事提速"。</strong>
+      <cite><a href="https://www.lennysnewsletter.com" target="_blank" rel="noopener">Lenny's / How I AI</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Boris Cherny（Claude Code / Anthropic）：AI 时代的五种新团队原型，跨越传统工程/设计/PM 边界</h3>
+      <p>Claude Code 的核心成员 Boris Cherny 在 X 上提出了一个值得产品人记下来的新框架：AI 时代的团队角色将拆解为五种原型——1. Prototyper（探索新方向，大多数不会上线）；2. Builder（把原型推向生产）；3. Sweeper（清理 UI 和代码，反向优化，裁剪冗余功能）；4. Grower（围绕 PMF 持续迭代）；5. Maintainer（在成熟系统上做规模化运营）。他特别指出，很多人跨越 2-3 个角色，而这五种原型本身打破了工程/设计/PM 的传统分工。</p>
+      <p>他还提出了一条阶段性搭配逻辑：Pre-PMF（验证阶段）需要 1+2+3；成长期需要 2+3+4；稳定 PMF 之后需要 3+4+5。这个模型的价值在于把"我们缺什么角色"这个模糊问题，转化为"我们处于哪个阶段"这个相对可测量的问题。</p>
+      <strong>Sweeper（专门负责砍掉功能和清理技术债）在传统团队里几乎不存在，但 AI 快速原型之后最紧缺的恰恰是这个角色。</strong>
+      <cite><a href="https://x.com/bcherny" target="_blank" rel="noopener">X @bcherny</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Zara Zhang：每花 1 小时构建，就要花 2 小时解释、演示和销售</h3>
+      <p>Zara Zhang（独立开发者，follow-builders 策展人）在 X 分享了她的构建哲学："For every hour you spend on building the product, spend two hours on explaining it, demonstrating it, selling it, teaching it." 她把这描述为她最喜欢的构建部分：向世界讲述它，然后在与现实的接触中不断精炼。同期她也发布了一个技能（skill）教程视频，展示如何安装和使用她构建的 Claude Code 技能，以及如何自己搭建。</p>
+      <strong>构建和传播的比例倒置是大多数独立开发者的通病，Zara 把它说成了一条原则而不是补救措施。</strong>
+      <cite><a href="https://x.com/zarazhangrui" target="_blank" rel="noopener">X @zarazhangrui</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Swyx：AI Engineer World's Fair 单日注册破千，Design Engineers 赛道开场</h3>
+      <p>Swyx 在 X 上发出了 AI Engineer World's Fair 的注册情况更新：单日内新增注册超过 1000 人，并配了现场第三小时的人群照片。他同时宣布了一条赛道更新：Design Engineers（专注于 AI 产品 UI/UX 设计与工程交叉地带的赛道）由 Geoff 主理，Geoff 此前主导了过去两届 AI UX meetup，现在作为正式赛道出现在峰会中。Swyx 坦承这是他最难策划的方向，因为他本人不是设计工程师。</p>
+      <strong>AI UX 从 meetup 升格为峰会赛道，说明这个交叉领域已经有了足够的从业人口密度，但策划难度也证明它的稀缺性依然存在。</strong>
+      <cite><a href="https://x.com/swyx" target="_blank" rel="noopener">X @swyx</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://xiaobot.net/post/0e57a1a1-c0b4-4596-b875-9cd631e6d844" target="_blank" rel="noopener">纯银：叶公好龙，也好活人 — AI 内容泛滥后的内容创作者困境</a></h3>
+      <p>纯银今天的「产品分析 · 无限季」Vol.20260629 正面回应了一个流行的反驳：人们说 AI 内容泛滥之后消费者会意识到"活人味"可贵，从而给人类创作者带来红利。纯银的回答是：不会。他的依据很具体——这个论断在 AI 当道之前的微博上就已经被喊了两三年，那时候是因为对立和冒犯让大多数博主自我审查到"姿态僵直"，同样少有真正的活人感，但真实的活人博主也没有因此拿到更好的数据。</p>
+      <p>他用了自己的实际数据来支撑这个观点：写了 17 年微博，数据最好的两条，一是在清迈抓龙筋（638 万曝光），二是在大浴场花 2100 元找美貌技师纯聊（1023 万曝光）。两条都靠娱乐性和猎奇价值，文风和文笔只是"很次要的加权因素"。同期，他今年 2 月独自徒步穿越香港"猛鬼村之王"锁罗盆，图文并茂，数据却只有区区 8 万曝光。</p>
+      <p>他的悲观论点有一个结构性支撑：算法时代的传播逻辑从来不奖励风格，只奖励故事的稀缺性和娱乐价值，而好故事永远是稀缺的，这个稀缺性和 AI 是否泛滥无关。AI 内容加速了信息密度的提升，读者阈值随之水涨船高，但"好故事"的产量并没有因此增加。他把现在比作"五代乱世"：每一份努力换来的回报，和过去相比都在缩水，最终导致拥抱 AI 的"少许努力换取少许收益"反而成为心理上最平衡的选择。</p>
+      <p>他的最后一句带着收束感："AI 生成的内容，很难让你看完后还会回想起来，更难对内容背后的创作者留下印象。速朽是这个新时代的特征，低成本换取低收益，创作和消费都只在一瞬间。会心一笑，然后相忘于江湖。也许等到五代乱世结束的时候，大家都已经老了。"</p>
+      <strong>活人味不是护城河，好故事才是——但好故事的产量从来没有随着时代一起通货膨胀，这才是创作者困境的核心。</strong>
+      <cite><a href="https://xiaobot.net/post/0e57a1a1-c0b4-4596-b875-9cd631e6d844" target="_blank" rel="noopener">小报童 · 纯银</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.27377" target="_blank" rel="noopener">DanceOPD（ByteDance Seed / NUS）：统一文生图与局部/全局编辑的蒸馏框架，编辑分数提升最高 21.9%</a></h3>
+      <p><strong>现状：</strong>现代图像生成模型（文生图，即根据文字描述生成图像）要求在同一个模型内同时支持"文本生成图像"（T2I）、局部编辑（修改图像的某个区域）和全局编辑（调整整体风格/颜色）三种能力，但这三者在训练时经常相互干扰——为编辑能力微调会拖累 T2I 的质量。</p>
+      <p><strong>问题：</strong>现有方法将三种能力分开训练或串行蒸馏，造成"顾此失彼"——能力越多，单项越弱；另外 .pptx 格式的 XML 问题不适用于这里，真正的瓶颈是"分布偏移"（distribution mismatch，即蒸馏时学生模型的中间状态和被学习的专家模型的目标状态不匹配，导致学习效率低）。</p>
+      <p><strong>解决方案：</strong>DanceOPD 是一个"在线策略生成场蒸馏"（on-policy generative field distillation）框架：每个训练样本被硬性路由给对应的冻结专家场（frozen expert field，即专门负责某项能力的预训练子模块），并在"学生模型自己生成的中间状态"下查询专家——这样学生始终在自己真实分布下学习，解决了分布偏移问题。</p>
+      <p><strong>价值：</strong>在 T2I、局部编辑、全局编辑等多个任务上联合评测：编辑类别最高提升 21.9%，T2I 锚定质量同步提升最高 2.0%，两者不再是零和博弈。框架还能自然吸收 CFG（分类器引导，一种提升生成质量的常用技术）等外部信号。</p>
+      <p><strong>未来方向：</strong>on-policy 蒸馏的思路可以推广到视频生成、3D 合成等其他基于速度场的生成框架，将多能力统一蒸馏变成一个通用范式。</p>
+      <cite><a href="https://arxiv.org/abs/2606.27377" target="_blank" rel="noopener">arXiv:2606.27377</a> · <a href="https://huggingface.co/papers/2606.27377" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.26790" target="_blank" rel="noopener">OPID（清华 / 浙大 / CUHK）：从自身轨迹提取分层技能蒸馏，在 ALFWorld 和 WebShop 上超越所有基线</a></h3>
+      <p><strong>现状：</strong>用强化学习（RL，通过奖惩信号改进模型行为的训练方法）训练 LLM agent（大语言模型智能体）完成长流程任务时，奖励信号极为稀疏——通常只在整个任务完成后给出成功/失败，模型很难知道中间哪一步决策对、哪一步错。</p>
+      <p><strong>问题：</strong>稀疏奖励导致"功劳分配"（credit assignment）极难，尤其是在需要 10 步以上的任务中，模型容易陷入低效探索或过拟合到某几条成功路径。</p>
+      <p><strong>解决方案：</strong>OPID 在每轮 rollout（模型完整执行一次任务的过程）结束后，从已完成的轨迹里提取两类层次化"事后技能"（hindsight skill）：一是覆盖整个任务流程的"情节级技能"（episode-level skill），二是在关键决策节点（由专门的"关键性检测器"识别）提取的"步骤级技能"（step-level skill）。推理时，关键节点优先调用步骤级技能，其余时刻用情节级技能，生成的技能注入历史上下文，再用新旧策略的对数概率差作为 token 级（精确到每个词的）优化信号。</p>
+      <p><strong>价值：</strong>在 ALFWorld（虚拟家务任务）和 WebShop（在线购物决策）上超越所有结果级 RL 和技能蒸馏基线，同时在样本效率和鲁棒性上领先；全程无需人工标注，技能完全来自模型自身的 rollout。</p>
+      <p><strong>未来方向：</strong>这种"自己给自己打标"的 on-policy 技能提取路线，是长流程 agent 摆脱稀疏奖励困境的最省力方向之一，且模型无关，可直接迁移到任何 LLM-based RL 框架。</p>
+      <cite><a href="https://arxiv.org/abs/2606.26790" target="_blank" rel="noopener">arXiv:2606.26790</a> · <a href="https://huggingface.co/papers/2606.26790" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.27313" target="_blank" rel="noopener">ViQ（ECCV 2026）：与文本对齐的任意分辨率视觉离散表征，推理提速 20-70%</a></h3>
+      <p><strong>现状：</strong>多模态 LLM（能同时处理图像和文字的大语言模型）大量依赖视觉分词器（visual tokenizer，把图像切成模型能处理的离散或连续块），但现有方法要么语义理解强但重建细节差，要么重建好但语义对齐弱，且通常只接受固定分辨率的输入。</p>
+      <p><strong>问题：</strong>固定分辨率 + 语义/重建二选一，导致视觉离散表征无法同时满足"理解"和"生成"两类下游任务的需求。</p>
+      <p><strong>解决方案：</strong>ViQ 引入两个机制：一是"近端表征学习"（proximal representation learning，渐进式压缩视觉特征空间使离散 token 向文本语义对齐，同时保留重建保真度）；二是"位置感知分头量化"（position-aware head-wise quantization，把不同空间位置和不同特征头的量化解耦），让模型能以原始分辨率处理任意大小的图像，无需缩放。</p>
+      <p><strong>价值：</strong>语义基准上与最先进视觉编码器持平，低层重建精度高；用 ViQ 表征训练多模态 LLM 后，推理速度相比连续 token 基线提升 20% 至 70%（取决于底层 LLM 和训练配置），是一个同时在质量和效率上正向的改进。</p>
+      <p><strong>未来方向：</strong>分辨率无关的统一离散视觉表征，是让多模态 LLM 在图像理解和图像生成上共用同一套词表的关键前置条件。</p>
+      <cite><a href="https://arxiv.org/abs/2606.27313" target="_blank" rel="noopener">arXiv:2606.27313</a> · <a href="https://huggingface.co/papers/trending" target="_blank" rel="noopener">HuggingFace W27</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.24551" target="_blank" rel="noopener">GUI vs. CLI（2606.24551）：修复技能覆盖率后 CLI agent 胜率 69.3% 超越 GUI agent 的 59.1%</a></h3>
+      <p><strong>现状：</strong>计算机使用 agent（computer-use agent，能操作电脑完成任务的 AI）有两种主流路线：GUI agent（只看屏幕截图、用鼠标键盘操作界面）和 CLI agent（通过预设技能/脚本直接调用命令行工具）。两者的对比实验通常缺乏严格控制——任务不一样、起始状态不一样、评测标准不一样，导致结论可信度低。</p>
+      <p><strong>问题：</strong>没有方法论严格的对比，就无法说清楚"GUI 更好还是 CLI 更好"——更重要的是无法知道为什么某一方失败。</p>
+      <p><strong>解决方案：</strong>构建了 440 个桌面任务的匹配基准（每个任务由 GUI agent 和 CLI agent 在相同目标、相同初始状态下各执行一次，用统一的自动化验证器打分），并对两类 agent 做系统性瓶颈分析：GUI agent 的失败来自长流程中的"接地错误"（grounding error，即模型找不到对应 UI 元素）；CLI agent 的失败来自技能覆盖不足。</p>
+      <p><strong>价值：</strong>最优 GUI agent 通过率 59.1%；CLI agent 原始技能集通过率 48.2%，但修复技能覆盖率后跃升至 69.3%，超过 GUI agent 上限。原始 CLI 技能仅覆盖验证检查点的 37.6%，这是 CLI 看起来输给 GUI 的全部原因——不是交互方式的问题，是工具准备的问题。</p>
+      <p><strong>未来方向：</strong>CLI agent 的上限更高、可扩展性更强（技能可以精确撰写和迭代），GUI agent 的优势在于无需技能预先设计。这项研究为"该选哪条路线"给出了可测量的决策依据。</p>
+      <cite><a href="https://arxiv.org/abs/2606.24551" target="_blank" rel="noopener">arXiv:2606.24551</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>In-Context World Modeling for Robotic Control（HF W27 #2）：机器人通过自主探测，在测试时零微调适配新身体和新视角</h3>
+      <p><strong>现状：</strong>VLA 模型（Vision-Language-Action，视觉语言动作模型，能同时理解图像和语言指令并生成机器人动作的模型）在已知硬件和视角下表现出色，但换一台机器人、换一个摄像头角度，性能往往骤降——因为它们在训练时默认执行环境固定。</p>
+      <p><strong>问题：</strong>部署时的"上下文漂移"（context shift，即实际硬件参数与训练时不同）无法通过重新微调解决——微调成本高，且现实中硬件变化频率远超可承受的标注和训练周期。</p>
+      <p><strong>解决方案：</strong>ICWM（In-Context World Modeling，在上下文中建模世界）把系统参数识别重新定义为"上下文中的自适应问题"：机器人在执行正式任务前，先自主做一批与任务无关的"探测动作"（probe interaction），世界模型预测这些探测的后果，并从中提取关键系统变量（身体参数、摄像头配置、环境动力学）。提取结果作为上下文输入控制策略——机制类似 LLM 中的 few-shot in-context learning，但作用对象是物理机器人参数。</p>
+      <p><strong>价值：</strong>无需人工标注上下文、无需重新微调，在测试时即可泛化到新的机器人形态和新的摄像头视角，直接缩短从实验室到生产环境的落地距离。</p>
+      <p><strong>未来方向：</strong>自探测式在线系统识别（online system identification），是通用机器人走出实验室、进入真实生产环境的关键一步。</p>
+      <cite><a href="https://huggingface.co/papers/trending" target="_blank" rel="noopener">HuggingFace W27 #2</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>Thibault Sottiaux（@thsottiaux，Codex 产品经理）：OpenAI 这周内部主题是"RESET week"，Sottiaux 顺势宣布对所有 Codex 用户做一次真正的"重置"——清零所有人的使用配额（usage limit）。此前有用户因为配额消耗异常提交投诉，团队在周日也进战情室排查日志。<a class="glance-src" href="https://x.com/thsottiaux" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+      <li>Peter Yang（@petergyang）转述 Anthropic 内部 PM 的 agent 体验："Access to our codebase has been the biggest unlock for me… I deeply understand and interact with my product so much more than I've ever been able to in the past." — 获得代码库访问权是使用 agent 最大的解锁。<a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Peter Yang（@petergyang）自揭：对 Agentforce（Salesforce 旗下 AI 产品线）仍然一头雾水——"I'll be honest with you all I still don't know what Agentforce is"。考虑到他做 AI 科普内容为主业，这句话说出来多少有点戳人。<a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Guillermo Rauch（@rauchg，Vercel CEO）：反对在 LinkedIn 投入精力——"You don't need a LinkedIn, you need a page on your website describing and linking to what you shipped"（你不需要 LinkedIn，你需要的是网站上的一个页面，写下你交付了什么，并附上链接）。<a class="glance-src" href="https://x.com/rauchg" target="_blank" rel="noopener">X @rauchg →</a></li>
+      <li>Garry Tan（@garrytan，YC 主席）：引用 Leonard Cohen——"Forget your perfect offering / There is a crack in everything / That's how the light gets in."（别追求完美的作品，万物皆有裂缝，光从裂缝进来。）<a class="glance-src" href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Thariq（@trq212，Claude Code / Anthropic）：注意到 Riot Games（英雄联盟开发商）招聘信息，发问：这是否说明 coding agent 已经改变了处理遗留代码库（legacy codebase，即年代久远、难以维护的旧代码）的经济逻辑？<a class="glance-src" href="https://x.com/trq212" target="_blank" rel="noopener">X @trq212 →</a></li>
+      <li>Peter Steinberger（@steipete，OpenClaw / OpenAI）：在旧金山四次申请 AT&T 号码均遭拒，且没有得到任何解释，向 X 求问湾区最好的无限流量套餐。<a class="glance-src" href="https://x.com/steipete" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>Dan Shipper（@danshipper，Every CEO）：转推自家内容并附"self recommending"——一句话形容 Every 的推广策略。<a class="glance-src" href="https://x.com/danshipper" target="_blank" rel="noopener">X @danshipper →</a></li>
+      <li>Nikunj Kothari（@nikunj，FPV Ventures）：周末爬山时配文"just put the taxes in the bag bro"，以及和幼儿一起重演表情包。<a class="glance-src" href="https://x.com/nikunj" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>TLDR：Meta 正在开发 Arena —— 一款以积分（非真实货币）为基础的预测市场 app（类似 Polymarket/Kalshi，允许用户对几乎任何事物下注），目标用户是 18-34 岁，Zuckerberg 正在推动与 Polymarket 和 Kalshi 建立合作伙伴关系，最终计划整合进 Facebook 和 Messenger。<a class="glance-src" href="https://tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>TLDR：37 分钟教程，用本地 LLM（本地运行的大语言模型）和开源工具搭建完整的 coding agent（编程智能体）工作流，覆盖文件读写、代码修改、命令执行和变更验证，透明可检视，运行成本约等于电费。<a class="glance-src" href="https://tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>TLDR：AI 让硅谷变得高效、焦虑，且不敢下线 — 研究发现使用 AI agent 的工程师工作时长反而更长，原因是害怕"AI 在我下线时会继续进化而我会落后"的焦虑（FOMO 的新变体）。<a class="glance-src" href="https://tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>TLDR：Amble One ——两位 Apple 和奥迪前员工打造的 2.5 万美元电动越野车，设计灵感来自月球车，续航 60 英里，最高时速 40 英里/小时，重量不到 450 公斤（符合欧盟轻型车辆上路标准），家用插座充满需 5 小时。<a class="glance-src" href="https://tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>TLDR：70 页《金融科技工程手册》——专为"以钱为核心的软件系统"撰写，三条核心原则：不凭空产生数据（no invented data）、不丢失数据（no lost data）、不盲目信任（no trust），覆盖清算、对账、分布式事务等核心模式。<a class="glance-src" href="https://tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-06-28.html">← JUN 28</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
