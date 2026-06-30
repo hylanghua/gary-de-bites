@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — June 30, 2026</title>
+  <meta name="description" content="Claude 正式入驻 Microsoft Azure Foundry；Boris Cherny 宣布 Claude Code 子 agent 将默认后台运行；Dan Pupius 拆解 AI 创业者的四项隐性赌注；纯银从"打拳"现象出发，直指互联网奖励自私与偏激是结构性必然。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">June 30, 2026</h1>
+
+  <p class="post-lead">Claude 正式入驻 Microsoft Azure Foundry；Boris Cherny 宣布 Claude Code 子 agent 将默认后台运行；Dan Pupius 拆解 AI 创业者的四项隐性赌注；纯银从"打拳"现象出发，直指互联网奖励自私与偏激是结构性必然。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3>Claude 在 Microsoft Azure Foundry 正式 GA：Opus 4.8 和 Haiku 4.5 上线，含 prompt caching 与 extended thinking</h3>
+      <p>Anthropic 官方账号今日宣布，Claude 在 Microsoft Azure Foundry 进入全面可用（GA，即正式商用）阶段。Azure 客户现在可以通过 Azure 的认证、计费和承诺消费体系，直接调用 Claude Opus 4.8 和 Claude Haiku 4.5。推理基础设施运行在 Azure 上，由 Anthropic 托管运营；prompt caching（提示词缓存，减少重复内容的 token 消耗和延迟）和 extended thinking（扩展思考模式，让模型在回答前进行更长时间的内部推理）两项功能今日同步上线，更多能力后续陆续开放。</p>
+      <p>这是 Anthropic 在 Azure 生态落地的关键一步：不是通过 API 中转，而是直接整合进 Microsoft 企业客户已有的云合规体系。对于已将数据和工作流部署在 Azure 上的企业来说，调用 Claude 的门槛从此和调用其他 Azure 服务没有区别。</p>
+      <cite><a href="https://x.com/claudeai" target="_blank" rel="noopener">X @claudeai</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://tldr.tech" target="_blank" rel="noopener">Rocket Lab 斥资 $43 亿收购铱星 Iridium，直接挑战 SpaceX 卫星宽带版图</a></h3>
+      <p>Rocket Lab 宣布收购 Iridium Communications，交易估值约 43 亿美元。Iridium 目前运营 66 颗低地球轨道卫星，持有直连手机和设备的宝贵频谱授权。收购完成后，Rocket Lab 将获得完整卫星星座的所有权，计划开发升级版卫星替换现有星座。</p>
+      <p>这笔交易的战略意义在于时机：SpaceX 上周刚披露 Starlink 美国独立直连移动服务计划，Rocket Lab 的应对动作同样是"频谱 + 星座"的组合。但 Rocket Lab 的路径不同：Iridium 已有运营多年的商用网络和企业客户，而 SpaceX 是从零搭建地面频谱基础设施。谁能更快拿下新兴卫星直连市场的主导权，2025-2027 年将是关键窗口。</p>
+      <cite><a href="https://tldr.tech" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://tldr.tech" target="_blank" rel="noopener">Amazon 与 Anthropic 重议合约：从固定费用改为按 token 计费，Amazon 成本或大幅提高</a></h3>
+      <p>TLDR 报道，Amazon 和 Anthropic 重新谈判了核心采购合约，计费方式从原来的固定包年费转为按 token（模型处理的文字单位，约等于 ¾ 个英文单词）计费。这一变化可能显著提高 Amazon 的实际使用成本，因此 Amazon 正在积极寻找更便宜的 AI 替代方案来分散依赖。</p>
+      <p>从 Anthropic 的角度看，转向 token 计费更能反映真实使用量，也避免了定额合约下"使用不足就亏损"的问题。对于 Amazon 来说，这意味着 AI 基础设施成本从"固定资产"变成了"弹性变量"，这在财务建模上是本质的区别。</p>
+      <cite><a href="https://tldr.tech" target="_blank" rel="noopener">TLDR</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://every.to" target="_blank" rel="noopener">Every.to Dan Pupius：AI 创业策略其实是一组隐性赌注，你是否知道自己在押什么？</a></h3>
+      <p>Dan Pupius 曾参与重建 Gmail、主导 Medium 工程，现任 The General Partnership CTO。他在 Every.to 发表的这篇文章，核心论点是：大多数 AI 创业公司的策略看起来合理，但背后隐含的前提假设根本没有被明说，而这些假设一旦失效，整个策略就会崩塌。他把这些隐性假设拆成四个维度——四条你必须明确押注的轴线。</p>
+      <p>第一，token 经济（稀缺 vs 丰裕）：如果你的商业模式依赖 token 便宜，你必须能回答"当 token 成本不再是护城河时，我的差异化是什么"。Cursor 能存在，是因为 token 便宜到可以让 AI 持续在后台运行——但丰裕本身就是陷阱，因为它把竞争推到了你的护城河之外。第二，模型自主性（依赖 vs 自主）：你的产品假设模型会越来越强并自我驱动，还是假设人类总要在回路里。第三，平台锁定（开放 vs 绑定）：你押注在单一模型提供商上的能力，在切换成本 vs 竞争优势上如何取舍。第四，监管环境（友善 vs 敌对）：你的产品是否依赖一个目前还不确定合规性的假设。</p>
+      <p>Pupius 提出的核心方法是区分两种赌注：不可逆的（深度整合了某个 provider，换一个等于重写产品）和可调整的（比如"token 会持续便宜"这个假设，如果错了，改一下定价模型就行）。好的策略是把不可逆赌注最小化，而不是消灭所有不确定性。</p>
+      <strong>四轴框架本身不是预测，是一张"你在哪里会死得很难看"的地图。能提前画出这张地图，才有机会在市场逼着你之前自己先动。</strong>
+      <cite><a href="https://every.to" target="_blank" rel="noopener">Every.to</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Aaron Levie（Box CEO）：开源权重是否接近前沿，决定了封锁策略的自洽性</h3>
+      <p>Aaron Levie 在 X 上发了一条深度长推，把近期各种关于 AI 监管和模型访问限制的讨论归结为一个核心命题：你对"开源权重 AI 与前沿闭源模型的能力差距"的判断，决定了你对一切封锁策略的立场。</p>
+      <p>他的逻辑链是：如果闭源前沿模型始终领先开源模型一大截，那封锁策略可以工作——因为你能持续控制谁用最好的工具。但如果开源权重（open weights，即权重文件公开可下载、可本地运行的模型）能持续保持在距离前沿"一步之内"，等式就反转了：你封锁的结果是前沿市场留在手里，但大多数 token 的使用量会流向你控制不了的替代栈，而那个栈——包括模型和底层硬件——最终会被别人掌控和货币化。他的原话：</p>
+      <p>"Depending on your belief on how close to the frontier open weights can remain — and similarly what percentage of tokens will go through the frontier vs. everything else — your opinion will be different on how to regulate and control AI."</p>
+      <strong>Levie 把一个看起来是政策问题的争论，还原成了一个可测量的技术判断题：open weights 离前沿有多远？这个问题的答案，比任何监管理念都更直接决定封锁策略的成败。</strong>
+      <cite><a href="https://x.com/levie" target="_blank" rel="noopener">X @levie</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3>Boris Cherny（Claude Code / Anthropic）：下一版 Claude Code，子 agent 默认后台运行</h3>
+      <p>Claude Code 的核心成员 Boris Cherny 在 X 上宣布了一个即将上线的重大改变：子 agent（subagent，即 Claude Code 在执行复杂任务时自动拆分出去执行子任务的分支进程）将默认在后台运行，用户可以在子 agent 工作的同时，继续和主 Claude 对话。如果你希望 agent 在前台可见地运行，只需告诉 Claude 即可。</p>
+      <p>这条推文有 7657 个赞。变化听起来简单，但对日常使用的体验改变相当大：目前 Claude Code 在执行长任务时，主界面会"被占用"，用户等待感很强。改成后台运行后，Claude Code 的并发工作流——"这个任务先跑着，我去做别的"——才能真正成为自然状态，而不是一种绕路操作。这也是 Claude Code 从"命令行工具"向"持续运行的后台助手"形态演进的一个信号。</p>
+      <strong>后台 agent 不是一个功能点，是界面范式的转变：Claude 变成了一个可以同时做多件事的同事，而不是一个要等你命令才动的工具。</strong>
+      <cite><a href="https://x.com/bcherny" target="_blank" rel="noopener">X @bcherny</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.lennysnewsletter.com" target="_blank" rel="noopener">Colin Matthews for Lenny's：顶尖 PM 用 AI 获得的是杠杆，不是效率 — 三梯度框架</a></h3>
+      <p>Lenny's Newsletter 今日发布了 Colin Matthews 的客座文章，Colin 曾在 OpenAI、Google、Stripe、Figma 等公司培训过超过 30,000 名 PM，是 Lenny 即将推出的"AI Native Builder"课程共同开发者。他提出了一个三梯度框架，把 AI 给 PM 带来的能力分为三层：个人杠杆（帮你完成自己待办清单上的事）、产品杠杆（加速交付正确的产品）、系统杠杆（搭建可复用的流程，把工作稳定外包给 AI 并保证质量）。</p>
+      <p>他观察到的一个趋势：2026 年中期，高层管理者对 AI 的期待已经从"用来原型验证和提升基础生产力"升级为"完成完整的工作任务"。以前能说"我用 Claude 帮我写提案"算先进，现在这个门槛已经移到"我用 Claude Code 直接查生产数据库、在真实代码库里做原型、把变更通过 GitHub 推上线"。没有上到系统杠杆这一层的 PM，面对的是一个期望持续上移的竞争环境。</p>
+      <strong>三梯度框架的核心洞察是：大多数人停在"个人杠杆"层（让自己的任务完成更快），但价值的飞跃在第三层——你搭出来的系统在你睡觉时也在工作。</strong>
+      <cite><a href="https://www.lennysnewsletter.com" target="_blank" rel="noopener">Lenny's Newsletter</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Thibault Sottiaux（Codex / OpenAI）：Codex 用量 bug 完整事后报告 + 新权限配置方案</h3>
+      <p>OpenAI Codex 产品负责人 Thibault Sottiaux 在 X 发布了一份详尽的事后报告，解释了最近 Codex 用量消耗异常快的原因。问题由多个小故障叠加引发：auto-review（自动代码复查）变得更激进、某项改动触发了更多子 agent 工作量、后台建议可能重复生成或在失败后过度重试。OpenAI 在重置用量限制的同时，逐一修复了这些问题——重置之后，auto-review 在用量图表里有了独立分类，失败或限速的请求不再计入 turn 消耗。</p>
+      <p>同一天，他还宣布了一项面向高级用户的新功能：可复用的、可继承的权限配置文件，能在操作系统层面绑定文件读/写/拒绝规则（甚至精确到 `**/*.env` 这类规则）以及网络和 Unix socket 访问权限，并支持管理员设置失败关闭式白名单（即默认拒绝，只允许白名单内的操作）。这替代了此前粗粒度的沙箱模式，让"每个任务最小权限"成为可配置项。</p>
+      <strong>Codex 在工程团队内部接近全员使用的背景下，权限配置的颗粒度直接决定企业部署的安全边界，这比修复 bug 更值得关注。</strong>
+      <cite><a href="https://x.com/thsottiaux" target="_blank" rel="noopener">X @thsottiaux</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://xiaobot.net/post/a587b2a4-65ad-4025-aaf2-978e12669de8" target="_blank" rel="noopener">纯银：关于性别对立、打拳与自私偏激 — 互联网奖励的正是这些，无解</a></h3>
+      <p>纯银今日「产品分析 · 无限季」Vol.20260630，从一个社会现象切入：为什么性别对立愈演愈烈，封多少号都无济于事？他的答案不在道德层面，而在机制层面：性别对立的根源不是"坏 KOL 操纵情绪"，而是互联网本身的基因——奖励自私与偏激。</p>
+      <p>他的逻辑链很干净。现实世界里，自私与偏激会遭到反制（踢别人一脚，别人会踢回来），所以被抑制。但互联网隔着屏幕，后果极轻；圈子里有人喝彩，有人合理化，还有算法推给同温层，正反馈远大于反制。于是本来隐藏着的自私与偏激，在互联网上越滚越大，"越自私越快乐，越偏激越兴奋"。性别对立只是最广泛的那个版本（7 亿异性，找负面案例取之不尽），同样机制也生产了地域黑、粉圈战争、民族情绪。</p>
+      <p>他对"打拳"的定义也精准：极力放大自己性别视角，贬低异性视角；用个体负面案例地图炮群体；对异见者释放强烈攻击性。这套行为对男拳女拳一视同仁成立。而它流行的原因也直白：要求别人共情自己、自己绝不共情别人，真的太爽了，情绪价值拉满——加上聚众冒犯几乎没有现实后果。</p>
+      <p>他的悲观结论是：性别对立将和互联网持续共存，不会有解法。解决结构性问题的最佳路径是"建造新的结构"，就像新浪门户的积弊不是靠改革解决，而是被新浪微博的出现稀释了。现在没有这样一个替代结构出现的迹象。</p>
+      <strong>互联网是一台把人类隐藏着的自私与偏激放大并奖励的机器，性别对立只是最高效的那个载体。不理解这个机制，所有试图"纠正"性别对立的努力都是在和症状搏斗。</strong>
+      <cite><a href="https://xiaobot.net/post/a587b2a4-65ad-4025-aaf2-978e12669de8" target="_blank" rel="noopener">小报童 · 纯银</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3>Brain2Qwerty v2（Meta FAIR）：非侵入式脑机接口实时解码句子，最优受试者词准确率达 78%</h3>
+      <p><strong>现状：</strong>脑机接口（BCI，Brain-Computer Interface，用仪器读取脑信号并转化为计算机指令的技术）长期面临两难：侵入式（植入电极）精度高但风险大，非侵入式（如脑电帽、脑磁图仪）安全但噪声极大、精度低。目前最好的非侵入式系统词准确率约 8%，远无法实用。</p>
+      <p><strong>问题：</strong>非侵入式设备捕捉到的是大范围神经活动叠加的微弱信号，从中解码出具体的词和句子，等于在嘈杂环境里辨认耳语——信号处理和语言建模都需要同时达到很高水平。</p>
+      <p><strong>解决方案：</strong>Meta FAIR 发布 Brain2Qwerty v2，用脑磁图（MEG，Magnetoencephalography，无需接触头皮、实时采集磁场变化的非侵入式设备）采集 9 名受试者在主动打字时的脑信号，每人记录约 10 小时、约 22,000 个句子。模型同时解码词语语义和字符序列，而不仅仅是字符。Meta 同步开源了 v1 和 v2 的训练代码，并公开了 v1 数据集。</p>
+      <p><strong>价值：</strong>整体词准确率 61%，比此前非侵入式 SoTA 提升约 7.6 倍；表现最佳的受试者达到 78%。这不意味着消费级产品已到来，但在受控实验室环境下，非侵入式脑信号→句子的解码已经从"理论上可能"进入"可测量可复现"。Meta 内部还发现，用 AI coding agent 自动搜索超参数的"Auto Research"工作流，进一步提升了词错误率，超越了人工调参的效果。</p>
+      <p><strong>未来方向：</strong>提高受试者间泛化性（目前需要个人化训练）、从实验室 MEG 设备向便携式设备过渡，是下一步的核心挑战。</p>
+      <cite><a href="https://ai.meta.com" target="_blank" rel="noopener">Meta AI</a> · <a href="https://tldr.tech" target="_blank" rel="noopener">TLDR</a> · <a href="https://www.bensbites.com" target="_blank" rel="noopener">AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>DSpark（DeepSeek）：谱解码新方案在单 GPU 上超越 Eagle3，已部署在 DeepSeek V4-Flash/Pro 预览引擎</h3>
+      <p><strong>现状：</strong>谱解码（Speculative decoding，一种让小型"草稿模型"先快速生成候选 token、大模型再批量验证的推理加速技术）已成为大模型部署的主流加速路径之一，Eagle3 和 DFlash 是此前的主要基线。</p>
+      <p><strong>问题：</strong>谱解码效果取决于两件事：草稿质量（生成的候选 token 能被大模型接受多少）和验证调度效率（判断和筛选候选 token 的计划）。现有方法在这两个维度上都存在优化空间。</p>
+      <p><strong>解决方案：</strong>DSpark 聚焦两个改进点：更好的草稿生成策略，以及更智能的验证调度机制（何时验证、验证多少候选，不再是固定规则）。结果是"被接受的 token 长度"（accepted length，越高说明每次大模型验证时接受的候选越多，推理越快）出现显著提升。</p>
+      <p><strong>价值：</strong>在 Qwen3-4B 上，DSpark vs Eagle3 提升 30.9% accepted length，vs DFlash 提升 16.3%，成为单 GPU 谱解码新 SoTA。DeepSeek 已将其部署在 DeepSeek-V4-Flash 和 V4-Pro 预览引擎中，vLLM 社区也在积极集成。</p>
+      <p><strong>未来方向：</strong>on-policy 谱解码（草稿与目标模型分布对齐）被认为是下一步提升 accepted length 的主要方向，DSpark 的调度思路可以和更先进的草稿模型组合使用。</p>
+      <cite><a href="https://www.bensbites.com" target="_blank" rel="noopener">AINews / Latent Space</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>OpenAI Codex 采用经济学报告：非技术岗用量快速追上工程师，已成 OpenAI 全员标配</h3>
+      <p><strong>现状：</strong>AI coding agent 的早期用户几乎清一色是工程师，"coding agent 只对写代码的人有用"是一个被广泛接受的默认前提。OpenAI 的 Codex 也主要以"AI 结对程序员"的形象被推广。</p>
+      <p><strong>问题：</strong>这个假设是否准确？非技术岗（产品、设计、运营、市场）在实际使用中的表现如何？</p>
+      <p><strong>解决方案：</strong>OpenAI 基于 Codex 在公司内外的实际采用情况，发布了一份经济学报告（economics paper），追踪了不同职能岗位的 Codex 使用量变化。数据显示，非技术部门的使用量正在快速追上工程部门，而整体来看，OpenAI 内部接近 100% 的员工现在定期使用 Codex，不仅仅是工程师。</p>
+      <p><strong>价值：</strong>这是一个来自"内部大规模实验"的真实数据点，而非调研或预测。非技术岗的大量使用，意味着 Codex 在查数据、自动化流程、处理文档、辅助决策等非编码场景已经成熟，产品定义需要扩展。</p>
+      <p><strong>未来方向：</strong>如果 coding agent 在 100% 员工中渗透，下一个自然问题是：它对工作方式结构的影响是否比"提速"更深——特别是对任务分工和团队规模的影响。</p>
+      <cite><a href="https://www.bensbites.com" target="_blank" rel="noopener">Ben's Bites</a> · <a href="https://www.bensbites.com" target="_blank" rel="noopener">AINews / Latent Space</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>iPhone 18 Pro 主板照片泄露：A20 芯片面积与 A19 Pro 相近，但热管理和内存/NPU 都有升级，Apple 同时节省了部分生产成本。<a class="glance-src" href="https://tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>OpenAI x Work Louder 联名 Codex 键盘在 AI Engineer World Fair 亮相，7 月 15 日发售，面向开发者和编程爱好者，与 Jony Ive 合作的 AI 设备项目完全独立。<a class="glance-src" href="https://tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Ryo Lu（Cursor 设计师）：Cursor iOS 正式上线，云端 agent 随时可管，改变中的一句文案——"wherever ideas hit. desks and laptops optional."<a class="glance-src" href="https://x.com/ryolu_" target="_blank" rel="noopener">X @ryolu_ →</a></li>
+      <li>Swyx：AIEWF 工作坊日，早上 9 点非实验室场的工作坊座无虚席，OpenAI、Snyk、Atlassian、Neo4j、Akamai、Together 同时开场，"人们对这些极度渴望"。<a class="glance-src" href="https://x.com/swyx" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>Peter Yang（@petergyang）：写作和编辑时，原版 Claude Web 依然最好，超过 Codex 和 Claude Code。他的猜测：coding agent 的系统提示让它变成了更差的写手。<a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Madhu Guru（前 Google Gemini 产品负责人）：开源权重模型（如 GLM）崛起，反而会强化 Google Cloud 的位置——企业想在托管平台上微调开源模型，Google 的基础设施和计算栈正好在那里等着。<a class="glance-src" href="https://x.com/realmadhuguru" target="_blank" rel="noopener">X @realmadhuguru →</a></li>
+      <li>Thariq（Claude Code / Anthropic）：他现在的写作流程：做工程 → 跟人聊 → 用 Claude 研究和头脑风暴 → 写文章 → 给一两个讲座 → 重写 → 再讲 → 重写开头 → 早上六点醒来再改 → 发。<a class="glance-src" href="https://x.com/trq212" target="_blank" rel="noopener">X @trq212 →</a></li>
+      <li>Zara Zhang：写作的市场价值正在上升（来自 Anthropic PM 的说法）——清晰表达对"驾驭模型"和"建立受众"都是前置条件，写作好在科技圈一直被低估。<a class="glance-src" href="https://x.com/zarazhangrui" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+      <li>Zara Zhang：造了一个 Chrome 插件，把"待读清单"自动转化成 Google 日历上的专属阅读时段（链接在内），存 5 篇文章就自动预约 30 分钟阅读块。无需账号，无需服务器，本地运行，已开源。<a class="glance-src" href="https://x.com/zarazhangrui" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+      <li>Garry Tan（YC 主席）：回应中国计算基础设施战略威胁，给出 YC 视角的操作答案："建电厂，建数据中心。"<a class="glance-src" href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Peter Steinberger（OpenClaw / OpenAI）：转推一个工具并评论"在 AI 时代，这东西还有什么意义"——AI 让很多几年前还会被点赞的东西突然显得没有价值。<a class="glance-src" href="https://x.com/steipete" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>Matt Turck（FirstMark Capital）：做弱者，一次又一次，是最持久的优势。<a class="glance-src" href="https://x.com/mattturck" target="_blank" rel="noopener">X @mattturck →</a></li>
+      <li>Nikunj Kothari（FPV Ventures）：世界杯进入高潮，巴西在 1 比 0 落后后绝杀逆转；巴拉圭在点球大战中击败德国；荷兰 91 分钟追平摩洛哥进入加时。<a class="glance-src" href="https://x.com/nikunj" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Vercel 函数（Functions）大小上限扩大 20 倍，Guillermo Rauch 同时暗示"明天会有更多公告"。<a class="glance-src" href="https://x.com/rauchg" target="_blank" rel="noopener">X @rauchg →</a></li>
+      <li>Ben's Bites：Etched 出山——专为 AI 推理设计的定制芯片，$8 亿融资、$10 亿以上订单积压，与 TSMC 合作在 4nm 节点一次流片成功（A0 一次通过极其罕见），已有 400 人来自 NVIDIA、Google TPU、Broadcom 等顶级团队，由 Jane Street、Peter Thiel 等背书。<a class="glance-src" href="https://www.bensbites.com" target="_blank" rel="noopener">Ben's Bites →</a></li>
+      <li>AINews / Latent Space：Arena（大模型评估平台，原名 Chatbot Arena / LMSYS）在推出评估产品 8 个月后达到年收入 $1 亿 ARR，平台重心正转向部署后评估和 agent 评估。<a class="glance-src" href="https://www.bensbites.com" target="_blank" rel="noopener">AINews →</a></li>
+      <li>AINews / Latent Space：Cline（AI coding assistant）推出 $9.99/月会员套餐，打折访问 GLM 5.2、DeepSeek、Kimi、MiniMax、Qwen 等开源权重模型，把"开源模型访问权"包月化。<a class="glance-src" href="https://www.bensbites.com" target="_blank" rel="noopener">AINews →</a></li>
+      <li>TLDR："The Economy of Tokens" — 稳定接口的出现正在催生 AI 生态的模块化重组，专业化分工、独立创新、去中心化正在替代大一统的 AI 栈。<a class="glance-src" href="https://tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>TLDR："It's Hard to Eval Is a Product Smell"——AI 时代，"这个能力很难评测"通常是产品设计出了问题，而不是评测本身的局限。<a class="glance-src" href="https://tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>TLDR："Technological Involution（技术内卷）"——作者认为，人类可想象的技术上限正在临近，资本主义失去了推动真正创新的动力，公司开始把用户当成被开采的矿脉。少数坚信"凭一己之力就能做到"的人，才有机会打破这种趋势。<a class="glance-src" href="https://tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>TLDR：旧金山年薪 18 万美元的科技工程师开始说"未来买不起房"。新一轮 AI 精英（OpenAI、Anthropic、SpaceX 员工）的 IPO 将催生 20 位新亿万富翁，进一步拉大内部分化。<a class="glance-src" href="https://tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-06-29.html">← JUN 29</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
