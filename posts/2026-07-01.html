@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — July 1, 2026</title>
+  <meta name="description" content="Claude Sonnet 5 正式发布，接近旗舰级性能但中价位。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">July 1, 2026</h1>
+
+  <p class="post-lead">Claude Sonnet 5 正式发布，接近旗舰级性能但中价位；Fable 5/Mythos 5 在与美国政府协商 jailbreak 修复后解禁恢复；美团 LongCat-2.0 首款全程跑在中国自研芯片上的 1.6T 开源 MoE 模型亮相；Warp CEO Zach Lloyd 在 AIEWF 发出预言：软件工程师的下一个身份是工厂工程师。</p>
+
+  <!-- SECTION_1_PLACEHOLDER -->
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--r"></span>
+      <h2>新闻速递</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://www.anthropic.com/news/claude-sonnet-5" target="_blank" rel="noopener">Claude Sonnet 5 正式发布</a></h3>
+      <p>Anthropic 于 7 月 1 日正式推出 Claude Sonnet 5：SWE-bench Verified 79.8%、GPQA Diamond 83.7%，性能已接近旗舰 Opus 4.8，但维持中端定价。API 端支持 extended thinking、200K context 窗口与 computer use 工具调用，同日上线 Claude.ai 及 API。</p>
+      <cite>Anthropic</cite>
+    </article>
+
+    <article class="item">
+      <h3>Fable 5 / Mythos 5 与美国政府协商后解禁恢复</h3>
+      <p>Fable AI 旗下 Fable 5 和 Mythos 5 模型此前因 safety 顾虑被暂停访问；经与美国政府就 jailbreak 修复方案协商达成一致后本周重新开放。此次事件让"创意 AI 合规路径"进入公众视野——生成式 AI 安全不再只是技术问题，而是需与监管机构协商的政策问题。</p>
+      <cite>TLDR AI</cite>
+    </article>
+
+    <article class="item">
+      <h3>AWS 将"前沿部署"团队独立为 $1B 业务单元</h3>
+      <p>亚马逊 AWS 正在将 Frontier Deployment &amp; Exploration（FDE）团队剥离为独立业务单元，年收入目标定为 $1B，核心客户是希望在 AWS 上落地大模型的企业。这一动作标志着云厂商竞争重心从卖算力转向卖 AI 工程能力与落地服务。</p>
+      <cite>TLDR AI</cite>
+    </article>
+
+    <article class="item">
+      <h3>美团 LongCat-2.0：首个全程运行在中国自研芯片上的 1.6T MoE 开源模型</h3>
+      <p>美团发布 LongCat-2.0，1.6T 参数 MoE 架构，训练与推理全流程运行在中国自研 AI 芯片之上，是业内首个做到这一点的超大规模模型。完全开源，并附训练细节与芯片适配报告，直接回应芯片封锁对国内大模型训练能力的质疑。</p>
+      <cite>AINews</cite>
+    </article>
+
+  </section>
+
+  <!-- SECTION_2_PLACEHOLDER -->
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--o"></span>
+      <h2>AI 方向观点</h2>
+    </div>
+
+    <article class="item">
+      <h3>Zach Lloyd：软件工程师的下一个身份是"工厂工程师"</h3>
+      <p>Warp CEO Zach Lloyd 在 AI Engineer World's Fair（AIEWF）演讲中提出：AI coding 正将软件工程从"手工艺"推向"工厂生产"。未来工程师不再逐行写代码，而是管理 AI 流水线的工厂工程师（factory engineer）——设计流程、设置质检节点、提升产线吞吐量。<strong>这不是职业消亡，而是职责迁移：从生产者变成生产线设计者。</strong></p>
+      <cite>Latent Space / AIEWF</cite>
+    </article>
+
+    <article class="item">
+      <h3>swyx：loopcraft 与 AI Engineer 时代的核心技能</h3>
+      <p>Latent Space 主理人 swyx 在 AIEWF 主旨演讲中提出"loopcraft"概念：AI 工程师的核心技能已从调用 API 演进为设计和调试 agent loop。他认为 2026 年的 AI 工程师必须理解 loop 的健康状态（observability）、失效模式（failure modes），以及如何在 loop 中嵌入人类判断节点（human-in-the-loop checkpoints）。</p>
+      <cite>Latent Space / AIEWF</cite>
+    </article>
+
+  </section>
+
+  <!-- SECTION_3_PLACEHOLDER -->
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--y"></span>
+      <h2>产品与商业</h2>
+    </div>
+
+    <article class="item">
+      <h3>Every.to：Codex in Practice — 编辑团队六周实验报告</h3>
+      <p>Every.to 发布 Codex in Practice 报告，记录编辑团队将 OpenAI Codex（现 o3 API）用作团队工作空间六周的实验：任务分配、知识文档共享、跨职能代码联调。核心结论：Codex 在异步协作（async collaboration）中优于实时 AI 助手，尤其适合"分头做任务、合并检验"的场景；但"共识建立"与"方向决策"仍是人类强项。</p>
+      <cite>Every.to</cite>
+    </article>
+
+    <article class="item">
+      <h3>Aaron Levie：企业 AI 安全共同框架</h3>
+      <p>Box CEO Aaron Levie 发布其团队整理的企业 AI 安全共同框架，涵盖四个维度：数据驻留（data residency）、访问控制（RBAC with AI scope）、审计日志（audit trail with model attribution）、模型切换（vendor-agnostic switching）。框架面向同时接入多家 AI 供应商的企业，旨在降低供应商锁定与合规风险，已开放 GitHub 共享。</p>
+      <cite>Aaron Levie / Box</cite>
+    </article>
+
+  </section>
+
+  <!-- SECTION_4_PLACEHOLDER -->
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--g"></span>
+      <h2>人文与哲学</h2>
+    </div>
+
+    <article class="item">
+      <h3>Tim Ferriss × Dr. Andrew Weil × Wade Davis：古柯叶、传统医学与现代焦虑</h3>
+      <p>Tim Ferriss 播客新集邀请整合医学先驱 Dr. Andrew Weil 与植物人类学家 Wade Davis 同台，围绕古柯叶展开三小时对话。从安第斯原住民的传统使用，到西方世界对"危险植物"的系统性妖魔化，再到现代医学对植物智慧的重新审视——三人共同指向一个结论：<strong>焦虑文明的解药或许藏在被遗忘的植物知识里，而非下一种合成分子。</strong>值得搭配 Michael Pollan 的《植物的欲望》一起读。</p>
+      <cite>The Tim Ferriss Show</cite>
+    </article>
+
+  </section>
+
+  <!-- SECTION_5_PLACEHOLDER -->
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--b"></span>
+      <h2>AI 进展</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.16140" target="_blank" rel="noopener">VibeThinker-3B：用直接推理蒸馏让小模型获得强推理能力</a></h3>
+      <p>提出 Direct Reasoning Distillation（DRD）框架，让 3B 小模型从大模型推理链中蒸馏"思考能力"而非最终答案。在 AIME 2026 上达 <strong>94.3%</strong>，超越多个 7B 竞品。结论：推理能力是可迁移的高层结构，不依赖参数量，关键在于蒸馏的粒度与对齐策略。</p>
+      <cite>arXiv 2606.16140</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.23050" target="_blank" rel="noopener">Unlimited OCR Works：任意文档、任意版式、任意语言</a></h3>
+      <p>百度提出 Rotary Sliding Window Attention（R-SWA）机制，解决长文档 OCR 中版式混乱与跨语言识别难题。在公开 OCR 基准上取得 SOTA，混合版式（表格 + 公式 + 图片混排）场景领先尤为显著。对需要大规模文档数字化的企业（法律、金融、档案）有直接落地价值。</p>
+      <cite>arXiv 2606.23050</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2509.22186" target="_blank" rel="noopener">MinerU2.5：开源精准文档内容提取方案</a></h3>
+      <p>上海 AI Lab 发布 MinerU2.5，1.2B 参数文档理解 VLM，专攻 PDF 与扫描件的结构化提取（标题层级、表格、代码块、数学公式）。在 OmniDocBench 上以小参数量超越多个商用 API，且完全开源。对 RAG pipeline 的文档预处理环节有直接替代价值。</p>
+      <cite>arXiv 2509.22186</cite>
+    </article>
+
+    <article class="item">
+      <h3>GeneBench-Pro：评估 AI 在专业生物任务上的能力</h3>
+      <p>OpenAI 联合生命科学机构发布 GeneBench-Pro 基准，涵盖基因编辑设计、蛋白功能预测、文献综合三类专业任务。GPT-5.6 Sol 在最难子集得 <strong>28.7%</strong>，超越人类专家基线 19%；但在需要湿实验验证的任务上仍不可靠——AI 知道答案，却无法感知实验约束。</p>
+      <cite>bioRxiv 2026.06.29</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.04315" target="_blank" rel="noopener">探索 Agentic Memory 系统的跨场景泛化能力</a></h3>
+      <p>系统研究 agent memory 在不同任务场景间的迁移效果（旅行规划 → 代码调试 → 知识检索）。发现情景记忆（episodic memory）比语义记忆跨场景迁移更稳定；memory 压缩策略对泛化性的影响超过 memory 容量本身。对构建长期运行 agent 的工程师有直接参考价值。</p>
+      <cite>arXiv 2606.04315</cite>
+    </article>
+
+  </section>
+
+  <!-- SECTION_6_PLACEHOLDER -->
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--m"></span>
+      <h2>看一眼</h2>
+    </div>
+
+    <ul class="glance-list">
+      <li><strong>Claude Desktop for Linux 正式发布</strong> — Anthropic 推出 Linux 桌面客户端正式版，企业 Linux 环境的 AI 原生时代开幕。</li>
+      <li><strong>Meta 入股 Kalshi</strong> — Meta 通过投资部门战略入股预测市场平台 Kalshi，押注事件合约在信息验证中的长期价值。（TLDR AI）</li>
+      <li><strong>Realta Fusion D 轮</strong> — 核聚变初创 Realta Fusion 完成 D 轮融资，Microsoft 参投，目标是 2030 年代实现商业聚变发电。（TLDR AI）</li>
+      <li><strong>Conception AI：体外卵子成熟突破</strong> — Conception AI 宣布在体外将卵原细胞成熟至可受精阶段取得里程碑进展，或将拓宽女性生育选择的时间窗口。（TLDR AI）</li>
+      <li><strong>Tesla Cybercab 开始小批交付</strong> — Tesla 开始向内部员工小批交付 Cybercab，Robotaxi 量产从"演示"进入"内部验证"阶段。（TLDR AI）</li>
+      <li><strong>Tenor GIF 平台将年底关闭</strong> — Google 旗下 Tenor 宣布年底停止服务，继 Stadia 后又一个被关停的 Google 产品。（TLDR AI）</li>
+      <li><strong>Nano Banana 2 Lite 发布</strong> — 新款小型多模态开源模型，定位边缘端部署，支持图文理解与代码生成。（AINews）</li>
+      <li><strong>@bcherny（Boris Cherny）</strong>：Claude Desktop for Linux 到来意味着 background agents 可在开发者最常用的工作环境中原生运行——这是 agent 落地的重要基础设施节点。</li>
+      <li><strong>@swyx</strong>：AIEWF 结束后的复盘线程——loopcraft 的核心不是写更好的 prompt，而是让 AI loop 可观测（observable）、可调试（debuggable）、可中断（interruptible）。</li>
+      <li><strong>@aaronlevie（Aaron Levie）</strong>：企业 AI 落地最大的摩擦力不是技术，是治理。谁能先建立清晰的 AI governance framework，谁就能先部署。</li>
+    </ul>
+
+  </section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-06-30.html">← Jun 30</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
