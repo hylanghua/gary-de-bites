@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — July 2, 2026</title>
+  <meta name="description" content="Fable 5 在美国商务部解除出口管制后全球回归，Claude Sonnet 5 同日发布；OpenAI 向联邦政府提议持股 5%；Aaron Levie 和 Peter Steinberger 都在说同一件事：软件工厂的时代到了，100x 推理需求是确定趋势。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">July 2, 2026</h1>
+
+  <p class="post-lead">Fable 5 在美国商务部解除出口管制后全球回归，Claude Sonnet 5 同日发布；OpenAI 向联邦政府提议持股 5%；Aaron Levie 和 Peter Steinberger 都在说同一件事：软件工厂的时代到了，100x 推理需求是确定趋势。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.anthropic.com/news/redeploying-fable-5" target="_blank" rel="noopener">Fable 5 全球回归：美国商务部解除出口管制，新安全分类器上线，7月7日后转 API 按量计费</a></h3>
+      <p>Anthropic 于 7 月 1 日下午 3:30 ET 恢复了 Claude Fable 5（此前代号 claude-opus-4-5）的全球访问权限。背景是：美国商务部于 6 月 12 日因担心越狱（jailbreak，即绕过模型安全限制）风险下令暂停 Fable 5 的出口，Anthropic 随即配合政府，在强化安全监控、协调未来模型发布节奏、主动报告恶意活动等方面做出承诺后获准恢复。新版本内置网络安全分类器（cybersecurity classifier），被拦截的请求会回退至 Opus 4.8。使用限制：现有付费订阅计划可用至 7 月 7 日，期间每周 usage 上限的 50% 可分配给 Fable；7 月 7 日后只能通过 API 按 token 付费使用。</p>
+      <p>从 Every.to 团队的亲历记录来看，Fable 5 在 6 月 12 日被下线后，团队成员普遍在"Opus 4.8"和"Codex"之间临时切换，用三个词总结感受："I miss Fable."上线后 15 分钟内，X 上的庆祝推文涌现，Dan Shipper 表示要"从热水浴缸里烧 Fable token"，Alex Albert（Anthropic Research）直接写"Welcome back to the world Fable!!"。这一幕说明：高性能模型的周期性不可用，不仅是用户体验问题，已成为企业 AI 策略中需要提前对冲的变量。</p>
+      <cite><a href="https://www.anthropic.com/news/redeploying-fable-5" target="_blank" rel="noopener">Anthropic</a> · <a href="https://www.bensbites.com" target="_blank" rel="noopener">Ben's Bites</a> · <a href="https://every.to" target="_blank" rel="noopener">Every.to</a> · <a href="https://x.com/claudeai" target="_blank" rel="noopener">X @claudeai</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.anthropic.com/news/claude-sonnet-5" target="_blank" rel="noopener">Claude Sonnet 5 发布：$2/$10 per M tokens，SWE-bench Pro 63.2%，定价低于 Opus 但 per-task 成本相当</a></h3>
+      <p>Anthropic 于 6 月 30 日正式发布 Claude Sonnet 5，定价 $2 per M 输入 token、$10 per M 输出 token，8 月 31 日前享受发布优惠价。基准测试表现：SWE-bench Pro 63.2%（软件工程任务基准，越高越强）、OSWorld-Verified 81.2%（操作系统交互场景）、Terminal-Bench 2.1 80.4%（后者甚至略超 Opus 4.8）。现为 Claude Free/Pro 用户默认模型，同步上线 Claude Code 和 API。AI Valley 将其定位为"性能接近 Opus 4.8 的低成本 agent 模型"。不过 Ben Ben's Bites 实测体感是"慢且贵"——每次任务的实际 token 消耗让成本与 Opus 相当，加上速度更慢，实用场景仍有局限。</p>
+      <cite><a href="https://www.anthropic.com/news/claude-sonnet-5" target="_blank" rel="noopener">Anthropic</a> · <a href="https://www.bensbites.com" target="_blank" rel="noopener">Ben's Bites</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://tldr.tech" target="_blank" rel="noopener">OpenAI 向特朗普政府提议：让联邦政府持有各大 AI 公司 5% 股权，换取政治压力缓解</a></h3>
+      <p>OpenAI 向特朗普政府提交了一份政治-商业组合提案：建议联邦政府通过一个政府载体，持有 OpenAI 约 5% 股权（以当前估值计约 $426 亿美元）。这一方案被包装成"让公众分享 AI 红利"的国家利益叙事——Sam Altman 称这是"让公众在 AI 长期成功中拥有直接财务利益的最佳方式"，同时也被外界普遍解读为缓解华盛顿对 AI 行业施压的政治保险。如果落地，联邦政府将成为每家主要美国 AI 开发商的小股东。</p>
+      <cite><a href="https://tldr.tech" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://techcrunch.com/2026/07/01/spacex-has-an-ai-device-prototype-and-it-sure-sounds-phone-ish/" target="_blank" rel="noopener">SpaceX 向投资者展示 AI 手持设备原型，马斯克随后否认，SPCX 股价跌 8%</a></h3>
+      <p>据 WSJ 报道，SpaceX 在 IPO 前向投资者展示了一款 AI 手持设备原型：Qualcomm Snapdragon 芯片、专属操作系统、深度集成 xAI 技术，外形比 iPhone 更轻薄。马斯克当日在 X 上称报道"utterly false（完全是假的）"，SPCX 股价随即下跌约 8%。目前尚不清楚马斯克否认的是具体细节还是整个项目的存在。这件事的有趣之处不在设备本身，而在于它揭示了一个趋势：SpaceX IPO 前的投资者故事里，AI 设备硬件已经是重要叙事组成部分。</p>
+      <cite><a href="https://tldr.tech" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Garry Tan：UC Berkeley EECS 系主任加入 Anthropic，"Anthropic is on a tear"</h3>
+      <p>YC 主席 Garry Tan 在 X 发推：加州大学伯克利分校 EECS（电子工程与计算机科学系，全球顶尖 CS 学系）系主任加入 Anthropic，配字"Mega get…Anthropic is on a tear"（大捕获……Anthropic 势头惊人），获得 2428 个赞。这条推文是对 Anthropic 今年人才策略的缩影——从学术界直接挖顶层研究负责人，而不是从其他 AI 实验室横向挖角。学术界 vs. 产业界的人才流向，长期被 AI 领域视为判断实验室研究深度的指标之一。</p>
+      <cite><a href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3>Aaron Levie（Box CEO）：Devin 的 agentic mapreduce 是 100x 推理需求的活证据</h3>
+      <p>Aaron Levie 今天在 X 上转发并深度评论了 Devin 最新发布的 agentic mapreduce（代理式映射-归约，借用分布式计算术语：把一个大任务拆分给多个 agent 并行处理，再汇总结果）用例。Devin 的做法是：先扫描整个代码仓库找出相关信号，再将代码切分成有边界的分片分发给多个聚焦 agent 并行处理，最后把所有发现汇总成一份报告，并在独立沙盒（sandboxed environment，隔离的执行环境）中验证严重漏洞。这一次的场景是代码安全审计，但 Levie 的判断是这只是一个典型，同样的模式可以在文档处理、知识管理、风险分析、药物发现等任何大规模非结构化数据场景中复制。</p>
+      <p>他的核心结论：这类 agent 工作流依赖大量 token 吞吐——混合使用前沿模型（做复杂推理和最终验证）和低成本模型（处理并行分片任务），才能在经济上可行。这意味着"多模型分层部署"不是可选功能，而是让 agent 工作流跑得起来的基础设施条件。Levie 在 Box 也正在做同样的事：帮助企业客户处理数百万份文档做风险识别、洞察提取和关系梳理。</p>
+      <strong>Devin 把代码安全审计变成了一个可以全自动、全覆盖、全并行的流水线——Levie 的意思是，这个句子里的"代码安全"可以替换成任何知识密集型工作。</strong>
+      <cite><a href="https://x.com/levie/status/2072519377371459836" target="_blank" rel="noopener">X @levie</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/paul-bakaus" target="_blank" rel="noopener">Paul Bakaus（Impeccable 作者，via Latent Space）：Skill engineering 是新兴职业——给 AI agent 赋予设计词汇表，才能解决输出同质化</a></h3>
+      <p>Latent Space 今日发布对 Paul Bakaus 的深度访谈。Bakaus 是开源设计技能系统 Impeccable 的创始人，他的核心论点是：大多数 AI agent 不够有创意，"因为它们趋向收敛——如果所有人用同一个技能做前端设计，最终所有界面都会长一个样"。解法是 skill engineering（技能工程）——一个正在成形的新职业，核心工作是把领域专家的专业词汇和判断逻辑转化成 agent 可以可靠执行的技能文件。</p>
+      <p>他的关键发现：一个设计师和一个工程师用同一个模型做同样的设计任务，产出质量差距极大——不是因为能力，而是因为设计师知道怎么描述自己想要什么。Impeccable 的做法是把"大胆（bold）"不定义为"加渐变、加霓虹效果"，而定义为"提升信息层级、加大关键元素比例、用决断性排版来吸引注意力"。"形容词加上没有任何背景，只是一个漂亮的撇号。你必须告诉 agent 你真正的意思是什么。"他把这个过程叫做给词汇"赋予意义（imbue with meaning）"。</p>
+      <p>更大的判断是：设计、工程、产品管理的边界正在模糊。"设计师正在进入代码，工程师正在进入设计，双向都在发生。"只做"把 Figma 稿转成代码"的工程师和只做"让现有界面看上去还行"的设计师，都面临自动化压力。Bakaus 认为，设计师和 PM 的角色实际上在向同一层收敛：思考"要做什么"，而不是"如何实现"。</p>
+      <strong>Skill engineering 的价值不在于让 agent 更聪明，而在于让人类的领域判断得以被系统性封装和复用——这是一个把专家知识工程化的新职业，而不只是"写更好的 prompt"。</strong>
+      <cite><a href="https://x.com/swyx/status/2072562702703046855" target="_blank" rel="noopener">Latent Space / X @swyx</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Peter Steinberger（OpenClaw / OpenAI）：向 Steve Yegge 致敬——"他只是太早了，就像所有有远见的人。现在每个人都在建工厂"</h3>
+      <p>Peter Steinberger 今天在 X 发了一条不长但密度很高的推文："Never thought I'd give @Steve_Yegge a shoutout. He was just early, like most visionaries. Now everyone is building factories."（292 赞）Steve Yegge 是 Google 工程师，十多年前写过一篇内部备忘录（"Stevey's Rant"），把软件开发比喻成工厂：有意义的软件产品需要像工厂一样的标准化流程和基础设施，而不是依赖个别天才。这个比喻在当时被当作超前想法，现在 AI coding agent 的普及让"软件工厂"成了 AIEWF（AI Engineer World's Fair，2026 年最大的 AI 工程师大会）上反复出现的关键词。</p>
+      <p>Steinberger 的这条推文，是在 AIEWF 大会期间 AI 工程社区集体"回望"的一个典型：很多先于时代的想法，只是在等待技术使这些想法变得可执行。Steipete 自己作为 OpenClaw 的创始人，也正在把 agentic coding 做成产品——他的感慨有切身体验在里面。</p>
+      <strong>软件工厂叙事不是新观念，是 AI 让旧观念终于拥有了实现路径。Yegge 的备忘录等了十年，才等来让它变成现实的工具。</strong>
+      <cite><a href="https://x.com/steipete/status/2072532278476148881" target="_blank" rel="noopener">X @steipete</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3>Guillermo Rauch（Vercel CEO）：agentic deployments 新增 dry-run 步骤——让 agent 先验证，再推</h3>
+      <p>Guillermo Rauch 今日宣布 Vercel 正在为 agentic deployments（agent 自主触发的部署流程，不需要人工手动执行部署命令）推出 dry-run（干运行，即不产生实际变更的预检验步骤）。他的观察："Agents love to check their work before they push. You probably see it in the form of `node --check`, `tsc --noEmit`, `next build` etc all over your agent sessions."（"Agent 喜欢在推送前检查自己的工作。你大概已经在 agent session 里见过各种形式的检查指令了。"）干运行的意义是：在真正触发部署之前，在云端完整模拟一次构建，确认没有错误，再实际执行——把 agent 已有的"自我检查"习惯提升成平台级的标准步骤，而不是依赖 agent 在 session 里自发做。</p>
+      <p>结合 Rauch 同日分享的另一个案例（WordPress on Vercel + Docker + MySQL on PlanetScale，30 秒完成含 docker build 的云端构建），可以看到 Vercel 的方向：把传统开发工作流（包括 WordPress 这种二十年老栈）整合进 agentic deployment 体系，而不是要求开发者重写工作流来适配 AI。</p>
+      <strong>Dry-run 是 agentic deployment 从"能用"到"可信"的关键一步：让 agent 的部署权限不再是全有全无，而是"先验证、再确认、后执行"的分级授权。</strong>
+      <cite><a href="https://x.com/rauchg/status/2072398926175404250" target="_blank" rel="noopener">X @rauchg</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Amjad Masad（Replit CEO）："building is easy"，下一个战场是第一个客户、第一块钱</h3>
+      <p>Amjad Masad 今日宣布 Replit 应用上线 Whop（一个面向创作者的数字商品销售平台），并在推文里写道："Now that building is easy, we've been increasingly focused on getting entrepreneurs to market, helping them reach their first customer and first dollar."（"既然构建已经不再是障碍，我们越来越专注于帮助创业者上市，帮他们拿到第一个客户和第一块钱。"）这条推文直接道出了 AI 时代的产品价值迁移：2024 年之前，Replit 的核心价值在于降低开发门槛；2026 年，这个问题已经被解决，瓶颈移到了 go-to-market（进入市场）。</p>
+      <p>Replit + Whop 的组合逻辑：在 Replit 上用 AI 构建应用，直接在 Whop 上以订阅或一次性付费的形式出售，全流程不需要自己搭建支付基础设施。这是一条完整的"创建 → 发布 → 变现"路径，目标用户是那些能用 AI 把想法变成产品、但以前被分发和变现卡住的个人创作者。</p>
+      <strong>Replit 在 AI 时代的重新定位是清晰的：不再只是开发工具，而是从代码到第一笔收入的完整路径。"Building is easy"这句话，本身就是一个时代宣言。</strong>
+      <cite><a href="https://x.com/amasad/status/2072385092824260748" target="_blank" rel="noopener">X @amasad</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Zara Zhang：构建技能的反直觉方法论——"你不是从 skill 开始，你是以 skill 结束"</h3>
+      <p>Zara Zhang 今日在 AIEWF 期间发了一条方法论总结："HOW TO BUILD A SKILL: You don't START with a skill. You END with a skill. Building the skill is the last step of your workflow, not the first step."（"如何构建技能：你不是从技能开始，你是以技能结束。构建技能是你工作流的最后一步，不是第一步。"）</p>
+      <p>这个直觉对很多人来说是反向的：很多人的做法是先想好"我要做一个技能"然后去设计它，但 Zara 的框架是：先把工作流跑通（反复用 agent 完成实际任务），在跑通之后，把整个流程提炼、结晶成一个可复用的技能文件。Skill 是 workflow 成熟后的产物，不是工作的出发点。这和 Latent Space 今日对 Paul Bakaus 的访谈（Impeccable 也是从扩展 Anthropic 前端技能开始，而不是从"设计一个完整技能系统"开始）形成了方法论上的呼应。</p>
+      <strong>先做工作、再提炼工具——这个顺序看起来显而易见，但在 AI 工具爆炸的语境下，很多人恰恰在没有跑通工作流之前就急于封装。</strong>
+      <cite><a href="https://x.com/zarazhangrui/status/2072381929366987087" target="_blank" rel="noopener">X @zarazhangrui</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3>Nikunj Kothari（FPV Ventures）：AI 实验室人才漩涡——mission + pre-IPO 流动性是 2026 年最难拒绝的组合</h3>
+      <p>Nikunj Kothari 今日在 X 发了一段私人观察："The talent vortex of @OpenAI and @AnthropicAI is only getting crazier. In the last 2 months, four personal friends have left VERY established roles to join the labs."（"OpenAI 和 Anthropic 的人才漩涡只会越来越疯狂。过去两个月，我认识的四位朋友离开了非常成熟的岗位，加入了这些实验室。"）他分析了背后的拉力：一是使命感（"building one of the most consequential companies"，"参与建造最具历史分量的公司之一"）；二是上市前的流动性窗口（"it being pre-IPO and getting liquidity"）。这两个因素叠加，构成了一个几乎无解的吸引力方程式。</p>
+      <p>Nikunj 也说出了留守 VC 行业的代价——大多数 VC 实际上不会赚到改变人生的钱（"most VCs actually won't make a lot of money"），有些人已经转向实验室岗位，就是算清楚了这笔账。他对那些选择自己创业的人的判断是：你必须有"MASSIVE ambition"，因为实验室提供的组合在期望价值上太强了，做自己的事的意义必须在那之上，才说得过去。</p>
+      <strong>AI 实验室的人才竞争已经不是单纯薪资问题——是 mission × liquidity × 历史感的三重叠加，而自主创业作为选项，被迫退守到了"你必须真的确定自己在做最重要的事"这个标准。</strong>
+      <cite><a href="https://x.com/nikunj/status/2072344802570756121" target="_blank" rel="noopener">X @nikunj</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Aditya Agarwal（South Park Commons 联合创始人）：旧金山是一台筛选乐观主义者的机器</h3>
+      <p>Aditya Agarwal（Facebook 早期工程师，Dropbox 前 CTO）今日写道："Every once in a while, I meet a very very smart but default-pessimistic person in SF. They are often from the growthy/wall-street part of the world. And my first thought is: 'Why would you want to be in this city? We run on optimism. Are you here to be a contrarian in your sadness?'"</p>
+      <p>这段话说的不是哪个具体的人，而是一种文化基因的自我描述。旧金山的创业圈有一套隐性规范：乐观主义不只是情绪状态，而是行动的前提——你必须相信自己可以让某件不存在的事成为现实，才会开始做。而金融/咨询背景里培养出来的"理性悲观主义"（分析风险，质疑可行性）和这套规范有结构性冲突。Aditya 的"contrarian in your sadness"（"用悲观来彰显聪明"）是个精准的捅刀：这不是批评悲观，而是批评把悲观当成某种智识优越感的表现方式。</p>
+      <strong>旧金山的乐观主义不是天真，是一种职业选择——在这里，悲观主义者无法长期被生态系统容纳，因为他们无法给身边的人提供行动能量。</strong>
+      <cite><a href="https://x.com/adityaag/status/2072449611550380526" target="_blank" rel="noopener">X @adityaag</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.30616" target="_blank" rel="noopener">Agents-A1（上海 AI Lab）：35B 参数超越万亿参数模型——靠的不是参数量，而是 agent 决策深度</a></h3>
+      <p><strong>现状：</strong>AI 模型能力竞争长期依赖规模化参数（parameter count），万亿参数模型（如 Kimi-K2.6、DeepSeek-V4-Pro）被视为性能天花板，而训练和部署成本极高。</p>
+      <p><strong>问题：</strong>能否在更小的参数规模下，通过改变 agent 的决策方式而不是增加参数，达到同等甚至更好的效果？</p>
+      <p><strong>解决方案：</strong>上海 AI Lab 的 InternScience 团队推出 Agents-A1，一个 35B MoE（混合专家，Mixture-of-Experts，让模型根据任务动态激活不同子模块的架构）模型。核心创新是构建"长视野知识-行动基础设施"（long-horizon knowledge-action infrastructure）：训练数据平均每条轨迹约 45K tokens，远长于常规训练样本。三阶段训练：全领域 SFT（监督微调）→ 领域级教师模型 → 多教师域路由在线策略蒸馏。开源于 Hugging Face（InternScience/Agents-A1）。</p>
+      <p><strong>价值：</strong>SEAL-0 基准 56.4，IFBench（指令遵循）80.6，FrontierScience-Olympiad（跨领域科学题）79.0，全面达到或超过训练成本高出数倍的万亿参数模型。这是一个"花更少训练更多"路径的实质性证明：决策深度可以部分替代参数规模。</p>
+      <p><strong>未来方向：</strong>在资源受限环境下（边缘设备、私有化部署）实现高能力 agent，以及进一步提升多领域泛化能力。</p>
+      <cite><a href="https://arxiv.org/abs/2606.30616" target="_blank" rel="noopener">arXiv 2606.30616</a> · <a href="https://huggingface.co/papers/week/2026-W27" target="_blank" rel="noopener">HF Week 27 #1</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.16140" target="_blank" rel="noopener">VibeThinker-3B（WeiboAI）：3B 参数达到 AIME26 94.3%——小模型可验证推理的新边界</a></h3>
+      <p><strong>现状：</strong>大型推理模型（如 OpenAI o3、DeepSeek-R1）在数学竞赛和代码题上取得突破，但参数规模通常在数百亿到数千亿级别，推理成本高、延迟大。</p>
+      <p><strong>问题：</strong>30 亿参数（3B）以内的小模型，是否能在可验证推理任务（有标准答案可以自动评分的任务，如数学、代码）上接近甚至超越更大模型？</p>
+      <p><strong>解决方案：</strong>WeiboAI 团队提出 Spectrum-to-Signal 后训练范式，三步组合：课程制 SFT（从易到难有序微调）→ 多领域强化学习（让模型在不同类型的可验证任务上自我改进）→ 离线自蒸馏（让模型从自己过去的好答案中持续学习）。同时支持 claim-level 测试时扩展（推理时对中间步骤做二次验证）。</p>
+      <p><strong>价值：</strong>AIME26（美国数学邀请赛，2026 题目）94.3%（含 claim-level 扩展达 97.1%），LiveCodeBench v6 Pass@1 80.2%，最近 LeetCode 周赛 96.1% 通过率。3B 小模型达到这一水平，意味着强推理能力向私有化、低成本部署场景迈出关键一步。</p>
+      <p><strong>未来方向：</strong>进一步压缩推理时 token 消耗（当前强推理仍较长），以及在开放域问答（非可验证任务）上的泛化。</p>
+      <cite><a href="https://arxiv.org/abs/2606.16140" target="_blank" rel="noopener">arXiv 2606.16140</a> · <a href="https://huggingface.co/papers/week/2026-W27" target="_blank" rel="noopener">HF Week 27</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.31551" target="_blank" rel="noopener">AutoTrainess：让 LM agent 自动完成整个后训练流程——AI 训练 AI 的系统性实践</a></h3>
+      <p><strong>现状：</strong>大模型的后训练（post-training，包括 SFT、RLHF、评估、迭代等环节）高度依赖人类专家判断：怎么构建训练数据、怎么调超参、怎么判断 checkpoint 质量，每一步都需要经验积累。这既是成本瓶颈，也是很多团队无法追上前沿的核心壁垒。</p>
+      <p><strong>问题：</strong>能否把人类后训练专家的决策逻辑封装成 agent 可执行的工作流，让 AI 在无人干预的情况下自主完成整个后训练循环？</p>
+      <p><strong>解决方案：</strong>AutoTrainess 把后训练流程拆解为 agent 可调用的步骤：规划迭代方向 → 构建与 benchmark 对齐的训练数据 → 执行稳定的训练任务 → 评估 checkpoint → 保存跨多小时交互的实验状态。把人类专家知识外化为显式工作流（explicit workflows）和 agent-computer 接口（agent 和计算环境交互的标准化接口）。</p>
+      <p><strong>价值：</strong>在 PostTrainBench（后训练能力评估基准）上，AutoTrainess + GPT-5.4 达到 26.94，优于 CLI-only 基线的 23.21；把 DeepSeek-V4-Flash 从 12.13 提升到 19.58。自动化后训练不只节省人力，更重要的是让后训练能力不再是少数顶级实验室的专属资源。</p>
+      <p><strong>未来方向：</strong>与搜索类 autoresearch（自动科学研究）系统整合，构建"从假设到训练到评估"全自动化的模型改进闭环。</p>
+      <cite><a href="https://arxiv.org/abs/2606.31551" target="_blank" rel="noopener">arXiv 2606.31551</a> · <a href="https://huggingface.co/papers/week/2026-W27" target="_blank" rel="noopener">HF Week 27</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.00862" target="_blank" rel="noopener">CAT: Confidence-Adaptive Thinking（ACL 2026 工业赛道）：用置信度动态分配推理预算，让大推理模型不再一律慢</a></h3>
+      <p><strong>现状：</strong>大推理模型（Large Reasoning Models，如 OpenAI o 系列、Claude 扩展思考模式）通过长链式思考（chain-of-thought）显著提升复杂任务准确性，但代价是几乎每个请求都消耗大量 token，包括那些其实不需要深度推理的简单问题。</p>
+      <p><strong>问题：</strong>"What is 2+2?" 和"证明黎曼假设"使用完全相同的推理深度，是资源浪费，也是延迟过高的根本原因。如何在不降低准确率的前提下，让推理预算（reasoning budget）随问题难度动态伸缩？</p>
+      <p><strong>解决方案：</strong>CAT（Confidence-Adaptive Thinking）在推理时实时估算模型的置信度（confidence signal），高置信度请求分配更短的思考链，不确定的请求扩展推理轨迹。置信度估算本身是轻量级的，不需要额外前向传播。已被 ACL 2026 工业赛道录用。</p>
+      <p><strong>价值：</strong>在保持准确率的同时显著降低平均推理成本和延迟，尤其对混合难度的生产环境（如 API 服务、实时应用）价值突出。让大推理模型从"昂贵的专用工具"向"自适应的通用工具"迈进。</p>
+      <p><strong>未来方向：</strong>与 token 预算约束（token budget constraints）结合，以及在多模态推理中的扩展。</p>
+      <cite><a href="https://arxiv.org/abs/2607.00862" target="_blank" rel="noopener">arXiv 2607.00862</a> · <a href="https://huggingface.co/papers/week/2026-W27" target="_blank" rel="noopener">HF Week 27</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.01191" target="_blank" rel="noopener">Perceive-to-Reason（浙江大学 ZJU-REAL）：把感知和推理拆成两步，精细视觉推理准确率大幅提升</a></h3>
+      <p><strong>现状：</strong>多模态大模型（如 GPT-4o、Claude Vision）在需要精细视觉理解的任务上仍有明显弱点：对高分辨率图像中的小细节、多元素关系、需要定位再回答的问题，模型容易"看到但没看懂"。</p>
+      <p><strong>问题：</strong>视觉推理失败往往不是推理能力问题，而是感知（perception）层没有把对的视觉证据提取出来——模型直接从原图做推理，而不是先找到相关区域再推理。</p>
+      <p><strong>解决方案：</strong>P2R（Perceive-to-Reason）两阶段框架：Perceiver 阶段先在高分辨率图像中定位与问题相关的视觉证据（画出标注框、裁剪出相关区域）；Reasoner 阶段再基于标注图和裁剪区域给出答案。训练方法是 PRA-GRPO（Perception-Reasoning Alternating GRPO，感知-推理交替强化学习），交替进行"聚焦感知能力"和"聚焦推理能力"的更新，只用最终答案做监督信号。</p>
+      <p><strong>价值：</strong>在多个精细视觉推理基准上取得显著提升，尤其在需要定位+理解的场景（如图表细节、医学影像、密集文字图）。仅用最终答案监督（不需要标注中间步骤）是实用性的关键。</p>
+      <p><strong>未来方向：</strong>扩展到视频理解（时序感知+推理）和具身智能（需要感知→计划→行动的闭环场景）。</p>
+      <cite><a href="https://arxiv.org/abs/2607.01191" target="_blank" rel="noopener">arXiv 2607.01191</a> · <a href="https://huggingface.co/papers/week/2026-W27" target="_blank" rel="noopener">HF Week 27</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>Google 发布两款新媒体模型：Nano Banana 2 Lite（图像生成，4 秒内出图，约 $0.033/张）和 Gemini Omni Flash（视频生成与编辑，$0.10/秒）。<a class="glance-src" href="https://www.bensbites.com" target="_blank" rel="noopener">Ben's Bites →</a></li>
+      <li>Meta 正在筹建云 AI 计算业务，计划向外部出售模型访问权和 AI 算力——把数据中心的"余粮"货币化，路径类似 AWS。<a class="glance-src" href="https://tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Claude Science 发布：Anthropic 面向生命科学的 AI 研究平台，集成 60+ 科学工具，可与现有实验室基础设施对接，自动化复杂分析和计算工作流。目前开放 Pro/Max/Team/Enterprise 用户测试。<a class="glance-src" href="https://www.bensbites.com" target="_blank" rel="noopener">Ben's Bites →</a></li>
+      <li>Meta Ray-Ban 眼镜开放 Web Apps：开发者可用标准 Web API（如同构建网站一样）为眼镜显示屏开发应用，AI coding 工具（Replit、Claude Code、Cursor）是官方推荐构建方式。<a class="glance-src" href="https://tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>ZCode 正式发布：GLM-5.2（智谱 AI 新模型）的官方开发环境（IDE），支持 macOS/Windows/Linux；GLM Coding Plan 订阅用户在 ZCode 内获得 1.5 倍 usage 配额。<a class="glance-src" href="https://tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>廉价机器人浪潮：Nori Robotics 双臂机器人 $1,400，BracketBot 轮式机械臂 $3,000，Weave Isaac 1 家用移动操作机器人 $8,000（或 $450/月）——$10,000 以下通用机器人正在从概念变成商品。<a class="glance-src" href="https://tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>科学突破：生物学家首次从非生命组件搭建出能自主生长、复制 DNA 并分裂的合成细胞。它不算活细胞（需要外部供给食物和核糖体），但"从无到有生产生命"已从理论进入可复现阶段。<a class="glance-src" href="https://tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Thariq（Claude Code / Anthropic）在 AIEWF 现场打招呼："hello from AI engineer!"——配图 AI 工程师大会现场，1705 赞。<a class="glance-src" href="https://x.com/trq212/status/2072360902964511171" target="_blank" rel="noopener">X @trq212 →</a></li>
+      <li>Swyx（Latent Space）：AIEWF 邀请了 Christopher Manning（Stanford NLP 教授）和 @abshkbh 做双倍时长讲座，主题是沙盒和世界模型——他说"只有在演讲者和内容都当得起时，我才邀请双倍时长"。<a class="glance-src" href="https://x.com/swyx/status/2072562702703046855" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>Peter Yang：Fable 5 vibe check："It's still really f***ing good. This is a step function above any other model."——强调这是跟其他所有模型拉开了一个数量级。<a class="glance-src" href="https://x.com/petergyang/status/2072470191511113732" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Peter Yang：分享了 explain-diff skill（帮助读懂代码 diff 的 Claude Code 技能），"As someone still trying to learn how to read code this is great!"<a class="glance-src" href="https://x.com/petergyang/status/2072525669704384612" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Alex Albert（Anthropic Research）：Fable 5 复活时第一时间发推："Welcome back to the world Fable!!"<a class="glance-src" href="https://x.com/alexalbert__/status/2072404717490360727" target="_blank" rel="noopener">X @alexalbert__ →</a></li>
+      <li>Thibault Sottiaux（OpenAI Codex）：Fable 5 回归时发推"It's happening"——Codex 团队对竞品回归的反应耐人寻味。<a class="glance-src" href="https://x.com/thsottiaux/status/2072410623380468190" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+      <li>Dan Shipper（Every CEO）：Fable 5 回来后立刻宣布"LET'S RIP FABLE TOKENS FROM THE JACUZZI"——从热水浴缸里开始刷 Fable token。<a class="glance-src" href="https://x.com/danshipper/status/2072402843819212906" target="_blank" rel="noopener">X @danshipper →</a></li>
+      <li>Google Labs 宣布关闭 MusicFX 和 MusicFX DJ（7 月 31 日），聚焦 Google Flow Music——一个用于创作、分享和混音原创音乐的长期平台。<a class="glance-src" href="https://x.com/GoogleLabs/status/2072417166952136789" target="_blank" rel="noopener">X @GoogleLabs →</a></li>
+      <li>Matt Turck（FirstMark Capital）：Lime 电动滑板车上市——背负 $10 亿债务、曾表达"对能否存活有重大疑虑"，靠 IPO 清空毒性贷款转股权后成功 IPO；Uber 持股 22% 且直接为其导流，FCF 连续 3 年为正，年收入增速 30%。"永不放弃"的反面教材变成了正面案例。<a class="glance-src" href="https://x.com/mattturck/status/2072419592354529712" target="_blank" rel="noopener">X @mattturck →</a></li>
+      <li>Nikunj Kothari：世界杯，美国队 ⚽️ 赢了，发了一条充满感情的国旗 emoji。<a class="glance-src" href="https://x.com/nikunj/status/2072522778327371819" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Every.to：Fable 5 Prompt Library 上线，13 个 Every 团队亲测提示词，涵盖夜间任务、产品构建、研究、写作、循环工作流等，附两小时 Fable 5 Power User Camp 录像。<a class="glance-src" href="https://every.to/p/claude-fable-5-prompt-library" target="_blank" rel="noopener">Every.to →</a></li>
+      <li>Claude AI 官方账号：Fable 5 付费使用细则——每周 usage 上限的 50% 可分配给 Fable，超限后自动切换其他模型；usage credits 用户不受此限制。<a class="glance-src" href="https://x.com/claudeai/status/2072402639644766602" target="_blank" rel="noopener">X @claudeai →</a></li>
+      <li>Claude AI 官方账号：Fable 5 如被误判拦截，在 Claude Code 中运行 /feedback 提交报告；在 claude.ai 和 Cowork 上用点赞/踩按钮反馈——这些反馈直接用于调整分类器，减少误报。<a class="glance-src" href="https://x.com/claudeai/status/2072402640907162072" target="_blank" rel="noopener">X @claudeai →</a></li>
+      <li>Zara Zhang：Codex 可以切换模型到 GLM（智谱 AI）——配了截图演示，提醒大家平台模型选项比默认显示的多。<a class="glance-src" href="https://x.com/zarazhangrui/status/2072391971721884073" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-06-30.html">← JUN 30</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
