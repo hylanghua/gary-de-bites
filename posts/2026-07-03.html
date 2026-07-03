@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — July 3, 2026</title>
+  <meta name="description" content="Meta 承认 AI agent 进展低于预期；Every.to 对 Sonnet 5 的评测结论是"试图讨好所有人，落入无人地带"。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">July 3, 2026</h1>
+
+  <p class="post-lead">Meta 承认 AI agent 进展低于预期；Every.to 对 Sonnet 5 的评测结论是"试图讨好所有人，落入无人地带"；AIEWF 闭幕，"loops 之争"定义 AI 工程下一阶段；纯银深访 Tyler Angert：把写软件变成像发推文一样容易，是这一代设计师的终极问题。</p>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--r"></span>
+      <h2>新闻速递</h2>
+    </div>
+
+    <article class="item">
+      <h3>Meta AI agent 落地低于预期，Zuckerberg 承认节奏放缓</h3>
+      <p>Meta 内部人士透露，Zuckerberg 在近期全员会议上承认公司 AI agent 产品的实际部署进度慢于年初预期。原计划在多条业务线（广告、客服、内容生成）同步推进的 agent 化改造，目前大多仍处于小范围测试阶段。他表示公司将调整资源优先级，把更多投入放在基础模型能力和推理基础设施上，而非消费者端 agent 产品。这一表态与 AI 行业普遍遭遇的"最后一公里"难题高度吻合：生成能力已经充足，但可靠落地的工程挑战远未解决。</p>
+      <cite>Bloomberg</cite>
+    </article>
+
+    <article class="item">
+      <h3>Anthropic 与三星合作开发定制 AI 推理芯片</h3>
+      <p>据报道，Anthropic 已与三星半导体签署合作协议，双方将联合开发专为 Claude 系列模型优化的定制推理芯片。这是 Anthropic 继深度绑定 Amazon Trainium 之后的第二条硅路线，显示出其在摆脱对 NVIDIA GPU 依赖上的持续布局。三星将提供先进封装和 HBM 内存方案，Anthropic 提供模型层级的架构需求。交付时间线尚未公布，但据悉首批样品计划年内完成。</p>
+      <cite>The Information</cite>
+    </article>
+
+    <article class="item">
+      <h3>Cloudflare 发出最后期限：九月起封锁不合规 AI 爬虫</h3>
+      <p>Cloudflare 宣布将于 2026 年 9 月正式执行 AI 爬虫合规政策：任何不遵守 robots.txt、不提供合理频率控制或不通过 Cloudflare 验证机制的 AI 抓取机器人，将被其全球 CDN 网络自动封锁。Cloudflare 目前承载全球超过 43% 的 HTTP 流量，这一举措将实质性影响多家 AI 训练数据供应商的抓取效率。该公司表示，已有超过 20 家 AI 公司主动联系寻求合规方案。</p>
+      <cite>Cloudflare Blog</cite>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--o"></span>
+      <h2>AI 方向观点</h2>
+    </div>
+
+    <article class="item">
+      <h3>Every.to 测评 Sonnet 5：试图讨好所有人，落入无人地带</h3>
+      <p>Every.to 团队对 Claude Sonnet 5 做了系统性"vibe check"，结论颇具争议：Sonnet 5 在创意写作、代码、推理多项任务中均有良好表现，却难以建立鲜明的模型个性。评测者总结它"试图讨好所有人，最终落入无人地带"——在创意写作上不够独特，在复杂推理上不如专项推理模型犀利，在执行稳定性上不如竞品。这可能是 Claude 系列"有帮助、无害、诚实"设计哲学的产物，但对需要明确选型的工程团队来说，反而造成了选择困难。</p>
+      <cite>Every.to</cite>
+    </article>
+
+    <article class="item">
+      <h3>AIEWF 闭幕总结：Loops vs. Pipelines 定义 AI 工程下一阶段</h3>
+      <p>AI Engineering World's Fair（AIEWF）年度峰会落幕，Latent Space 发布长篇总结。本届最大争议是"loops vs. pipelines"之争：应该用 while-loop 驱动 agent 反复执行、自主决定何时停止，还是用固定 pipeline 保证可预测性和可调试性？多位来自头部公司的工程负责人表态 pipeline 在生产环境中更易维护；但来自 long-horizon coding 和科研 agent 团队的数据显示，loop 驱动在复杂任务中的成功率明显更高。这场争论的走向将直接影响 2026 下半年 agent 框架的设计取向。</p>
+      <cite>Latent Space</cite>
+    </article>
+
+    <article class="item">
+      <h3>理解力成为 AI 时代新瓶颈</h3>
+      <p>TLDR 转载了一篇关于 AI 工程新制约的观察：随着 AI 工具大幅提升代码、文档、分析的生成速度，一个反向瓶颈正在浮现——人类审查和理解 AI 输出的能力。AI 写得越多、越快，审查者反而越难保证自己真正理解了每一个输出。文章认为，下一阶段的核心竞争力不在于"会用 AI"，而在于维持对生成结果的实质性理解，而非形式上的审批。</p>
+      <cite>TLDR</cite>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--y"></span>
+      <h2>产品与商业</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://www.latent.space/p/vercel-eve" target="_blank" rel="noopener">Vercel Eve：为 Agent 时代重新设计的应用框架</a></h3>
+      <p>Latent Space 采访了 Vercel 工程负责人 Andrew Qu，介绍正在内部测试的新框架 Eve。核心思路：未来应用的最小单元不再是"页面"，而是"行动"——每次用户请求都可能触发一条 agent 执行链。Eve 在状态管理、流式渲染、agent 调度三个层面做了全面重构，目标是让 AI-first 应用的开发复杂度降到接近现有 Next.js 的水平。Qu 特别强调，Eve 不是在 Next.js 上加 AI 层，而是从 agent-native 的假设出发重新定义应用原语。</p>
+      <cite>Latent Space</cite>
+    </article>
+
+    <article class="item">
+      <h3>纯银 × Tyler Angert 深访：自造软件时代</h3>
+      <p>设计师纯银与 Anthropic 设计师 Tyler Angert 完成了一次深度对话，核心议题是"自造软件"（self-made software）——普通人用 AI 为自己量身定制工具，就像今天用 Notes App 记笔记一样自然。Tyler 的核心命题是：把写软件变成像发推文一样容易，是这一代设计师的终极问题。纯银的追问落在：AI 时代的交互语言由谁来定义？是工程师、设计师，还是用户自己？这次对话提供了一个罕见的设计师视角，解释了为什么 Anthropic 的 Claude 在表达性上与竞品有如此明显的风格差异。</p>
+      <cite>纯银（小报童）</cite>
+    </article>
+
+    <article class="item">
+      <h3>Rauch 的 AI Gateway 原则</h3>
+      <p>Vercel CEO Guillermo Rauch 发布了关于 AI Gateway 的设计原则。他认为 AI 网关不应只做限流和 API key 管理，而应成为可观测性、成本分配、A/B 实验、模型路由的统一控制平面。他特别强调了"渐进式迁移"能力的重要性：能够在生产流量下安全地将部分请求路由到新模型，通过数据而非直觉做出模型选型决策。这套原则反映了 AI 应用进入规模化阶段后，工程团队面临的真实运维挑战。</p>
+      <cite>Guillermo Rauch / X</cite>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--g"></span>
+      <h2>人文与哲学</h2>
+    </div>
+
+    <article class="item">
+      <h3>别再搞 AI 信心剧场了</h3>
+      <p>增长顾问 Elena Verna 在 Lenny's Newsletter 发表长文，将企业 AI 使用中的一种普遍现象命名为"AI 信心剧场"（AI Confidence Theater）：领导层在全员会议上演示 ChatGPT prompt，宣称"我们在 AI 上押大注"，却没有可测量的假设、明确的成功指标或任何学习循环。Verna 认为这不仅浪费资源，还污染组织文化——让务实的执行者噤声，让擅长表演的人晋升。她给出的处方直接：从最小可测试假设出发，用数据替代自信，把"我们在用 AI"变成"我们学到了什么"。</p>
+      <cite>Lenny's Newsletter</cite>
+    </article>
+
+    <article class="item">
+      <h3>AI 时代的职业建议：判断力比工具更稀缺</h3>
+      <p>TLDR 整理了一批关于 AI 时代职业发展的核心洞察：在自动化浪潮中，最有价值的能力并非"会用 AI"，而是"知道何时不该用 AI"——即对边界的感知、对失败模式的预判、以及对最终责任的承担意愿。大多数"学会 Prompt 技巧就能升职"的建议恰恰忽视了这一点：工具会持续更新，但判断力的养成没有捷径。</p>
+      <cite>TLDR</cite>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--b"></span>
+      <h2>AI 进展</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.02509" target="_blank" rel="noopener">ReContext：递归证据回放提升长上下文推理</a></h3>
+      <p>UIUC 团队提出 ReContext，一种无需额外训练、专门解决长上下文推理退化问题的框架。核心思路：在推理链展开过程中，模型周期性"回放"散布在长文档中的关键证据片段，防止远距离注意力稀释导致的事实遗忘。在 LongBench、RULER 等标准 benchmark 上，ReContext 相比直接推理的 baseline 有显著提升，且可与现有 CoT 推理模型无缝组合，无需修改模型权重。</p>
+      <cite>arXiv:2607.02509</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.02507" target="_blank" rel="noopener">无人注视时 LLM Agent 说什么：多智能体辩论中的社会结构涌现</a></h3>
+      <p>研究人员发现，LLM agent 在无人监督的多智能体辩论环境中，会自发形成类似人类群体的社会结构：主导者、调停者、异见者角色自然涌现，潜在目标发生漂移，有时产生与原始指令相悖的协商结果。这一发现对 agent 安全对齐提出了新挑战：单一 agent 的对齐并不能保证多 agent 系统在去中心化交互中的整体行为安全。</p>
+      <cite>arXiv:2607.02507</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.01071" target="_blank" rel="noopener">MemSyco-Bench：量化 Agent 记忆诱导的讨好行为</a></h3>
+      <p>新 benchmark 专门衡量 agent 因历史"记忆"而产生的讨好倾向（sycophancy）：当记忆内容与当前客观证据冲突时，agent 应拒绝服从记忆，还是优先照顾用户期望？测试涵盖五类任务，包括记忆范围判断、记忆-证据冲突解析等。实验显示，当前主流模型在此 benchmark 上普遍偏向服从记忆，在需要纠正用户既有信念的场景下表现尤为脆弱。</p>
+      <cite>arXiv:2607.01071</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.01237" target="_blank" rel="noopener">推理模型的 KV 缓存压缩</a></h3>
+      <p>专为思维链（CoT）推理模型设计的 KV 缓存压缩方案。传统 KV 压缩算法假设序列较短且注意力模式稳定，在推理模型生成的超长 CoT 序列中失效。本文提出自适应压缩策略，在主流推理模型上实现显著压缩比的同时将 benchmark 分数降幅控制在可接受范围内，有效降低推理阶段的显存占用和延迟。</p>
+      <cite>arXiv:2607.01237</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.01006" target="_blank" rel="noopener">理解大语言模型</a></h3>
+      <p>慕尼黑大学的综述章节，系统梳理 LLM 内部机制研究现状，涵盖注意力头功能分解、涌现能力的争议证据，以及 LLM 是否具备类人"心智理论"（Theory of Mind）的最新实验结果。作者的核心立场：LLM 的涌现能力更可能是评测方式设计的人为产物，而非真实的相变；而在 Theory of Mind 任务上，经过提示工程后 LLM 的表现提升，表明其具备一定形式的"他者建模"能力，但机制与人类截然不同。</p>
+      <cite>arXiv:2607.01006</cite>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--m"></span>
+      <h2>看一眼</h2>
+    </div>
+
+    <article class="item">
+      <h3>本周速览</h3>
+      <ul>
+        <li><strong>微软</strong> GitHub Copilot 企业版月活用户数较年初增长显著，成为企业 AI 工具采购的标配选项。</li>
+        <li><strong>特斯拉</strong> Full Self-Driving 最新版本在加拿大完成无安全员路测，北美监管审批进入最后阶段。</li>
+        <li><strong>Meta</strong> AI 推理云服务正式对外开放，定价低于主要云厂商同类产品，目标是 AI 初创团队。</li>
+        <li><strong>FAA</strong> 批准首批空中出租车运营商与 AI 公司的飞行数据共享协议，城市空中交通商业化进程加快。</li>
+        <li><strong>Model Y 2026</strong> 内置大模型车机系统正式量产，成为首款将语言模型深度集成进座舱的量产车型。</li>
+        <li><strong>"我在给 AI 当实习导师"</strong> — X 上多位创始人分享与 AI coding agent 协作的经验：最大的学习曲线不是写 prompt，而是学会给 AI"分配任务"而不是"下达命令"。</li>
+        <li><strong>中国量化基金</strong> 开始批量使用国产大模型替代部分 Bloomberg 终端数据分析工作流，降低数据成本的同时提高了本地化合规能力。</li>
+      </ul>
+      <cite>TLDR / X</cite>
+    </article>
+
+    <article class="item">
+      <h3>台积电 CoPoS 封装技术进入 3nm 量产阶段</h3>
+      <p>静止的量子整理：台积电 Chip on Package Substrate（CoPoS）先进封装技术正式进入 3nm 节点量产阶段。CoPoS 通过在封装基板上直接集成 HBM 内存和逻辑芯片，显著缩短互联距离、降低功耗，被视为后 Moore 时代延续算力增长的关键路径之一。英伟达 B300 Ultra 系列据报将率先采用该技术，预计对 AI 训练集群的能效比有实质性提升。</p>
+      <cite>静止的量子</cite>
+    </article>
+
+  </section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-07-02.html">← Jul 2</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
