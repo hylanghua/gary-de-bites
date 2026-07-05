@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — July 5, 2026</title>
+  <meta name="description" content="Anthropic 发布 Claude Science 并悄悄启动自主药物研发项目；Every 团队坦言 Sonnet 5 令人失望，Fable 5 同周回归才是真正亮点；Simon Willison 发现新模型调工具时会「自造字段」；Wisereads 本周命题：当 AI 让智识变得充裕，意志力才是真正稀缺的资源。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">July 5, 2026</h1>
+
+  <p class="post-lead">Anthropic 发布 Claude Science 并悄悄启动自主药物研发项目；Every 团队坦言 Sonnet 5 令人失望，Fable 5 同周回归才是真正亮点；Simon Willison 发现新模型调工具时会「自造字段」；Wisereads 本周命题：当 AI 让智识变得充裕，意志力才是真正稀缺的资源。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://claude.com/product/claude-science" target="_blank" rel="noopener">Claude Science 正式发布：Anthropic 入局药物研发，真实目标是把平台卖给大药厂</a></h3>
+      <p>Anthropic 于 6 月 30 日推出 Claude Science，一款面向生命科学研究者的 AI 工作台（工作站软件），内置 60+ 个针对基因组学、蛋白质组学、结构生物学和化学信息学的预配置分析工具，目前处于 beta 阶段，并向入选项目提供最高 3 万美元的使用额度。与此同时，Anthropic 宣布将自行启动针对罕见病的临床前药物研发项目。</p>
+      <p>但这并不意味着 Anthropic 想成为药企。Every 的分析一语中的：这是「卖铲子」（sell the shovels）策略——用最难的真实问题测试自家 AI 的极限，修补评估与验证流程中的瓶颈，然后把打磨好的平台卖给大药厂。生物系统的反馈周期以天计算，不像软件可以秒级验证；谁能在这里建立可靠的工作流，谁就能拿走整个市场。<strong>Anthropic 不是在做药，它是在用做药来测试工具。</strong></p>
+      <cite><a href="https://every.to/context-window/a-tale-of-two-models" target="_blank" rel="noopener">Every</a> · <a href="https://www.technologyreview.com/2026/06/30/1139987/claude-science-is-anthropics-newest-flagship-product/" target="_blank" rel="noopener">MIT Technology Review</a> · <a href="https://www.cnbc.com/2026/06/30/anthropic-launches-ai-drug-discovery-program-claude-science.html" target="_blank" rel="noopener">CNBC</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://every.to/vibe-check/sonnet-5" target="_blank" rel="noopener">Sonnet 5 发布一周：Every 团队坦言没人真正在用它；Fable 5 同周回归才是真正的亮点</a></h3>
+      <p>Anthropic 本周出了两个模型，结果截然不同。Sonnet 5 定位「万能中档」，但 Every 的测评直接说：价格、速度、智力三项各有更优替代，当你需要省钱时选 Haiku，需要顶配时选 Opus 4.8 或 Fable 5，Sonnet 5 夹在中间显得尴尬。与之对比，Fable 5 在周四重新上线，Fable 在约三小时内从一个 prompt 出发重建了 Every 的文档编辑器 Proof，团队集体表示「终于回来了」。</p>
+      <p>同期还有一个值得记录的失败案例：AI 仍然无法可靠地生成企业级 PPT。Every 的顾问团队尝试自动化 PPT 制作，搭建了一套 24 个技能节点（skill）的流水线，每份幻灯片成本约 62 美元，效果依然不稳定，且并不适合大多数团队。最难的部分，是「你想说什么」，这 AI 替代不了。<strong>Sonnet 5 是一款为所有人设计的模型，因此对任何人都缺乏惊喜。</strong></p>
+      <cite><a href="https://every.to/vibe-check/sonnet-5" target="_blank" rel="noopener">Every · Vibe Check</a> · <a href="https://every.to/also-true-for-humans/ai-could-do-anything-then-it-met-powerpoint" target="_blank" rel="noopener">Every · Also True for Humans</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/danshipper/status/2073586548545638459" target="_blank" rel="noopener">OpenAI 把 ChatGPT 嵌进了 Codex——Codex 又在 ChatGPT 里——套娃正式开始</a></h3>
+      <p>Dan Shipper 用「Yo dawg，我们听说你喜欢 Codex 在 ChatGPT 里」的网络梗精确捕捉到这件事的荒诞：ChatGPT 现在可以在 Codex 内运行，而 Codex 本身又是 ChatGPT 的功能模块之一。产品与 AI 的边界正在快速模糊，两者相互内嵌的结构，让使用额度的边界也开始变得混乱。</p>
+      <cite><a href="https://x.com/danshipper/status/2073586548545638459" target="_blank" rel="noopener">X @danshipper</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://simonwillison.net/2026/Jul/4/better-models-worse-tools/" target="_blank" rel="noopener">Simon Willison：新一代模型调外部工具时会「自造字段」，老模型没这问题</a></h3>
+      <p>Simon Willison 记录了一个有意思的回归问题：Opus 4.8 和 Sonnet 5 在调用 Pi 等第三方工具时，会自动添加工具定义里根本不存在的字段（invented fields），而老模型不会这样做。Armin 提出了一个理论：Anthropic 用 RL 专门训练了模型对 Claude Code 内置工具（edit、search-and-replace）的调用能力，这种训练「泄漏」到了其他工具实现上，导致模型对非原生工具也套用了错误的期望。</p>
+      <p>这个发现的意义不只是 bug 报告。对于正在用第三方工具调用（tool use）框架搭建产品的开发者来说，升级到更新模型反而可能引入新的不稳定性。「更聪明」的模型不等于「更安全的工具调用」。<strong>RL 的优化目标越具体，训练出的习惯就越难被泛化控制——这是新一代模型落地时值得持续监控的副作用。</strong></p>
+      <cite><a href="https://simonwillison.net/2026/Jul/4/better-models-worse-tools/" target="_blank" rel="noopener">Simon Willison</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/thenanyu/status/2073412466436878666" target="_blank" rel="noopener">Nan Yu：AI 没有让你更少抓狂，只是把抓狂的对象换了</a></h3>
+      <p>Nan Yu 的观察很准：手写代码的时候，他不停地骂自己；现在和 AI 协作，他骂 AI 的 output。挫败感的总量没有变，只是对象从「自身的能力极限」变成了「外部工具的输出质量」。</p>
+      <p>但这其实是一种真实的进步。骂外部工具的心理成本，远低于骂自己的能力——前者是可以替换的工具问题，后者是很难摆脱的自我怀疑。AI 把认知摩擦从「我够不够好」转移到了「工具够不够准」。<strong>这种情绪转移比生产率提升更低调，但可能同样重要。</strong></p>
+      <cite><a href="https://x.com/thenanyu/status/2073412466436878666" target="_blank" rel="noopener">X @thenanyu</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/thsottiaux/status/2073551549494596079" target="_blank" rel="noopener">Thomas Sottiaux（AI 研究者）：公开征集「Codex 仍然做不好什么」</a></h3>
+      <p>在 Codex 已被大量开发者视为日常工具的背景下，thsottiaux 仍在系统地追问：Codex 让你感到意外的盲区是什么？这个问题本身就是信号：即便是熟练用户，也在持续发现 agent 工具的认知边界。每一个真实盲区，都是下一个产品或 fine-tune 方向的切入点。<strong>问「做不好什么」比问「能做什么」，对产品判断的价值更高。</strong></p>
+      <cite><a href="https://x.com/thsottiaux/status/2073551549494596079" target="_blank" rel="noopener">X @thsottiaux</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://every.to/thesis/your-ai-strategy-is-making-bets-do-you-know-which-ones" target="_blank" rel="noopener">Every：每一个 AI 策略都暗含四个赌注，能说清楚的团队才能在出错时快速调整</a></h3>
+      <p>Every 的 CTO Dan Pupius 提出了一个简洁但有力的框架：任何 AI 策略，底层都隐含着四个创始人通常不会明说的赌注——token 成本会持续下降、模型能力会继续提升、你不会被特定供应商锁死、监管环境不会突然收紧。这四个赌注不是路线图，是假设。</p>
+      <p>问题在于，当其中任何一个假设出错，没有明说过赌注的团队很难快速调整，因为他们根本不知道自己的策略建立在什么之上。能说清楚「我们在赌什么」的团队，才有可能在市场反转时跑得比别人快。<strong>AI 策略的底牌是赌注，不是路线图：能说清楚自己在赌什么的团队，才能在形势反转时快速调整。</strong></p>
+      <cite><a href="https://every.to/thesis/your-ai-strategy-is-making-bets-do-you-know-which-ones" target="_blank" rel="noopener">Every · Thesis</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://intelligence.exponentialview.co/assets/ev-state-of-ai-economy-2026.pdf" target="_blank" rel="noopener">Wisereads / Azeem Azhar：22.7 万亿美元 AI 市值背后，需求是否真实存在？</a></h3>
+      <p>Azeem Azhar 和 Exponential View 团队在《2026 AI 经济状态》报告中提出了一个很难被忽视的问题：在 22.7 万亿美元的 AI 相关股市估值和连续六个季度推动美国 GDP 增长的数字背后，实际的客户需求到底是什么形态？没有理解真实需求，就无法判断 AI 经济的健康状况——这不是唱空，而是在泡沫判断之前先把地基看清楚。</p>
+      <cite><a href="https://intelligence.exponentialview.co/assets/ev-state-of-ai-economy-2026.pdf" target="_blank" rel="noopener">Wisereads · Exponential View</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://theatlantic.com/ideas/2026/06/ai-open-ai-anthropic/687689/" target="_blank" rel="noopener">Wisereads / David Brooks：AI 时代三种人——最终稀缺的不是智识，是意志力</a></h3>
+      <p>《纽约时报》专栏作家 David Brooks 把 AI 时代的人分成三类：被动外包者（让 AI 替自己思考）、混合型（偶尔借助 AI）、主动摔跤者（刻意用 AI 来磨砺自己的判断力）。他的核心论点是：当智识变得充裕且廉价，人类真正稀缺的资源不再是「能想明白多少」，而是「愿意花力气去想」的意志力（volition）。</p>
+      <p>「做出区别的人，不是那些追求放松、用 AI 少干活的人，而是那些追求进步、主动与 AI 摔跤来发展自身判断力的人。」这个分野不是能力的分野，而是姿态的分野。被动外包者短期内轻松，但认知资本在悄悄流失。<strong>AI 时代最大的分层，将是「愿意费力」和「不愿意费力」之间的分层。</strong></p>
+      <cite><a href="https://theatlantic.com/ideas/2026/06/ai-open-ai-anthropic/687689/" target="_blank" rel="noopener">Wisereads · The Atlantic</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://youtube.com/watch?v=cQKo5KCjF5A" target="_blank" rel="noopener">Wisereads / Cal Newport：和 AI 长聊是一种情感自欺——大脑会为空无一物的地方模拟出一个心智</a></h3>
+      <p>Georgetown 大学教授 Cal Newport 在重访「数字极简主义」时给出了一个令人不安的观察：当人们与 AI chatbot 进行长时间对话，大脑会在另一端「模拟出一个真实存在的心智」——而那个心智并不存在。这是大脑处理社会互动的自动化机制在被系统性地误用。</p>
+      <p>他的用词是「情感欺诈」（emotional fraud），不是因为 AI 有恶意，而是因为大脑的社交回路无法区分「真实的另一个人」和「能流畅回应的语言模型」。在 Agent 大量普及、人与 AI 交互时间骤增的今天，Newport 的这个警告比之前任何时候都更值得认真对待。<strong>和 AI 对话越流畅，被误认为「真实连接」的风险就越高——这是一种隐形的认知陷阱。</strong></p>
+      <cite><a href="https://youtube.com/watch?v=cQKo5KCjF5A" target="_blank" rel="noopener">Wisereads · YouTube</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.02512" target="_blank" rel="noopener">Program-as-Weights：把自然语言函数规格「编译」成轻量神经适配器</a></h3>
+      <p><strong>现状：</strong>每次调用大模型处理一个任务，都需要把完整 prompt 和上下文传入，推理成本随任务数量线性增长。</p>
+      <p><strong>解决方案：</strong>Program-as-Weights（PAW）提出一种新范式：用一个 4B 参数的「编译器」模型，把自然语言函数定义一次性编译为紧凑的神经适配器（parameter-efficient adapter），之后每次调用只需运行轻量的 0.6B「解释器」模型。编译在函数定义时只发生一次，多次调用均复用同一适配器。</p>
+      <p><strong>价值：</strong>0.6B 解释器执行 PAW 程序，性能匹配 32B 模型直接推理，但推理显存仅为其 1/50，可以 30 tokens/s 的速度在 MacBook M3 上离线运行。对需要高频调用固定功能函数的应用场景（如分类、格式化、过滤），这意味着数量级的成本下降。</p>
+      <p><strong>未来方向：</strong>重新定位大模型的角色：不是每次任务的「解题者」，而是生产可复用轻量工具的「工具制造者」。</p>
+      <cite><a href="https://arxiv.org/abs/2607.02512" target="_blank" rel="noopener">arXiv 2607.02512</a> · <a href="https://huggingface.co/papers/2607.02512" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2507.02592" target="_blank" rel="noopener">WebSailor：7B 开源 web agent 在复杂信息检索任务上逼近 DeepResearch 等专有系统</a></h3>
+      <p><strong>问题：</strong>在极度不确定的大规模信息检索任务中（如 BrowseComp 基准），开源 agent 与 DeepResearch 等专有系统之间存在巨大能力差距。差距的核心不是参数量，而是「在不确定性中系统压缩搜索空间」的推理模式。</p>
+      <p><strong>解决方案：</strong>Tongyi Lab（阿里巴巴）提出 WebSailor——通过结构化高不确定性任务生成、RFT 冷启动和新型 RL 算法（DUPO，Duplicating Sampling Policy Optimization）训练开源模型，使其习得上述推理模式。</p>
+      <p><strong>价值：</strong>WebSailor-7B 在 BrowseComp-en 达到 6.7% 准确率，超越大量基于 32B 模型的开源 agent。对于需要可控、可本地部署的 web 检索 agent 的场景，这是一个里程碑式的开源基线。</p>
+      <cite><a href="https://arxiv.org/abs/2507.02592" target="_blank" rel="noopener">arXiv 2507.02592</a> · <a href="https://huggingface.co/papers/2507.02592" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2507.05257" target="_blank" rel="noopener">MemoryAgentBench：首个系统评估 LLM Agent「记忆能力」的基准（ICLR 2026）</a></h3>
+      <p><strong>问题：</strong>现有 agent 基准主要评估推理、规划和执行，「记忆」——agent 如何在长期交互中记住、更新和检索信息——几乎没有独立的评估框架。</p>
+      <p><strong>解决方案：</strong>UC San Diego 团队提出 MemoryAgentBench，定义了 agent 记忆的四项核心能力：准确检索（retrieve accurately）、测试时学习（learn at inference time）、长程理解（long-range comprehension）、选择性遗忘（selective forgetting）。基准通过将现有长文本数据集转化为多轮交互格式构建。</p>
+      <p><strong>价值：</strong>对于需要持续运行、跨会话学习的 agent 来说，记忆能力是决定长期上限的关键维度。这是第一个把这个维度系统量化的工具。</p>
+      <cite><a href="https://arxiv.org/abs/2507.05257" target="_blank" rel="noopener">arXiv 2507.05257</a> · ICLR 2026</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.15017" target="_blank" rel="noopener">Are Online Skills Worth Their Tokens？同等 token 预算下，「记忆+技能」模块通常跑不赢多走几步的普通 actor</a></h3>
+      <p><strong>问题：</strong>Web agent 研究中流行给基础 actor 模型加装「在线记忆」或「技能模块」来提升表现，但这些模块本身消耗大量 token，这个成本很少被计入比较。</p>
+      <p><strong>解决方案：</strong>该论文在相同总 token 预算下，将 AWM、ASI、ReasoningBank 三种增强方法与「把同等 token 全部用于 actor 多推理几步」的 baseline 进行比较，覆盖 WebArena 三个领域、三个模型（Gemini 3 Flash、GPT-5.4-mini、Qwen 3.6-27B）。</p>
+      <p><strong>价值：</strong>结果：vanilla baseline（多走几步）在综合成功率上匹配甚至超过三种增强方法，且往往 token 总量更少。技能模块在特定领域有用，但它们的「表观收益」往往来自不公平的预算比较。在评估 agent 增强方案时，「总 token 预算」是不可绕过的控制变量。</p>
+      <cite><a href="https://arxiv.org/abs/2606.15017" target="_blank" rel="noopener">arXiv 2606.15017</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.07462" target="_blank" rel="noopener">Act As a Real Researcher：最强配置仅达 68.3% 成功率——frontier agent 离真正替代科研人员还差什么？</a></h3>
+      <p><strong>现状：</strong>AI agent 在通用编码、信息检索等任务上表现已接近或超越人类，但「真实科研工作流」的评估框架远未成熟。</p>
+      <p><strong>解决方案：</strong>西安交通大学团队推出 AARR benchmark，测试 frontier LLM 和 agentic 工具是否能模拟真实科研人员在细粒度场景下的专业性、严谨性和科学判断——而不只是宏观执行能力。</p>
+      <p><strong>价值：</strong>最强配置（Claude Opus 4.7 + Mini-SWE-Agent）仅达 68.3% 成功率，频繁忽略对人类研究者来说一眼可见的细节。系统性短板集中在三处：领域敏感性（domain sensitivity，跨领域判断的上下文理解）、研究伦理、细粒度科学判断。agent 能「执行」科研任务，但离「理解」科研工作仍有系统性差距。</p>
+      <cite><a href="https://arxiv.org/abs/2606.07462" target="_blank" rel="noopener">arXiv 2606.07462</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>_catwu：Fable 5 知道该选哪个工具，不用明确指定——这正是他喜欢它的原因之一。<a class="glance-src" href="https://x.com/_catwu/status/2073439890482794966" target="_blank" rel="noopener">X @_catwu →</a></li>
+      <li>Guillermo Rauch（Vercel CEO）：把各平台 token 消耗做成了动画赛马可视化，让 AI 使用量竞争变得可感知。<a class="glance-src" href="https://x.com/rauchg/status/2073563586270781674" target="_blank" rel="noopener">X @rauchg →</a></li>
+      <li>Peter Steinberger（CodexBar 作者，独立开发者）：下一版 CodexBar 将显示 Codex reset 额度的确切过期时间，不再只显示下一个。<a class="glance-src" href="https://x.com/steipete/status/2073482942513565713" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>Dan Shipper（Every 创始人）：从 3Blue1Brown 在 Dwarkesh 播客上的分享中，他最大的收获是……（原文惜字）<a class="glance-src" href="https://x.com/danshipper/status/2073422764275364153" target="_blank" rel="noopener">X @danshipper →</a></li>
+      <li>Every 顾问总监 Natalia Quintero：Codex 是第一个非技术用户也能像工程师用 Claude Code 一样操作的 agent——她把它当直属下级：清空收件箱、管理客户 pipeline、协调父亲的就医安排。<a class="glance-src" href="https://every.to/context-window/codex-in-practice#ai-i-codex-for-nontechnical-builders" target="_blank" rel="noopener">Every →</a></li>
+      <li>thsottiaux：Sol（一个 AI）做了一道迷惑性数学互动让人忍俊不禁。<a class="glance-src" href="https://x.com/thsottiaux/status/2073554978053005607" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+      <li>Nikunj Kothari（投资人）：为了上大学来到美国，此后扎根至今——Independence Day 的个人反思。<a class="glance-src" href="https://x.com/nikunj/status/2073447791876317338" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Sam Altman：「生命、自由、追求幸福」——感谢当初把这个想法写进立国文件的人，以及每一个实现它的人。<a class="glance-src" href="https://x.com/sama/status/2073635910512726444" target="_blank" rel="noopener">X @sama →</a></li>
+      <li>Amanda Askell（Anthropic 研究员）：美国生日快乐，看起来一点不像 250 岁。<a class="glance-src" href="https://x.com/AmandaAskell/status/2073569330940531152" target="_blank" rel="noopener">X @AmandaAskell →</a></li>
+      <li>Garry Tan（YC 总裁）：旧金山必须立刻建更多住房，NIMBY 是阻碍城市发展的结构性问题。<a class="glance-src" href="https://x.com/garrytan/status/2073575065917280331" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Matt Turck（FirstMark 投资人）：法国赢了那场艰难的世界杯比赛；Thierry Henry 回忆在郊区长大踢球的故事让人起鸡皮疙瘩。<a class="glance-src" href="https://x.com/mattturck/status/2073543980109733924" target="_blank" rel="noopener">X @mattturck →</a></li>
+      <li>swyx：真的很想加入 Daksh 团队的项目，但日程实在太满，只好遗憾婉拒。<a class="glance-src" href="https://x.com/swyx/status/2073630312249327918" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>Peter Yang（创作者/PM）：AI 同意了他的观点——对着 AI 做自我验证，结果得到认可，这让他哭笑不得。<a class="glance-src" href="https://x.com/petergyang/status/2073492785991438426" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Mitchell Hashimoto（HashiCorp 创始人，Wisereads）：品味很难创造，成果却很容易被模仿——「一旦有人做出了有品味的决定，别人几乎立刻就能复制结果。」<a class="glance-src" href="https://x.com/mitchellh/status/2070665127331037290" target="_blank" rel="noopener">Wisereads →</a></li>
+      <li>Henrik Karlsson（Wisereads）：把想法固定在纸上，让它变脆，才能看见它断在哪里——「你希望它崩塌，裂缝在的地方，光就会射进来。」<a class="glance-src" href="https://henrikkarlsson.xyz/p/writing-to-think/" target="_blank" rel="noopener">Wisereads →</a></li>
+      <li>Brunello Cucinelli（Wisereads / Om Malik 存档）：「冬天的一个周日下午，我可以在壁炉前坐六小时，什么都不做，只是看着火焰想事情。到了晚上，我会喝得满脑子都是美丽的念头。」<a class="glance-src" href="https://om.co/2015/04/27/brunello-cucinelli-2/" target="_blank" rel="noopener">Wisereads →</a></li>
+      <li>Wisereads：Om Malik 六月底去世，读者重新涌向他数十年的存档文章——包括这篇与 Brunello Cucinelli 的对谈。<a class="glance-src" href="https://om.co" target="_blank" rel="noopener">Wisereads Vol. 150 →</a></li>
+      <li>《Eat Your Ice Cream》（Wisereads）：肿瘤学家 Ezekiel Emanuel 的六条长寿法则，核心是：「生命不是比谁活得更久的竞赛，而是过得健康而充实。」<a class="glance-src" href="https://readwise.io/reader/fd/472681203" target="_blank" rel="noopener">Wisereads →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-07-04.html">← JUL 4</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
