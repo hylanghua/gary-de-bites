@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — July 7, 2026</title>
+  <meta name="description" content="Anthropic 发布 J-space 全局工作空间论文，AI 内部推理空间首次可直接观测；Fable 5 免费窗口今日关闭；Lenny 调研揭示科技从业者正在一分为二。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">July 7, 2026</h1>
+
+  <p class="post-lead">Anthropic 发布 J-space 论文，首次直接观测模型内部的「全局工作空间」，AI 推理透明度翻篇；Fable 5 免费窗口今日关闭，技术社区加速消化这波旗舰能力；Lenny 年度调研揭示科技从业者正在一分为二——被放大的和被动摇的。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.anthropic.com/research/global-workspace" target="_blank" rel="noopener">Anthropic 发布 J-space 全局工作空间论文：AI 内部推理层首次可直接观测与干预</a></h3>
+      <p>Anthropic 于 7 月 6 日在 Transformer Circuits Thread 发布「A global workspace in language models」，声称在 Claude 内部发现了一个小型特权激活空间，行为类似神经科学领域的「全局工作空间」理论——模型在给出最终输出前，内部已形成可以被读取、调控、甚至逆向的中间表征。研究团队将这套方法命名为 J-lens（基于 Jacobian 矩阵计算），并配套开源了工具，同步在 Neuronpedia 上线可交互 demo。</p>
+      <p>实际意义有两层：一是安全层面，J-space 可以暴露模型在给出答案前的「隐性意图」，包括提示注入迹象和内部破坏性特征；二是对齐层面，这是迄今最强的证据，证明 LLM 存在类似工作记忆的内部机制，可以被外部研究者直接操控和审计。Anthropic 明确表示这不是意识研究，但学界的争论已经开始。<strong>J-space 把 AI 解释性研究从「事后归因」推进到「实时干预」，是方法论上的真正升级。</strong></p>
+      <cite><a href="https://www.anthropic.com/research/global-workspace" target="_blank" rel="noopener">Anthropic Research</a> · <a href="https://aivalley.ai" target="_blank" rel="noopener">AI Valley</a> · <a href="https://www.latent.space/p/ainews-field-guide-to-fable" target="_blank" rel="noopener">Latent Space AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://hy3ai.com/" target="_blank" rel="noopener">Tencent Hy3 开源：295B MoE 大模型 Apache 2.0，开放权重前沿竞争加速</a></h3>
+      <p>腾讯混元于 7 月 6 日正式发布 Hy3，总参数 295B、激活参数 21B，192 个专家、top-8 路由，256K 上下文窗口，Apache 2.0 许可。这是继 DeepSeek 之后又一个在真实 agentic 任务上（代码生成、工具调用、多步推理）对标闭源前沿模型的开放权重大模型，幻觉率相比四月预览版从 12.5% 降至 5.4%。vLLM 在发布当天即支持原生运行，包括 MTP 投机解码和 FP8 MoE 推理。</p>
+      <p>Nous Portal 免费开放两周，OpenRouter 已上线 $0/token 路由（7 月 21 日截止）。对于开源生态而言，Hy3 的发布意味着 295B 量级开源 MoE 正式成为可实际部署的选项，不再只是参数数字的游戏。<strong>当 295B 开源 MoE 的推理成本趋近于零，闭源 API 的价值叙事将集中在数据飞轮和后训练质量，而不是参数规模本身。</strong></p>
+      <cite><a href="https://github.com/Tencent-Hunyuan/Hy3-preview" target="_blank" rel="noopener">GitHub Hy3-preview</a> · <a href="https://www.latent.space/p/ainews-field-guide-to-fable" target="_blank" rel="noopener">Latent Space AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.theverge.com/2026/7/7/nvidia-kyber-rack-delay" target="_blank" rel="noopener">Nvidia Kyber 机架推迟至 2028：年更节奏首次真正撞上制造极限</a></h3>
+      <p>Nvidia 下一代 AI 机架系统 Kyber 推迟超过 12 个月，从 2027 年延至 2028 年。Kyber 是一个可容纳 144 颗 Rubin Ultra 芯片的服务器机柜，设计目标是让它们作为单一超级计算机协同工作。延迟原因指向系统核心电路板的制造难题，而非芯片本身。</p>
+      <p>这是 Nvidia 「每年一代新品」节奏以来罕见的一次公开延期。对于 AI 数据中心客户而言，Rubin Ultra 单片的交付计划不受影响，但整机架交付窗口后移意味着超大规模算力部署的部分资本支出节奏要重新排期。<strong>制造极限开始追上设计节奏，Nvidia 的护城河第一次需要在供应链而不只是芯片架构上证明自己。</strong></p>
+      <cite><a href="https://tldr.tech/" target="_blank" rel="noopener">TLDR</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://every.to/context-window/use-fable-before-you-know-what-to-ask" target="_blank" rel="noopener">Thariq（Anthropic）：Fable 的比较优势在「不确定性」，不在任务大小</a></h3>
+      <p>Anthropic 技术成员 Thariq Shihipar 在 Fable 5 免费期最后一天发布了 Field Guide，核心论点是：衡量「该不该用旗舰模型」的维度不该是任务的体量，而是任务的确定性。他区分了两类困难任务——一类是「执行复杂」（plan 已定、往下打），另一类是「前提模糊」（不知道你不知道什么）。前者中等模型往往够用，后者才是 Fable 真正发力的地方。</p>
+      <p>Every 的具体案例更具体：CEO Dan Shipper 把 5 周 copy-editing 实验抛给 Fable，模型发现目标本身有问题——团队花了 5 周优化一个从未被验证过的指标。这不是「执行出错」，而是「目标设错」。Thariq 的方法论建议：在明确目标、约束和「好」的定义之前，先让 Fable 做一轮 blindspot scan，把未知的未知翻出来，再决定是否用便宜模型跑后续执行。<strong>Fable 的最大价值不是做更多，而是先质疑你让它做的事是否值得做。</strong></p>
+      <cite><a href="https://every.to/context-window/use-fable-before-you-know-what-to-ask" target="_blank" rel="noopener">Every</a> · <a href="https://www.latent.space/p/ainews-field-guide-to-fable" target="_blank" rel="noopener">Latent Space AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/swyx/status/2074344727202463832" target="_blank" rel="noopener">swyx（Latent Space）：J-space 最重要的不是意识哲学，而是推理干预</a></h3>
+      <p>swyx 在 J-space 论文发布后直接点出了他认为最重要的一段：Anthropic 展示了可以通过直接操控 J-space 激活来改变模型的实际推理路径，而不只是读取它。这意味着：你可以在模型「想」但还没「说」的阶段介入，把它往特定方向推，或阻止它走向某个结论。</p>
+      <p>他的观点是：这比意识层面的讨论重要得多。Anthropic 的发布语言暗示了意识框架（「全局工作空间理论」来自神经科学），但 swyx 强调真正有价值的是可以被操控的「推理层」本身——这是 AI 安全审计、对齐干预和可控性研究的新基础设施，不是关于机器是否有感知的哲学争论。<strong>J-space 给了研究者一双可以直接插入模型思维流的手，这比「AI 能不能有意识」的问题更值得认真对待。</strong></p>
+      <cite><a href="https://x.com/swyx/status/2074344727202463832" target="_blank" rel="noopener">X @swyx</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://bensbites.com/p/my-thoughts-on-fable" target="_blank" rel="noopener">Ben Tossell（Ben's Bites）：我想要的不是 coding agent，而是真正能跟我对抗思维的哈内斯</a></h3>
+      <p>Ben Tossell 在本期 Ben's Bites 直接说：他用 Fable 这一周几乎没有做任何「建造」，全程把它当成治疗师和思维伴侣。Fable 有 Opus 的气质，但这次感觉更厚实。他同期用 Codex 做实际编程任务，认为 Codex 作为纯粹的代码生产工具比 Claude Code 更快，但 Claude Code 的思维风格更适合创意对抗。</p>
+      <p>他的真实困境是：他已经改了 Claude Code 的系统提示，把它从「工程师本质」往「创意思维伙伴」推，但还是觉得差点什么。他的结论是：也许真正想要的东西现在还不存在，只有在用的过程中才会知道它长什么样。这是一个典型的「产品想象力比技术本身领先」的困境。<strong>每个人都在用 coding agent 凑合，是因为「思维伴侣 agent」这个产品形态还没人真正做出来。</strong></p>
+      <cite><a href="https://bensbites.com/p/my-thoughts-on-fable" target="_blank" rel="noopener">Ben's Bites</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.lennysnewsletter.com/p/how-tech-workers-are-feeling-in-2026" target="_blank" rel="noopener">Lenny's 2026 调研：科技从业者正在一分为二，AI 身份认同比职级更能预测幸福感</a></h3>
+      <p>Lenny Rachitsky 和 Noam Segal 发布了第二年度科技从业者情绪调研，回收数据来自数千名工程师、PM、设计师。核心发现是：2026 年划分幸福感的主轴不再是职位、级别或公司规模，而是一个问题——「AI 让你感觉是被放大了，还是被动摇了？」49% 的受访者选「被放大」，14% 选「被动摇」，而两组人在职业乐观度上的差距（Cohen's d = 1.55）是「创始人 vs 非创始人差距」的整整 3 倍。</p>
+      <p>其他发现同样尖锐：显著倦怠从 44.7% 攀升至 55.7%，职业乐观度从 54.8% 降至 48.7%；82% 认为 AI 让他们效率更高，但很多人担心这种效率的代价是工作质量和个人能力本身的退化。最反直觉的一条：53% 的受访者不会向新人推荐自己所在的领域——即使他们对自己的职业前景仍然乐观。<strong>AI 正在把职场人群切成两半，而这道裂缝在 2026 年比任何职级和公司规模的差距都更深。</strong></p>
+      <cite><a href="https://www.lennysnewsletter.com/p/how-tech-workers-are-feeling-in-2026" target="_blank" rel="noopener">Lenny's Newsletter</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/amasad/status/2074257906594177279" target="_blank" rel="noopener">Amjad Masad（Replit CEO）：Replit agent 开始自我迭代，反馈环已封闭</a></h3>
+      <p>Amjad Masad 在 X 上发帖：很多人问 Replit 为什么迭代这么快，答案是他们封闭了反馈环——agent 本身开始参与自我改进的过程。他没有披露具体技术细节，但含义指向：Replit 的 agent 系统已经到了可以贡献自身进化的阶段，而不只是被动执行人类写好的任务。</p>
+      <p>同期他还分享了一个真实案例：亚特兰大一家房产公司用 Replit 替换了 Salesforce，一年省下 10 万美元。这把「coding agent 降低 SaaS 成本」从概念变成了可以引用的数字。两条消息放在一起：Replit agent 在自我进化，同时正在帮助真实企业替换过去被认为不可能替换的软件。<strong>封闭反馈环的 agent 系统一旦开始自我迭代，它的进化速度将不再受人类工程投入的线性限制。</strong></p>
+      <cite><a href="https://x.com/amasad/status/2074257906594177279" target="_blank" rel="noopener">X @amasad</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/levie/status/2074163686990913576" target="_blank" rel="noopener">Aaron Levie（Box CEO）：企业 AI 不只是换了前端，开源模型正在重写实际业务流</a></h3>
+      <p>Aaron Levie 在 X 上分析了企业级 AI 落地的真实状态：他看到越来越多企业不再把 AI 当成前端工具包裹在旧流程上，而是用开源前沿模型彻底重写业务流程本身。他的观察是，在某些特定业务场景上，开源模型的表现已经接近甚至超过闭源 API，同时成本更低、可控性更高。</p>
+      <p>他把这个阶段称为「applied AI layer」的真正成熟——不是泛泛的「用 AI」，而是在真实工作流里替换了具体的判断步骤。对于 PM 和产品决策者，这意味着「我们能不能用 AI」的问题已经过时，新问题是「我们愿不愿意把这个决策权真正交给模型」。<strong>企业 AI 落地的阻力已经从技术转移到了授权：最难的不是让模型做对，而是让组织相信它做对了。</strong></p>
+      <cite><a href="https://x.com/levie/status/2074163686990913576" target="_blank" rel="noopener">X @levie</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://x.com/thenanyu/status/2074133468007587932" target="_blank" rel="noopener">Nan Yu：年轻时最大的优势是「可以不讲效率地砸时间」，而不是聪明</a></h3>
+      <p>Nan Yu 在 X 上分享了一个关于生产力的反直觉观察：20 岁的自己拥有的最大优势，不是更聪明、更有创意，而是可以在时间上毫不理性地投入——不计代价地堆小时数，用蛮力磨出结果。到了今天，他更高效了，但少了那种「把 unbelievable hours 砸进去」的能力，而那种能力往往是突破某些复杂问题的真正关键。</p>
+      <p>他同期发了另一条：「yeah, this resonates. I was horribly inefficient, so I brute forced a lot.」——这是对同样感受的自我确认。这两条放在一起揭示了一件有趣的事：我们通常把「效率提升」当作成长，但有些类型的进展恰恰需要低效的、持续的、不计回报的时间投入，而这种投入随着年龄和责任的增加会越来越难实现。<strong>效率是成熟的代价之一：你学会了如何少做，但也失去了某种只有靠蛮力才能到达的地方。</strong></p>
+      <cite><a href="https://x.com/thenanyu/status/2074133468007587932" target="_blank" rel="noopener">X @thenanyu</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>科技从业者不推荐自己领域：53% 不会向新人推荐自己的职业路径</h3>
+      <p>Lenny's 调研里有一个数字比倦怠率更令人意外：超过一半（53%）的受访者不会鼓励朋友进入他们自己所在的领域。设计师和研究员的数字更高，他们同时报告了最高的 AI 焦虑感、最差的上司质量评分和最低的推荐意愿。</p>
+      <p>吊诡之处在于：这些人同时对自己的职业前景保持乐观。也就是说，他们愿意自己继续干，但不愿意让别人踏进来。这种割裂感说明什么？也许是：这个领域的「进入成本」和「已在局内者」的体验差距正在拉大，外行看起来光鲜，内行感受到的是地基持续移动的眩晕感。<strong>一个行业如果内部人士不推荐外人进入，通常不是因为它变差了，而是因为进入的「盲目期」越来越短，残酷感暴露得越来越快。</strong></p>
+      <cite><a href="https://www.lennysnewsletter.com/p/how-tech-workers-are-feeling-in-2026" target="_blank" rel="noopener">Lenny's Newsletter</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.anthropic.com/research/global-workspace" target="_blank" rel="noopener">Anthropic 全局工作空间（J-space）：模型内存在特权激活空间，可报告、可干预</a></h3>
+      <p><strong>现状：</strong>LLM 的内部推理过程长期是黑箱，现有解释性工具主要靠事后归因，无法在推理中实时干预。</p>
+      <p><strong>问题：</strong>无法在模型「想」但还没「说」的阶段介入，让安全审计和对齐干预缺乏抓手。</p>
+      <p><strong>解决方案：</strong>Anthropic 用 Jacobian 矩阵识别出 Claude 内部一个小型特权激活空间（J-space），该空间的激活模式可以被读取（J-lens 工具）、被修改（直接干预推理路径）和被监测（识别提示注入、内部破坏迹象）。工具已开源，Neuronpedia 配套上线可交互 demo。</p>
+      <p><strong>价值：</strong>首次提供了在推理阶段实时观测和调控模型内部状态的方法，是 AI 可解释性研究的方法论升级。独立研究者 Neel Nanda 称其为「迄今关于 LLM 工作记忆机制的最强证据」。</p>
+      <p><strong>未来方向：</strong>工具开源后，多个独立研究团队将可以对 Anthropic 的核心声明进行压力测试；同类方法如能推广至其他架构，将为全行业对齐研究建立新的干预基础。</p>
+      <cite><a href="https://www.anthropic.com/research/global-workspace" target="_blank" rel="noopener">Anthropic Research</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://hy3ai.com/" target="_blank" rel="noopener">Tencent Hy3：295B 开源 MoE，21B 激活参数，256K 上下文，Apache 2.0</a></h3>
+      <p><strong>现状：</strong>开放权重大模型领域由 DeepSeek、Meta Llama 等主导，腾讯此前以闭源混元系列参与竞争。</p>
+      <p><strong>问题：</strong>超大规模 MoE 模型推理成本高、部署复杂，开源可用性与实际落地之间存在明显差距。</p>
+      <p><strong>解决方案：</strong>Hy3 以 Apache 2.0 完全开放，192 专家 / top-8 路由设计压低激活参数至 21B，vLLM 当日起原生支持，包含 MTP 投机解码（加速高达 2.95x）和 FP8 混合精度推理。幻觉率从预览版 12.5% 降至 5.4%，常识错误从 25.4% 降至 12.7%。</p>
+      <p><strong>价值：</strong>在 AutomationBench-AA 等 agentic 评测中，GLM-5.2 和 Hy3 代表了开源模型在工具调用和多步推理上与闭源前沿的最小差距。OpenRouter $0/token 免费路由至 7 月 21 日。</p>
+      <p><strong>未来方向：</strong>Tencent 生产级内核已上游合并进 vLLM，后续 Hy3 full 版（非 preview）有望提供更完整的推理能力。</p>
+      <cite><a href="https://github.com/Tencent-Hunyuan/Hy3-preview" target="_blank" rel="noopener">GitHub Hy3-preview</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://mira-wm.com/" target="_blank" rel="noopener">MIRA：5B 参数世界模型，多人火箭联盟 2v2 实时仿真，单卡 20fps</a></h3>
+      <p><strong>现状：</strong>游戏世界模型（如 DOOM diffusion）通常只支持单人视角，且运行不稳定，容易在长时间后发散崩溃。</p>
+      <p><strong>问题：</strong>多人实时游戏需要同时追踪多个 agent 的行动流，传统方法将其他玩家视为环境噪音，难以生成一致性长期仿真。</p>
+      <p><strong>解决方案：</strong>MIRA（Multiplayer Interactive World Models with Representation Autoencoders）由 General Intuition 联合 Kyutai 和 Epic Games 发布，5B 参数潜空间扩散模型同时接收 4 个玩家的行动流，在单张 B200 GPU 上以 20fps 运行完整 2v2 比赛，五分钟内分布质量保持稳定，「数小时内未见崩溃」。训练数据集 Rocket Science（1000 小时对局 + 约 4000 小时视频+物理状态数据）一并开源。</p>
+      <p><strong>价值：</strong>首个可实时多人交互的游戏世界模型，提供了完整可玩 demo；开源后可用于游戏 AI 训练、多 agent 仿真环境等研究。</p>
+      <p><strong>未来方向：</strong>研究团队已与 Epic Games 合作，技术路径指向更多游戏场景的通用世界模型仿真。</p>
+      <cite><a href="https://mira-wm.com/paper" target="_blank" rel="noopener">MIRA Paper</a> · <a href="https://mira-wm.com/" target="_blank" rel="noopener">mira-wm.com</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2604.18934" target="_blank" rel="noopener">AutomationBench-AA：657 项真实 SaaS 工作流评测，Claude Fable 5 以 48.6% 领跑</a></h3>
+      <p><strong>现状：</strong>主流 agent 评测（如 SWE-bench）聚焦代码生成，缺乏对「跨 SaaS 系统真实业务工作流」的标准化评测。</p>
+      <p><strong>问题：</strong>企业级 agent 任务需要同时在 Gmail、Sheets、Salesforce、Jira 等 40+ 应用间协作，且必须遵守业务规则（guardrails），现有基准无法测量这一能力。</p>
+      <p><strong>解决方案：</strong>Artificial Analysis 与 Zapier 合作发布 AutomationBench-AA，657 项任务覆盖财务、HR、营销、运营等场景，同时评估目标完成率和规则违反率。Claude Fable 5 以 48.6% 领先，Opus 4.8 以 48.5% 紧随，Gemini 3.5 Flash 42.6%，GPT-5.5 xhigh 42.1%；开源最佳模型 GLM-5.2 max 仅 27.8%。</p>
+      <p><strong>价值：</strong>首次提供多维度业务 agent 能力指数（Finance/Legal/Healthcare/Strategy/Engineering/Economics），排名因领域不同显著重排，单一标量评分被证明不足以描述真实差距。</p>
+      <p><strong>未来方向：</strong>Artificial Analysis 计划持续更新指数，随新模型发布同步更新各领域排名。</p>
+      <cite><a href="https://arxiv.org/abs/2604.18934" target="_blank" rel="noopener">arXiv 2604.18934</a> · <a href="https://artificialanalysis.ai/articles/announcing-zapier-automationbench-aa" target="_blank" rel="noopener">Artificial Analysis</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.02509" target="_blank" rel="noopener">ReContext（arXiv 2607.02509）：递归证据回放哈内斯，免训练提升超长上下文推理</a></h3>
+      <p><strong>现状：</strong>当 LLM 面对 128K+ 超长上下文时，即使所有相关信息都在输入中，模型也往往无法有效利用远端的关键证据，存在「能访问但不会用」的问题。</p>
+      <p><strong>问题：</strong>现有方案要么压缩上下文（丢失信息），要么外挂检索器（增加复杂度和训练成本），无法在保留完整上下文的同时提升证据利用率。</p>
+      <p><strong>解决方案：</strong>ReContext 用模型自身的内部相关性信号构建一个查询条件下的证据池，在生成最终答案前将证据内容「回放」到模型即时上下文中，同时保留完整原始输入。全程无需额外训练、外部记忆或上下文裁剪。在 8 个 128K 数据集上验证了有效性。</p>
+      <p><strong>价值：</strong>「训练-免费」的推理时增强，可以直接插入现有 LLM 推理流程，是 RAG（检索增强生成）的一种无检索器替代方案。</p>
+      <p><strong>未来方向：</strong>作者指出该方法与 BlockSearch 等百万 token 检索方法正交，组合使用有望进一步提升极长上下文场景下的精准度。</p>
+      <cite><a href="https://arxiv.org/abs/2607.02509" target="_blank" rel="noopener">arXiv 2607.02509</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>Claude Code 团队发布从零到发布的内部历史回顾，Brian Cherny 亲述早期决策与取舍过程。<a class="glance-src" href="https://x.com/bcherny/status/2074247226038063316" target="_blank" rel="noopener">X @bcherny →</a></li>
+      <li>官方 Claude Code 成长史博文同步上线，「Making of Claude Code」整理了早期用户和核心团队的第一手视角。<a class="glance-src" href="https://x.com/claudeai/status/2074244664199115201" target="_blank" rel="noopener">X @claudeai →</a></li>
+      <li>Cat Wu（@_catwu）参与早期 Claude Code 团队复盘，贡献者视角。<a class="glance-src" href="https://x.com/_catwu/status/2074258446686536167" target="_blank" rel="noopener">X @_catwu →</a></li>
+      <li>Thomas Soumis（@thsottiaux）：「Closing this week. Much of the teams building ChatGPT, Codex and OpenClaw...」——三支 OpenAI 队伍在 GPT-5.6 发布前合并。<a class="glance-src" href="https://x.com/thsottiaux/status/2074195169990357398" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+      <li>Peter Yang（@petergyang）整理了 Fable 5 五个实际使用场景的深度提示词指南——项目审查、商业建议、代码审查等。<a class="glance-src" href="https://x.com/petergyang/status/2074206798631071796" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Thariq（@trq212）：「Fable 免费期将于 PT 时间 7 月 7 日 11:59:59 截止」，并推送了他的 Field Guide 博文至 Claude 官博。<a class="glance-src" href="https://x.com/trq212/status/2074185669598237047" target="_blank" rel="noopener">X @trq212 →</a></li>
+      <li>Dan Shipper（@danshipper）：「the gremlins have arrived in fable」——Fable 5 本周出现奇怪 bug，另一条是「this holds true for how you use models too」，关于使用方式决定模型表现的类比。<a class="glance-src" href="https://x.com/danshipper/status/2074160985452028406" target="_blank" rel="noopener">X @danshipper →</a></li>
+      <li>Zara Zhang（@zarazhangrui）：推荐 AI Engineer、Cursor Compile、Figma Config 三个刚结束的大会——录像全部免费，「literally learn from the best from the comfort of your home」。<a class="glance-src" href="https://x.com/zarazhangrui/status/2074304295097561490" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+      <li>Zara Zhang 补充：「不要被你的职位/头衔限制」——在 AI Engineer 会议场景下讨论超越角色边界的成长。<a class="glance-src" href="https://x.com/zarazhangrui/status/2074305070955639077" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+      <li>Peter Steinberger（@steipete，PSPDFKit 作者）：「大家现在怎么做 AI 辅助工程师面试？」引出讨论；另一条关于团队正在打磨中的功能终于通过 review。<a class="glance-src" href="https://x.com/steipete/status/2074380549318443311" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>Nikunj Kothari（@nikunj，a16z）：VC 找到最好的交易靠的是意外和惊喜，而不是系统——如何拓展接触优秀创始人的随机表面。<a class="glance-src" href="https://x.com/nikunj/status/2074141483356340475" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Garry Tan（@garrytan）：「当标题靠省略来撒谎，说明的是写标题的人」——针对媒体选择性报道的批评。<a class="glance-src" href="https://x.com/garrytan/status/2074286755185086538" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Guillermo Rauch（@rauchg）：西班牙 vs 阿根廷决赛确定——「legendary Spanish team will avenge」；另一条关于 Vercel Eve agent 自评估系统（eve eval）正式上线，AI 生产力指标进入公司 OKR 体系。<a class="glance-src" href="https://x.com/rauchg/status/2074287795028512773" target="_blank" rel="noopener">X @rauchg →</a></li>
+      <li>Nan Yu（@thenanyu）：「Yeah, this resonates. I was horribly inefficient, so I brute forced a lot」——对上一条蛮力论的自我注解。<a class="glance-src" href="https://x.com/thenanyu/status/2074258147015897357" target="_blank" rel="noopener">X @thenanyu →</a></li>
+      <li>Amjad Masad（@amasad）：亚特兰大房产公司用 Replit 替换 Salesforce，节省 10 万美元；另一条观察到「市场在 brief bear market 期间出现重大拐点」。<a class="glance-src" href="https://x.com/amasad/status/2074274666709987663" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>AI Valley：投入最多 AI 的企业两年内员工规模增加 10%，入门级岗位增加 12%——AI 正在创造新职位，不只是替换旧职位（基于 21,000 家美国公司研究）。<a class="glance-src" href="https://aivalley.ai" target="_blank" rel="noopener">AI Valley →</a></li>
+      <li>xAI 正式更名为 SpaceXAI，完成 Elon Musk AI、社交媒体与太空业务的品牌整合。<a class="glance-src" href="https://aivalley.ai" target="_blank" rel="noopener">AI Valley →</a></li>
+      <li>iPhone Ultra 定价预计 $2,400，是 iPhone 17 Pro Max 的两倍，预计 9 月发布后立即售罄，等待期延伸至 12 月。<a class="glance-src" href="https://tldr.tech/" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>科技 CEO 们在过去一年集体改口：从「AI 会消灭工作」转向「AI 让工人更有生产力」——无论是真心认知还是 PR，这一叙事转向本身值得记录。<a class="glance-src" href="https://tldr.tech/" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>微软 Xbox 部门裁员超 3,000 人，约占部门总人数五分之一。<a class="glance-src" href="https://tldr.tech/" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>OpenAI 已将推理成本减半，目前在未登录的 ChatGPT 用户中测试；上一次重大降价是约一年前 o3 降价 80%。<a class="glance-src" href="https://bensbites.com/p/my-thoughts-on-fable" target="_blank" rel="noopener">Ben's Bites →</a></li>
+      <li>GPT-Realtime-2.1-mini 上线 OpenAI API：支持视频输入+音频输出+工具调用，可在执行工具调用时持续发声（消除「接电话时的死寂」体验），p95 延迟降低 25%。<a class="glance-src" href="https://developers.openai.com/api/docs/models/gpt-realtime-2.1-mini" target="_blank" rel="noopener">OpenAI →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-07-06.html">← JUL 6</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
