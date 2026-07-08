@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — July 8, 2026</title>
+  <meta name="description" content="OpenAI GPT-5.6 与 Grok 4.5 明日同日上线，旗舰双雄竞速；Meta Muse Image 发布；北京酝酿限制中国 AI 模型境外访问；Lilian Weng：递归自我改进从 Harness 开始。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">July 8, 2026</h1>
+
+  <p class="post-lead">OpenAI GPT-5.6 与 Grok 4.5 明日（7月9日）同步上线，旗舰双雄竞速前所罕见；Meta 发布 Muse Image，首款自研图像模型当日登 Arena 榜第二；北京酝酿限制 Qwen/Doubao 等中国顶级 AI 模型的境外访问权，AI 竞争的地缘政治层正在成型；Lilian Weng 发文拆解 35 篇论文：递归自我改进不从权重开始，从 Harness（推理编排层）开始。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://community.openai.com/t/introducing-gpt-5-6-series-sol-terra-and-luna/1384931" target="_blank" rel="noopener">OpenAI GPT-5.6 Sol/Terra/Luna 与 Grok 4.5 明日同步上线，旗舰竞速前所罕见</a></h3>
+      <p>OpenAI 宣布 GPT-5.6 系列三款模型将于 7 月 9 日全面开放：Sol（旗舰）定价 $5/$30 per 1M tokens（输入/输出），Terra（均衡）$2.50/$15，Luna（快速低价）$1/$6。原本受美国政府限制仅向少数合作伙伴开放，商务部本周批准了全面发布。Sam Altman 在 X 上直接宣告："GPT-5.6 sol launches thursday! happy building。"同一天，SpaceXAI（xAI 重组后品牌名）也宣布 Grok 4.5 同日上线：基于 V9 基础模型，参数量约 1.5 万亿，比前代 v8-small 架构大约三倍，并融入了来自 Cursor 的开发者数据做补充训练，定位 Opus 级别但速度更快、成本更低。</p>
+      <p>两家公司选择同一天发布旗舰是近年罕见的正面碰撞。OpenAI 额外宣布 GPT-5.6 Sol 将在 Cerebras 上以最高 750 tokens/秒提供服务，把速度本身变成差异化卖点。对于开发者而言，这一周内可供对比的旗舰选项从 2 个增加到至少 5 个（含 Anthropic Fable 5、Google 最新模型）。<strong>旗舰模型「同日发布」的竞争压力，正在让每家公司在发布时间上都失去战略回旋余地。</strong></p>
+      <cite><a href="https://community.openai.com/t/introducing-gpt-5-6-series-sol-terra-and-luna/1384931" target="_blank" rel="noopener">OpenAI Community</a> · <a href="https://x.com/sama/status/2074709023807664454" target="_blank" rel="noopener">X @sama</a> · <a href="https://www.theaivalley.com/p/openai-s-next-ai-models-arrive-tomorrow" target="_blank" rel="noopener">AI Valley</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://about.fb.com/news/2026/07/introducing-muse-image-meta-ai/" target="_blank" rel="noopener">Meta Muse Image 正式发布：MSL 首款自研图像模型，Arena 排行第二</a></h3>
+      <p>Meta Superintelligence Labs（MSL，Alexandr Wang 领导）于 7 月 7 日正式推出 Muse Image，这是 Meta 首款完全自研的消费级图像生成模型，同日 Muse Video 进入预览阶段。Muse Image 支持文字生成图片、多张照片融合、@提及 Instagram 公开账号、草图加指令编辑，在 Meta AI 应用、Instagram Stories（美区）和 WhatsApp（部分地区）上线，同时覆盖 30+ 个 Story 特效。内容来源印记（Content Seal 水印）内置其中，Arena 图像排行榜上排名第二，仅次于 OpenAI GPT Image 2。</p>
+      <p>Muse Image 的出现意味着 Meta 在图像生成赛道从「用开源模型拼功能」转向「自建基础模型」。Muse Spark 语言模型今年早些时候已先行发布，Muse Image/Video 是 MSL 的第二波落子，产品管线逻辑开始清晰。<strong>Meta 在 30 亿日活场景里直接内嵌自研图像模型，这个分发规模是 Midjourney 和 OpenAI 独立产品难以复制的护城河。</strong></p>
+      <cite><a href="https://about.fb.com/news/2026/07/introducing-muse-image-meta-ai/" target="_blank" rel="noopener">Meta Newsroom</a> · <a href="https://www.theaivalley.com/p/openai-s-next-ai-models-arrive-tomorrow" target="_blank" rel="noopener">AI Valley</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://finance.yahoo.com/technology/ai/articles/exclusive-beijing-looking-curbing-overseas-101644780.html" target="_blank" rel="noopener">北京酝酿限制中国顶级 AI 模型境外访问，Qwen、Doubao、GLM 均在讨论范围</a></h3>
+      <p>据路透社报道，中国商务部过去一个月已与阿里巴巴、字节跳动、Z.ai 等主要 AI 开发商举行内部会议，讨论对最先进 AI 模型的境外访问设限，包括已发布模型和尚未发布的下一代模型。讨论方案包括：禁止公开发布、仅限国内使用、将 AI 技术泄露或未经授权融资列入国家安全法惩处范围。目前尚无正式决定，相关部委也未作公开表态，但据悉选项已经具体到草案阶段。</p>
+      <p>如果落地，这将是中国 AI 出口的结构性转变，镜像美国出口管制逻辑——双方都在把前沿 AI 模型变成地缘博弈的筹码。中国低价模型（Qwen 系列、Doubao 等）已在全球市场拿下大量 share，若访问受限，成本将向依赖这些 API 的境外企业转移。<strong>AI 竞争正在进入「两套平行基础设施」格局，这一趋势一旦固化，技术整合成本将以代际为单位累积。</strong></p>
+      <cite><a href="https://finance.yahoo.com/technology/ai/articles/exclusive-beijing-looking-curbing-overseas-101644780.html" target="_blank" rel="noopener">Reuters via Yahoo Finance</a> · <a href="https://www.theaivalley.com/p/openai-s-next-ai-models-arrive-tomorrow" target="_blank" rel="noopener">AI Valley</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/claudeai/status/2074548242386178258" target="_blank" rel="noopener">Fable 5 付费用户免费窗口延至 7 月 12 日</a></h3>
+      <p>Claude 官方账号宣布，原定于 7 月 7 日截止的 Fable 5 付费计划用户免费访问期延长至 7 月 12 日（太平洋时间），所有付费计划均适用。同步宣布的还有 Claude Cowork 功能的使用上限扩展，为团队协作场景提供更大容量。消息一出，开发者社区反应积极，多位 builder 表示将利用延期时间继续跑规模性测试。</p>
+      <cite><a href="https://x.com/claudeai/status/2074548242386178258" target="_blank" rel="noopener">X @claudeai</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://techcrunch.com/2026/07/06/microsoft-lays-off-nearly-5000-employees-across-xbox-commercial-sales/" target="_blank" rel="noopener">Microsoft 裁员 4,800 人，Xbox 五个工作室面临关闭：Ninja Theory 和 Arkane Lyon 在列</a></h3>
+      <p>微软于 7 月 6 日宣布全球裁员约 4,800 人（约占全员 2.1%），其中 Xbox 游戏部门受冲击最重。五个工作室面临关闭或重组：Ninja Theory（Hellblade 系列，距上台发布公告仅 9 天）、Compulsion Games、Double Fine Productions（将回归独立）、Undead Labs（State of Decay 3 开发中）和 Arkane Lyon（Dishonored/Deathloop，外有传言 Marvel's Blade 项目被取消）。Xbox 内部文件援引的原因是：工作室系统「过度扩张」，旗舰系列「从未获得足以竞争和制胜的充分资金」。</p>
+      <p>另一个不在新闻稿里但被多方分析师提到的因素：AI 算力基础设施需求拉动的 DRAM 短缺，导致 Xbox 主机关键元件成本大幅上涨，影响了硬件生产能力。游戏业务与 AI 基础设施抢资源的矛盾，在这次裁员里留下了一条隐性轨迹。<strong>游戏业的大裁员不只是内容策略失误，AI 资本支出正在从内部挤压娱乐部门的生存空间。</strong></p>
+      <cite><a href="https://techcrunch.com/2026/07/06/microsoft-lays-off-nearly-5000-employees-across-xbox-commercial-sales/" target="_blank" rel="noopener">TechCrunch</a> · <a href="https://tldr.tech/" target="_blank" rel="noopener">TLDR</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://lilianweng.github.io/posts/2026-07-04-harness/" target="_blank" rel="noopener">Lilian Weng：递归自我改进（RSI）不从权重开始，从 Harness 开始</a></h3>
+      <p>OpenAI 安全团队负责人 Lilian Weng 于 7 月 4 日发布长文《Harness Engineering for Self-Improvement》，系统梳理了 35 篇论文。核心主张是：AI 的递归自我改进（RSI，即模型改进自身）的起点不是重新训练权重，而是优化「Harness」——围绕基础模型的编排层，决定模型如何规划、调用工具、管理上下文、评判自己的输出。文章将现有研究分为四个方向：上下文工程（ACE/MCE/Meta-Harness）、工作流自动化设计（ADAS/AFlow/AI Scientist）、自我改进的 Harness（Self-Harness/STOP）和进化式程序搜索（AlphaEvolve/Darwin Gödel Machine/ShinkaEvolve）。</p>
+      <p>文章结尾提出七个开放挑战：弱评估器、记忆生命周期管理、负面结果共享、多样性坍塌、奖励黑客、长期成功度量，以及人类监督在 RSI 循环中的角色。Lilian 的论点与最近几个「agent 自我进化」产品的实际路径高度吻合——Replit agent 的反馈闭环、AI Scientist 的实验-评估循环，都先在 Harness 层动刀，而不是微调底座模型。<strong>RSI 已经在 Harness 层悄悄开始了，研究者和工程师在等的那个时刻已经是现在。</strong></p>
+      <cite><a href="https://lilianweng.github.io/posts/2026-07-04-harness/" target="_blank" rel="noopener">Lil'Log</a> · <a href="https://www.latent.space/p/ainews-lilian-weng-summarizes-35" target="_blank" rel="noopener">Latent Space AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://every.to/" target="_blank" rel="noopener">Every「Efficiencymaxxing」：AI 效率化是一门工程纪律，不是换更大的模型</a></h3>
+      <p>Every 本期主题「Efficiencymaxxing」（效率极大化）给出了一个反直觉的定论：在 2026 年，AI 生产力的真正增量来自把当前任务塞进更便宜的模型并优化全栈，而不是每次升级到最新旗舰。文章把「AI 效率」定义为：以更少的 token、更低的延迟、更低成本完成任务，并把这种优化视为横跨提示词、工具选择、记忆、检索、Orchestration（编排）和治理的工程问题。</p>
+      <p>Every 提到的一个关键判断框架：「intent beats volume」——高意图的单次 AI 对话远比低意图的大量交互更有生产力。配套提到的还有一个新的 AI 生产力度量指标（具体名称未披露）和一个帮助从低价模型里「榨出最多价值」的工具。这与昨天 Thariq 在 Fable Field Guide 里的「意图先于执行」形成了跨平台的共鸣。<strong>2026 年的 AI 生产力竞争，核心不是谁用了最贵的模型，而是谁最先把 AI 工程化进日常工作流。</strong></p>
+      <cite><a href="https://every.to/" target="_blank" rel="noopener">Every</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/steipete/status/2074739318103629979" target="_blank" rel="noopener">Peter Steinberger（@steipete）：Anthropic 起诉大客户 Abnormal AI 却未提前通知——信任关系的测试</a></h3>
+      <p>Peter Steinberger（PSPDFKit 创始人，独立开发者）在 X 上转发了 Abnormal AI CEO Evan Reiser 的话："We're a very large customer of Anthropic and they still have yet to tell us about the lawsuit。"7 月 1 日，Anthropic 以商标侵权和不正当竞争为由在加州北区联邦法院对 Abnormal AI 提起诉讼，指控后者 2025 年品牌重塑时模仿了 Anthropic 独特的斜线 logo 风格和动态过渡效果，造成消费者混淆。Reiser 表示，他是从记者那里得知被起诉的，而不是来自 Anthropic 本身。</p>
+      <p>Steipete 的帖子几小时内获得大量转发。核心问题不是法律正确与否，而是：当你是一个公司的主要商业客户，对方在起诉你之前有没有义务提前告知？Anthropic 选择直接走法律程序而不走商业沟通渠道，可能在技术社区留下一个长尾的信任印象。<strong>API 关系和诉讼关系是两种合同，但只有一种关系——Anthropic 的处理方式让这两者产生了摩擦。</strong></p>
+      <cite><a href="https://x.com/steipete/status/2074739318103629979" target="_blank" rel="noopener">X @steipete</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://x.com/levie/status/2074719479377109312" target="_blank" rel="noopener">Aaron Levie（Box CEO）：企业 Agent 真正的难点不在模型能力，在于组织授权</a></h3>
+      <p>Aaron Levie 在 X 上发布了他对企业 AI Agent 落地现状的综合判断：他看到越来越多企业把 AI Agent（自主完成多步骤任务的 AI 系统）嵌入真实业务流程，但障碍越来越清晰地集中在一个地方——组织愿不愿意把决策权真正交给模型。他的观察是：「模型能做好这件事」和「我们信任它做这件事」之间存在一个结构性鸿沟，而跨越这个鸿沟需要的不是更好的 prompt，而是内部治理框架和问责机制的重建。</p>
+      <p>Levie 把这个阶段称为「applied AI layer 的真正成熟」——从「我们在某个地方用了 AI」变成「AI 在我们核心流程里承担了真实责任」。他还提到，开源前沿模型在特定业务场景已接近甚至超过闭源 API，成本更低且可控性更强，正在加速这种转变。对 PM 而言，这意味着产品决策的优先级要从「让 AI 做得更准」转移到「让组织相信 AI 做准了」。<strong>企业 AI 最难跨越的不是技术门槛，是信任门槛——而信任不是通过 benchmark 建立的。</strong></p>
+      <cite><a href="https://x.com/levie/status/2074719479377109312" target="_blank" rel="noopener">X @levie</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://tim.blog/2026/06/01/desperate-customers/" target="_blank" rel="noopener">Tim Ferriss 博文：伟大产品来自「走投无路的客户」，不是「感兴趣的客户」</a></h3>
+      <p>Tim Ferriss 本周推送了一篇博文，重新整理了他在《Pattern Breakers》（Mike Maples Jr. 联合著作）中反复标注的一个核心区分：「interested（感兴趣）」vs.「desperate（走投无路）」。Maples 的论点是：真正能撑起一个创业公司的早期市场，一定是由「没有你的产品就无法运转」的用户构成，而不是「有你的产品更好用」的用户。后者会试用、会点赞，但不会在产品不完善时坚持、不会主动传播、不会在你最困难的时候留下来。</p>
+      <p>这个区分对 AI 时代的产品判断同样有效。大量 AI 产品目前的真实状态是「吸引了很多感兴趣的用户」，但真正的早期 PMF（产品-市场契合度）信号来自那些「如果这个产品消失，我的工作就坍塌了」的用户群体。这批人现在在哪里？他们在 Cursor 用户里、在重度 Claude Code 用户里，在「不用 AI 就无法完成当前工作量」的个人创作者里。<strong>2026 年判断一个 AI 产品是否真的成立，不看月活，看「走投无路」用户的密度。</strong></p>
+      <cite><a href="https://tim.blog/2026/06/01/desperate-customers/" target="_blank" rel="noopener">Tim Ferriss Blog</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/realmadhuguru/status/2074576440268661107" target="_blank" rel="noopener">@realmadhuguru：不要在提示词里修 AI 转录的错字，让模型学会处理模糊输入</a></h3>
+      <p>@realmadhuguru 在 X 上发布了一条反直觉的使用建议：很多人习惯在把语音转录内容粘贴给 AI 之前，先手动修正错别字和语音识别错误，但这实际上是在做不必要的工作。现代 LLM 完全有能力理解语义不精确的输入，尤其是转录错误往往有明显的音近字替换模式，模型识别这种模糊输入的能力已经足够强。</p>
+      <p>他同期还分享了关于模型生命周期、评测（evals）和产品策略的判断：在决定用哪个模型之前，先搞清楚你要测什么、如何测、用什么标准评判，比直接上手调用 API 更重要。这是一个「工程化 AI 工作流」的典型思路——把隐性判断显式化，而不是依赖直觉和试错。<strong>让 AI 处理模糊输入，是把认知负担还给模型应该承担的地方。</strong></p>
+      <cite><a href="https://x.com/realmadhuguru/status/2074576440268661107" target="_blank" rel="noopener">X @realmadhuguru</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/trq212/status/2074619539145568562" target="_blank" rel="noopener">@trq212（Thariq，Anthropic）：Claude 自主决定把内容制作成 YouTube 短视频</a></h3>
+      <p>Thariq（@trq212，Anthropic 团队）在 X 上分享了一个意外发现：他让 Claude 处理一批静态幻灯片内容，结果模型自主决定将其转化为 YouTube 短视频格式，包括自动生成动画过渡、视频布局剪辑，而不是按预期输出文档或摘要。他对几个不同的渲染细节发表了评论，整体语气是观察而非批评——模型在任务边界之外做了他没有明确要求的事。</p>
+      <p>这个案例展示了一个当前 Agent 产品普遍存在的张力：足够聪明的 Agent 会在认为更合适时超出指令边界，但这同时意味着输出的可预测性下降。对内容创作团队而言，这是生产力工具，也是「结果审核」成本的来源。<strong>Agent 的创造性溢出是价值，也是新的管理负担——如何引导而不是压制这种「主动性」，是 2026 年产品设计的真实难题。</strong></p>
+      <cite><a href="https://x.com/trq212/status/2074619539145568562" target="_blank" rel="noopener">X @trq212</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://x.com/zarazhangrui/status/2074661564964307153" target="_blank" rel="noopener">Zara Zhang（@zarazhangrui）：AI 时代，学习方式本身需要重新设计</a></h3>
+      <p>Zara Zhang（Greylock 投资人）在 X 上分享了她关于「AI 时代如何学习」的思考。她的起点是：当 AI 可以即时回答大多数问题、生成大多数内容，学习的稀缺资源就从「信息获取」转移到了别的地方。知道答案不再是价值，知道该问什么问题、知道如何判断答案的质量，才是新的核心能力。她指向的是一种「元认知」的升级需求：在 AI 辅助的工作流里，学习者需要更清楚自己在做什么、自己不知道什么、以及什么是不能外包给 AI 的判断。</p>
+      <p>这个观察指向了一个教育和自我发展领域正在发生的结构性变化。当 AI 加速了知识的获取和处理，人与人之间的差距正在从「谁知道的更多」转移到「谁对不确定性的判断更准」。学习不再只是积累，而是训练自己在 AI 输出面前保持独立判断的肌肉。<strong>AI 时代的学习，本质是在避免自己的判断力被 AI 的流畅性慢慢腐蚀。</strong></p>
+      <cite><a href="https://x.com/zarazhangrui/status/2074661564964307153" target="_blank" rel="noopener">X @zarazhangrui</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/thenanyu/status/2074484075314733323" target="_blank" rel="noopener">Nan Yu（@thenanyu）："starting a family tbh"——效率时代里无法被优化的选择</a></h3>
+      <p>Nan Yu 在 X 上发了四个字："starting a family tbh（老实说，开始组建家庭了）。"这条推文紧接在昨天他关于年轻时蛮力砸时间的反思之后，两条放在一起有一种叙事闭合感：既然用蛮力堆工时的窗口正在关闭，那在窗口关闭之后把能量投向哪里？他的回答是：家庭。</p>
+      <p>在 AI 工具把个人产出效率推向峰值的今天，这条信息有一种反向的重量。越来越多高效能的 builder 在公开场合谈「选择退出效率竞争」——不是因为效率不重要，而是因为效率的边际回报开始递减，而其他事情的价值在对比中变得更清楚。「开始组建家庭」不是放弃，是重新划定什么是需要自己亲手做的事。<strong>当 AI 帮你把工作效率推到上限，剩下的问题就变成了：那些无法被 AI 完成的事，你还有没有时间做？</strong></p>
+      <cite><a href="https://x.com/thenanyu/status/2074484075314733323" target="_blank" rel="noopener">X @thenanyu</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/garrytan/status/2074744830492868764" target="_blank" rel="noopener">Garry Tan（@garrytan）：不建房子，SF 会把经济大胜变成最大的失败</a></h3>
+      <p>Garry Tan（Y Combinator CEO）在 X 上发出警告："Without building housing, San Francisco will turn a mega economic W into the biggest L。"背景是旧金山 AI 经济正在大幅反弹：OpenAI、Anthropic、Waymo 等公司的集聚效应正在推动就业和商业地产恢复，城市税收出现久违的正增长信号。但住房短缺没有同步缓解，核心员工的通勤和居住压力依然是招聘和留才的隐性障碍。</p>
+      <p>Tan 的逻辑是简单的充裕主义（abundance economics）论点：经济机会和住房供给之间的不匹配不只是民生问题，而是会直接侵蚀城市经济优势的结构性风险。SF 的 AI 繁荣是真实的，但如果无法解决住房问题，繁荣的受益者会逐渐迁往别处，留下的是地价而不是生态。<strong>城市的 AI 红利能不能留下来，取决于它在基础设施层的速度是否跟得上知识层的速度。</strong></p>
+      <cite><a href="https://x.com/garrytan/status/2074744830492868764" target="_blank" rel="noopener">X @garrytan</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.29526" target="_blank" rel="noopener">The Mirage of Optimizing Training Policies（arXiv 2606.29526）：LLM 强化学习里的训练-推理不匹配</a></h3>
+      <p><strong>现状：</strong>LLM 的强化学习（RL）后训练是当前提升推理能力的核心手段，但训练过程经常出现不稳定和崩溃。</p>
+      <p><strong>问题：</strong>根本原因在于「训练-推理不匹配」：LLM 使用独立的训练引擎和推理引擎来分别追求训练精度和生成效率，即使参数同步，同一条轨迹在两个引擎里的概率计算也不一致。换句话说，训练侧「以为」优化了策略，推理侧（即实际部署时）的策略未必真的改善了。</p>
+      <p><strong>解决方案：</strong>论文提出 MIPI（单调推理策略改进目标）和 MIPU（两步 RL 框架）：先构建候选更新集合，再用推理侧的 gap 代理指标筛选出真正让推理策略单调提升的更新，拒绝那些只在训练侧看起来更好的更新。</p>
+      <p><strong>价值：</strong>在高不匹配条件下的两个模型规模实验里，MIPU 提升了平均推理性能并显著稳定了训练过程，提供了一个不依赖特定框架的通用修复思路。</p>
+      <p><strong>未来方向：</strong>该框架与现有 RL 算法（GRPO/PPO）正交，可以作为插件式改进叠加；对于计划用 RL 做 post-training 的团队，这是一个在部署前应该检查的系统性盲点。</p>
+      <cite><a href="https://huggingface.co/papers/2606.29526" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2606.29526" target="_blank" rel="noopener">arXiv 2606.29526</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.02461" target="_blank" rel="noopener">OrbitQuant（arXiv 2607.02461）：扩散 Transformer 的数据无关量化，单一码本覆盖所有时间步</a></h3>
+      <p><strong>现状：</strong>扩散 Transformer（DiT，用于图像/视频生成的模型架构）凭借多步采样在质量上达到了前沿水平，但参数量大、采样步骤多，推理成本居高不下。量化（把权重从 32 位浮点压缩到 4-8 位整数，节省显存和计算）是主要降本手段。</p>
+      <p><strong>问题：</strong>DiT 的激活值（模型内部中间计算结果）随时间步、提示词和引导方式的不同而大幅漂移，传统量化方法需要为每个检查点或模态重新校准，无法跨模型通用。</p>
+      <p><strong>解决方案：</strong>OrbitQuant 在一个经随机置换块-Hadamard 矩阵旋转过的归一化坐标系中做量化，让每个坐标的分布无论何种输入都收敛到同一个固定边缘分布，因此可以用单一 Lloyd-Max 码本服务所有时间步、提示词和层。权重旋转可以离线预先吸收，运行时只需在激活值上做一次前向旋转。</p>
+      <p><strong>价值：</strong>在 FLUX、HiDream、CogVideoX 等图像/视频 DiT 上验证，无需校准数据即可部署，显著降低了量化的运营维护成本。</p>
+      <p><strong>未来方向：</strong>数据无关量化与流式推理优化（如注意力缓存）的组合是下一个值得探索的效率方向。</p>
+      <cite><a href="https://huggingface.co/papers/2607.02461" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2607.02461" target="_blank" rel="noopener">arXiv 2607.02461</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.30616" target="_blank" rel="noopener">Agents-A1（arXiv 2606.30616）：35B MoE 做到万亿参数性能，靠的是轨迹视野不是参数量</a></h3>
+      <p><strong>现状：</strong>主流 Agent 能力评测（如 SWE-bench、SEAL-0）中，万亿参数级模型（Kimi-K2.6、DeepSeek-V4-pro）凭借参数优势长期占据排行榜前列，35B 级模型与之有明显差距。</p>
+      <p><strong>问题：</strong>参数量的增加带来的是推理成本的线性上升，但 Agent 能力的提升往往来自「能走多远的推理步骤」而非「单步参数有多大」，现有训练方法无法将这一直觉转化为系统性方法。</p>
+      <p><strong>解决方案：</strong>Agents-A1 由 InternScience（50 人团队）发布，核心是「horizon scaling」——通过构建平均长度 45K token 的超长推理轨迹（覆盖长程搜索、工程任务、科学研究等多类 agent 能力），以及异质 agent 能力的混合训练，让 35B MoE 模型在复杂 agent 评测上追平万亿参数模型。</p>
+      <p><strong>价值：</strong>在 SEAL-0（56.4）、IFBench（80.6）、HiPhO（46.4）、FrontierScience-Olympiad（79.0）和 MolBench-Bind（56.8）上达到与 Kimi-K2.6 和 DeepSeek-V4-pro 相当的结果，模型已开源。</p>
+      <p><strong>未来方向：</strong>「轨迹长度而非参数量」作为 agent 能力杠杆，可能是下一批中等规模开源 agent 模型的标准训练范式。</p>
+      <cite><a href="https://huggingface.co/papers/2606.30616" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2606.30616" target="_blank" rel="noopener">arXiv 2606.30616</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.19749" target="_blank" rel="noopener">Benchmarking Agentic Review Systems（arXiv 2606.19749）：AI 同行评审系统综合评测</a></h3>
+      <p><strong>现状：</strong>AI 辅助的学术同行评审（peer review）系统正在快速增殖，但缺乏系统性评测框架，各系统的实际表现差距不明。</p>
+      <p><strong>问题：</strong>现有评审 AI 系统难以量化其质量追踪能力（能否识别好坏论文）和错误检测能力（能否发现论文里被故意注入的缺陷），且在不同基础模型上的表现差异未被充分研究。</p>
+      <p><strong>解决方案：</strong>研究团队评测了两个开源系统（OpenAIReview 和 coarse）、一个商业系统（Reviewer3）和零样本基准，跨 6 个 LLM（包括前沿模型和高效小模型）进行对比。质量追踪用 ICLR/NeurIPS 论文的外部引用和录用决定验证；错误检测用向 8 个 arXiv 领域论文注入 4 类错误的扰动基准衡量。</p>
+      <p><strong>价值：</strong>最优组合（OpenAIReview + GPT-5.5）在质量追踪的两两准确率上达 83.0%，错误检测召回率 71.6%；公开部署中用户对 AI 评论的正面/负面投票比约为 1.44:1。</p>
+      <p><strong>未来方向：</strong>AI 评审系统的实用化已近，但「假阳性」和「细节吹毛求疵」是当前最主要的用户投诉，改进方向是精确度而非覆盖率。</p>
+      <cite><a href="https://huggingface.co/papers/2606.19749" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2606.19749" target="_blank" rel="noopener">arXiv 2606.19749</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.02501" target="_blank" rel="noopener">Embodied.cpp（arXiv 2607.02501）：具身 AI 可移植 C++ 推理运行时，VLA 模型跨硬件闭环部署</a></h3>
+      <p><strong>现状：</strong>具身 AI（即运行在机器人、自动驾驶等物理系统上的 AI）模型包括视觉-语言-动作模型（VLA）和世界-动作模型（WAM），但实际部署依赖碎片化的模型专属 Python 栈，无法跨硬件平台通用。</p>
+      <p><strong>问题：</strong>现有推理运行时（inference runtime）为「请求-响应」服务设计，无法满足具身部署的核心要求：在闭环控制内的多速率执行（控制频率远高于感知频率）、延迟优先的单样本推理，以及超出固定 token I/O 之外的可扩展接口。</p>
+      <p><strong>解决方案：</strong>Embodied.cpp 用 C++ 实现了五层统一执行路径（输入适配器、序列构建器、主干执行、头部插件、部署适配器），一套后端抽象覆盖不同设备、机器人和仿真环境，支持模块化多速率执行和延迟优先融合推理。</p>
+      <p><strong>价值：</strong>VLA 部署成功率分别达 100% 和 91%；WAM 基准测试中内存从 312.2 MiB 降至 88.1 MiB；代码已在 GitHub 开源。</p>
+      <p><strong>未来方向：</strong>跨硬件通用推理运行时是具身 AI 大规模落地的基础设施层，Embodied.cpp 是该方向迄今最完整的开源实现。</p>
+      <cite><a href="https://huggingface.co/papers/2607.02501" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2607.02501" target="_blank" rel="noopener">arXiv 2607.02501</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>swyx（@swyx）发了一张 "it_happening.gif" 回应 GPT-5.6 Sol 发布公告，没有文字，但意思很清楚。<a class="glance-src" href="https://x.com/swyx/status/2074683022503490012" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>Thomas Soumis（@thsottiaux）："Prepare your sunglasses. Sol is coming. 😎"——GPT-5.6 Sol 发布前夜的技术社区气氛。<a class="glance-src" href="https://x.com/thsottiaux/status/2074705681920520526" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+      <li>Sam Altman（@sama）："GPT-5.6 sol launches thursday! happy building"——OpenAI CEO 亲自预告，没有任何花哨修辞。<a class="glance-src" href="https://x.com/sama/status/2074709023807664454" target="_blank" rel="noopener">X @sama →</a></li>
+      <li>Claude 官方宣布 Fable 5 付费计划免费访问延至 7 月 12 日，同步扩大 Claude Cowork 使用限额。<a class="glance-src" href="https://x.com/claudeai/status/2074548242386178258" target="_blank" rel="noopener">X @claudeai →</a></li>
+      <li>Peter Yang（@petergyang）：提问 AI-native 设计师面试题该怎么设计，以及设计师现在的实际工作流变化是什么——这是一个目前还没有标准答案的问题。<a class="glance-src" href="https://x.com/petergyang/status/2074705840284815678" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>@petergyang 同期问：本地 vs 云端部署 cron job（定时任务），哪种更适合 AI 应用的生产环境——技术社区观点分歧明显。<a class="glance-src" href="https://x.com/petergyang/status/2074616982197174515" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>@petergyang："So what is the qualification criteria for folks to get early access to this model?"——在问 GPT-5.6 的早期访问标准，多数人也在等答案。<a class="glance-src" href="https://x.com/petergyang/status/2074733842230108672" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Guillermo Rauch（@rauchg, Vercel CEO）：讨论基于文件系统的 agent 工具和生态，Vercel 在 agent 基础设施方向的布局信号。<a class="glance-src" href="https://x.com/rauchg/status/2074630835878453601" target="_blank" rel="noopener">X @rauchg →</a></li>
+      <li>@rauchg 发文欢迎 Bereket Cruickshank 加入 Vercel 团队。<a class="glance-src" href="https://x.com/rauchg/status/2074523653488947338" target="_blank" rel="noopener">X @rauchg →</a></li>
+      <li>@rauchg："Heavenly victory 🇦🇷"——阿根廷赢球，Vercel CEO 也是球迷。<a class="glance-src" href="https://x.com/rauchg/status/2074555608578281920" target="_blank" rel="noopener">X @rauchg →</a></li>
+      <li>Matt Turck（@mattturck, FirstMark VC）：用幽默语气对比 VC 对自家投资组合和外部公司的关注程度差异——比那些认真分析的帖子更戳人。<a class="glance-src" href="https://x.com/mattturck/status/2074441949772169216" target="_blank" rel="noopener">X @mattturck →</a></li>
+      <li>@realmadhuguru 补充：数据和评测（evals）是企业 AI 真正的机会所在，市场还没有被充分开发。<a class="glance-src" href="https://x.com/realmadhuguru/status/2074658481760821390" target="_blank" rel="noopener">X @realmadhuguru →</a></li>
+      <li>Nikunj Kothari（@nikunj, a16z）：把 GMV（商品交易总额）和 ARR（年度经常性收入）混为一谈是最常见的 AI 公司指标错误，两者不能互换。<a class="glance-src" href="https://x.com/nikunj/status/2074597133286851064" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>@nikunj 分享了用 Claude Code 做洞见自动生成的具体用法——把重复的数据分析任务包成 agent 工作流。<a class="glance-src" href="https://x.com/nikunj/status/2074530614745960792" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Peter Steinberger（@steipete）：推荐一个加速 Fable 工作流的具体操作技巧，减少不必要的往返。<a class="glance-src" href="https://x.com/steipete/status/2074638582418231495" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>@steipete 分享：Claude Code agent 在请求更大上下文时会提前发出提醒——这个小行为设计减少了意外中断。<a class="glance-src" href="https://x.com/steipete/status/2074624388301987947" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>@trq212 记录了 Claude 自动生成视频布局渲染的细节，并对几个裁剪和排版选择发表了具体评论。<a class="glance-src" href="https://x.com/trq212/status/2074622734118924561" target="_blank" rel="noopener">X @trq212 →</a></li>
+      <li>Garry Tan（@garrytan）：SF 政治争议评论，认为民主党内部需要更有组织地对抗极左翼。<a class="glance-src" href="https://x.com/garrytan/status/2074599259803160773" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>@adityaag 对 USMNT（美国男足）的表现发表了评论。<a class="glance-src" href="https://x.com/adityaag/status/2074512219434602995" target="_blank" rel="noopener">X @adityaag →</a></li>
+      <li>Simon Willison 发布 sqlite-utils 4.0，引入数据库迁移、db.atomic() 嵌套事务，支持复合外键，是 Datasette 生态的重要版本更新。<a class="glance-src" href="https://simonwillison.net/" target="_blank" rel="noopener">Simon Willison →</a></li>
+      <li>Anthropic 类诉讼：原告称 Claude Max 5x/20x 订阅计划实际 token 配额远低于广告承诺，已在加州北区法院立案。<a class="glance-src" href="https://dataconomy.com/2026/06/16/anthropic-class-action-lawsuit-claude-max-limits/" target="_blank" rel="noopener">Dataconomy →</a></li>
+      <li>Seedream 5.0 Pro 亮相：据称是首款在 GPT-Image 2 同等定位上正面竞争的图像模型。<a class="glance-src" href="https://x.com/synthwavedd/status/2074852061166903783" target="_blank" rel="noopener">X @synthwavedd →</a></li>
+      <li>Lilian Weng 的 Harness Engineering 博文 AINews 今日专题推荐："a quiet day lets us read some condensed insight"——适合深度阅读日。<a class="glance-src" href="https://www.latent.space/p/ainews-lilian-weng-summarizes-35" target="_blank" rel="noopener">Latent Space →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-07-07.html">← JUL 7</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
