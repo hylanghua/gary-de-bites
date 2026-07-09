@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — July 9, 2026</title>
+  <meta name="description" content="GPT-5.6 Sol 今日正式对所有用户开放；Grok 4.5 公开上线——1.5T 参数、比 Opus 便宜 6 倍；Cowork 登陆 Web 和移动端；64 个 Claude 并行 11 天把 Bun 从 Zig 重写为 Rust，内存降 91%。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">July 9, 2026</h1>
+
+  <p class="post-lead">GPT-5.6 Sol 今日正式对所有用户开放，经 12 天政府审批后三档模型同步上线，早期用户反馈是「不比 Fable 更聪明，但可靠到你不想用别的」；Grok 4.5 同步公开，1.5T 参数、Cursor 联合训练数据，Artificial Analysis 排名第 4，比 Opus 便宜约 6 倍；Claude Cowork 登陆 Web 和移动端，内部数据显示 90%+ 使用场景不是写代码；64 个 Claude 并行 11 天将 Bun 的 535K 行 Zig 重写为 Rust，内存降 91%，宣告 AI 辅助大规模重写进入实战可行时代。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank" rel="noopener">GPT-5.6 Sol 今日正式对所有用户开放：经政府审批解封，三档模型同步上线</a></h3>
+      <p>7 月 9 日，OpenAI 完成了为期 12 天的美国商务部审批流程，GPT-5.6 Sol（旗舰）、Terra（均衡）和 Luna（快速低价）向全体用户开放。定价：Sol $5/$30、Terra $2.50/$15、Luna $1/$6（输入/输出，每百万 token）。Sol 在 Cerebras 上可达 750 tokens/秒，把速度本身变成差异化卖点。</p>
+      <p>来自 Every 团队的实测：Sol 协作响应快且易于引导，在「24 稿、6-8 小时」的写作测试中表现流畅；但在 Senior Engineer benchmark（衡量模型作为资深工程师自主完成任务的能力）上，Sol 比 Fable 多写了 12,900 行不必要代码，得分从 90/100 掉到 56/100。Ben's Bites 的早期反馈汇总是：「Sol 不比 Fable 更聪明，但可靠到你不想用别的——让它来了就用它，别问了。」对于需要模型自己决定「应该做什么」的全委派任务，Fable 仍是首选。<strong>Sol 把「可靠性」变成了竞争参数，而这正是大多数人日常工作真正需要的。</strong></p>
+      <cite><a href="https://openai.com/index/previewing-gpt-5-6-sol/" target="_blank" rel="noopener">OpenAI</a> · <a href="https://every.to/" target="_blank" rel="noopener">Every</a> · <a href="https://bensbites.com/" target="_blank" rel="noopener">Ben's Bites</a> · <a href="https://www.neowin.net/news/openai-to-release-gpt-56-sol-terra-and-luna-on-july-9/" target="_blank" rel="noopener">Neowin</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.ai/news/grok-4-5" target="_blank" rel="noopener">Grok 4.5 今日公开：1.5T 参数 + Cursor 联合训练，Artificial Analysis 排名第 4，比 Opus 便宜约 6 倍</a></h3>
+      <p>SpaceXAI（xAI 重组后的品牌名）今日正式公开 Grok 4.5。基础规格：V9 架构，约 1.5 万亿参数（比前代 Grok 4.3 大 3 倍），Cursor 将真实开发者 session 数据（调试轨迹、多文件 diff、用户修正）融入补充训练，定位「Opus 级别但更快、更便宜」。定价 $2/$6 per 1M token，比 Opus 4.8（$5/$25）便宜约 6 倍；长输入（>200k token）价格翻倍，缓存命中折扣 75%。上下文窗口当前 500k，Elon Musk 说下周恢复 1M。</p>
+      <p>Artificial Analysis Intelligence Index 得分 54，排名第 4（Fable 5 领先以 60 分，Opus 4.8 56 分，GPT-5.5 55 分）。在 xAI 自选的 DeepSWE 1.0 和 Terminal-Bench 2.1 上击败 Opus 4.8，在 DeepSWE 1.1（差 6 分）和 SWE-Bench Pro（差 4.5 分）上落后。同一 SWE-Bench Pro 任务，Grok 4.5 平均用 15,954 output token，Opus 4.8 用 67,020——4.2 倍的 token 效率差距是最实质的差异化。EU 地区预计 7 月中旬开放。<strong>Grok 4.5 赌的是「够好的智力 + 碾压性的价格效率」，正好踩在大量中间体量使用场景的需求点上。</strong></p>
+      <cite><a href="https://x.ai/news/grok-4-5" target="_blank" rel="noopener">SpaceXAI</a> · <a href="https://www.latent.space/p/ainews-spacexai-launches-grok-4-5" target="_blank" rel="noopener">Latent Space AINews</a> · <a href="https://roo.beehiiv.com/p/grok-4-5" target="_blank" rel="noopener">Roo</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://claude.com/blog/cowork-web-mobile" target="_blank" rel="noopener">Claude Cowork 登陆 Web 和移动端：远程运行后台任务，关笔记本照常跑</a></h3>
+      <p>7 月 7 日，Anthropic 把 Claude Cowork（原本只有桌面 App）扩展到 claude.ai 网页端和 iOS/Android 移动端（Beta，Max 计划优先）。核心变化：Session 远程运行，文件保存到账号，关掉笔记本任务继续，手机上查进度、接结果。Cowork 双倍使用限额延至 8 月 5 日。</p>
+      <p>最值得注意的一组数据：Anthropic 披露，Cowork 实际使用场景里，超过 90% 不是软件开发，最大的两类是「业务运营」和「内容创作」。这个数字和早期产品定位（主要面向开发者）出现了明显偏差，说明「能自主完成多步骤任务的 AI」的最大市场可能不在写代码，而在知识工作者的日常工作流里。<strong>Cowork 的实际用户行为正在反向重新定义这类产品应该卖给谁。</strong></p>
+      <cite><a href="https://claude.com/blog/cowork-web-mobile" target="_blank" rel="noopener">Anthropic</a> · <a href="https://techcrunch.com/2026/07/07/the-coding-agent-wars-are-spilling-into-the-rest-of-the-office-claude-cowork/" target="_blank" rel="noopener">TechCrunch</a> · <a href="https://bensbites.com/" target="_blank" rel="noopener">Ben's Bites</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://bun.com/blog/bun-in-rust" target="_blank" rel="noopener">Bun 11 天 Rust 重写：64 个 Claude 并行，535K 行 Zig 变 Rust，内存从 6.7GB 降到 609MB</a></h3>
+      <p>Bun 作者 Jarred Sumner 发布长文，记录了今年 5 月用 Claude Code + Fable 5 预发布版完成的最大规模 AI 辅助代码迁移之一。从 5 月 3 日启动到 5 月 14 日合并，共 11 天，纯编码时间 6 天，API 花费约 $165,000。高峰时并行跑 4 个工作流分片，每个 16 个 Claude 实例各在独立 git worktree（代码仓库隔离副本）里工作，合计最多 64 个 Claude 同时在跑。</p>
+      <p>Sumner 构建了约 50 个「动态工作流」覆盖迁移全程：从生成 Zig → Rust 模式映射手册、逐文件机械翻译，到逐 crate 修编译错误、逐 CLI 子命令跑通，再到追测试失败直到全平台通过。结果：Rust 版内存从 6.7GB 降至 609MB（降 91%），性能提升 2-5%，二进制体积缩小约 20%。这个案例展示的不只是 AI 生成代码的能力，而是把 AI 辅助「工作流框架化」之后能解锁的工程规模。<strong>Bun 的 Rust 重写不是 AI 替代工程师，是把一个原本需要 3 人工作一年的任务压缩成了 1 人的 11 天工程。</strong></p>
+      <cite><a href="https://bun.com/blog/bun-in-rust" target="_blank" rel="noopener">Bun Blog</a> · <a href="https://simonwillison.net/2026/Jul/8/rewriting-bun-in-rust/" target="_blank" rel="noopener">Simon Willison</a> · <a href="https://tldr.tech/" target="_blank" rel="noopener">TLDR</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://x.com/bcherny/status/2074997570317779038" target="_blank" rel="noopener">Boris Cherny（Claude Code 负责人）：/checkup 命令上线，一键给你的 Claude Code 配置做体检</a></h3>
+      <p>Boris Cherny（@bcherny，Anthropic Claude Code 团队）发布了 Claude Code 新命令 /checkup，发布后数小时获得 6,600+ 点赞。功能清单：清理没用到的技能（skill）/MCP 服务器/插件节省上下文空间（上下文窗口是 Claude Code 里最紧张的资源）、把本地 CLAUDE.md 与版本库里的 CLAUDE.md 去重合并、把根目录 CLAUDE.md 拆分为嵌套文件 + 技能、关掉慢钩子（hook，即在每次操作前后自动触发的脚本）、更新到最新版、开启自动模式（Auto mode，让 Claude 自动处理更多决策）、预批准频繁被拒绝的只读命令。执行前全部逐项确认，不默默改配置。</p>
+      <p>这条推文之所以重要，不只是因为功能实用，而是因为它反映了 Claude Code 当前最真实的用户痛点：随着使用时间增长，配置文件越来越臃肿，上下文被无用条目占用，权限提示一遍遍弹出，主动 /checkup 概念和 IDE 的健康检查功能逻辑相通，但对话界面里以前没有人这样做过。<strong>/checkup 是把「AI 工具自我维护」这件事第一次变成一个可以定期主动触发的流程，而不是用户每隔几个月攒一堆问题再手动处理。</strong></p>
+      <cite><a href="https://x.com/bcherny/status/2074997570317779038" target="_blank" rel="noopener">X @bcherny</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/swyx/status/2074919183947808881" target="_blank" rel="noopener">Swyx（@swyx, Cognition/Latent Space）：多数 Agent Lab 回避承认用中国模型，Cognition 的做法是把问题直接解决掉</a></h3>
+      <p>Swyx 在 X 上指出了一个业内公开的秘密：大多数 Agent Lab 对使用中国模型持低调态度，原因很直接——他们需要向政府和国防客户销售，而中国模型在这类采购里存在合规障碍。但 Cognition 团队（SWE-1 系列开发方）做了一件实质性的事：（1）构建了一套多语言宣传内容识别和审查检测 eval（评测套件），（2）在后训练（post-training）阶段成功纠正了这部分偏差，（3）以 1000 tokens/秒的速度廉价部署。</p>
+      <p>Swyx 的观察触及了当前 AI 供应链的一个深层矛盾：全球最快、最便宜的部分基础能力来自中国开源模型，但想卖给政府和防务客户的 Agent 公司需要对这部分来源进行「合规包装」。Cognition 的路径是技术解法而非回避：直接在 post-training 里把问题修掉，然后公开说清楚自己做了什么。这是同类事情里目前为止最透明的一次处理。<strong>「我们用了中国模型但我们也纠正了它的问题」，比「我们不用中国模型（实际上用了）」更值得信任。</strong></p>
+      <cite><a href="https://x.com/swyx/status/2074919183947808881" target="_blank" rel="noopener">X @swyx</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://every.to/" target="_blank" rel="noopener">Every Vibe Check：Sol 是最好的协作模型，Fable 还是拿「你想完全放手」的任务</a></h3>
+      <p>Every 团队（Katie Parrott 执笔）发布 GPT-5.6 Sol 详细测评，核心结论是「Sol 是我们最喜欢协作的模型」，但 Fable 仍拿自主委派任务。具体数据：Sol 在 Senior Engineer benchmark 里得 56/100，Fable 得 90/100，差距主要来自 Sol 多写了 12,900 行不必要代码；Kieran Klaassen 用 Sol 重建 Proof 项目耗时约为 Fable 的 1/3，但最终更喜欢 Fable 的设计决策；Katie 用 Sol 跑了 24 轮草稿、6-8 小时完稿，Sol 全程易于引导；Arielle Shipper 让 Sol 检视 46 个 CSV 文件、自动找邮件、返回 7 个有用问题，但 Sol 随后犯了一个严重计算错误、动摇了她的信任。</p>
+      <p>测评里最有价值的框架不是分数，而是「协作类任务 vs 委派类任务」的二分法：Sol 更擅长和你一起做（你在旁边引导），Fable 更擅长替你做（你把方向交出去）。这个区分比「谁更聪明」更实用，因为日常工作里这两类场景的需求本来就不同。<strong>Sol 和 Fable 不是在争同一个用户，而是在同一个用户的一天里争不同的时段。</strong></p>
+      <cite><a href="https://every.to/" target="_blank" rel="noopener">Every</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.lennysnewsletter.com/p/adam-mosseri-ai-authenticity" target="_blank" rel="noopener">Adam Mosseri（Instagram 负责人，Lenny's 播客）：产品团队从大型专业化变 4-6 人通才小组；AI 是真实性的顺风，不是内容替代</a></h3>
+      <p>Adam Mosseri 在 Lenny's 播客里系统描述了 Instagram 2026 年的组织形态变化：产品团队从原来十多人专业化配置（PM、设计、数据科学、研究各司其职）变成了 4-6 人通才小组，同时催生了一个新角色「product staff」——混合了 PM、设计、数据科学和研究能力的通才运营者。Mosseri 对设计师的前景持乐观态度，但认为「职能边界固化」最危险。他还披露了 Instagram 算法的实际运作：真正个性化的深度只是刚刚追上了多年来用户以为它已经实现的程度。</p>
+      <p>关于 AI 内容泛滥，Mosseri 提出了一个反直觉的判断：AI 生成内容的增加反而是「真实性」的顺风，因为它让真人创作者的人格和视角变得更稀缺、更有辨识度。他还回顾了职业生涯两次最大的产品失败：Facebook Home（把整个手机界面变成 Facebook）和初代 Reels。<strong>「AI 让真人创作者更有价值」这个判断，是目前内容平台里最反主流叙事的一个，值得认真考虑。</strong></p>
+      <cite><a href="https://www.lennysnewsletter.com/p/adam-mosseri-ai-authenticity" target="_blank" rel="noopener">Lenny's Newsletter</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/trq212/status/2074993112217461020" target="_blank" rel="noopener">Thariq（@trq212, Anthropic）：重写可以好、快、便宜——软件工程师对 AI 辅助重写的认知需要大更新</a></h3>
+      <p>Thariq（@trq212，Anthropic 团队）在 X 上发文说，Bun 11 天 Rust 重写案例应该改变软件工程界的一个核心认知：重写应该是好、快、便宜的，而不是「当然大多数重写都烂掉了」。他的观点是：过去重写项目烂掉，原因不是「重写这件事本身」，而是人类工程师在做大规模重写时面临的认知负担、协调成本和时间压缩——这些障碍 AI 辅助框架大幅降低了。</p>
+      <p>这条推文和 Bun 博客形成了视角补充：Jarred Sumner 讲的是「怎么做到的」，Thariq 讲的是「这意味着什么」。如果重写真的变得便宜可行，软件架构里很多「将就用，别碰了」的历史包袱就有了被处理的理由。技术债的计算成本正在变化。<strong>当重写的成本从「一年工程师时间」降到「11 天 + $165k API 费」，很多之前不值得动的系统就变得值得重新思考了。</strong></p>
+      <cite><a href="https://x.com/trq212/status/2074993112217461020" target="_blank" rel="noopener">X @trq212</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/amasad/status/2075080984211624154" target="_blank" rel="noopener">Amjad Masad（@amasad, Replit CEO）：何时停止把 AI Agent 跟手写代码比较？编译器从不跟汇编比</a></h3>
+      <p>Amjad Masad 在 X 上提出了一个简洁的认知框架：大家现在还在把 AI Agent 生成的代码和工程师手写代码做比较，问「Agent 写的跟工程师写的比哪个好？」他认为这是错误的比较框架，就像当年没人会问「编译器生成的机器码跟工程师手写汇编比哪个好？」——这个问题本身就预设了两者是同类竞争关系，而实际上编译器和手写汇编服务于完全不同的效率层级。</p>
+      <p>这个类比指向一个更深层的转变：如果 Agent 是「新的编译器」，那适配 Agent 的开发工作流就不该是「让 Agent 更像一个好工程师」，而是该问「围绕 Agent 生成代码的开发者角色应该是什么」——就像语言设计师不问「怎么让 C 更像汇编」，而是直接设计了高级语言。<strong>把 Agent 和工程师放在同一个评估框架里，本身就是在用旧范式理解新工具。</strong></p>
+      <cite><a href="https://x.com/amasad/status/2075080984211624154" target="_blank" rel="noopener">X @amasad</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/zarazhangrui/status/2075004775436005687" target="_blank" rel="noopener">Zara Zhang（@zarazhangrui, Greylock）：有 founder 给全团队买了 Codex Max，工作几乎都完成了——前端设计仍是最大短板</a></h3>
+      <p>Zara Zhang 采访了一位「极度相信 Agent」的 founder，他为全体团队成员购买了 Codex Max 订阅（OpenAI 面向高强度 Agent 使用的旗舰计划），结果团队成员几乎把所有工作都交给 Codex 完成了。她的观察语气是「惊讶」而非「批评」，认为这个实验证明了当前 Agent 能力的真实范围。但她也说了另一件事：前端设计是阻止她更多使用 Codex 的单一最大原因，Codex 在视觉呈现和设计决策上的表现还没到让人放心全委派的程度。</p>
+      <p>Zara 同期还分享了她关于如何在 X 上成长而不产出 slop 的思考：「X 是一场派对，不是一个舞台」——这个隐喻描述的是互动心态而非内容策略。<strong>「全团队 Codex Max」这个实验的真正价值不是结论，而是它提供了一个观察 Agent 能力边界的真实基准：你在哪里停手了，那里就是当前的实际天花板。</strong></p>
+      <cite><a href="https://x.com/zarazhangrui/status/2075004775436005687" target="_blank" rel="noopener">X @zarazhangrui</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.themarginalian.org/2026/07/08/jenn-shapland-thin-skin/" target="_blank" rel="noopener">Jenn Shapland《Thin Skin》：薄皮肤不是弱点，是感知他人忽视的连结的能力</a></h3>
+      <p>The Marginalian 7 月 8 日介绍了 Jenn Shapland 的散文集《Thin Skin》。Shapland 本人有医学意义上的「薄皮肤」——表皮少了一层，这个身体事实成为她写作的起点。她由此延伸出的论点是：对外界格外敏感的人能感知到他人忽视的事物，尤其是人与人之间、人与世界之间更深的连结。书里的主题跨越 Los Alamos（核武器遗址）和 Rachel Carson（《寂静的春天》作者），以及亲子关系的陷阱、自我慈悲的悖论，和修缮衣物与修缮关系之间的隐喻。</p>
+      <p>Shapland 的立场不是呼吁人们变得「更厚实」，而是认为孔隙性（porousness，对外界渗透式的感知能力）是质疑那些制造碎片化结构的力量的基础。在一个越来越强调「心理韧性」和「抗压力」的时代，这本书提出了一个反向的思路：也许感知到破碎本身，比把破碎过滤掉更重要。<strong>「薄皮肤」的代价是容易受伤，但回报是真正感知到连结——这个交换在屏蔽一切的效率文化里正在被低估。</strong></p>
+      <cite><a href="https://www.themarginalian.org/2026/07/08/jenn-shapland-thin-skin/" target="_blank" rel="noopener">The Marginalian</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/thenanyu/status/2074901281466896694" target="_blank" rel="noopener">Nan Yu（@thenanyu）：格伦加里格伦罗斯里真正打动他的，不是「永远在成交」</a></h3>
+      <p>Nan Yu 重温了电影《格伦加里格伦罗斯》（Glengarry Glen Ross）里 Alec Baldwin 那段著名的销售训诫。所有人都记住了「Always Be Closing（永远在成交）」，但 Nan Yu 说打动他的是这段训诫里另一个被忽视的指令：「展示你有多在乎。」他认为这两句话表面上都是销售技巧，但内在逻辑完全不同——「永远在成交」是一种提取关系价值的心态，而「展示你有多在乎」要求你真正相信你在做的事对对方有意义。</p>
+      <p>在产品营销语境里，他的延伸是：你写的是把故事传递给受众的叙事，但同时也是帮受众向他人转述这个故事的叙事。好的产品故事要同时承担这两个功能，让你的用户也能成为传达者。「你有多在乎」不是情绪表演，是产品信念的体现——没有这层信念，用户也感受不到它。<strong>产品信息最后能传多远，取决于中间那些转述者有没有被打动到愿意讲出去。</strong></p>
+      <cite><a href="https://x.com/thenanyu/status/2074901281466896694" target="_blank" rel="noopener">X @thenanyu</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/adityaag/status/2074892507306238235" target="_blank" rel="noopener">Aditya Agarwal（@adityaag, South Park Commons）：别浪费这个时刻，要最大化野心</a></h3>
+      <p>Aditya Agarwal（South Park Commons 联合创始人）在 X 上连发两条推文：第一条区分了「担心错过这个时刻」和「担心浪费这个时刻」——前者是焦虑，后者是行动驱动；第二条配合 South Park Commons Founder Fellowship（8 月 2 日截止）发出了一句直接的号召：「Don't waste the moment. Be maximally ambitious。」</p>
+      <p>这两条推文放在 GPT-5.6 和 Grok 4.5 同日发布的背景下，有一种额外的语境重量：每一代技术跳跃里，能把握窗口期的人不一定是看得最准的，而是行动得最快的。Founder Fellowship 的定位恰好针对「有想法但还在等待正确时机」的创业者——而 Aditya 的意思是，等到你确定时机对了，时机可能已经过去了。<strong>技术跃升期里，「maximally ambitious」不是口号，是防止被路径依赖锁死的主动策略。</strong></p>
+      <cite><a href="https://x.com/adityaag/status/2074892507306238235" target="_blank" rel="noopener">X @adityaag</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.05373" target="_blank" rel="noopener">PixWorld（arXiv 2607.05373）：像素空间扩散统一 3D 场景生成与重建，蒸馏后 0.6 秒生成</a></h3>
+      <p><strong>现状：</strong>3D 场景生成和 3D 场景重建（从图像恢复三维结构）一直是两个独立的研究方向，各有一套模型架构，难以共用基础设施。</p>
+      <p><strong>问题：</strong>主流方法在潜在空间（latent space，即先把图像压缩成低维向量再做扩散）里操作，会引入 VAE/RAE 编码-解码的质量损耗，且潜在空间的几何结构和真实 3D 空间对齐度差，限制了生成忠实度。</p>
+      <p><strong>解决方案：</strong>PixWorld 直接在像素空间（pixel space）里用扩散模型监督一个像素对齐的 3D 高斯场（一种表示 3D 场景的数据结构），用预训练 3D 基础模型的几何感知特征空间提供额外 3D 结构监督，统一了生成和重建两条任务路径。</p>
+      <p><strong>价值：</strong>在 3D 场景生成质量上超越此前潜在空间方法，在重建精度上追平当前最优；蒸馏（知识蒸馏，即把大模型压缩成快速小模型）后 4 步推理只需 0.6 秒，比主流扩散式世界生成器快约 1000 倍。</p>
+      <p><strong>未来方向：</strong>像素对齐的统一架构为多任务 3D 基础模型铺路，高速推理使实时 3D 内容生成进入可行范围。</p>
+      <cite><a href="https://huggingface.co/papers/2607.05373" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2607.05373" target="_blank" rel="noopener">arXiv 2607.05373</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.06291" target="_blank" rel="noopener">AlayaWorld（arXiv 2607.06291）：长程可玩视频世界生成，开源全栈框架含摄像头控制和提示交互</a></h3>
+      <p><strong>现状：</strong>交互式视频世界模型（即可以实时生成、玩家可以探索和影响的动态视频场景）是游戏、机器人训练和具身 AI（在物理环境中行动的 AI）的核心基础设施需求，但现有系统要么闭源、要么短时域、要么缺乏用户控制接口。</p>
+      <p><strong>问题：</strong>维持长程时间一致性（即「走进去的房间和走出来的还是同一个房间」）的同时支持自由探索和用户提示驱动的内容变化，是目前最难平衡的技术挑战。</p>
+      <p><strong>解决方案：</strong>AlayaWorld 提供一套全栈开源框架，包括摄像头控制（控制视角移动）、游戏风格生成（内容主题切换）、提示驱动交互（自然语言改变场景），以及长程视频输出能力。</p>
+      <p><strong>价值：</strong>首个将以上功能集成为可运行开源框架的系统，为机器人模拟训练数据生成和交互式内容创作提供可直接使用的基础组件。</p>
+      <p><strong>未来方向：</strong>开源视频世界模型与具身 AI 训练数据合成的结合，可能是下一批高效机器人 Agent 的数据来源。</p>
+      <cite><a href="https://huggingface.co/papers/2607.06291" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2607.06291" target="_blank" rel="noopener">arXiv 2607.06291</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.06229" target="_blank" rel="noopener">Spider 2.0-AIFunc（arXiv 2607.06229）：LLM 能力包成原生 SQL 函数，分类/情感/相似搜索在 SQL 里直接完成</a></h3>
+      <p><strong>现状：</strong>主流云数据平台（BigQuery、Snowflake、Databricks 等）正在把 LLM 能力以 SQL 函数形式原生内置，让数据分析师可以直接在 SQL 查询里调用 AI 能力，无需切换工具。</p>
+      <p><strong>问题：</strong>现有 Text-to-SQL 研究假设 SQL 只处理结构化数据，而 AI 原生 SQL 工作流里，函数可以返回非结构化语义结果（如情感标签、分类、相似度分数），传统 benchmark 无法评测这类混合工作流的能力。</p>
+      <p><strong>解决方案：</strong>Spider 2.0-AIFunc 扩展了 Spider 2.0 benchmark，加入覆盖分类、过滤、情感分析、信息提取、相似搜索和聚合的 AI 原生 SQL 场景，评测模型在真实云平台 SQL + AI 函数混合查询上的表现。</p>
+      <p><strong>价值：</strong>为评测下一代数据分析 Agent 提供了贴近真实工作负载的标准基准；对 PM 的意义是：AI 数据分析的真正落地路径可能不是独立 AI 工具，而是把 AI 嵌入数据团队已经在用的 SQL 工作流。</p>
+      <p><strong>未来方向：</strong>SQL 内嵌 AI 函数是企业数据分析 AI 落地最小阻力路径，这个方向的 benchmark 和模型能力将在 2026-2027 年快速成熟。</p>
+      <cite><a href="https://huggingface.co/papers/2607.06229" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2607.06229" target="_blank" rel="noopener">arXiv 2607.06229</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.07707" target="_blank" rel="noopener">Co-LMLM（arXiv 2607.07707）：预训练时把事实知识外化到知识库，生成时按需读取</a></h3>
+      <p><strong>现状：</strong>LLM 把所有知识压缩进权重（模型参数），知识一旦训练进去就很难单独更新，更新一个事实需要重新训练整个模型，成本极高。</p>
+      <p><strong>问题：</strong>权重内嵌知识和「按需读取外部知识」（RAG，检索增强生成）是目前两种主流路径，但前者更新成本高，后者在训练时和权重知识是解耦的，两者之间缺少预训练阶段就建立读取习惯的框架。</p>
+      <p><strong>解决方案：</strong>Co-LMLM 在预训练阶段就把事实性知识外化到一个知识库，模型在预训练时就学会「哪些知识去知识库取、哪些知识用权重内的」，生成时按查询动态读取对应条目。</p>
+      <p><strong>价值：</strong>让知识更新成本从「重训整个模型」降低到「更新知识库条目」；对快速迭代的企业知识场景（产品手册、法规、价格表）尤其有价值。</p>
+      <p><strong>未来方向：</strong>预训练阶段的知识外化思路若成熟，可能影响下一代企业私有 LLM 的设计范式，让「知识库」成为模型的标配组成部分而非插件。</p>
+      <cite><a href="https://huggingface.co/papers/2607.07707" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2607.07707" target="_blank" rel="noopener">arXiv 2607.07707</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.01006" target="_blank" rel="noopener">Understanding Large Language Models（arXiv 2607.01006）：系统综述 LLM 涌现能力的层级机制，含心智理论与欺骗策略</a></h3>
+      <p><strong>现状：</strong>LLM 在规模扩大后涌现出了一系列原本未设计的能力（符号推理、类心智理论推断、欺骗性语言使用），研究界对这些能力的来源和机制仍有大量争议。</p>
+      <p><strong>问题：</strong>涌现能力的证据散落在大量独立论文中，缺乏覆盖「能力证据 → 层级实现机制 → 安全含义」这条完整链路的系统性综述。</p>
+      <p><strong>解决方案：</strong>本文系统梳理了 LLM 涌现能力的实验证据，并逐能力分析其在 Transformer 各层（注意力头、MLP 块、残差流）里的计算实现机制，涵盖符号推理、类心智理论（推断他人信念）和欺骗性语言策略。</p>
+      <p><strong>价值：</strong>为 AI 安全研究者提供了「模型能力—实现层—可干预点」的系统地图；对 PM 的意义是：理解模型「是否在推断你的意图」是产品信任设计的基础。</p>
+      <p><strong>未来方向：</strong>涌现能力的可解释性研究（interpretability）与能力干预（intervention）将是 2026-2027 年 AI 安全的核心子领域。</p>
+      <cite><a href="https://huggingface.co/papers/2607.01006" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2607.01006" target="_blank" rel="noopener">arXiv 2607.01006</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>Boris Cherny（@bcherny）发了一张 /checkup 运行效果截图："Here's what happened when I ran /checkup"，展示配置清理后的对比。<a class="glance-src" href="https://x.com/bcherny/status/2074997571563479143" target="_blank" rel="noopener">X @bcherny →</a></li>
+      <li>Peter Steinberger（@steipete）澄清：OpenAI 雇的是他本人，不是 OpenClaw Foundation；Foundation 独立运营，有赞助商没有所有者，MIT 许可不变。<a class="glance-src" href="https://x.com/steipete/status/2075046949896736835" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>@steipete 演示用 nameplate（模型请求用户输入时的命名标签）给 Agent 提供额外上下文的实际案例。<a class="glance-src" href="https://x.com/steipete/status/2074969319042363808" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>@steipete："This is how you wanna talk with your claw"——分享了一种更自然的 Claude Code 对话方式演示视频。<a class="glance-src" href="https://x.com/steipete/status/2074923615817200085" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>Guillermo Rauch（@rauchg, Vercel CEO）：「AI will make all software Native——无妥协的性能和平台亲和性。」<a class="glance-src" href="https://x.com/rauchg/status/2075018147330232707" target="_blank" rel="noopener">X @rauchg →</a></li>
+      <li>@rauchg 宣布 Grok 4.5 对所有 Vercel 用户开放。<a class="glance-src" href="https://x.com/rauchg/status/2074920996201796067" target="_blank" rel="noopener">X @rauchg →</a></li>
+      <li>@rauchg："The blissful sound of all the pieces of the agent stack clicking together"——agent 基础设施各组件对齐那一刻的满足感。<a class="glance-src" href="https://x.com/rauchg/status/2074874713143460150" target="_blank" rel="noopener">X @rauchg →</a></li>
+      <li>Josh Woodward（@joshwoodward, Google Labs VP）公开征集："你最惊讶 Gemini 还做不好的事情是什么？"——收到 1,500+ 条回复，是观察竞品盲点的好来源。<a class="glance-src" href="https://x.com/joshwoodward/status/2074847444823674883" target="_blank" rel="noopener">X @joshwoodward →</a></li>
+      <li>Thibault Sottiaux（@thsottiaux, OpenAI）："You know OpenAI is cooking when the sushi and tacos orders pile at the entrance at 11pm"——GPT-5.6 发布前夜的办公室状态。<a class="glance-src" href="https://x.com/thsottiaux/status/2075103845114663325" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+      <li>@thsottiaux："We are SHIPPING. Tune in for the livestream at 10am"——GPT-5.6 发布当日直播预告，发布前的兴奋感可以直接从推文里读到。<a class="glance-src" href="https://x.com/thsottiaux/status/2074885402918601082" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+      <li>Cat Wu（@_catwu, Anthropic）明日 10am PT 主持直播，讲从单人 Claude Code 到多人 Cowork 的产品进化路径。<a class="glance-src" href="https://x.com/_catwu/status/2074925531519468012" target="_blank" rel="noopener">X @_catwu →</a></li>
+      <li>Ryo Lu（@ryolu_, Cursor 设计师）："the start of a new era——试试 Grok 4.5 in Cursor，告诉我感觉怎样。"<a class="glance-src" href="https://x.com/ryolu_/status/2074951992884244606" target="_blank" rel="noopener">X @ryolu_ →</a></li>
+      <li>Aaron Levie（@levie, Box CEO）：最新一批 AI 模型在处理复杂知识工作者任务上正变得异常出色，尤其是处理文件的场景。<a class="glance-src" href="https://x.com/levie/status/2075073587015516228" target="_blank" rel="noopener">X @levie →</a></li>
+      <li>Peter Yang（@petergyang）体验了一个月 GTA 6："挺棒的，可以说是有史以来最好的 GTA，但不一定是有史以来最好的游戏。"<a class="glance-src" href="https://x.com/petergyang/status/2074979504741929018" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Garry Tan（@garrytan, YC CEO）：旧金山计划设立一家由政客亲信把持的「公共银行」——他认为这是错误方向，SF 已有足够好的替代金融选项。<a class="glance-src" href="https://x.com/garrytan/status/2074973836966334668" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Matt Turck（@mattturck, FirstMark VC）："This also has been the World Cup of AI content going from slop to 'wait, this kinda slaps'"——AI 生成的世界杯内容从垃圾到开始有点意思。<a class="glance-src" href="https://x.com/mattturck/status/2074908816274034896" target="_blank" rel="noopener">X @mattturck →</a></li>
+      <li>Nikunj Kothari（@nikunj, a16z）：「抛光」正在以惊人速度与「slop（AI 垃圾内容）」产生相关性——过度精修的视觉成了低质量内容的信号。<a class="glance-src" href="https://x.com/nikunj/status/2075033190708961675" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>@nikunj 观察到开发者在 Codex 和 Claude Code 之间来回摆动的现象，"我们完了/我们回来了" 的循环每周上演，他认为两支团队互相竞争是行业之幸。<a class="glance-src" href="https://x.com/nikunj/status/2074878958525657452" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Swyx（@swyx）：Theo 主题演讲里手绘 Excalidraw 风格的幻灯片，在一堆「Claude 制作的细边框职业感」幻灯片里，人工感立刻显现出来——Fable 做不到这个。<a class="glance-src" href="https://x.com/swyx/status/2074953099748450346" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>Zara Zhang（@zarazhangrui）：如何在 X 上成长而不产出 slop——「X 是一场派对，不是一个舞台」。<a class="glance-src" href="https://x.com/zarazhangrui/status/2074998060162375832" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+      <li>Amjad Masad（@amasad）同期发问："Should we add CAD 3D modeling to Replit?"——Replit 在考虑把 CAD 能力引入 Agent 工作流。<a class="glance-src" href="https://x.com/amasad/status/2075003156745089264" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>Dan Shipper（@danshipper, Every CEO）："HE DID IT FOLKS"——庆祝某人完成了一件大事（内容来自转推，原推来自社区里的一次重要发布）。<a class="glance-src" href="https://x.com/danshipper/status/2074967404212298072" target="_blank" rel="noopener">X @danshipper →</a></li>
+      <li>Sam Altman（@sama）："tbh i dont think sol gets that many dates either"——用幽默回应关于 Sol 名字（太阳/孤独）的段子，是少见的 CEO 自黑型互动。<a class="glance-src" href="https://x.com/sama/status/2075063511290662996" target="_blank" rel="noopener">X @sama →</a></li>
+      <li>@sama 第二条："it surely doesnt"——继续延续 Sol 约会运气的梗，回复另一条相关推文。<a class="glance-src" href="https://x.com/sama/status/2075048072837734448" target="_blank" rel="noopener">X @sama →</a></li>
+      <li>Nan Yu（@thenanyu）关于产品营销的另一个观察：你写的不只是传递给用户的故事，也是为用户向他人讲述而准备的叙事——这两个层面同时设计，才能让内容有传播力。<a class="glance-src" href="https://x.com/thenanyu/status/2074907752829223043" target="_blank" rel="noopener">X @thenanyu →</a></li>
+      <li>TLDR：Blue Origin 完成首轮外部融资，估值 $1,300 亿，Bezos 个人注资 $20 亿，New Glenn 火箭爆炸后目标年底恢复发射。<a class="glance-src" href="https://tldr.tech/" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>TLDR：City Labs 的 BOHR 卫星（以氚衰变为电源）随 SpaceX 顺风车发射，成为首颗商用核动力卫星，功率不够手机用，但它代表空间核电正式商业化的第一步。<a class="glance-src" href="https://tldr.tech/" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>TLDR：Meta 正在测试全天候录制智能眼镜原型，没有 LED 录制提示灯，内部对数据是否上传至 Meta 服务器存在分歧。<a class="glance-src" href="https://tldr.tech/" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>TLDR：《纽约时报》报道旧金山住房市场因 AI 财富涌入出现"hysteria"（歇斯底里），Garry Tan 的住房供给警告正在被地价数据验证。<a class="glance-src" href="https://tldr.tech/" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Simon Willison 体验 GPT-Live（ChatGPT 新语音模型）iPhone 预览版数周后评价：「非常impressive」，后台可调用 GPT-5.5 处理更难任务是新架构的核心亮点。<a class="glance-src" href="https://simonwillison.net/2026/Jul/8/introducing-gptlive/" target="_blank" rel="noopener">Simon Willison →</a></li>
+      <li>Factory AI 的模型路由（Router）在生产中跑了几周，实测：43% 综合成本节省，61% 的 session 比全用 Opus 至少便宜 80%。<a class="glance-src" href="https://x.com/FactoryAI/status/2074869839752908800" target="_blank" rel="noopener">X @FactoryAI →</a></li>
+      <li>Aditya Agarwal（@adityaag）：South Park Commons Founder Fellowship 开放申请，8 月 2 日截止——面向「不想只做下一个 SaaS 的」创始人。<a class="glance-src" href="https://x.com/adityaag/status/2074892952233705956" target="_blank" rel="noopener">X @adityaag →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-07-08.html">← JUL 8</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
