@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — July 10, 2026</title>
+  <meta name="description" content="OpenAI 今日将 Codex 升级为 ChatGPT Work，GPT-5.6 Sol/Terra/Luna 全量开放，同日推出全双工语音 GPT-Live。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">July 10, 2026</h1>
+
+  <p class="post-lead">OpenAI 今日将 Codex 升级为 ChatGPT Work，GPT-5.6 Sol/Terra/Luna 全量开放，同日推出全双工语音 GPT-Live；Meta Muse Spark 1.1 携 Meta Model API 公测，定价约竞品四分之一；Dan Shipper 提出知识工作「Loop」框架，认为 GPT-5.6 让工作者从「亲力亲为」变为「管理循环」；Amjad Masad 观察到 AI 让编码变松散，但 infra 团队反而开始写正式规格文档。</p>
+
+  <p class="post-note">本期部分源抓取失败，内容较常规偏少。</p>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--r"></span>
+      <h2>新闻速递</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://openai.com/index/chatgpt-work/" target="_blank" rel="noopener">OpenAI 将 Codex 升级为 ChatGPT Work，GPT-5.6 三档全量开放，同日推出全双工语音 GPT-Live</a></h3>
+      <p>Codex 品牌退场，ChatGPT Work 接替，新增 Slack、Google Drive、Salesforce 等企业集成。GPT-5.6 同步推出三档：Sol（$5/$30 per M tokens）、Terra（$2.50/$15）、Luna（$1/$6），新增 ultra 努力等级——内部协调 4 个并行 agent 同步完成任务。<strong>GPT-Live 实现全双工语音，收发同时进行，延迟大幅降低，是 ChatGPT 语音模式的最大架构升级。</strong></p>
+      <cite>OpenAI · TLDR · AI Valley · Latent Space</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://ai.meta.com/blog/meta-muse-spark/" target="_blank" rel="noopener">Meta Muse Spark 1.1 发布，附带 Meta Model API 公测，定价约竞品四分之一</a></h3>
+      <p>Meta 将内部代号 Hornbill 的模型正式命名为 Muse Spark 1.1，支持 100 万 token 上下文窗口，API 定价约为 Claude/GPT-4o 同级产品的 25%。Meta Model API 同日进入公开测试阶段，面向开发者开放。<strong>低定价配合长上下文，明显针对企业文档处理与 RAG 场景。</strong></p>
+      <cite>TLDR · AI Valley · X @garrytan</cite>
+    </article>
+
+    <article class="item">
+      <h3>Josh Woodward 十点回应 Gemini 产品反馈</h3>
+      <p>Google DeepMind 产品负责人 Josh Woodward 在 X 发帖，逐条回应用户对 Gemini 的批评：已深度集成 Google Workspace、工具调用稳定性提升、MCP 协议支持上线、Deep Research 功能扩展、SynthID 水印覆盖 AI 生成内容，同时承认移动端存在已知 bug 并承诺修复。<strong>公开逐条回应是少见的产品团队姿态，暗示 Gemini 正从「追赶」切换到「防守」节奏。</strong></p>
+      <cite>X @joshwoodward</cite>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--o"></span>
+      <h2>AI 方向观点</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://every.to/chain-of-thought/dont-do-your-work-tend-your-loop" target="_blank" rel="noopener">Dan Shipper：不要亲自做工作，去管理你的循环</a></h3>
+      <p>Every 创始人 Dan Shipper 在新文章中提出，GPT-5.6 的意义不是「让 AI 帮你完成任务」，而是让知识工作者从「亲力亲为」转变为「管理自动化循环」——设定目标、观察输出、介入纠偏、迭代循环。他同步开源了为 ChatGPT Work 构建的「Tend」工具。<strong>GPT-5.6 真正意义是让「自动化循环式知识工作」对普通人可操作。</strong></p>
+      <cite>Every · X @danshipper</cite>
+    </article>
+
+    <article class="item">
+      <h3>swyx：AEO（Agent Engine Optimization）时代已到来</h3>
+      <p>swyx 分享了一个实验结果：向多个前沿模型询问「应该用哪个邮件发送服务」，几乎所有模型都默认推荐 Resend，即便用户已有现成基础设施。他将这一现象命名为 AEO——品牌在 AI 模型中被优先推荐的能力，已成为独立于 SEO 的新型竞争维度。<strong>SEO 让用户搜到你，AEO 让 AI 偏好你。</strong></p>
+      <cite>X @swyx</cite>
+    </article>
+
+    <article class="item">
+      <h3>Amjad Masad：AI 让编码变松散，但 infra 团队开始写正式规格文档</h3>
+      <p>Replit CEO Amjad Masad 观察到一个悖论：AI 让应用层开发者越来越不需要死记硬背语法和细节，代码写得更松散；但与此同时，infra 团队为了让 AI 不破坏核心系统，反而开始第一次认真写正式规格文档和不变量约束。<strong>AI 让你越来越不需要知道「怎么写」，但越来越需要知道「为什么这个不能动」。</strong></p>
+      <cite>X @amasad</cite>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--y"></span>
+      <h2>产品与商业</h2>
+    </div>
+
+    <article class="item">
+      <h3>Amjad Masad：「Anthropic 会垄断 AI」的预测已被证伪</h3>
+      <p>Amasad 回顾，六个月前许多 VC 患上「Anthropic 精神症」，坚信某一家模型公司将垄断市场。如今 LLM 市场竞争激烈，OpenAI、Anthropic、Google、Meta 均在前沿角力，没有垄断迹象。<strong>「AI 会是垄断还是商品」目前还没答案，但「现在就下注垄断」已被证明是不可靠的预测。</strong></p>
+      <cite>X @amasad</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://xiaobot.net/post/changxin-hbm" target="_blank" rel="noopener">长鑫存储的 HBM 差距究竟在哪里</a></h3>
+      <p>小报童专栏「静止的量子」作者修饼详细拆解长鑫存储突破 HBM 的五大技术难点：TSV 高密度钻孔、晶圆减薄（700μm→数十μm）、多层堆叠对准、散热设计、量产良率。核心判断：真正的差距不在于「能不能画出设计图」，而在于先进制程节点、HBM 量产良率、多年制造经验积累，以及出口管制下供应链的系统性限制。<strong>半导体最大门槛从来不是「能画出来」，而是「能稳定地、大规模地、低成本地把它造出来」。</strong></p>
+      <cite>小报童·修饼</cite>
+    </article>
+
+    <article class="item">
+      <h3>Aaron Levie：数据质量和工作流深度整合才是 AI 时代真正的护城河</h3>
+      <p>Box CEO Aaron Levie 指出，当所有企业都能调用同一个 AI 模型时，竞争优势来自三处：企业内部数据质量、AI 与核心决策工作流的整合深度、员工与 AI 系统的实际交互效率。他还分享了 GPT-5.6 Sol 在金融服务、医疗和公共部门的早期基准测试结果，称准确率显著优于前代。<strong>能把 AI 真正嵌入业务决策流的企业，才能把模型能力变成竞争护城河而非公共基础设施。</strong></p>
+      <cite>X @levie</cite>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--g"></span>
+      <h2>人文与哲学</h2>
+    </div>
+
+    <article class="item">
+      <h3>nan yu：为什么要把「融资多少」拍成炫耀视频？</h3>
+      <p>Linear 设计师 nan yu 在 X 发帖质疑：AI 圈里越来越多人把融资公告拍成精心制作的短视频，大谈数字和估值，但这对产品本身、对用户有什么好处？他认为这是一种「募资剧场」，用声量代替实质。<strong>AI 赛道里，真正值得谈论的是「你构建了什么」，而不是「你拿到了多少」。</strong></p>
+      <cite>X @thenanyu</cite>
+    </article>
+
+    <article class="item">
+      <h3>Amanda Askell：我们如何用身边的样本误判整个世界</h3>
+      <p>Anthropic 研究员 Amanda Askell 分享了一个亲身经历：她在纽约居住期间，先后有两栋附近建筑倒塌，于是得出「纽约建筑会频繁倒塌」的印象。后来查资料才发现，纽约有记录的结构性倒塌总共只有 19 起，她恰好遇见了其中 2 起。这是可得性启发（availability heuristic）的经典案例：近期发生的、情绪显著的事件，会系统性地扭曲我们对概率的判断。<strong>「我身边的人都这样」是判断世界的最快捷方式，也是最容易出错的方式。</strong></p>
+      <cite>X @AmandaAskell</cite>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--b"></span>
+      <h2>AI 进展</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.29526" target="_blank" rel="noopener">MIPU：修复大语言模型强化学习中训练与推理策略的错位</a></h3>
+      <p>RL 训练 LLM 时，训练策略和推理策略往往不一致——训练用 greedy 采样，推理用 temperature sampling，导致泛化性下降。MIPU（Misalignment-aware Inference Policy Update）框架引入推理侧差距代理指标，在推理阶段动态修正策略偏差。实验表明在多个推理基准上优于标准 PPO/GRPO。<strong>训练和推理的策略错位是 RL-tuned LLM 的一个被忽视的系统性问题。</strong></p>
+      <cite>arXiv 2606.29526</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.02501" target="_blank" rel="noopener">Embodied.cpp：可移植 C++ 运行时，将 VLA/WAM 机器人模型部署到边缘设备</a></h3>
+      <p>针对 Vision-Language-Action（VLA）和 World-Action Model（WAM）类机器人模型在边缘部署的挑战，提出基于 C++ 的五层轻量运行时架构，无需 Python 依赖。在 HY-VLA 模型上任务成功率达 100%，在 pi0.5 上达 91%，显著优于原始 Python 推理栈的延迟表现。<strong>把大模型「装进机器人」的最后一公里，是运行时而非模型本身。</strong></p>
+      <cite>arXiv 2607.02501</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.02461" target="_blank" rel="noopener">OrbitQuant：无需校准数据的扩散 Transformer 低比特量化</a></h3>
+      <p>扩散 Transformer（DiT）的权重分布不规则，导致传统量化方法效果差。OrbitQuant 提出归一化旋转基（normalized rotated basis）将权重分布变换到更适合量化的空间，实现数据无关的低比特量化（W4A8/W4A4），在图像生成质量上与全精度模型相当。<strong>不需要校准数据集是部署场景的重要实用优势。</strong></p>
+      <cite>arXiv 2607.02461</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.24526" target="_blank" rel="noopener">AGORA：企业文档环境中的 Agentic 多步骤推理基准</a></h3>
+      <p>AGORA 针对真实企业文档处理场景（合同、报表、政策文件）构建评估基准，任务要求 agent 在多个文件之间进行多步骤信息检索与推理，而非单文档问答。当前前沿模型在该基准上准确率普遍偏低，揭示了企业文档 AI 的核心瓶颈：<strong>跨文件、多步骤的工作流推理能力仍是大模型的显著短板。</strong></p>
+      <cite>arXiv 2606.24526</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.01431" target="_blank" rel="noopener">IsoSci：构造跨领域同构科学问题，分离推理能力与知识记忆</a></h3>
+      <p>评估 LLM「真正推理能力」的难题是：模型可能通过记忆训练集中的答案而非真正推理来答题。IsoSci 构建了跨物理学、生物学、经济学等领域的同构问题集——相同推理结构，不同领域知识——使模型无法靠记忆取巧。结果显示，当前模型推理迁移能力远弱于其在单域基准上表现出的水平。<strong>「同构迁移」是测量真正推理能力的更可靠方法。</strong></p>
+      <cite>arXiv 2607.01431</cite>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--m"></span>
+      <h2>看一眼</h2>
+    </div>
+
+    <article class="item">
+      <h3>swyx：Greptile 与 OpenAI 合作，让代码搜索进入 ChatGPT Work</h3>
+      <p>swyx 分享 Greptile（代码库语义搜索工具）宣布与 OpenAI 达成集成协议，将在 ChatGPT Work 中提供代码库检索能力。</p>
+      <cite>X @swyx</cite>
+    </article>
+
+    <article class="item">
+      <h3>Thomas Sottiaux：rate limit 重置后的第一件事</h3>
+      <p>Anthropic 工程师 Thomas Sottiaux 分享，rate limit 一重置他立刻重新提交了被限速中断的任务——侧面印证前沿 AI 使用已经密集到「按分钟计」的程度。</p>
+      <cite>X @thsottiaux</cite>
+    </article>
+
+    <article class="item">
+      <h3>Peter Yang：OpenAI 今日发布节奏太密集，产品感知跟不上</h3>
+      <p>产品经理 Peter Yang 指出，ChatGPT Work + GPT-5.6 + GPT-Live 同日发布，对普通用户来说信息过载，很难判断「我现在应该用哪个」。他认为 OpenAI 发布策略正在从「一次大新闻」转向「持续高频小发布」。</p>
+      <cite>X @petergyang</cite>
+    </article>
+
+    <article class="item">
+      <h3>@trq212：Agentic 编码的本质是系统地消除未知量</h3>
+      <p>「Agentic coding 不是让 AI 替你写代码，而是让你把『我不知道怎么做』转化成『我知道该问什么』的过程。真正的杠杆在于把模糊的目标分解成可验证的子任务。」</p>
+      <cite>X @trq212</cite>
+    </article>
+
+    <article class="item">
+      <h3>Amjad Masad：Fable 已进入 Replit</h3>
+      <p>Replit CEO 宣布 Fable（AI 驱动的游戏叙事引擎）已作为集成工具上线 Replit 平台，开发者可直接在 Replit 中调用 Fable API 构建互动叙事游戏。</p>
+      <cite>X @amasad</cite>
+    </article>
+
+    <article class="item">
+      <h3>Guillermo Rauch：开源模型迭代速度已追上闭源，token 市场份额开始转移</h3>
+      <p>Vercel CEO Guillermo Rauch 指出，Llama 4 系列和 Mistral 最新版本在多个基准上已与闭源模型持平，企业客户的 API 调用量开始向开源模型迁移。「这不是意识形态问题，是成本和能力的问题。」</p>
+      <cite>X @rauchg</cite>
+    </article>
+
+    <article class="item">
+      <h3>Aaron Levie：GPT-5.6 Sol 企业基准表现</h3>
+      <p>Levie 分享了 Box 内部测试：Sol 在合规文件审查（金融服务）、临床笔记摘要（医疗）、政策问答（公共部门）三个场景均优于 GPT-4o 和 Claude 3.7，准确率提升 8–15 个百分点。</p>
+      <cite>X @levie</cite>
+    </article>
+
+    <article class="item">
+      <h3>Garry Tan：Spark 1.1 在 OpenClaw 基准上表现不错</h3>
+      <p>YC CEO Garry Tan 测试了 Meta Muse Spark 1.1，在 OpenClaw（开放式工具调用基准）上评分接近 Claude 3.7 Sonnet，价格却只有四分之一。「对于 agentic 工作流来说，这个性价比很有意思。」</p>
+      <cite>X @garrytan</cite>
+    </article>
+
+    <article class="item">
+      <h3>Nikunj：妻子的 AI 产品发布，他写了一篇独白</h3>
+      <p>投资人 Nikunj 分享，他妻子今天发布了一个 AI 产品，他写了一篇关于「在伴侣创业时作为旁观者的感受」的随笔——「你比任何人都更了解他们投入了多少，也最清楚这有多难。」</p>
+      <cite>X @nikunj</cite>
+    </article>
+
+    <article class="item">
+      <h3>Dan Shipper：Sol 是目前为止最好的写作助手</h3>
+      <p>「用 Sol 写了半天。它是我用过的最好的写作协作者——不是因为它会写，而是因为它知道什么时候不要打断你。」</p>
+      <cite>X @danshipper</cite>
+    </article>
+
+    <article class="item">
+      <h3>Sam Altman：Fidji Simo 加入 OpenAI + Codex 致敬</h3>
+      <p>Sam Altman 宣布前 Instacart CEO Fidji Simo 正式加入 OpenAI 担任 CEO of Applications，同时发文向 Codex 品牌告别：「Codex 是我们的第一个大赌注之一，感谢所有让它成真的人。」</p>
+      <cite>X @sama</cite>
+    </article>
+
+    <article class="item">
+      <h3>Aditya Agarwal：宇航员访谈播客上线</h3>
+      <p>Aditya Agarwal 分享了他主持的新播客单集，嘉宾是一位退役 NASA 宇航员，聊「在极端不确定性下做决策」——他认为这对 AI 创业者有直接参考价值。</p>
+      <cite>X @adityaag</cite>
+    </article>
+
+    <article class="item">
+      <h3>Madhu Guru：加入 Meta</h3>
+      <p>@realmadhuguru 宣布已加入 Meta，负责 AI 相关产品方向，具体角色未透露。</p>
+      <cite>X @realmadhuguru</cite>
+    </article>
+
+    <article class="item">
+      <h3>Matt Turck：法国和挪威或许会在决赛再度相遇</h3>
+      <p>数据投资人 Matt Turck 在世界杯赛程推进后感叹：「有相当大的可能法国和挪威会在决赛打一场。到时候会很精彩。」个人感慨，与 AI 无关，但 Turck 本人是 AI/数据领域的重要声音，偶尔露出的人味值得一记。</p>
+      <cite>X @mattturck</cite>
+    </article>
+
+    <article class="item">
+      <h3>TLDR：Unitree 机器人完成首例辅助外科手术操作</h3>
+      <p>Unitree G1 机器人在受控实验室环境下完成了辅助外科手术的演示任务，包括持镜和递械。研究团队强调目前仍处于「辅助」阶段，远未达到自主手术能力，但精度数据超出预期。</p>
+      <cite>TLDR</cite>
+    </article>
+
+    <article class="item">
+      <h3>TLDR：Apple 收购 AI 推理优化公司 PrismML</h3>
+      <p>苹果悄悄收购了专注于边缘设备推理优化的 PrismML，该团队此前在 on-device LLM 量化领域发表过多篇论文。分析人士认为此举是为了加强 Apple Intelligence 的本地推理能力。</p>
+      <cite>TLDR</cite>
+    </article>
+
+    <article class="item">
+      <h3>TLDR：布朗大学发现 AI 作弊新模式——让 AI 生成「看起来像人写的」文章</h3>
+      <p>布朗大学研究人员发现，学生正在使用 AI 将 AI 生成的文章「人化」——先用 GPT 写初稿，再用另一个模型改写语气和句式，使其绕过 AI 检测工具。研究者呼吁学界重新思考 AI 检测的可靠性。</p>
+      <cite>TLDR</cite>
+    </article>
+
+    <article class="item">
+      <h3>AI Valley：1X Technologies NEO 机器人展示灵巧手操作</h3>
+      <p>1X Technologies 发布新视频，展示 NEO 人形机器人在非结构化环境中完成抓取、折叠、开关门等日常任务，手部自由度和抓握稳定性明显优于上一代演示。</p>
+      <cite>AI Valley</cite>
+    </article>
+
+    <article class="item">
+      <h3>AI Valley：Anthropic 推出 AI 行为反思仪表盘</h3>
+      <p>Anthropic 内部工具「Reflection Dashboard」面向 Claude 开发者合作伙伴开放，允许追踪模型在特定对话类型中的行为模式，辅助识别潜在的对齐偏差。Anthropic 将此定位为负责任部署工具链的一部分。</p>
+      <cite>AI Valley</cite>
+    </article>
+
+  </section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-07-09.html">← JUL 9</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
