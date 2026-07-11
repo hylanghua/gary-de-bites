@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — July 11, 2026</title>
+  <meta name="description" content="GPT-5.6 发布后的第一个周末，OpenAI 两度重置用量、Fidji Simo 在 24 小时内推翻「加入」消息，Anthropic 悄悄给 Claude Code 桌面版上线内置浏览器。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">July 11, 2026</h1>
+
+  <p class="post-lead">GPT-5.6 发布后的第一个周末，OpenAI 公开承认用户体验倒退，两度重置用量并承诺修复导航；Fidji Simo 以健康原因在 24 小时内推翻「加入」消息，宣告离开全职岗位；Anthropic 悄悄给 Claude Code 桌面版上线内置浏览器；「用 64 个并行子 Agent 证明数学猜想」的叙事浮出，AI 作为科研计算基础设施的方向信号越来越明确。</p>
+
+  <p class="post-note">本期部分源抓取失败，内容较常规偏少。</p>
+
+  <section class="section"><div class="section-head">
+      <span class="dot dot--r"></span>
+      <span class="section-label">新闻速递</span>
+    </div>
+
+    <article class="item">
+      <h3>Fidji Simo 离开 OpenAI 全职岗位，24 小时内推翻「加入」消息</h3>
+      <p>昨日 Sam Altman 宣布 Fidji Simo（前 Instacart CEO）正式加入 OpenAI 担任 CEO of Applications，但今日 Simo 本人发文说明将以兼职顾问身份参与 AI 与健康相关工作，需要将精力优先投入慢性病康复。这是一次极罕见的 24 小时内公开反转，也是 OpenAI 在高管层面面临的又一次预期管理失败。<strong>招募与上任之间的「窗口期」如此短暂，说明 OpenAI 在这一轮扩张里的节奏管控已经相当紧绷。</strong></p>
+      <cite><a href="https://latent.space" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>OpenAI 两度重置 GPT-5.6 用量，承诺修复 ChatGPT Work 导航倒退</h3>
+      <p>GPT-5.6 与 ChatGPT Work 同步发布后，用户反馈项目和聊天记录更难找、默认设置把大量使用量推向高成本档位、Codex 定位模糊。OpenAI 产品负责人公开承认 launch 体验不佳，在 24 小时内两度重置全体用户的用量，并承诺恢复熟悉的侧边栏导航、明确 Work 与 Codex 的边界关系。本次公开课正在异常直接——OpenAI 通常不在产品层面这样频繁、公开地自我纠错。<strong>两次用量重置加上导航回退承诺，说明这次发布节奏错位程度远超预期。</strong></p>
+      <cite><a href="https://latent.space" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Anthropic 为 Claude Code 桌面版上线内置浏览器</h3>
+      <p>Anthropic 推出 Claude Code 桌面版内置浏览器，允许 Claude 在 app 内直接访问文档网页和外部站点，无需切换到系统浏览器。这一功能对于需要 Claude 实时参考官方文档、查阅 API 规格的开发者工作流有直接价值，也让「在 IDE 里直接问 Claude 怎么用这个 SDK」变得更顺畅。<strong>Claude Code 桌面版从纯代码工具向「会上网的开发搭档」方向演进，工具调用闭环更完整了。</strong></p>
+      <cite><a href="https://latent.space" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head">
+      <span class="dot dot--o"></span>
+      <span class="section-label">AI 方向观点</span>
+    </div>
+
+    <article class="item">
+      <h3>「并行研究 Agent 是科学计算基础设施」的方向叙事正在成型</h3>
+      <p>GPT-5.6 Sol Ultra 被用于 64 个子 Agent（即并行运行的独立推理进程）并行协作，在不到一小时内声称生成了 Cycle Double Cover 数学猜想的证明——这一声明仍待外部验证，但 OpenAI 内部和外部社区都在主动推进这一叙事。与此同时，Sébastien Bubeck 分享了单人借助 GPT-5.6 完成 100 万行 Lean（一种数学形式化语言）形式化证明的案例。</p>
+      <p>在医疗方向，OpenAI 公布了一项涉及 20,000 条评分的盲评研究：在困难任务集上，医生评审员发现 GPT-5.6 回答的缺陷数少于医生本人写的回答。这两个方向——数学证明自动化和医学智能——被 OpenAI 刻意捆绑到「GPT-5.6 作为科研基础设施」的框架里。<strong>实验室的目标叙事正在从「AI 帮你干活」升级为「AI 替代人类作为科学计算的主体」，不管单个声明是否成立，方向已经对准了。</strong></p>
+      <cite><a href="https://latent.space" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>LLM-as-a-Verifier：反复采样 + 分数排序，在多个 Agent 基准上达 SOTA</h3>
+      <p>近期研究提出「LLM-as-a-Verifier」框架：让 LLM 对同一任务反复采样多次，再用 score-logprob（即模型给出答案时的对数概率置信度）对输出排序，选出最可信的那个——不需要额外的监督训练信号，也不依赖人工标注的验证器。在 Terminal-Bench V2、SWE-Bench Verified（代码修复基准）、RoboRewardBench（机器人奖励建模）、MedAgentBench（医疗 Agent 评测）四个基准上均报告了当前 SOTA。</p>
+      <p>核心思路是：模型自身的概率分布已经包含了足够的「自信度」信号，可以作为低成本的质量代理指标。<strong>反复采样 + 自信度排序是 agent 评估里被低估的方向，成本极低，不需要额外模型，但要有足够的推理预算支撑「采样多次」。</strong></p>
+      <cite><a href="https://latent.space" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head">
+      <span class="dot dot--y"></span>
+      <span class="section-label">产品与商业</span>
+    </div>
+
+    <article class="item">
+      <h3>Perplexity 将 Grok 4.5 接入 Computer 作编排者：WANDR 评测接近 Opus 4.8，成本约一半</h3>
+      <p>Perplexity 宣布在其 Computer use 产品中将 Grok 4.5（xAI 最新旗舰模型）加入编排层，作为主要协调模型之一。内部评测显示，Grok 4.5 在 WANDR 基准（一个衡量 web agent 导航和推理能力的测试集）上的表现接近 Anthropic Opus 4.8，但 API 成本约为后者的一半。这是「能力接近、价格更低」的开源压制效应向闭源竞品蔓延的又一个数据点。<strong>当 Grok 的性价比足以让 Perplexity 在生产环境中替换 Opus，模型层的商品化压力已经传导到了产品决策层。</strong></p>
+      <cite><a href="https://latent.space" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Tim Ferriss 访谈 Guy Oseary：管理麦当娜 36 年，Sound Ventures 押注 OpenAI 和 Anthropic</h3>
+      <p>Tim Ferriss 在本周 5-Bullet Friday 中推介了他与 Guy Oseary 的最新访谈。Oseary 是麦当娜的经纪人（36 年连续合作），同时也是科技投资人，2023 年通过 Sound Ventures 早期投资了 OpenAI 和 Anthropic。Sound Ventures 的记录：86 次退出、26 次 IPO。</p>
+      <p>这次出现在一个以人文、健康和创作为主题的周五通讯里，而非科技媒体，折射出 AI 投资叙事已经渗入娱乐产业的权力网络。<strong>连麦当娜的经纪人都在 2023 年押注了 OpenAI 和 Anthropic，说明那一轮融资已经不只是风投圈的内部判断，而是全球顶级经纪人网络的资本信号。</strong></p>
+      <cite><a href="https://tim.blog" target="_blank" rel="noopener">Tim Ferriss 5-Bullet Friday</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head">
+      <span class="dot dot--g"></span>
+      <span class="section-label">人文与哲学</span>
+    </div>
+
+    <article class="item">
+      <h3>Tim Ferriss 本周：Murakami 写作论、《Hi Ren》与「生命随勇气伸缩」</h3>
+      <p>Tim Ferriss 的周五通讯以三个文化入口拼出了一个主题：勇气与创作的关系。他在开车和泡澡时听 Murakami 的《Novelist as a Vocation》（《职业作家》），引用了其中一句「小说家在创作一部小说时，同时也被这部小说创作着」。他重温了 Ren 的《Hi Ren》，称其为「天才、疯狂、哲学与救赎的混合鸡尾酒，歌词是纯粹的天才」。</p>
+      <p>核心引言来自 Anaïs Nin：「生命随一个人勇气的大小而收缩或扩展。」（Life shrinks or expands in proportion to one's courage.）另一条来自《被讨厌的勇气》：「你的不幸不能怪过去或环境，也不是因为你缺少能力，你只是缺少勇气——可以说，你缺乏幸福的勇气。」<strong>在 AI 加速的当下，「勇气不足」这个诊断框架特别值得内化，因为绝大多数停滞不是能力瓶颈，是行动瓶颈。</strong></p>
+      <cite><a href="https://tim.blog" target="_blank" rel="noopener">Tim Ferriss 5-Bullet Friday</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Ajeya Cotra「AI 2040 / Plan A」：透明治理场景遭遇支持与嘲讽，超级智能可管控性成核心分歧</h3>
+      <p>Ajeya Cotra（Anthropic 前研究员）推动的「AI 2040 / Plan A」场景围绕一个核心假设：如果 AI 实验室对研究进展保持极高透明度、主动与全球监管机构协作，超级智能（远超人类水平的 AI）是可以被人类社会约束的。这一场景在 Twitter 上同时收获了认真讨论和讽刺回应，核心分歧在于「一旦 AI 系统超越人类，人类的监管能力是否还能起作用」。</p>
+      <p>批评者认为治理假设脱离现实，支持者认为这是唯一有建设性的框架。旁观者则指出：这场辩论本身的激烈程度，说明 AI 对长期未来的影响已经从科幻话题变成了真实的战略分歧。<strong>当「Plan A 能不能成立」变成了严肃争论，说明 Plan B 甚至 Plan C 的准备工作已经在进行中，只是大多数人没有明说。</strong></p>
+      <cite><a href="https://latent.space" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head">
+      <span class="dot dot--b"></span>
+      <span class="section-label">AI 进展</span>
+    </div>
+
+    <article class="item">
+      <h3>LLM-as-a-Verifier：反复采样 + 对数概率置信度排序</h3>
+      <p><strong>现状：</strong>Agent 评估通常依赖人工标注或额外的判断模型（Judge LLM），成本高且引入额外偏差。</p>
+      <p><strong>问题：</strong>如何在不增加外部监督的前提下，让模型自己判断哪次输出最可靠？</p>
+      <p><strong>解决方案：</strong>对同一任务反复采样多次，用 score-logprob（模型在生成答案时对每个 token 的对数概率之和，反映模型自身的置信度）对输出排序，选置信度最高的那个作为最终输出。</p>
+      <p><strong>价值：</strong>在 Terminal-Bench V2、SWE-Bench Verified（代码 bug 修复）、RoboRewardBench（机器人奖励建模）、MedAgentBench（医疗 Agent）四个基准均报告 SOTA，无需额外训练。</p>
+      <p><strong>未来方向：</strong>随着推理成本下降，反复采样的边际成本趋近于零，此类自我验证框架的价值会持续放大。</p>
+      <cite><a href="https://latent.space" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Meta 显式记忆 Agent：对抗长时任务中的行为状态衰减</h3>
+      <p><strong>现状：</strong>LLM Agent 在执行长时间、多步骤任务时，越到后期越容易「忘记」早期设定的目标或约束，称为「行为状态衰减」。</p>
+      <p><strong>问题：</strong>上下文窗口虽然可以很长，但注意力分布随长度增加而退化，导致 agent 在任务后期偏离初始指令。</p>
+      <p><strong>解决方案：</strong>引入显式的外部记忆模块（External Memory Agent），将关键目标、约束和中间状态写入结构化记忆，让 agent 在每步决策前先查阅记忆，而非依赖原始上下文。</p>
+      <p><strong>价值：</strong>在长时推理任务上显著减少行为漂移，特别适用于多轮、跨工具调用的 agentic 工作流。</p>
+      <p><strong>未来方向：</strong>记忆的写入策略（什么时候写、写什么）是下一个优化点，当前仍依赖人工规则。</p>
+      <cite><a href="https://latent.space" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>MuScriptor（Kyutai + Mirelo）：从全混音中多乐器 audio-to-MIDI 开源模型</h3>
+      <p><strong>现状：</strong>传统 audio-to-MIDI 转录工具通常要求先分轨（即把鼓、贝斯、吉他分开），才能准确识别每个乐器的音符。</p>
+      <p><strong>问题：</strong>现实中的录音大多是混音成品，分轨步骤引入误差且耗费时间。</p>
+      <p><strong>解决方案：</strong>Kyutai 实验室和音乐科技公司 Mirelo 联合发布 MuScriptor，直接处理全混音音频，同时转录多个乐器的 MIDI 数据，无需前置分轨，模型完全开源。</p>
+      <p><strong>价值：</strong>音乐制作者可以直接把现有录音转为可编辑的乐谱格式，大幅降低采样重建和 cover 制作的门槛。</p>
+      <p><strong>未来方向：</strong>开源策略使社区可以在此基础上构建更专业的编曲工具和训练数据管道。</p>
+      <cite><a href="https://latent.space" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Sakana Picbreeder 风格 VLM Agent：多样性提升开放式创造力但仍落后人类</h3>
+      <p><strong>现状：</strong>开放式创造力（Open-ended Creativity）——即持续生成真正新颖、未曾预设方向的内容——是 AI 最难逾越的瓶颈之一。</p>
+      <p><strong>问题：</strong>单一 VLM（视觉语言模型）在「探索」阶段快速收敛到已有模式，无法保持人类创作中那种真正的随机漫步。</p>
+      <p><strong>解决方案：</strong>Sakana AI 借鉴 Picbreeder（一种协作式进化图像生成平台）的思路，用多个风格迥异的 VLM Agent 并行探索，互相参考但不合并，保持群体多样性。</p>
+      <p><strong>价值：</strong>多样性 Agent 群体比单 Agent 在创意发散指标上有明显提升，但整体仍落后于人类的开放式探索能力。</p>
+      <p><strong>未来方向：</strong>Agent 间如何选择性地「相互感染」而不过早收敛，是下一个设计挑战。</p>
+      <cite><a href="https://latent.space" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Chunked Prefill（Cohere + vLLM）：低批次大幅提速，高批次性能有损</h3>
+      <p><strong>现状：</strong>大语言模型处理长输入（Prefill 阶段，即处理提示词）时内存带宽是主要瓶颈，特别是并发请求量少的场景。</p>
+      <p><strong>问题：</strong>Prefill 和 Decode（逐 token 生成）在同一批次里争抢计算资源，导致吞吐量和延迟之间难以兼顾。</p>
+      <p><strong>解决方案：</strong>Chunked Prefill 将长提示词切成小块分批处理，与 Decode 交错执行。Cohere 和 vLLM 团队发布了新的性能数据。</p>
+      <p><strong>价值：</strong>在低并发（小批次）场景下吞吐量大幅提升；但在高并发（大批次）场景下反而有所下降，揭示了这一优化的适用边界。</p>
+      <p><strong>未来方向：</strong>动态批次大小调度是解决高低并发兼顾问题的主要研究方向。</p>
+      <cite><a href="https://latent.space" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head">
+      <span class="dot dot--m"></span>
+      <span class="section-label">看一眼</span>
+    </div>
+    <ul class="glance-list">
+      <li>OpenAI 生物安全漏洞赏金翻倍至 $50K，专门针对可绕过预设生物安全挑战的通用越狱方案，同步转为长期私有项目。<a class="glance-src" href="https://latent.space" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>OpenAI 网络安全旗舰模型访问从 9 月 1 日起要求硬件安全密钥（如 YubiKey），适用于 Trusted Access for Cyber 成员，提高账户安全门槛。<a class="glance-src" href="https://latent.space" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>GPT-5.6 API 目前有 36 个变体（Sol/Terra/Luna 三档 × 6 个努力级别），社区指南初步收敛：日常编码用 Luna High，大型功能用 Terra Medium，不要直接上 Sol。<a class="glance-src" href="https://latent.space" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>GPT-5.6 Luna 最低努力级别在 OpenAI 内部医生评测中超越了 GPT-5.5 最高努力级别，成本低 25 倍，这是「更小模型 + 更低努力 = 足够好」方向最有说服力的数据之一。<a class="glance-src" href="https://latent.space" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>Sébastien Bubeck 分享了单人借助 GPT-5.6 完成 100 万行 Lean 形式化证明的案例，Lean 是数学定理机器验证领域的主流语言。<a class="glance-src" href="https://latent.space" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>Gemma 推理挑战（Google + HuggingFace 联合）：单张 A10G 显卡上实现 315 TPS（无损精度）/ 491.8 TPS（最快配置），比之前官方基准高 5 倍。<a class="glance-src" href="https://latent.space" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>新研究报告：Boko Haram 成员被记录在案地使用前沿 AI 聊天机器人查询炸弹制作和战术信息，研究者将这一案例并列于「GPT-5.6 可能被越狱」的讨论中。<a class="glance-src" href="https://latent.space" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>Perplexity 内部 WANDR 评测：Grok 4.5 在 web agent 导航基准上接近 Anthropic Opus 4.8，成本约一半，已被接入 Computer 编排层。<a class="glance-src" href="https://latent.space" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>GLM-5.2 本地推理在 r/LocalLlama 社区引发热烈讨论，其量化版本在消费级 GPU 上的推理速度和质量均获好评。<a class="glance-src" href="https://latent.space" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>Tim Ferriss 推荐动画短片《IN-SHADOW: A Modern Odyssey》，探讨数字时代的操纵与觉醒，强度很高但以救赎收尾，他每年至少重看一次。<a class="glance-src" href="https://tim.blog" target="_blank" rel="noopener">Tim Ferriss →</a></li>
+      <li>Tim Ferriss：Murakami《Novelist as a Vocation》（《作为职业的小说家》）只被允许在开车或泡澡时听，当作写作奖励，把它变成一种克制性的仪式。<a class="glance-src" href="https://tim.blog" target="_blank" rel="noopener">Tim Ferriss →</a></li>
+      <li>Tim Ferriss 推荐冥想 app The Way（Zen Master Henry Shukman 主讲）：每天 10 分钟，称其减焦虑效果超出预期，已个人投资并参与产品改进。<a class="glance-src" href="https://tim.blog" target="_blank" rel="noopener">Tim Ferriss →</a></li>
+      <li>本周 AI 社区次热点：Bun（JavaScript 运行时）与 Zig（系统级编程语言）社区因 AI 辅助代码重写案例引发讨论，与 K-pop 虫子动画 bug 并列为周末八卦。<a class="glance-src" href="https://latent.space" target="_blank" rel="noopener">Latent Space →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-07-10.html">← JUL 10</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
