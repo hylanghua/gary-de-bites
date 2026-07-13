@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — July 13, 2026</title>
+  <meta name="description" content="Apple 以商业机密盗窃为由起诉 OpenAI，指控面试系统性索要苹果原型、并教唆离职员工绕过安检；Ethan Mollick 给出聊天机器人时代结束的内部数据：一季度内 OpenAI 1/4 员工每周跑 4 个以上 Agent；纯银年届 50，以长板策略给出 AI 时代人生下半场的答案。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">July 13, 2026</h1>
+
+  <p class="post-lead">Apple 以商业机密盗窃为由起诉 OpenAI，指控面试系统性索要苹果原型、并教唆离职员工绕过安检；Ethan Mollick 给出聊天机器人时代结束的内部数据：一季度内 OpenAI 1/4 员工每周跑 4 个以上 Agent；纯银年届 50，以长板策略给出 AI 时代人生下半场的答案。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/" target="_blank" rel="noopener">Apple 起诉 OpenAI 盗取商业机密：从面试索要原型，到教唆员工绕开离职安检</a></h3>
+      <p>苹果在美国北加州联邦法院对 OpenAI 提起诉讼，指控对方「从上到下、从高管到技术员工，并联合业务合作伙伴」系统性盗取苹果商业机密。核心指控有三：一、OpenAI 硬件负责人 Tang Tan（前苹果副总裁）在面试中主动引导苹果员工分享内部机密项目细节，并要求携带设备组件和原型进行展示；二、OpenAI 指导即将离职的苹果员工如何规避苹果的离职安全流程；三、前苹果员工 Chang Liu 在加入 OpenAI 前带走了一台苹果笔记本。苹果请求法院签发禁令，要求 OpenAI 停止持有、使用或分享苹果商业机密，并归还相关知识产权。</p>
+      <p>这场诉讼的背景是双方曾在 2024 年高调合作——ChatGPT 被集成进 iOS。Ben Thompson（Stratechery）的解读是：案件核心只有一名确实有罪的员工，更多折射出苹果在 AI 战略上的困境，起诉更像是在泄愤，而非拥有实质胜算。OpenAI 否认所有指控。</p>
+      <cite><a href="https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/" target="_blank" rel="noopener">TechCrunch</a> · <a href="https://www.cnbc.com/2026/07/10/apple-openai-lawsuit-trade-secrets.html" target="_blank" rel="noopener">CNBC</a> · <a href="https://stratechery.com/2026/apple-sues-openai-apples-real-problem/" target="_blank" rel="noopener">Stratechery</a> · <a href="https://links.tldrnewsletter.com/HtTYDN" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arstechnica.com/space/2026/07/china-recovered-its-first-reusable-rocket-and-showed-a-new-way-to-do-it/" target="_blank" rel="noopener">中国长征十号B首飞成功：一级子级海上网捕回收，新型复用路线首次验证</a></h3>
+      <p>中国成功完成首次受控火箭回收。长征十号B完成首飞，其一级子级通过海上网捕（sea-based net capture，区别于 SpaceX 的陆基垂直降落）实现回收，这是一条与主流路线不同的复用技术方案。中国目前有4个陆基发射场和多艘海上发射平台，具备快速提升发射节奏的条件。此外还有多款正在研发中的可复用火箭计划陆续加入。</p>
+      <cite><a href="https://arstechnica.com/space/2026/07/china-recovered-its-first-reusable-rocket-and-showed-a-new-way-to-do-it/" target="_blank" rel="noopener">Ars Technica</a> · <a href="https://links.tldrnewsletter.com/HtTYDN" target="_blank" rel="noopener">TLDR</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.oneusefulthing.org/p/the-twilight-of-the-chatbots" target="_blank" rel="noopener">Ethan Mollick「聊天机器人的黄昏」：1/4 OpenAI 员工每周跑 4 个以上 Agent，法务/HR 和工程师采用速度持平</a></h3>
+      <p>Ethan Mollick（沃顿商学院教授）用 OpenAI 的内部数据宣告：Chatbot（单轮对话 AI）时代正在让位给 Agentic（自主执行多步任务的 AI）时代。数据点不止一个：一季度内，有四分之一的 OpenAI 员工每周同时有 4 个以上 Agent 在运行；而参与的部门不再只是工程，法务、HR 等非技术职能的采用速度与工程师几乎持平。</p>
+      <p>Agent 与 Chatbot 的关键区别在于「额外机制」——Harness（代理程序框架，即围绕 AI 的工具环境和执行脚手架）以及为 Agent 设计的专用 App（如 Claude Code、OpenAI Codex）。使用 Agent 的核心技能不再是提示技巧，而是：定义目标、规定输出格式、设定质量标准并建立测试方法。「现在重要的不是会聊，而是会分配。」</p>
+      <p><strong>Mollick 把 Agent 的大规模普及时间节点提前了：不是「未来两年」，而是「就在今年」，而且率先扩散的不是工程部门，是整个知识工作的横截面。</strong></p>
+      <cite><a href="https://www.oneusefulthing.org/p/the-twilight-of-the-chatbots" target="_blank" rel="noopener">One Useful Thing</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Guillermo Rauch（Vercel CEO）：模型与 Agent 必须解耦，插拔式生态才能打败封闭捆绑策略</h3>
+      <p>在 Vercel ShipNYC 大会后，Rauch 在接受 TechCrunch 采访时划出了一条行业分界线：一边是想把模型和 Agent 打包成封闭产品的厂商，另一边是他所站的位置——把两者做成可以独立替换的模块。他的论点是：开发者应该像换数据库一样换模型，Vercel 这样的基础设施平台则充当 AI 应用的「中枢神经系统」。</p>
+      <p>他还提到一个实际观察：AI 客户正在从单一厂商合作向多模型混用迁移，同时接入 OpenAI、Anthropic、Gemini、DeepSeek、GLM-5.2 的「插拔式技术栈」正在成为企业的默认选择。这与上周 Perplexity 把 Grok 4.5 接入编排层的决策方向一致：没人愿意为任何一家 AI 厂商下注太重。</p>
+      <p><strong>Vercel 的战略赌注是「模型无关的基础设施」——如果模型可以随时切换，平台才是真正的护城河，这个逻辑和应用层的情况完全相反。</strong></p>
+      <cite><a href="https://techcrunch.com/2026/07/06/vercel-ceo-guillermo-rauch-on-the-fight-to-split-off-models-from-agents/" target="_blank" rel="noopener">TechCrunch</a> · <a href="https://x.com/rauchg" target="_blank" rel="noopener">X @rauchg</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://every.to/source-code/how-i-polish-software-that-agents-built" target="_blank" rel="noopener">Kieran Klaassen「如何 Polish AI 构建的软件」：代码工厂已自动化，剩下的是人的品味和判断</a></h3>
+      <p>Kieran Klaassen（Every.to Source Code 栏目）描述了一个已经到来的现实：他每天早晨打开电脑，会看到一摞 Agent 在昨晚完成的绿色 Pull Request（代码合并请求），功能已经可以合并，不需要手动写一行代码。「代码工厂已经自动化。」</p>
+      <p>剩下来的工作是「Polish」——他把这定义为"compound engineering"（复合工程）的最后一步：自己真实使用这个 App，告诉 Agent 哪里感觉不对，直到感觉对了。他举的例子很具体：点击一张邮件卡片，动画从屏幕顶部滑入，而不是从点击位置展开。他只告诉 Agent 哪里不对，Agent 修了，他再点一次。模型不知道「什么叫好」，没有人类判断，Agent 产出的一切都是功能性的，但不值得记忆的。</p>
+      <p><strong>从「写代码」到「品鉴代码」的转变已经发生，而不是正在发生——这个角色叫 Taste（品味），不叫管理，也不叫提示。</strong></p>
+      <cite><a href="https://every.to/source-code/how-i-polish-software-that-agents-built" target="_blank" rel="noopener">Every.to Source Code</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.lennysnewsletter.com/p/how-i-ai-gpt-56-review-how-a-solo" target="_blank" rel="noopener">Lenny's How I AI：什么是 Harness，以及为什么专用框架比通用工具更可靠</a></h3>
+      <p>Claire（ChatPRD 创始人）用 Claude Agent SDK（Anthropic 提供的开发者工具包，用于构建自定义 Agent 程序）为 Sentry（一种监控代码错误的工具）bug 分诊流程搭建了一套专用 Harness，给出了目前最清晰的「Harness 是什么」解释：Harness 就是你围绕 AI Agent 写的代码，没有更神秘的东西。Cursor 是复杂的 Harness，Claude Code 也是。你自己的可以只有 8 个文件加一个终端界面。</p>
+      <p>为什么专用 Harness 比 Claude Code 这类通用工具更好：通用工具每次都要用自然语言告知权限范围（「只调查，不写代码」），专用 Harness 可以把权限做进界面的一个开关，点击「调查」就已经限定了范围。更重要的是 artifact（结构化产出物）：每次运行输出一套固定格式的调查文件，整个工程团队拿到的是统一可扫描的记录，而不是每个人各自写一份。</p>
+      <p><strong>Harness 的核心价值是把「可重复工作流」从「每次需要重新说明」变成「一次编码永久执行」，这和写函数的逻辑完全一样，只是执行主体换成了 AI。</strong></p>
+      <cite><a href="https://www.lennysnewsletter.com/p/how-i-ai-gpt-56-review-how-a-solo" target="_blank" rel="noopener">Lenny's How I AI</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>智谱唐杰「浪潮已至」全员信：放弃两年短期收入，押注 AGI 四大引擎</h3>
+      <p>智谱 AI 创始人唐杰在公司市值突破港币万亿后发布内部信，宣布启动「Touch High」计划，做出一个「反直觉」的选择：未来两年主动放弃短期收入，将全部资源集中在四个方向：长时程任务（复杂工程执行）、自主 Agent 系统（朝数字雇员方向演进）、AI 自训练（将算力转化为进化动力）、极致安全治理（机制可解释性作为主要研究方向）。同时以 MIT 开源协议发布了目前最强模型 GLM-5.2。</p>
+      <p>唐杰的 AGI 时间线表述比大多数同行更具体：自主 Agent 系统正在向「完全自动化」演进，AI 将开始学习「自我」是什么。这封信于 7 月 11 日发出，适逢智谱作为全球首家以 AGI 基础模型为核心定位的上市公司在香港完成上市。</p>
+      <p><strong>智谱的豪赌逻辑与 OpenAI 的短期商业化走向形成明显对比——前者用放弃短期收入换取技术主导权，后者正忙着把 ChatGPT 变成 SaaS 套装。</strong></p>
+      <cite><a href="https://www.geopolitechs.org/p/tang-jies-letter-to-zhipu-employee" target="_blank" rel="noopener">GeoPoliTechs</a> · <a href="https://links.tldrnewsletter.com/HtTYDN" target="_blank" rel="noopener">TLDR</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://xiaobot.net/post/747cdf06-68cc-4ac5-9826-1d46f6a3b4db" target="_blank" rel="noopener">纯银「聊聊 50+ 的人生出路」：不和 30 岁人在同一起点竞争，长板策略是 50+ 的唯一胜道</a></h3>
+      <p>纯银今年底满 50 岁，这篇文章是他对「50+ 如何在 AI 时代找到出路」最直接的思考。他的第一个结论是：完全赞同互联网行业对中年人的年龄歧视，因为从统计意义上讲这是合理的。「我他妈哪有脸跟 30 多岁当打之年的人去竞争。」他主动放弃职场竞争，把理由说得很清楚：50 岁拥抱 AI，最多只能和年轻人打平，年龄劣势无法抹除，如果「有所图」则竹篮打水。</p>
+      <p>积极的一面是「长板策略」——他过去的人生收益悉数来自自己的长板（旅行热情、内容审美、创造力、表达欲、洞察与抽象能力），未来继续延伸这些长板，而不是追赶潮流。重点是「在当前阶段带来正反馈的长板」，不要给自己设定一个负反馈目标。他以「犬校」（他维系了九年的社群和创作圈）为例：不计收益的长期投入，最终带来了行业前沿信息和思考空间，这是「超额回报」。</p>
+      <p>「知道自己应该在什么地方用力，什么地方松手，也是一种高级的智力活动。」对好命的渴求一旦盯紧就会坍塌，长板的正反馈不需要审视它能不能创造收益——「这事归命运管，不归我管。」</p>
+      <p><strong>纯银给出的不是励志答案，而是一套「输的体面」的认知框架：不和年轻人打，只在自己清晰的长板上继续延伸，哪怕最终只是一个有优点且自嗨的 50+ 中年人，也好过在内耗中虚度余生。</strong></p>
+      <cite><a href="https://xiaobot.net/post/747cdf06-68cc-4ac5-9826-1d46f6a3b4db" target="_blank" rel="noopener">小报童 · 纯银</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.02461" target="_blank" rel="noopener">OrbitQuant：无需校准数据的扩散 Transformer 量化方案，图像与视频生成模型通用</a></h3>
+      <p>量化（Quantization）是将模型权重压缩到低比特格式以降低推理成本的标准技术，但扩散 Transformer（DiT）的量化有一个特殊障碍：校准数据（Calibration Data）的获取依赖具体任务，获取成本高。OrbitQuant 提出与数据无关（data-agnostic）的量化策略：不依赖任何真实输入样本，直接从模型权重分布出发设计量化方案，在图像生成（FLUX、SD3）和视频生成（CogVideoX、HunyuanVideo）模型上均实现与 FP16 基线相当的生成质量，同时推理速度和显存占用大幅改善。</p>
+      <p><strong>DiT 量化从此不再需要为每个模型单独收集校准样本，显著降低了大规模部署门槛。</strong></p>
+      <cite><a href="https://arxiv.org/abs/2607.02461" target="_blank" rel="noopener">arXiv 2607.02461</a> · HuggingFace Papers</cite>
+    </article>
+
+    <article class="item">
+      <h3>OmniFlatten：基于标准 GPT 架构的实时全双工语音对话，无需改动模型结构</h3>
+      <p>全双工（Full-duplex）语音对话的难点在于模型需要同时「听」和「说」，像真实电话而不是对讲机。OmniFlatten 提出在标准 GPT 架构上实现全双工流式语音对话的方法，无需设计专用双流解码器或并行注意力机制——用一个展开（Flatten）的 Token 序列同时表示用户输入与模型输出，允许模型在接收语音流的同时进行流式语音生成。端到端延迟和自然度指标均优于现有多个基线，且可迁移到不同规模的 GPT 基础模型上。</p>
+      <p><strong>这意味着现有任何 GPT 系语言模型理论上都可以通过 OmniFlatten 的训练方案获得实时语音对话能力，而不需要重新设计架构。</strong></p>
+      <cite>HuggingFace Papers</cite>
+    </article>
+
+    <article class="item">
+      <h3>OPSD-V：用真实长视频数据解决少步视频扩散模型的时序一致性问题</h3>
+      <p>少步（Few-step）视频扩散模型（如一致性蒸馏、流匹配蒸馏）能大幅压缩生成步数，但时序连贯性一直弱于原始多步模型。OPSD-V 的核心发现是：现有少步视频训练数据以短片段为主，导致模型缺乏对长时程时序结构的感知。OPSD-V 构建了包含真实长视频的专用训练集用于蒸馏阶段，在不增加推理步数的前提下，显著改善了生成视频的时序流畅度与物理合理性。</p>
+      <cite>HuggingFace Papers</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.02032" target="_blank" rel="noopener">PACE：用廉价代理基准预测昂贵的 Agent 评测结果</a></h3>
+      <p>Agent 基准评测越来越重要，成本却极高：跑一次 SWE-bench Verified 或 Tau-bench 需要大量 API 调用和人工审核。PACE 提出用一组低成本「代理指标」（Proxy Metrics）——数学推理、代码生成、指令遵循等短上下文任务——来预测模型在长上下文 Agent 评测上的表现。精心选择的代理指标组合与实际 Agent 性能的斯皮尔曼相关系数达到 0.95 以上，可以在不运行完整 Agent 测试的情况下，以不到 1% 的成本完成候选模型筛选。</p>
+      <p><strong>PACE 相当于给 Agent 评测建立了一套廉价的「前置筛查」机制——大规模评测前先过滤掉明显不优的模型版本。</strong></p>
+      <cite><a href="https://arxiv.org/abs/2607.02032" target="_blank" rel="noopener">arXiv 2607.02032</a> · HuggingFace Papers</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.07619" target="_blank" rel="noopener">重新审视代码性能基准：三代理框架生成能区分性能差异的测试用例</a></h3>
+      <p>HumanEval、MBPP 等主流代码基准只测功能正确性，对运行性能不敏感——模型生成 O(n²) 算法和 O(n log n) 算法都能拿到相同分数。这篇论文提出三代理框架：第一个 Agent 生成候选解，第二个 Agent 专门生成能区分不同性能实现的测试用例（Performance-Discriminating Tests），第三个 Agent 验证并修正测试有效性。在 Python 性能任务上，该框架生成的测试能有效识别不同时间复杂度的实现，填补了现有评估体系对效率维度的空白。</p>
+      <p><strong>如果「能跑」和「跑得快」将成为模型的两个独立评估维度，基准设计本身必须先被修复——这篇论文的工作正是如此。</strong></p>
+      <cite><a href="https://arxiv.org/abs/2607.07619" target="_blank" rel="noopener">arXiv 2607.07619</a> · HuggingFace Papers</cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <article class="item">
+      <ul>
+        <li><strong>Prompt Engineering → Intent Engineering</strong>：Daniel Miessler 提出，重要的不是「怎么措辞」，而是「你想让 AI 达成什么结果」——提示工程正在让位给需求工程，区别在于是否真正理解任务的本质目标。（danielmiessler.com · TLDR AI）</li>
+        <li><strong>「部分理解代码库」是正常的</strong>：seangoedecke.com 的文章指出，工程师不需要真正理解整个系统才能完成任务——在 AI 协作环境里，「刚好够用的上下文」是一种效率，不是欠缺。（TLDR）</li>
+        <li><strong>逆向信息悖论（Reverse Information Paradox）</strong>：你越详细地告诉 AI 你要做什么，就越清楚地向 AI 厂商暴露了你的业务逻辑和竞争策略。使用 AI 的隐形成本不只是订阅费。（TLDR）</li>
+        <li><strong>George Hotz 批评 AI 2040 预测</strong>：他认为当前几乎所有主流 AI 长期预测都脱离现实，核心论点是：没有人真正理解神经网络内部在发生什么，所以一切长期预测都是在给不确定性包装一层可信度的外壳。（TLDR）</li>
+        <li><strong>Apple M6/M7/M8 最初是为 Apple Car 设计的</strong>：Bloomberg 报道，这批芯片是汽车项目的产物，项目取消后被转用于 Mac 和 iPad，成为硅谷史上最昂贵的副产品之一。（TLDR）</li>
+        <li><strong>1X 发布 25 自由度全反驱动机器人手</strong>：每个关节均为反驱动设计（backdrivable），被外力推动时顺从而非对抗，是机器人与人安全协作的关键前提。（TLDR）</li>
+        <li><strong>Simon Willison：「DRI」管理法则在 AI 时代更重要</strong>。DRI（Directly Responsible Individual，直接责任人）要求一项任务只有一个负责人——当 Agent 把球传来传去时，没有 DRI 的工作流会永远没有结论。（simonwillison.net · Jul 12）</li>
+        <li><strong>Simon Willison：Fable 再次延期，免费额度延长至 7 月 19 日</strong>。面向叙事创作的 AI 工具 Fable 免费试用期多次续期，已成为写作圈中的小众受益项目。（simonwillison.net · Jul 12）</li>
+        <li><strong>@t3dotgg Theo Browne：GPT-5.6-sol ultra 的子 Agent 会继承 ultra 档级</strong>，在 Claude Code 里用于设计类任务时表现明显超出预期。（X）</li>
+        <li><strong>@steipete Peter Steinberger：OpenClaw 上架 iOS / Android</strong>。一款由 AI 辅助构建的开源爪机控制 App，从 Claude Code 到 App Store 全流程有记录。（X）</li>
+        <li><strong>@zarazhangrui Zara Zhang：2026 年最强生态位 = Builder × Creator</strong>。会做产品 + 会讲故事，两者交叉点的人已经是这个时代最稀缺的资源。（X）</li>
+      </ul>
+    </article></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-07-12.html">← JUL 12</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
