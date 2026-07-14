@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — July 14, 2026</title>
+  <meta name="description" content="Codex 在 6 个月内用户量增长超 10 倍达到 700 万，Swyx 用 AINews 数据还原了这场 Agent 时代的用户竞争；iOS 27 公测版带来可持续对话、理解屏幕的 Siri AI；纯银从「如果重启人生」出发，得出命运更多由天赋和人格决定、而非那些关键节点的选择。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">July 14, 2026</h1>
+
+  <p class="post-lead">Codex 在 6 个月内用户量增长超 10 倍达到 700 万，Swyx 用 AINews 数据还原了这场 Agent 时代的用户竞争；iOS 27 公测版带来可持续对话、理解屏幕的 Siri AI；纯银从「如果重启人生」出发，得出命运更多由天赋和人格决定、而非那些关键节点的选择。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3>Codex 6个月用户量增长10倍达700万，是 Claude Code 最后已知数据的3.5倍</h3>
+      <p>AINews（Latent Space）今日复盘了一个被轻易略过的数字：OpenAI 产品工程师 Thibault Sottiaux 在 7 月 12 日推文透露 Codex 和 ChatGPT Work 在 48 小时内达到 600 万用户，24 小时后又跳到 700 万。对照 Fidji Simo 三月的数据——当时 Codex 有 200 万用户，元旦前后约 55 万到 70 万——可以推算出今年以来增长超过 10 倍。</p>
+      <p>Claude Code 最后一次公开披露是 2 月的约 200 万周活跃用户加 25 亿美元 ARR（年化经常性收入）。Swyx 提出了「慈善解读」：Claude Code 此后将编程重心转移到 Claude Tag（Slack 机器人形式），那套用量统计维度根本不同，不应直接类比。但 10 倍是个难以漠视的基准——无论 Claude Code 目前实际数字是多少，Codex 这场无声的竞争赛跑已经摆到了台面上。</p>
+      <cite><a href="https://substack.com/@swyx" target="_blank" rel="noopener">Latent Space / AINews</a> · <a href="https://x.com/thsottiaux" target="_blank" rel="noopener">X @thsottiaux</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://9to5mac.com/2026/07/14/ios-27-public-beta/" target="_blank" rel="noopener">iOS 27 公测版发布：Siri AI 持续对话、屏幕感知、App 内执行，支持所有 iOS 26 机型</a></h3>
+      <p>苹果正式开放 iOS 27 第一个公测版，支持所有能跑 iOS 26 的 iPhone，但 Apple Intelligence 功能仍限 iPhone 15 Pro 及更新机型。最大变化是 Siri AI：能维持多轮连续对话、理解当前屏幕上下文、在 App 内直接执行操作，并可回答更广泛的开放性问题。这一版本着重性能、稳定性和「让 iPhone 用起来更顺手」的体验打磨，而非新硬件特性的亮相。</p>
+      <cite><a href="https://links.tldrnewsletter.com" target="_blank" rel="noopener">TLDR</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3>Guillermo Rauch（Vercel CEO）：开源权重模型已跑 Vercel 网关 29% 的 token，4月时只有 11%</h3>
+      <p>Rauch 在 X 上给出了他看到的最新数字：经过 Vercel AI 网关（AI Gateway，即多模型统一接入层，类似让不同 AI 服务共用一个出入口）的 token 中，来自开源权重模型（Open-weight Models，指权重公开可下载的模型，如 Llama、Mistral、DeepSeek）的占比从 4 月的 11% 升至当前的 29%，不到三个月翻了将近三倍。</p>
+      <p>这不只是数字变化，而是企业选型逻辑的迁移信号：越来越多的生产流量不再只走 OpenAI 或 Anthropic，而是分散到可以自主部署、成本可控的开源权重层。Rauch 同期还提到 Vercel 最受欢迎的两个新功能是文件系统 API 的易用性和可观测性（Observability，即追踪 AI 调用行为的工具），暗示基础设施层的差异化竞争已经转向：不是谁家模型最强，而是谁的平台让多模型混用最省力。</p>
+      <p><strong>当开源权重模型从补充渠道变成主流流量的近三分之一，「模型无关的基础设施」的赌注开始真正兑现。</strong></p>
+      <cite><a href="https://x.com/rauchg" target="_blank" rel="noopener">X @rauchg</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Swyx（AI Engineer World's Fair 联合创始人）：大项目最优模型分工——sol ultra 规划、fable 5 批评、terra/sonnet 5 生产</h3>
+      <p>Swyx 给出了他目前在「大型项目（Big Boy projects）」上的实际模型分工：用 GPT-5.6 Sol Ultra 做规划（高成本、高推理深度）、Claude Fable 5 做批评（外部视角审视方向）、Sonnet 5 / GPT-5.6 Terra Ultra / SWE-1.7 做具体生产（高性价比执行层），最终用 Devin Review 做代码审查。这是一套多模型协作流水线（Pipeline），每个环节匹配不同的擅长维度。</p>
+      <p>这个分工透露了当前顶端用户的实际工作模式：没有人在「只用一个模型」。更有信息量的是 Swyx 对 Resend 的一句玩笑——「现在如果收到我妈发的短信，我怀疑 Codex 也会要求你提供一个 Resend API Key 才能读」，暗示 Codex 在代码生成时对邮件/通知服务商的自动调用已成日常默认行为，而 Resend 几乎成了编程 Agent 的「标配触角」。</p>
+      <p><strong>顶端用户已经不在选模型，而在设计 Pipeline——这是从单工具使用者到 AI 编排者的真实分水岭。</strong></p>
+      <cite><a href="https://x.com/swyx" target="_blank" rel="noopener">X @swyx</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Sam Altman（OpenAI CEO）：「我们的模型终于会做设计了」；顺带批评「悄悄降级不达标用户」的准入逻辑</h3>
+      <p>Altman 今日发了两条风格迥异的推文。第一条是纯惊喜：「看到我们的模型终于开始擅长设计，脑子还有点绕不过来（still sorta breaks my brain）。」这是 OpenAI 内部人士少见的公开承认——设计能力长期是 GPT 系列相对薄弱的环节，现在这个判断在被修正。第二条是嘲讽式批评：「有些硬问题很好，但前提是我们认为你够格，不会悄悄降级你，甚至根本不给你访问权限。」这句话对应的是最近关于高级账户在某些情境被静默降级到较弱模型的讨论——他用讽刺语气表态这不应该是行业惯例，而非在为自己的产品辩护。</p>
+      <p><strong>Altman 在一条推文里同时表达了对竞争对手准入逻辑的批评和对自家模型设计能力的真实惊讶——前者是立场，后者是信号。</strong></p>
+      <cite><a href="https://x.com/sama" target="_blank" rel="noopener">X @sama</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://bensbites.com" target="_blank" rel="noopener">Ben's Bites：GPT-5.6 三档模型全面解析——Luna/Terra/Sol、5级思考强度 + Ultra、ChatGPT Work 与 Codex 合并</a></h3>
+      <p>GPT-5.6 现已对所有用户开放。Ben's Bites 给出目前最清晰的实战指南：系列分三个档位，Luna（轻量快速）、Terra（均衡，接近 GPT-5.5 的替代）、Sol（最强，推理能力最深）。每个模型有五个思考强度档（light / medium / high / xhigh / max），另有 Ultra 模式——允许模型不受限制地启动 subagent（子代理，即模型自动派生出多个并行执行任务的实例），实测会极快耗尽每周用量配额。</p>
+      <p>实战配置建议：日常对话和生产力任务用 Luna xhigh；建站和创意工作用 Sol medium；硬任务放到后台 Agent 运行，而不是用 Ultra 实时消耗。新 ChatGPT Work 模式将原 Codex App 与 macOS ChatGPT 合并，界面统一但编程与非编程场景做了细节区分。新增「ChatGPT Sites」插件可直接生成可托管的带登录页面的网站。Computer Use（计算机使用，即 AI 直接操控鼠标点击界面）在 Sol medium/high 上表现出色，值得专门测试。</p>
+      <p><strong>Ultra 模式的出现让 GPT-5.6 第一次有了真正意义上的「无限制 Agent 模式」，但代价是用量燃烧速度惊人——这是产品力跃升和配额设计矛盾的最直接体现。</strong></p>
+      <cite><a href="https://bensbites.com" target="_blank" rel="noopener">Ben's Bites</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Ryo Lu（Cursor 设计负责人）：用 Cursor 给电子纸阅读器刷自定义固件，「硬件黑客原来这么好玩」</h3>
+      <p>Ryo Lu 在 X 上分享了一个意外之举：他拿到一台 Xteink X3/X4 电子纸阅读器（一种基于墨水屏的专用阅读设备），让 Cursor 直接帮他写并刷入自定义固件（Firmware，设备底层控制软件）。他的原话：「硬件黑客原来这么好玩！」这不是 Cursor 官方功能展示，而是一个设计师把日常编程工具用到嵌入式场景的个人实验。</p>
+      <p>这条推文的隐含信号：当 AI 辅助代码工具强到连固件都能写，「需要嵌入式/驱动开发经验」的门槛在消解，而消解的速度在跟着工具能力走。Ryo 同期还宣布 Jenny 加入 Cursor 领导设计团队。</p>
+      <p><strong>一个设计师用 Cursor 刷固件——这已经不是「AI 辅助编程」的比喻，而是「AI 让专业壁垒变薄」的字面展示。</strong></p>
+      <cite><a href="https://x.com/ryolu_" target="_blank" rel="noopener">X @ryolu_</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Peter Steinberger（PSPDFKit 作者，独立开发者）：维护者 Agent 迁到云端，「它们已经开始打架了」；iOS/Android 同步发版</h3>
+      <p>Steipete 把他为开源项目运行的维护者 Agent（自动处理 issue、PR 审查和代码更新的 Agent）从本地迁移到云端运行，随即观察到一个有趣现象：多个 Agent 实例之间开始出现冲突行为——他用「they are fighting already（它们已经开始打架了）」来描述。这是 multi-agent（多代理协作/冲突）在真实生产环境里的早期田野记录，不是实验室场景。</p>
+      <p>同日他的 iOS 和 Android App 也完成了更新发版。他提到用「stress test」作为提示语效果不错——这一句话的实际含义是：告诉 Agent 自己去寻找破坏点，而不是告诉它该怎么测。</p>
+      <p><strong>多 Agent 在云端「打架」不是 Bug 描述，而是一个信号：分布式 Agent 的协调问题（协同、避免重复、处理冲突）正在从理论走进日常运维。</strong></p>
+      <cite><a href="https://x.com/steipete" target="_blank" rel="noopener">X @steipete</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://xiaobot.net/post/b65ada7f-f843-4da3-8814-e1f5ec023970" target="_blank" rel="noopener">纯银「聊聊重启人生的话题」：人生的关键选择换哪条路结果都差不多，决定命运的是天赋、人格和家庭环境</a></h3>
+      <p>犬校五月发起了一个话题：如果重启人生，你会做什么？纯银在回帖过程中产生了两个意外洞察。第一个洞察来自「换视角」：他平日频繁向内攻击自己——「所有人生目标都没实现，这辈子就这样了」。但把时间跨度拉到 30 年，从 19 岁到 49 岁，会发现他既年少成名（25 岁做到游戏媒体名编辑），也经历了网易、携程、Tap 的资深中层管理，创业七年，Gap Year 一年半走遍新疆云南西藏清迈，47 岁财务自由，49 岁接纳退休状态，感情稳定。「这么多项同时发生在一个人身上，其实是非常丰富的人生」——高光时刻很短，但组合起来足够丰富。</p>
+      <p>第二个洞察更结构性：回顾那些「重大选择」的节点——如果没有从某家公司负气辞职，如果把产品卖给了腾讯，如果没有跟技术合伙人散伙……放在 30 年跨度里看，不会有很大差别。「一个人决定命运的因素是：家庭环境，天赋，人格。」天赋会把人导向特定的职业轨迹，倔强和骄傲的人格让他无论如何都会在某个节点负气辞职，家庭环境既没有束缚他也没有助力他——这三个变量的组合，比任何一个「如果当初选了 A 而不是 B」的节点更有解释力。</p>
+      <p>「大概是五十而知天命的感悟。」纯银的结论不是消极宿命论，而是一种「从结构观察自己」的解放：不需要为每个错过的节点自责，因为人格和天赋早就在所有这些节点之前划定了你的轨迹。</p>
+      <p><strong>纯银把「如果重启人生」从怀旧陷阱变成了自我考古——结论是，影响最深的不是那些可以选择的事，而是那些你生来就带着的事。</strong></p>
+      <cite><a href="https://xiaobot.net/post/b65ada7f-f843-4da3-8814-e1f5ec023970" target="_blank" rel="noopener">小报童 · 纯银</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Garry Tan（Y Combinator CEO）：「绅士科学家时代回来了」</h3>
+      <p>Garry Tan 发了一条只有一句话的推文：「Era of the Gentleman Scientist is so back。」绅士科学家（Gentleman Scientist）指 18-19 世纪那批用私人财力和纯粹好奇心驱动系统性科学探索的个人，如达尔文、法拉第——他们不依托机构，不受项目考核约束，靠自己的资源和热情推进严肃研究。</p>
+      <p>Tan 的判断是：AI 正在重新赋予个人这种能力。当一个人可以用 AI 快速搜集文献、设计实验、处理数据、生成代码，机构资源不再是进行高质量探索的必要条件。这呼应了 TLDR 今日另一篇文章「The Most Human Technology Ever Made」的核心论点：过去的创作和探索瓶颈是「积累多年技能、筹集资金、组建团队、获得许可」，AI 正在解除这些门槛。</p>
+      <p><strong>「绅士科学家时代回来了」说的不是业余爱好者，而是有系统性探究能力的个人——AI 让这件事的成本第一次回到个人可承担的范围。</strong></p>
+      <cite><a href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.08964" target="_blank" rel="noopener">Long-Horizon-Terminal-Bench：46个长时程终端任务、密集奖励设计，揭示规划质量才是真正的 Agent 瓶颈</a></h3>
+      <p><strong>现状：</strong>现有终端 Agent 基准（Benchmark，即评测标准任务集）主要测短平快的任务，只记录最终对错，忽略中间过程——这导致评分稀疏，看不出 Agent 在哪个子步骤卡住。</p>
+      <p><strong>问题：</strong>长时程任务（Long-Horizon Task，指需要跨越数十到数百步才能完成的任务）中，Agent 频繁在进行到一半时超时退出，即使主动停止也往往是因为自我验证能力弱而非真正完成。</p>
+      <p><strong>解决方案：</strong>Long-Horizon-Terminal-Bench 构建了 46 个任务，覆盖实验复现、软件工程、多模态分析、交互游戏、科学计算等 9 类场景，每个任务分解为细粒度子目标，提供密集奖励（Dense Reward，即每完成一个子步骤都有信号，而非只有最终得分），捕捉局部进展。</p>
+      <p><strong>价值：</strong>关键发现：单纯扩大推理规模（Inference Scaling，即让模型思考更多步）或拉长上下文窗口，对长时程任务帮助有限；规划质量（明确目标、追踪进度、做出有依据的停止决策）才是真正的短板。</p>
+      <p><strong>未来方向：</strong>需要更好的规划机制、更强的记忆与进度追踪、更校准的「我该停了还是该继续」判断能力。</p>
+      <cite><a href="https://arxiv.org/abs/2607.08964" target="_blank" rel="noopener">arXiv 2607.08964</a> · HuggingFace Papers</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.05804" target="_blank" rel="noopener">TurnOPD：按轮次分配在策略蒸馏资源，让长时程 Agent 训练更高效</a></h3>
+      <p><strong>现状：</strong>在策略蒸馏（On-Policy Distillation，一种用强模型「教师」监督弱模型「学生」训练的方法）中，KL 散度信号（衡量两个模型输出差异的指标）在多轮对话里严重向早期轮次偏斜，后期轮次的关键但稀少的决策点被忽视。</p>
+      <p><strong>问题：</strong>标准 OPD 固定展开深度、对全轨迹的 KL 取平均，导致大量算力浪费在低价值的尾部轮次，而最重要的中后期决策点反而缺乏监督信号。</p>
+      <p><strong>解决方案：</strong>TurnOPD 根据轮次级统计数据动态分配展开深度和 KL 聚合权重，优先训练信息密度最高的轮次，而非平均对待每个对话步骤。</p>
+      <p><strong>价值：</strong>在长时程 Agent 任务上，TurnOPD 显著提升了训练效率，同等计算预算下达到更高的任务成功率。</p>
+      <cite><a href="https://arxiv.org/abs/2607.05804" target="_blank" rel="noopener">arXiv 2607.05804</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.08768" target="_blank" rel="noopener">UniClawBench：主动式 Agent 的通用评测基准，无需明确指令即预判用户需求</a></h3>
+      <p><strong>现状：</strong>现有 Agent 基准大多测试「响应式」Agent，即给明确指令才执行——但真实工作中更有价值的 Agent 能主动预测需要什么并提前准备。</p>
+      <p><strong>问题：</strong>主动式 Agent（Proactive Agent）缺乏统一评测框架，无法横向比较不同系统在真实世界任务上的主动性和准确性。</p>
+      <p><strong>解决方案：</strong>UniClawBench 提供涵盖多类真实世界任务的统一基准，专门测量 Agent 在没有完整明确指令时的预判准确率和执行质量。</p>
+      <p><strong>价值：</strong>为「下一代 Agent」的开发提供了一个更贴近真实使用场景的评测参照，促使模型不只会执行而且会预判。</p>
+      <cite><a href="https://arxiv.org/abs/2607.08768" target="_blank" rel="noopener">arXiv 2607.08768</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.06482" target="_blank" rel="noopener">Data Analysis in the Wild：用真实数据集评测 LLM 数据分析能力，揭示现有模型对真实数据复杂性的盲区</a></h3>
+      <p><strong>现状：</strong>现有 LLM 数据分析基准（如 NL4DV、ChartQA）使用整洁规范的合成或精选数据集，测试出来的模型在实际数据分析场景中表现大幅下降。</p>
+      <p><strong>问题：</strong>真实数据集有缺失值、类型混乱、命名不规范、跨列依赖等复杂性，现有模型对这些噪声极度脆弱。</p>
+      <p><strong>解决方案：</strong>构建基于真实世界数据集的评测基准，覆盖表格问答（Table QA）和数据洞察生成（Table Insight）两类任务，系统测量模型在有数据复杂性条件下的实际能力。</p>
+      <p><strong>价值：</strong>研究发现顶级 LLM 在真实数据上的表现显著弱于整洁数据，揭示了「数据清洗能力」和「数据理解鲁棒性」是下一步需要专门提升的方向。</p>
+      <cite><a href="https://arxiv.org/abs/2607.06482" target="_blank" rel="noopener">arXiv 2607.06482</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.16215" target="_blank" rel="noopener">PACT：用特权轨迹协同训练多轮工具调用 Agent，弥补学生模型的局部视野盲区</a></h3>
+      <p><strong>现状：</strong>多轮工具调用 Agent（Multi-Turn Tool-Use Agent）训练中，学生模型只能看到自己产生的轨迹，而正确的工具调用序列往往需要在全局视角下才能判断——这造成训练信号不足。</p>
+      <p><strong>问题：</strong>单纯模仿学习（Imitation Learning）的问题是：如果模型在某步产生了偏差，后续步骤就缺乏有效的监督信号，错误会累积。</p>
+      <p><strong>解决方案：</strong>PACT（Privileged Trace Co-Training，特权轨迹协同训练）引入一个拥有完整轨迹视图的教师模型，在学生产生局部偏差时提供补充监督信号，使训练对偏差更鲁棒。</p>
+      <p><strong>价值：</strong>在多轮工具调用任务上，PACT 相比纯模仿学习和标准强化学习基线显著提升了成功率，且对更长的工具链组合表现出更好的泛化性。</p>
+      <cite><a href="https://arxiv.org/abs/2606.16215" target="_blank" rel="noopener">arXiv 2606.16215</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li><strong>Thibault Sottiaux（OpenAI）：明天可能是 8M 用户庆祝日</strong>。他在 X 上暗示 Codex 和 ChatGPT Work 即将突破 800 万，并会给用量重置庆祝。<a class="glance-src" href="https://x.com/thsottiaux" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+      <li><strong>Cat Wu（Anthropic）：Claude Artifacts 重大升级</strong>。「Artifacts just got an upgrade!」——升级后 Artifacts 更具表现力，可以组合使用，创作仪表盘、互动式展示等更复杂的内容。<a class="glance-src" href="https://x.com/_catwu" target="_blank" rel="noopener">X @_catwu →</a></li>
+      <li><strong>@trq212（Anthropic）：Artifacts 仪表盘组合是最喜欢的新玩法</strong>。「This makes artifacts much more expressive and can be combined in creative ways. One of my favorites is to create a dashboard.」<a class="glance-src" href="https://x.com/trq212" target="_blank" rel="noopener">X @trq212 →</a></li>
+      <li><strong>Amjad Masad（Replit CEO）：训练进度实时可见，感觉像当年的 Vibe Coding，但这次在训练个人模型</strong>。他用 Ramp CLI 搭出了一套实时追踪模型训练进度的工作流，感叹「it feels like early vibe coding except it's making personal models」。<a class="glance-src" href="https://x.com/amasad" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li><strong>Aaron Levie（Box CEO）：AI 市场会出现三层结构</strong>——前沿模型层（Frontier，算力竞赛）、开源权重层（企业自主部署、成本可控）、应用层（领域专用模型）。多模型路由（根据任务成本和质量需求动态选择模型）是企业 AI 策略的核心基础设施问题，而非单纯的供应商选择。<a class="glance-src" href="https://x.com/levie" target="_blank" rel="noopener">X @levie →</a></li>
+      <li><strong>Zara Zhang：AI 采用的三个层级，大多数组织停留在第二层</strong>。第一层：使用现有 AI 工具；第二层：用 AI 重新设计工作流程；第三层：以 AI 为核心重新设计业务本身。大多数企业在第二层的工具层面徘徊，而非真正进入业务层重构。<a class="glance-src" href="https://x.com/zarazhangrui" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+      <li><strong>Nikunj（Ramp）：用 Claude Fable + Ramp CLI 一键构建 Ramp-Autofill 自动填表技能</strong>，语音提示驾车中完成，「Ramp 的核心使命是省钱 AND 省时间」。<a class="glance-src" href="https://x.com/nikunj" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li><strong>Adityaag：「我也搞不清楚我在用 Codex 还是 ChatGPT」</strong>——直接点出 OpenAI 把 Codex App 和 ChatGPT 合并后带来的身份混乱，「but I do know that I am asking a AGI LEVEL coding agent」，用体验反差说明的是产品命名已跑不过能力演进的速度。<a class="glance-src" href="https://x.com/adityaag" target="_blank" rel="noopener">X @adityaag →</a></li>
+      <li><strong>Peter Yang（Product Manager）：直接点评 SF 名餐厅</strong>——Singlethreads 花朵寿司、Benu 千年蛋、Californios 墨西哥街边更好、Birdsong 那顿记忆犹新。科技圈 PM 的直率吃货视角。<a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li><strong>@thenanyu：「Chinese room」</strong>——简短两字引出哲学话题：Chinese Room 是哲学家 John Searle 设计的思想实验，质问「按规则处理符号」和「真正理解语言」是否是同一件事，正是当前 LLM 能力辩论的核心原典。<a class="glance-src" href="https://x.com/thenanyu" target="_blank" rel="noopener">X @thenanyu →</a></li>
+      <li><strong>Every.to 推出 All Access 捆绑包</strong>：$500/年，含 Codex $1000 额度、Cursor Pro+ 一年、Claude Max 一个月等 $7000+ 价值。主编 Dan Shipper 坦白：昨晚一夜不小心跑了 20 亿 token 的 GPT-5.6-Sol，「值得」。<a class="glance-src" href="https://every.to" target="_blank" rel="noopener">Every.to →</a></li>
+      <li><strong>Starship 第 13 次测试飞行本周四</strong>：舱内首次装载真实 Starlink V3 卫星（不进入正式运营网络），计划短暂建立激光通信链接后让卫星大气再入烧毁。<a class="glance-src" href="https://links.tldrnewsletter.com" target="_blank" rel="noopener">TLDR →</a></li>
+      <li><strong>多州 AG 本周起诉阻止 Paramount 与 Warner Bros. Discovery $1110 亿并购</strong>：理由是大片市场竞争受损，Paramount 称已准备应对合规问题，计划三季度完成交割。<a class="glance-src" href="https://links.tldrnewsletter.com" target="_blank" rel="noopener">TLDR →</a></li>
+      <li><strong>WebMCP：为 AI Agent 暴露结构化工具调用的 Web 标准提案</strong>。Cloudflare 同期宣布与 OpenAI 合作，以网络信号覆盖全球 20% 的 Web，提升 AI 回答的准确性和时效性。<a class="glance-src" href="https://links.tldrnewsletter.com" target="_blank" rel="noopener">TLDR →</a></li>
+      <li><strong>Apple SpeechAnalyzer 首测：错误率比旧 API 低 3.5-4 倍，计算量仅 Whisper Small 的三分之一</strong>。英文语音识别上，SpeechAnalyzer 已成苹果硬件上最强的本地化选项，但多语言覆盖和跨平台仍是 Whisper 优势。<a class="glance-src" href="https://links.tldrnewsletter.com" target="_blank" rel="noopener">TLDR →</a></li>
+      <li><strong>General Fusion 借壳上市纳斯达克</strong>：Bezos 支持的磁化靶聚变公司，目标 2035 年建成商业核聚变电站，CEO 接受采访谈路线图。<a class="glance-src" href="https://links.tldrnewsletter.com" target="_blank" rel="noopener">TLDR →</a></li>
+      <li><strong>Simon Willison：uvx in GitHub Actions 的缓存友好写法</strong>。如何在 CI 里用 uvx 运行 Python 工具，同时避免每次都重新拉取依赖，是 Python 工具链在 AI 时代 CI 场景的小优化指南。<a class="glance-src" href="https://simonwillison.net" target="_blank" rel="noopener">simonwillison.net →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-07-13.html">← JUL 13</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
