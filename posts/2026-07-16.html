@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — July 16, 2026</title>
+  <meta name="description" content="Stripe 联手私募 Advent 出价 530 亿美元收购 PayPal，史上最大金融科技并购案；Thinking Machines Lab 发布 975B 参数开源模型 Inkling，Mira Murati 亲历开发、全权重公开；xAI grok-build 开源后被证实一直将用户完整 git 仓库上传至云端，隐私开关不起作用。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">July 16, 2026</h1>
+
+  <p class="post-lead">Stripe 联手私募 Advent 出价 530 亿美元收购 PayPal，史上最大金融科技并购案；Thinking Machines Lab 发布 975B 参数开源模型 Inkling，Mira Murati 亲历开发、全权重公开；xAI grok-build 开源后被证实一直将用户完整 git 仓库上传至云端，隐私开关不起作用。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://techcrunch.com/2026/07/15/stripe-and-advent-reportedly-offered-to-buy-paypal-for-around-53-4b/" target="_blank" rel="noopener">Stripe + Advent 出价 530 亿美元收购 PayPal：金融科技史上最大并购案，7 月 20 日董事会表态</a></h3>
+      <p>Stripe 联合私募基金 Advent International 向 PayPal 提出收购邀约，报价每股 60.50 美元，对应总估值约 534 亿美元，较 PayPal 上周五收盘价溢价 28%。据 Bloomberg，报价背后有约 500 亿美元的银行融资承诺，若最终成交，Stripe 与 Advent 各持 50% 股权。PayPal 董事会计划最早 7 月 20 日讨论这一要约，同时已聘用高盛和 Evercore 提供财务顾问服务。</p>
+      <p>这笔交易的结构颇为罕见：一家风险投资支持的私人公司（Stripe）联合私募基金，试图收购一家 S&amp;P 500 成份股上市公司。PayPal 曾在 2021 年巅峰时期市值超过 3000 亿美元，如今仅剩约 420 亿，正处于新任 CEO 主导的艰难重振期。Stripe 此举若成功，将一次性获得 PayPal 遍及全球的商家网络和消费者支付账户体系，省去自建的十年周期。</p>
+      <cite><a href="https://techcrunch.com/2026/07/15/stripe-and-advent-reportedly-offered-to-buy-paypal-for-around-53-4b/" target="_blank" rel="noopener">TechCrunch</a> · <a href="https://www.cnbc.com/2026/07/15/stripe-advent-offer-to-buy-paypal-for-more-than-53-billion-reuters.html" target="_blank" rel="noopener">CNBC</a> · <a href="https://links.tldrnewsletter.com" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/" target="_blank" rel="noopener">Thinking Machines Lab 发布 Inkling：Mira Murati 团队首个自训练开源模型，975B 参数、多模态、百万 token 上下文</a></h3>
+      <p>前 OpenAI CTO Mira Murati 创立的 Thinking Machines Lab 正式发布首款模型 Inkling。技术规格：975B 总参数 / 41B 活跃参数（Mixture-of-Experts 架构，即每次推理只激活其中一部分参数以降低成本），支持 100 万 token 上下文窗口，在 45 万亿 token 的文本、图像、音频、视频上预训练，具备原生多模态推理能力。模型全权重以 Apache 2.0 协议开源，可在 Hugging Face 下载，同日起在 Together AI、Fireworks、Modal、Databricks、Baseten 等推理平台上线。</p>
+      <p>团队的定位策略值得注意：Inkling 明确不追求跑分第一，而是把「可定制性」和「高效推理」作为核心差异化。John Schulman（联合创始人，前 OpenAI）透露，预训练从去年冬天便已开始。AINews 报道称，独立评测者认为 Inkling 是迄今最强的美国原产 Apache 2.0 开源模型，不过在部分 benchmark 上仍落后于顶级中国开源模型和闭源模型。同期还发布了 Inkling-Small（12B 活跃参数），供成本和延迟敏感场景使用。</p>
+      <cite><a href="https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/" target="_blank" rel="noopener">TechCrunch</a> · <a href="https://www.latent.space/p/ainews" target="_blank" rel="noopener">Latent Space / AINews</a> · <a href="https://www.theaivalley.com" target="_blank" rel="noopener">AI Valley</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://simonwillison.net/2026/Jul/15/grok-build/" target="_blank" rel="noopener">xAI grok-build 开源后被证实：「改善模型」开关关掉仍在上传，整个 git 仓库含历史记录全部发送至云端</a></h3>
+      <p>xAI 的命令行编程工具 grok-build 在 7 月 15 日以 Apache 2.0 协议开源，但开源本身带出了更大的问题。安全研究员的网络流量分析证实：grok-build 在运行时会将用户整个 git 仓库（含完整提交历史、已提交的密钥、SSH 密钥等）打包上传至 xAI 的 Google Cloud Storage 存储桶，上传数据量约为实际编程任务所需量的 27,800 倍。工具界面中「改善模型（Improve the model）」开关的描述具有严重误导性：关闭它仅意味着你的数据不被用于模型训练，并不阻止数据离开你的机器。Simon Willison 指出，开源后的代码库（84 万行 Rust）中，负责上传的代码仍然存在，只是被一个服务端下发的配置标志（`disable_codebase_upload: true`）在运行时关闭——xAI 随时可以在不更新客户端的情况下重新启用。</p>
+      <p>这是一个关于「技术上可以做到」和「用户被告知的」之间存在巨大鸿沟的典型案例。开源让社区看到了后门，但也暴露了 xAI 仍保留重新开启它的能力。</p>
+      <cite><a href="https://simonwillison.net/2026/Jul/15/grok-build/" target="_blank" rel="noopener">Simon Willison</a> · <a href="https://www.theregister.com/ai-and-ml/2026/07/16/spacex-open-sources-grok-build-after-data-retention-furore/5272333" target="_blank" rel="noopener">The Register</a> · <a href="https://thehackernews.com/2026/07/grok-build-uploads-entire-git.html" target="_blank" rel="noopener">The Hacker News</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3><a href="https://every.to/context-window/the-case-against-skills" target="_blank" rel="noopener">Every.to：你叠加的 Skills 正在让 frontier model 变蠢——49 个公开 skills 测试，只有 7 个真正有用</a></h3>
+      <p>Every.to 的科技咨询负责人 Mike Taylor 提出了一个与主流「Skills 越多越好」的风气截然相反的判断：随着 frontier model 能力的跳跃式提升，你精心搭建的 skill 库很可能正在降低 AI 的表现。每个 skill 都是一份额外的指令，当模型本身已经「知道该怎么做」时，多余的 skill 会与模型的训练权重产生冲突，导致更多错误，还会大幅增加每次请求的 token 消耗。</p>
+      <p>研究数据支撑了这个判断。SWE-Skills-Bench（一个测试 skills 是否让 agent 更擅长软件工程任务的基准）评估了 49 个公开流传的 software engineering skills：39 个对性能没有任何影响，3 个让表现更差，只有 7 个带来了真正的提升。表现最差的 skill 让 token 消耗飙升了 451%，什么结果都没有改善。成功的 7 个 skills 都有一个共同点：它们提供了模型无法自行掌握的专属信息，比如财务风险计算公式或公司内部的交通调度规则。</p>
+      <p>Taylor 的结论：skill 的价值有保质期。当一个新版本的模型把你的 skill 所补丁的盲点内化为能力时，那个 skill 就从有用变成了有害。唯一不会过期的 skills，是那些给模型提供它不可能从公开数据中学到的东西：你的写作风格、公司模板、内部数据，或特定的工作流顺序。</p>
+      <p><strong>49 个 skills 测了 39 个无用、3 个负优化。检查你的 skill 库，比新增 skill 更重要。</strong></p>
+      <cite><a href="https://every.to/context-window/the-case-against-skills" target="_blank" rel="noopener">Every.to — Context Window</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Garry Tan（Y Combinator CEO）：Skill files 最大的价值是可移植性，让你不必为换模型重写整套工作流</h3>
+      <p>Garry Tan 在 X 上给出了一个和 Every.to 部分呼应、但重心不同的判断：skill files（以 Markdown 格式写成的可复用指令包）最重要的属性不是让模型更聪明，而是「可移植性」。他的逻辑是：当你的工作流被封装进一个独立于任何模型的 skill file，你就可以在 Fable 5、GPT-5.6 或未来某个新模型之间随时切换，而不必重写提示词、重建上下文。Skill files 是你的工作流资产，不是模型的附属品。</p>
+      <p>这和 Every.to 的批评并不矛盾：Every.to 说的是「不要用 skills 去补丁模型的通用能力」，Garry Tan 说的是「用 skills 去编码只有你自己才知道的私有工作流」。两者合起来其实是一条完整的建议：技巧不在于 skills 的数量，而在于 skills 的内容是否提供了模型无法自行学到的信息。</p>
+      <p><strong>模型会换，工作流不应该每次都重建——这才是 skill files 真正值得投资的理由。</strong></p>
+      <cite><a href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Boris Cherny（@bcherny）：自动化的真正价值，是让更多人能轻松参与贡献</h3>
+      <p>Anysphere（Cursor 母公司）工程师 Boris Cherny 在 X 上发了一条影响广泛的思考：自动化最重要的意义，不是替代重复劳动，而是「让更多人可以轻松做出贡献」。他的具体语境是工程团队的基础设施文档——CLAUDE.md 文件、skills、Agent harness（运行 Agent 的脚手架：提示词、工具、测试框架的集合）等——当这些被写好，一个非工程师背景的同事，或者一个刚加入的新人，也能通过 Agent 完成原来只有资深工程师才能独自完成的任务。</p>
+      <p>Peter Steinberger（PSPDFKit 作者，独立开发者）转发并引用了这条推文，加注「基本属实，5.6 确实无情」。两者合看，指向的是同一个信号：当 Agent 的能力足够强，谁把自己的工作流和知识「编码进基础设施」，谁就得到了团队乘数效应。</p>
+      <p><strong>自动化降低了贡献的门槛，但前提是有人先把知识和流程写进可被机器理解的文档里。这个「先写」的动作，本身就是竞争优势。</strong></p>
+      <cite><a href="https://x.com/bcherny" target="_blank" rel="noopener">X @bcherny</a> · <a href="https://x.com/steipete" target="_blank" rel="noopener">X @steipete</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3>Dan Shipper（Every.to 创始人）：Granola CEO 谈 Codex-native app 的下一战场——主动提醒、而非被动回答</h3>
+      <p>Dan Shipper 在 X 上发布了与 Granola（AI 会议记录应用）CEO 的深度对话记录。核心观点是：下一代 AI 产品的竞争焦点，不是「用户问、AI 答」，而是「AI 主动发现用户还没意识到自己需要的东西」——Granola 把这叫做「proactive features（主动功能）」，在用户没有触发的情况下，根据会议上下文主动生成待办、提醒或洞察。</p>
+      <p>Shipper 同时引用了一个更深层的概念：「Codex-native app（原生支持 Coding Agent 操作的应用）」——这类产品在设计上就预设了 coding agent 而非人类手指会直接操作它，UI 决策因此截然不同：更少视觉噪音、更多结构化输出、更清晰的可调用接口。他认为这是 AI 应用在设计哲学上最实质性的分叉点，而 Granola 正试图走在这条路上。</p>
+      <p><strong>Proactive AI 不是更好的搜索框——它是把注意力管理外包给 AI。如果产品本身就能帮你注意到你该注意的，它在用户工作流中的地位就从工具变成了伙伴。</strong></p>
+      <cite><a href="https://x.com/danshipper" target="_blank" rel="noopener">X @danshipper</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Guillermo Rauch（Vercel CEO）：Vercel Sandbox 每月 DAU 翻倍，每天 350 万个沙盒被创建</h3>
+      <p>Vercel CEO Guillermo Rauch 在 X 上公布了 Sandbox（Vercel 的代码运行沙盒服务，可让 AI Agent 在隔离环境中安全执行代码，而不影响生产系统）的最新增长数据：月度 DAU（日活用户数）以 100% 的速度环比增长，每天被创建的沙盒数量超过 350 万。Rauch 同时展示了用户正在探索的新用例，包括把沙盒接入 Web Analytics API，让 agent 直接读取网站分析数据并自动采取行动。</p>
+      <p>这个数字背后的信号：AI Agent 需要一个「可以乱搞而不出事」的隔离空间，沙盒正成为 Agent 基础设施中增长最快的组件。当每天有 350 万个沙盒被创建，意味着同等数量的自动化任务正在无人值守的情况下运行。</p>
+      <p><strong>沙盒的爆发式增长，证明了 Agent 时代对「安全执行环境」的需求远比想象中更迫切，也更早到来。</strong></p>
+      <cite><a href="https://x.com/rauchg" target="_blank" rel="noopener">X @rauchg</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Peter Yang（@petergyang）：ChatGPT Live 和 Codex 两个强大产品互不交流，整合是下一个最大机会</h3>
+      <p>产品负责人 Peter Yang 在 X 上指出了 OpenAI 当前最明显的产品摩擦点：ChatGPT Live（实时语音对话模式）和 Codex（AI 编程 Agent）是两个相互独立的产品，彼此没有工具调用（Tool Call，即 AI 在对话中主动调用外部服务或功能的能力）的集成——你用语音和 AI 交谈，但无法通过语音直接触发 Codex 去写代码、跑测试、提交变更。他的类比是：「需要一个钢琴踏板，踩下去就开启笔记本麦克风」——手动切换的摩擦感已经影响了实际使用。</p>
+      <p>这是产品整合滞后于能力扩张的典型症状：OpenAI 快速推出了多个强大能力，但这些能力之间的「管道」还没建好。Yang 认为，把 Live 和 Codex 打通，是当前成本最低、价值最大的产品决策。</p>
+      <p><strong>能力的叠加不等于产品的提升——两个强大功能中间有摩擦，体验等于零。整合比新功能更难，因为它需要有人说「这件事没人做，但应该是我们做」。</strong></p>
+      <cite><a href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3>Zara Zhang（Gradient Ventures）：从未用传统方式学编程，coding agents 对我来说是「创作伙伴」，不是捷径</h3>
+      <p>Zara Zhang 在 X 上分享了一段关于自己与编程关系的反思：她从未按照传统路径学过编程，对她而言，coding agents 从一开始就是她表达想法的工具，而不是对「正确编程方式」的替代或捷径。这个视角和大多数工程师截然不同——对工程师来说，agents 是提效工具；对 Zara 来说，agents 是让她第一次能够把脑子里的东西「直接做出来」的语言。</p>
+      <p>她同时提到 Shopify 的 agent 设计案例——如何让 agent 在公司内部真正「工作起来」，需要的不只是接入 API，而是把公司内部的流程、权限、上下文全部翻译成 agent 可以理解的语言。这和今天 Every.to 的 skills 讨论呼应：agent 能力的天花板，往往不是模型本身，而是使用者有没有把私有知识编码进去。</p>
+      <p><strong>对从未按传统路径入行的人来说，AI coding agents 不是降低门槛，而是换了一扇门。这扇门开向的，是更多样化的创造者群体。</strong></p>
+      <cite><a href="https://x.com/zarazhangrui" target="_blank" rel="noopener">X @zarazhangrui</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Aditya Agarwal（创业者）：「创新最神奇的地方，是你真的可以直接去做那件事」</h3>
+      <p>Aditya Agarwal 在 X 上分享了一句话，读起来像常识，仔细想却不平凡：「创新最神奇的地方，是你可以直接去做那件事。」这句话的背景是 AI 工具大规模普及的 2026 年——过去需要一个团队、半年时间、大量资金才能验证的想法，现在一个人花几天就能搭出原型。这不只是效率的提升，而是「可以做」和「不可以做」之间边界的重绘。</p>
+      <p>这种「直接去做」的心态，恰好是当下最稀缺的资产之一。有更多人懂技术，有更多工具降低门槛，但真正把想法从脑子里做出来的人，仍然是少数。AI 工具消除了执行障碍，但没有消除「决定去做」这个最难的一步。</p>
+      <p><strong>当「做不到」不再是借口，「不去做」就变成了唯一需要解释的事。</strong></p>
+      <cite><a href="https://x.com/adityaag" target="_blank" rel="noopener">X @adityaag</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.08964" target="_blank" rel="noopener">Long-Horizon-Terminal-Bench：46 项长任务实测 agent 极限，当前最强模型成功率仅 15.2%</a></h3>
+      <p><strong>现状：</strong>现有 agent benchmark 大多是「短冲刺」任务——几分钟内完成、最终只看对错。这遮蔽了 agent 在真实工作中面对的核心困难：长时间规划、反复调试、环境摩擦和中途失败后的恢复能力。</p>
+      <p><strong>问题：</strong>缺乏能评估 agent「走多远」而非「有没有到终点」的评测框架。一个在最后一步出错的 agent 和一个毫无进展的 agent，在 pass/fail 指标下毫无区别。</p>
+      <p><strong>解决方案：</strong>Long-Horizon-Terminal-Bench 包含 46 项跨越 9 个类别的长任务（实验复现、软件工程、多模态分析、交互式游戏、科学计算等），每项任务最长允许运行 90 分钟，并以细粒度子任务打分（dense reward，即中间步骤也给分），而非只看最终结果。</p>
+      <p><strong>价值：</strong>在 0.95 奖励阈值下，测试中最强的模型 pass@1 仅为 15.2%；要求完美完成时仅 10.9%。这意味着当前最强 agent 在 5 项长任务中有 4 项无法可靠完成。</p>
+      <p><strong>未来方向：</strong>作者来自腾讯 HY LLM Frontier 和马里兰大学等机构，数据集已公开在 Hugging Face。该基准或将成为评估下一代 agent 系统长程规划能力的重要标尺。</p>
+      <cite><a href="https://arxiv.org/abs/2607.08964" target="_blank" rel="noopener">arXiv 2607.08964</a> · <a href="https://huggingface.co/papers/2607.08964" target="_blank" rel="noopener">HuggingFace Papers</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.09024" target="_blank" rel="noopener">GenCeption：视频生成模型即通用视觉学习器——用文生视频的 backbone 做深度估计、分割、姿态预测</a></h3>
+      <p><strong>现状：</strong>大规模文生视频模型（text-to-video diffusion models，即通过文字描述生成视频的扩散模型）在训练过程中积累了丰富的时空先验和视觉-语言对齐能力，这是传统视觉模型不具备的。</p>
+      <p><strong>问题：</strong>这些能力至今主要用于生成内容，而非视觉感知任务（如深度估计、表面法线预测、相机位姿估计等）。</p>
+      <p><strong>解决方案：</strong>GenCeption 把预训练好的视频生成扩散模型的 backbone 直接迁移，通过文本指令引导它完成感知任务，而非生成任务，无需从头训练专用感知模型。</p>
+      <p><strong>价值：</strong>在深度估计、表面法线、相机位姿估计、分割和 3D 关键点预测等任务上达到 state-of-the-art 水准，多项超越专用模型。这验证了「生成式预训练 → 感知任务迁移」的范式可行性。</p>
+      <p><strong>未来方向：</strong>如果视频生成模型成为通用视觉基础，那么花在生成能力上的算力，也在为机器人、自动驾驶、AR 等感知任务投资——两用性大幅提高了预训练的投资回报。</p>
+      <cite><a href="https://arxiv.org/abs/2607.09024" target="_blank" rel="noopener">arXiv 2607.09024</a> · <a href="https://huggingface.co/papers/2607.09024" target="_blank" rel="noopener">HuggingFace Papers</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.10059" target="_blank" rel="noopener">AgentAbstain：LLM agent 知道「何时不该动手」吗？263 对任务测试，结果不乐观</a></h3>
+      <p><strong>现状：</strong>当前 agent 评测集中测试「agent 能做什么」，而非「agent 知不知道什么时候不该做」。过度行动（over-action）——在不应该执行操作时仍然执行——可能比失败更危险。</p>
+      <p><strong>问题：</strong>缺乏专门测试 agent 「克制能力」的基准。一个 agent 能正确完成任务，但如果它在任务条件不满足时也强行执行，它就是不安全的。</p>
+      <p><strong>解决方案：</strong>AgentAbstain 包含 263 组配对任务，跨越 42 个可执行沙盒环境。每组由一个「应该执行」的任务和一个通过受控变化（指令、工具状态或环境状态改变）派生的「应该克制」的配对任务组成。</p>
+      <p><strong>价值：</strong>测试结果表明，当前主流 LLM agent 在「应该克制」的情境下仍然倾向于行动，辨别「何时不动」的能力显著弱于「如何动」。</p>
+      <p><strong>未来方向：</strong>这对 agent 在生产环境的部署有直接含义：给 agent 更强的能力之前，需要先给它更好的「停下来」的判断力。</p>
+      <cite><a href="https://arxiv.org/abs/2607.10059" target="_blank" rel="noopener">arXiv 2607.10059</a> · HuggingFace Papers</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.02501" target="_blank" rel="noopener">Embodied.cpp：跨异构机器人的具身 AI 推理运行时，VLA 模型部署成功率达 100%</a></h3>
+      <p><strong>现状：</strong>具身 AI（Embodied AI，指能感知环境、进行决策并控制物理实体的 AI 系统）目前面临严重的部署碎片化问题：不同机器人、不同芯片、不同操作系统，每种组合都需要单独的部署工程。</p>
+      <p><strong>问题：</strong>VLA 模型（Vision-Language-Action model，即同时理解视觉输入、语言指令并输出动作的模型）和世界-动作模型（WAM）缺乏统一的跨平台推理运行时。</p>
+      <p><strong>解决方案：</strong>Embodied.cpp 是一个用 C++ 实现的可移植推理运行时，通过五层抽象（输入适配器、序列构建、骨干执行、头部插件、部署适配器）统一处理不同机器人和模拟器的部署需求，实现一套代码多平台运行。</p>
+      <p><strong>价值：</strong>在闭环控制实验中，VLA 模型部署成功率分别达 100% 和 91%；WAM 的模块内存占用从 312.2 MiB 降至 88.1 MiB（减少 72%）。</p>
+      <p><strong>未来方向：</strong>随着工厂和物流场景加速引入具身 AI，统一运行时层正在成为基础设施标准件。</p>
+      <cite><a href="https://arxiv.org/abs/2607.02501" target="_blank" rel="noopener">arXiv 2607.02501</a> · <a href="https://huggingface.co/papers/2607.02501" target="_blank" rel="noopener">HuggingFace Papers</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.07953" target="_blank" rel="noopener">KronQ：Kronecker 分解 Hessian 量化——让 LLaMA-3-70B 在 2-bit 权重下稳定运行</a></h3>
+      <p><strong>现状：</strong>模型量化（Quantization，即把模型的浮点数权重压缩为低比特整数表示，以降低显存和推理成本）是让大模型在消费级硬件上可用的关键路径。但极低比特（2-bit）量化至今是公认的难题：现有方法在 LLaMA-3-70B 规模下要么精度崩溃，要么产生无意义输出。</p>
+      <p><strong>问题：</strong>主流量化方法（GPTQ、GPTAQ 等）在确定「哪些权重对输出影响更大」时，没有充分利用梯度协方差信息，导致在 2-bit 时误差累积失控。</p>
+      <p><strong>解决方案：</strong>KronQ 使用 Kronecker 分解 Hessian 近似（一种用于估计模型参数重要性的数学工具）来权衡不同输出通道的重建优先级，使量化误差更均匀地分布，而非集中在少数关键权重上。</p>
+      <p><strong>价值：</strong>在 LLaMA-3-70B 的 2-bit 权重量化下，KronQ 实现了 7.93 困惑度（Perplexity，语言模型评估指标，越低越好），而 GPTQ 和 GPTAQ 在同等条件下直接发散或输出退化。论文已被 COLM 2026 接收。</p>
+      <p><strong>未来方向：</strong>2-bit 推理如果成熟，70B 量级模型有望在单张消费级显卡上运行——这将根本性改变开源模型的可及性。</p>
+      <cite><a href="https://arxiv.org/abs/2607.07953" target="_blank" rel="noopener">arXiv 2607.07953</a> · COLM 2026</cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>OpenAI 发布 <strong>Codex Micro</strong>：$230 的 macropad，13 个机械键 + 摇杆 + 拨盘，6 个发光「Agent Keys」实时显示 agent 运行状态，为开发者管理 coding agent 舰队设计，限量协作款，非量产消费品。<a class="glance-src" href="https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex/" target="_blank" rel="noopener">TechCrunch →</a></li>
+      <li><strong>@swyx</strong>：「CUA（Computer Use Agent，即能操作计算机界面完成任务的 AI）的进展比批评者承认的快得多——现在已经在处理发票、填写门户网站、完成知识工作等真实场景。」<a class="glance-src" href="https://x.com/swyx" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li><strong>@joshwoodward</strong>（Google Labs）：Gemini Spark 为 Ultra 用户新增四项功能：直接编辑 Google Docs、在 Sheets/Slides 添加评论、更快的响应速度、并行处理多任务；同期发布 Gemini 东南亚市场报告，本地语言使用占比创新高。<a class="glance-src" href="https://x.com/joshwoodward" target="_blank" rel="noopener">X @joshwoodward →</a></li>
+      <li><strong>@thsottiaux</strong>（OpenAI）：GPT-5.6 文件删除事故已调查完毕，属于特定条件下 agent 在无沙盒（Sandbox，隔离执行环境）保护时触发的行为，已部署缓解措施；另确认 Codex Plus 和 Pro 的 5 小时时间限制已解除数日。<a class="glance-src" href="https://x.com/thsottiaux" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+      <li><strong>@levie</strong>（Box CEO）：企业 AI agent 落地的三大现实阻力：变更管理（让员工接受工作方式改变）、数据准备（让 agent 能读到正确数据）、跨部门工作流整合（agent 必须穿越组织边界）。「技术从来不是问题。」<a class="glance-src" href="https://x.com/levie" target="_blank" rel="noopener">X @levie →</a></li>
+      <li><strong>@trq212</strong>：「理想的提示策略：thin prompts（精简指令）+ thick artifacts & context（丰厚的工件和上下文）+ thin skills（克制的 skill 数量）。」与今日 Every.to 文章相互印证。<a class="glance-src" href="https://x.com/trq212" target="_blank" rel="noopener">X @trq212 →</a></li>
+      <li><strong>@steipete</strong>（PSPDFKit 作者）：「基本属实，5.6 确实无情（relentless）。」——转发 Boris Cherny 关于自动化降低贡献门槛的长帖，加注自己的判断。<a class="glance-src" href="https://x.com/steipete" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li><strong>@realmadhuguru</strong>：「有意识地使用 AI 辅助写作」的边界感——如何在 AI 能生成内容的世界里，让自己的声音保持辨识度，而不是用 AI 替自己发言。<a class="glance-src" href="https://x.com/realmadhuguru" target="_blank" rel="noopener">X @realmadhuguru →</a></li>
+      <li><strong>@thenanyu</strong>（Nan Yu）：「等等，我以为你得拼到眼睛流血、忘记怎么微笑才行。」——对 AI 时代「直接做出来」打翻传统「苦行积累」预期的调侃，戳中了不少工程师。<a class="glance-src" href="https://x.com/thenanyu" target="_blank" rel="noopener">X @thenanyu →</a></li>
+      <li><strong>@mattturck</strong>（FirstMark Capital）：「阿根廷夺冠秘方：1）在结束前 10-15 分钟落后…」——赛后随笔，硅谷 VC 也看球。<a class="glance-src" href="https://x.com/mattturck" target="_blank" rel="noopener">X @mattturck →</a></li>
+      <li><strong>@nikunj</strong>（Nikunj Kothari）：在入境排队长龙中宣布暂时退出科技 Twitter，「主的宽恕」语气戏谑。<a class="glance-src" href="https://x.com/nikunj" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li><strong>@sama</strong>（Sam Altman）：「有些人想要静音版，这让我很惊讶。」——疑为对 Codex Micro 或即将推出的 AI 硬件设备中「有动作/声音」设计的评论。<a class="glance-src" href="https://x.com/sama" target="_blank" rel="noopener">X @sama →</a></li>
+      <li><strong>OpenAI GPT-Red</strong>：内部自动化红队模型，专门攻击 OpenAI 自己的其他模型以发现 Prompt Injection（提示词注入，指恶意指令劫持 AI 行为）漏洞。GPT-Red 命中率 84%，远超人工红队的 13%，已被用于训练 GPT-5.6 Sol 的防御能力。<a class="glance-src" href="https://openai.com/index/unlocking-self-improvement-gpt-red/" target="_blank" rel="noopener">OpenAI →</a></li>
+      <li><strong>Uber vs Waymo</strong> DC 监管大战：Uber 游说反对一项将允许自动驾驶车辆独立运营的法案，要求 robotaxi（无人驾驶出租车）必须接入同时使用人类司机的平台；Waymo 支持该法案；曾经的合作伙伴关系在亚特兰大和奥斯汀仍存，但监管战场上已正式成为对手。<a class="glance-src" href="https://techcrunch.com/2026/07/13/ubers-robotaxi-lobbying-effort-has-put-it-on-a-collision-course-with-waymo/" target="_blank" rel="noopener">TechCrunch →</a></li>
+      <li><strong>现代汽车工人罢工</strong>：韩国工人要求现代汽车在 2028 年部署 Atlas 人形机器人之前获得工会书面同意，并要求基本工资保障不因自动化削减。这是首次以「人形机器人」为核心诉求的大型工厂罢工。<a class="glance-src" href="https://www.bloomberg.com/news/articles/2026-07-13/hyundai-hymtf-workers-strike-over-bonuses-ai-robot-job-security" target="_blank" rel="noopener">Bloomberg →</a></li>
+      <li><strong>GLM-5.2</strong>（智谱 AI）：744B MoE 开源 LLM，MIT 协议，可完全自托管和微调，1M token 上下文，擅长长程编程和 Agent 任务，当前不支持原生图像输入。适合把 frontier 模型工作负载迁移至自托管的团队。<a class="glance-src" href="https://www.llmreference.com/model/glm-5.2" target="_blank" rel="noopener">LLM Reference →</a></li>
+      <li>Google Play 下周起开放分发竞争性应用商店（Epic 和解落地），第三方应用商店可获得 Google Play 全量 app 目录访问权，须通过安全审核并缴纳合规费用。<a class="glance-src" href="https://links.tldrnewsletter.com" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Ben's Bites 本期焦点：本周 Fable 5 还是 GPT-5.6 Sol 用得更多？读者投票结果待揭晓；同期整理了 GLM-5.2 视觉扩展方案，可在不牺牲语言智能的前提下为其添加图像理解能力。<a class="glance-src" href="https://bensbites.beehiiv.com" target="_blank" rel="noopener">Ben's Bites →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-07-15.html">← JUL 15</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
