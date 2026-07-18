@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — July 18, 2026</title>
+  <meta name="description" content="Claude Fable 5 将于 7 月 20 日接入 Max 和 Team Premium 计划；John McCarthy 发明了「人工智能」这个词，LISP 和垃圾回收，他的哲学问题至今未解；Agents' Last Exam 测了 1000 余项经济价值任务，顶尖 agent 最难等级通过率只有 2.6%。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">July 18, 2026</h1>
+
+  <p class="post-lead">Claude Fable 5 将于 7 月 20 日接入 Max 和 Team Premium 计划；John McCarthy 发明了「人工智能」这个词，LISP 和垃圾回收，他的哲学问题至今未解；Agents' Last Exam 测了 1000 余项经济价值任务，顶尖 agent 最难等级通过率只有 2.6%。</p>
+
+  <p class="post-note">本期部分源抓取失败，内容较常规偏少。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://x.com/claudeai/status/2078302415804379218" target="_blank" rel="noopener">Claude Fable 5 接入 Max 和 Team Premium 计划，7 月 20 日起生效</a></h3>
+      <p>Anthropic 官宣旗舰模型 Fable 5（即 claude-fable-5，目前 Claude 系列中能力最强的一档）将于 7 月 20 日起向 Max 和 Team Premium 订阅用户开放。此前，Fable 5 的使用需要更高级别的 API 访问，大多数付费用户只能通过 Sonnet 系列获得日常服务。这次更新意味着 frontier model 的使用成本被系统性地下调了一级。</p>
+      <cite><a href="https://x.com/claudeai" target="_blank" rel="noopener">X @claudeai</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/thsottiaux/status/2078320950488297917" target="_blank" rel="noopener">GPT-5.6 Sol 被独立测试确认极强；OpenAI 同步重置付费用户 Codex / ChatGPT Work 额度</a></h3>
+      <p>Thibault Sottiaux 在 X 上发布独立评测结果，确认 GPT-5.6 Sol「是一个极其优秀的模型」，多项任务表现超出预期。同一天，他补充报道 OpenAI 已重置付费 Codex 和 ChatGPT Work 用户的速率上限，并推测此次重置可能连带清除了其他一些额度限制。两条消息同日出现，对重度用户来说是实质性的可用性提升。</p>
+      <cite><a href="https://x.com/thsottiaux" target="_blank" rel="noopener">X @thsottiaux</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/rauchg/status/2078305023784620342" target="_blank" rel="noopener">Guillermo Rauch：沙盒数据下载 agent 已上线，可在隔离环境（沙盒）中直接导出文件</a></h3>
+      <p>Vercel CEO Guillermo Rauch 宣布上线了一个可以在沙盒环境中下载数据的 agent，用户上传至沙盒的内容可以通过 agent 直接导出。沙盒（sandbox）是一种与主系统隔离的运行环境，通常用于安全执行不可信代码或处理临时文件。这次发布将 agent 能力进一步嵌入 Vercel 基础设施层，让数据管道的自动化操作不再需要人工介入中间步骤。</p>
+      <cite><a href="https://x.com/rauchg" target="_blank" rel="noopener">X @rauchg</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3>Swyx（Latent Space 主播）：当 AI 把「可泛化优化」做到极致，所有依赖信息差的 alpha 都会消失</h3>
+      <p>Swyx 在 X 上发了一条关于 alpha 消失的深层观察。Alpha 指的是超额收益，也就是靠技能或信息优势跑赢市场的那部分回报。他的逻辑是：当 AI 能够泛化到任何领域的优化问题，那些原本靠「我知道别人不知道的事」建立起来的竞争护城河就会逐渐被抹平——就像一个完美的预测机器出现后，利用信息差赚钱的策略就会失效。</p>
+      <p>这个判断的延伸意义不只限于金融市场。对任何依赖「专业知识稀缺性」定价的职业或商业模式而言，问题都是一样的：如果 AI 把你的核心技能变成了通用能力，你的差异化在哪里？他认为，「可泛化的优化」本身正在成为商品，而只有那些需要独特数据、独特关系或独特价值判断的地方，才能留存真正的 alpha。</p>
+      <p><strong>技能本身不是护城河，独特的语境才是。当 AI 消灭了所有可以被泛化的优势，剩下的就是那些只有你能知道的事。</strong></p>
+      <cite><a href="https://x.com/swyx/status/2078293998398263587" target="_blank" rel="noopener">X @swyx</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Madhu Guru（AI 企业顾问，realmadhuguru）：企业 AI 落地的真正瓶颈不是模型，是 evals、harness 系统和人才</h3>
+      <p>Madhu Guru 在连续两条推文里描绘了一个不那么乐观的企业 AI 现实：模型能力已经足够强，但企业真正卡住的地方是三个工程难题。第一，evals（评估体系，即衡量 AI 输出好坏的自动化测试集）普遍缺失或质量低劣，导致没人知道 AI 到底在生产环境里表现如何。第二，harness 系统（即运行 agent 的完整脚手架：提示词管理、工具调用、错误处理、监控的集合）建设成本被严重低估，大多数团队从零搭起来要比预期长好几倍。第三，既懂业务流程又能操作 AI 系统的人才极度稀缺，形成了技能错位的人才真空。</p>
+      <p>他还指出，企业 AI 的规模化路径正越来越多地通过云基础设施提供商完成（AWS、GCP、Azure），而不是直接购买 API 自建——这让厂商的捆绑策略重新变得有效。</p>
+      <p><strong>「模型不够好」已经不是主要借口，「内部没有 evals 和 harness 工程能力」才是大多数企业 AI 停在 demo 阶段的真实原因。</strong></p>
+      <cite><a href="https://x.com/realmadhuguru/status/2078131628262752550" target="_blank" rel="noopener">X @realmadhuguru</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Aaron Levie（Box CEO，levie）：AI 成本效率的压缩正在创造全栈系统性价值</h3>
+      <p>Aaron Levie 发表了一条关于 AI 经济学的宏观判断：AI 每一轮成本效率提升，都不只是某个用例变得更便宜，而是在整个 AI 生态系统里同步释放出系统性价值。他的意思是：推理成本每降一个数量级，原来无法盈利的应用就变得可行，原来只有头部公司能负担的能力就下沉到中小企业，整条价值链都跟着动。这是一个「基础设施 ROI 首次可以被测量」的历史节点。</p>
+      <p><strong>AI 成本曲线向下是不可逆的结构性趋势，每一次价格减半都是新一轮商业模式重构的起点。</strong></p>
+      <cite><a href="https://x.com/levie/status/2078139206946459853" target="_blank" rel="noopener">X @levie</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Peter Steinberger（PSPDFKit 作者，独立开发者，steipete）：Agent 架构还在讨论「循环」，还是已经转向「图」？</h3>
+      <p>Peter Steinberger 抛出一个带点刺的问题：「我们还在讨论 loops（循环，即 agent 的单线程迭代执行模式），还是已经移到 graphs 了？」这背后是一个真实的架构分叉点。Loop 是最简单的 agent 执行模型——模型持续调用工具、接收反馈、循环迭代直到完成；Graph（图）则允许 agent 根据条件分支、并发执行多条路径、甚至动态重写执行拓扑。他的潜台词是：如果你的团队仍然只在设计「while 循环里的 agent」，可能已经在认知上落后了一个周期。</p>
+      <p><strong>从 loops 到 graphs 是 agent 系统复杂度的一次质变，不只是「多加几个 if」的问题，而是整个执行模型的重新设计。</strong></p>
+      <cite><a href="https://x.com/steipete/status/2078277297791189132" target="_blank" rel="noopener">X @steipete</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3>Zara Zhang（zarazhangrui）：商业会议现在是为 Agent 录制的，不是为人</h3>
+      <p>Zara Zhang 发了一条让人顿了一下的观察：「Business meetings are now recorded for agents, not humans.」她描述的现象是，越来越多的会议开始被全程录制并转成结构化摘要，而这些摘要的主要消费者不是参会者自己，而是后续处理这些内容的 AI agent——提炼 action items、更新 CRM、生成跟进邮件、推进项目管理系统。</p>
+      <p>这个观察点的锋利之处在于：它不只是「AI 帮我做会议记录」，而是说内容生产的目的已经悄悄反转了。原本录制是为了让缺席的人类看，现在录制是为了让 agent 处理。这是一个信号——当 AI 成为信息流的主要消费者时，我们产出内容的格式、粒度和结构都要跟着变。</p>
+      <p><strong>当 agent 成为内容的第一受众，所有的内容生产逻辑都要从「人读」重写成「机器处理」。这个切换比大多数人意识到的要早。</strong></p>
+      <cite><a href="https://x.com/zarazhangrui/status/2078076500683997446" target="_blank" rel="noopener">X @zarazhangrui</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Peter Yang（petergyang）：语音正在成为 Agent 管理的首选界面，减少屏幕时间、更好控制流程</h3>
+      <p>产品经理 Peter Yang 在 X 上分享了一个个人发现：他现在更倾向于用语音（而不是打字）来管理和指挥 agent，因为这样可以显著减少盯着屏幕的时间，同时对工作流的控制感反而更强。他的直觉是：agent 管理本质上更像是「指挥和监督」，而不是「操作和点击」，语音天然更适合这种高层次的控制交互模式。</p>
+      <p>这和 Granola（AI 会议记录工具）的方向形成呼应：当 agent 承担了大量执行任务，人的角色收缩为意图表达和结果审核，界面的形态也应该随之演化。语音可能是这个方向上阻力最小的路径。</p>
+      <p><strong>如果 agent 做执行，人做方向，那么语音可能是最自然的「方向输入」界面，打字反而引入了不必要的操作层。</strong></p>
+      <cite><a href="https://x.com/petergyang/status/2078276992470794531" target="_blank" rel="noopener">X @petergyang</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://xiaobot.net/post/272e7f84-2ba6-4f83-9811-77b36ccf12cd" target="_blank" rel="noopener">纯银 × 羔羊计划：John McCarthy · AI 的哲学地基</a></h3>
+      <p>羔羊计划本期研究的是 John McCarthy——他在 1956 年创造了「人工智能（artificial intelligence）」这个词，因为他觉得原来的「自动机研究」实在太寡淡，没人明白他在做什么。他的研究动线不是「怎么让机器更快」，而是「机器如何理解世界」：知识不是过程，而是可以被推理的声明；计算的本质不是执行步骤，而是对表达式求值。</p>
+      <p>为了让机器操作符号（而不只是数字），他发明了 Lisp——代码和数据具有同样的结构，程序可以操作自己。为了让动态符号推理不把所有精力都耗在追踪指针上，他顺带发明了垃圾回收（garbage collection）：系统自动清理不再被引用的内存，今天的 Java、Python、JavaScript 都建立在这个思想之上。</p>
+      <p>纯银团队还深入还原了他 1959 年的论文《具有常识的程序》和 1969 年的《从 AI 的立场看几个哲学问题》，后者提出了「框架问题（frame problem）」——当 agent 执行一个动作后，如何知道世界上哪些事情「没有改变」？这个问题困扰了 AI 研究数十年，在今天的 agent 系统里仍然以各种形式出现。</p>
+      <p>McCarthy 的标准很高：「一个哲学系统，如果不能被转化为计算机程序，就太模糊了。」他不是在解决哲学问题，而是在厘清思维方式。</p>
+      <p><strong>McCarthy 把哲学变成了工程标准：能不能被程序化，才是判断一个思想是否严谨的最终测试。这个尺子放到今天，依然锋利。</strong></p>
+      <cite><a href="https://xiaobot.net/p/sheeppress/" target="_blank" rel="noopener">小报童 · 纯银（羔羊计划）</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://kk.org/thetechnium/better-than-free/" target="_blank" rel="noopener">Tim Ferriss × Kevin Kelly：「Better Than Free」——AI 时代什么是值得付费的？</a></h3>
+      <p>Tim Ferriss 在本周 5-Bullet Friday 里推荐了 Kevin Kelly（《连线》杂志联合创始人）2008 年写的一篇文章「Better Than Free」。文章的出发点是：当复制东西的边际成本趋近于零时，商业模式靠什么？Kelly 的答案是八种「比免费更有价值」的属性，这些属性无法被简单复制：即时性（immediacy，发布前第一时间拿到）、个性化（personalization，专为你定制）、诠释（interpretation，懂你的上下文帮你用好）、真实性（authenticity，可验证的原版）、可及性（accessibility，随时随地、跨设备访问）、体现（embodiment，实体/现场的不可替代性）、赞助（patronage，直接支持创作者本身）、可发现性（findability，帮你在海量内容里找到这个）。</p>
+      <p>Ferriss 在 AI 时代重读这篇文章是有原因的：他最近写了「AI 是否已经杀死了非虚构操作类书籍？」，读者推荐他看 Kelly 的这篇作为配套。两篇合看，逻辑是：「1000 个真粉」告诉你谁会为你付钱，「Better Than Free」告诉你卖给他们什么——必须是那些不可被 AI 直接替代的东西。</p>
+      <p><strong>2008 年写的八条护城河，2026 年拿出来对照一遍，每一条都更值钱了——因为 AI 让所有可以复制的东西更容易复制，这八条的不可复制性反而更显眼。</strong></p>
+      <cite><a href="https://tim.blog/2026/07/18/5-bullet-friday/" target="_blank" rel="noopener">Tim Ferriss 5-Bullet Friday</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Nassim Nicholas Taleb（via Tim Ferriss）：哲学洞见与闲暇的反转</h3>
+      <p>本周 5-Bullet Friday 收录的一条 Taleb 语录，值得单独拎出来看：「For the classics, philosophical insight was the product of a life of leisure; for me, a life of leisure is the product of philosophical insight.（对古人来说，哲学洞见是闲暇的产物；对我来说，闲暇是哲学洞见的产物。）」</p>
+      <p>古代哲学家靠有钱有闲才能思考，Taleb 把这个因果关系翻转了：他是先想清楚了某些道理，才争取到了不受干扰的生活方式。这个反转的意思不只是「智识换来自由」，更是说——正确的世界模型（对风险、对概率、对反脆弱性的理解）本身就是最实用的生存工具。</p>
+      <p><strong>「想清楚了怎么活」本身就是一种资产，而不是奢侈品。Taleb 在说的是：哲学洞见不是闲暇的点缀，而是前提条件。</strong></p>
+      <cite><a href="https://tim.blog/2026/07/18/5-bullet-friday/" target="_blank" rel="noopener">Tim Ferriss 5-Bullet Friday</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/papers/2607.14935" target="_blank" rel="noopener">VideoChat3：4B 参数全开源视频 MLLM，在动作理解和时序定位上超越更大模型</a></h3>
+      <p><strong>现状：</strong>开源视频多模态大语言模型（video MLLM，即能同时理解视频和语言的模型）普遍面临三个瓶颈：跨领域泛化能力弱、计算开销高、训练资产不透明。</p>
+      <p><strong>问题：</strong>现有大多数开源模型要么参数规模庞大导致推理成本高，要么在细粒度动作理解和长视频处理上表现差，且训练数据和权重不完全公开。</p>
+      <p><strong>解决方案：</strong>VideoChat3 用 4B 参数（约 40 亿参数）的规模，结合 I3D-ViT（一种时空特征提取网络）实现 16 倍时空压缩，配合 Adaptive Frame Resolution（自适应帧分辨率）技术处理流式视频，在 Academic2M、LV116K、OL617K 三个数据集上训练，模型权重和完整训练数据集全部开源。</p>
+      <p><strong>价值：</strong>在 MotionBench（动作理解基准）和 TempCompass（时序理解基准）两个测试集上，VideoChat3 以 4B 参数规模取得了全开源模型中的最佳结果（分别为 61.7 和 75.6），超过参数量更大的同类开源模型。</p>
+      <p><strong>未来方向：</strong>完全开放的训练资产为社区提供了可复现的基础，后续工作可集中在实时流式视频理解和更长上下文的多轮视频对话上。</p>
+      <cite><a href="https://huggingface.co/papers/2607.14935" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2607.14935" target="_blank" rel="noopener">arXiv 2607.14935</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.14777" target="_blank" rel="noopener">SEED：自演化在策略蒸馏让 Agent 强化学习成功率从 14.9% 跳升至 45.9%</a></h3>
+      <p><strong>现状：</strong>用强化学习（RL）训练 LLM agent 完成长视野多步骤任务（如使用工具、与环境交互），是当前 agent 能力提升的核心方向之一。</p>
+      <p><strong>问题：</strong>基于稀疏奖励（sparse reward，即只在任务成功或失败时给出反馈）的 RL 存在一个监督信号缺口：episode 级别的结果奖励很难有效传导到 token 级别的策略学习，导致训练效率低、样本需求大。</p>
+      <p><strong>解决方案：</strong>SEED 在训练时让模型分析已完成的轨迹（trajectory，即 agent 执行任务的完整过程记录），提炼出可复用的「技能（skills）」——自然语言描述的工作流、关键观察或失败规避规则。这些技能再被蒸馏回策略模型，转化为密集的 token 级别训练信号。整个过程是在策略（on-policy）的，模型收集轨迹、分析技能、更新自身，形成自演化循环。</p>
+      <p><strong>价值：</strong>在 ALFWorld（家庭环境多步骤任务基准）上，宏观平均成功率从仅依赖结果 RL 的 14.9% 提升至 45.9%，提升幅度超过 30 个百分点。</p>
+      <p><strong>未来方向：</strong>将 SEED 框架扩展到工具调用、代码生成等更复杂的 agent 场景，以及探索技能库的累积和跨任务迁移。</p>
+      <cite><a href="https://arxiv.org/abs/2607.14777" target="_blank" rel="noopener">arXiv 2607.14777</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.15257" target="_blank" rel="noopener">SearchOS-V1：把隐式搜索进度显式化，解决多 Agent 搜索陷入重复循环的问题</a></h3>
+      <p><strong>现状：</strong>工具集成的 LLM（Tool-Integrated LLM）让网络搜索成为信息型 agent 的核心能力，但随着交互历史增长，agent 越来越难追踪任务进度。</p>
+      <p><strong>问题：</strong>当搜索尝试无法找到有效证据时，现有的单 agent 和多 agent 系统会陷入重复循环，浪费搜索预算，最终输出质量严重下降。根本原因是搜索进度是「隐式的」，存在于模型的上下文窗口（context window）里，没有被外化为任何可持久化的结构。</p>
+      <p><strong>解决方案：</strong>SearchOS 将开放域信息检索重构为「关系模式补全（relational schema completion）」任务，通过 Search-Oriented Context Management（SOCM）把进度状态显式化为四个持久化组件：Frontier Task（当前待推进任务）、Evidence Graph（已找到证据的知识图谱）、Coverage Map（已覆盖的信息范围图）和 Failure Memory（已失败路径的记忆）。多个 agent 共享这个状态，不再各自维护隐式记忆。</p>
+      <p><strong>价值：</strong>显式共享状态让多 agent 协作不再重复踩坑，搜索预算利用率和输出完整性均显著提升。</p>
+      <p><strong>未来方向：</strong>将 SearchOS 框架扩展到需要动态知识更新的实时信息场景。</p>
+      <cite><a href="https://arxiv.org/abs/2607.15257" target="_blank" rel="noopener">arXiv 2607.15257</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.00248" target="_blank" rel="noopener">Seed2.0：字节跳动旗舰模型系列，推理、视觉理解和 Agent 任务多项达到 SOTA</a></h3>
+      <p><strong>现状：</strong>ByteDance Seed 团队发布了 Seed2.0 模型系列（Pro/Lite/Mini 三档），定位是处理「真实世界复杂度（real-world complexity）」的生产级旗舰模型。</p>
+      <p><strong>问题：</strong>现有旗舰模型普遍在标准 benchmark 上表现优异，但在真实用户的长尾知识查询和复杂指令跟随场景下，表现仍然不稳定。</p>
+      <p><strong>解决方案：</strong>Seed 团队围绕真实用户需求构建评估体系（选取与实际场景锚定的 benchmark，聚焦长尾知识和复杂指令跟随），并以此为目标进行训练迭代。模型系列覆盖多模态推理、语言理解和 agent 任务。</p>
+      <p><strong>价值：</strong>Seed2.0 在科学编程（scientific coding）和奥林匹克级数学解题等高难度任务上达到 SOTA，在多模态和 agent 任务上保持竞争力，为数亿用户的生产环境提供服务。</p>
+      <p><strong>未来方向：</strong>进一步扩展实际工作场景验证，减少训练目标与真实使用场景之间的漂移。</p>
+      <cite><a href="https://huggingface.co/papers/2607.00248" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2607.00248" target="_blank" rel="noopener">arXiv 2607.00248</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2606.05405" target="_blank" rel="noopener">Agents' Last Exam：1000+ 经济价值任务基准，顶尖 Agent 最难等级通过率仅 2.6%</a></h3>
+      <p><strong>现状：</strong>AI agent 在标准 benchmark 上的胜利积累速度已经超过了实际产业影响力的增长速度，「赢了测试」和「改变了核心行业」之间存在越来越大的剪刀差。</p>
+      <p><strong>问题：</strong>现有 agent benchmark 普遍偏向抽象任务或单步骤评估，无法反映 agent 在真实经济活动中的实际表现。</p>
+      <p><strong>解决方案：</strong>250 余位行业专家协作，构建了覆盖 55 个子领域、13 个行业集群、1000+ 任务的评估集 ALE（Agents' Last Exam）。任务全部来自真实项目（every task started life as someone's actual project），并通过 O*NET/SOC 2018 职业分类系统与美国 GDP 直接挂钩，分为多个难度等级。</p>
+      <p><strong>价值：</strong>在最难等级（Last-Exam tier），当前最强的 frontier agent 配置平均通过率为 2.6%；跨所有难度等级的整体平均通过率为 26%。这是一个让「benchmark 已被攻克」的叙事产生动摇的数字。</p>
+      <p><strong>未来方向：</strong>随着 agent 能力提升持续更新任务集，追踪 agent 在经济价值场景中的真实进展。</p>
+      <cite><a href="https://huggingface.co/papers/2606.05405" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2606.05405" target="_blank" rel="noopener">arXiv 2606.05405</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+      <ul class="glance-list">
+        <li>@steipete 找到了 Codex（OpenAI 的代码 agent）浏览器自动化中图片上传的绕过方案，属于日常踩坑记录。<a class="glance-src" href="https://x.com/steipete/status/2078318731785359634" target="_blank" rel="noopener">X @steipete →</a></li>
+        <li>@steipete 用 Codex 构建了一个工具栏图标自定义编辑器，作为 agent 可以直接完成的实际产品功能。<a class="glance-src" href="https://x.com/steipete/status/2078264088644276598" target="_blank" rel="noopener">X @steipete →</a></li>
+        <li>@swyx 把每周 SEO/AEO 改进研究设置成了 AI 自动化任务，持续运行中；AEO（Answer Engine Optimization）是针对 AI 搜索引擎的优化策略，是 SEO 的 AI 时代变种。<a class="glance-src" href="https://x.com/swyx/status/2078244735794413786" target="_blank" rel="noopener">X @swyx →</a></li>
+        <li>@petergyang 测试了 Codex 的浏览器操控能力，实际可以成功执行特定类型的自动化任务。<a class="glance-src" href="https://x.com/petergyang/status/2078303748649320529" target="_blank" rel="noopener">X @petergyang →</a></li>
+        <li>@trq212：先建原型（prototype），是避免在错误方向上浪费 token 的最佳方法。<a class="glance-src" href="https://x.com/trq212/status/2078189833445654714" target="_blank" rel="noopener">X @trq212 →</a></li>
+        <li>@rauchg：「Ship like @shadcn」——以 shadcn/ui 的方式发布（小而快、持续迭代、拒绝大版本停滞）。<a class="glance-src" href="https://x.com/rauchg/status/2078299647689310270" target="_blank" rel="noopener">X @rauchg →</a></li>
+        <li>@zarazhangrui：创作时展示过程比追求制作质感更重要（building in public: show work over production value）。<a class="glance-src" href="https://x.com/zarazhangrui/status/2078086930756202924" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+        <li>@amasad（Replit CEO）探索了 Replit 社区的国际象棋历史，顺手展示了平台的知识图谱能力。<a class="glance-src" href="https://x.com/amasad/status/2078273728618877326" target="_blank" rel="noopener">X @amasad →</a></li>
+        <li>@nikunj 清晨与孩子同坐的一瞬间，发了条安静的个人观察。<a class="glance-src" href="https://x.com/nikunj/status/2078033435398897982" target="_blank" rel="noopener">X @nikunj →</a></li>
+        <li>@realmadhuguru：企业 AI 采购越来越多地通过 AWS/GCP/Azure 云服务商进行，厂商捆绑策略重新变得有效。<a class="glance-src" href="https://x.com/realmadhuguru/status/2078210889778708744" target="_blank" rel="noopener">X @realmadhuguru →</a></li>
+        <li>@claudeai 展示了一批 Hackathon（黑客松）参赛项目，涵盖多种 Claude agent 应用场景。<a class="glance-src" href="https://x.com/claudeai/status/2078189443878469950" target="_blank" rel="noopener">X @claudeai →</a></li>
+        <li>AINews 今天没什么大事（「not much happened today」），一个安静的 AI 新闻日。<a class="glance-src" href="https://www.latent.space/p/ainews" target="_blank" rel="noopener">Latent Space / AINews →</a></li>
+        <li>Tim Ferriss 本周推荐了两首音乐：Paul Simon 的「I Know What I Know」（歌词绝佳）和 Jon Hassell with Paolo Fresu 的「Sketches of the Mediterranean」（适合写作，他形容像「鸦片馆里的听觉幻觉」）。<a class="glance-src" href="https://tim.blog/2026/07/18/5-bullet-friday/" target="_blank" rel="noopener">Tim Ferriss →</a></li>
+      </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-07-16.html">← JUL 16</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+
+</body>
+</html>
