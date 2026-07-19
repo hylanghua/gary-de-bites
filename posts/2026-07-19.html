@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — July 19, 2026</title>
+  <meta name="description" content="Moonshot AI 发布旗舰模型 Kimi K3（2.8 万亿参数，预计 7 月 27 日开源），Vercel 内部测试确认网络安全方向表现顶尖；OpenAI 把 Codex 并入 ChatGPT，Ben Thompson 追问 Chat 界面是否正在成为历史；Wisereads 本周推送 Andrew Taggart《The Art of Inquiry》，哲学探究是走出迷茫的路径。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">July 19, 2026</h1>
+
+  <p class="post-lead">Moonshot AI 发布旗舰模型 Kimi K3（2.8 万亿参数，预计 7 月 27 日开源），Vercel 内部测试确认网络安全方向表现顶尖；OpenAI 把 Codex 并入 ChatGPT，Ben Thompson 追问 Chat 界面是否正在成为历史；Wisereads 本周推送 Andrew Taggart《The Art of Inquiry》，哲学探究是走出迷茫的路径。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://simonwillison.net/2026/Jul/16/kimi-k3/" target="_blank" rel="noopener">Kimi K3 发布：Moonshot AI 最强模型，2.8 万亿参数，7 月 27 日前开源</a></h3>
+      <p>中国 AI 公司月之暗面（Moonshot AI）正式发布 Kimi K3，自称「迄今最强模型」，参数量达 2.8 万亿（T），并承诺于 7 月 27 日前公开权重。Vercel CEO Guillermo Rauch 随即在 X 上晒出内部评测结果：按其团队基准，Kimi K3 在网络安全（cybersecurity）方向表现顶尖（top-tier）。这是今年以来参数量最大的公开开源承诺之一，开源时间窗口会显著降低企业自部署的门槛。</p>
+      <cite><a href="https://simonwillison.net/2026/Jul/16/kimi-k3/" target="_blank" rel="noopener">Simon Willison</a> · <a href="https://x.com/rauchg/status/2078647648307880209" target="_blank" rel="noopener">X @rauchg</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/thsottiaux/status/2078697741455356367" target="_blank" rel="noopener">Thibault Sottiaux：我的工作现在基本上是在给 ChatGPT Work 派任务</a></h3>
+      <p>独立研究者 Thibault Sottiaux 在 X 上记录了一个正在发生的工作形态转变：他的日常工作已经几乎完全变成了向 ChatGPT Work 分配任务，而不是亲自执行。他随即列出了 ChatGPT Work 当前支持的全栈产品能力——包括建站（create and host sites）、表单收集、文档整理、数据分析和对外沟通——这些加在一起基本覆盖了一个小型运营团队的核心职能。这不是效率比较，而是角色重新定义的现场报告。</p>
+      <cite><a href="https://x.com/thsottiaux" target="_blank" rel="noopener">X @thsottiaux</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://simonwillison.net/2026/Jul/15/grok-build/" target="_blank" rel="noopener">grok-build 开源社区反弹：运行 CLI 会把整个本地目录上传至 xAI 的云存储</a></h3>
+      <p>xAI 开源的 grok-build（一个命令行构建工具）在社区引发强烈反弹。问题核心：在目录中运行该命令，会把整个目录上传到 xAI 的 Google Cloud 存储桶（cloud bucket，即云端文件存储容器）。Simon Willison 统计代码量后发现，grok-build 包含 844,530 行 Rust 代码，其中仅约 3% 为第三方代码（vendored），其余均为 xAI 自写——规模远超一般 CLI 工具，但透明度明显不足。</p>
+      <cite><a href="https://simonwillison.net/2026/Jul/15/grok-build/" target="_blank" rel="noopener">Simon Willison</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3>Guillermo Rauch（Vercel CEO，rauchg）：「AGI」这个词老化得很快，AI 与任何先例都截然不同</h3>
+      <p>Rauch 在 X 上发了一条简短但密度很高的判断：「AGI」（通用人工智能）作为一个标签已经严重老化，因为当前的 AI 能力与历史上任何技术突破都完全不同——不该用同一个概念框架去理解。他的意思不是说 AGI 不会到来，而是这个词本身带来的类比和预期已经误导了大量讨论。</p>
+      <p>这种标签失效的问题不只是术语上的——它会影响政策制定者如何分配监管注意力，也会影响产品团队如何设定能力边界。当「AGI」变成了万能筐，什么都往里装，这个词就失去了预测价值。</p>
+      <p><strong>当一个词无法帮助你做出更好的预测时，它就已经成了噪音。Rauch 在说的不是定义之争，而是认知工具的失效。</strong></p>
+      <cite><a href="https://x.com/rauchg/status/2078548458714406959" target="_blank" rel="noopener">X @rauchg</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Swyx（Latent Space 主播，swyx）：AEO 正在成为 $1M 级收入的真实来源</h3>
+      <p>Swyx 在 X 上贴出一条关于 AEO（Answer Engine Optimization，Agent 引擎优化——类似 SEO，但针对 AI Agent 而非搜索引擎）的收入预测：按当前趋势，AEO 将在他的收入中贡献至少 $1M 量级。这不是假设性的数字，而是基于已有收入轨迹的外推。AEO 的核心逻辑是：当用户越来越多地通过 AI Agent 而不是直接搜索来获取信息和购买决策，「让你的内容/产品被 Agent 正确引用和推荐」就成了新的流量入口。</p>
+      <p>这个观察对 PM 和 Builder 的含义是双重的：一方面，现有的 SEO 内容策略需要重写；另一方面，AEO 的最优解尚未形成共识，先行者有结构性优势。</p>
+      <p><strong>SEO 花了十年才被大多数商业团队认真对待，AEO 可能快得多——因为 Agent 渗透率上升速度比早期搜索引擎快一个数量级。</strong></p>
+      <cite><a href="https://x.com/swyx/status/2078581967768166591" target="_blank" rel="noopener">X @swyx</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Matt Turck（FirstMark Capital，mattturck）：2024 年说「模型层将商品化」，2026 年这已经发生了</h3>
+      <p>Matt Turck（知名 AI 和数据投资人，每年发布 MAD Landscape 报告）在 X 上做了一个跨年度的自我核验：2024 年业界广泛讨论「模型层将商品化（commoditize）」，意思是大家的底层模型能力会趋同、价格会下降、差异化会消失。2026 年，这已经发生了——主流模型质量趋近，价格断崖式下跌（部分模型 token 成本跌幅超 80%），API 本身不再是护城河。</p>
+      <p>他的隐含问题是：那么现在竞争优势在哪里？答案正在向应用层、数据飞轮、以及具体垂直场景的 evals（评估体系）迁移。</p>
+      <p><strong>商品化已发生，这不再是预测，而是现实。接下来的问题是：谁在这个基础上建起了真正难以复制的东西？</strong></p>
+      <cite><a href="https://x.com/mattturck/status/2078520552680046920" target="_blank" rel="noopener">X @mattturck</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Zara Zhang（zarazhangrui）：每个人都应该建立自己的「AI 模型个人评测集」</h3>
+      <p>Zara Zhang 在 X 上提出一个实操建议：不要只依赖公开 benchmark（基准测试，即标准化测试集），每个人都应该为自己的使用场景建立一套「个人评测集」——收录你真实遇到过的任务，以及你对好输出的判断标准。这套个人评测集的价值不在于客观，而在于和你的实际工作高度相关。</p>
+      <p>在模型更新周期越来越快、各家模型在不同任务上各有胜负的今天，依赖别人的 benchmark 做模型选择越来越不够用。个人评测集是「为自己定制的模型选择工具」。</p>
+      <p><strong>公开 benchmark 告诉你模型能做什么，个人评测集告诉你它能为你做什么——这个区别在 2026 年已经很关键。</strong></p>
+      <cite><a href="https://x.com/zarazhangrui/status/2078666187026911488" target="_blank" rel="noopener">X @zarazhangrui</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://every.to/context-window/the-model-is-the-easy-part" target="_blank" rel="noopener">Every.to「The Model Is the Easy Part」：AI 落地的真正难题是定义「好」并量化它</a></h3>
+      <p>Every.to 的这篇文章（作者 Good Start Labs 团队）的核心论点是：模型选择已经是 commodity（通用商品），任何公司都可以接 API 拿到足够好的能力。真正稀缺的是两件事：第一，明确定义「对你的业务而言，什么叫好结果」；第二，建立数据基础设施，能够测量你离目标还有多远。</p>
+      <p>文章还提出了一个不常见的角度：如果你能把内部任务定义得足够清晰，这些数据本身就有商业价值——前沿 AI 实验室正在为能帮助他们改进经济价值域任务的训练数据付费。也就是说，帮你自己量化 AI ROI 的同一套体系，可能也是你对外变现的新资产。</p>
+      <p><strong>「模型太贵/太慢/太烂」不再是主要借口——「我们不知道自己想要什么」才是。</strong></p>
+      <cite><a href="https://every.to/context-window/the-model-is-the-easy-part" target="_blank" rel="noopener">Every.to</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.lennysnewsletter.com/p/netflix-cpto-on-ai-and-the-future" target="_blank" rel="noopener">Lenny × Netflix CPTO Elizabeth Stone：AI 时代产品团队需要「系统思维」，AI 流利度是全员基线</a></h3>
+      <p>Netflix 首席产品与技术官 Elizabeth Stone（同时分管工程、产品和设计）在 Lenny's Newsletter 播客（72 分钟）里分享了几个当下最实用的管理框架。她最看重的新能力是「系统思维」（systems thinking，即理解各组成部分如何相互影响的能力），认为这正在取代单点技术深度，成为 AI 时代产品和工程 Leader 的核心素养。</p>
+      <p>Netflix 的另一个立场很清晰：AI 流利度（AI fluency，即能有效使用和理解 AI 工具的能力）不是某些岗位的加分项，而是全员的基线要求，与职级无关。她还谈到了如何管理 AI 生成内容的「输出洪流」——大量 AI 输出并不意味着大量有效信号，过滤能力成了新的稀缺技能。</p>
+      <p><strong>AI 流利度变成「全员基线」这件事，意味着用 AI 不再是一种加分，不用才是减分。Netflix 把这个边界在组织里画得很清楚。</strong></p>
+      <cite><a href="https://www.lennysnewsletter.com/p/netflix-cpto-on-ai-and-the-future" target="_blank" rel="noopener">Lenny's Newsletter</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://stratechery.com/2026/the-openai-super-app-chatgpt-codex-whither-chat/" target="_blank" rel="noopener">Stratechery：OpenAI 把 Codex 并入 ChatGPT，Ben Thompson 追问 Chat 界面是否正在历史性退场</a></h3>
+      <p>Ben Thompson 这篇文章的焦点是 OpenAI 的一个战略动作：Codex（原本是 OpenAI 的代码生成产品，后来演化为 agent 编程助手）被重新定义为「新版 ChatGPT」，两者实质合并。Thompson 的解读是：OpenAI 正在把 ChatGPT 从一个聊天界面变成一个「超级应用」（super app，即集合多项功能的一站式平台），Codex 是其中最重要的能力模块之一。</p>
+      <p>随之而来的问题是：以「聊天」为中心的交互范式是否正在被 agent 任务委托取代？如果是，那些基于「用户持续在聊天框里输入」假设而设计的产品，就面临着根本性的范式迁移。Thompson 没有给出确定答案，但他提出了正确的问题。</p>
+      <p><strong>OpenAI 正在亲手拆解自己最标志性的界面——这不是功能迭代，而是对「AI 应该怎么用」的基本判断发生了变化。</strong></p>
+      <cite><a href="https://stratechery.com/2026/the-openai-super-app-chatgpt-codex-whither-chat/" target="_blank" rel="noopener">Stratechery</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://wise.readwise.io/save?url=https%3A//theatlantic.com/technology/2026/07/phones-haidt-play-gray/687846/" target="_blank" rel="noopener">Wisereads「What if It's Not the Phones?」：Haidt 的长期合作者 Peter Gray 认为青少年心理危机根源是 Common Core，而非手机</a></h3>
+      <p>Jonathan Haidt 的《The Anxious Generation》（焦虑的一代）把青少年心理健康危机归因于智能手机，这本书畅销并影响了多国政策讨论。但 Haidt 的长期合作者、心理学家 Peter Gray 在其新书《Restoring Childhood》中提出了完全不同的诊断：真正的元凶是 Common Core（美国的统一课程标准）以及由此带来的高度结构化童年——孩子丧失了自由游戏和自主时间，而不是因为刷了太多手机。</p>
+      <p>Gray 引用了一个核心观察：学校把大量本应属于孩子自己的时间填满，而大脑的某些发育需要无结构的自由玩耍。The Atlantic 作者 Kaitlyn Tiffany 追踪了这场辩论的来龙去脉，两种归因对应的政策干预完全相反——一个是「没收手机」，另一个是「减少标准化考试、还给孩子更多自由���。</p>
+      <p><strong>同一个现象，截然不同的原因，截然不同的解法。两本书都有数据，这才是值得持续关注的争论——不是因为谁对，而是因为它逼着你想清楚「怎样的童年是好的」。</strong></p>
+      <cite><a href="https://wise.readwise.io/save?url=https%3A//theatlantic.com/technology/2026/07/phones-haidt-play-gray/687846/" target="_blank" rel="noopener">Wisereads Vol. 152</a> · <a href="https://theatlantic.com/technology/2026/07/phones-haidt-play-gray/687846/" target="_blank" rel="noopener">The Atlantic</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://wise.readwise.io/save?url=https%3A//theatlantic.com" target="_blank" rel="noopener">Wisereads 本周书《The Art of Inquiry》：Andrew Taggart——几乎没人知道自己为何在此，哲学提问是走出迷茫的实践</a></h3>
+      <p>Andrew Taggart 是一位离开学院体制、转为「实践哲学家」的学者。他的新书《The Art of Inquiry》从一个不设防的起点出发：「几乎没人知道自己在这里是为了什么。」这不是煽情，而是他认为绝大多数人的日常都在被惯性和外部期待填满，从未真正停下来问过「我想要的生活是什么样��」。</p>
+      <p>书的核心主张是：哲学探究（inquiry，即有意识地提出问题并追踪它们的过程）是一种可以学习和训练的实践，而不是专属于学院的智识游戏。Taggart 用大量具体对话记录展示了「如何问出一个好问题」，以及当你认真对待一个问题时，它会把你带向何处。</p>
+      <p><strong>「知道自己想要什么」不是一个内省的起点，而是需要经年累月主动追问才能抵达的地方。Taggart 在教的是到达路径，而不是答案。</strong></p>
+      <cite><a href="https://readwise.io" target="_blank" rel="noopener">Wisereads Vol. 152</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/papers/2607.08964" target="_blank" rel="noopener">Long-Horizon-Terminal-Bench：46 个长时序终端任务，密集分级奖励让 Agent 获得部分信用</a></h3>
+      <p><strong>现状：</strong>当前主流 Agent benchmark（基准测试）大多是短时序任务，每步反馈清晰，但真实工作中的任务往往需要数十步才能完成，中间过程容易判定不清。</p>
+      <p><strong>问题：</strong>长时序任务下，Agent 即便完成了 70% 的步骤，传统二元评分也只能给「失败」，无法区分「差一点」和「完全没做」。</p>
+      <p><strong>解决方案：</strong>Long-Horizon-Terminal-Bench 设计了 46 个真实终端任务，横跨软件工程、实验复现、多模态分析、交互游戏和科学计算 9 个类别，每个任务有细粒度子任务评分，支持部分信用（partial credit），实现密集中间奖励（dense reward）。</p>
+      <p><strong>价值：</strong>这套评分体系让 Agent 训练信号更丰富，也让用户能比较「Agent 完成了多少，而不只是成功还是失败」。</p>
+      <p><strong>未来方向：</strong>作者团队正在推进 Terminal-Bench 2.0，并已有论文测试多个 Agent 优化器在此基准上的叠加效应。</p>
+      <cite><a href="https://huggingface.co/papers/2607.08964" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2607.08964" target="_blank" rel="noopener">arXiv 2607.08964</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.12625" target="_blank" rel="noopener">KnowAct-GUIClaw：Know-Route-Act-Reflect 框架，GUI Agent 内置自演化技能库与可归因记忆</a></h3>
+      <p><strong>现状：</strong>GUI Agent（负责在图形界面上自动操作的 Agent）在跨平台和长时序任务上表现不稳定，积累的经验难以复用。</p>
+      <p><strong>问题：</strong>Agent 每次执行类似任务都在「从零开始」，之前的成功路径无法有效传递，失败教训也没有系统存储。</p>
+      <p><strong>解决方案：</strong>KnowAct-GUIClaw 把主控 Agent 和 GUI 子 Agent 分开：主控 Agent 负责「知晓（Know）-规划路由（Route）-行动（Act）-反思（Reflect）」；子 Agent 维护一个「经验可归因的记忆系统」和「自演化技能库」，每次完成任务后自动更新可复用的技能片段（skill snippets）。</p>
+      <p><strong>价值：</strong>跨平台任务成功率显著提升，且因为记忆可归因（每条记忆能追溯到触发它的具体交互），调试和理解 Agent 行为更容易。</p>
+      <p><strong>未来方向：</strong>技能库的自演化机制有望推广到其他 Agent 框架，形成通用的「经验积累-技能复用」范式。</p>
+      <cite><a href="https://arxiv.org/abs/2607.12625" target="_blank" rel="noopener">arXiv 2607.12625</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.14004" target="_blank" rel="noopener">Do Agent Optimizers Compound?：多个 Agent 优化器叠加，效果大多无法累加</a></h3>
+      <p><strong>现状：</strong>学界和工业界积累了大量 Agent 优化技术，每个都声称在各自任务上有效，理论上叠加应该更好。</p>
+      <p><strong>问题：</strong>「A 好 + B 好 = A+B 更好」这个假设从未在统一基准下被系统验证过。</p>
+      <p><strong>解决方案：</strong>这篇论文在 Terminal-Bench 2.0 上做了持续学习（continual learning，即模型在多阶段序列任务中学习而不忘记之前所学的范式）实验，测试多种 Agent 优化器的单独效果与组合效果。</p>
+      <p><strong>价值：</strong>发现大多数情况下优化器不能有效叠加——某些组合甚至会相互抵消，最终表现不如单独使用其中一个。这个结论对 Agent 工程实践有直接影响：盲目堆砌优化组件不是正确方向。</p>
+      <p><strong>未来方向：</strong>理解优化器之间「为什么互相干扰」是下一步的关键问题。</p>
+      <cite><a href="https://arxiv.org/abs/2607.14004" target="_blank" rel="noopener">arXiv 2607.14004</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.08716" target="_blank" rel="noopener">Remember When It Matters：主动记忆 Agent，自动判断何时把当前上下文写入长期记忆</a></h3>
+      <p><strong>现状：</strong>长时序 Agent 任务中，context window（上下文窗口，即模型一次能处理的信息量上限）会很快被填满，Agent 不得不丢弃大量历史信息。</p>
+      <p><strong>问题：</strong>简单的「定期写入」或「触发式写入」策略要么存了太多噪音，要么错过关键时刻，导致 Agent 在长任务后期「失忆」。</p>
+      <p><strong>解决方案：</strong>该论文提出一个「主动记忆 Agent」（proactive memory agent），核心是一个专门的决策模块，实时判断「此刻是否值得把当前状态写入长期记忆」，而不是按固定规则触发存储。</p>
+      <p><strong>价值：</strong>在长时序任务中，Agent 的有效记忆密度提升，后期任务的成功率明显改善，同时减少了无效存储的计算开销。</p>
+      <p><strong>未来方向：</strong>决策模块本身的训练数据来源是下一步的核心挑战——如何标注「这个时刻应该记」？</p>
+      <cite><a href="https://arxiv.org/abs/2607.08716" target="_blank" rel="noopener">arXiv 2607.08716</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.00867" target="_blank" rel="noopener">EFlow：显式化证据流，让长视频推理模型不再「在海量帧中迷路」</a></h3>
+      <p><strong>现状：</strong>视频理解模型（MLLM，多模态大语言模型）在短视频上表现不错，但在需要跨越几十分钟的长时序推理任务上会丢失关键证据链。</p>
+      <p><strong>问题：</strong>模型在处理长视频时，往往「知道某帧有某个信息」，但无法追踪这个信息如何与几分钟前或几分钟后的帧形成因果关系。</p>
+      <p><strong>解决方案：</strong>EFlow（Learning Evidence Flow）通过显式建模「证据在帧序列间流动的路径」（evidence flow），让模型在推理时能追踪关键信息从哪里来、到哪里去，而不是把每帧独立处理。</p>
+      <p><strong>价值：</strong>在多个长视频推理基准（benchmark）上大幅超越基线，尤其在需要跨时序因果判断的任务（如「为什么角色 A 在第 40 分钟做了 X？」）上提升显著。</p>
+      <p><strong>未来方向：</strong>证据流的建模方式有潜力应用到其他长序列任务，如长文档理解和多轮对话历史追踪。</p>
+      <cite><a href="https://arxiv.org/abs/2607.00867" target="_blank" rel="noopener">arXiv 2607.00867</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+<ul class="glance-list">
+  <li>Aaron Levie（Box CEO）：AI 生态系统的价值不会只停在 infra 层，驱动企业 agentic 工作流比最初预想复杂得多，应用层正在涌现真正的差异化<a class="glance-src" href="https://x.com/levie/status/2078567715544121815" target="_blank" rel="noopener">X @levie →</a></li>
+  <li>Aaron Levie：「把控模型访问权限不会在规模上奏效」——模型开放化趋势已不可逆<a class="glance-src" href="https://x.com/levie/status/2078481578779685245" target="_blank" rel="noopener">X @levie →</a></li>
+  <li>Swyx：批评欧洲的人没看到欧洲实际上有一批世界顶级 AI 工程师<a class="glance-src" href="https://x.com/swyx/status/2078628617987518855" target="_blank" rel="noopener">X @swyx →</a></li>
+  <li>@trq212（Anthropic 内部）：「这是 Anthropic 很多人英雄般的努力」——积极评价某项近期内部工作成果<a class="glance-src" href="https://x.com/trq212/status/2078514180051906864" target="_blank" rel="noopener">X @trq212 →</a></li>
+  <li>Garry Tan：批评 The Standard 媒体，应坚守新闻本职，不要偏离<a class="glance-src" href="https://x.com/garrytan/status/2078640121369485611" target="_blank" rel="noopener">X @garrytan →</a></li>
+  <li>Matt Turck：「加油，看决赛能不能超过半决赛的水平」（World Cup 半决赛观后感）<a class="glance-src" href="https://x.com/mattturck/status/2078608152086327529" target="_blank" rel="noopener">X @mattturck →</a></li>
+  <li>Peter Yang（petergyang）：「有人说这是史上最伟大的世界杯比赛」（半决赛现场感受）<a class="glance-src" href="https://x.com/petergyang/status/2078622146247733320" target="_blank" rel="noopener">X @petergyang →</a></li>
+  <li>Peter Yang：用 ChatGPT App 和 8 岁女儿共建了一个乘法练习网站，女儿参与了整个创作过程<a class="glance-src" href="https://x.com/petergyang/status/2078638568784994686" target="_blank" rel="noopener">X @petergyang →</a></li>
+  <li>Nikunj：「巴黎目前最喜欢的地方是橘园美术馆（Orangerie）」<a class="glance-src" href="https://x.com/nikunj/status/2078453525080629683" target="_blank" rel="noopener">X @nikunj →</a></li>
+  <li>Aditya Agrawal（adityaag）：「I love capitalism.」<a class="glance-src" href="https://x.com/adityaag/status/2078501506169340099" target="_blank" rel="noopener">X @adityaag →</a></li>
+  <li>Zara Zhang：企业 AI 采用的最大障碍是什么——不是模型，是内部工程和流程准备度<a class="glance-src" href="https://x.com/zarazhangrui/status/2078492577788268549" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+  <li>Wisereads「How to read more books」：Elia Scotto 受 Umberto Eco 启发，建议在任何不在做其他事情的时刻都拿起书，而非手机<a class="glance-src" href="https://scotto.me/blog/2026-07-12-how-to-read-more-books/" target="_blank" rel="noopener">scotto.me →</a></li>
+  <li>Wisereads「The Future Worth Building Is Human」：AI lab Thinking Machines 认为 AI 对齐应是一个多样化生态，而非单一模型——「人类的进步来自个体的独特性和创造性张力，要让这种奇异性继续存在」<a class="glance-src" href="https://thinkingmachines.ai/blog/the-future-worth-building-is-human/" target="_blank" rel="noopener">Thinking Machines →</a></li>
+  <li>Wisereads × Demis Hassabis：「我们本质上找到了让沙子思考的方法，这是奇迹」——Hassabis 把 AGI 类比为发现电或火，而非互联网<a class="glance-src" href="https://x.com/demishassabis/status/2076957440109625718" target="_blank" rel="noopener">X @demishassabis →</a></li>
+  <li>Wisereads「AI 2040: Plan A」：AI Futures Project 的乐观替代方案——推迟超级智能至 2040，研究全公开，设立互信保证的计算销毁机制（mutually assured compute destruction）<a class="glance-src" href="https://ai-2040.com/AI-2040.pdf" target="_blank" rel="noopener">ai-2040.com →</a></li>
+  <li>Simon Willison：grok-build 含 844,530 行 Rust，其中仅约 3% 为第三方代码（vendored code）——规模远超普通 CLI 工具<a class="glance-src" href="https://simonwillison.net/2026/Jul/15/grok-build/" target="_blank" rel="noopener">Simon Willison →</a></li>
+  <li>Thibault Sottiaux 列出 ChatGPT Work 当前支持能力清单：建站、托管、表单收集、文档整理、对外沟通，基本覆盖小型团队核心运营职能<a class="glance-src" href="https://x.com/thsottiaux/status/2078697631019303273" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+</ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-07-18.html">← JUL 18</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+
+</body>
+</html>
