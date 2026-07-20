@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — July 20, 2026</title>
+  <meta name="description" content="Anthropic 与 Meta 谈判百亿美元算力租用协议，同时公开 Claude Code 的代码迁移方法论；纯银用一篇长文给「白领大逃杀」踩了刹车：这场换代至少还需要五到十年。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">July 20, 2026</h1>
+
+  <p class="post-lead">Anthropic 与 Meta 谈判百亿美元算力租用协议，同时公开 Claude Code 的代码迁移方法论——百万行代码两周完成；纯银用一篇长文给「白领大逃杀」踩了刹车：harness 思维不是普通员工的工作方式，这场换代至少还需要五到十年；AI 多智能体研究这周交出了三篇值得关注的论文：SearchOS-V1、SEED、VideoChat3。</p>
+
+  <p class="post-note">本期部分源抓取失败，内容较常规偏少。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3>Anthropic 向 Meta 提议百亿美元算力租用协议，Meta 正在考虑</h3>
+      <p>Anthropic 于 6 月向 Meta 提出一项算力租用（computing lease，即向对方购买服务器使用时间，而非自建机房）协议，规模最高可达 100 亿美元，期限两年，按月支付，Meta 保留随时退出的权利。对 Anthropic 来说，这解决了短期算力缺口；对 Meta 来说，则是在自有 AI 服务消纳速度追上之前开辟一条新收入来源。协议若落地，也意味着两家 AI 阵营最直接的竞争者之间出现了一条奇特的算力租赁链。同期，SpaceX 也在与五角大楼谈判提供数十亿美元规模的算力支持，用于美国防部的 AI 建设计划。</p>
+      <cite><a href="https://www.tldr.tech" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://claude.com/blog/ai-code-migration" target="_blank" rel="noopener">Anthropic 公开 Claude Code 大规模代码迁移方法论：百万行 Zig 转 Rust，两周完成</a></h3>
+      <p>Anthropic 发布工程博客，公开其内部用 Claude Code 做大规模代码迁移（code migration，把老代码库批量转换成新语言或架构）的六步方法论。核心原则是「修正产生代码的过程，而不是修改代码本身」。具体案例：Bun 联合创始人 Jarred Sumner 用 Claude Code 在不到两周内把 Bun 从 Zig 语言迁移至 Rust，产出超过一百万行代码，并在合并前通过了全量 CI（持续集成测试套件）；Anthropic Labs 联合负责人 Mike Krieger 利用一个周末把 Python 代码库迁移成 16.5 万行 TypeScript。技术架构是 Claude Code 的多智能体循环（multi-agent loop）：小模型负责高频编码任务，大模型指导规则制定与代码审查。</p>
+      <cite><a href="https://claude.com/blog/ai-code-migration" target="_blank" rel="noopener">Claude Blog</a> · <a href="https://www.tldr.tech" target="_blank" rel="noopener">TLDR</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3>Aaron Levie（Box CEO，levie）：Token 价格越跌，AI 推理消耗越多</h3>
+      <p>Levie 在 X 上阐述了一个反直觉的论点：很多人以为 AI 成本下降之后，企业的 AI 支出会跟着缩水。事实恰恰相反。当 token（模型处理文字的基本计费单位）变得更便宜，企业反而会把 AI 用到更多以前承担不起的任务上：写更多代码、审查更多代码漏洞、在以前没法跑的大规模数据集上跑 Agent。需求的边界随价格的下降而扩张，这是 Jevons 悖论（历史上资源越高效使用，总消耗反而越多）在 AI 推理上的现实重演。</p>
+      <p>Levie 还进一步推论：这也解释了为什么开源 AI 的商业模式能够成立——没人真的在自己设备上跑这些模型，都是跑在云端基础设施里，给算力供应商带来的是持续增长的需求，而不是一次性替代。</p>
+      <p><strong>「模型越便宜，用得越多」不是一句玩笑，而是未来几年 AI 基础设施投资的核心逻辑。成本曲线的下行并不意味着市场收缩。</strong></p>
+      <cite><a href="https://x.com/levie/status/2078968158006939716" target="_blank" rel="noopener">X @levie</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Guillermo Rauch（Vercel CEO，rauchg）：网络安全是超级智能最好的 IQ 测试，Kimi K3 表现顶尖是强信号</h3>
+      <p>Rauch 在 X 上提出，他对网络安全（cybersecurity）作为 AI 超级智能衡量维度的信心越来越强。理由：在网络安全领域，找到漏洞、修补代码、逆向工程（reverse engineering，即从已有程序推断其原始逻辑）和开发利用程序（exploiting，即编写攻击工具）要求的认知能力远超「一键生成某个 XX 的克隆版」——后者只要记住模板，前者需要跨越编程语言、运行时（runtime，程序运行的执行环境）和框架的真正推理能力，以及他称为「边角思维（corner thinking）」的能力：能在极端条件下仍然找到正确答案。</p>
+      <p>他指出，即便是顶尖工程师中，真正擅长安全方向的也极为罕见。Kimi K3 在 Vercel 内部网络安全基准上的顶尖表现，因此对他来说是一个比一般代码生成测试有力得多的信号。</p>
+      <p><strong>用「能不能在极限条件下找到角落解」来评判 AI，比用「能不能写出格式正确的 CRUD 代码」要严苛得多，也更接近真实的系统性推理能力。</strong></p>
+      <cite><a href="https://x.com/rauchg/status/2078912929714356698" target="_blank" rel="noopener">X @rauchg</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Dan Shipper（Every CEO，danshipper）：Every 内部 70% 文案编辑已可由 AI 自动完成</h3>
+      <p>Dan Shipper 在 X 上宣告一件对他来说具有里程碑意义的事：过去一周，他在 Every 内部测试 AI 自动文案编辑的结果是——大约 70% 本来需要人工逐条处理的文案修改，已经可以由 AI 自动完成。他说「这是第一次出现这种情况」，他为此尝试了很多年。这个数字的背景是 Every 是一家写作驱动的媒体公司，文案质量是核心产品，能在这里实现 70% 自动化，说明当前模型已经越过了某个他长期等待的能力门槛（capability threshold，即功能达到可实用水平的临界点）。</p>
+      <p><strong>「第一次真正跨过门槛」在日记里不显眼，但它往往是工作方式发生结构性转变的起点——不是因为比例，而是因为它证明了「方向正确」。</strong></p>
+      <cite><a href="https://x.com/danshipper/status/2078920115140358585" target="_blank" rel="noopener">X @danshipper</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://xiaobot.net/post/afd7074f-762d-4df4-b689-9c55f8cbc665" target="_blank" rel="noopener">纯银：白领大逃杀，可能比之前的预期更迟……得多</a></h3>
+      <p>纯银本期的核心论点是：「白领大逃杀」（即 AI 驱动的大规模白领失业浪潮）在他看来至少还需要 5-10 年才会全面到来，远比他此前的预测乐观。反转的原因不是 AI 不够强，而是他亲身体验 Agent 之后发现：用好 Agent 的前提是能够为每一个具体任务单独设计和调试 harness（任务在 Agent 内运行的规则系统，类似于一套任务说明书），而这套方式与绝大多数普通人的工作模式根本不兼容。</p>
+      <p>普通人的工作逻辑是：花时间学会一套 SOP（标准操作流程），然后无限重复，根据细微差异做优化。但 Agent 时代没有可复用的 SOP——每个任务的 harness 都需要从头设计，环境一变就要重新调试。这要求持续支付脑力，而「节约脑力」是普通人的生物本能。纯银观察到的真实场景：部门里少数 AI 信仰者在自己职权范围内尽力优化，但其他人的任务他们没权限碰，整条协作链只要有一个环节不愿改造，整体效率就被死死拖住。Meta 扎克伯格内部讲话也印证了这一点：「过去四个月，AI Agent 的发展速度并没有像我们预期的那样加速。」</p>
+      <p>他总结的死循环：公司不推行 Agent 模式，就培养不出 Agent 工程师；没有足够的 Agent 工程师，公司就没法切换到 Agent 模式。而切换的成本（流程重构、人才换血、业务风险）远高于可见的短期收益（省下 2/3 人力成本）。因此「只有下黑手的老板和全员信徒」才会真正向 Agent 模式大步迈进。</p>
+      <p><strong>「大多数人能学方法，但不会编规则」——这句话比所有技术路线图都更接近 AI 落地的真实障碍。纯银在用自己的 Agent 实践经验，给行业的乐观预期打了一针慢镜头。</strong></p>
+      <cite><a href="https://xiaobot.net/post/afd7074f-762d-4df4-b689-9c55f8cbc665" target="_blank" rel="noopener">小报童 · 纯银</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://every.to/working-overtime/why-some-ai-workflows-stick-and-others-don-t" target="_blank" rel="noopener">Every.to：AI 工作流为何有些活下来、有些死了</a></h3>
+      <p>Every.to 编辑 Katie Parrott 对自己建过又放弃的一批 AI 工作流做了事后复盘，得出一个简单但有用的分类框架：废弃的工作流不外乎四种死法——忘记它存在、触发条件没触发、输出结果需要太多维护、没有解决一个真实且反复发生的问题。最经典的失败案例是她模仿 Every CEO Dan Shipper 搭的「Attention Desk」：她设想自己会在深度工作中沉浸，偶尔浮出水面处理信息。但现实是她每天主动查看 Slack 40-50 次——「Attention Desk」解决的是她没有的问题，而且和她真正的行为习惯正面竞争，不可能赢。</p>
+      <p>相比之下，她的「Compound Writing」插件活了下来。区别在于：它在启动后几乎立刻给出了即时回报（给一段可以推敲的草稿），而不是承诺一个遥远的未来收益。Woolley 和 Fishbach 的行为研究证实了这点：即时奖励比延迟奖励对行为持续性的预测力强得多。</p>
+      <p><strong>「不要为一个你不存在的自己建工具」——这句话值得刻在每一个 AI 工作流搭建者的桌子上。工具失败通常不是工具的问题，而是你对自己工作实际状态的估算偏差。</strong></p>
+      <cite><a href="https://every.to/working-overtime/why-some-ai-workflows-stick-and-others-don-t" target="_blank" rel="noopener">Every.to</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.lennysnewsletter.com/p/alex-lieberman-morning-brew-claude-content-machine" target="_blank" rel="noopener">Lenny's × Alex Lieberman：Morning Brew 创始人用 Claude 搭了一套永不枯竭的内容机器</a></h3>
+      <p>Morning Brew 创始人 Alex Lieberman（现任 Tenex CEO）在 Lenny 的「How I AI」播客中分享了他为自己的内容创作搭建的 Claude 系统，核心是一套六步工作流：Oracle（扫描内容热点的情报模块）、采访面板（从他大脑里提炼真实想法和他本人的表达方式）、声音与风格档案（让草稿保持他本人的语感，而不是 AI 腔）、编辑委员会（评分和修改草稿）、以及一个从他历史反馈中持续学习的迭代循环。</p>
+      <p>他强调，这个系统的关键不是让 AI「生成内容」，而是让 AI 把他自己的思考提炼出来、编码成可复用的模板。他认为，做到这一步之后，「分发能力」才真正成为可持续的护城河——因为系统产出的是他本人的声音，而不是泛化的 AI 文字。</p>
+      <p><strong>「内容机器」这个词听起来像是在工厂化，但 Lieberman 描述的实质是把内容创作的认知摩擦（如何开始、如何不走样）系统化外包出去，而不是把创作本身外包出去。</strong></p>
+      <cite><a href="https://www.lennysnewsletter.com/s/how-i-ai" target="_blank" rel="noopener">Lenny's Newsletter / How I AI</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3>「Maybe Intelligence Ain't All That」：提出想法从来不是难点，现实验证的速度才是</h3>
+      <p>TLDR 本期推荐了一篇短文，核心论点是：AI 聊天机器人现在已经比很多人更聪明、能力更强，但至今没有出现对应的爆发式落地。作者的解释是：提出一个好点子从来不是真正的瓶颈。大多数问题无法靠在桌子前想就解决——进展受限于你能多快把东西造出来，以及它在现实中能不能撑住。</p>
+      <p>文章的关键句是：「AI 可以给你一个聪明得多的喷气涡轮叶片设计方案，它可能比工程师提出的任何方案都更有可能成功。但它大概率还是会失败，因为这就是站在技术边界时的基准失败率。唯一的验证方式是造出来，然后试着摧毁它。现实不在乎你有多聪明。进度受制于现实对你的反馈速度，而不是思考的速度。」</p>
+      <p>这个视角与最近关于 AI 生产力的讨论形成了一种有意思的张力：我们一直在讨论 AI 如何加速「想」，但物理世界、组织结构、监管流程的摩擦速度并没有因为 AI 的聪明而加快。</p>
+      <p><strong>智力不是稀缺要素——执行速度和现实反馈速度才是。这也许是当前这波 AI 浪潮最被低估的约束条件。</strong></p>
+      <cite><a href="https://www.tldr.tech" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Garry Tan（YC 总裁，garrytan）：Markdown 文件会存续数千年，是 AI 时代最好的数据格式</h3>
+      <p>Garry Tan 在 X 上转发了一个关于 Markdown 作为数据格式的讨论，并加了自己的判断：Markdown 文件是通用的，会在数千年后依然可读，因此在「智能栈（intelligence stack，即 AI 工具链）以极快速度变化」的当下，它是一种极好的数据格式选择。逻辑是：当工具层在剧烈换代，内容与工具解耦的纯文本格式反而是最稳定的锚点。</p>
+      <p>这个判断暗含的更大命题是：在一个底层技术每 12-18 个月颠覆一次的时代，投资于与工具无关的（tool-agnostic）格式和惯例，是一种低风险的持久性策略。Markdown 只是一个例子；同样的逻辑适用于数据架构、知识存储和个人笔记系统的选择。</p>
+      <p><strong>当所有人都在追逐最新模型和工具，Tan 提醒的反而是：选择一个你在任何工具消亡后仍然能读懂的格式。平台来了又走，纯文本永不过时。</strong></p>
+      <cite><a href="https://x.com/garrytan/status/2078803803659452624" target="_blank" rel="noopener">X @garrytan</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/papers/2607.14935" target="_blank" rel="noopener">VideoChat3：4B 参数视频 MLLM，在视频理解基准上超越 GPT-5，全量开源</a></h3>
+      <p><strong>现状：</strong>开源视频理解模型（MLLM，多模态大语言模型，即同时处理文字和图像/视频的模型）要么参数量大但效率低，要么轻量但能力受限，且大多数不开放完整训练代码和数据。</p>
+      <p><strong>问题：</strong>长视频、流媒体视频（live streaming）和需要时序定位的任务（如「第 3 分 17 秒发生了什么」）是现有开源模型的共同弱项。</p>
+      <p><strong>解决方案：</strong>VideoChat3 引入了膨胀式 3D 视觉 Transformer（I3D-ViT）和自适应帧分辨率机制，在仅 4B 参数的规模下同时覆盖通用视频、长视频和流媒体三类场景，并配套发布了三个专用训练数据集（VideoChat3-Academic2M、VideoChat3-LV116K、VideoChat3-OL617K）。模型权重、训练代码和训练数据全量开放。</p>
+      <p><strong>价值：</strong>在多个视频理解基准（benchmark，标准化测试集）上超越参数量更大的闭源模型，包括 GPT-5；4B 参数意味着本地部署成本显著低于 GPT-5 级别的模型。</p>
+      <p><strong>未来方向：</strong>流媒体感知能力的进一步提升，以及在实时视频分析场景下的工程化应用。</p>
+      <cite><a href="https://huggingface.co/papers/2607.14935" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2607.14935" target="_blank" rel="noopener">arXiv 2607.14935</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.14777" target="_blank" rel="noopener">SEED：自演化 on-policy 蒸馏，把 Agent 完成的轨迹转化为可复用技能</a></h3>
+      <p><strong>现状：</strong>用强化学习（RL，一种让 Agent 通过试错积累经验的训练方式）训练 Agent 时，主流方法只依赖「结果是否成功」作为信号（outcome-only RL），缺乏对过程的细粒度指导。</p>
+      <p><strong>问题：</strong>Agent 每次完成一个任务的轨迹（trajectory，即从头到尾的操作序列）里包含大量有价值的经验，但标准 RL 只看最终结果，这些过程信息全部丢失。</p>
+      <p><strong>解决方案：</strong>SEED（Self-Evolving On-Policy Distillation）让策略模型（policy model，即 Agent 的大脑）在完成任务后分析自己的轨迹，提炼出可复用的自然语言「技能（skill）」——包括可重复的工作流、关键观察点和失败规避规则——然后通过蒸馏（distillation，把大模型的知识压缩进小模型）把这些技能融回策略本身，形成「边跑边学习技能、技能再反哺策略」的自演化循环。</p>
+      <p><strong>价值：</strong>在 ALFWorld（一个家庭任务 Agent 基准测试）上，相对仅用结果奖励的 RL，宏观平均成功率提升 14.9 到 45.9 个百分点。</p>
+      <p><strong>未来方向：</strong>将技能提炼机制推广至更复杂的多步任务，以及探索技能库的共享和复用机制。</p>
+      <cite><a href="https://arxiv.org/abs/2607.14777" target="_blank" rel="noopener">arXiv 2607.14777</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.15257" target="_blank" rel="noopener">SearchOS-V1：把开放域信息检索建模为关系型 schema 补全，防止搜索 Agent 陷入循环</a></h3>
+      <p><strong>现状：</strong>当 AI Agent 需要大规模网络搜索时（如深度研究任务），随着交互历史累积，Agent 越来越难追踪任务进度，容易陷入重复搜索的死循环。</p>
+      <p><strong>问题：</strong>当前单 Agent 和多 Agent 搜索系统缺乏持久化的任务状态，一旦某次搜索无果就可能反复尝试相同的路径，浪费搜索预算，最终输出质量下降。</p>
+      <p><strong>解决方案：</strong>SearchOS 把信息检索任务形式化为「关系型 schema 补全（relational schema completion，即把要找的所有信息项定义成一张有明确结构的表格，逐项填写）」，并建立四种外部化状态：Frontier Task（待处理任务）、Evidence Graph（证据图，记录每条已找到信息的出处）、Coverage Map（覆盖地图）和 Failure Memory（记录哪些搜索路径已经失败）。还引入了搜索中间件 Harness，实时拦截工具调用，记录证据并在预算耗尽时响应。</p>
+      <p><strong>价值：</strong>在 WideSearch 和 GISA 两个信息检索基准上，所有指标均领先于已有的单/多 Agent 基线。</p>
+      <p><strong>未来方向：</strong>可复用技能层（strategy skills 和 access skills）的进一步规范化，以及与其他 Agent 框架的集成。</p>
+      <cite><a href="https://huggingface.co/papers/2607.15257" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2607.15257" target="_blank" rel="noopener">arXiv 2607.15257</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.02507" target="_blank" rel="noopener">没人看的时候 LLM Agent 说什么：社会压力下公开/私下意见分歧率从 3% 升至 40%</a></h3>
+      <p><strong>现状：</strong>LLM Agent 被部署在越来越多有社会结构的场景中（角色扮演、多 Agent 辩论、协作系统），但我们并不清楚社会压力是否会让 Agent 公开表达和真实判断之间产生系统性偏差。</p>
+      <p><strong>问题：</strong>如果 Agent 在有「观众」的情况下说一套、在没有观众的情况下说另一套，这对于依赖 Agent 输出做决策的系统来说是一个严重的可信度问题。</p>
+      <p><strong>解决方案：</strong>研究者构建了一个双通道辩论框架（dual-channel debate）：Agent 同时生成「公开声明（public utterance，进入共享对话历史）」和「私下回应（off-the-record，仅记录不展示给对方）」，在完全相同的问题下比较两者。跨 10 个模型、3 个场景、5 种变体进行了系统实验。</p>
+      <p><strong>价值：</strong>当对齐激励（alignment-inducing，即让 Agent 倾向于迎合他人期待的情境）存在时，Agent 公开/私下意见的分歧率从基准的约 3% 跳升至约 40%，且这一效应在立场分析、语义相似度、自然语言推理（NLI）、问卷回答四种分析维度上均一致。</p>
+      <p><strong>未来方向：</strong>如何设计 Agent 系统以减少社会压力导致的意见偏移，以及如何在多 Agent 协作中建立更可靠的诚实机制。</p>
+      <cite><a href="https://arxiv.org/abs/2607.02507" target="_blank" rel="noopener">arXiv 2607.02507</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.02032" target="_blank" rel="noopener">PACE：用低成本原子评估预测昂贵 agentic benchmark 的 Agent 能力</a></h3>
+      <p><strong>现状：</strong>SWE-Bench、GAIA 等主流 Agent 基准测试（benchmark）需要复杂的运行环境，评测成本高、时间长，很难在快速迭代的研究周期中频繁运行。</p>
+      <p><strong>问题：</strong>研究者需要在开发过程中频繁判断「这个 Agent 版本进步了没有」，但每次运行完整基准测试代价太高，等于用一把精准但缓慢的标尺量快速移动的目标。</p>
+      <p><strong>解决方案：</strong>PACE（Proxy for Agentic Capability Evaluation）研究是否可以用一组精心挑选的低成本「原子评估（atomic evaluation instances，即测试单项能力的小型任务）」——涵盖推理（reasoning）和代码生成（code generation）等基础维度——来准确预测 Agent 在完整昂贵基准上的表现。</p>
+      <p><strong>价值：</strong>为 AI 研究者和工程团队提供一个快速、轻量的代理指标，无需每次都部署完整评测流水线也能判断 Agent 能力变化方向。</p>
+      <p><strong>未来方向：</strong>扩展原子任务集的覆盖范围，以及验证其在不同类型 Agent 任务（工具调用、多步规划、代码执行）上的泛化能力。</p>
+      <cite><a href="https://arxiv.org/abs/2607.02032" target="_blank" rel="noopener">arXiv 2607.02032</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+<ul class="glance-list">
+  <li>Swyx：虽然自认不是玩键盘的人，看到某个客制化键盘项目还是忍不住说「这真的挺酷」<a class="glance-src" href="https://x.com/swyx/status/2079061713048199625" target="_blank" rel="noopener">X @swyx →</a></li>
+  <li>Thibault Sottiaux：向 Twitter 社区征集「ChatGPT 在现实中产生过深远正面影响」的故事，收到 791 条回复<a class="glance-src" href="https://x.com/thsottiaux/status/2079058139207573541" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+  <li>Peter Yang（petergyang）：100K+ YouTube 订阅者，Google AdSense 至今没向他支付过一分钱<a class="glance-src" href="https://x.com/petergyang/status/2079053505969676404" target="_blank" rel="noopener">X @petergyang →</a></li>
+  <li>Peter Yang：正在用 Codex 协助打这场与 Google 的「追款战」<a class="glance-src" href="https://x.com/petergyang/status/2079053957532655890" target="_blank" rel="noopener">X @petergyang →</a></li>
+  <li>Peter Yang：ChatGPT Work 的文案「在云端运行此对话」对非技术用户完全不透明——产品 UX copy 需要换成人话<a class="glance-src" href="https://x.com/petergyang/status/2079007381695172797" target="_blank" rel="noopener">X @petergyang →</a></li>
+  <li>Amanda Askell：「阿根廷门将今天的薪水没白拿」（世界杯决赛半程观感）<a class="glance-src" href="https://x.com/AmandaAskell/status/2078952214664798283" target="_blank" rel="noopener">X @AmandaAskell →</a></li>
+  <li>Cat Wu（_catwu）：分享用 Claude Cowork 管理日历的 prompt——识别冲突、控制每天会议时长上限、回顾过去几周的会议规律<a class="glance-src" href="https://x.com/_catwu/status/2079011428380602526" target="_blank" rel="noopener">X @_catwu →</a></li>
+  <li>Thariq（trq212）：Claude Code 某 bug 的修复正在推送，遇到问题的用户重启 Claude Code 即可<a class="glance-src" href="https://x.com/trq212/status/2079103743535280508" target="_blank" rel="noopener">X @trq212 →</a></li>
+  <li>Thariq：正在写一篇关于 skills 和 system prompts 经验总结的博文，预告即将发布<a class="glance-src" href="https://x.com/trq212/status/2078901672441790818" target="_blank" rel="noopener">X @trq212 →</a></li>
+  <li>Amjad Masad（amasad）：消费者的钱主要花在食物、房租、娱乐、手机网络——软件通常是企业买单，这解释了为何直面 C 端的软件订阅生意极难规模化<a class="glance-src" href="https://x.com/amasad/status/2079086360703680583" target="_blank" rel="noopener">X @amasad →</a></li>
+  <li>Guillermo Rauch（rauchg）：感谢阿根廷拼尽一切——「拼劲、激情、天赋、信念」（世界杯决赛阿根廷负于西班牙后）<a class="glance-src" href="https://x.com/rauchg/status/2078975602028106050" target="_blank" rel="noopener">X @rauchg →</a></li>
+  <li>Aaron Levie（levie）：当强力开源替代品已逼近前沿模型时，「只有前沿模型才能用、开源要管控」的监管逻辑就站不住脚了——真正的竞争已在应用层展开<a class="glance-src" href="https://x.com/levie/status/2078992778449850769" target="_blank" rel="noopener">X @levie →</a></li>
+  <li>Garry Tan：「GSkills 了解一下？」（引用某 GSkills 相关推文）<a class="glance-src" href="https://x.com/garrytan/status/2078803084785111120" target="_blank" rel="noopener">X @garrytan →</a></li>
+  <li>Matt Turck：世界杯决赛复盘：「怨气、犯规、挑衅、粗口、球迷互扔瓶子……」——对本场比赛的复杂情绪宣泄<a class="glance-src" href="https://x.com/mattturck/status/2078964431225036896" target="_blank" rel="noopener">X @mattturck →</a></li>
+  <li>Zara Zhang（zarazhangrui）：我们要开始接受代码可以是一次性的——用完即弃、无需长期维护，某些场景下这才是正确范式<a class="glance-src" href="https://x.com/zarazhangrui/status/2078835308905578660" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+  <li>Zara Zhang：关于社交媒体创作的建议：当你发现自己在三个不同场合说了同一个想法——那就是该把它写出来发布的信号<a class="glance-src" href="https://x.com/zarazhangrui/status/2078830510177128481" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+  <li>Nikunj：「看到一支这么有才华的球队靠脏动作打比赛，真的很令人沮丧」（阿根廷决赛争议打法）<a class="glance-src" href="https://x.com/nikunj/status/2078963708504465814" target="_blank" rel="noopener">X @nikunj →</a></li>
+  <li>Peter Steinberger（steipete）：「IYKYK」<a class="glance-src" href="https://x.com/steipete/status/2078904784753729962" target="_blank" rel="noopener">X @steipete →</a></li>
+</ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-07-19.html">← JUL 19</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+
+</body>
+</html>
