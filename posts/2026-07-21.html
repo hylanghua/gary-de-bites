@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — July 21, 2026</title>
+  <meta name="description" content="Fable 5 给出 87 年数学悬案 Jacobian 猜想的反例，数学界多人独立验证；Google 曝光「Frozen v2」把 Gemini 架构烧进芯片；AMD Helios 正式对 Nvidia 亮剑。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">July 21, 2026</h1>
+
+  <p class="post-lead">Fable 5 给出 87 年数学悬案 Jacobian 猜想的反例，多位数学家已独立验证；Google 同天曝光「Frozen v2」芯片计划，把 Gemini 架构烧进硅基，推理效率目标 6-10 倍；AMD Helios 正式亮剑，微软和 OpenAI 已签单，Nvidia 机架霸权首遇真正对手。纯银新文揭示传统互联网「需求爆兵」的幻想：发电机悖论告诉我们，只换引擎不改工厂布局，效率革命就无从发生。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.techtimes.com/articles/321152/20260721/googles-frozen-v2-chip-hardwires-gemini-architecture-tenfold-inference-efficiency.htm" target="_blank" rel="noopener">Google「Frozen v2」：把 Gemini 架构烧进芯片，推理效率目标 6-10 倍</a></h3>
+      <p>《The Information》7 月 20 日报道，Google 正在开发一款代号「Frozen v2」的服务器芯片（server chip，数据中心专用处理器），把 Gemini 的神经网络架构（neural-network architecture，模型处理信息的基本电路设计）直接硬编码进芯片电路，而不是像 TPU 那样运行任意模型。这样做的代价是失去灵活性，收益是大幅节省数据移动（data movement，芯片内存与运算单元之间搬运数据的开销），Google 内部预期推理效率比现有 TPU 提升 6-10 倍。模型权重仍可更新，但架构本身被固定。目标部署窗口为 2028 年，Google 尚未公开确认该项目。</p>
+      <p>这个方向的含义远不止于效率：它意味着 Google 在押注 Gemini 的基础架构在未来几年不会发生颠覆性变化。把模型和芯片深度绑定，是一场对模型架构稳定性的大额赌注——赢了省下天量算力成本，输了就是一批废铁。</p>
+      <cite><a href="https://siliconangle.com/2026/07/20/google-reportedly-developing-frozen-v2-ai-chip-optimized-gemini-models/" target="_blank" rel="noopener">SiliconANGLE</a> · <a href="https://www.tldr.tech" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.cnbc.com/2026/07/20/amd-helios-microsoft-ai-nvidia.html" target="_blank" rel="noopener">AMD Helios 发布：首个机架级 AI 系统正面挑战 Nvidia，微软、OpenAI、Meta 签单</a></h3>
+      <p>AMD 7 月 20 日推出 Helios，这是一套机架规模的 AI 系统（rack-scale AI system，将 GPU、CPU、网络和软件整合在一个机柜里统一交付的方案），对标 Nvidia 的旗舰 Vera Rubin 平台，用于前沿模型训练和大规模推理。核心硬件是 AMD MI455X GPU，整套系统估价 500-550 万美元，年内开始交付。客户阵容：微软（新增）、Meta、OpenAI、Oracle、Tata 均已承诺部署，Oracle 甚至在构建一台 5 万 GPU 规模的 Helios 超级计算机。AMD 目前只占数据中心 GPU 市场约 4.5%，这是它正面挑战 Nvidia 的第一枪。</p>
+      <cite><a href="https://www.cnbc.com/2026/07/20/amd-helios-microsoft-ai-nvidia.html" target="_blank" rel="noopener">CNBC</a> · <a href="https://www.tldr.tech" target="_blank" rel="noopener">TLDR</a> · <a href="https://www.theaivalley.com/" target="_blank" rel="noopener">AI Valley</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://glitchwire.com/news/a-mathematician-used-claude-fable-to-disprove-the-87-year-old-jacobian-conjecture/" target="_blank" rel="noopener">Fable 5 给出 87 年数学悬案 Jacobian 猜想的反例，多位数学家独立验证</a></h3>
+      <p>Anthropic 研究员 Levent Alpöge 在 7 月 20 日宣布，他和朋友 Akhil 借助 Claude Fable 5，在世界杯决赛的间隙找到了 Jacobian 猜想（1939 年提出的多项式数学问题，困扰数学界 87 年）的三维多项式反例。反例的核心计算可以用 Wolfram Alpha 手工验证，已有多位数学家独立确认。目前这一结果尚未以 arXiv 预印本形式发布，也未经过正式同行评审，但验证链路已初步建立。Fable 5 此前同期被加入 Claude Max 和 Team 订阅计划。</p>
+      <p>一个数学猜想能否被 AI「攻克」，在这个案例里答案是：AI 提供了关键的反例生成能力，人类数学家确认了其有效性。这不是「AI 自主解题」，而是「AI+数学家的协作突破」——但不管怎么说，87 年没人能找到的例子在一个下午找到了。</p>
+      <cite><a href="https://glitchwire.com/news/a-mathematician-used-claude-fable-to-disprove-the-87-year-old-jacobian-conjecture/" target="_blank" rel="noopener">Glitchwire</a> · <a href="https://www.bensbites.com/p/better-design-than-fable" target="_blank" rel="noopener">Ben's Bites</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Kimi K3（2.8T）登顶前端代码竞技场，美国开始讨论限制中国开源 AI 模型</h3>
+      <p>北京月之暗面（Moonshot AI）的 Kimi K3 在前端代码竞技场（Frontend Code Arena，模型综合评测平台）以 1326 Elo 分位居第一，超过 Fable 5、GPT-5.6-Sol，并在多模态 Agent 长时程评测中达到和 Claude Opus 4.8 同级的水平。权重预计 7 月 27 日开放。与此同时，美国政府正考虑通过采购限制、实体清单（Entity List，禁止特定企业与美国公司交易的黑名单）、安全顾问和责任要求等手段，对 Kimi K3 等中国前沿开源模型实施事实上的使用限制。Hugging Face CEO Clément Delangue 等多位技术圈人士公开反对，认为限制开源模型只会削弱防御性安全，并损害竞争。Alibaba 同期预告 2.4T 参数的 Qwen 3.8 Max，称「性能仅次于 Fable 5」，开源权重即将发布。</p>
+      <cite><a href="https://www.kimi.com/blog/kimi-k3" target="_blank" rel="noopener">Moonshot AI</a> · <a href="https://www.tldr.tech" target="_blank" rel="noopener">TLDR</a> · <a href="https://www.theaivalley.com/" target="_blank" rel="noopener">AI Valley</a> · <a href="https://www.latent.space/p/ainews-not-much-happened-today-173" target="_blank" rel="noopener">Latent Space AINews</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3>Guillermo Rauch（Vercel CEO，rauchg）：AI 时代最大的教训是「一切皆代码」</h3>
+      <p>Rauch 在 X 上发布了一个他认为是当前 AI 时代最核心的洞察：「AI 的最大教训是，一切都是代码（everything is code）。」逻辑是：AI 时代之前，软件工程师是代码的守门人，能写代码的人才能让想法变成现实。一旦自然语言可以生成代码，所有流程、所有工作流、所有规则，都可以被表达为程序并自动执行。这不只是「写代码更快了」，而是代码本身的边界在扩张——以前只能用人工流程处理的事，现在可以变成可执行的指令。</p>
+      <p>作为 Vercel 的 CEO，Rauch 站在 AI 基础设施层观察这一变化，他看到的不是某个具体工具的胜负，而是一次底层范式的转移：会不会「把流程变成代码」，将成为未来几年区分团队效率的核心能力。</p>
+      <p><strong>「一切皆代码」是一句语气轻描淡写的话，装的是一个重量极大的预判：组织效率的分水岭，将是谁能把自己的工作变成可自动运行的程序。</strong></p>
+      <cite><a href="https://x.com/rauchg/status/2079274102129304026" target="_blank" rel="noopener">X @rauchg</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Aaron Levie（Box CEO，levie）：多模型 Agent 系统是 AI 的明确未来方向</h3>
+      <p>Levie 在 X 上明确表态：多模型 Agent 系统（multi-model agentic systems，即用多个不同模型协作完成复杂任务的架构）是 AI 发展的确定性未来。理由是，没有任何一个单一模型可以在所有任务维度上同时最优——不同模型有不同的强项（推理、代码生成、视觉、速度）。未来的 AI 工作流将是：一个调度层决定每步任务该调用哪个模型，不同模型各自处理最适合自己的子任务，最终结果再聚合起来。</p>
+      <p>这和他此前关于「token 价格越低、需求越高」的论点一脉相承：当模型本身已经近似商品化，「如何编排多个模型」就成了新的稀缺能力，企业级 AI 平台的核心价值也将在这里体现。</p>
+      <p><strong>多模型编排不是工程选择，是业务逻辑——谁能把对的模型用在对的子任务上，谁就能把 AI 成本压到地板、把输出质量拉到天花板。</strong></p>
+      <cite><a href="https://x.com/levie/status/2079402164988895293" target="_blank" rel="noopener">X @levie</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Peter Yang（petergyang，产品人）：禁止中国 AI 模型是和禁止中国电动车一样的自伤操作</h3>
+      <p>Peter Yang 在 X 上对美国政府讨论限制中国 AI 模型一事直接表态：「禁止中国模型，和禁止中国电动车是一样的自伤（self own）。」他的逻辑是，电动车的教训清楚地说明了问题：贸易保护只是推迟了竞争，却让本国消费者和企业承受更高的成本，没有为本国产业赢得技术领先，只是在用时间换来了一个不够好的选项。限制 Kimi K3 这类开源模型，美国的开发者用不了，不代表中国用户用不了，净效果是美国企业的工具箱缩水，劣势不减。</p>
+      <p><strong>「保护本国 AI」和「本国 AI 变强」是两件不同的事，混在一起谈的人往往在推销前者的同时损害着后者。</strong></p>
+      <cite><a href="https://x.com/petergyang/status/2079273815004303477" target="_blank" rel="noopener">X @petergyang</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Swyx（swyx，Latent Space 主持人）：RLM 论文里埋着一个值得关注的模型轨迹对比分析</h3>
+      <p>Swyx 在 X 上指出，他在某篇 RLM（Reinforcement Learning for Models，模型强化学习，即用奖励信号迭代优化模型行为的训练方式）论文里发现了一段重要的轨迹对比分析（trajectory comparison，比较不同模型在相同任务序列上的决策路径），认为这段内容被埋得太深、没有获得应有的关注。他没有展开细节，但以他对论文的敏锐度，这条指向本身就值得追查原文。</p>
+      <p><strong>好的研究人员往往是更好的「挖矿工」——他们在别人略过的附录里找到真正重要的数据。</strong></p>
+      <cite><a href="https://x.com/swyx/status/2079411861150429402" target="_blank" rel="noopener">X @swyx</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://xiaobot.net/post/1ffd744e-50ea-4a1c-9e04-fb8ac5ac6d3b" target="_blank" rel="noopener">纯银：需求爆兵——互联网传统业务几乎不可能实现的目标</a></h3>
+      <p>纯银今天这篇是对「AI Coding 会不会带来需求爆兵（大规模快速上线）」这个问题的正面拆解，结论很泼冷水。他在犬校的调查发现：程序员个人提效了 3X-5X，但产品发版速度几乎没有明显变化。原因不是技术，是结构。</p>
+      <p>老项目有历史债，AI Coding 融合成本极高；更关键的是，程序员和设计师没有动力配合。爆兵意味着提效，提效意味着砍 HC（headcount，人力编制），没有人愿意亲手为自己挖坑。纯银还识别出一个关键人才缺口：真正能推动爆兵的人必须同时懂业务、懂 Coding、还要有权力，而这三者在绝大多数公司里不在同一个人身上。</p>
+      <p>他引用了犬校同学 Mellos 的「发电机悖论」类比：19 世纪末电动机诞生后，工厂主把中央蒸汽机换成电动机，生产率毫无提升；直到 30 年后工厂意识到需要把动力分布式化、推倒旧的厂房布局，才有了福特流水线。AI 对互联网组织的改造也要走这条路：不是「换引擎」，而是「重建整座工厂」。但旧工厂自己做不到——「拒绝自杀」有八百种理由搪塞。</p>
+      <p>他的结论是：真正的爆兵只发生在两种情景下——创始人既懂业务又懂 Coding 的新团队（AI native），或者有人「下黑手」强行打碎旧习惯的老团队。两种都是极少数。</p>
+      <p><strong>「程序员提效，产品不加速」这个悖论揭示的不是技术问题，而是组织惰性：老结构里没有任何人有动力亲手终结自己的工作方式。</strong></p>
+      <cite><a href="https://xiaobot.net/post/1ffd744e-50ea-4a1c-9e04-fb8ac5ac6d3b" target="_blank" rel="noopener">小报童 · 纯银</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://every.to/p/drowning-in-demos-here-s-a-better-way-to-prototype" target="_blank" rel="noopener">Every.to：AI 原型泛滥让 Whoop 决策陷入瘫痪，快速建出来不等于决策变好了</a></h3>
+      <p>Hilary Gridley 曾在可穿戴设备公司 Whoop 负责产品，她在 Every.to 的这篇文章里复盘了一个「AI 原型反噬」的案例：当 Bolt 和 Replit 这类工具让人下午就能搭出原型之后，Whoop 的 PM 们进入了一场原型狂欢——想法从文档变成了屏幕，但没有人停下来想「这些原型是为了做什么决定」。结果是：原型从决策工具变成了推销工具，产生了大量感觉有用但实际无法比较的东西，反而让产品会议更难开、决策更难做。</p>
+      <p>她的核心洞察是：当建原型变得和画草图一样便宜，原来「用原型降低高成本决策风险」的逻辑就失效了。现在需要的是先想清楚「这个原型是用来证明还是证伪什么假设」，再造原型，而不是先造再讨论。</p>
+      <p><strong>「建造速度的加速」和「决策质量的提升」是两件不同的事——当 AI 让所有想法都变得可见，你反而需要更严格的框架来决定值得追究哪些想法。</strong></p>
+      <cite><a href="https://every.to/p/drowning-in-demos-here-s-a-better-way-to-prototype" target="_blank" rel="noopener">Every.to</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Zara Zhang（zarazhangrui，Coatue 投资人）：现在只有两类公司</h3>
+      <p>Zara Zhang 在 X 上给出了她对当前 AI 时代商业格局的分类框架：「基本上现在只有两类公司——已经用 AI 重写了核心流程的，和还没有的。」她进一步补充了招聘视角：「如果我今天在招人，我会这样组建团队……」（具体内容不可获取，但指向的是 AI native 的人才结构）。</p>
+      <p>这个两分法不是技术判断，而是商业竞争判断。已经重写流程的公司，正在把成本曲线往下压；还没重写的，每天都在积累效率负债。两类公司的竞争代差，将在接下来 12-24 个月里以利润率和交付速度的形式显现出来。</p>
+      <p><strong>「还没重写」的公司不是在保守，是在无声地选边——选的是即将被抛离的那一边。</strong></p>
+      <cite><a href="https://x.com/zarazhangrui/status/2079225776545968166" target="_blank" rel="noopener">X @zarazhangrui</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.lennysnewsletter.com/p/how-to-take-a-sabbatical" target="_blank" rel="noopener">Lenny's × DJ DiDonna：《Big Time Off》——那段彻底脱轨的时间，往往才是改变一切的真正起点</a></h3>
+      <p>Lenny Rachitsky 在今天的邮件里介绍了 DJ DiDonna 的新书《Big Time Off》，并用自己在 Airbnb 七年后离职的经历作为开场。他说：「如果我没有休假，这份 newsletter 根本不会存在。」三个月的脱轨——漫游、阅读、10 天的静默冥想闭关——让他意识到心不在那份工作上了，然后有了今天一切。</p>
+      <p>DJ DiDonna 花两年时间访谈了几百位休过长假的人，把这段经历研究成了一篇同行评审论文，最后变成了一本书。他的核心论点是：「Big Time Off」（一次真正的大块脱离，而不是两周旅游）是唯一能打断默认人生路径的机制——它让那个说「继续，就这样，会没事的」的内心声音安静下来，让你看清楚「自己到底在为谁的期待而活」。</p>
+      <p>书里的框架是实用的：如何为「休假」建立商业理由说服老板或董事会，如何在财务上规划，如何避免「停工综合征」（刚停下来那段时间的焦虑高峰期），如何在回来之后不把所有收获原路还回去。Lenny 特别注明：DJ 会在 8 月 4 日举行 WhatsApp AMA，邀 Lenny 读者参加。</p>
+      <p><strong>「脱轨」不是放弃，是搜集频率——在日常噪声里永远发现不了的那个信号，只在安静下来的时候才出现。</strong></p>
+      <cite><a href="https://www.lennysnewsletter.com/p/how-to-take-a-sabbatical" target="_blank" rel="noopener">Lenny's Newsletter</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Madhu Guru（realmadhuguru，产品顾问）：现在是有产品直觉的人前所未有的黄金时代</h3>
+      <p>Madhu 在 X 上发了一句话：「现在是有产品感知力（product sense）的人前所未有的好时代。」他的逻辑是：当 AI 让代码、设计、数据分析的执行成本趋近于零，「知道该做什么」和「知道不该做什么」才成了真正的稀缺。工程和设计的门槛在降，判断力的价值在升。在 AI native 的团队里，一个有强产品感知的人现在可以独自走完以前需要 5 人团队才能完成的路径。</p>
+      <p>他的另一条推文的更深逻辑是：「AGI 的道路由经济价值任务铺成」——AI 之所以进步，是因为它在解决有具体经济回报的任务，而不是抽象的智能测试。产品感知力的核心，恰恰是识别哪些任务有这种价值密度。</p>
+      <p><strong>「最好的时代」不是说 PM 更容易，而是说产品判断力的乘数效应比任何时候都大——能放大它的工具第一次以这种规模存在。</strong></p>
+      <cite><a href="https://x.com/realmadhuguru/status/2079387984852668780" target="_blank" rel="noopener">X @realmadhuguru</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.08716" target="_blank" rel="noopener">Remember When It Matters：主动记忆 Agent 为长时程任务提供实时记忆插入</a></h3>
+      <p><strong>现状：</strong>长时程 Agent（long-horizon agent，需要完成步骤数超过几十步、跨越大量上下文的复杂任务的 AI 系统）在执行中必须持续追踪任务要求、环境事实、已失败路径等状态，但这些信息随着任务推进逐渐被埋进过长的对话历史，或被推出上下文窗口（context window，模型单次能「看到」的最大文本量）。</p>
+      <p><strong>问题：</strong>大多数解法是「在上下文快满时压缩历史」，但这会丢失精确的证据、文件路径和关键中间状态，而不是在决策需要的时刻主动补充。</p>
+      <p><strong>解决方案：</strong>本文提出一个独立运行的「记忆 Agent」，与执行任务的主 Agent 并行，持续读取近期轨迹并维护结构化记忆库。每当主 Agent 做出新决策前，记忆 Agent 判断是否需要注入一条「记忆提醒」，把关键历史上下文重新放回主 Agent 的视野。整套系统无需修改主 Agent 本身。</p>
+      <p><strong>价值：</strong>在 Terminal-Bench（终端任务基准）上提升 pass@1 成功率 +8.3 个百分点，在 τ²-Bench（多轮 Agent 基准）提升 +6.8 pp，对弱模型和强模型均有效。</p>
+      <p><strong>未来方向：</strong>记忆 Agent 与执行 Agent 的联合训练，以及在工具调用密集型任务中的应用。</p>
+      <cite><a href="https://arxiv.org/abs/2607.08716" target="_blank" rel="noopener">arXiv 2607.08716</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.00692" target="_blank" rel="noopener">Self-GC：像垃圾回收一样自治管理 Agent 上下文生命周期</a></h3>
+      <p><strong>现状：</strong>Agent 在完成长任务时，上下文窗口里积累着用户请求、Shell 输出、浏览器证据、中间产物、技能状态和局部计划等大量内容，这些「上下文对象」直接决定了成本、延迟和任务质量。</p>
+      <p><strong>问题：</strong>现有系统主要依赖时间顺序剪枝（chronological pruning，按时间先后删旧内容）或接近上下文上限时的一次性摘要，前者无法感知哪些内容对未来仍然重要，后者会丢失可编辑的精确制品（如文件路径、命令行输出）。</p>
+      <p><strong>解决方案：</strong>Self-GC（Self-Governing Context，自治上下文管理，GC 刻意致敬编程语言里的垃圾回收概念）把上下文对象分类为不同生命周期，系统实时判断哪些「对象」可以安全回收（压缩或删除），哪些必须保留到任务结束，并根据未来依赖关系而不是时间顺序做决策。</p>
+      <p><strong>价值：</strong>在多个长时程 Agent 基准上改善了成本效率和任务成功率，同时减少了不必要的重新搜索。</p>
+      <p><strong>未来方向：</strong>跨 Agent 共享上下文库，以及与外部记忆系统的集成。</p>
+      <cite><a href="https://arxiv.org/abs/2607.00692" target="_blank" rel="noopener">arXiv 2607.00692</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/html/2607.16621" target="_blank" rel="noopener">MSCE：记忆与技能协同演化，Agent 从历史轨迹中提炼可复用策略</a></h3>
+      <p><strong>现状：</strong>Agent 每次完成任务都会留下一段执行轨迹（trajectory，从任务开始到结束的完整操作序列），其中包含了工具调用顺序、错误诊断和成功路径等大量经验，但标准框架不会把这些经验系统化沉淀。</p>
+      <p><strong>问题：</strong>Agent 在面对相似任务时往往从零开始推理，既浪费算力，又容易重蹈已知失败路径。</p>
+      <p><strong>解决方案：</strong>MSCE（Memory-Skill Co-Evolution，记忆-技能协同演化）把 Agent 的经验分为三层：有依据的步骤轨迹（grounded step traces）、可复用的程序策略（procedural policies）和声明式的环境认知（declarative environmental cognition）。三层之间动态协同更新，无需额外训练（training-free），只需在推理时调用历史库。</p>
+      <p><strong>价值：</strong>在长时程 Agent 基准上相比无记忆基线有显著提升，且随任务积累持续改善——Agent 越「老」越好用。</p>
+      <p><strong>未来方向：</strong>跨任务类型的技能迁移，以及多 Agent 团队间共享技能库的架构。</p>
+      <cite><a href="https://arxiv.org/html/2607.16621" target="_blank" rel="noopener">arXiv 2607.16621</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2512.14698" target="_blank" rel="noopener">TimeLens（CVPR 2026）：用 RLVR 训练多模态 LLM 做视频时间定位</a></h3>
+      <p><strong>现状：</strong>视频时间定位（Video Temporal Grounding，VTG，给定一段自然语言描述，在视频里找到对应的时间段）是多模态大模型（MLLM，同时处理文字和视频的语言模型）的公认短板：现有基准数据质量差，时间戳编码方式不统一，开源模型的性能普遍落后于闭源方案。</p>
+      <p><strong>问题：</strong>数据质量问题导致在"垃圾数据"上训练的模型无法真正理解视频时序，而缺乏高质量数据集又让研究者无从评估真实能力。</p>
+      <p><strong>解决方案：</strong>TimeLens 从数据质量和算法设计两个维度同时入手：提出并验证了现有 VTG 基准中的质量缺陷，构建了 TimeLens-100K 高质量数据集，并在 Qwen2.5-VL 和 Qwen3-VL 基础上使用 RLVR（带可验证奖励的强化学习，即只有生成的时间戳真的准确才给正向奖励）配合改进的时间戳编码策略进行训练。已被 CVPR 2026 接收。</p>
+      <p><strong>价值：</strong>在开源 VTG 模型中达到最优性能；TimeLens-100K 数据集、代码和模型权重完整开源。</p>
+      <p><strong>未来方向：</strong>将时间定位能力扩展至超长视频，以及与搜索 Agent 结合实现视频内容的结构化检索。</p>
+      <cite><a href="https://arxiv.org/abs/2512.14698" target="_blank" rel="noopener">arXiv 2512.14698</a> · <a href="https://github.com/TencentARC/TimeLens" target="_blank" rel="noopener">CVPR 2026 / GitHub</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.02255" target="_blank" rel="noopener">AgenticSTS：有界记忆约束下的长时程 Agent 测试平台</a></h3>
+      <p><strong>现状：</strong>评测长时程 Agent 的主流做法是用开放的对话历史（即把所有过往交互都塞进上下文），但这掩盖了 Agent 在有限记忆下的真实能力，也与实际部署场景不符。</p>
+      <p><strong>问题：</strong>缺少一个明确约束记忆边界的标准化评测平台，导致研究者无从比较「在同等信息约束下不同 Agent 的决策质量」。</p>
+      <p><strong>解决方案：</strong>AgenticSTS（Agentic Structured Task Sequences with bounded memory）提出有界记忆合约（bounded-memory contract）：每次决策前，Agent 只能访问一条由结构化检索组装的新消息，不允许直接追加原始历史。这强制要求 Agent 必须学会主动整理和检索记忆，而不是依赖无限上下文。</p>
+      <p><strong>价值：</strong>提供了一个可复现的测试框架，帮助区分「真正理解任务」和「靠上下文积累蒙混过关」的 Agent。</p>
+      <p><strong>未来方向：</strong>与主动记忆 Agent（如 Remember When It Matters）结合，在约束环境下测试记忆注入策略的效果。</p>
+      <cite><a href="https://arxiv.org/abs/2607.02255" target="_blank" rel="noopener">arXiv 2607.02255</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+<ul class="glance-list">
+  <li>Amjad Masad（amasad，Replit CEO）：「首个由 coding agent 完成的物理产品？」——指向某个 agent 完成了从设计到生产的全流程实体产品<a class="glance-src" href="https://x.com/amasad/status/2079282869063786541" target="_blank" rel="noopener">X @amasad →</a></li>
+  <li>Garry Tan（garrytan，YC 总裁）：「算力就是一切（Compute rules everything around me，CREAM）」——致敬 Wu-Tang，表达对算力核心地位的判断<a class="glance-src" href="https://x.com/garrytan/status/2079240755135357356" target="_blank" rel="noopener">X @garrytan →</a></li>
+  <li>Thibault Sottiaux（thsottiaux，OpenAI 工程师）：「在 OpenAI 工作永远不无聊，绝对难以置信的地方」<a class="glance-src" href="https://x.com/thsottiaux/status/2079355529101705264" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+  <li>Matt Turck（mattturck，FirstMark 合伙人）：「一个顶尖的中国免费开源模型一出，OpenAI 和 Anthropic 的表情……」——以表情包形式回应 Kimi K3 发布<a class="glance-src" href="https://x.com/mattturck/status/2079198838741458989" target="_blank" rel="noopener">X @mattturck →</a></li>
+  <li>Nikunj Kothari（nikunj，Anthropic 产品负责人）：「过去 18 个月的很多创始人将会意识到……」——对近期创业潮后市的观察，未展开，但语气暗示有大量即将面对现实的公司<a class="glance-src" href="https://x.com/nikunj/status/2079328912912355470" target="_blank" rel="noopener">X @nikunj →</a></li>
+  <li>Nikunj：「这个从 VC 到'快速增长初创'的路径真的魔幻得让人目瞪口呆」——对当前 AI 创业泡沫节奏的感慨<a class="glance-src" href="https://x.com/nikunj/status/2079211477127291350" target="_blank" rel="noopener">X @nikunj →</a></li>
+  <li>Dan Shipper（danshipper，Every CEO）：「我感觉自己就是 Brian Johnson（科技抗衰网红）」——自我调侃在健康领域的入坑程度<a class="glance-src" href="https://x.com/danshipper/status/2079320969802400200" target="_blank" rel="noopener">X @danshipper →</a></li>
+  <li>Sam Altman（sama，OpenAI CEO）：「现在好了！」（"it is good now!"）——语境不明，但凡是 Altman 发，都不会只是随口一句<a class="glance-src" href="https://x.com/sama/status/2079258683884917013" target="_blank" rel="noopener">X @sama →</a></li>
+  <li>Madhu Guru：「AGI 的道路是由有经济价值的任务铺成的」——AI 进步的动力来自解决真实经济问题，而不是抽象测试<a class="glance-src" href="https://x.com/realmadhuguru/status/2079369965569003071" target="_blank" rel="noopener">X @realmadhuguru →</a></li>
+  <li>Thariq（trq212，Anthropic 工程师）：「这个 bug 只活了几分钟」——Claude Code 某 bug 修复推送，重启即可生效<a class="glance-src" href="https://x.com/trq212/status/2079105479125741675" target="_blank" rel="noopener">X @trq212 →</a></li>
+  <li>Peter Yang（petergyang）：「用一个 agent 做工作，另一个对照 rubric（评分标准）复核」——实用的 agent 工作流技巧<a class="glance-src" href="https://x.com/petergyang/status/2079257646939742542" target="_blank" rel="noopener">X @petergyang →</a></li>
+  <li>Swyx（swyx）：「这件事现在字面意义上正在发生」（"unironically this is happening right tf now"）——指向某个 AI 能力突破或应用场景的落地信号，语气笃定<a class="glance-src" href="https://x.com/swyx/status/2079438448956788964" target="_blank" rel="noopener">X @swyx →</a></li>
+  <li>Zara Zhang：招人视角补充——「如果我今天在招人，我会这样组建团队……」（AI native 人才结构的具体框架，全文可见原推）<a class="glance-src" href="https://x.com/zarazhangrui/status/2079409165424799889" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+  <li>Qwen 3.8 Max：Alibaba 预告 2.4T 参数多模态旗舰模型，称「性能仅次于 Fable 5」，开源权重日期待定<a class="glance-src" href="https://www.marktechpost.com/2026/07/19/alibaba-previews-qwen3-8-max-a-2-4-trillion-parameter-multimodal-model-days-after-moonshots-kimi-k3-open-weight-launch/" target="_blank" rel="noopener">MarkTechPost →</a></li>
+  <li>Cursor 用 agent swarm 从一本 835 页手册重建了 SQLite——Opus 4.8 + Composer 2.5 方案仅花 $1,339，而单用 GPT-5.5 则需 $10,565<a class="glance-src" href="https://www.bensbites.com/p/better-design-than-fable" target="_blank" rel="noopener">Ben's Bites →</a></li>
+  <li>Sierra Horizon 发布：按业务结果收费（而非 token 数）的长周期 Agent，能跨天/周主动发起客户触达，自动从每次互动中学习<a class="glance-src" href="https://sierra.ai/blog/horizon" target="_blank" rel="noopener">Sierra →</a></li>
+  <li>NotebookLM 三岁，正式改名为 Gemini Notebook，新增 Collections 功能（一个笔记本可属于多个集合）<a class="glance-src" href="https://www.bensbites.com/p/better-design-than-fable" target="_blank" rel="noopener">Ben's Bites →</a></li>
+  <li>AINews（Latent Space）本期称「今天比较平静」，但 Kimi K3 权重开放和 Qwen 3.8 Max 预告在技术圈掀起对中国模型政策的大讨论<a class="glance-src" href="https://www.latent.space/p/ainews-not-much-happened-today-173" target="_blank" rel="noopener">Latent Space →</a></li>
+</ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-07-20.html">← JUL 20</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+
+</body>
+</html>
