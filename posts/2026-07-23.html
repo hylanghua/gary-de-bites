@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — July 23, 2026</title>
+  <meta name="description" content="AMD 向 Anthropic 投资 50 亿美元，换来 2GW MI450 芯片合同；OpenAI 推出企业语音 Agent 平台 Presence；Cursor 发布模型路由器，60% 成本下降。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">July 23, 2026</h1>
+
+  <p class="post-lead">AMD 向 Anthropic 投资 50 亿美元，换来高达 2 GW 的 Instinct MI450 芯片采购订单——这是继英伟达之后 AI 芯片供应链最重要的双向押注，AMD 正面争夺 AI 基础设施话语权的信号再明确不过。OpenAI 同天推出企业语音 Agent 管理平台 Presence，75% 来电无需人工；Cursor 发布模型路由器把 AI 编码成本压低 60%；Fable 在几乎无人介入的情况下，为 Vercel 的 Turbopack 发现了 15-30% 的内存效率提升空间。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.cnbc.com/2026/07/22/amd-anthropic-ai-chip-investment.html" target="_blank" rel="noopener">AMD + Anthropic 双向押注：50 亿美元战略投资 + 2GW Instinct MI450 芯片合同</a></h3>
+      <p>AMD 与 Anthropic 于 7 月 22 日同时公布两件事：AMD 将在 Anthropic 达到特定部署里程碑后，投入最高 50 亿美元战略投资；Anthropic 则承诺从 2027 年上半年起采购高达 2 GW 的 AMD Instinct MI450 系列 GPU（GPU，图形处理单元，AI 训练和推理的主要算力硬件），部署于 AMD Helios 机架规模系统（rack-scale，以整排服务器机架为单位、统一液冷和互联的超大规模部署形态）。双方同步签署工程合作协议，共同优化 AMD 的 ROCm 软件平台（ROCm，AMD 的开源 AI 计算软件栈，对应英伟达的 CUDA）以适配 Claude 系列模型。</p>
+      <p>这笔合同的潜在规模估计达 272 亿美元，是 AMD 迄今拿到的最大 AI 基础设施订单。战略含义不只是芯片销量：Anthropic 目前已在量产中使用 AMD MI355X，这次 MI450 的大规模承购意味着 Anthropic 有意将 AMD 打造为英伟达之外的第二大算力支柱——而对 AMD 来说，手握 Anthropic 这块头部模型公司的背书，在和英特尔、英伟达竞争其他大客户时将更有底气。</p>
+      <cite><a href="https://www.cnbc.com/2026/07/22/amd-anthropic-ai-chip-investment.html" target="_blank" rel="noopener">CNBC</a> · <a href="https://www.tomshardware.com/tech-industry/amd-to-supply-anthropic-with-2-gigawatts-of-instinct-mi450-gpus" target="_blank" rel="noopener">Tom's Hardware</a> · <a href="https://www.tldr.tech" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://openai.com/index/introducing-openai-presence/" target="_blank" rel="noopener">OpenAI Presence：企业语音 Agent 托管平台，Codex 自动优化、75% 来电免人工</a></h3>
+      <p>OpenAI 发布 Presence，一个面向企业客户、用于部署和管理实时语音 Agent 及聊天机器人的托管平台。Presence 不只提供模型接口：它把公司政策、权限规则和评估标准直接嵌进 Agent 运行时，并用 Codex 分析每次对话的性能信号，自动生成改进建议，由人工审核后推送到生产环境——形成一个自动进化的 Agent 管理循环。OpenAI 在自家英语客服热线上已跑了一段时间：75% 的来电完全由 Presence 解决，无需转人工；Codex 的反馈循环在 10 天内让转人工率再降了 15 个百分点。</p>
+      <p>目前处于有限公测阶段（limited GA），由 OpenAI 的 Forward Deployed Engineers 和少数系统集成商合作部署，不支持网页自助注册。定价、地域限制和合同细节均未公开。从策略上看，Presence 是 OpenAI 从「卖 API 算力」向「卖可部署 AI 员工体系」迈出的一步——把模型调优、合规管理和持续改进打包成服务，而不是让企业自己处理这些复杂度。</p>
+      <cite><a href="https://openai.com/index/introducing-openai-presence/" target="_blank" rel="noopener">OpenAI 官方</a> · <a href="https://venturebeat.com/orchestration/openai-unveils-presence-a-new-platform-that-lets-enterprises-launch-and-manage-realtime-voice-agents-and-chatbots" target="_blank" rel="noopener">VentureBeat</a> · <a href="https://www.tldr.tech" target="_blank" rel="noopener">TLDR</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://cursor.com/blog/router" target="_blank" rel="noopener">Cursor Router：请求级模型路由，三档可选，实测 60% 成本下降</a></h3>
+      <p>Cursor 发布 Cursor Router，面向 Teams 和 Enterprise 用户的请求级模型路由器（router，按请求类型自动选择最合适模型的分发系统）。路由器读取每个请求的查询内容、代码上下文、任务复杂度和领域特征，在 Cost（成本最低）、Balance（默认均衡）、Intelligence（最高智能，适合复杂架构设计）三档间自动选择模型。在数百万次请求的在线 A/B 测试中，Cursor Router 以和直接路由到 Opus 4.8 相当的质量，实现了 60% 的成本节省；早期接入的三个大客户（每家数千名用户）节省了 30-50%。</p>
+      <p>单次提交的参考成本：Intelligence 模式 $6.76，Balance 模式 $4.63。路由器的核心逻辑是：大多数 coding 请求不需要用最昂贵的模型，识别出「这个任务用中等模型完全够」是一个可以自动化的判断。不过 Replit CEO Amjad Masad 在同天发推质疑：「如果路由器的设计者有激励推荐特定模型，它就只是个门面。」这个问题对所有模型路由产品都成立。</p>
+      <cite><a href="https://cursor.com/blog/router" target="_blank" rel="noopener">Cursor 官方博客</a> · <a href="https://www.bensbites.com/p/caught-cheating" target="_blank" rel="noopener">Ben's Bites</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3>Guillermo Rauch（rauchg，Vercel CEO）：Fable 几乎自主发现 Turbopack 15-30% 内存效率提升</h3>
+      <p>Rauch 在 X 上写道：「Fable 在 Turbopack / Next.js 里发现了 15-30% 的内存效率提升，几乎是自主完成的。」Fable（Anthropic 的专项 Agent 模型）在没有明确人工指令的情况下，分析了 Turbopack（Vercel 用 Rust 写的下一代打包工具）的代码库，发现了可以优化的内存使用路径，并输出了可以落地的改进建议——这不是辅助工程师写代码，而是模型主动扫描系统、发现人类没有注意到的优化空间。</p>
+      <p>这件事之所以值得单独讲，是因为它有公司名、有可测量的结果（15-30%），而不是一个模糊的「AI 帮助提效」叙事。Next.js 16.3 在这个改进基础上，开发服务器在某些项目上的内存占用已从 21.5 GB 降到约 2 GB。在「AI 是编码助手」的框架之外，这是「AI 是系统优化发现者」的首批公开可核实案例之一。</p>
+      <p><strong>当模型开始主动发现人类没有发现的优化点，工程 Review 流程的起点就从「人提需求、AI 实现」悄悄变成了「AI 提候选、人来决定要不要做」。</strong></p>
+      <cite><a href="https://x.com/rauchg" target="_blank" rel="noopener">X @rauchg</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Amjad Masad（amasad，Replit CEO）：「如果你有激励推某模型，你的路由器只是个门面」</h3>
+      <p>Masad 在 Cursor Router 发布的同一天发推：「如果你有激励去推荐特定模型，你的路由器（router）只是个外观。」这句话的锋芒指向整个模型路由行业的信任问题：路由器声称「选最适合的模型」，但选择逻辑是否真的中立，用户几乎无法验证。路由器背后的公司与特定模型供应商之间可能存在商业关系，也可能对自家托管的模型有成本结构偏好。</p>
+      <p>这不是针对 Cursor 的个人攻击——Masad 自己的 Replit 也有类似的模型选择逻辑。他点出的是整个行业的结构性张力：「智能路由」作为卖点越来越普遍，但路由决策的透明度几乎为零。对于每天花大量 token 费用的工程团队，这个问题很快会从哲学变成财务。</p>
+      <p><strong>路由器的中立性是一个待解的信任问题，对 AI 基础设施供应商来说，这会比功能竞争更难赢。</strong></p>
+      <cite><a href="https://x.com/amasad" target="_blank" rel="noopener">X @amasad</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Aaron Levie（levie，Box CEO）：AI 是「技能偏向型、劳动增强型」，而非替代型</h3>
+      <p>Levie 今天发了一篇较长的帖子，借用「技能偏向型技术变革（skill-biased technical change）」这个经济学概念重新框架 AI 与就业的关系。他的论点是：AI 不是均匀替代劳动力，而是放大了有特定技能的人的产出——就像电脑时代放大了程序员、分析师的价值，却没有让蓝领工人受益一样，AI 也在让「懂得和 AI 协作」的工作者与「不懂」的工作者之间拉出一道新的分层。这不是「AI 抢工作」，而是「技能有没有和 AI 对接」决定了命运。</p>
+      <p>这个框架比「AI 替代就业」简单叙事更精确，也更有行动含义：问题不是「AI 会不会替代你」，而是「你的技能栈是否能和 AI 形成放大效应」。这和 TLDR 今天另一篇「为什么 AI 没有增加失业？」的文章遥相呼应——两者都指向同一个结论：AI 不是均匀压力，而是一个分层器。</p>
+      <p><strong>「技能偏向型」比「替代型」更危险，因为它让技能差距以指数速度拉大，而不是让整个行业一起面对冲击。</strong></p>
+      <cite><a href="https://x.com/levie" target="_blank" rel="noopener">X @levie</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://theskip.substack.com/p/inside-pm-at-stripe-what-comes-after" target="_blank" rel="noopener">Stripe PM 内部视角：「成为 Builder」之后是什么？</a></h3>
+      <p>Lenny Rachitsky 与 Nikhyl Singhal（前 Google、Meta 产品高管）联合的播客节目 The Skip，本周对话了 Stripe 产品负责人 Kevin Yien。话题核心是：过去两年 AI 让「人人都能 build」成为现实，当工程师、设计师、数据分析师都能直接交付以前需要产品经理协调才能落地的功能，PM 的差异化价值在哪里？Yien 的视角来自 Stripe 这个对产品质量和决策密度要求极高的环境，他在 Square、Mutiny 也积累了相似的思考：Builder 能力并不消解 PM 的价值，但 PM 必须比以前更清楚「我的不可替代性是什么」。</p>
+      <p>这个问题在 2026 年不是抽象的。AI coding 工具让工程师的产出量翻倍，平台层的设计工具让设计师能快速出原型——原本由 PM 统筹的「翻译层」正在被工具部分替代。「成为 Builder」曾经是 PM 的进阶路径，现在人人都在 build，下一个分层靠什么？Yien 提出的答案指向「判断力和系统设计」——在信息更丰富、执行速度更快的环境里，谁能做更好的取舍决定，谁就更有价值。</p>
+      <p><strong>「Builder PM」的时代已经够卷了，而「AI 也能 build」之后，PM 的护城河开始指向一个更古老的能力：在模糊里做好判断。</strong></p>
+      <cite><a href="https://theskip.substack.com/p/inside-pm-at-stripe-what-comes-after" target="_blank" rel="noopener">The Skip / Lenny's Newsletter</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Garry Tan（garrytan，YC 总裁）：YC RFS「We want to defend America」</h3>
+      <p>Garry Tan 在 X 上发布了 YC 的最新 Request for Startups（RFS，YC 每季发布的创业方向号召），核心一句话：「We want to defend America.」这是 YC 有史以来表述最直白的国防科技 RFS——不是软性的「政府科技」或「双用途技术」，而是直接点名国防。从更大背景看，YC 近年来在无人机、弹药供应链、C2 系统（Command and Control，军事指挥控制系统）和情报分析领域投资了多家公司，这次 RFS 是一个公开的加速信号。</p>
+      <p>YC 的 RFS 有时只是旗帜，不一定代表实际投资量——但每次 YC 明确喊话某个方向，都会吸引大量创始人重新考虑是否进入。国防科技领域过去的障碍是「双重审核、合规复杂、政府采购慢」，但随着 Palantir、Anduril、Shield AI 相继进入规模阶段，这个行业的创业可行性在年轻创始人眼里已经发生了根本改变。</p>
+      <p><strong>YC 把「保卫美国」写进 RFS，国防科技从「特殊赛道」变成了主流创业选项，这个标签切换比实际投资额更值得关注。</strong></p>
+      <cite><a href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3>Nan Yu（thenanyu，Linear 产品负责人）：「你说'系统思维'时，脑子里浮现的是什么？」</h3>
+      <p>Nan Yu 在 X 上发了一个简单的问题：「当你听到或说出'系统思维（systems thinking）'时，你脑子里想到的确切定义是什么？」这个问题本身就是一个观察——「系统思维」是产品、工程、设计、管理领域都在用的词，但不同背景的人用它时指向完全不同的东西。工程师可能想到「反馈环路和涌现行为」；PM 可能想到「找到真正的杠杆点」；OKR 咨询师可能只是在说「看大局」。</p>
+      <p>在 AI 工具让每个人都能更快执行的今天，「系统思维」的稀缺性在反向提升：执行层越来越容易被自动化，真正难的是「正确地定义系统」。但如果一个团队里每个人对「系统思维」的理解都不同，这个稀缺技能就没有公共语言，也就没法真正被培养和考核。把这个问题当成团队对齐练习用一下，可能比任何「关于 AI 如何改变工作」的培训都更有用。</p>
+      <p><strong>你在用「系统思维」这个词的时候，先停一秒，想想你的队友是否在想同一件事。</strong></p>
+      <cite><a href="https://x.com/thenanyu" target="_blank" rel="noopener">X @thenanyu</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Dan Shipper（danshipper，Every CEO）：「一个新的发现黄金时代正在降临」</h3>
+      <p>Shipper 今天的帖子语气有些激动：「一个新的发现（discovery）黄金时代正在降临！」背景是 Fable 5 上周证明了 Jacobian 猜想（一个困扰数学家 87 年的代数几何问题），陶哲轩与 AI 合作推导的对话已公开可读。对 Shipper 来说，这不只是数学突破，而是一个信号：AI 作为认知伙伴（cognitive partner），正在把人类能探索的问题边界向外推。「发现」指的不只是数学定理，而是整个知识生产的方式。</p>
+      <p>作为 Every 的 CEO，Shipper 长期观察 AI 和写作/思考/研究的交集。他的兴奋来自具体的：一个顶级数学家用 AI 工具真正解决了他自己独立可能无法解决的问题。从「AI 帮你写邮件」到「AI 帮你证明数学猜想」，这个跨度在 2026 年终于有了真实记录。</p>
+      <p><strong>Jacobian 猜想的意义不只在数学，在于它给出了一个无法反驳的实例：人与 AI 的协作，可以达到任何一方单独都无法达到的地方。</strong></p>
+      <cite><a href="https://x.com/danshipper" target="_blank" rel="noopener">X @danshipper</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.18438" target="_blank" rel="noopener">Relay-Bench：7 个推理领域串联，GPT-5.5 从 82%+ 跌至 43%</a></h3>
+      <p><strong>现状：</strong>主流 Agent 基准（benchmark，用于测量 AI 能力的标准测试集）大多在单一领域评测模型：代码评代码、数学评数学，前沿模型在这些单域测试上已超过 80% 正确率。</p>
+      <p><strong>问题：</strong>真实任务几乎从不是单域的——一个数据分析请求可能同时需要信息检索、代码执行、数学推理和自然语言输出，但现有基准无法测量跨域连贯推理的能力，导致「基准第一」不等于「真实可用」。</p>
+      <p><strong>解决方案：</strong>Relay-Bench 把视觉推理、编程、数学、信息检索、通用问题解决、常识和数据分析 7 个领域的子问题串联成一个连贯提示（chained prompt），每道题需要模型跨域逐步推理才能到达最终答案，且明确允许使用代码执行、网络搜索等工具。</p>
+      <p><strong>价值：</strong>GPT-5.5 在主流 Agent 测试上得分 82.7%，在 Relay-Bench 上只有 43.3%，39 分的落差无法用模型能力解释，只能归因于「单域推理强 ≠ 跨域连贯推理强」这一结构性盲点。这个基准对 Agent 系统设计者有直接含义：知道模型在哪里断链，才能知道在哪里补人工干预。</p>
+      <p><strong>未来方向：</strong>多模型组合的 Relay-Bench 策略，以及更长跨域推理链（8+ 域）的压力测试。</p>
+      <cite><a href="https://arxiv.org/abs/2607.18438" target="_blank" rel="noopener">arXiv 2607.18438</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.05943" target="_blank" rel="noopener">SearchEyes：用知识图谱模拟搜索世界，训练多模态深度搜索 Agent</a></h3>
+      <p><strong>现状：</strong>多模态深度搜索 Agent（需要结合图像理解和多跳网络搜索才能回答问题的 AI 系统）的训练存在三个孤立的问题：训练数据构建、搜索环境模拟和奖励信号设计往往互不连通，导致综合性能瓶颈。</p>
+      <p><strong>问题：</strong>现有管线构建训练数据时丢弃了结构化元数据（实体关系、跳跃路径），搜索环境依赖难以复现的外部引擎，奖励信号只在整条推理轨迹结束后才给出（稀疏奖励），三者结合导致训练信号弱、泛化差。</p>
+      <p><strong>解决方案：</strong>SearchEyes 以 Wikidata5M 知识图谱为骨架，构造「感知-知识链（Perception-Knowledge Chain, PKC）」：沿图谱的视觉-知识交叉路径采样多跳问题，保留每一跳的实体元数据，这些元数据同时定义了自包含的搜索模拟世界和步骤级奖励锚点，三个子问题在同一个结构中统一解决。</p>
+      <p><strong>价值：</strong>在 6 个多模态知识密集基准上，SearchEyes-27B 比最强开源基线平均提升 6.2 分，达到开源多模态搜索 Agent 的最新水平。</p>
+      <p><strong>未来方向：</strong>扩展知识图谱覆盖范围，以及与实时网络搜索引擎接轨的在线学习方案。</p>
+      <cite><a href="https://arxiv.org/abs/2607.05943" target="_blank" rel="noopener">arXiv 2607.05943</a> · <a href="https://huggingface.co/papers/2607.05943" target="_blank" rel="noopener">HuggingFace Papers</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.17423" target="_blank" rel="noopener">TimeLens2：覆盖 7 类场景的通用视频时间定位模型</a></h3>
+      <p><strong>现状：</strong>多模态大语言模型（MLLM）能描述视频里发生了什么，但很难精准回答「这件事发生在哪段时间」——视频时间定位（video temporal grounding）是一个独立难题，尤其在不同场景（短动作片段、长纪录片、第一人称视角）之间泛化能力差。</p>
+      <p><strong>问题：</strong>现有时间定位模型通常只在单一场景或单一任务设定（Natural Language Video Grounding、Temporal Sentence Grounding 等）上训练，换场景就性能下降明显；而现实应用经常跨场景。</p>
+      <p><strong>解决方案：</strong>TimeLens2 设计了统一的输入输出格式，覆盖 7 类时间定位场景（包括短动作定位、长视频、以及小时级 Ego 视角记录），在单一模型权重内实现跨场景的通用时间推理，输出一个或多个时间区间。</p>
+      <p><strong>价值：</strong>在多个跨场景基准上达到最优水平，是目前开源多模态视频时间理解能力最强的通用模型之一。</p>
+      <p><strong>未来方向：</strong>与视频生成模型结合，自动定位并剪辑与自然语言描述匹配的片段。</p>
+      <cite><a href="https://arxiv.org/abs/2607.17423" target="_blank" rel="noopener">arXiv 2607.17423</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.17250" target="_blank" rel="noopener">EvolvingWorld：角色 Agent 与世界模型在文学世界里共同进化</a></h3>
+      <p><strong>现状：</strong>现有角色扮演 Agent（role-play agents，模拟特定虚构角色对话和行动的 AI）和叙事世界模型（world model，追踪故事世界里人物关系、地点状态等整体背景的系统）几乎总是分开训练，导致角色对话和世界状态之间出现不一致，长时程故事模拟容易崩溃。</p>
+      <p><strong>问题：</strong>当角色行动改变了世界状态（A 打败了 B，C 的城堡被摧毁），后续的角色对话和场景设定必须反映这些变化，但现有系统无法维持这种「角色-世界」的持续一致性。</p>
+      <p><strong>解决方案：</strong>EvolvingWorld 把「角色 Agent 模块」和「LLM 世界模型模块」耦合成一个共同进化框架：角色行动触发世界状态更新，更新后的世界状态作为后续角色行动的背景条件，两者实时双向同步。数据集从 57 本书中提取，生成 138,596 个训练样本和 222 个测试快照。</p>
+      <p><strong>价值：</strong>在长时程叙事模拟基准上显著提升角色和世界状态的持续一致性，为游戏 NPC（非玩家角色）、互动小说和 Agent 协作场景提供了更稳定的基础设施。</p>
+      <p><strong>未来方向：</strong>多角色并行进化时的冲突仲裁机制，以及开放世界场景下的动态扩展。</p>
+      <cite><a href="https://arxiv.org/abs/2607.17250" target="_blank" rel="noopener">arXiv 2607.17250</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.07619" target="_blank" rel="noopener">Rethinking Code Performance Benchmarks：24% 的任务被主流 Benchmark 漏掉了实质性能差异</a></h3>
+      <p><strong>现状：</strong>主流代码性能 Benchmark（EffiBench、Enamel、EvalPerf、Mercury 等）被广泛用于评测 LLM 生成代码的运行效率，但这些基准的测试用例是由人工或简单脚本生成的，测试覆盖的典型场景有限。</p>
+      <p><strong>问题：</strong>分析 1,345 个 Benchmark 任务后发现，只有 6.11% 的性能优化实现能被原始测试套件检测出来，大量有实质性能提升的方案在现有基准下得分和平庸方案一样——这意味着 LLM 在代码性能 Benchmark 上的分数有严重的测量失真。</p>
+      <p><strong>解决方案：</strong>用三个专项 Agent 组成的多 Agent 框架自动生成「暴露性能差异」的测试用例：一个 Agent 生成候选测试，第二个诊断测试质量，第三个修复不够好的测试，最终形成对各 Benchmark 任务的增强测试集。</p>
+      <p><strong>价值：</strong>使用增强测试集后，DeepSeek-v3.1 在 24.01%、GPT-4o 在 25.43% 的任务上发现了统计显著的性能差异——这些差异在原始 Benchmark 下是隐形的。对依靠代码性能 Benchmark 选模型的工程团队，这意味着排行榜可能不如想象中可信。</p>
+      <p><strong>未来方向：</strong>把多 Agent 测试生成框架作为标准流程集成进 Benchmark 维护体系，以及扩展到运行时内存和延迟等其他性能维度。</p>
+      <cite><a href="https://arxiv.org/abs/2607.07619" target="_blank" rel="noopener">arXiv 2607.07619</a></cite>
+    </article></section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--m"></span>
+      <h2>看一眼</h2>
+    </div>
+    <ul class="glance-list">
+      <li>Claude Security plugin for Claude Code 公测：多 Agent 终端漏洞扫描，commit 前发现高危安全问题，组织管理员通过 claude.ai/admin-settings/claude-code 启用<a class="glance-src" href="https://claude.com/product/claude-security" target="_blank" rel="noopener">X @claudeai →</a></li>
+      <li>Zara Zhang（zarazhangrui）：「厚上下文，薄 Prompt」——描述你的问题，而不是规定解法，Agent 效果更好<a class="glance-src" href="https://x.com/zarazhangrui" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+      <li>Aditya Agarwal（adityaag，South Park Commons）：创业公司文化最终会吃掉战略——别让 culture 替 strategy 做了决定<a class="glance-src" href="https://x.com/adityaag" target="_blank" rel="noopener">X @adityaag →</a></li>
+      <li>Swyx（swyx，Latent Space）：「哈哈，有人刚提醒我，我在这上面混了很久了吧」——AI 工程老兵的自嘲式回望<a class="glance-src" href="https://x.com/swyx" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>Peter Yang（petergyang）：反 AI 垃圾内容工具一天涨 1K Stars——「大家已经受够了垃圾」<a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Josh Woodward（joshwoodward，Google Labs VP）：Gemini Flow 免费创意写作积分每天 50 个，截至 8 月 31 日<a class="glance-src" href="https://x.com/joshwoodward" target="_blank" rel="noopener">X @joshwoodward →</a></li>
+      <li>Thibault Sottiaux（thsottiaux，OpenAI Codex 团队）：「明天感觉很 codexy」——Codex 有新动作即将到来<a class="glance-src" href="https://x.com/thsottiaux" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+      <li>Madhu Guru（realmadhuguru，Meta AI Director）：GPT-5.6 Sol 自主买了套房——对 AI Agent 能力的讽刺性幻想<a class="glance-src" href="https://x.com/realmadhuguru" target="_blank" rel="noopener">X @realmadhuguru →</a></li>
+      <li>realmadhuguru：开放权重模型与私有数据保护的张力——本地推理不等于数据安全<a class="glance-src" href="https://x.com/realmadhuguru" target="_blank" rel="noopener">X @realmadhuguru →</a></li>
+      <li>Thariq（trq212，Anthropic Claude Code 团队）：「用 Claude Design 和 Claude Code 做前端，真的太好了」<a class="glance-src" href="https://x.com/trq212" target="_blank" rel="noopener">X @trq212 →</a></li>
+      <li>Matt Turck（mattturck，FirstMark 合伙人）：VC 推创始人从 $1M 冲到 $100M 的增长梗——估值预期和现实之间的鸿沟<a class="glance-src" href="https://x.com/mattturck" target="_blank" rel="noopener">X @mattturck →</a></li>
+      <li>Nikunj Kothari（nikunj，FPV Ventures）：瑞士火车有儿童游乐区，让等待变成体验——设计细节中的理念差异<a class="glance-src" href="https://x.com/nikunj" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>nikunj：「Series A 估值的笑话」——对当前 AI 创业融资节奏的轻描淡写<a class="glance-src" href="https://x.com/nikunj" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Apple 规划秋季全系 Mac 产品线更新，从低端 14 寸 MacBook Pro 到 iMac，7 月 28 日将推出设备租赁计划<a class="glance-src" href="https://www.tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Travis Kalanick 的机器人公司 Atoms 完成 17 亿美元融资，Uber 参与，Kalanick 称要为机器人建造底盘<a class="glance-src" href="https://www.tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>WebMCP 现状：行业支持踊跃、网站落地接近零，Google 称 Gemini in Chrome 将是首个消费端支持者<a class="glance-src" href="https://www.tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Cloudflare Durable Objects：V8 isolate + SQLite 的 Agent 状态管理原语，原生支持 WebSocket，token 成本极低<a class="glance-src" href="https://www.tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>AI 高速增长创业公司的困境：以极低甚至负利润转卖 inference，商业模式在 VC 热情冷却后难以为继<a class="glance-src" href="https://www.tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>为什么 AI 没有增加失业？因为 AI 补充而非替代人类领域专业判断，截止成效评估仍依赖人在环<a class="glance-src" href="https://www.tldr.tech" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Substack 接入 Pangram AI 检测：读者可扫描任何帖子/回复/评论，获得 AI 生成内容比例估算，iOS 先行<a class="glance-src" href="https://www.bensbites.com/p/caught-cheating" target="_blank" rel="noopener">Ben's Bites →</a></li>
+      <li>Laguna S 2.1 深度报道：比 DeepSeek v4 Flash 便宜、比 v4 Pro 更好，Eiso Kant 的西方 neolab 如何在更小规模上超越中国顶尖模型<a class="glance-src" href="https://www.latent.space/p/ainews-laguna-s-21-released-cheaper" target="_blank" rel="noopener">Latent Space →</a></li>
+    </ul>
+  </section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-07-22.html">← JUL 22</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+
+</body>
+</html>
