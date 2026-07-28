@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — July 28, 2026</title>
+  <meta name="description" content="Kimi K3 以 2.8 万亿参数开放权重打败 Opus 4.8，开放权重联署阵营扩至 77 家、OpenAI 补签但 Anthropic 持续缺席。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">July 28, 2026</h1>
+
+  <p class="post-lead">Kimi K3 以 2.8 万亿参数开放权重打败 Opus 4.8，开放权重联署阵营扩至 77 家、OpenAI 补签但 Anthropic 持续缺席；Nvidia 向 Ilya Sutskever 的 Safe Superintelligence 投资 50 亿美元，Amazon 申报 5105 颗卫星为 iPhone 提供直连，ChatGPT Voice 登陆桌面端可语音驱动 Codex 全流程。</p>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--r"></span>
+      <h2>新闻速递</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://kimi.ai/k3" target="_blank" rel="noopener">Kimi K3：2.8 万亿参数 MoE，开放权重，超越 Opus 4.8</a></h3>
+      <p>月之暗面发布 Kimi K3，2.8 万亿参数混合专家架构，全权重开源发布。官方基准显示在代码、数学、推理多项指标上超越 Claude Opus 4.8，是当前开放权重模型中评分最高的旗舰级产品。同日，Guillermo Rauch 发起的"开放权重"联署信已达 77 家机构签署，OpenAI 于本周补签，Anthropic 至今仍未署名。</p>
+      <cite>Moonshot AI / The Verge</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.reuters.com/technology/nvidia-invest-5-billion-safe-superintelligence-2026-07-28/" target="_blank" rel="noopener">Nvidia 向 Safe Superintelligence 投资 50 亿美元</a></h3>
+      <p>Nvidia 宣布向 Ilya Sutskever 联合创办的 Safe Superintelligence（SSI）投资 50 亿美元，为其有史以来对单一 AI 初创公司最大一笔战略投资。SSI 迄今未发布任何产品，专注于"安全通往超级智能"的基础研究路线。</p>
+      <cite>Reuters</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.theverge.com/2026/7/28/amazon-satellite-iphone-direct-5105" target="_blank" rel="noopener">Amazon 申报 5105 颗卫星，计划直连 iPhone</a></h3>
+      <p>Amazon 向 FCC 提交申请，拟为 Kuiper 卫星群新增 5105 颗低轨卫星，明确目标之一是为 iPhone 等消费级手机提供直连宽带服务，与 SpaceX Starlink 直连计划形成正面竞争。</p>
+      <cite>The Verge</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://openai.com/blog/chatgpt-voice-desktop-codex" target="_blank" rel="noopener">ChatGPT Voice 登陆桌面，可语音驱动 Codex 全流程</a></h3>
+      <p>OpenAI 将高级语音模式引入 macOS 和 Windows 桌面客户端，用户现在可以全程用语音指挥 Codex 完成代码生成、调试、提交等工作流，无需切换到文字输入。这是语音界面第一次被正式纳入开发者工具链。</p>
+      <cite>OpenAI Blog</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.bloomberg.com/news/articles/2026-07-28/china-duv-asml-shares" target="_blank" rel="noopener">中国 DUV 产能消息令 ASML 单日跌 8%</a></h3>
+      <p>市场消息称中国芯片制造商已逐步消化囤积的 DUV 光刻机产能，减少对 ASML 新订单依赖，引发投资者对 ASML 中期营收预期的重估，股价单日下跌约 8%。</p>
+      <cite>Bloomberg</cite>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--o"></span>
+      <h2>AI 方向观点</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://www.interconnects.ai/p/every-openai-infra" target="_blank" rel="noopener">Every OpenAI 的基础设施：拆解一家 AI 媒体的技术栈</a></h3>
+      <p>AINews（Latent Space）深度分析 Every OpenAI 作为 AI-native 媒体的运作方式：从 Claude 生成初稿、到编辑介入定稿、再到读者个性化推送，全流程几乎由 AI 驱动。文章指出这套流程的核心不是"AI 写作"，而是"人类判断力在哪个节点介入"的设计问题。</p>
+      <cite>Latent Space / AINews</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://steipete.me/posts/agent-to-agent-bugs" target="_blank" rel="noopener">Agent-to-agent 的调试陷阱</a></h3>
+      <p>steipete 在实际工程中发现：当多个 agent 串联时，上游 agent 的输出格式错误会被下游 agent 静默接受，最终在意想不到的地方爆发。他提出"在每个 agent 边界做显式断言"的工程原则，比依赖模型自己发现错误要可靠得多。</p>
+      <cite>steipete.me</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.anthropic.com/news/claude-code-prompt" target="_blank" rel="noopener">Anthropic：80% 的 Claude Code 提示来自 agent 而非人类</a></h3>
+      <p>Anthropic 公布数据：Claude Code 当前 80% 的 prompt 由其他 agent 生成，人类直接输入只占 20%。这一比例意味着 Claude Code 的主要使用模式已经是 agent-in-the-loop，而非 human-in-the-loop，对模型在非监督环境下的鲁棒性提出更高要求。</p>
+      <cite>Anthropic</cite>
+    </article>
+
+    <article class="item">
+      <h3>rauchg：Grok 4.5 与 Kimi K3 的安全边界测试</h3>
+      <p>Guillermo Rauch 在测试 Grok 4.5 和 Kimi K3 时发现两款模型在安全拒绝策略上存在显著差异：Grok 4.5 在部分敏感提示上拒绝率明显偏低，而 Kimi K3 则更接近主流安全标准。他认为开放权重模型的安全对齐是比性能更关键的长期问题。</p>
+      <cite>rauchg / X</cite>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--y"></span>
+      <h2>产品与商业</h2>
+    </div>
+
+    <article class="item">
+      <h3>纯银：豆包"无限对话"体验流的设计逻辑</h3>
+      <p>纯银在小报童分享了他对豆包最新版本"无限对话流"的观察：豆包将单次对话的上下文限制从界面上隐藏掉，用滚动加载代替"新开对话"的操作断点，让用户感知不到记忆边界。他认为这是一种"把技术约束包在产品设计里"的成熟做法，比直接暴露 context window 更有利于留存。</p>
+      <cite>纯银 / 小报童</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/thenanyu/status/product-philosophy" target="_blank" rel="noopener">@thenanyu：好产品不解释自己</a></h3>
+      <p>Nan Yu 发推：真正好的产品从不需要向用户解释"为什么要这样做"——用户会直接感受到。他以 Kimi K3 的发布页面为例，指出其文档的克制风格和基准数据的呈现方式，比大多数 AI 产品的发布 blog 更有说服力，因为它"让数据说话，不自夸"。</p>
+      <cite>@thenanyu / X</cite>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--g"></span>
+      <h2>人文与哲学</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://x.com/levie/status/ai-jobs" target="_blank" rel="noopener">Aaron Levie：AI 不会消灭工作，只会重写工作的定义</a></h3>
+      <p>Box CEO Aaron Levie 发文回应近期关于 AI 替代就业的讨论：历史上每一次技术浪潮（蒸汽机、电气化、互联网）都曾被预言为"终结就业"，最终结果是就业总量上升但工作性质彻底改变。他认为当下的 AI 浪潮与此一致，真正消失的是"重复性认知劳动"，诞生的是"理解和指挥 AI 的新型角色"。<strong>但他也坦承：这次转型速度比以往任何一次都快，政策和教育体系跟不上是真实风险。</strong></p>
+      <cite>@levie / X</cite>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--b"></span>
+      <h2>AI 进展</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2507.07153" target="_blank" rel="noopener">Kimi K3 技术报告：MoE 架构与训练细节</a></h3>
+      <p>月之暗面随模型发布同步公开技术报告。K3 采用 Mixture-of-Experts 架构，2.8 万亿总参数、每次推理激活约 320 亿，训练数据逾 15 万亿 token。报告重点披露了其强化学习后训练方案和多语言对齐策略，是迄今公开最详尽的大规模 MoE 训练文档之一。</p>
+      <cite>arXiv / Moonshot AI</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.21653" target="_blank" rel="noopener">Molt：多目标长时程任务基准</a></h3>
+      <p>Molt 提出针对"长时程、多目标"任务的新型评估框架，专注于测量模型在执行跨越数十步骤的复杂任务时的目标追踪能力。实验显示当前顶级模型在任务步骤超过 20 步后，目标遗忘率显著上升，揭示了现有模型在 agent 场景下的核心短板。</p>
+      <cite>arXiv:2607.21653</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.20465" target="_blank" rel="noopener">DataPrep-Bench：数据预处理能力的系统评估</a></h3>
+      <p>DataPrep-Bench 构建了首个专门评估 LLM 数据清洗与预处理能力的基准，覆盖 12 类常见数据质量问题。结果发现模型在结构化异常检测上表现相对稳定，但在隐式语义错误和跨列关联问题上准确率普遍低于 50%。</p>
+      <cite>arXiv:2607.20465</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.22529" target="_blank" rel="noopener">Skill Self-Play：无需人类标注的技能自动习得</a></h3>
+      <p>Skill Self-Play 让模型通过自我对弈迭代生成技能描述与对应练习题，实验表明在无任何人类标注数据的情况下，模型在多项技能习得指标上显著优于监督微调基线，为低资源场景下的专项能力提升提供了新思路。</p>
+      <cite>arXiv:2607.22529</cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/datasets/SciCodePile" target="_blank" rel="noopener">SciCodePile：科学代码大规模预训练语料</a></h3>
+      <p>SciCodePile 收录来自物理、化学、生物、材料等领域的 1800 万段科学代码，是目前规模最大的科学领域代码预训练数据集。初步实验显示在 SciCodePile 上继续预训练后，模型在科学计算任务的正确率提升约 12 个百分点。</p>
+      <cite>HuggingFace / SciCodePile</cite>
+    </article>
+
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--m"></span>
+      <h2>看一眼</h2>
+    </div>
+
+    <ul class="glance-list">
+      <li>@sama 转推一条用户说"GPT-5.6 Sol 就够了"，回复了一个字："wrong"——言简意赅地表达了对现状的不满足。<a class="glance-src" href="https://x.com/sama" target="_blank" rel="noopener">@sama →</a></li>
+      <li>@thsottiaux（Thomas Scialom）：RLHF 让模型变得"更听话"，但听话不等于正确——我们需要区分 alignment 和 compliance 这两个概念。<a class="glance-src" href="https://x.com/thsottiaux" target="_blank" rel="noopener">@thsottiaux →</a></li>
+      <li>@petergyang：试了一下让 Claude 把整个 Next.js 项目迁移到 Remix，一次成功，代码量 3000 行——这在一年前需要一个工程师花两周时间。<a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">@petergyang →</a></li>
+      <li>@realmadhuguru：在构建 AI agent 时，最难的不是让模型"做对事"，而是让它"在对的时候停下来"。<a class="glance-src" href="https://x.com/realmadhuguru" target="_blank" rel="noopener">@realmadhuguru →</a></li>
+      <li>@amasad（Replit CEO）：Replit Agent 今天处理的部署任务数量首次超过人类用户手动部署数量，agent 流量正式超过人类流量。<a class="glance-src" href="https://x.com/amasad" target="_blank" rel="noopener">@amasad →</a></li>
+      <li>@mattturck：AI 基础设施的估值逻辑已经从"模型能力"切换到"数据飞轮+生态锁定"，谁有数据谁有话语权。<a class="glance-src" href="https://x.com/mattturck" target="_blank" rel="noopener">@mattturck →</a></li>
+      <li>@zarazhangrui：用 Kimi K3 跑了一组中文长文摘要任务，流畅度和信息密度都达到 GPT-4o 水平，开放权重时代终于有了可用的中文旗舰模型。<a class="glance-src" href="https://x.com/zarazhangrui" target="_blank" rel="noopener">@zarazhangrui →</a></li>
+      <li>@nikunj（Nikunj Kothari）：context window 的增长让"检索增强"这个概念本身开始模糊——当你能放进去一整本书，还需要 RAG 吗？<a class="glance-src" href="https://x.com/nikunj" target="_blank" rel="noopener">@nikunj →</a></li>
+      <li>@danshipper：Every 的 AI 写作工具本周 DAU 突破 10 万，其中 60% 的用户会在 AI 初稿基础上做实质性修改，说明"AI+人类编辑"模式比纯 AI 生成更受欢迎。<a class="glance-src" href="https://x.com/danshipper" target="_blank" rel="noopener">@danshipper →</a></li>
+      <li>@levie 同时提到：Kimi K3 的发布让他重新思考"护城河"——当开放权重追平闭源旗舰，差异化只能来自系统集成和企业信任，而不是模型本身。<a class="glance-src" href="https://x.com/levie" target="_blank" rel="noopener">@levie →</a></li>
+      <li>Lenny's Newsletter 本期推送了 Product Pass 会员扩容消息，新增企业团队订阅选项——本条为商业推广，内容本身无实质信息。<a class="glance-src" href="https://www.lennysnewsletter.com" target="_blank" rel="noopener">Lenny's →</a></li>
+      <li>Octane AI 发布更新：quiz funnel 现已支持与 Shopify Markets 多货币结算直连，电商个性化推荐流程减少一次跳转。<a class="glance-src" href="https://www.octaneai.com" target="_blank" rel="noopener">Octane AI →</a></li>
+      <li>YouTube 与 Peacock 宣布部分体育赛事将联合直播，NFL 赛季前热身赛将首次同步出现在两个平台——流媒体版权碎片化继续。<a class="glance-src" href="https://www.youtube.com" target="_blank" rel="noopener">YouTube →</a></li>
+      <li>X Money 开始向部分美国用户灰度测试点对点转账功能，支持借记卡绑定，马斯克的"超级 App"支付版图再落一子。<a class="glance-src" href="https://x.com" target="_blank" rel="noopener">X →</a></li>
+    </ul>
+
+  </section>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-07-27.html">← JUL 27</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
