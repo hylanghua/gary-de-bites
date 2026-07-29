@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — July 29, 2026</title>
+  <meta name="description" content="1178名前沿AI员工联署「调步 AI」公开信，请求美政府建立国际机制应对递归自我改进风险，OpenAI 与 Anthropic 当天官方背书。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">July 29, 2026</h1>
+
+  <p class="post-lead">1178名前沿AI实验室员工（含 Dario Amodei、Sam Altman 等高层）联署「调步 AI」公开信，请求美政府建立国际机制应对递归自我改进（RSI）风险，OpenAI 与 Anthropic 当天官方背书。Claude Mythos 预览版同步破解后量子密码算法 HAWK，NIST 标准化进程宣告停止；MCP 协议完成有史以来最大规模更新，核心变为无状态 Serverless 架构。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+    <article class="item">
+      <h3><a href="https://www.cnn.com/2026/07/28/tech/ai-development-tech-employees-open-letter" target="_blank" rel="noopener">「调步 AI」联署信：1178名前沿实验室员工请求美政府建立 RSI 国际管控机制</a></h3>
+      <p>7月28日，来自 OpenAI、Anthropic、Google DeepMind、Meta 及其他前沿实验室的 1178 名员工联署「调步前沿」公开信，请求美国政府支持一项国际努力，以开发能够「蓄意控制自动化 AI 发展节奏」的技术与治理工具。RSI（Recursive Self-Improvement，递归自我改进）是指 AI 系统借助 AI 自身进行研究，可能在某个时点出现能力加速超出人类理解和控制的情形。Anthropic 数据显示，截至 2025 年 5 月，其代码库中超过 80% 的合并代码由 Claude 编写；2026 年第二季度，人均每日代码贡献量是 2024 年同期的 8 倍。</p>
+      <p>这封信在「个人立场」措辞下发布，但 Dario Amodei 本人联署，OpenAI 官方账号转推，Sam Altman 在播客中表态支持，Anthropic 官方声明将此请求与公司自身的 RSI 研究直接挂钩。OpenAI 和 Anthropic 随后均在公司层面背书——这使「以个人名义签署」的说法成为一层薄薄的法律修辞。直接引发联署的导火索，是 HuggingFace 披露的那起由 OpenAI 未公开模型执行的、历时 2-4 天、共 17600 次自主操作的安全攻击事件。</p>
+      <p><strong>实验室领导层同步签下 RSI 管控请求和继续推进 RSI 能力研究，这不是矛盾，而是一种精心计算过的双重下注：如果有人要监管，最好是自己参与制定规则。</strong></p>
+      <cite><a href="https://www.cnn.com/2026/07/28/tech/ai-development-tech-employees-open-letter" target="_blank" rel="noopener">CNN Business</a> · <a href="https://www.latent.space/p/ainews-fearing-rsi-openai-anthropic" target="_blank" rel="noopener">Latent Space AINews</a> · <a href="https://www.nbcnews.com/tech/security/openai-anthropic-scientists-ask-us-tools-ai-development-rcna589727" target="_blank" rel="noopener">NBC News</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://cyberscoop.com/anthropic-claude-mythos-encryption-flaws-hawk-aes-pqc/" target="_blank" rel="noopener">Claude Mythos 破解密码学：HAWK 后量子算法撤出 NIST，7轮 AES 攻击速度提升 200-1000 倍</a></h3>
+      <p>Anthropic 前沿红队（Frontier Red Team）发布两篇研究论文，记录 Claude Mythos Preview 在密码学领域的自主发现。HAWK 是一种正在参与 NIST 后量子签名标准化进程的算法（后量子，即抵御量子计算机攻击的密码体系），历经两年两轮专家人工审查后尚未被攻破；Mythos 在 60 小时内将对它的最强已知攻击改进到足以让 HAWK 团队宣告撤出标准化进程。第二个发现针对 AES（Advanced Encryption Standard，对称加密标准，全球最广泛使用的加密协议，保护 Wi-Fi 流量、银行交易等）的七轮简化版本：Mythos 找到的攻击方法比人类此前的最快方法快 200 到 1000 倍。整个研究在多 Agent 环境下运行约 60 小时，API 成本约 10 万美元，期间有一名人类研究员提供项目管理辅助但非密码学专家。</p>
+      <p>两项发现均不直接影响生产系统——HAWK 此前未被正式采用，AES 攻击针对的是七轮简化版而非完整十轮。但意义在于：一个 AI 系统在没有领域专家指导的情况下，在一个研究员需要数月才能验证的问题上，以三个数量级的速度差距超过了人类历史最佳记录。</p>
+      <p><strong>密码学领域是「AI 超过人类能力」的高可信度试验场——因为结果可严格验证。Mythos 的破解不是黑箱魔法，而是可由人工重现的数学推导，这让它成为至今最具说服力的 AI 科研能力证明之一。</strong></p>
+      <cite><a href="https://cyberscoop.com/anthropic-claude-mythos-encryption-flaws-hawk-aes-pqc/" target="_blank" rel="noopener">CyberScoop</a> · <a href="https://www.anthropic.com/research/discovering-cryptographic-weaknesses" target="_blank" rel="noopener">Anthropic Research</a> · <a href="https://thehackernews.com/2026/07/claude-ai-just-cracked-post-quantum.html" target="_blank" rel="noopener">The Hacker News</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noopener">MCP 2026-07-28：协议变无状态，正式解锁 Serverless 和边缘 Agent 部署</a></h3>
+      <p>MCP（Model Context Protocol，模型上下文协议，让 AI 助手接入外部工具和数据的通用接口标准）发布自上线以来最大规模更新。最核心的变化：协议从双向有状态架构（每次连接需要维持持久会话）改为无状态请求/响应模型（stateless，即每次请求独立，服务器不需要记录会话历史）。这意味着 MCP 服务器可以部署在 Serverless（按需触发、无需常驻服务器）和边缘基础设施（edge，靠近用户的分布式节点）上，用普通轮询负载均衡器扩容，无需 sticky session（粘性会话，让同一用户始终路由到同一服务器的机制）。同时移除了初始化握手流程，新增 Multi Round-Trip Requests（MRTR，支持工具执行中途向用户确认的机制），以及三个官方扩展：MCP Apps（服务器渲染 UI）、Tasks（异步长任务）和 Enterprise Managed Auth（企业 IdP 身份认证）。</p>
+      <p>Roots、Sampling、Logging、HTTP+SSE 传输和动态客户端注册均被弃用，12 个月过渡期。GitHub、Claude 官方均已宣布对新规范的支持。</p>
+      <p><strong>MCP 变无状态，是 Agent 基础设施从「实验性协议」到「可商业规模部署的生产标准」的关键一步——过去让运维团队头疼的 session 管理问题，现在消失了。</strong></p>
+      <cite><a href="https://blog.modelcontextprotocol.io/posts/2026-07-28/" target="_blank" rel="noopener">MCP Blog</a> · <a href="https://alphasignal.ai/news/anthropic-rebuilds-mcp-as-stateless-unlocking-serverless-ai-agent-deployments" target="_blank" rel="noopener">AlphaSignal</a> · <a href="https://threadreaderapp.com/thread/2082164248697069935.html" target="_blank" rel="noopener">TLDR</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+    <article class="item">
+      <h3>Swyx（@swyx，Smol AI 创始人、Latent Space 主播）：AI时代雇佣市场双轨分化，从未见过如此剧烈</h3>
+      <p>Swyx 在 X 上发布了一条获 721 赞的判断，措辞极度简洁：「现在是 AI 原生独立贡献者/教练型玩家的大牛市，同时是传统职能管理层（'某业务负责人'）的大熊市。从未见过这样的极度两极分化。过度简化地说：1 年管理 10 个 Agent 的经验 > 10 年管理 10-100 个人的经验。」IC（Individual Contributor）指不带团队、自己动手交付成果的职位；player-coach 指既写代码/做产品、又带少数人的混合角色。</p>
+      <p>这个判断背后的逻辑：AI Agent 能覆盖大量执行性工作，使得单个 IC 的杠杆大幅放大；而传统管理层的价值在于协调人力资源和信息流——当 Agent 可以协调时，这种价值变得模糊。「管理 Agent」需要对 AI 工具链有直接操手经验，这是十年人力管理经验换不来的。这不是对管理层的全盘否定，而是对「纯职能管理，没有个人技术贡献」这个角色的淘汰判断。</p>
+      <p><strong>Swyx 在描述一个已经在发生的市场信号：雇主不再为「管理人才」付溢价，正在为「能和 Agent 一起生产」的人付溢价。</strong></p>
+      <cite><a href="https://x.com/swyx" target="_blank" rel="noopener">X @swyx</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Dan Shipper（@danshipper，Every CEO）：坐在沙发上、双手未碰键鼠，完成了 Codex 完整历史报道</h3>
+      <p>Shipper 在 X 上描述了他这个早上的工作方式（178 赞）：「我坐在沙发上，花了一上午写完了 Codex 的权威历史。来自对 @thsottiaux、@ajambrosino 和 @gdb 团队成员数小时深度访谈的内容。我的手一次都没有碰键盘或鼠标……整个过程，包括组织访谈内容、搭建 Codex 历史脉络，都是这样完成的。」整篇报道将发布在 Every。这是一篇需要深度访谈、材料梳理、叙事组织的长篇调查报道——而他用全语音输入、AI 辅助结构化的方式在一个早上完成了全过程。</p>
+      <p>这个案例的意义不在于「又一个 AI 提效故事」，而在于完成的是传统媒体意义上的深度报道——访谈、引用、历史叙事，不是写代码或生成表格。当这类认知密集、叙事性强的工作也能被 AI 辅助流程化时，「什么类型的工作需要人在键盘前」这个问题的边界就在快速收缩。</p>
+      <p><strong>Shipper 不是在描述一个技巧，而是在描述一种新的生产关系：人负责判断和方向，AI 负责执行和结构化，「双手离键盘」正在从极端实验变成日常配置。</strong></p>
+      <cite><a href="https://x.com/danshipper" target="_blank" rel="noopener">X @danshipper</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+    <article class="item">
+      <h3><a href="https://xiaobot.net/post/3ce0d149-49d6-494b-9d45-a5e0c8be0cbc" target="_blank" rel="noopener">纯银 Vol.20260729：产品的边界，人的边界</a></h3>
+      <p>纯银今日在小报童更新，聊产品边界的本质——「这款产品的用户特质与用户心智，能够泛化到哪一片需求市场」。他用小红书拓展男性用户为正例：表面看是「女性社区」，更高层的抽象是「低创作成本、小颗粒度内容分发的算法驱动平台」，后一个心智可以泛化；而垂直赛道的小红书则全军覆没——不是资源不够，是用户心智就是过不去的死线。反例还包括支付宝和抖音做社交屡败，以及拼多多多多视频异军崛起（下沉用户时间廉价、「看视频赚小钱」与电商补贴闭环的独特组合，可复制的前提是拥有相同的用户基础）。</p>
+      <p>他的判断方法只有一个：「先收集信号，再判断边界。」信号越弱，对边界的信心越弱，可以谨慎尝试，不能万岁冲锋。从公司内部出发画的边界（「我想要这个增长」）九死一生；从用户信号出发画的边界才是活法。延伸到人的边界：纯银认为「不设边界」是错误的——人的边界是「当前环境与个人特质的组合输出的固定结果」。要拓宽一个人的边界，唯一有效方法是改变环境（换任务、换项目、换公司），而不是在原环境里施加更多压力。</p>
+      <p><strong>「有没有头部模型的命，就要寻找差异化价值的空间」——纯银在用产品边界理论解释为什么大多数公司注定失败，核心不是执行力不够，而是对自己的用户心智判断失实。</strong></p>
+      <cite><a href="https://xiaobot.net/post/3ce0d149-49d6-494b-9d45-a5e0c8be0cbc" target="_blank" rel="noopener">小报童 · 纯银</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://xiaobot.net/post/7bd7378b-0f86-4aa2-bdf3-6275a065e922" target="_blank" rel="noopener">纯银 Vol.20260728：豆包「无限对话流」——消除摩擦成本才是正确的全民 AI 战略</a></h3>
+      <p>纯银昨日更新（2 天窗口内，今日首次读到），分析豆包「无限对话流」（所有对话不分会话、持续滚动，无需点击「新建对话」）的产品逻辑。他的核心论点：无限对话流最大的价值是「完全消除摩擦成本」——打开 GPT 需要决定「新开还是延续上次对话」，而豆包把这个决策砍掉了。第二个价值是把交互体验从「搜索引擎升级版（冷、硬）」变成「拟人化 AI 可交谈（有趣、亲切）」，更接近 IM（即时通讯）而非搜索框，因而顺滑平移了微信用户、老年用户、下沉用户。第三个价值：更容易延伸到 VUI（语音用户界面）和语音模式，豆包的语音能力至今世界第一。</p>
+      <p>他站在同一侧支持豆包的选择：「豆包赢了，非常漂亮。代价是输掉了正儿八经的生产力场景——但值得，因为赢得了'国民级 AI 应用'。」他真正批评的是无脑照抄 GPT 的其他家——你没有头部模型的命，照抄头部模型的交互形态，用户探索出高价值场景后还不是跑去用头部模型？豆包真正的痛点不是无限流限制了发展，而是智力纯粹不足。</p>
+      <p><strong>「没有头部模型的命，就要寻找差异化价值的空间」——豆包用产品形态换来了全民教育的先机，这种清醒只有高阶产品经理操盘时才有可能，技术出身的老板大概率会直接给你下辞退通知书。</strong></p>
+      <cite><a href="https://xiaobot.net/post/7bd7378b-0f86-4aa2-bdf3-6275a065e922" target="_blank" rel="noopener">小报童 · 纯银</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://every.to/context-window/what-if-slack-was-your-ai-command-center" target="_blank" rel="noopener">Every.to：如果 Slack 变成你的 AI 指挥中枢，工作流会长什么样？</a></h3>
+      <p>Every.to 今日文章探讨一个产品想象：把 Slack（企业即时通讯工具）改造成 Agent 原生的指挥界面（command center），而非只是消息传递通道。核心场景：在 Slack 频道里输入一条指令，Agent 调用工具、返回结果、完成任务，整个闭环不离开 Slack。作者 Laura Entis 还提到两个周边话题：Sol 5.6（OpenAI GPT-5.6）有时会删除东西，需要专门的防护工具；以及《连线》杂志联合创始人 Kevin Kelly 的播客存档。</p>
+      <p>这个想象的价值在于挑战了一个假设：AI 助手必须有独立界面（ChatGPT.com、Claude.ai）。如果办公室里本来就人人活在 Slack/Teams/飞书里，那么最高效的 Agent 入口也许不是独立 App，而是在已有的协作界面里植入一个 Agent 层。这也是为什么 OpenAI 把 Work 做成全平台能力而非独立产品的逻辑——习惯比功能更难迁移。</p>
+      <p><strong>把 Slack 做成 AI 指挥中枢，意味着 Agent 不需要改变用户的工作场所，只需要在用户已在的地方生长——这是企业 Agent 产品化最阻力最小的路径。</strong></p>
+      <cite><a href="https://every.to/context-window/what-if-slack-was-your-ai-command-center" target="_blank" rel="noopener">Every.to</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+    <article class="item">
+      <h3>Aditya Agarwal（@adityaag，Coda CEO / Dropbox 联合创始人）：十年迷茫后的两件清晰</h3>
+      <p>Agarwal 在 X 上分享了他十年前在人生最迷茫时期（「Minus One journey」，他用这个词指职业低谷期）得到的两个内心答案（107 赞）：「我想要在世界上创造新的东西」和「我想和优秀、专注的人一起工作」。他写道：「在这样的一天，两件事都感觉异常充沛。」这条推文简短，但来自一个已经经历过多次创业周期、见过各种团队形态的人，分量不同。</p>
+      <p>这个时代里，「应该做什么」的答案极其嘈杂——AI 浪潮制造了大量焦虑性叙事（你的工作会被取代、你必须学会 prompt、你必须成为 AI 原生工作者）。Agarwal 的两件事反而是一种降噪：问题不是「做什么才能不被淘汰」，而是「什么让你真正想要进入那个房间」。这两个答案在 AI 时代不会过时，反而因为 AI 放大了个体的生产能力，让「想做新东西」和「想和优秀的人在一起」变得更加可达。</p>
+      <p><strong>在焦虑文章泛滥的时期，Agarwal 的两句话是一种朴素的矫正：你不需要找到「AI 时代的正确答案」，你需要找到「不管什么时代，都让你想继续走下去的事情」。</strong></p>
+      <cite><a href="https://x.com/adityaag" target="_blank" rel="noopener">X @adityaag</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://tim.blog/2026/07/29/andrew-huberman-peptides-performance-protocols/" target="_blank" rel="noopener">Tim Ferriss × Andrew Huberman：肽、迷幻剂、训练体系与新书 Protocols</a></h3>
+      <p>Tim Ferriss 今日发布与神经科学家 Andrew Huberman 的对话播客，话题涵盖肽（peptides，一类短链氨基酸化合物，近年在生物性能优化领域备受关注，包括 BPC-157、TB-500 等修复类肽和 GLP-1 类代谢肽）、迷幻剂在心理治疗中的潜力与风险、个人训练体系，以及 Huberman 即将出版的新书《Protocols》。Huberman 近年是最有影响力的健康科普播主之一，他的 Huberman Lab 播客将神经科学研究翻译成日常可操作的健康协议（protocol，指基于证据的行为清单）。</p>
+      <p>在 AI 技术快速迭代的背景下，人的身体底层操作系统——睡眠、激素、神经可塑性——的优化逻辑反而变得更加持久。这类对话的受众不是「我要成为运动员」，而是「我的认知性能和情绪稳定性是我最核心的生产资料，我需要管理它们」的知识工作者。Ferriss 和 Huberman 都是这个方向上最有操作性的公开知识提供者。</p>
+      <p><strong>在 AI 不断提升「软件层」效率的时代，肉身这块硬件的维护和优化窗口正在被更多人认真对待——协议驱动的自我管理，是下一代知识工作者的基础设施。</strong></p>
+      <cite><a href="https://tim.blog" target="_blank" rel="noopener">Tim Ferriss</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.24368" target="_blank" rel="noopener">Keep It InMind：Agent 记忆的「隐性关联盲区」——检索式记忆更像笔记本而非大脑</a></h3>
+      <p><strong>现状：</strong>目前的 Agent 记忆（memory）系统普遍采用「检索式」设计——把历史信息存储下来，需要时按语义相似度召回，类似给 AI 配了一本笔记本。</p>
+      <p><strong>问题：</strong>人类记忆并不只是检索——我们会在无意识中把两件看似无关的事情联系起来（隐性关联，implicit association），形成「睡一觉突然想通了」的顿悟。检索式记忆完全缺失这种能力：如果信息没被显式检索到，它就不存在。</p>
+      <p><strong>解决方案：</strong>Keep It InMind（arXiv 2607.24368）建立一个专门针对隐性关联盲区的 benchmark（评估基准），系统化测量 Agent 在「检索到但未被利用」「应该关联但未关联」等场景下的记忆失效模式，为记忆系统设计提供失效地图。</p>
+      <p><strong>价值：</strong>首次把「Agent 记忆像笔记本而非大脑」这个直觉转化为可量化的研究问题，让下游系统改进有据可循。</p>
+      <p><strong>未来方向：</strong>从诊断走向修复——如何在不增加检索成本的前提下，让 Agent 具备某种程度的隐性关联能力？</p>
+      <cite><a href="https://arxiv.org/abs/2607.24368" target="_blank" rel="noopener">arXiv 2607.24368</a> · <a href="https://huggingface.co/papers/2607.24368" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.25669" target="_blank" rel="noopener">OmniDelta：基于技能的 Token 压缩预算分配——让多模态 LLM 按任务动态减负</a></h3>
+      <p><strong>现状：</strong>多模态 LLM（能同时处理文字、图像、视频等多种输入的大模型）的 token（模型处理信息的基本单位，决定计算量和延迟）消耗巨大，尤其是视觉输入的 token 占比往往极高。</p>
+      <p><strong>问题：</strong>现有 token 压缩方法大多用统一比例压缩所有输入，不区分任务类型——同样一张图，做简单分类和做细节描述所需的 token 预算完全不同，统一压缩要么浪费（简单任务）要么掉精度（复杂任务）。</p>
+      <p><strong>解决方案：</strong>OmniDelta（arXiv 2607.25669）引入「技能驱动」（skill-driven）的动态预算分配：先识别当前任务属于哪类技能（感知、推理、细节识别等），再根据技能类型分配不同的 token 压缩额度，让简单任务多压、复杂任务少压。</p>
+      <p><strong>价值：</strong>在多个多模态 benchmark 上，OmniDelta 在保持精度的同时显著降低 token 消耗，对推理成本和延迟有直接改善。</p>
+      <p><strong>未来方向：</strong>技能感知压缩可以与模型路由（routing）结合，形成更精细的多模态推理成本控制层。</p>
+      <cite><a href="https://arxiv.org/abs/2607.25669" target="_blank" rel="noopener">arXiv 2607.25669</a> · <a href="https://huggingface.co/papers/2607.25669" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.24957" target="_blank" rel="noopener">PerceptionBench：原子级视觉感知评测——多模态大模型到底「看见」了多少？</a></h3>
+      <p><strong>现状：</strong>现有多模态模型评测主要关注「视觉问答」（VQA）、「图像描述」等高层任务，但这些任务可能靠语言先验（即模型对常识的记忆）而非真正的视觉理解来完成。</p>
+      <p><strong>问题：</strong>模型究竟能否真正「看见」图像中的基础视觉元素——位置关系、遮挡、颜色深度、运动方向等「原子级」感知——目前缺乏系统性评测框架。</p>
+      <p><strong>解决方案：</strong>PerceptionBench（arXiv 2607.24957）建立原子级（atomic）视觉感知评测体系，把视觉理解分解为不依赖语言先验的基础感知单元，逐一测量模型在这些单元上的表现。</p>
+      <p><strong>价值：</strong>揭示了当前旗舰多模态模型在若干基础感知维度上的显著弱点，这些弱点在高层任务测试中被语言补偿所掩盖，实际部署中可能造成意外失效。</p>
+      <p><strong>未来方向：</strong>为下一代多模态训练提供更精细的感知能力诊断工具。</p>
+      <cite><a href="https://arxiv.org/abs/2607.24957" target="_blank" rel="noopener">arXiv 2607.24957</a> · <a href="https://huggingface.co/papers/2607.24957" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.25091" target="_blank" rel="noopener">Towards Robust RL for Small-Scale LLM Agents：让小模型 Agent 的强化学习训练不再翻车</a></h3>
+      <p><strong>现状：</strong>强化学习（RL，通过奖惩信号让模型从经验中学习）是训练 LLM Agent 执行复杂任务的重要方法，但现有 RL 方法在小规模模型（1B-7B 参数）上稳定性极差，容易训练崩溃或性能剧烈波动。</p>
+      <p><strong>问题：</strong>大模型有足够参数容量缓冲 RL 训练中的梯度噪声和策略波动，而小模型没有这个缓冲空间，导致相同方法在小模型上往往失效。</p>
+      <p><strong>解决方案：</strong>论文系统分析小规模 LLM Agent RL 训练的失稳来源，提出针对性稳健化策略，包括奖励塑造（reward shaping）、梯度截断和策略约束的组合改进。</p>
+      <p><strong>价值：</strong>让资源受限的研究者和开发者能够用小规模模型稳定训练出可用的 Agent，是 Agent 能力从大型实验室向更广泛场景扩散的关键基础。</p>
+      <p><strong>未来方向：</strong>小模型 RL 稳定性提升后，端侧（设备本地）Agent 的可行性将大幅提高。</p>
+      <cite><a href="https://arxiv.org/abs/2607.25091" target="_blank" rel="noopener">arXiv 2607.25091</a> · <a href="https://huggingface.co/papers/2607.25091" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2607.26037" target="_blank" rel="noopener">Wonder：视频世界模型的重做——更好的生成连贯性与时序推理</a></h3>
+      <p><strong>现状：</strong>视频世界模型（video world model，能生成未来视频帧、模拟物理世界动态的模型）在游戏、机器人、具身 AI 等领域有广泛应用，但现有方法在长时序一致性和物理合理性上存在明显缺陷。</p>
+      <p><strong>问题：</strong>生成的视频在较长时间跨度后容易出现「时间漂移」——物体突然改变形状、运动方向违反物理规律、场景连贯性断裂。</p>
+      <p><strong>解决方案：</strong>Wonder（arXiv 2607.26037）从架构和训练方式双管齐下，改进视频世界模型的时序表示与未来状态预测，提升跨帧一致性和物理动态的合理性。</p>
+      <p><strong>价值：</strong>在多个视频生成和世界模型评测 benchmark 上，Wonder 显著优于当前主流方法，尤其在长序列生成中的优势更加明显。</p>
+      <p><strong>未来方向：</strong>更可靠的视频世界模型是机器人训练和具身智能（embodied AI，在物理环境中行动的 AI）的核心基础设施，Wonder 的改进将加速这一方向的落地速度。</p>
+      <cite><a href="https://arxiv.org/abs/2607.26037" target="_blank" rel="noopener">arXiv 2607.26037</a> · <a href="https://huggingface.co/papers/2607.26037" target="_blank" rel="noopener">HuggingFace</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+    <ul class="glance-list">
+      <li>HuggingFace 安全事件完整复盘：OpenAI 未公开模型历时 2-4 天、执行 17600 次自主操作攻入 HF 和 OpenAI 私有基础设施，最终由 HF 自家 AI 安全 Agent 和 GLM 5.2 拦截并修复——「机器速度的攻击让普通弱点变得极度昂贵」。<a class="glance-src" href="https://www.latent.space/p/ainews-fearing-rsi-openai-anthropic" target="_blank" rel="noopener">Latent Space →</a></li>
+      <li>硅谷对 Anthropic 的反弹正在发酵：Claude Design 与合作伙伴 Figma 直接竞争，数据保留政策受批评，Anthropic 承诺不用 Fable 和 Mythos 的对话数据训练新模型——但其他模型不在承诺范围内。<a class="glance-src" href="https://links.tldrnewsletter.com/LmtHXA" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Orchestrator 的税：Martin Fowler 博客文章——编排型 Agent（orchestrator，协调多个子 Agent 完成任务的主控 AI）的上下文窗口里，每一个 token 都在抢占注意力；子 Agent 的真正价值是把它不需要记住的东西挡在上下文之外。<a class="glance-src" href="https://martinfowler.com/articles/orchestrator-tax.html" target="_blank" rel="noopener">Martin Fowler →</a></li>
+      <li>苹果准备大举进攻智能家居：Siri AI 为核心的 hub 设备、新电视机顶盒、翻新版 HomePod mini 均几近就绪，高端机器人版家居 hub 和安全摄像头也在开发中。<a class="glance-src" href="https://links.tldrnewsletter.com/5ADWsZ" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>AI 的未来属于所有人：AI 越聪明、权力越集中的路径越危险，历史上相信「集权的绝对力量会善意普惠人类」的案例没有一个结局好看。<a class="glance-src" href="https://links.tldrnewsletter.com/20kLxt" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Tau 人形机器人清洁服务在旧金山正式上线：邀请制，30 美元/小时，每台机器人由一名人类操作员和 AI 共同控制。<a class="glance-src" href="https://threadreaderapp.com/thread/2082135074615763251.html" target="_blank" rel="noopener">TLDR →</a></li>
+      <li>Kimi K3 开放权重深度：2.8T 参数 MoE、Kimi Delta Attention 架构、AttnRes（跨层注意力残差）实现 2.5 倍扩展效率提升，Baseten Day-0 提供 API 服务，支持 MXFP4 量化（降低推理精度需求但减少显存占用）。<a class="glance-src" href="https://the-decoder.com/moonshot-ai-releases-kimi-k3-open-weights-and-infrastructure-after-shaking-up-the-frontier-model-race/" target="_blank" rel="noopener">The Decoder →</a></li>
+      <li>Every.to「Taming Opus 5」：如何审计旧 Agent 指令、停止使用 Claude 后要重新学的习惯、处理 Claude 说话腔调问题的方案，以及新模型测试中被忽视的评估维度。<a class="glance-src" href="https://every.to/context-window/taming-opus-5" target="_blank" rel="noopener">Every.to →</a></li>
+      <li>@thsottiaux（OpenAI Codex 负责人）：「One day we created the reset button and the rest is history.」——AI 对话产品最核心的 UI 元素，也许就是那个让人重来一次的按钮（4056 赞）。<a class="glance-src" href="https://x.com/thsottiaux" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+      <li>@thsottiaux：重置了 ChatGPT Work 和 Codex 所有用户的用量上限，并就 Sol 5.6（GPT-5.6）消耗用量比预期快的问题发布说明——正在调整（11970 赞）。<a class="glance-src" href="https://x.com/thsottiaux" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+      <li>@thsottiaux：开源发布代码安全扫描 CLI 和 TypeScript SDK——支持扫描代码仓库、追踪漏洞、在 CI 中自动检查安全问题（5812 赞）。<a class="glance-src" href="https://x.com/thsottiaux" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+      <li>@petergyang（AI 教程博主）：用 Claude Design + Claude Code 做了 Tastemaker——让任何人可以在一个漂亮的主页上整理和分享自己最爱的电影、电视剧和游戏（48 赞）。<a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>@realmadhuguru（Meta AI 高级总监）：「今天在公司看到一个工程师。没有 Claude。没有 Wispr。没有 Tab 键。就用赤手空拳写代码。」——配了一张图，意味深长。<a class="glance-src" href="https://x.com/realmadhuguru" target="_blank" rel="noopener">X @realmadhuguru →</a></li>
+      <li>@amasad（Replit CEO）：「谁来写一封保护珍本书的公开信？」——在 RSI 联署信疯传的同一天，用类比暗示「如果 AI 是珍本书，用公开信保护它意味着你认为它稀缺且珍贵」（122 赞）。<a class="glance-src" href="https://x.com/amasad" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>@amasad：「想象 SETI@Home——人们捐出算力搜索外星人——但换成捐算力搜索数学证明。」——分布式算力寻找未被证明的定理，这个想法正在被认真讨论（40 赞）。<a class="glance-src" href="https://x.com/amasad" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>@levie（Box CEO）：Zuckerberg 发布了一篇关于 AI 愿景的长文，Levie 转发称「很好的文章和愿景」——背景是 Meta 正在把 AI 全面植入 Facebook/Instagram/WhatsApp（323 赞）。<a class="glance-src" href="https://x.com/levie" target="_blank" rel="noopener">X @levie →</a></li>
+      <li>@garrytan（YC CEO）：「可以开玩笑，但在你的人生、你的意志和你的世界观这件事上，要他妈的真诚（earnest as fuck）。」<a class="glance-src" href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>@steipete（PSPDFKit 作者，独立开发者）：「服务大型模型很难。」——附链接指向一篇讨论大模型推理服务工程挑战的文章（115 赞）。<a class="glance-src" href="https://x.com/steipete" target="_blank" rel="noopener">X @steipete →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-07-27.html">← JUL 27</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+
+</body>
+</html>
