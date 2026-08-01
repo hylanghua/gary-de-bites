@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — August 1, 2026</title>
+  <meta name="description" content="DeepSeek V4-Flash 0731 纯靠后训练跳出22%能力提升，MIT 开源权重；OpenAI 重置 Codex 周末用量上限，把 AI 驾驭层的战略价值推向台面；Jake Dow-Smith 的慢设计哲学和 Vonnegut「我们是会跳舞的动物」共同提醒：机器加速的时代，人类的价值在于绕道。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">August 1, 2026</h1>
+
+  <p class="post-lead">DeepSeek V4-Flash 0731 纯靠后训练跳出22%能力提升，MIT 开源权重；OpenAI 重置 Codex 周末用量上限，把 AI 驾驭层的战略价值推向台面；Jake Dow-Smith 的慢设计哲学和 Vonnegut「我们是会跳舞的动物」共同提醒：机器加速的时代，人类的价值在于绕道。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2607.28074" target="_blank" rel="noopener">DeepSeek V4-Flash 0731：纯后训练大跳跃，MIT 开源权重</a></h3>
+  <p>DeepSeek 发布 V4-Flash 0731，架构不变、参数不变（284B 总参数，13B 活跃），靠后训练（post-training，即在预训练完成后针对特定能力做进一步调优）拿下 Terminal-Bench 2.1 得分82.7——比4月预览版高出25.8分。API 进入公测，完整适配 Codex 的 Responses API 格式，代理任务基准（GDPval-AA v2 Elo）从1189跳至1559。定价 $0.14/$0.28 每百万输入/输出 token，缓存命中折扣高达98%，缓存价格降至 $0.0028。开源权重以 MIT 协议发布，Unsloth 当天推出可在168GB内存跑的无损4-bit量化版。多位独立评测者指出，这是后训练的胜利，不是预训练规模的功劳，意味着同一批权重还有进一步榨取的空间。</p>
+  <p>这也把本周 OpenAI 对 GPT-5.6 Luna 降价80%的行动包裹进了一场价格战：DeepSeek 在前沿 Pareto 前沿上以约60%更低的每任务成本与 GPT-5.6 Luna 持平。开发者已迅速将其嵌入 Cline、Codex、Hermes Agent 等工具链，路由到 DeepSeek 的成本节省立刻可见。</p>
+  <cite><a href="https://www.latent.space/p/ainews-not-much-happened-today-038" target="_blank" rel="noopener">AINews · Latent Space</a> · <a href="https://x.com/deepseek_ai" target="_blank" rel="noopener">@deepseek_ai</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/thsottiaux/status/2083395449814229287" target="_blank" rel="noopener">OpenAI 重置 Codex + ChatGPT Work 周末用量限额</a></h3>
+  <p>Thibault Sottiaux（OpenAI Codex & ChatGPT 负责人）宣布为庆祝本周效率里程碑，完全重置 Codex 和 ChatGPT Work 的使用上限，让用户可以在这个周末跑满10万个 Luna 线程。这条推文收到1.5万点赞，是本周 AI 产品圈互动最高的单条动态之一。这不只是一次促销动作——它透露的是 AI 基础设施进入了新阶段：企业级并发调用已到了需要显式管理预算和配额的量级。</p>
+  <cite><a href="https://x.com/thsottiaux/status/2083395449814229287" target="_blank" rel="noopener">X @thsottiaux</a></cite>
+</article>
+
+<article class="item">
+  <h3>MiniMax H3 与 Seedance 2.5 双发：视频生成 AI 迎来密集窗口</h3>
+  <p>MiniMax 的 H3 视频模型同步上线 Vercel AI Gateway、fal、PixVerse 等多个平台，开源权重即将发布。技术亮点是内置低-高分辨率生成（low-to-high generation）与超分辨率（super-resolution）一体化，而非外挂独立超分模块。字节跳动旗下 Dreamina 推出 Seedance 2.5，原生支持30秒和连续3分钟一致性视频，提供最多50个多模态参考输入和交互式关键帧编辑，但目前限于720p，部分用户反映音频指令跟随能力仍不稳定。</p>
+  <cite><a href="https://www.latent.space/p/ainews-not-much-happened-today-038" target="_blank" rel="noopener">AINews · Latent Space</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+<article class="item">
+  <h3><a href="https://x.com/rauchg/status/2083208578526314513" target="_blank" rel="noopener">Guillermo Rauch（Vercel CEO）：Issue → Agent → PR → Release 将成软件项目的常态</a></h3>
+  <p>Rauch 认为，随着软件项目向「智能体工厂」（agentic software factory）过渡，这个循环会成为默认模式。维护者的工作不再是写代码，而是设计产出最高质量代码的循环，并定义什么任务值得被处理。</p>
+  <p>同一天，Linear 产品负责人 Nan Yu 补充了数据：这个循环在 Linear 内部已经覆盖约30%的 Bug 自动修复，但要让循环跑好，Agent 需要被明确告知最佳实践——"就像对待新员工一样"。</p>
+  <p><strong>软件工厂的下一个竞争壁垒不是模型，是谁把这个循环调到最顺。</strong></p>
+  <cite><a href="https://x.com/rauchg/status/2083208578526314513" target="_blank" rel="noopener">X @rauchg</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/levie/status/2083389460679373135" target="_blank" rel="noopener">Aaron Levie（Box CEO）：当任务规模从百万 token 升至亿级，驾驭层的权重超越模型本身</a></h3>
+  <p>Levie 的观察：驾驭层（harness，即协调 AI 模型完成多步复杂任务的运行框架）正在成为 AI 栈中仅次于模型能力的最重要变量。它决定了如何把任务拆解到最优粒度、如何在正确时机路由到正确模型，进而最大化准确率、压缩成本。</p>
+  <p>他特别指出时间节点：当单个任务的 token 消耗从百万量级升至千万乃至亿级，驾驭层的设计差异会被放大成决定性差距。"我们仍处于这段旅程的起点，机会巨大。"</p>
+  <p><strong>模型是引擎，harness 是变速箱——没有好的变速箱，再好的引擎也跑不快。</strong></p>
+  <cite><a href="https://x.com/levie/status/2083389460679373135" target="_blank" rel="noopener">X @levie</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/zarazhangrui/status/2083161173563003268" target="_blank" rel="noopener">Zara Zhang（Builder）：Anthropic 65% 的 PR 由 Claude Tag 提交，agent 界面半年走完三次迁移</a></h3>
+  <p>一篇关于 Claude Tag（Claude 在 Slack 等协作工具内的工作形态）如何改变 Anthropic 内部研发节奏的采访令 Zara 印象深刻：Anthropic 产品与工程团队目前65%的 Pull Request 由 Claude Tag 发起。她观察到，非工程团队的 agent 界面在过去6个月经历了三次位移：1月用终端（terminal），3月迁移到桌面应用（如 Codex），6月迁入日常协作工具（如 Slack）。</p>
+  <p>这个轨迹不是工具的迭代，而是 agent 的到达位置越来越接近人类自然的工作方式——最终，agent 应该出现在你本来就在的地方，而不是逼你走到它面前。</p>
+  <p><strong>Agent 的终态不是一个新的应用，是消失在旧的应用里。</strong></p>
+  <cite><a href="https://x.com/zarazhangrui/status/2083161173563003268" target="_blank" rel="noopener">X @zarazhangrui</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/swyx/status/2083294839186260385" target="_blank" rel="noopener">Swyx（Smol AI / Latent Space）：「vibe coding」的贬义已彻底消失，人人都在这么干</a></h3>
+  <p>Swyx 的观察：「vibe coding」（凭感觉让 AI 写代码，不全程精确指定实现细节）最初带有轻蔑含义，现在这个词已完全中性化——从非技术人员到顶尖工程师都在这么做，没人再用这个词嘲讽任何人。</p>
+  <p>这是技术文化里罕见的快速转变：一个词从讽刺到描述，通常需要数年；这次只用了几个月。背后的机制是门槛压低之后大规模行为改变，再倒逼语言跟上。</p>
+  <p><strong>vibe coding 不再是个性选择，而是默认工作方式——争议只剩下"用哪个模型"。</strong></p>
+  <cite><a href="https://x.com/swyx/status/2083294839186260385" target="_blank" rel="noopener">X @swyx</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+<article class="item">
+  <h3><a href="https://x.com/sama/status/2083221585792762171" target="_blank" rel="noopener">Sam Altman（OpenAI CEO）：ChatGPT Work 接入家庭日历，每日为孩子定制专属播客</a></h3>
+  <p>Altman 分享了他前一晚听到的一个 ChatGPT Work 实际用例：将全家人的日历与孩子的兴趣爱好接入，每天早上上学路上，系统自动生成一集专属播客。内容包括：这个孩子当天下午的足球赛赛况预告、兄弟姐妹的生日倒计时、当日新闻精选。个性化到孩子名字和当天的具体事件。</p>
+  <p>这个案例值得记住的原因不是技术复杂度，而是它完整演示了一个模式：AI 作为编排层，把分散的真实数据（日历、偏好、新闻）重新包装成有仪式感的日常体验。这距离"功能"很远，距离"习惯"很近。</p>
+  <p><strong>ChatGPT Work 最终会被记住的，不是它能做什么报告，而是它在早饭前5分钟说了什么。</strong></p>
+  <cite><a href="https://x.com/sama/status/2083221585792762171" target="_blank" rel="noopener">X @sama</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/thenanyu/status/2083230295206121807" target="_blank" rel="noopener">Nan Yu（Linear 产品负责人）：Issue → Agent → PR → Release，~30% 的 Bug 走完全流程，但 Agent 要被告知规范</a></h3>
+  <p>Nan Yu 披露，这个循环在 Linear 内部已达到约30%的 Bug 自动处理率。但她特别提醒：Agent 在这个流程里并不是全自动的银弹。Agent 应该被明确要求：广泛研究问题根因、使用 Datadog 和 Sentry 这类监控工具（MCP 工具，允许 Agent 访问外部数据和服务的协议）收集证据，只在有高置信度时才尝试修复，不确定时主动在 Issue 上留评论要求更多信息。</p>
+  <p>"Agent 需要被告知最佳实践，就像人一样。"这句话精确概括了现阶段 AI 落地的真实挑战：不是 Agent 不够聪明，而是指令不够清晰、上下文不够充分。</p>
+  <p><strong>Agent 的30%通过率不是终点，是工程团队学会写好 Agent 指令之前的起点。</strong></p>
+  <cite><a href="https://x.com/thenanyu/status/2083230295206121807" target="_blank" rel="noopener">X @thenanyu</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+<article class="item">
+  <h3><a href="https://shawnsmucker.substack.com/p/please-use-ai" target="_blank" rel="noopener">Tim Ferriss 5-Bullet Friday：「我们是会跳舞的动物」——AI 时代不要丢掉闲逛的权利</a></h3>
+  <p>本周 Tim Ferriss 推荐了一篇文章《请用 AI》，标题看起来像使用教程，实则是一份提醒人保持人类性的散文。Ferriss 用 Vonnegut 的话注脚它：</p>
+  <p>Vonnegut 说，他太太劝他网购信封，省时省钱。他假装没听见，还是出门去买了一个。路上遇到狗、看到消防车、跟陌生人搭话——"道德是：我们来这个世界是为了到处闲逛（fart around）。别让任何人告诉你不该这样。当然，计算机会把这个权利也夺走。"</p>
+  <p>在 AI 工具铺天盖地的当下，这段话的分量翻倍：效率不是生活的终点，过程才是。去门口买信封这件事，本身就是生活。用 AI 帮你优化效率的同时，人需要主动保留那些无法被优化的绕路——不然，人就变成了一个等待输出结果的接口。</p>
+  <p>本期同时收录了约翰·斯坦贝克的写作信条："作家必须相信他所做的是世界上最重要的事。即便他知道这不是真的，他也必须坚守这个幻觉。"不只是写作，对任何有长期热情的事情都成立。</p>
+  <p><strong>AI 帮你跑得更快，但它决定不了你跑去哪——保留那个选择，是人类留给自己的最后特权。</strong></p>
+  <cite><a href="https://tim.blog/" target="_blank" rel="noopener">Tim Ferriss 5-Bullet Friday</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://xiaobot.net/post/dfd8a0a9-5838-4534-8c03-8aab164fcfe5" target="_blank" rel="noopener">纯银 × 羔羊计划：Jake Dow-Smith，用限制对抗无限，把浏览器当画布</a></h3>
+  <p>本期羔羊计划研究了独立交互设计师 Jake Dow-Smith。他是自称的卢德分子（Luddite，指对新技术持保留态度的人），1987年生于伦敦，13岁用 Microsoft FrontPage 建了第一个网站，后来搬到乡村。他的设计哲学可以用一句话概括：交互不只是导航，而是作品意义的延伸。</p>
+  <p>他的代表作 rosemarybutcher.com 用双轴联动交互向英国舞蹈编导 Rosemary Butcher 致敬——你纵向滚动阅读时，顶部水平时间轴同步横移，把40年生涯的时间物理化。b-gen-22 是反向设计工具：通过词块组合生成设计命题，但只有30次机会，无法无限重试——"无法无限时，你才会真正审视当下。"apossible.com 是一个可拖拽节点网络，把知识变成可以游荡的宇宙，用户不是读者，是探险者。</p>
+  <p>他对数据驱动设计有直接的抵抗：那些让网站变得功能最优、转化率最高的流程，让他觉得，设计正在失去惊喜与乐趣。他最满意的作品，是他5岁和3岁的孩子会拿来玩的那些网站。</p>
+  <p>他的审美信条来自自行车：从13岁骑车到现在，他喜欢自己选零件、自己组装，享受"完全控制"的感觉。他在代码里也是一样——几乎从不用现成插件，因为他必须理解代码里发生的每一件事。</p>
+  <p><strong>限制不是约束，是让人真正思考的条件；数据驱动是手段，不是目的。</strong></p>
+  <cite><a href="https://xiaobot.net/post/dfd8a0a9-5838-4534-8c03-8aab164fcfe5" target="_blank" rel="noopener">小报童 · 纯银</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2607.28074" target="_blank" rel="noopener">Echoverse：深度进化环境，为规模化训练计算机使用 Agent 而设计</a></h3>
+  <p><strong>现状：</strong>训练 Agent 使用计算机（computer-use）需要大量可验证的任务环境，但现有环境往往在真实使用中暴露漏洞：状态不一致、验证器（grader，即判断任务是否完成的评估程序）过于宽松或过于严格，导致训练信号失真。</p>
+  <p><strong>问题：</strong>以往的解法是"多造环境"，但数量不够，因为每个环境的内部质量不受控：浅层环境（shallow environments）损害了模型在真实网站上的准确率，而精心设计的深度环境能提升它。</p>
+  <p><strong>解决方案：</strong>Echoverse 把规格（spec）编译成带数据库的状态化应用，所有任务以数据库状态为真相来源评分；同时建立协进化循环（co-evolution loop），把每次评分过的交互记录读两遍——一遍修复环境、任务和验证器，一遍用更精准的信号训练模型。</p>
+  <p><strong>价值：</strong>杠杆来自"一直改善已有环境"，而不是"不断新建环境"。环境质量和模型质量在同一个循环里互相提升。</p>
+  <p><strong>未来方向：</strong>微软研究院将其定位为 computer-use Agent 大规模训练的基础设施，横向扩展到更多应用领域。</p>
+  <cite><a href="https://arxiv.org/abs/2607.28074" target="_blank" rel="noopener">arXiv 2607.28074</a> · 微软研究院</cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2607.28568" target="_blank" rel="noopener">Frontis-MA1：AI4AI，递归自我改进机器学习工程的开放全栈</a></h3>
+  <p><strong>现状：</strong>机器学习工程（MLE）包含大量可程序化、可验证的子任务（写代码、调试、优化模型结构），理论上适合 AI 自主完成，但缺乏完整的研究基础设施。</p>
+  <p><strong>问题：</strong>以往的 AI4AI 尝试要么缺乏可执行反馈（无法验证代码是否真正改善了模型），要么无法处理长时程任务（如在12小时预算内完成 Kaggle 竞赛全流程）。</p>
+  <p><strong>解决方案：</strong>OpenMLE 提供三层：可执行任务环境 OpenMLE-Gym、算子级强化学习 OpenMLE-RL、长程搜索 OpenMLE-Evo。Frontis-MA1（35B 参数）是后训练出的元进化 Agent，围绕四个原子操作符 Draft（起草）、Improve（改进）、Debug（调试）、Crossover（交叉混合）设计，通过执行反馈的监督微调和强化学习训练。</p>
+  <p><strong>价值：</strong>在 MLE-Bench Lite 上，基础模型 Medal Average 为39.39%，OpenMLE-Evo-Max 将其提升至71.21%，Human Rank 0.8126；12小时单 RTX 4090（限12GB显存）预算内完成竞赛全流程。</p>
+  <p><strong>未来方向：</strong>Horizon Research / Frontis.AI / 清华大学等联合团队计划开源全栈，供 AI 自主研究社区复现和扩展。</p>
+  <cite><a href="https://arxiv.org/abs/2607.28568" target="_blank" rel="noopener">arXiv 2607.28568</a> · Frontis.AI / 清华大学</cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2606.12195" target="_blank" rel="noopener">InternVideo3：把视频理解变成闭环推理，多模态上下文推理框架</a></h3>
+  <p><strong>现状：</strong>视频理解模型通常把理解当成一次性前向推理，缺乏在长视频中持续积累、修正和检索证据的能力，导致长时程视频任务表现弱。</p>
+  <p><strong>问题：</strong>开源多模态大模型在文字任务上进展迅速，但长时程视频这类"多模态+ Agent行为"交叉场景几乎没有开源方案。</p>
+  <p><strong>解决方案：</strong>InternVideo3 的核心是 MCR（Multimodal Contextual Reasoning，多模态上下文推理）框架——把理解定义为在共享、不断进化的上下文（包含观察、指令、推理链、工具调用和记忆）上的闭环过程。同时引入 M²LA（Multimodal Multi-head Latent Attention），在保留完整 token 流的同时压缩 KV 缓存，大幅降低长视频的计算开销。</p>
+  <p><strong>价值：</strong>在 Video-MME、MLVU、EgoSchema 等主流视频基准上取得领先结果，可实例化为带检索工具的视频 Agent，做到证据驱动的行为。</p>
+  <p><strong>未来方向：</strong>将 MCR 框架扩展至具身智能（embodied AI）等需要长时程多模态推理的场景。</p>
+  <cite><a href="https://arxiv.org/abs/2606.12195" target="_blank" rel="noopener">arXiv 2606.12195</a> · OpenGVLab</cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2607.27191" target="_blank" rel="noopener">AI Agent 能做开放性 AI 研究吗？两个案例研究的早期证据</a></h3>
+  <p><strong>现状：</strong>前沿 AI Agent 已能在工程任务上替代人类，自然的下一个问题是：它们能否独立推进科学研究本身？</p>
+  <p><strong>问题：</strong>让 Agent 独立解决 NeurIPS 2026 未发表论文的核心研究问题，提供6天时间和数千美元算力预算。</p>
+  <p><strong>解决方案（实验设计）：</strong>研究团队给 Agent 完整的工程支持环境，测量它能否在"核心研究问题"上取得实质性进展，而不只是完成工程实现。</p>
+  <p><strong>价值（发现）：</strong>Agent 完成了工程部分，但无法推进研究核心。识别出5个反复出现的失败模式：对"可发表研究"标准把握不准、遇到研究设计缺陷时应对不灵活、从死胡同回退效率低、资源意识差、指令跟随在长任务中发生漂移（instruction drift，即长任务中 Agent 逐渐偏离原始指令的现象）。</p>
+  <p><strong>未来方向：</strong>这些失败模式的对称面是改进方向：更好的元认知（判断何时放弃一条路径）、更强的资源预算感知、更稳定的长任务指令跟随。</p>
+  <cite><a href="https://arxiv.org/abs/2607.27191" target="_blank" rel="noopener">arXiv 2607.27191</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2605.27905" target="_blank" rel="noopener">AI 研究 Agent 正在收窄科学探索空间</a></h3>
+  <p><strong>现状：</strong>AI 辅助科学发现正成为主流工具，大量实验室开始用 AI Agent 生成研究假设、设计实验方向。</p>
+  <p><strong>问题：</strong>这带来了一个结构性担忧：当 AI 系统被训练在现有论文上、并被激励产出高引文概率的想法时，它是否倾向于复制已有思路而非真正突破边界？</p>
+  <p><strong>解决方案（研究框架）：</strong>分析 AI 研究 Agent 生成的研究想法的多样性分布，与人类研究者生成的想法对比。</p>
+  <p><strong>价值：</strong>初步证据显示，AI Agent 生成的科研想法在主题分布上更集中，倾向于强化已被广泛研究的方向，而非拓展新边界——这与"AI 会带来新的探索"的直觉相反。</p>
+  <p><strong>未来方向：</strong>如何在 AI 辅助科研中设计"多样性激励"，防止科学探索空间因 AI 偏好的马太效应而收缩，是亟待解决的方法论问题。</p>
+  <cite><a href="https://arxiv.org/abs/2605.27905" target="_blank" rel="noopener">arXiv 2605.27905</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+
+<ul class="glance-list">
+<li>@thsottiaux：「永远为好奇心优化，而不是为输出优化」——这条备注比宣布产能上限重置的公告本身更值得存档。<a class="glance-src" href="https://x.com/thsottiaux" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+<li>Replit CEO @amasad：8B 参数象棋模型 Elo ~1500，已能击败 Stockfish Level 0 和 GPT-5.6——专域小模型在可验证任务上的天花板，远比直觉高。<a class="glance-src" href="https://x.com/amasad" target="_blank" rel="noopener">X @amasad →</a></li>
+<li>@garrytan（YC）：YC 内部开源了 AI 任务编排工具 GStack + GBrain，用于管理 agent 工作流——孵化器的内部基础设施正在变成行业工具。<a class="glance-src" href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan →</a></li>
+<li>@nikunj：《最好的创始人是在逃跑》——最好的创始人不是在追求什么，而是在逃离无法再忍受的现状，这种逃离给了他们突破正常约束的许可。<a class="glance-src" href="https://x.com/nikunj" target="_blank" rel="noopener">X @nikunj →</a></li>
+<li>@steipete：Claude 5.5（Sonnet + Opus）不再需要任务队列来处理并发请求——agent 调度层的一次安静升级，对高并发工作流意义不小。<a class="glance-src" href="https://x.com/steipete" target="_blank" rel="noopener">X @steipete →</a></li>
+<li>@danshipper：《华尔街日报》报道称 OpenAI 的势头在2026年春天之后已发生可见转变——他认为这一评价在独立观察者中已有充分共鸣。<a class="glance-src" href="https://x.com/danshipper" target="_blank" rel="noopener">X @danshipper →</a></li>
+<li>@adityaag：SPC（南湾创业营）本期申请仅剩2天，截止日期后通道关闭。<a class="glance-src" href="https://x.com/adityaag" target="_blank" rel="noopener">X @adityaag →</a></li>
+<li>@sama：「你说摩尔定律，我还你一个20倍」——Altman 在讨论 AI 能力增速时的随口一句，值得放进时间胶囊。<a class="glance-src" href="https://x.com/sama" target="_blank" rel="noopener">X @sama →</a></li>
+<li>@swyx：/loop 和 /goal 指令在 GPT-5.6 / Claude 5 时代仍然值得使用——框架不随模型换代而过时。<a class="glance-src" href="https://x.com/swyx" target="_blank" rel="noopener">X @swyx →</a></li>
+<li>@swyx：观察到 MITM 式 agent 蒸馏正在悄然发生——用户与 AI 的每次对话都在隐式地教会下一代模型如何回应，而用户自己未必意识到。<a class="glance-src" href="https://x.com/swyx" target="_blank" rel="noopener">X @swyx →</a></li>
+<li>@thenanyu：「Josh 给了我许可，让我只做正常的事情」——一个关于"被允许不做英雄主义"的短暂解脱。<a class="glance-src" href="https://x.com/thenanyu" target="_blank" rel="noopener">X @thenanyu →</a></li>
+<li>@zarazhangrui：「对你而言显而易见的事，对别人并不显而易见」——这是分享工作过程最简单的理由，也是写作最朴素的起点。<a class="glance-src" href="https://x.com/zarazhangrui" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+<li>Tim Ferriss 5BF：研究发现所有活体生物都会发出微弱的生物光子（biophoton），人体也不例外；《自然》系列期刊发表新证据，生命的物理边界可能比我们以为的更模糊。<a class="glance-src" href="https://tim.blog/" target="_blank" rel="noopener">Tim Ferriss 5BF →</a></li>
+<li>Tim Ferriss 5BF：Ian Fleming 在牙买加庄园的日常——早晨海中游泳，写007，下午打牌。持续产出的作家靠的是仪式感，不是效率工具。<a class="glance-src" href="https://tim.blog/" target="_blank" rel="noopener">Tim Ferriss 5BF →</a></li>
+<li>AINews：Google 推出 Gemini 3.6 Flash（$0.02/$0.08 per 1M tokens）和消费端 Gemini Spark，macOS 桌面客户端同步上线语音功能——前沿 API 的价格曲线仍在向下弯曲。<a class="glance-src" href="https://www.latent.space/p/ainews-not-much-happened-today-038" target="_blank" rel="noopener">AINews →</a></li>
+</ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-07-31.html">← Jul 31</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
