@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — August 2, 2026</title>
+  <meta name="description" content="Karpathy 两小时花$10让 Opus 5 生成5500行 three.js 代码，暴露 LLM 的感知边界；Whatnot CPO Tom Verrilli 公开后悔「产品管理这门学科存在」；Wisereads Vol. 154 用 Richard Louv 的「Noticing」提醒：算法加速的时代，主动注意才是最稀缺的能力。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">August 2, 2026</h1>
+
+  <p class="post-lead">Karpathy 两小时花$10让 Opus 5 生成5500行 three.js 代码，暴露 LLM 的感知边界；Whatnot CPO Tom Verrilli 公开后悔「产品管理这门学科存在」，主张少量高级别 PM 直接做 IC 替代比例驱动的架构；Wisereads Vol. 154 用 Richard Louv 的新书「Noticing」提醒：算法加速的时代，主动注意才是最便宜也最稀缺的能力。</p>
+
+  <p class="post-note">本期部分源抓取失败，内容较常规偏少。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+<article class="item">
+  <h3><a href="https://x.com/garrytan/status/2083684825333105107" target="_blank" rel="noopener">Garry Tan：OpenAI 正在把自己变成开放平台，这是2026年最值得标记的战略位移</a></h3>
+  <p>Garry Tan（YC 总裁）观察到一个此前没被明说的转变：OpenAI 在2026年的定位正从「全栈整合」退向「开放平台」，把自己定位为智能层基础设施，而非试图独占从模型到产品的每一个环节。这与过去两年 OpenAI 走垂直整合路线的姿态形成对比。</p>
+  <p>这对整个 AI 栈意味着：应用层、工具层、编排层的创业窗口实际上比想象中大——平台化的 OpenAI 更像是"水电"，而非竞争对手。Tan 用「智能即效用，而非全栈整合」概括这一转变。</p>
+  <cite><a href="https://x.com/garrytan/status/2083684825333105107" target="_blank" rel="noopener">X @garrytan</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/petergyang/status/2083755374994415904" target="_blank" rel="noopener">@petergyang：Opus 5 的「个性」不如 Opus 4.6——回复更长、更正式、更像官方文件</a></h3>
+  <p>Peter Yang（前 Roblox 产品副总裁）直接点名：Opus 5 在对话个性上有明显退步，具体表现为回复篇幅更长、语气过度正式，充斥着「当然可以」「当然，我很乐意」一类的固定套语，感觉「在和机器人说话」。他明确表示更喜欢 Opus 4.6 的回复风格。</p>
+  <p>这不是孤例。多名用户在同一时段反映类似问题，且主要集中在新版本的日常对话场景，而非复杂推理任务上。Anthropic 尚未正式回应，但这类用户感受的快速传播表明，模型「个性」正在成为继能力之后第二个被主动评测的维度。</p>
+  <cite><a href="https://x.com/petergyang/status/2083755374994415904" target="_blank" rel="noopener">X @petergyang</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+<article class="item">
+  <h3><a href="https://x.com/karpathy/status/2083749667410727319" target="_blank" rel="noopener">Andrej Karpathy：$10、两小时、5500行 three.js——LLM 的边界不在代码量，在感知能力</a></h3>
+  <p>Karpathy 把《魔戒》（Lord of the Rings）全文喂给 Opus 5，要求用 three.js（一个基于 WebGL 的3D渲染库）生成程序化的故事场景渲染代码，跑了约两小时、花了约$10，最终输出5500行可运行代码。规模上没问题。</p>
+  <p>问题出在感知层。他发现，当涉及「让 LLM 审计一个动态变化的游戏世界」（比如判断场景里有什么、发生了什么）或「处理视频内容」时，当前模型有显著局限：它可以写代码描述世界，但无法真正"看到"和"感知"世界的运行状态。$10 能买到代码的生成，买不到理解力的延伸。</p>
+  <p><strong>代码量不是 LLM 的墙，感知能力是——下一代突破点在「理解正在运行的世界」，而不是「写出更多代码」。</strong></p>
+  <cite><a href="https://x.com/karpathy/status/2083749667410727319" target="_blank" rel="noopener">X @karpathy</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/AmandaAskell/status/2083713770065637511" target="_blank" rel="noopener">Amanda Askell（Anthropic 研究员）：「别嘲笑那些说深度学习撞墙的人，他们需要的是希望」</a></h3>
+  <p>Askell 在模型能力争论最热的档口说了一句温和但立场鲜明的话：「不要对那些说深度学习遇到瓶颈的人不友善。我们都需要一点希望。」这不是认同他们的判断，而是在提醒：技术乐观主义阵营习惯性的嘲讽文化，其实是在用优越感替代论证。</p>
+  <p>她的第二条相关推文则更深层：在讨论 AI 长期未来的假设场景时，她说她不会以他人的损失来保全自己，并明确表示不支持那种「让少数人永久受益、多数人成为永久下层阶级」的未来。这是少数愿意把分配问题说清楚的 AI 研究者之一。</p>
+  <p><strong>乐观不是嘲笑怀疑者的许可证——技术圈的文化问题，往往比技术问题更难修。</strong></p>
+  <cite><a href="https://x.com/AmandaAskell/status/2083713770065637511" target="_blank" rel="noopener">X @AmandaAskell</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/levie/status/2083589132660711452" target="_blank" rel="noopener">Aaron Levie（Box CEO）：消费 AI 与深度领域 AI 的能力分化——垂直领域才是下一轮赛点</a></h3>
+  <p>Levie 这次聚焦的不是 AI 进步的速度，而是进步的结构：他观察到消费级 AI（对话、写作、通用助手）和深度领域专业 AI（数学、科学研究、法律、编程）之间正在形成能力鸿沟。</p>
+  <p>他预测，接下来几年，垂直领域专业 AI 的性能提升速度会远超泛化产品。这意味着：在某个具体垂直赛道上做深度产品，比再做一个「通用 AI 助手」有更高的护城河。通用产品的竞争正在拼价格；专业产品的竞争还在拼能力。</p>
+  <p><strong>下一轮 AI 创业机会不在「更好的通用产品」，在「某个行业里比任何人都深」。</strong></p>
+  <cite><a href="https://x.com/levie/status/2083589132660711452" target="_blank" rel="noopener">X @levie</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+<article class="item">
+  <h3><a href="https://every.to/context-window/your-ai-is-a-team-of-specialists" target="_blank" rel="noopener">Every.to：「Your AI Is a Team of Specialists」——把 AI 用作专家团队，而非全能助手</a></h3>
+  <p>Every 本周的核心文章提出了一个很实用的框架转变：与其把 AI 当作一个「能做一切事情的超级助手」，不如把它拆开，像招募专家团队一样使用——不同的 AI agent（智能体，指能自主执行任务的 AI 程序）专注于不同的子任务。一个负责初稿，一个做事实核查，一个优化结构，一个检查语气。</p>
+  <p>这个框架在实际使用中的优势是：单个 agent 的上下文窗口更聚焦，输出质量更一致；整体系统更容易调试和迭代，因为你知道是哪个「专家」出了问题。Every 的团队同期发布了14套语音转文字（voice-to-text，将口语输入直接转化为文字指令的工作流）工作流指南，全部基于这一框架搭建。</p>
+  <p><strong>AI 工具的下一步不是让单个模型更强，而是让多个专家模型的协作更顺——这和组建一支好团队的逻辑完全一致。</strong></p>
+  <cite><a href="https://every.to/context-window/your-ai-is-a-team-of-specialists" target="_blank" rel="noopener">Every · Context Window</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://www.lennysnewsletter.com/p/this-cpo-regrets-that-product-management" target="_blank" rel="noopener">Lenny's 播客：Whatnot CPO Tom Verrilli——「我后悔产品管理这门学科存在」</a></h3>
+  <p>Tom Verrilli 是 Whatnot（美国增长最快的直播购物平台，历史 GMV 已超过80亿美元）的首席产品官，此前是 Twitch CPO。他在 Lenny 播客上直接说：Whatnot 的产品团队从一开始就建立在「我们后悔产品管理这门学科存在」的前提上。</p>
+  <p>他的核心论点：用「PM 数量与工程师比例」来衡量组织健康度是一个陷阱。更少的高级别 PM 直接做 IC（Individual Contributor，独立贡献者，即直接产出工作成果而非单纯管理协调的职级）工作，比任何比例驱动的组织架构都表现更好。他同时分享了 AI 如何正在重塑 Whatnot 的 PM 角色：现在 PM 需要能直接用 AI 做数据分析，而不是把需求交给数据科学团队再等两周。</p>
+  <p>他总结的「手风琴」（accordion）心智模型：好的 PM 知道什么时候展开（扩散思考、收集信息），什么时候收缩（聚焦决策、推进执行）。这比任何职级描述都实用。</p>
+  <p><strong>「减少 PM，让他们做实事」——这句话如果出自一个失败团队的 CPO，是借口；出自 Whatnot 这种量级，是教训。</strong></p>
+  <cite><a href="https://www.lennysnewsletter.com/p/this-cpo-regrets-that-product-management" target="_blank" rel="noopener">Lenny's Newsletter</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/thenanyu/status/2083722999430050281" target="_blank" rel="noopener">Nan Yu（Linear 产品负责人）：GitHub Issues 代币质押——让 Agent 替你提 PR，从机制层消灭 slop</a></h3>
+  <p>Nan Yu 提出了一个很有意思的 GitHub 产品想法：在 Issues 上引入「代币质押」（token pledge）机制。提交者可以在 Issue 上质押资源，直接把 Issue 定向给一个可运行的编程 Agent（agent，指能自主执行代码的 AI 程序），由 Agent 在提交者的算力成本下自动创建 PR（Pull Request，即代码变更合并请求）。</p>
+  <p>这个设计的精妙之处在于：它把「创建一个 Issue」的成本从零变成「承担对应 Agent 运行成本」。这从根本上改变了 slop PR（slop，指大量低质量、无实质内容的提案）的经济学——没有皮肤在游戏里，就没有资格发出请求。</p>
+  <p><strong>机制设计比审核更有效：不是靠人力过滤垃圾，而是让质押本身成为门槛。</strong></p>
+  <cite><a href="https://x.com/thenanyu/status/2083722999430050281" target="_blank" rel="noopener">X @thenanyu</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+<article class="item">
+  <h3><a href="https://wise.readwise.io/save?url=https%3A//theguardian.com/us-news/ng-interactive/2026/jul/26/age-of-decadence-pleasure-ai/" target="_blank" rel="noopener">Wisereads Vol. 154：「为什么一切感觉如此无趣」+「Noticing」——丰盛时代的注意力空洞</a></h3>
+  <p>本期 Wisereads 有一条内在的线索：两篇文章都在谈同一个问题——我们拥有了前所未有的丰盛，却感觉不到相应的快乐。</p>
+  <p>《卫报》的长文《为什么一切感觉如此无趣？欢迎来到去享乐的丰盛时代》（"Why does everything feel so joyless? Welcome to the age of decadence without pleasure"）引用了牛津文学教授 Michèle Mendelssohn 和哈佛学者 Charlie Tyson 的诊断：现代丰盛去掉了「渴望」这个前提。没有匮乏，就没有欲望；没有欲望，享受就变成了单纯的消耗。他们引 Walter Pater 的话对抗 Bryan Johnson 式的"延长寿命"执念：「我们来这世上只有数量有限的脉搏，正因如此，才要去渴望快乐。」</p>
+  <p>Richard Louv 的新书《Noticing：与自然世界的亲密相遇》（Noticing: Intimate Encounters With the Natural World）则从另一个方向进入：他认为「注意」（Noticing）是一种可以被训练、也可以被剥夺的能力。算法把我们的注意力从感知世界的能力里拖走，而找回它的方式，不是技术，而是走出去。</p>
+  <p><strong>我们的问题不是缺乏选择，是失去了「想要」的能力；丰盛的下一个瓶颈，是重新学会匮乏感。</strong></p>
+  <cite><a href="https://wise.readwise.io/save?url=https%3A//theguardian.com/us-news/ng-interactive/2026/jul/26/age-of-decadence-pleasure-ai/" target="_blank" rel="noopener">Wisereads Vol. 154</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/zarazhangrui/status/2083743952319225938" target="_blank" rel="noopener">Zara Zhang：「代理性是最重要的人类品质。世界会给你贴标签——抵抗它。」</a></h3>
+  <p>「Agency is the most important human quality. The world will try to box you, label you, define you. Resist that.」这条推文没有背景，没有案例，没有解释——只有结论。这反而是它的力量。</p>
+  <p>代理性（agency，指一个人自主选择、主动行动、不被环境和他人定义的能力）在 AI 大规模进入工作流的当下尤为值得强调：当越来越多的判断被系统预设、被推荐算法代劳，主动选择自己的行动方向，是唯一不可外包给机器的能力。</p>
+  <p><strong>AI 最终会代劳执行，但它替代不了「选择做什么」的人——代理性不是个性，是生存能力。</strong></p>
+  <cite><a href="https://x.com/zarazhangrui/status/2083743952319225938" target="_blank" rel="noopener">X @zarazhangrui</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2604.12374" target="_blank" rel="noopener">Nemotron 3 Super：NVIDIA 混合 Mamba-Transformer，推理速度比同级别模型快 2.2-7.5 倍</a></h3>
+  <p><strong>现状：</strong>大型推理模型在能力上持续提升，但推理速度和内存开销已成为实际部署的主要瓶颈，尤其是长上下文（百万 token 以上）场景下 Transformer 的二次方复杂度代价极高。</p>
+  <p><strong>问题：</strong>如何在不牺牲能力的前提下，大幅提升长上下文推理的吞吐量和效率？</p>
+  <p><strong>解决方案：</strong>Nemotron 3 Super 是 NVIDIA 推出的120B参数混合架构模型（活跃参数12B），结合了 Mamba（一种基于状态空间模型的序列处理架构，复杂度为线性而非二次方）和 Transformer 注意力机制，并采用 LatentMoE（稀疏混合专家架构）。在 NVFP4 精度下预训练，支持长达100万 token 的上下文。</p>
+  <p><strong>价值：</strong>与 GPT-OSS-120B 相比吞吐量提升2.2倍，与 Qwen3.5-122B 相比提升7.5倍，同时在推理能力基准上保持竞争力。模型以开放权重发布。</p>
+  <p><strong>未来方向：</strong>混合 Mamba-Transformer 架构将成为需要长上下文、高并发 agent 任务的首选路径；纯 Transformer 在效率上的劣势在超长上下文时将越来越难以忽视。</p>
+  <cite><a href="https://arxiv.org/abs/2604.12374" target="_blank" rel="noopener">arXiv 2604.12374</a> · NVIDIA</cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2605.25188" target="_blank" rel="noopener">DarkForest：多智能体系统里「少说话」反而更准确，绝对提升 2.52-5.00 分</a></h3>
+  <p><strong>现状：</strong>多智能体（multi-agent）LLM 系统通常假设 agent 之间的充分通信能提高集体表现，因此倾向于设计大量交流轮次。但更多通信意味着更多 token 消耗和更大的信息干扰噪声。</p>
+  <p><strong>问题：</strong>多智能体系统中，通信越多是否真的越好？过度通信是否反而损害了每个 agent 的独立判断？</p>
+  <p><strong>解决方案：</strong>DarkForest 采用一种「减少通信」策略，让 agent 在更多决策步骤中独立推理，只在关键节点交换信息，避免早期信息共享导致的「锚定效应」（anchoring，即 agent 被其他成员的判断先入为主影响）。</p>
+  <p><strong>价值：</strong>在数学推理、代码生成、常识问答、科学问答、金融推理、法律推理等多个基准上，DarkForest 比第二强基准高出 2.52-5.00 绝对分（相对提升4.5%-30.7%），同时消耗 token 更少。</p>
+  <p><strong>未来方向：</strong>多智能体系统的设计原则可能需要反转——不是「让 agent 尽量多沟通」，而是「在正确的时机、以正确的方式沟通」。</p>
+  <cite><a href="https://arxiv.org/abs/2605.25188" target="_blank" rel="noopener">arXiv 2605.25188</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2603.27813" target="_blank" rel="noopener">MuSEAgent：用「有状态经验」替代轨迹检索，多模态推理超越 Reflexion 近 8%</a></h3>
+  <p><strong>现状：</strong>多模态 Agent（能同时处理图像和文字的 AI 推理程序）在复杂视觉推理任务中，通常依赖轨迹级别的历史经验检索（trajectory-level retrieval，即把过去完整的决策路径作为参考），但这类检索粒度太粗，难以捕捉细粒度的状态级别信息。</p>
+  <p><strong>问题：</strong>如何让多模态 Agent 从过去的经验中提取更精准的决策信号？</p>
+  <p><strong>解决方案：</strong>MuSEAgent 提出「有状态经验学习」（stateful experience learning）范式——把历史交互数据拆解成原子级别的决策经验（atomic decision experiences），通过回顾推理（hindsight reasoning）抽象并过滤，构建多视角嵌入的经验库，在推理时支持宽搜索（广度优先）和深搜索（深度优先）的组合策略。</p>
+  <p><strong>价值：</strong>在 Qwen3-VL-32B 上，MuSEAgent 达到65.30%平均准确率，比最强轨迹级别基准 Reflexion（57.33%）高出近8个百分点。论文被 IEEE CVPR 2026 GRAIL-V Workshop 接收。</p>
+  <p><strong>未来方向：</strong>原子级别的经验分解方式有望迁移至具身 AI、机器人操作等需要细粒度状态感知的场景。</p>
+  <cite><a href="https://arxiv.org/abs/2603.27813" target="_blank" rel="noopener">arXiv 2603.27813</a> · DeepExperience / CVPR 2026</cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2606.03273" target="_blank" rel="noopener">VistaHop：多跳视觉深度搜索新基准，最强模型只拿到 24.31%</a></h3>
+  <p><strong>现状：</strong>现有视觉理解基准大多评测的是「单步图像问答」——给一张图、问一个问题。但真实的视觉搜索任务需要模型反复检视图像的不同区域、跨步骤积累证据，才能回答复杂问题。</p>
+  <p><strong>问题：</strong>当前的多模态大推理模型（MLRM）在需要「多跳视觉推理」（multi-hop visual reasoning，即需要多次回到图像不同部位收集线索并串联推理）的任务上表现如何？</p>
+  <p><strong>解决方案：</strong>VistaHop 构建了包含300张图像、25个视觉搜索场景、350道多跳问答题的评测集，配套 VistaArena 统一评测环境，支持视觉检索、图像局部检查和基于证据的推理工具调用。</p>
+  <p><strong>价值：</strong>即使是当前最强的 MLRM（SenseNova-MARS-32B），Pass@1 也只有24.31%，说明多跳视觉推理仍是当前模型的重大短板。</p>
+  <p><strong>未来方向：</strong>VistaHop 类型的基准将推动模型从「一次看懂图」迈向「反复探索图」，为 visual agent 的落地奠定评测基础。</p>
+  <cite><a href="https://arxiv.org/abs/2606.03273" target="_blank" rel="noopener">arXiv 2606.03273</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2604.05557" target="_blank" rel="noopener">EpiBench：多轮科研工作流基准，最强模型在难例集上只有 29.23%</a></h3>
+  <p><strong>现状：</strong>科学研究本质上是多轮、多步骤的工作流——主动检索文献、比对图表、跨论文整合证据——但现有 AI 基准大多评测单轮单文档的理解能力。</p>
+  <p><strong>问题：</strong>多模态 Agent 能否真正执行一套完整的科研工作流？跨论文证据整合的能力现在在哪个水平？</p>
+  <p><strong>解决方案：</strong>EpiBench（episodic multi-turn multimodal benchmark）要求 Agent 在多轮对话中跨论文导航，从图表和表格中对齐证据，并基于积累的记忆回答需要跨论文对比和多图整合的客观问题。同时引入过程级评测（process-level evaluation）框架，用于细粒度诊断 Agent 在哪个步骤出错。</p>
+  <p><strong>价值：</strong>在难例集（hard split）上，当前最强模型仅达到29.23%准确率，大量提升空间仍在。由哈尔滨工业大学团队构建，已于2026年4月发布。</p>
+  <p><strong>未来方向：</strong>「多轮跨文档推理」将成为 AI 科研助手落地的核心能力瓶颈，EpiBench 为这一方向提供了第一个系统性评测工具。</p>
+  <cite><a href="https://arxiv.org/abs/2604.05557" target="_blank" rel="noopener">arXiv 2604.05557</a> · 哈尔滨工业大学</cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+
+<ul class="glance-list">
+<li>@swyx：「fighting slop with slop」——AI 原生编程语言的思路：不试图消灭 AI 生成的低质量代码，而是用另一层 AI 来过滤和修正它，把对抗变成系统设计的一部分。<a class="glance-src" href="https://x.com/swyx/status/2083753582160191988" target="_blank" rel="noopener">X @swyx →</a></li>
+<li>@thsottiaux（OpenAI Codex 负责人）：周末用户使用 /fast 模式的频率明显下降——「周末是用来放松的，连模型都感受到了」，这句玩笑话里藏着真实的用量数据。<a class="glance-src" href="https://x.com/thsottiaux/status/2083699879650463756" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+<li>@thsottiaux：「工作日是为了效率，周末是为了科学的10大突破」——这是在开玩笑，也不完全是。<a class="glance-src" href="https://x.com/thsottiaux/status/2083556636455752050" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+<li>@petergyang：AI 当前的头等目标应该是攻克癌症——这是 Peter Yang 对「AI 最该干什么」这个问题给出的答案，简洁但立场鲜明。<a class="glance-src" href="https://x.com/petergyang/status/2083637620899184642" target="_blank" rel="noopener">X @petergyang →</a></li>
+<li>@AmandaAskell：关于 AI 未来的不平等场景，她明确表示：「我不会为了自己的利益而牺牲他人，也不支持任何让少数人永久受益、多数人沦为永久下层阶级的未来。」AI 研究者中少有人说得这么直。<a class="glance-src" href="https://x.com/AmandaAskell/status/2083649115901337644" target="_blank" rel="noopener">X @AmandaAskell →</a></li>
+<li>@rauchg（Vercel CEO）：简单问卷：你是用打字还是语音（STT，Speech-to-Text 语音转文字）和电脑交流？——这个问题的答案分布，可能是衡量 AI 界面下一步往哪走的早期信号。<a class="glance-src" href="https://x.com/rauchg/status/2083709589862936786" target="_blank" rel="noopener">X @rauchg →</a></li>
+<li>@rauchg：介绍了一个基于 Next.js（React 全栈框架）构建的开源 agent CRM（客户关系管理系统），模型无关、可自托管——agent 时代的基础设施正在被开源社区快速补全。<a class="glance-src" href="https://x.com/rauchg/status/2083684679362965605" target="_blank" rel="noopener">X @rauchg →</a></li>
+<li>@rauchg：他的孩子描述他的日常：「爸爸坐在电脑前，一直在打字」——有时候，最好的商业分析来自一个五岁小孩的观察。<a class="glance-src" href="https://x.com/rauchg/status/2083664853256843437" target="_blank" rel="noopener">X @rauchg →</a></li>
+<li>@thenanyu：Agent 循环的工作方式——遇到阻塞时，agent 会在 Issue 上留评论说明阻塞原因并继续等待，解除阻塞后自动恢复工作；这不是 bug，是设计出来的工作流。<a class="glance-src" href="https://x.com/thenanyu/status/2083534333428580501" target="_blank" rel="noopener">X @thenanyu →</a></li>
+<li>@nikunj：AI 正在解决复杂问题，而传统企业还在为每个 token 的 ROI（投入产出比）争论——他预测这个认知落差会是未来十年持续扩大的鸿沟。<a class="glance-src" href="https://x.com/nikunj/status/2083502573546263002" target="_blank" rel="noopener">X @nikunj →</a></li>
+<li>@steipete（PSPDFKit 作者，独立开发者）：让 agent 改善他的 Gmail 体验——安装一个新的邮件处理方案，全程由 agent 完成，他只是提了个需求。<a class="glance-src" href="https://x.com/steipete/status/2083759812970786997" target="_blank" rel="noopener">X @steipete →</a></li>
+<li>@steipete：他的 agent 在调试 ESP32（一种低功耗 WiFi 微控制器）的爪子节点时，通过网络摄像头反复大喊唤醒词——场面奇特，但这恰恰是 AI agent 调试物理世界设备时的真实写照。<a class="glance-src" href="https://x.com/steipete/status/2083694161933594703" target="_blank" rel="noopener">X @steipete →</a></li>
+<li>@danshipper（Every 创始人）：标题「AI creates more work for human experts」——不是 AI 取代专家，而是让专家的工作量变更多，因为 AI 生成了更多需要被审查和修正的输出。<a class="glance-src" href="https://x.com/danshipper/status/2083750803437724016" target="_blank" rel="noopener">X @danshipper →</a></li>
+<li>Wisereads Vol. 154：Anthropic 的 Thariq Shihipar 写了一篇「Claude 5 新世代的上下文工程新规」——规则一：「给 Claude 例子」的做法在新模型上反而会限制它的探索空间，少即是多。<a class="glance-src" href="https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models" target="_blank" rel="noopener">Claude Blog →</a></li>
+<li>Wisereads Vol. 154：Cate Hall 与 Sasha Chapin 合著《You Can Just Do Things》（你完全可以去做那件事）即将出版——书名就是全部论点，高能动性（high-agency）的人不在等待许可。<a class="glance-src" href="https://wise.readwise.io/save?url=https%3A//lrb.co.uk/the-paper/v48/n14/emily-wilson/an-uncomplicated-man/" target="_blank" rel="noopener">Wisereads →</a></li>
+<li>Wisereads Vol. 154：Emily Wilson 评 Christopher Nolan 的《奥德赛》——她参与了部分工作但对台词不满意，不过感激电影把读者送回了荷马；她顺便指出，荷马的奥德修斯「缺乏技术智慧」，睡得也很少。<a class="glance-src" href="https://wise.readwise.io/save?url=https%3A//lrb.co.uk/the-paper/v48/n14/emily-wilson/an-uncomplicated-man/" target="_blank" rel="noopener">Wisereads →</a></li>
+<li>Every.to：Builder Pack（面向 All Access 会员的工具包）新增 Paper Pro（把设计稿转成代码的画布工具）和 Mobbin Team（60万+已上线产品截图库），总价值突破9000美元，均可对接 Codex、Claude Code 和 Cursor。<a class="glance-src" href="https://every.to/builder-pack" target="_blank" rel="noopener">Every →</a></li>
+</ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-08-01.html">← Aug 1</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
