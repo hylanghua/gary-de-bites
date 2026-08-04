@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — August 4, 2026</title>
+  <meta name="description" content="OpenAI GPT-5.6 Luna 降价80% 并永久生效，Qwen 3.8 Max（2.4T MoE）发布且承诺开源，Google Gemini Robotics 2 实现全身控制——三天内三件大事，开源与闭源的边界再次模糊。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">August 4, 2026</h1>
+
+  <p class="post-lead">OpenAI GPT-5.6 Luna 降价80% 并永久生效，Qwen 3.8 Max（2.4T MoE）发布且承诺开源，Google Gemini Robotics 2 实现全身控制——三天内三件大事，开源与闭源的边界再次模糊；纯银两篇连发道出 Agent 时代的两层困境：经验无法流通，焦虑也没有捷径，只能收窄到「能控制的」那部分。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+<article class="item">
+  <h3><a href="https://www.ghacks.net/2026/08/04/openai-reaches-one-billion-active-users-and-cuts-gpt-5-6-luna-and-terra-prices-by-up-to-80/" target="_blank" rel="noopener">OpenAI GPT-5.6 Luna 降价80%，永久生效；Astra 新模型率先破解10项数学与计算机科学难题</a></h3>
+  <p>7月30日起，OpenAI 将 GPT-5.6 Luna 的 API 价格永久下调80%（现为每百万输入 token $0.20 / 输出 $1.20），Terra 下调20%。OpenAI 把降价归因于模型效率提升——同一任务所需算力下降，成本随之下压。负责 Codex 的 Thomas Sottiaux 特别说明，这不是临时促销，是固定定价。</p>
+  <p>与此同时，OpenAI 正式预告代号 Astra 的下一代主力模型，并率先公布了它自主解决的10道长期未破解的数学与理论计算机科学难题。这是 OpenAI 罕见地在正式发布前以「能力样本」为营销手段——显示 Astra 的重点在推理深度而非效率。</p>
+  <cite><a href="https://venturebeat.com/technology/ai-price-wars-openai-cuts-gpt-5-6-luna-prices-by-80-as-model-competition-shifts-toward-cost" target="_blank" rel="noopener">VentureBeat</a> · <a href="https://www.bensbites.com/p/what-my-agent-knows-about-me" target="_blank" rel="noopener">Ben's Bites</a> · <a href="https://x.com/thsottiaux/status/2084506501834829833" target="_blank" rel="noopener">X @thsottiaux</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://www.latent.space/p/ainews-qwen-38-max24t-and-27b-new" target="_blank" rel="noopener">Qwen 3.8 Max（2.4T MoE）发布：自主参赛拿下前13%，开源权重本周承诺到位</a></h3>
+  <p>Alibaba 推出 Qwen 3.8 Max——一个混合专家架构（MoE，Mixture of Experts，总参数 2.4 万亿但每次推理只激活约 950 亿）的大型模型，上下文窗口 100 万 token，原生支持文字、图像和视频输入，API 定价 $2 输入/$6 输出（每百万 token）。最引人注目的不是参数规模，而是能力演示：模型在 WWW2025 多模态对话意图识别竞赛中与526支人类队伍同场较量，24小时内跻身前13%（超过87%的参赛队伍）；还用125小时自主运行研究循环，复现并超越了一篇 LLM 推理数据选择论文的基准成绩，提升了2.71分。</p>
+  <p>Alibaba 承诺下周释出 Qwen 3.8 Max 和 Qwen 3.8-27B 的开源权重。AINews 主编 swyx 评价：这是「开源权重的重大胜利」，从去年 Qwen 管理层更换、方向一度不明朗，到如今推出可与闭源前沿模型分庭抗礼的开放权重，疑虑彻底消散。</p>
+  <cite><a href="https://www.latent.space/p/ainews-qwen-38-max24t-and-27b-new" target="_blank" rel="noopener">AINews / Latent Space</a> · <a href="https://www.developersdigest.tech/blog/qwen-3-8-max-release-2026" target="_blank" rel="noopener">Developers Digest</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/" target="_blank" rel="noopener">Google Gemini Robotics 2：全身控制 + 多机器人协作，适配新机体只需几小时</a></h3>
+  <p>Google DeepMind 推出 Gemini Robotics 2，前一代主要控制机器人上半身，新版实现从头到脚的全身协调运动——能边走路、边蹲下、边伸展、边整理杂乱房间。精细操作能力也大幅提升，可完成打结、组装精密零件、处理易碎物品等动作。更值得关注的是两项架构升级：一是多机器人协作（多台机器人共享任务规划，分工完成仓库或应急场景），二是快速适配——同一模型可在几小时内迁移到全新机体上，无需从头训练。</p>
+  <p>模型分为三层：视觉+指令转运动层、复杂任务规划层、设备端轻量层。这意味着 Gemini Robotics 2 既可以联网推理复杂任务，也可以本地部署在机器人端侧运行，是从实验室走向产业的关键信号。</p>
+  <cite><a href="https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/" target="_blank" rel="noopener">Google DeepMind Blog</a> · <a href="https://www.bensbites.com/p/what-my-agent-knows-about-me" target="_blank" rel="noopener">Ben's Bites</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+<article class="item">
+  <h3><a href="https://x.com/thsottiaux/status/2084483765158719542" target="_blank" rel="noopener">Thomas Sottiaux（OpenAI Codex 负责人）：Codex 现在是一个好 harness——但两三个月后，它会显得很原始</a></h3>
+  <p>Sottiaux 在谈到目前 Codex（OpenAI 的代码 agent 平台）的状态时说，它已经证明自己是一个好的 harness（这里指「能可靠地运行 agent 任务的外部框架和执行环境」）。但他立即补充：基于目前他看到的一些成果，两到三个月后，今天的 Codex 会显得相当原始。</p>
+  <p>这句话的重量在于说话的位置——他是 Codex 的直接负责人，不是外部评论者。他在内部知道什么。「好 harness」是现在的基准，「两三个月后显得原始」是他对下一版能力跃迁幅度的隐含预告。同期他还提到一个无比具体的数字：在 OpenAI，一个工程师开一个 Codex PR，改动就可以触达10亿用户。</p>
+  <p><strong>当 harness 的直接操盘手说「两三个月后会显得原始」，他不是在谦虚，而是在暗示代差。</strong></p>
+  <cite><a href="https://x.com/thsottiaux/status/2084483765158719542" target="_blank" rel="noopener">X @thsottiaux</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/AmandaAskell/status/2084369056765989224" target="_blank" rel="noopener">Amanda Askell（Anthropic 研究员）：模型可以「表现出对齐行为」，同时依然造成伤害——这两件事不互斥</a></h3>
+  <p>Askell 针对一篇分析提出了她的异议。她说，她不同意「模型如果表现对齐行为就不会造成伤害」这一推论。模型完全可以在行为层面看起来对齐，同时通过一些更微妙的路径造成伤害——比如它给出的建议导致了不好的结果，或者它在某些场景下产生了意料之外的影响，即便那些行为在表面上都符合预期规范。</p>
+  <p>这是 alignment（AI 对齐，让 AI 行为符合人类意图的研究方向）研究中一个被忽视的区分：「行为对齐」和「结果对齐」不是同一件事。一个按规则行事的 AI 依然可能在复杂系统里产生有害效果。这让「模型表现良好就足够安全」的直觉变得不可靠。</p>
+  <p><strong>对齐不是一道「通过/不通过」的测试，而是一个在真实世界里持续展开的系统属性——行为达标不等于效果安全。</strong></p>
+  <cite><a href="https://x.com/AmandaAskell/status/2084369056765989224" target="_blank" rel="noopener">X @AmandaAskell</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/petergyang/status/2084289426012897433" target="_blank" rel="noopener">Peter Yang（前 Roblox 产品副总裁）：从 NousResearch 联合创始人 Karan 那里学到的6个用好 Hermes Agent 的要点</a></h3>
+  <p>Peter Yang 整理了与 NousResearch（开源 LLM 研究机构，以 Hermes 系列模型著称）联合创始人 Karan 对话中最有用的6点 agent 使用框架。核心论点是：大多数人对 agentic LLM（可以自主执行多步骤任务的大模型）的使用方式还停留在「问答」模式，而不是「任务规划+工具调用」模式。Karan 的建议集中在：给 agent 明确的任务边界和成功标准，而不是开放式的提问；在复杂任务中设置检查点而不是一次性把整个任务扔给它；理解 agent 最擅长的是「确定性步骤的连续执行」，而不是「在不确定中做判断」。</p>
+  <p>这套框架对 PM 来说尤为实用，因为它把「如何用好 AI agent」翻译成了产品思维熟悉的语言：定义输入/输出边界，拆分任务颗粒度，设计验收标准。</p>
+  <p><strong>把 agent 当作「高级自动化」而非「通用智能」，才能让它真正稳定地产出——模糊的指令不会因为模型更强而变得有效。</strong></p>
+  <cite><a href="https://x.com/petergyang/status/2084289426012897433" target="_blank" rel="noopener">X @petergyang</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+<article class="item">
+  <h3><a href="https://xiaobot.net/post/5a16b8c2-8be5-415d-9170-60c0620f0784" target="_blank" rel="noopener">纯银：Agent 时代的产品经验变得无法流通</a></h3>
+  <p>纯银在今天的小报童里直接点出了一个用过 Agent 做复杂任务的人都会碰到的困境：产品经验正在失去流通性。他的逻辑很干净——有效的经验分享需要完整描述「任务背景的上文」「完成任务的步骤」和「最终交付的下文」，三者缺一不可。但在 Agent 时代，每个人的任务背景是千人千面的，极度碎片化，没有最大公约数。哪怕同样是做旅行攻略，不同的个性偏好会导向完全不一样的上下文，别人根本无法共情你的需求，更谈不上复用你的步骤。</p>
+  <p>他举了两个具体的失效案例：一是他在犬校完整分享了用 Codex 做旅行攻略的全过程，因为个人偏好太强烈，大家根本没兴趣读；二是同学分享了高级产品任务步骤，因为无法提供工作任务的上下文，按照步骤操作的人拿不到同样的结果。这背后是一个更深的结构问题：「同行交流」正在碎片化为「只有相似经历的人才能有效交流」。</p>
+  <p>他的结论也是诚实的：「相比起别人的经验，更重要的是你自己的任务环境：有什么是你有必要、有兴趣、并且 AI 能够高度赋能的任务。」每个人都有自己的功课和修行，经验无法流通是事实，遗憾也是真的。</p>
+  <p><strong>Agent 把经验的单位从「方法论」缩小到了「个人任务」——这不是内容质量的问题，是结构性的信息原子化。</strong></p>
+  <cite><a href="https://xiaobot.net/post/5a16b8c2-8be5-415d-9170-60c0620f0784" target="_blank" rel="noopener">小报童 · 纯银</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://every.to/p/to-stay-ahead-on-ai-think-like-a-designer" target="_blank" rel="noopener">Every.to：AI 吞下执行之后，专家的价值在于「设计工作本身」</a></h3>
+  <p>前亚马逊 AI 科学家、LevelUp Labs 创始人 Aishwarya Reganti 在 Every 的「拆解专业知识」系列里提出了一个很有用的框架转移：当 AI 能完成越来越多曾经证明你专业能力的执行工作时，专家的价值不是在「执行中」，而是在「执行之前」——即「设计工作本身」（design the work）。</p>
+  <p>她把这个过程拆成了两个层次：一是在任务开始前，把专业判断结构化成可以被 AI 和协作者执行的明确框架；二是这个框架的质量本身，就是你的核心竞争力所在。她用设计师的工作方式作类比：好的设计师不是画最多草图的人，而是能在动笔前就想清楚「这个设计需要解决什么问题、通过什么方式、达到什么标准」的人。Every 的这篇文章是其「拆解传统专业技能」系列的最终章，此前两篇分别讨论了为什么更快的原型不代表更好的产品决策，以及独立工作后需要拆解哪些旧习惯。</p>
+  <p><strong>AI 时代专家的竞争力，从「执行力」转向「任务设计力」——能在开工前把问题定义得更清楚，才是真正不可替代的部分。</strong></p>
+  <cite><a href="https://every.to/p/to-stay-ahead-on-ai-think-like-a-designer" target="_blank" rel="noopener">Every · Context Window</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/rauchg/status/2084445517678064092" target="_blank" rel="noopener">Guillermo Rauch（Vercel CEO）：PLG 时代结束，ALG 开始——让 agents 先采用你的产品</a></h3>
+  <p>Rauch 用一句话翻转了过去五年的增长逻辑：以前是 PLG（Product-Led Growth，产品驱动增长，即让用户先用产品再谈采购），现在是 ALG（Agent-Led Growth，agent 驱动增长）。具体含义是：对于初创公司，最有效的市场渗透路径变成了「先让 AI agents 采用你的产品」——当 agents 在各种工作流里开始调用你的 API、依赖你的工具，再来谈人类侧的 meeting 和销售。这和 PLG「先让个人用户爱上，再从下到上撬动企业采购」的逻辑结构类似，但主角从人换成了 agent。</p>
+  <p><strong>如果 agents 开始做采购决策，那么「被 agent 发现、信任、调用」就成了一个全新的产品增长漏斗——GTM 策略的起点，正在从「人」移向「机器」。</strong></p>
+  <cite><a href="https://x.com/rauchg/status/2084445517678064092" target="_blank" rel="noopener">X @rauchg</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+<article class="item">
+  <h3><a href="https://xiaobot.net/post/f70a2722-cc27-4099-b257-3aad148b6ff4" target="_blank" rel="noopener">纯银：今年，我怎样克服了自己的焦虑与 FOMO</a></h3>
+  <p>纯银昨天（8月3日）写了一篇关于焦虑与接受的文章，结构相当坦诚。他用了两年时间从「应然」向「实然」校准：微博流量不足巅峰期的三分之一、独立产品的市场窗口事实上已关闭、AI 赋能的场景因为个人使用习惯天然偏少——这些都是他承认的「实然」。</p>
+  <p>他找到的出路不是奋斗，而是收敛。引用了博主「Feynman路径积分」的观点：「一个内在维度非常丰富的人，被迫进入一个低维度运转的轨道，必然会产生巨大的内耗。解决的办法是先让自己降维度运转，聚焦极少数的目标，然后在合适的时机再慢慢展开维度。」他把自己收敛后的极少数目标说得很清楚：拥抱正反馈强烈的爱好（旅行/电影/游戏），专注感情生活，接触前沿技术但不强求。</p>
+  <p>他的结论是一个反向激励逻辑：「正反馈从来都是命运的路标。负面的心态，丑陋的状态，浪费的人生与折腾还是其次，重要的是你会距离本能的正反馈越来越远。」他同时引用博主「veryls」的话：「不务正业才能做大事，不堪重用才能成大事——因为大事只能是新长出来的事，能新长出来的只能是自己的事。」</p>
+  <p><strong>从「应然困于实然」到「用实然校准应然」，是一种成本很高但很真实的成熟——纯银在这里说的不是认命，是把注意力从控制不了的地方挪走。</strong></p>
+  <cite><a href="https://xiaobot.net/post/f70a2722-cc27-4099-b257-3aad148b6ff4" target="_blank" rel="noopener">小报童 · 纯银</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://www.lennysnewsletter.com/p/what-if-youre-not-supposed-to-have" target="_blank" rel="noopener">Lenny's Newsletter：Molly Graham 的「职业涌现」——你本来就不应该有长期规划</a></h3>
+  <p>Lenny 邀请 Molly Graham（曾历任 Google 早期员工、Facebook 高管、CZI 联合创始人，现为 Glue Club 创始人）写了一篇关于「职业规划」的客座文章，而 Molly 的核心论点是：你不需要一个长期规划。她把这个模型叫做「涌现」（emergence）——借用复杂系统科学里的概念，指系统在局部互动中自然生长出无法被预先设计的秩序。</p>
+  <p>她的观察是：大多数最终成功的职业轨迹，在当时都不是被规划出来的，而是在对当下机会的持续响应中涌现的。规划的幻觉让人焦虑（因为计划总是被打破），而「持续对眼前的好机会保持开放」反而是更有生产力的姿态。Lenny 自己也说，他整个职业路径就是这样走出来的，他认识的大多数成功人士也是如此。</p>
+  <p>这篇文章的时机有意思——AI 正在以前所未有的速度改变职业路径的可预测性，「未来需要什么技能」这道题没有人能答准。在这个背景下，Molly 的框架反而更实用：别规划五年后，专注当下最好的下一步。</p>
+  <p><strong>职业规划的焦虑，很多时候源于一个假设——未来是可以被设计的。Molly 说：不是，它是被涌现出来的。</strong></p>
+  <cite><a href="https://www.lennysnewsletter.com/p/what-if-youre-not-supposed-to-have" target="_blank" rel="noopener">Lenny's Newsletter</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2608.01964" target="_blank" rel="noopener">LongHorizon-Harness：把任务状态管到 harness 层，Qwen 3.7-Plus 在 WeaveBench 从51.8%跳到80.7%</a></h3>
+  <p><strong>现状：</strong>LLM agent 越来越多地被用于长时间、多步骤、工具调用连续的任务（即「长视野任务」）。但当前 agent harness（指「agent 运行的外部框架和执行环境」，负责调度、记录和工具调用）在状态追踪上有明显短板：任务走到中途往往丢失上下文，工具调用结果未经验证就直接进入下一步，导致错误累积。</p>
+  <p><strong>问题：</strong>如何让 agent 在数十步的长任务中保持准确的任务状态，而不是依赖模型自身记忆？</p>
+  <p><strong>解决方案：</strong>LongHorizon-Harness 提出将任务状态显式地维护在 harness 层（而非模型上下文），并引入 MAE 循环（Manage-Execute-Audit，管理-执行-审计）：Manager 维护任务状态图，Executor 在全新上下文中执行单步，Auditor 以只读方式独立验证每步结果。三者分离，相互制约。</p>
+  <p><strong>价值：</strong>在 WeaveBench 基准上，Qwen 3.7-Plus 从51.8%提升到80.7%；Claude Opus 在 OSWorld 2.0 子集上从20.0%提升到34.3%。提升幅度来自 harness 设计，而非模型本身的能力升级。</p>
+  <p><strong>未来方向：</strong>这说明长视野 agent 的性能瓶颈很大程度上是「执行框架」而非「模型能力」——针对 harness 层的工程优化，可能比等待下一代模型更快解决当前的实际问题。</p>
+  <cite><a href="https://arxiv.org/abs/2608.01964" target="_blank" rel="noopener">arXiv 2608.01964</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2606.05405" target="_blank" rel="noopener">Agents' Last Exam：1000+ 真实经济任务，最难等级顶级 agent 配置通过率不到3%</a></h3>
+  <p><strong>现状：</strong>现有 agent 基准大多是学术性任务，与实际经济价值脱钩。模型能力在这类基准上持续提升，但并未转化为专业领域的大规模部署。问题在评测端：缺乏能真正衡量「经济意义上的任务完成能力」的基准。</p>
+  <p><strong>问题：</strong>前沿 agent 在真实职业工作流上的实际能力到底在什么水平？</p>
+  <p><strong>解决方案：</strong>Agents' Last Exam（ALE）由250+位行业专家协作构建，覆盖美国联邦职业分类（O*NET/SOC 2018）中的非体力职业，拆解为13个行业集群、55个子领域、1000+任务，全部要求可验证的输出结果。</p>
+  <p><strong>价值：</strong>在最难等级（"Last-Exam" tier），主流 harness + 前沿模型组合的完整通过率平均不到3%，整体平均仅约2.6%。这是迄今最接近「真实职业场景」的 agent 评测。</p>
+  <p><strong>未来方向：</strong>ALE 把「经济意义上的任务完成」定义为下一个核心评测维度——帮助区分哪些领域的 agent 已经接近可用，哪些还差得很远。</p>
+  <cite><a href="https://arxiv.org/abs/2606.05405" target="_blank" rel="noopener">arXiv 2606.05405</a> · <a href="https://huggingface.co/papers/2606.05405" target="_blank" rel="noopener">HuggingFace</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2607.03333" target="_blank" rel="noopener">SPORK：自推测分叉——用模型自身预测即将调用的工具，GPU 空闲时间减少37%</a></h3>
+  <p><strong>现状：</strong>LLM agent 的推理-行动-观察（Thought-Action-Observation）循环是顺序执行的：模型推理，发出工具调用，然后 GPU 闲置等待工具返回结果。这段等待在实际工作负载中占到16-37%的总壁时（wall time，即用户实际感受到的时间），在此前文献中最高达61%。</p>
+  <p><strong>问题：</strong>能否在模型还在生成推理链（chain-of-thought）的同时，就预测并提前触发工具调用，把等待时间叠加到推理时间里？</p>
+  <p><strong>解决方案：</strong>SPORK 在生成开始时分叉（fork）出一个探针，用模型自身预测即将调用的工具名称，准确率达74.6-99.6%（跨5个基准测试）。一旦预测出工具，立即并行触发执行，等模型完成推理时工具结果已经到位，无需额外等待。整个过程无需训练，开箱即用。</p>
+  <p><strong>价值：</strong>在 Qwen3-32B 上测试，SPORK 平均节省工具等待时间约37%，且不影响最终结果准确率。对高并发 agent 部署场景来说，这直接等于吞吐量的同等提升。</p>
+  <p><strong>未来方向：</strong>随着 agent 工作流从单步工具调用走向多步并行，类似的「推测执行」（speculative execution）设计将成为 agent 推理加速的标准工具。</p>
+  <cite><a href="https://arxiv.org/abs/2607.03333" target="_blank" rel="noopener">arXiv 2607.03333</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2607.21653" target="_blank" rel="noopener">Molt：极简 PyTorch 原生 RL 训练框架，让研究员能整体掌控 agent 训练代码</a></h3>
+  <p><strong>现状：</strong>现有的 agent 强化学习（RL，Reinforcement Learning，让模型通过奖励信号自我改进的训练方式）框架普遍庞大复杂，研究人员很难对整个训练流程有清晰的直觉；AI 编程助手也因代码量过大而难以在全局范围内推理和修改。</p>
+  <p><strong>问题：</strong>能否构建一个足够紧凑的 agent RL 框架，让研究员能「把整个代码库装进脑子里」，并让 AI 编程助手也能完整理解和操作？</p>
+  <p><strong>解决方案：</strong>Molt 是 PyTorch 原生的 agent RL 训练框架，设计原则是极简——用一个异步循环同时训练多模态和混合专家（MoE）策略，且严格保证「只在模型自身生成的 token 上训练」（避免分布偏移问题）。整个 codebase 紧凑到研究员可以整体记忆，AI 助手可以完整推理。</p>
+  <p><strong>价值：</strong>Molt 把「可理解性」作为框架的首要设计目标，而非性能。这在 agent 研究快速迭代的当下尤其有价值——能快速修改、调试和理解的框架，比黑箱高性能框架更适合探索阶段。</p>
+  <p><strong>未来方向：</strong>随着 agentic RL 成为下一代模型训练的核心路径，轻量研究框架将成为学术创新和工业应用的重要接口层。</p>
+  <cite><a href="https://arxiv.org/abs/2607.21653" target="_blank" rel="noopener">arXiv 2607.21653</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2606.05806" target="_blank" rel="noopener">ToolMaze：工具失败时的 agent 动态重规划基准——隐式语义失败让恢复率骤降37%</a></h3>
+  <p><strong>现状：</strong>现有 agent 基准主要评测「工具调用成功」的场景，但在真实部署中，工具会失败：API 超时、返回错误值、语义上不一致但格式正确（比如工具返回了结果但含义已经改变）。agent 在工具失败时的「动态重规划」能力几乎没有被系统性评测过。</p>
+  <p><strong>问题：</strong>当工具失败时，agent 能否识别失败类型并制定合理的恢复策略？这一能力与模型规模的关系如何？</p>
+  <p><strong>解决方案：</strong>ToolMaze 构建了一个基于 DAG（有向无环图，任务依赖结构）的工具调用基准，并设计了2×2的失败分类矩阵：显式（报错明显）vs. 隐式（结果看似正确但语义已错），短暂（单次失败）vs. 永久（持续失败）。评测核心指标是 PRR（Perturbation Recovery Rate，扰动恢复率）。</p>
+  <p><strong>价值：</strong>所有测试模型在工具扰动下性能均下降；隐式语义失败（最难识别的那类）导致 PRR 骤降约37%。更关键的发现：模型规模每提升一个量级，基础任务执行能力的提升比动态重规划能力的提升快3.66倍——即模型越来越强，但容错能力的进步远远跟不上。</p>
+  <p><strong>未来方向：</strong>「工具容错性」将成为 agent 生产部署的核心评测维度——在不可靠环境中稳定工作的能力，不会随着模型变强自然涌现，需要专门设计和训练。</p>
+  <cite><a href="https://arxiv.org/abs/2606.05806" target="_blank" rel="noopener">arXiv 2606.05806</a> · <a href="https://huggingface.co/papers/2606.05806" target="_blank" rel="noopener">HuggingFace</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+
+<ul class="glance-list">
+<li>@thsottiaux：在 OpenAI，一个工程师用 Codex 提一个 PR，改动就可以触达10亿用户——这句话说的是规模感，也是为什么 agent 基础设施的质量比消费者产品更难放低标准。<a class="glance-src" href="https://x.com/thsottiaux/status/2084196918071357707" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+<li>@swyx：CUA（Computer Use Agent，让 AI 自主操作电脑界面的技术）轻松过 CAPTCHA（防机器人的图形验证码），那 CAPTCHA 还有意义吗？这不只是产品问题，更是互联网信任基础设施的问题。<a class="glance-src" href="https://x.com/swyx/status/2084312752437481937" target="_blank" rel="noopener">X @swyx →</a></li>
+<li>@petergyang：ChatGPT 是用来建立「记忆」的——他认为 ChatGPT 在个人记忆沉淀和跨对话知识积累上的价值，可能超过它作为即时问答工具的价值。<a class="glance-src" href="https://x.com/petergyang/status/2084438872944242932" target="_blank" rel="noopener">X @petergyang →</a></li>
+<li>@petergyang 引用 NousResearch（开源 LLM 研究机构）联合创始人 Karan 的话：「对我们来说，我们只是想让开源赢。我们想给人们自由。」——研究者对开源的信仰，不全是技术路线，也是价值观。<a class="glance-src" href="https://x.com/petergyang/status/2084330985689428290" target="_blank" rel="noopener">X @petergyang →</a></li>
+<li>@AmandaAskell：「在英国获得世袭贵族爵位出乎意料地难，你甚至不能靠武力夺取了。」——Askell 的幽默感来了，和她平时谈 AI 对齐的犀利形成对比，这面也很可爱。<a class="glance-src" href="https://x.com/AmandaAskell/status/2084519165021528263" target="_blank" rel="noopener">X @AmandaAskell →</a></li>
+<li>@trq212：Claude Connector（Claude 的外部服务连接器）接入 Gmail、日历、Slack 等，现在在 Claude Code 的 Artifacts（AI 生成的可部署网页或应用）里也可以直接使用——这意味着 AI 生成的小应用可以直接读写你的真实数据。<a class="glance-src" href="https://x.com/trq212/status/2084387303959740449" target="_blank" rel="noopener">X @trq212 →</a></li>
+<li>@amasad（Replit CEO）：Replit 在数据库、对话记录和文档上建了一个「自驱动、自纠错的共享语义层」（semantic layer，即让 AI 能跨不同数据源理解业务含义的中间层）——这是 Replit 的下一步产品方向。<a class="glance-src" href="https://x.com/amasad/status/2084415670486499779" target="_blank" rel="noopener">X @amasad →</a></li>
+<li>@rauchg：Next.js 16.3 发布——更快的开发构建和生产构建是亮点，Vercel 也同步更新了 AI Gateway 日志 UI，操作体验可视化更好。<a class="glance-src" href="https://x.com/rauchg/status/2084411344623902994" target="_blank" rel="noopener">X @rauchg →</a></li>
+<li>@levie（Box CEO）：随便一个普通的早晨，又一个接近前沿水准的开源权重模型出现——如果你把时钟拨回三到六个月前，没人会相信今天的开源默认值能达到这个水平。<a class="glance-src" href="https://x.com/levie/status/2084510498519933318" target="_blank" rel="noopener">X @levie →</a></li>
+<li>@zarazhangrui（张若然）：用 Codex 做旅行攻略的实用技巧——把餐厅/火车/活动的预订截图丢给 Codex，让它自动整理并导入 Google Calendar，行程管理从此无痛。<a class="glance-src" href="https://x.com/zarazhangrui/status/2084536363668611491" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+<li>@nikunj：尽管每天都尽量在出门前跟孩子道别，但有些早晨还是会手脚并用地悄悄爬出家门，不打扰还在睡觉的孩子——工作和家庭之间的那条线，有时候就在地板上。<a class="glance-src" href="https://x.com/nikunj/status/2084260256503255358" target="_blank" rel="noopener">X @nikunj →</a></li>
+<li>@danshipper（Every 创始人）：「这是我做过的最深入的访谈之一」——他没有说采访了谁，但这句判断本身已经是一个邀请。<a class="glance-src" href="https://x.com/danshipper/status/2084376873887576482" target="_blank" rel="noopener">X @danshipper →</a></li>
+<li>@adityaag（South Park Commons）：SPC 的核心价值之一是「你可以直接去做那件事」（you can just do things）——如果你看到有什么可以做得更好的，直接做，不用等人批准。<a class="glance-src" href="https://x.com/adityaag/status/2084323290605113711" target="_blank" rel="noopener">X @adityaag →</a></li>
+<li>Simon Willison（simonwillison.net）：「不要成为肉代理」（Don't be a meat proxy）——Niklas Gruhn 提出的概念：不要做一个把 AI 输出不加思考地转发给同事或用户的人。你在中间，就应该有你的判断。<a class="glance-src" href="https://simonwillison.net/2026/Aug/3/dont-be-a-meat-proxy/" target="_blank" rel="noopener">Simon Willison →</a></li>
+<li>Ben's Bites：用「Reflection Engine」（一个大型提示文件）把所有对话记录、疗愈笔记、个人文件喂给 agent，让它出一份关于「你是什么样的人」的完整分析报告——Ben 自己测试后说它「出人意料地深入且有帮助」，他正在用40个问题跟 agent 对谈来处理报告里发现的问题。<a class="glance-src" href="https://www.bensbites.com/p/what-my-agent-knows-about-me" target="_blank" rel="noopener">Ben's Bites →</a></li>
+<li>Tim Ferriss 新播客：男性友谊的艺术、小型退休（mini-retirements，即在职业中途主动放短假而非等退休后再享受生活）、AI 时代的自我再造——这期 Q&A 涵盖了 Tim 对职业中场、认知延寿、隐私权的最新思考。<a class="glance-src" href="https://tim.blog/2026/07/29/qa-with-tim-male-friendship/" target="_blank" rel="noopener">Tim Ferriss →</a></li>
+<li>DeepSeek V4 Flash 悄悄上线：$0.14/$0.28 每百万 input/output token，上下文窗口100万 token，比 OpenAI Luna 还便宜——价格战还在继续，且下限还没见底。<a class="glance-src" href="https://www.bensbites.com/p/what-my-agent-knows-about-me" target="_blank" rel="noopener">Ben's Bites →</a></li>
+</ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-08-02.html">← Aug 2</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
