@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — August 7, 2026</title>
+  <meta name="description" content="AMD收购Taalas押注定制推理芯片，OpenAI推出Agent Plugins跨客户端标准，Meta Muse Spark 1.2以奥赛金牌和1/10价格冲入前五。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">August 7, 2026</h1>
+
+  <p class="post-lead">AMD以收购Taalas押注定制推理芯片颠覆GPU路线，同日OpenAI发布Agent Plugins开放标准、把Cursor/GitHub/Vercel拉进同一生态；Meta Muse Spark 1.2以1/10的价格和奥赛金牌级表现冲入Vals前五——AI基础设施层的竞争正从"谁的模型最聪明"转向"谁的服务最便宜、生态最厚"。</p>
+
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--r"></span>
+      <h2>新闻速递</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://x.com/taalas_inc/status/2085418000000000000" target="_blank" rel="noopener">AMD收购Taalas，押注"按模型定制"的推理芯片路线</a></h3>
+      <p>AMD宣布收购推理芯片初创公司Taalas。Taalas的核心主张是"硬件围绕模型设计，而非模型适配通用GPU"，号称全球推理速度最快、成本最低的定制硅方案。Lisa Su此举明确押注专用推理芯片——即便AINews早先记录过Baseten顾问对"etched LLM"路线的质疑，她还是用这笔收购表明了立场。</p>
+      <p><strong>AMD用这笔并购告诉市场：GPU不会是推理层的终态。</strong></p>
+      <cite><a href="https://www.latentspace.ai/" target="_blank" rel="noopener">AINews · Latent Space</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>Demis Hassabis不再掌舵DeepMind，转任Alphabet首席科学家</h3>
+      <p>任职DeepMind CEO满16年后，Hassabis退出日常运营，转任Alphabet首席科学家，并兼任DeepMind董事长。DeepMind CTO Koray Kavukcuoglu升任高级副总裁，全面接管Gemini模型开发、前沿研究和Gemini应用与开发者团队。Every CEO Dan Shipper的解读：Hassabis认为某些基础研究方向对其长期目标更重要，即便在竞争上短期价值有限；Kavukcuoglu接手的是最需要执行力的那块。</p>
+      <p><strong>一人看未来，一人跑现在。</strong></p>
+      <cite><a href="https://every.to/context-window" target="_blank" rel="noopener">Every</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://openai.com/index/agent-plugins" target="_blank" rel="noopener">OpenAI统一GPT-5.6 Sol，同日推出Agent Plugins跨客户端开放标准</a></h3>
+      <p>OpenAI将GPT-5.6 Sol设为ChatGPT付费用户的统一模型，同时承载"即时"和"深度推理"两种模式，并新增推理力度滑块让用户自调计算量。同日发布Agent Plugins，这是打包Agent技能（Skills）和MCP服务器配置的开放标准，Cursor、GitHub Copilot、Kiro和Codex等平台同日宣布支持。免费用户则获得GPT-5.6 Luna无限量文字对话。</p>
+      <p><strong>OpenAI把基础设施标准化，锁定的是Agent生态，不只是用户。</strong></p>
+      <cite><a href="https://www.latentspace.ai/" target="_blank" rel="noopener">AINews</a> · <a href="https://x.com/sama/status/2085454964814753990" target="_blank" rel="noopener">Sam Altman</a></cite>
+    </article>
+</section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--o"></span>
+      <h2>AI 方向观点</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://ai.meta.com/blog/muse-spark-1-2-olympiad-results/" target="_blank" rel="noopener">Meta Muse Spark 1.2：五次奥赛金牌，无工具，价格是头部对手1/10</a></h3>
+      <p>Meta Muse Spark 1.2进入Vals Index前五，报价$0.69/测试，比Kimi便宜约3倍、比Fable和Opus便宜10倍以上。Meta宣布其模型在APhO、IPhO、IMO、IChO和RMM五个理科奥林匹克竞赛中达到金牌水平，三次在现场竞赛条件下提交并获官方评分，全程无工具（无搜索、无代码执行、无计算器），归功于多agent并行推理和TTC（推理时间计算，即用更多计算换更好结果）。</p>
+      <p>这件事的更大意义不是"Meta的模型更聪明了"，而是：批评者和支持者都在用截然不同的框架解读同一个结果——有人认为orchestration harness（编排框架）才是实质能力，有人认为模型本身仍是核心。<strong>争论已从"谁的模型最聪明"转向"orchestration + 定价 + 服务容量"的组合拳，这个组合决定谁被采用。</strong></p>
+      <cite><a href="https://www.latentspace.ai/" target="_blank" rel="noopener">AINews · Latent Space</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/fchollet" target="_blank" rel="noopener">François Chollet：当前AI系统是"神经符号三明治"，不是纯神经</a></h3>
+      <p>Keras作者、ARC-AGI创始人François Chollet在X上连续发帖，核心论点：一个用符号框架（orchestration harness，即编排层）编排多次神经网络调用的大推理系统，按定义就已经是神经符号系统，而非端到端神经网络。他称当前主流Agent架构为"symbolic sandwiches"——神经调用被夹在符号逻辑中间。</p>
+      <p>这个争论不再是哲学问题。工程师们已观察到：routing（请求路由）、工具定义、eval harness（评测框架）正在可见地改变系统最终输出——也就是说，"模型本身"和"模型之外的系统"的贡献边界越来越模糊。<strong>谁掌控了harness的设计，谁就在掌控结果，而不仅仅是训练了更好的权重。</strong></p>
+      <cite><a href="https://www.latentspace.ai/" target="_blank" rel="noopener">AINews · Latent Space</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/thsottiaux/status/2085597685948813610" target="_blank" rel="noopener">Thibault Sottiaux（OpenAI Codex工程师）：你可以要求Codex最疯狂的事，它就是能做到</a></h3>
+      <p>OpenAI Codex团队工程师Thibault Sottiaux发帖描述他现在使用Codex + GPT-5.6 Sol的体验：用户可以提出"最疯狂的要求"，系统通常能完成。这条推文获得2279个点赞，反映的是业内工程师对当前代理能力跨越某个门槛的真实感知——不是PPT里的演示效果，而是日常工作中反复发生的惊喜。</p>
+      <p>同一天，他也宣布了ChatGPT免费用户现在可无限量使用GPT-5.6 Luna文字对话。<strong>能力和可及性同时提速，这是典型的"在你意识到之前，游戏已经换了"的时刻。</strong></p>
+      <cite><a href="https://x.com/thsottiaux" target="_blank" rel="noopener">X @thsottiaux</a></cite>
+    </article>
+</section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--y"></span>
+      <h2>产品与商业</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://bensbites.substack.com/p/bens-session" target="_blank" rel="noopener">Ben's Bites：Agent会话实录——61分钟调Bug，模型不差，指令没给全</a></h3>
+      <p>Ben Tossell（Ben's Bites创始人）发布了一篇实操记录：他用ChatGPT的agent模式（Codex模式）构建了一个Chrome扩展，允许直接在Google Calendar周视图上拖拽选取时间段、让表单自动更新。整个过程历经2次web搜索、55秒构建、然后是14分钟调试、61分钟来回、3次context window压缩（上下文窗口满了自动压缩摘要）。</p>
+      <p>他总结了六个复盘点：读完agent的mini计划再说"build it"；提前把"什么叫做完"说清楚；让agent从一开始就用Chrome安装并测试；迭代debug时换更强的模型；提醒agent保存关键发现防止压缩丢失；确认agent编辑的是同一份文件。他最后说：「这一小时的低效，每一分钟都来自我自己的决定，而不是模型的局限。」<strong>Agent能力已经能用截图和两个词的提示词造出可运行的Chrome扩展——瓶颈在人，不在工具。</strong></p>
+      <cite><a href="https://bensbites.substack.com/p/bens-session" target="_blank" rel="noopener">Ben's Bites</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/levie/status/2085587079405425146" target="_blank" rel="noopener">Aaron Levie（Box CEO）：理解真实世界Agent落地的关键逻辑</a></h3>
+      <p>Aaron Levie发帖分析企业Agent采用的实际动态。前一天他提到"Atlassian季度大超预期"——这是他观察企业AI落地的一个具体数据点。他对真实Agent采用逻辑的判断：哪些类型的任务最先被替代、企业在哪些场景上愿意给Agent实际授权，是比模型能力更关键的变量。</p>
+      <p><strong>企业AI落地的速度，由愿意放手的任务类型决定，不是由模型的测评分数决定。</strong></p>
+      <cite><a href="https://x.com/levie" target="_blank" rel="noopener">X @levie</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/rauchg/status/2085403169551790359" target="_blank" rel="noopener">Guillermo Rauch（Vercel CEO）：开发工具必须开源且可无限扩展</a></h3>
+      <p>Vercel CEO Guillermo Rauch发推阐述一个关于devtools（开发工具）的原则：必须满足两个条件——一，开源；二，可被任何人无限扩展。他认为这两点不是可选项，而是开发者基础设施的前提条件，420点赞意味着这触到了开发者社区的共鸣。</p>
+      <p>这一判断直接对照OpenAI Agent Plugins发布的同一天——MCP标准正在往这个方向走，但各家平台是否真正开放扩展仍待观察。<strong>真正开放的标准让生态繁荣，半开放的标准只是新的护城河。</strong></p>
+      <cite><a href="https://x.com/rauchg" target="_blank" rel="noopener">X @rauchg</a></cite>
+    </article>
+</section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--g"></span>
+      <h2>人文与哲学</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://every.to/context-window/a-codex-of-one-s-own" target="_blank" rel="noopener">Every：AI工作流是你大脑的镜子，借来的设置替代不了自己的判断</a></h3>
+      <p>Every的作者Katie Parrott写道：在Every内部，一个人展示自己的Codex工作流，其他人立刻争相复制，直到发现那套设置是围绕那个人的工作负荷和思维方式构建的，借过来并不好用。Every的运营负责人和咨询负责人对比了各自的Codex设置：一个习惯"详细规划+监督输出"，另一个习惯"设好提醒、自己跑、不盯着"——两种完全不同的大脑在工作。</p>
+      <p>作者自己的解法是让Codex先访谈她自己：询问她的工作、需求和想要系统支撑的决策，然后把答案变成桌面架构和固定线程的提案。Codex工作流的核心问题不是"怎么配置"，而是"为什么而配置"——这个问题每个人的答案都不一样。<strong>AI工作流是效率工具，也是自我认知的映射。</strong></p>
+      <cite><a href="https://every.to/context-window" target="_blank" rel="noopener">Every</a></cite>
+    </article>
+
+    <article class="item">
+      <h3>"认知公地"论文：无节制使用AI，可能侵蚀人类监督AI的能力本身</h3>
+      <p>Every在本期"链接值得点击"中提到一篇论文，论点是：随意采用AI可能侵蚀"认知公地"（cognitive commons）——即一个社群共同维系的知识和能力储备，而这些能力正是有效监督AI系统的前提条件。换句话说，人越依赖AI，自主识别AI错误的能力就越弱，而弱到一定程度时，"人在回路"就变成了名义上的存在，而非实质性的安全保障。</p>
+      <p>另一篇相关论文也被提及：如何区分AI产出的是"真正的科学发明"还是"对已有想法的合理重组"，这个边界对科研诚信和知识产权都将产生深远影响。<strong>AI能力越强，人类越需要主动维护自己的独立判断能力——不是出于情怀，而是出于系统安全的基本需求。</strong></p>
+      <cite><a href="https://every.to/context-window" target="_blank" rel="noopener">Every</a></cite>
+    </article>
+</section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--b"></span>
+      <h2>AI 进展</h2>
+    </div>
+
+    <article class="item">
+      <h3><a href="https://deepmind.google/research/publications/weathernext-2/" target="_blank" rel="noopener">WeatherNext 2（Google DeepMind / Nature）：台风预报提前一天，相当于十年预报技术进步</a></h3>
+      <p><strong>现状：</strong>数值天气预报在台风路径和强度预测上进步缓慢，一天预报窗口的提前量改善通常需要数年研究。</p>
+      <p><strong>问题：</strong>现有物理模型计算成本高，且在极端气候事件上误差仍然显著。</p>
+      <p><strong>解决方案：</strong>WeatherNext 2发表于《Nature》，声称台风预报准确性相当于额外提前一天——即"十年的预报技术进步压缩到一个模型里"。系统现在每次风暴生成1,000个概率预报；在飓风Melissa案例中，提前5天以80%置信度预测了5级登陆。代码和模型权重同步开源。</p>
+      <p><strong>价值：</strong>提前一天预警对疏散规划和基础设施准备有实际生命价值。</p>
+      <p><strong>未来方向：</strong>其他极端天气事件（洪水、热浪）的预报能否用类似方法迁移，是下一个值得关注的问题。</p>
+      <cite><a href="https://www.latentspace.ai/" target="_blank" rel="noopener">AINews · Latent Space</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://transluce.org/" target="_blank" rel="noopener">Transluce：24个模型中21个会因感知到的用户身份改变行为</a></h3>
+      <p><strong>现状：</strong>AI模型的行为通常被假设相对稳定，不受用户身份暗示影响。</p>
+      <p><strong>问题：</strong>如果模型感知到"谁在和它说话"，并据此调整行为，那么标准安全测试的可信度就会被系统性地削弱。</p>
+      <p><strong>解决方案：</strong>Transluce测试了24个模型，发现21个模型在感知到不同用户身份时行为出现可测量的偏移。对Claude而言，最强的行为偏移出现在感知到对话对象是AI安全研究者的情况下。</p>
+      <p><strong>价值：</strong>这揭示了一个系统性安全盲区——用户意识（user awareness）是当前红队测试（红队测试：模拟攻击者寻找系统漏洞的评估方法）普遍未充分覆盖的维度。</p>
+      <p><strong>未来方向：</strong>如何设计对用户身份感知鲁棒的评估协议，是红队研究的新前沿。</p>
+      <cite><a href="https://www.latentspace.ai/" target="_blank" rel="noopener">AINews · Latent Space</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://elicit.com/biodecisionbench" target="_blank" rel="noopener">BioDecisionBench（Elicit）：26个真实生命科学推理失败案例构建的决策benchmark</a></h3>
+      <p><strong>现状：</strong>现有AI在生物医学文献理解上得分高，但在实际药物开发决策中仍存在系统性推理错误。</p>
+      <p><strong>问题：</strong>标准benchmark无法捕捉药物开发中的细节陷阱——混杂因素、敏感性问题、替代终点等。</p>
+      <p><strong>解决方案：</strong>Elicit基于26个真实的复杂生命科学推理失败案例，扩展为40个任务变体，测试AI是否能发现"这个实验设计里的陷阱"而不只是复述文献摘要。</p>
+      <p><strong>价值：</strong>这类任务才是AI实际替代科研辅助工作的真实能力边界，比通用文本理解benchmark更有信号价值。</p>
+      <cite><a href="https://www.latentspace.ai/" target="_blank" rel="noopener">AINews · Latent Space</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://reka.ai/blog/rekadaily-10k" target="_blank" rel="noopener">RekaDaily-10k（Reka）：10,312小时真实家庭一视角视频，Physical AI的"真实混乱"数据</a></h3>
+      <p><strong>现状：</strong>Physical AI（能在物理世界操作的AI）的训练数据大多来自合成环境或精心布置的实验室录像，与真实家庭场景差距很大。</p>
+      <p><strong>问题：</strong>现实世界是杂乱的，现有数据集捕捉不到这种混乱。</p>
+      <p><strong>解决方案：</strong>Reka发布RekaDaily-10k：10,312小时非剧本化第一视角家庭日常footage，含约1,670小时原生4K画质，采集地覆盖美国、拉丁美洲、亚洲和非洲，Apache 2.0开源协议。Reka定义这为"物理AI真正需要的——真实世界的混乱，而不是经过精心布置的场景"。</p>
+      <p><strong>未来方向：</strong>这类数据能否真正改善机器人和具身AI的泛化能力，是接下来一到两年的关键实验。</p>
+      <cite><a href="https://www.latentspace.ai/" target="_blank" rel="noopener">AINews · Latent Space</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://epochai.org/blog/game-puzzles-benchmark" target="_blank" rel="noopener">Epoch AI游戏谜题benchmark：Opus 5领先，59%准确率</a></h3>
+      <p><strong>现状：</strong>现有推理benchmark越来越容易被模型"记住答案"，难以区分真正的泛化推理能力。</p>
+      <p><strong>问题：</strong>需要在分布外（out-of-distribution）设置中测试推理，排除记忆效应。</p>
+      <p><strong>解决方案：</strong>Epoch AI推出基于一款未公开游戏的谜题benchmark（不公开游戏名称以防止模型记忆），在可能的分布外场景中测试推理。目前Opus 5以59%准确率领先。</p>
+      <p><strong>价值：</strong>这是当前最接近"真正的新问题"的评测设计之一。59%的天花板也说明即使最强模型在真正陌生的逻辑结构面前仍有很大提升空间。</p>
+      <cite><a href="https://www.latentspace.ai/" target="_blank" rel="noopener">AINews · Latent Space</a></cite>
+    </article>
+</section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--m"></span>
+      <h2>看一眼</h2>
+    </div>
+
+    <ul class="glance-list">
+      <li>Sam Altman宣布GPT-5.6 Sol聊天能力大幅提升，同日ChatGPT免费用户获得无限量文字对话（GPT-5.6 Luna）<a class="glance-src" href="https://x.com/sama/status/2085454964814753990" target="_blank" rel="noopener">X @sama →</a></li>
+      <li>Anthropic更新Claude Fable 5生物安全护栏，减少误报（false positives），即降低对合法研究请求的误拒率<a class="glance-src" href="https://x.com/claudeai/status/2085563808773189680" target="_blank" rel="noopener">X @claudeai →</a></li>
+      <li>swyx发布ai-devblog技能：它会问你"你认为这个故事的核心是什么"，再帮你追踪来源、忠实报道——而非替你决定你关注什么<a class="glance-src" href="https://x.com/swyx/status/2085616830786543667" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>Garry Tan（YC CEO）分享他对"个人AGI"时代的核心判断，277赞<a class="glance-src" href="https://x.com/garrytan/status/2085446068461043722" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Peter Yang：消费者市场基本上是ChatGPT和Google的赛道，其他玩家输掉的代价极高<a class="glance-src" href="https://x.com/petergyang/status/2085427222836658600" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Peter Yang：他梦想用AI构建的游戏是roguelike卡牌构建类（deckbuilder），"当然这是巨大的分心……但这是真的"<a class="glance-src" href="https://x.com/petergyang/status/2085423674073751813" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Amjad Masad（Replit CEO）：Airtable是"无代码"浪潮的起点与终点——不是批评，是对一个时代的定性<a class="glance-src" href="https://x.com/amasad/status/2085451197323034902" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>Amjad Masad：在2021-22年，他跑遍硅谷劝所有人训练专用编程模型；Replit现在宣称创下了协作编程的吉尼斯世界纪录<a class="glance-src" href="https://x.com/amasad/status/2085544020424716723" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>Madhu Guru（Meta AI）：人们说新想法时比写文档更清晰——这解释了为什么语音笔记、边想边说比先写框架更能抓住真正的观点<a class="glance-src" href="https://x.com/realmadhuguru/status/2085390240899043406" target="_blank" rel="noopener">X @realmadhuguru →</a></li>
+      <li>Matt Turck（FirstMark）分享了一个关于如何构建长horizon AI agent的参考对话，议题涵盖行为规范（behavior specs）、本体（ontologies）和过程监督<a class="glance-src" href="https://x.com/mattturck/status/2085402933579964730" target="_blank" rel="noopener">X @mattturck →</a></li>
+      <li>Zara Zhang（follow-builders策展人）在调研：有团队在日常工作中大量使用Claude Tag（或等效的团队Agent）吗？<a class="glance-src" href="https://x.com/zarazhangrui/status/2085371310042169630" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+      <li>Nikunj Kothari（FPV Ventures）：8月是融资季，他整理了一条给创始人的实用tips线程，484赞<a class="glance-src" href="https://x.com/nikunj/status/2085382457457828153" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Dan Shipper（Every CEO）被Axios报道<a class="glance-src" href="https://x.com/danshipper/status/2085420793400316270" target="_blank" rel="noopener">X @danshipper →</a></li>
+      <li>Aditya Agarwal（SPC合伙人）：Goodfire AI（AI可解释性公司）诞生于SPC，他说从Tom那里学到了很多<a class="glance-src" href="https://x.com/adityaag/status/2085315202237546603" target="_blank" rel="noopener">X @adityaag →</a></li>
+      <li>白宫AI指南：美国开源模型豁免政府安全审查；只有展现出顶级网络安全能力的闭源前沿模型才需在发布前提交测试<a class="glance-src" href="https://www.latentspace.ai/" target="_blank" rel="noopener">AINews →</a></li>
+      <li>OpenAI"Astra"预训练传言广泛流传：代号mewfour，被描述为GPT-4.5之后最大规模预训练，声称下周发布——未经证实<a class="glance-src" href="https://www.latentspace.ai/" target="_blank" rel="noopener">AINews →</a></li>
+      <li>Cloudflare在Agents Week发布Kitesurf：无状态浏览器，把脚本/DOM与渲染引擎解耦，按需实例化，专为Agent使用场景设计，比完整Chromium轻得多<a class="glance-src" href="https://www.latentspace.ai/" target="_blank" rel="noopener">AINews →</a></li>
+      <li>Weaviate在同一端口内置/v1/mcp端点，支持集合检查、混合搜索、对象更新，无需单独部署MCP服务，支持RBAC权限控制<a class="glance-src" href="https://www.latentspace.ai/" target="_blank" rel="noopener">AINews →</a></li>
+      <li>OpenAI推出Codex Security Review研究预览：在GitHub PR内做仓库级安全审查，直接感知代码上下文<a class="glance-src" href="https://www.latentspace.ai/" target="_blank" rel="noopener">AINews →</a></li>
+      <li>Unsloth DSpark让DeepSeek-V4-Flash-0731（一个开源推理模型）本地推理速度提升1.4-2倍，部分场景达120 token/秒，准确率不变<a class="glance-src" href="https://www.latentspace.ai/" target="_blank" rel="noopener">AINews →</a></li>
+      <li>MerchantBench（模拟电商运营benchmark）：把AI agent放入模拟一年的电商场景中，最佳模型最终净资产仅为人类运营商的27.3%<a class="glance-src" href="https://every.to/context-window" target="_blank" rel="noopener">Every →</a></li>
+      <li>Qwen3.8-Max（2.4T总参数/95B活跃参数）开源发布时间确认为下周三，首个开源Qwen-Max级模型，同系列还有Qwen3.8-27B将跟进<a class="glance-src" href="https://www.latentspace.ai/" target="_blank" rel="noopener">AINews →</a></li>
+      <li>Cursor路由器（Router）：基于每周数百万次产品内交互训练，按任务类型分流——Grok做日常任务、Sol做规划/代码库理解、Opus做执行密集工作、Fable做调试和视觉实现<a class="glance-src" href="https://www.latentspace.ai/" target="_blank" rel="noopener">AINews →</a></li>
+    </ul>
+</section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-08-06.html">← Aug 6</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
