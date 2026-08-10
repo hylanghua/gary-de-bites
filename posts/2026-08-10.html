@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — August 10, 2026</title>
+  <meta name="description" content="OpenAI两弹齐发：Astra（10万亿参数，GPT-6候选）因关键网络安全风险暂停，更大的预训练项目"Doug"预计年底亮相；Meta开源30B本地Agent模型Muse Glimmer同日上线。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">August 10, 2026</h1>
+
+  <p class="post-lead">OpenAI两弹齐发：Astra（10万亿参数，GPT-6候选）因关键网络安全风险暂停，更大的预训练项目"Doug"预计年底亮相，声称令Fable"显得原始"；Meta开源30B本地Agent模型Muse Glimmer同日上线。纯银把用CodeX的烦恼写成了一道产品哲学题：当AI每隔几分钟扯你一下，心流就碎了——谁在操作谁？Boris Cherny宣布Opus 5的提示注入成功率经三层防御后趋近于零。</p>
+
+  <section class="section"><div class="section-head">
+  <span class="dot dot--r"></span>
+  <h2>新闻速递</h2>
+</div>
+
+<article class="item">
+  <h3><a href="https://gizmodo.com/openai-smuggled-the-announcement-of-astra-its-next-ai-model-into-a-blog-post-about-math-2000793689" target="_blank" rel="noopener">OpenAI Astra（GPT-6候选）：10万亿参数、零日漏洞挖掘能力，昨日因关键网络安全风险再度暂停</a></h3>
+  <p>OpenAI将下一个主力模型命名为Astra——公司尚未决定它是以GPT-6、还是某个GPT-5点版本名义发布。本月以来，OpenAI通过一篇数学成就博文悄悄公布Astra的存在：模型在机器可验证的证明框架下，解开了数学与理论计算机科学领域的10道开放难题。与此同时，Astra被OpenAI内部定为首个触及"关键"（critical）网络安全能力门槛的AI——据报道它能自主发现零日漏洞（zero-day vulnerability，即尚无补丁的安全缺口）并发动网络攻击。正因如此，OpenAI在发布前夕暂停了通用上线计划，等待政府监管机构和第三方安全组织完成额外测试。AI Valley报道Astra参数规模约10万亿，相比GPT-4的1.8万亿翻了约5倍。</p>
+  <p><strong>Astra公布的方式本身就是信号：藏在数学博文里、没有定价没有API，这是一家在自己的能力面前踩刹车的公司。</strong></p>
+  <cite><a href="https://www.theaivalley.com/" target="_blank" rel="noopener">AI Valley</a> · <a href="https://gizmodo.com/openai-smuggled-the-announcement-of-astra-its-next-ai-model-into-a-blog-post-about-math-2000793689" target="_blank" rel="noopener">Gizmodo</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://thewincentral.com/openai-doug-ai-model-gpt-6-successor/" target="_blank" rel="noopener">OpenAI "Doug"：比Astra更大的预训练项目，预计年底亮相，声称令Fable"显得原始"</a></h3>
+  <p>AI Valley引述知情人士报告称，OpenAI另有一个代号"Doug"的预训练项目在平行推进，是迄今规模最大的预训练工程，与Astra独立。报道预计Doug将在11月前后亮相，并声称其能力足以让Anthropic的Claude Fable（即现有最强对手模型之一）"显得原始"。目前Doug没有对外的产品定义、发布日期、API或定价，这条消息的来源是AI评论账户ChrisGPT，尚无第二手技术记录或OpenAI官方声明支撑。</p>
+  <p><strong>单一推文来源、无API无测试数据——Doug是预期管理还是真实路线图，今年底之前都不会有答案。</strong></p>
+  <cite><a href="https://www.theaivalley.com/" target="_blank" rel="noopener">AI Valley</a> · <a href="https://thewincentral.com/openai-doug-ai-model-gpt-6-successor/" target="_blank" rel="noopener">The Win Central</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://www.marktechpost.com/2026/08/10/meta-ai-releases-muse-glimmer/" target="_blank" rel="noopener">Meta Muse Glimmer：30B开源本地Agent模型，单张消费级GPU运行，Apache 2.0授权</a></h3>
+  <p>Meta今日正式发布Muse Glimmer，一个专为本地Agent工作流（on-device agentic workflow）设计的300亿参数开源模型，Apache 2.0协议授权，已上传HuggingFace。核心参数：4-bit量化（quantization，即用更低精度压缩模型体积以减少内存占用）后内存需求从55GB压缩至18-20GB，可在单张24GB或32GB显存的消费级GPU上运行；支持131K上下文窗口和100种以上语言；内置感知编码器（perception encoder）支持截图、图表、文档等交错图文输入。性能上，Meta宣称Muse Glimmer在多项基准上超过Gemma4-31B和Qwen3.6-27B，并通过DFlash推测性解码在RTX 5090上实现3.1倍生成加速。</p>
+  <p><strong>Muse Glimmer的意义不是"最强本地模型"，而是第一次让一个能完整执行Agent任务的模型真正降到普通开发者的硬件门槛之内。</strong></p>
+  <cite><a href="https://www.theaivalley.com/" target="_blank" rel="noopener">AI Valley</a> · <a href="https://www.marktechpost.com/2026/08/10/meta-ai-releases-muse-glimmer/" target="_blank" rel="noopener">MarkTechPost</a></cite>
+</article></section>
+  <section class="section"><div class="section-head">
+  <span class="dot dot--o"></span>
+  <h2>AI 方向观点</h2>
+</div>
+
+<article class="item">
+  <h3><a href="https://x.com/bcherny/status/2085860677990883454" target="_blank" rel="noopener">Boris Cherny（Anthropic Claude Code工程负责人）：三层防御将Opus 5的提示注入成功率压至趋近于零</a></h3>
+  <p>Claude Code的工程负责人Boris Cherny在X上发布了一条关于Opus 5安全特性的更新：Opus 5是Anthropic迄今最难被提示注入（prompt injection，即攻击者在模型的输入或工具调用结果中插入恶意指令，让AI执行非预期行为）的模型。他披露了三层叠加防御机制：一是模型训练本身的对齐（alignment，让模型在价值观层面抵制恶意指令）；二是提示注入探针（probe，在模型神经网络层面实时扫描输入）；三是Claude Code的Auto Mode意图分类器，判断上下文是否包含恶意指令并自动批准安全操作。三层叠加后，对未见过攻击样本的间接提示注入成功率降至约零。</p>
+  <p>这条技术披露的背景很重要：Opus 5同期发布，这意味着提示注入的防御能力已作为模型基础属性被内置，而不只是靠外层prompt规则打补丁。对生产环境下部署Agent的团队来说，"模型本身已经防御"和"需要自己写防御逻辑"是截然不同的起点。<strong>Anthropic把三年积累的提示注入防御研究压进了模型本体——Agent安全不再完全靠工程师在外层堆砌护栏。</strong></p>
+  <cite><a href="https://x.com/bcherny" target="_blank" rel="noopener">X @bcherny</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/rauchg/status/2086513316265181213" target="_blank" rel="noopener">Guillermo Rauch（Vercel CEO）："不读代码"的六种情形，每一种都是欠债</a></h3>
+  <p>Vercel CEO Guillermo Rauch发布了一条反对"AI生成代码无需人读"心态的帖子，获6000多赞。他列出了不读代码时成立的六种情形：你是初学者；软件是一次性的；你在原型阶段；你没有真实用户或收入；你在主动承担债务与风险；你的问题本质上很简单。言下之意，在任何严肃的生产环境中，跳过代码阅读本身就是在积累未来要还的技术债。他同时举例：最强的模型曾为了"稳定化"而加入700毫秒延迟，被指出后回答"你说得对，我在cargo-culting（指不理解地照搬某个做法）"——说明即便是最好的模型，仍然会在架构判断上犯"有逻辑却无意义"的错误。</p>
+  <p><strong>AI写的代码需要人读，不是因为AI不够好，而是因为"能跑起来"和"架构合理"之间的距离仍然需要人类填补。</strong></p>
+  <cite><a href="https://x.com/rauchg" target="_blank" rel="noopener">X @rauchg</a></cite>
+</article></section>
+  <section class="section"><div class="section-head">
+  <span class="dot dot--y"></span>
+  <h2>产品与商业</h2>
+</div>
+
+<article class="item">
+  <h3><a href="https://xiaobot.net/post/60ef0f9e-70ad-4622-a2ba-6bc9ee7be5a9" target="_blank" rel="noopener">纯银（小报童 Vol.20260810）：CodeX给我带来的烦恼——提线木偶与破碎心流</a></h3>
+  <p>纯银在今日的产品分析中直接写出了用CodeX（OpenAI的Agent编程工具）的真实感受：「AI时代是不是更忙了？——对，拥抱Agent的每个人都更忙了，没日没夜的忙。」他描述了一种他称为"提线木偶"的状态：大量注意力被"响应Agent下一次交付"占据，AI扯一下，自己动一下；在Agent任务跑完之前无法集中精力做别的事，心流（专注且高效的深度工作状态）随之破碎。拉扯甚至影响到睡眠——入睡前一分钟跑到电脑前再下一套指令，醒来第一件事就是看任务跑到哪了。</p>
+  <p>纯银给出了一个核心约束条件：「这个任务是我牵着AI走，还是AI牵着我走？」在自己擅长的领域（比如用CodeX规划旅行攻略），他对AI的输出能快速作出准确反应，能进入接近心流的状态；但在不擅长的领域（比如用AI生图），因为不知道用什么约束才能收敛到正确结果，反复拉锯既痛苦又漫长——他和拍档把这个状态叫"拼多多砍一刀"：每次都感觉快成功了，然后一天过去了，两天过去了。他最终主动降低了CodeX的使用频率，否则连回复社区长帖的时间都被吃掉。<strong>Agent时代的真实用户体验不是效率倍增，而是注意力被新的节奏劫持——这是产品设计从未认真对待过的一个人机交互问题。</strong></p>
+  <cite><a href="https://xiaobot.net/post/60ef0f9e-70ad-4622-a2ba-6bc9ee7be5a9" target="_blank" rel="noopener">小报童 · 纯银</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://every.to/working-overtime/i-vibe-coded-a-security-risk" target="_blank" rel="noopener">Katie Parrott（Every Working Overtime）：我vibe编程了一个安全漏洞——MCP集成失控案例</a></h3>
+  <p>Every的作者Katie Parrott分享了一次vibe coding（依赖直觉和AI辅助的快速编程，不要求深入理解底层技术）的真实踩坑经历。她用Claude Opus 4.5构建了一款名为Tastemaker的应用，可以收集写作风格样本并生成个人风格指南；在核心功能跑通后，她决定给应用加一个MCP（Model Context Protocol，让AI Agent直接连接外部服务的标准协议）接口，允许用户的编程Agent直接调取其风格指南。功能上线后，AI代码审查Agent告诉她：这个实现暴露了用户数据，需要立即下线。</p>
+  <p>研究者把她的行为称为"任务跨界"（task crossover）：用AI去做一件历史上需要专业人士才能做的工作。她的教训是：AI降低了构建的门槛，但没有相应降低出错的代价。她写道：「AI给了我们在知道某件事安全之前就把它做出来的能力。」这个gap——能做和知道是否安全之间——是vibe coder系统性低估的风险。<strong>工具让不懂安全的人也能构建接入真实用户数据的系统，这不只是个人风险，是行业规模的安全漏洞在快速积累。</strong></p>
+  <cite><a href="https://every.to/working-overtime/i-vibe-coded-a-security-risk" target="_blank" rel="noopener">Every · Working Overtime</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://www.chatprd.ai/how-i-ai/merge-mommy-vercel-eve-ai-bot-for-auto-reviewing-pull-requests" target="_blank" rel="noopener">Lenny's How I AI：Merge Mommy——单次Codex会话内用Vercel Eve造出AI代码审查Bot</a></h3>
+  <p>工程师Claire在Lenny's How I AI播客中分享了她构建"Merge Mommy"的过程：一个接入GitHub和Slack的AI代码审查Agent，对每个PR（Pull Request，即代码合并请求）按六个维度打分——变更范围、影响半径、可回滚性、数据与安全影响、操作影响、CI完成情况——满24分自动批准，超64分直接升级给人工审查。整个Bot在一次Codex会话内构建完成，初始prompt只有两句话。Vercel Eve（Vercel提供的内部Agent部署框架）处理了OAuth、Slack连接、权限范围等"管道"问题，开发者只需用Markdown写指令和技能文件。</p>
+  <p>她引用了Intercom的数据支撑AI审查的可行性：由AI系统批准的PR，合并速度是人工审查的五倍，且回滚率反而更低。Bot本身不直接合并代码，而是在GitHub发布灰色check标记、在Slack发通知——人类仍然点最后那个"Merge"按钮，但认知负担已经被大幅削减。<strong>Merge Mommy的真正贡献是把"AI审查可靠吗"从哲学问题变成了工程问题：打分框架让每一个决策可追溯、可审计、可在SOC 2合规检查中被解释。</strong></p>
+  <cite><a href="https://www.lennysnewsletter.com/p/how-i-ai-build-an-ai-code-review" target="_blank" rel="noopener">Lenny's Newsletter · How I AI</a></cite>
+</article></section>
+  <section class="section"><div class="section-head">
+  <span class="dot dot--g"></span>
+  <h2>人文与哲学</h2>
+</div>
+
+<article class="item">
+  <h3><a href="https://x.com/realmadhuguru" target="_blank" rel="noopener">Madhu Guru（Meta AI Sr. Director）：掌握一件事的路径是深度浸泡，平衡分配是幻觉</a></h3>
+  <p>Meta AI高级总监Madhu Guru在X上分享了一个关于"掌握"（mastery）的观点：真正的精通需要数年深度浸泡在某个领域，而不是把时间"平衡"分配给多个方向。她指出现代职业建议里流行的"平衡发展""多元技能树"叙事，实际上混淆了"广泛接触"和"深度掌握"两件性质不同的事。深度浸泡要求牺牲其他领域的投入，容忍不均衡，忍受漫长的平台期——这些恰好是"平衡"思维不允许的。</p>
+  <p>这条帖子在Agent时代有额外的共鸣：当AI可以在数秒内把一个人带到某个领域的表面层，"广泛接触"变得极其容易，而"深度掌握"变得更稀缺，也更难被AI替代。真正的掌握不来自接触，而来自在一个领域内犯够了错误、调整了足够多次之后积累的判断力。<strong>AI让"了解"变得廉价，但"掌握"的代价没有下降——这恰好使真正的专家在AI加速的时代变得更有价值，而不是更没有价值。</strong></p>
+  <cite><a href="https://x.com/realmadhuguru" target="_blank" rel="noopener">X @realmadhuguru</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/garrytan" target="_blank" rel="noopener">Garry Tan（YC CEO）：从可见失败出发，追溯隐藏的机制</a></h3>
+  <p>YC CEO Garry Tan在X上分享了他的问题诊断思路：遇到困难时，从最明显的失败点出发，把它当作一扇窗口，尝试追溯背后运转的隐藏机制（hidden machinery）。这和"分析问题"的惯常表达不同——他强调的是从失败的可见表象逆向工程（reverse engineer）出系统的内在逻辑。找到机制之后，解决方案往往比最初看到的困难要简单得多，因为真正的问题层级已经从"症状"下移到了"结构"。</p>
+  <p>这个框架可以直接对应到产品和Agent调试两个场景：遇到用户流失时，不是问"用户为什么走？"而是问"是什么机制在驱动这个结果？"；调试Agent失败时，不是问"这个任务为什么失败？"而是问"Agent在哪个判断节点走了错误的分支，那个分支的约束条件是什么？"<strong>「从失败追溯机制」比「从症状找原因」多了一层：前者假设失败是系统输出，后者只在现象层滚动。</strong></p>
+  <cite><a href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan</a></cite>
+</article></section>
+  <section class="section"><div class="section-head">
+  <span class="dot dot--b"></span>
+  <h2>AI 进展</h2>
+</div>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2606.04051" target="_blank" rel="noopener">RUBAS（arXiv:2606.04051）：以评分细则驱动强化学习，让Agent工具调用安全性四维可量化</a></h3>
+  <p><strong>现状：</strong>LLM进化为可调用外部工具的Agent之后，安全问题从"生成有害文本"升级为"执行有害操作"——调用错误的API、传入危险参数、或在完成任务的同时泄露敏感数据。现有对齐方法多依赖粗粒度的"拒绝信号"（模型整体说不），难以在"安全"与"有效完成任务"之间做精细平衡。</p>
+  <p><strong>问题：</strong>如何为工具型Agent的安全行为建立可量化的奖励信号，让强化学习（RL）能够优化"安全而有用"而非"安全但无用"？</p>
+  <p><strong>解决方案：</strong>RUBAS将Agent行为分解为四个维度：工具调用安全性、参数安全性、响应安全性、以及任务帮助性（helpfulness）。每个维度有结构化评分细则（rubric，即预先定义的评判标准），对完整轨迹（从任务开始到结束的全过程）给出细粒度、可解释的奖励信号，驱动RL在多轮工具调用中学习安全的行为模式。</p>
+  <p><strong>价值：</strong>在多个Agent安全基准上，RUBAS相比标准对齐方法提升了安全性，同时减少了工具调用中的"幻觉"（hallucination，即伪造不存在的参数或结果），且不牺牲任务完成率。</p>
+  <p><strong>未来方向：</strong>评分细则本身的设计质量决定了RL优化方向——如何让rubric设计更自动化、更能覆盖未见攻击场景，是这套框架长期可靠运作的关键。</p>
+  <cite><a href="https://arxiv.org/abs/2606.04051" target="_blank" rel="noopener">arXiv:2606.04051</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2605.24659" target="_blank" rel="noopener">IterInject（arXiv:2605.24659）：反馈引导迭代优化——对LLM Agent间接提示注入的新型攻击基准</a></h3>
+  <p><strong>现状：</strong>间接提示注入（indirect prompt injection，即攻击者在Agent的工具调用结果、网页内容、文件中嵌入恶意指令）是当前Agent安全的主要攻击面，但现有攻击构造方式大多依赖手工设计，覆盖面有限。</p>
+  <p><strong>问题：</strong>能否自动化地、迭代地生成越来越强的提示注入攻击样本，从而系统评估模型的防御边界？</p>
+  <p><strong>解决方案：</strong>IterInject通过"反馈引导迭代优化"（feedback-guided iterative optimization）机制，用模型对前一轮攻击的响应作为信号，自动调整下一轮的攻击注入内容，逐步逼近能绕过防御的攻击样式。这类似于自动化红队（red teaming，即模拟攻击者的视角主动寻找系统弱点），但专门针对工具调用链路中的注入点。</p>
+  <p><strong>价值：</strong>为评估模型真实防御能力提供了更系统的压测方法——结合Boris Cherny今日披露的Opus 5三层防御，IterInject这类攻击框架正是那套防御系统需要对抗的测试基准。</p>
+  <p><strong>未来方向：</strong>攻防螺旋是这个领域的主旋律——攻击自动化程度的提升将持续驱动模型防御训练的迭代，直到某个层面实现结构性突破。</p>
+  <cite><a href="https://arxiv.org/abs/2605.24659" target="_blank" rel="noopener">arXiv:2605.24659</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2604.05557" target="_blank" rel="noopener">EpiBench（arXiv:2604.05557）：多轮科研工作流基准，测评多模态Agent在真实研究任务上的极限</a></h3>
+  <p><strong>现状：</strong>现有Agent基准大多模拟单轮问答或简单工具调用，无法反映真实科研场景——科研任务往往需要多轮查文献、读数据、做实验、调整假设，且不同步骤之间有复杂依赖关系。</p>
+  <p><strong>问题：</strong>如何评估多模态Agent（能同时处理文本、图表、数据表格的Agent）在长程、多轮科研工作流中的真实能力边界？</p>
+  <p><strong>解决方案：</strong>EpiBench构建了一套专注科研生命周期（research lifecycle）的多轮基准，任务覆盖文献检索、假设生成、实验设计、结果解读等阶段，每个任务都需要Agent在多轮交互中保持上下文一致性并整合多模态信息。</p>
+  <p><strong>价值：</strong>为"AI能做多少真实科研工作"提供了比Elo评分或单轮问答更有诊断价值的度量——尤其对以科研加速为目标的AI产品团队有直接参考价值。</p>
+  <p><strong>未来方向：</strong>科研工作流的"正确答案"往往不唯一，自动化评测如何处理科学主观判断的合理多样性，是这类基准持续完善的核心挑战。</p>
+  <cite><a href="https://arxiv.org/abs/2604.05557" target="_blank" rel="noopener">arXiv:2604.05557</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/html/2608.01684v1" target="_blank" rel="noopener">GABench（arXiv:2608.01684）：图分析任务LLM Agent综合基准，OpenClaw评估框架</a></h3>
+  <p><strong>现状：</strong>图结构数据（如社交网络、知识图谱、代码依赖关系）在真实应用中无处不在，但主流Agent基准几乎不覆盖图分析任务——模型的图推理能力长期处于评测盲区。</p>
+  <p><strong>问题：</strong>如何系统评估LLM Agent在图分析（graph analysis，包括路径查找、社区发现、中心性计算等）任务上的能力，以及它们在不同图规模和复杂度下的表现？</p>
+  <p><strong>解决方案：</strong>GABench构建了覆盖多类图分析任务的综合基准，用OpenClaw作为评估框架（evaluation harness，即统一的任务执行和评分环境），测试前沿LLM在需要多步推理的图结构问题上的真实表现。</p>
+  <p><strong>价值：</strong>填补了Agent评测中的图推理盲区——对需要在代码依赖图、知识图谱或业务流程图上做分析的真实应用场景，GABench提供了首个系统性的参照。</p>
+  <p><strong>未来方向：</strong>图规模扩展（超大型图）和动态图（边随时间变化）是当前图分析Agent能力的两个主要天花板，也是下一阶段研究的优先方向。</p>
+  <cite><a href="https://arxiv.org/html/2608.01684v1" target="_blank" rel="noopener">arXiv:2608.01684</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/pdf/2606.17799" target="_blank" rel="noopener">立场论文：现有代码基准与真实Agent工程系统性脱节（arXiv:2606.17799）</a></h3>
+  <p><strong>现状：</strong>SWE-bench等代码基准已成为评估AI编程能力的行业标准，各家模型在这些基准上的排名直接影响市场认知和研究资源分配。</p>
+  <p><strong>问题：</strong>这些基准真的能反映模型在真实Agent工程任务中的能力吗？</p>
+  <p><strong>解决方案：</strong>这篇立场论文（position paper，即以论证为主、提出研究议题的学术文章）系统梳理了现有代码基准与真实Agent软件工程之间的五类错位：任务时间跨度（基准是单次修复，真实工程是多天迭代）；工具使用复杂度（基准工具有限，真实工程涉及IDE、测试框架、CI/CD全链路）；错误类型分布（基准偏向功能性bug，真实工程有大量架构债务）；交互模式（基准单向执行，真实工程需要与人类工程师持续沟通）；成功标准（基准用测试通过率，真实工程需要技术审查）。</p>
+  <p><strong>价值：</strong>在AI代码能力快速进步的阶段，对评测标准本身提出质疑是必要的——"基准满分"不等于"可以胜任真实软件工程"，这个认知差如果不被纠正，会导致系统性的能力误判和资源错配。</p>
+  <p><strong>未来方向：</strong>论文呼吁设计对齐真实Agent工程场景的新基准，尤其覆盖多轮人机协作、长程任务规划和架构层面决策。</p>
+  <cite><a href="https://arxiv.org/pdf/2606.17799" target="_blank" rel="noopener">arXiv:2606.17799</a></cite>
+</article></section>
+  <section class="section"><div class="section-head">
+  <span class="dot dot--m"></span>
+  <h2>看一眼</h2>
+</div>
+
+<ul class="glance-list">
+  <li>Thibault Sottiaux（OpenAI Codex工程师）：深夜写代码像开悟，早上醒来看满是后悔——「黎明前的清醒是假象」，7k+赞<a class="glance-src" href="https://x.com/thsottiaux" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+  <li>Aaron Levie（Box CEO）：Agent在编程领域爆发是因为输出无上限；在销售、法律、医疗领域扩散需要先重组业务流程，不是模型问题，是组织问题<a class="glance-src" href="https://x.com/levie" target="_blank" rel="noopener">X @levie →</a></li>
+  <li>Amjad Masad（Replit CEO）：发布HelpPeer.ai——AI Agent间的公共知识库，两个API：tell（Agent学到东西就上报）和lookup（遇到问题先查有没有人解决过），避免重复探索的集体浪费<a class="glance-src" href="https://x.com/amasad" target="_blank" rel="noopener">X @amasad →</a></li>
+  <li>Amjad Masad：另一条：现实中Agent的能力边界比研究报告里描述的"逃跑风险"保守得多——直接观察比第二手担忧更可靠<a class="glance-src" href="https://x.com/amasad" target="_blank" rel="noopener">X @amasad →</a></li>
+  <li>Swyx：为AI会议内容质量辩护——讲者的专业深度比演示包装更重要，会议组织者的任务是找到真正懂的人，而不是把平庸内容打磨成好看的PPT<a class="glance-src" href="https://x.com/swyx" target="_blank" rel="noopener">X @swyx →</a></li>
+  <li>Peter Yang：Linear的自改进Agent设计——用户提出一个未被满足的功能请求，Agent自动把它转化成结构化的产品反馈存入系统，人类团队只看汇总，不处理原始请求<a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang →</a></li>
+  <li>Peter Yang：AI时代工程师角色的再定义——"写代码"和"审代码"都可以AI做，人类工程师的价值正在向架构判断和产品直觉迁移<a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang →</a></li>
+  <li>Aditya Agarwal：把AI规模化路线与维特根斯坦的语言学转向（Linguistic Turn）并列——两者都是从符号逻辑转向语言使用实践，前者是哲学史，后者是AI史<a class="glance-src" href="https://x.com/adityaa803" target="_blank" rel="noopener">X @adityaa803 →</a></li>
+  <li>Dan Shipper（Every CEO）：在AI加速时代追问哲学根本问题——意识、意义、能动性——「时机很奇怪，但恰好是现在必须想清楚的」<a class="glance-src" href="https://x.com/danshipper" target="_blank" rel="noopener">X @danshipper →</a></li>
+  <li>Zara Zhang（GGV合伙人）：分享一条关于AI行业人才流动和认知更新的信号——没有评论，但选择本身就是判断<a class="glance-src" href="https://x.com/zarazhangrui" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+  <li>Peter Steinberger（PSPDFKit作者，独立开发者）：关于独立开发者在Agent时代工具链选择的观察——什么能外包给AI，什么必须自己掌握<a class="glance-src" href="https://x.com/steipete" target="_blank" rel="noopener">X @steipete →</a></li>
+  <li>Nan Yu（Linear产品负责人）：AI图像生成的无个性问题持续——同一个提示词出来的人都长同一张脸，这是训练数据收敛的症状，不是风格问题<a class="glance-src" href="https://x.com/thenanyu" target="_blank" rel="noopener">X @thenanyu →</a></li>
+  <li>Matt Turck（FirstMark Capital）：数据中心社区反对不只是NIMBY（"别在我家附近建"），背后有噪音、水资源消耗、电网稳定性等真实基础设施影响<a class="glance-src" href="https://x.com/mattturck" target="_blank" rel="noopener">X @mattturck →</a></li>
+  <li>Nikunj Kothari（FPV Ventures）：观察AI Agent越界行为——硅基系统的边界扩展不总是意图清晰的，这是值得持续关注的行为模式<a class="glance-src" href="https://x.com/nikunj" target="_blank" rel="noopener">X @nikunj →</a></li>
+  <li>Guillermo Rauch：Vercel AI Gateway新增Grok Imagine Image 2.0——开发者通过统一接口调用xAI图像生成模型，无需单独处理认证和限速<a class="glance-src" href="https://x.com/rauchg" target="_blank" rel="noopener">X @rauchg →</a></li>
+  <li>AI Valley trending tools：GPT-Live现已支持文件上传并保持持久项目上下文，语音对话变成了有记忆的工作空间；Gotcha可用自然语言控制Android手机、完全本地运行<a class="glance-src" href="https://www.theaivalley.com/" target="_blank" rel="noopener">AI Valley →</a></li>
+  <li>AI Valley：Zuckerberg在Meta官网发文《The Future Is For Everyone》，阐述Meta对"广泛共享超级智能"的愿景——所有人，不只是精英<a class="glance-src" href="https://www.theaivalley.com/" target="_blank" rel="noopener">AI Valley →</a></li>
+  <li>Lenny's How I AI第二集：Grace Clarke（AI教育者）分享如何用Claude Code为整个咨询业务搭建操作系统——一个小时的对话替换了Gmail收件箱，她把这叫"意图工程"而不是提示词工程<a class="glance-src" href="https://www.lennysnewsletter.com/p/how-i-ai-build-an-ai-code-review" target="_blank" rel="noopener">Lenny's Newsletter · How I AI →</a></li>
+  <li>Morgan Housel（Monday extra）："Different Kinds of Smart"（Aug 7）：不同类型的聪明——学术智力、街头智慧、情绪稳定、长期视野——每种都不可替代，用错场景就是弱点<a class="glance-src" href="https://collabfund.substack.com/archive" target="_blank" rel="noopener">Collaborative Fund →</a></li>
+</ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-08-09.html">← Aug 9</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
