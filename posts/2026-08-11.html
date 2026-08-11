@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — August 11, 2026</title>
+  <meta name="description" content="Anthropic一个未发布的Claude研究型模型将黎曼ζ函数零点下界从41.6%推至67.2%；OpenAI以GPT-5.6-Cyber扩充Daybreak计划，已在Chrome V8中发现真实CVE漏洞。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">August 11, 2026</h1>
+
+  <p class="post-lead">Anthropic一个未发布的Claude研究型模型将黎曼ζ函数零点下界从41.6%推至67.2%，历经31M输出token和约60个subagent——数学家验证，可形式化证明；OpenAI以GPT-5.6-Cyber扩充Daybreak网络安全计划，已在Chrome V8中找到两个真实CVE漏洞。Ryo Lu宣布离开Cursor，离开旧金山科技泡沫、移居亚洲重新出发；纯银今日小报童用《文明》矿产比喻道出天赋在AI时代如何贬值，结论是：正反馈才是命运的路标，而不是焦虑。</p>
+
+  <p class="post-note">本期部分源抓取失败，内容较常规偏少。</p>
+
+  <section class="section"><div class="section-head">
+  <span class="dot dot--r"></span>
+  <h2>新闻速递</h2>
+</div>
+
+<article class="item">
+  <h3><a href="https://www.anthropic.com/research/riemann-zeta" target="_blank" rel="noopener">Anthropic未发布Claude：将黎曼ζ函数零点下界从41.6%推至67.2%，31M token、约60个subagent</a></h3>
+  <p>Anthropic披露，一个未发布的研究版Claude通过Claude Code完成了两段工作：第一段约60个subagent（子Agent，即并行运行的独立任务实例）分头搜索证明策略；第二段专注核心推导，合计约2400条shell命令和3100万输出token。最终结果是将黎曼ζ函数（数论中最核心的复变函数之一）零点落在"临界线"上的已证比例从41.6%推至67.2%，两名Anthropic数学家对该证明进行了独立验证，Claude还生成了形式化可验证（formally verifiable）版本。Anthropic明确指出，这条路径并不预期能证明完整的黎曼假设（一百多年来最著名的未解数学猜想之一），但此前Claude已在2026年参与解决了雅可比猜想（Jacobian Conjecture）。</p>
+  <p>这不是"AI解决了黎曼假设"，而是"AI在31M token的大规模搜索中，真的找到了数学家没有找到的更优下界"——从衡量尺子的角度说，这是AI辅助定理搜索第一次创造可独立验证的数值进步。<strong>Anthropic把AI用于纯数学研究的时间表拉进了2026年：不是辅助写作，而是在人类数学家没有穿透的边界上往前移了一步。</strong></p>
+  <cite><a href="https://www.anthropic.com/research/riemann-zeta" target="_blank" rel="noopener">Anthropic Research</a> · <a href="https://www.latent.space/p/ainews-muse-glimmer-and-spark-open" target="_blank" rel="noopener">Latent Space AINews</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://dataconomy.com/2026/08/11/openai-expands-daybreak-with-new-gpt-5-6-cyber-model/" target="_blank" rel="noopener">OpenAI扩张Daybreak计划：GPT-5.6-Cyber已在Chrome V8中发现两个真实CVE，向六家企业合作伙伴开放</a></h3>
+  <p>OpenAI将Daybreak网络安全计划拆分为两层：Daybreak Blue对经认证的防御方开放通用GPT-5.6 Sol，屏蔽了正常情况下的安全提示过滤；Daybreak Red则提供专门训练的GPT-5.6-Cyber，完成高难度安全任务的成功率达95%。GPT-5.6-Cyber是GPT-5.6 Sol的网络安全定制变体，已被用于真实漏洞挖掘：找到了V8（Chrome的JavaScript引擎）中此前未知的两个漏洞，Google已将其修补为CVE-2026-15903。新合作伙伴Accenture、IBM、CrowdStrike、Cisco、Sophos和Cloudflare将把该模型用于客户保护。</p>
+  <p>背景是：前日披露的Astra模型因触及"关键"（critical）级网络安全能力门槛而暂停了通用发布；今日GPT-5.6-Cyber则是在"授权防御方"框架下把类似能力提前开放给了一批有审查机制的企业伙伴。<strong>OpenAI在同一周内用两种截然不同的方式处理了高危网络安全能力：暂停面向公众的版本，同时给有审计能力的机构开了一扇受控的门。</strong></p>
+  <cite><a href="https://www.bensbites.com/p/make-it-readable" target="_blank" rel="noopener">Ben's Bites</a> · <a href="https://www.latent.space/p/ainews-muse-glimmer-and-spark-open" target="_blank" rel="noopener">Latent Space AINews</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/ryolu_/status/2086854498639822942" target="_blank" rel="noopener">Ryo Lu（Cursor设计主管）：离开旧金山科技泡沫，移居亚洲——「我需要不同的节奏」</a></h3>
+  <p>Ryo Lu在X上宣布辞去Cursor设计主管一职。他写道：在旧金山科技泡沫里待了10年，Cursor是那个世界最锐利的版本——快速、激烈、雄心勃勃，挤满了想把未来拉近的人。他带着感谢离开，但也感到需要一种不同的节奏：更慢的时间、不同的天气、日常生活中更多的文化和活力。他写道：「亚洲感觉是重新开始的地方——重新保持清醒、更充分地感受生活、自由地建造。」</p>
+  <p><strong>Cursor的设计主管离开的方式本身就是一种产品哲学声明：当你最懂的工具开始定义你的节奏，是时候用它去感知另一种节奏里能建出什么。</strong></p>
+  <cite><a href="https://x.com/ryolu_" target="_blank" rel="noopener">X @ryolu_</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/claudeai/status/2086891169217122586" target="_blank" rel="noopener">Anthropic正式宣布Claude Sonnet 5入门定价永久固定：$2/M输入、$10/M输出</a></h3>
+  <p>Anthropic宣布，Claude Sonnet 5的入门定价将从限时促销转为永久价格：每百万输入token 2美元、每百万输出token 10美元。Latent Space将此解读为"开源与半开源模型快速增强带来的竞争压力"——在Muse Glimmer等强力本地模型陆续落地的背景下，Anthropic选择锁定云端API的价格锚点。</p>
+  <cite><a href="https://x.com/claudeai" target="_blank" rel="noopener">X @claudeai</a> · <a href="https://www.latent.space/p/ainews-muse-glimmer-and-spark-open" target="_blank" rel="noopener">Latent Space AINews</a></cite>
+</article></section>
+  <section class="section"><div class="section-head">
+  <span class="dot dot--o"></span>
+  <h2>AI 方向观点</h2>
+</div>
+
+<article class="item">
+  <h3><a href="https://x.com/trq212/status/2086931647468097932" target="_blank" rel="noopener">Thariq（Anthropic Claude Code工程师）：与AI协作的两项核心能力——算力分配判断与思想伙伴关系</a></h3>
+  <p>Thariq在X上连发三条帖子，核心论点是：与AI一起工作需要掌握两项截然不同的能力。第一项是「算力分配」（compute allocation）——在什么时候、对什么问题投入多少模型算力；这不是技术问题，而是判断问题，需要理解哪些任务值得深度推理、哪些不值得。第二项是「思想伙伴关系」（thought partnership）——把AI当成真正的思维碰撞对象，而不只是指令执行者，需要提出真实问题、接受挑战、迭代想法。</p>
+  <p>他补充说，他个人希望这个时代的最终结果是「我们依然在技术层面保持深度，但能在重要问题上更快推进」——这是对「AI让人不再需要懂技术」这一流行叙事的反驳。<strong>技术能力不是AI时代的天花板，而是地板——没有它，算力分配和思想伙伴关系都只是表层话语。</strong></p>
+  <cite><a href="https://x.com/trq212" target="_blank" rel="noopener">X @trq212</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/swyx/status/2087045848022843451" target="_blank" rel="noopener">Swyx：GPT Luna对Claude Fable——视觉克隆更精准，意图理解更准，两种不同的智能倾向</a></h3>
+  <p>Swyx在X上做了一次GPT Luna Max和Claude Fable的Ultracode并排比较：Fable在视觉克隆任务上做得更好（精确还原UI细节）；Luna在理解任务意图上反而表现更准（在模糊指令下猜中了他想要的方向）。他没有给出"哪个更强"的结论，而是呈现了两种不同的智能倾向——一个偏向精确执行，一个偏向意图推断。</p>
+  <p>这个比较的背景是：两个模型都是目前市面上最强的对手，但在同一个任务上的差异方向不同。<strong>不同模型在不同维度上的分化意味着"最强模型"这个问题需要被重新表述：最强在哪件事上？而如何在正确的任务上选到正确的工具，正成为AI原生工作流的核心判断力。</strong></p>
+  <cite><a href="https://x.com/swyx" target="_blank" rel="noopener">X @swyx</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/rauchg/status/2086965425968148806" target="_blank" rel="noopener">Guillermo Rauch（Vercel CEO）："DeepSec"在Vercel已成动词——安全从检查清单变成工程习惯</a></h3>
+  <p>Vercel CEO Guillermo Rauch在X上分享：DeepSec（Vercel内部的AI辅助安全审查工具）已经在公司内部变成了一个动词——「你DeepSec过了吗？」（Did you DeepSec it?）他说这个工具变得非常有价值，以至于被纳入了标准工程流程。同一天他还展示了Vercel Sandbox的双层隔离机制：microVM级别的计算隔离 + 出口防火墙，可在不阻断Agent工作流的前提下将网络访问范围限制到最小。</p>
+  <p>这两条帖子合在一起描述了同一件事的两个层面：工具层（Sandbox隔离）和文化层（DeepSec成为动词）。<strong>当安全变成动词而不只是名词，说明它已经被内化进工程文化，而不只是合规清单上的选项——这才是Agent时代安全能力真正落地的信号。</strong></p>
+  <cite><a href="https://x.com/rauchg" target="_blank" rel="noopener">X @rauchg</a></cite>
+</article></section>
+  <section class="section"><div class="section-head">
+  <span class="dot dot--y"></span>
+  <h2>产品与商业</h2>
+</div>
+
+<article class="item">
+  <h3><a href="https://www.lennysnewsletter.com/p/how-to-make-people-care-about-your" target="_blank" rel="noopener">如何让人真正关心你的创业公司：Problem型、Insight型、Vision型三种创始人叙事框架</a></h3>
+  <p>执行幽灵写手、进入Scribe的叙事战略师Kristen Lowe在Lenny's Newsletter撰文，提出三种创始人原型及各自对应的沟通策略。Problem型（问题型）创始人——例如Sara Blakely和Tobi Lütke——因为亲身经历了痛点而创业，核心沟通策略是高密度、场景化地重复讲述"那一天"（而不是泛泛描述"市场缺口"）；Insight型（洞察型）创始人——例如Reed Hastings、Patrick Collison——在别人还没看到问题前已经看到，核心策略是持续输出让读者感到"变聪明了"的观点，允许承认不确定性但不能失去分析优势；Vision型（愿景型）创始人——最稀有，例如Steve Jobs、Yvon Chouinard——核心策略不是描述愿景本身，而是持续拆解人们为什么接受了现有世界的不合理之处。</p>
+  <p>三类错误几乎是对称的：Problem型容易泛化失去细节，Insight型容易变成热门观点机器而没有逻辑推导，Vision型容易用宏大规模叙事（"将颠覆整个行业"）代替具体形状。Lowe的核心论点是：找对自己的原型，然后把所有内容都锚定在它上面，而不是试图做三种。<strong>大多数创始人不缺故事，缺的是知道自己属于哪种创始人——错误原型下的叙事不是没有效果，而是在错误的维度上积累信任。</strong></p>
+  <cite><a href="https://www.lennysnewsletter.com/p/how-to-make-people-care-about-your" target="_blank" rel="noopener">Lenny's Newsletter</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/petergyang/status/2086824976800436676" target="_blank" rel="noopener">Peter Yang：Linear生产级Agent建设的5个实战要点</a></h3>
+  <p>产品观察者Peter Yang总结了Linear将AI Agent推入生产环境的5条核心经验：第一，从真实的工作流出发而不是从技术能力出发——先映射实际工作流，再选择Agent能覆盖哪个环节；第二，给Agent提供主动找上下文的工具，而不是人工把信息喂给它；第三，从单一高频任务开始，跑通后再扩展；第四，从最强的模型开始（不要为了省钱先用弱模型），等路径跑通后再优化成本；第五，把每次真实失败转化为eval（评测用例）或产品任务（即让产品本身更能应对这类失败），而不是打补丁。</p>
+  <p><strong>Agent上生产的真正门槛不是模型够不够强，而是有没有把每次真实失败系统性地转化成eval——这件事没有捷径，人类工程师必须亲手处理每一个失败案例。</strong></p>
+  <cite><a href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/zarazhangrui/status/2086758509979316423" target="_blank" rel="noopener">Zara Zhang（GGV合伙人）：让Codex分析优秀网站设计——样本学习永远优于从理论出发</a></h3>
+  <p>Zara Zhang分享了她的设计学习方法：把一个设计优秀的网站扔给Codex，让它分析"是什么让这个设计变得优秀"，然后从分析中提炼可迁移的设计原则。她的结论是：从好样本出发学习永远比从理论出发学习更高效——理论是事后归纳，样本才是第一手证据。这个方法可以推广到任何领域：把你认为好的东西喂给AI，让它帮你提炼为什么好，而不是先看设计原则教科书再去找例子。</p>
+  <p><strong>AI时代最高效的学习路径不是"让AI教你理论"，而是"给AI一个好样本，让它帮你提炼模式"——判断什么是好样本，仍然是人类最核心的能力。</strong></p>
+  <cite><a href="https://x.com/zarazhangrui" target="_blank" rel="noopener">X @zarazhangrui</a></cite>
+</article></section>
+  <section class="section"><div class="section-head">
+  <span class="dot dot--g"></span>
+  <h2>人文与哲学</h2>
+</div>
+
+<article class="item">
+  <h3><a href="https://xiaobot.net/post/06116920-445c-421d-8652-b297a825aad0" target="_blank" rel="noopener">纯银（小报童 Vol.20260811）：天赋的贬值</a></h3>
+  <p>纯银用游戏《文明》里的矿产比喻开头：「上一个时代没有卵用的矿产资源，到了下一个技术文明，可能会变得非常贵重。」他的天赋——创造力、共情、抽象能力、专注力——在2007-2022年的移动互联网时代带来了超额收益；从2023年开始，这些矿产开始贬值：微博下行、公众号算法化、古典互联网市场萎缩，过去刷天赋拿到的收益几乎全部吐了回去。他说他没有拥抱短视频、小红书或视频播客，「回答很简单：我就没有那方面的天赋，这部分矿产在我身体里不存在。所谓的第二曲线并不来自于你的主观努力，而是某些天赋才能与时代机遇的契合。简称命运。」</p>
+  <p>他花了两年时间接受这个现实，并在今年做了一个决定：认命。不是认定这辈子不再有成就，而是认定「这个阶段没有机遇，把注意力转向没有机遇但也有正反馈的事情」。他最终反驳了那个流行说法——「信息廉价，判断值钱」：「下行周期的一个明显特征是，在上行周期有价值的那些东西开始贬值。你做出了比AI更准确的判断，这很好，但它并不值钱。价格是由供需关系决定的，单方面的优质供给并不能单方面拿到满意的定价。」<strong>不焦虑的出路不是找到新机遇，而是认清焦虑一定是命运的噪音，正反馈才是路标——然后在有正反馈的所有事情中，选择价值最高的那些。</strong></p>
+  <cite><a href="https://xiaobot.net/post/06116920-445c-421d-8652-b297a825aad0" target="_blank" rel="noopener">小报童 · 纯银</a></cite>
+</article></section>
+  <section class="section"><div class="section-head">
+  <span class="dot dot--b"></span>
+  <h2>AI 进展</h2>
+</div>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2608.03573" target="_blank" rel="noopener">SFT Conflicts, RL Coexists（arXiv:2608.03573）：为什么强化学习可以稳定处理多任务，监督微调却不能</a></h3>
+  <p><strong>现状：</strong>大型语言模型（LLM）在同时学习多个任务时往往出现"任务冲突"——在一种能力上的训练会损害另一种能力，这是生产环境部署通用模型的长期难题。</p>
+  <p><strong>问题：</strong>监督微调（SFT，即直接用人类标注数据训练）和强化学习（RL，即通过奖励信号迭代优化）在多任务场景下的表现差异是否有理论解释？</p>
+  <p><strong>解决方案：</strong>论文从梯度干扰（gradient interference，即不同任务的优化方向相互抵消）角度进行理论分析。核心发现：SFT的梯度干扰受梯度绝对幅度约束，在多任务下容易产生强烈冲突；RL因为优势归一化（advantage normalization）和在线策略（on-policy）优化，梯度方差受限，不同任务的优化方向趋近正交（互不干扰）。基于此提出Parallel-RL方法：把多任务RL拆解为并行的任务特定训练，共享模型主干、独立优化各任务方向。</p>
+  <p><strong>价值：</strong>为多任务LLM训练提供了可解释的理论基础，并给出了实践路径：在需要多任务通用能力的场景，RL比SFT在稳定性上有结构性优势。</p>
+  <p><strong>未来方向：</strong>Parallel-RL在极端任务数量（10+任务）和跨领域任务（代码+数学+多语言）下的扩展性，以及如何在在线RL效率和多任务覆盖之间取得平衡，是下阶段研究重点。</p>
+  <cite><a href="https://arxiv.org/abs/2608.03573" target="_blank" rel="noopener">arXiv:2608.03573</a> · <a href="https://huggingface.co/papers/2608.03573" target="_blank" rel="noopener">HuggingFace</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2608.06370" target="_blank" rel="noopener">The Bitter Lesson of Tool Calling（arXiv:2608.06370）：程序化工具调用在11/14模型上系统性优于原生JSON</a></h3>
+  <p><strong>现状：</strong>当前LLM Agent调用外部工具的主流方式是"原生JSON工具调用"——给模型一个JSON Schema，让它输出结构化的调用参数。但随着模型代码能力的提升，"程序化工具调用"（Programmatic Tool Calling，PTC）——把工具暴露为有类型注解的Python函数（typed Python stubs），让模型直接以写代码的方式调用——开始被更多团队探索。</p>
+  <p><strong>问题：</strong>两种调用方式在不同模型和任务场景下孰优孰劣？是否有系统性证据？</p>
+  <p><strong>解决方案：</strong>论文在BFCL v4（一个标准化的工具调用评测基准，Function Calling Leaderboard）上对14个主流LLM进行了系统比较。发现程序化工具调用在14个模型中的11个上达到或超过原生JSON，其中GPT-5.6系列提升幅度达10.6%；在并行扇出（parallel fan-out，即同时发起多个工具调用）场景下，程序化方式在13/14模型上胜出；在上下文污染（context rot，即大量历史对话后模型的指令遵循能力退化）场景下，原生JSON平均下降2.3%，程序化方式保持稳定。</p>
+  <p><strong>价值：</strong>给Agent工具调用架构的选型提供了实验依据：在追求可靠性和并发性的场景，用Python stub替代JSON schema不是风格偏好，而是有统计支撑的性能选择。</p>
+  <p><strong>未来方向：</strong>程序化工具调用在极端工具数量（100+工具）和动态工具注册（运行时添加新工具）场景下的表现，以及与MCP（Model Context Protocol，模型与外部服务连接的标准协议）的结合方式，是自然的延伸方向。</p>
+  <cite><a href="https://arxiv.org/abs/2608.06370" target="_blank" rel="noopener">arXiv:2608.06370</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2608.07468" target="_blank" rel="noopener">SimWAM（arXiv:2608.07468）：用视频生成作纯训练信号的简单世界行动模型，NAVSIM达91.5 PDMS</a></h3>
+  <p><strong>现状：</strong>自动驾驶领域兴起了"世界行动模型"（World-Action Model，WAM）路线——让模型既能预测环境变化（世界模型），又能规划驾驶动作（行动模型）。但现有WAM训练框架复杂，需要同时优化视频生成质量和动作预测精度，往往互相干扰。</p>
+  <p><strong>问题：</strong>能否设计一个更简洁的WAM架构，在不牺牲精度的前提下降低训练复杂度和推理延迟？</p>
+  <p><strong>解决方案：</strong>SimWAM提出把预训练好的视频专家（video expert）和轻量级动作专家（action expert）通过联合流匹配（joint flow matching，一种扩散模型的简化变体）共同训练，但用独立的注意力掩码（isolated attention mask）切断动作预测对未来视频帧的依赖——这样视频生成分支纯粹作为训练信号，训练完成后可以直接丢弃，只保留动作预测头。</p>
+  <p><strong>价值：</strong>在NAVSIM（自动驾驶开放式评测基准）上达到91.5 PDMS（规划得分），超过当前最优WAM方法，同时推理延迟大幅低于同级别模型；并且实现了向nuScenes数据集的零样本（zero-shot）迁移。</p>
+  <p><strong>未来方向：</strong>SimWAM目前仅在路面驾驶场景验证；扩展到城市复杂交叉路口、极端天气条件和不同车辆形态下的泛化能力，是下一步研究目标。</p>
+  <cite><a href="https://arxiv.org/abs/2608.07468" target="_blank" rel="noopener">arXiv:2608.07468</a> · <a href="https://huggingface.co/papers/2608.07468" target="_blank" rel="noopener">HuggingFace</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://huggingface.co/papers/week/2026-W33" target="_blank" rel="noopener">多模态Agent训练新原则（HuggingFace本周#1）：环境多样性 + 难度课程双轮驱动，单纯堆数量不够</a></h3>
+  <p><strong>现状：</strong>多模态Agent（能同时处理文字、图像、操作界面的AI Agent）的训练通常依赖大规模环境池——研究者收集大量不同的网页、UI界面、任务场景，用数量换覆盖。</p>
+  <p><strong>问题：</strong>持续增加环境数量，Agent能力是否持续提升？还是存在一个边际收益递减的拐点？</p>
+  <p><strong>解决方案：</strong>论文发现单纯增加环境数量并不总是有效——原因在于忽略了两个关键维度：一是多样性（diversity），避免环境在功能和外观上高度重叠；二是难度结构（difficulty structure），按照难度梯度组织训练过程。论文提出两个方法：能力感知环境选择（AES，Ability-aware Environment Selection）保证多样性；分层难度课程（HDC，Hierarchical Difficulty Curriculum）通过两级难度控制——环境沙箱弱化（harness weakening）和状态规模递进（state-scale progression）——组织课程学习。</p>
+  <p><strong>价值：</strong>AES和HDC的组合在多个多模态Agent基准上显著优于仅增加环境数量的基线，且不增加额外的数据收集成本。</p>
+  <p><strong>未来方向：</strong>课程学习策略的自动化——如何让模型在训练过程中动态调整自己的难度阶梯，而不依赖人工预设——是这套框架真正规模化应用的关键。</p>
+  <cite><a href="https://huggingface.co/papers/week/2026-W33" target="_blank" rel="noopener">HuggingFace 本周论文 W33</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://www.dyna.co/dyna-2" target="_blank" rel="noopener">Dyna-2世界行动模型：百万小时人类视频预训练，机器人领域首个人机数据缩放律</a></h3>
+  <p><strong>现状：</strong>机器人学习的主要瓶颈是数据——收集机器人操作数据成本极高、速度极慢。相比之下，人类日常活动的视频资料几乎无限，但如何让机器人从"看人类视频"中学会"控制机器人身体"一直是跨域迁移的难题。</p>
+  <p><strong>问题：</strong>能否建立一条从大规模人类视频到机器人控制能力的可扩展路径，并验证该路径存在明确的"数据量→性能"缩放律？</p>
+  <p><strong>解决方案：</strong>Dyna Robotics发布的Dyna-2在超过100万小时的第一视角（egocentric，即以人类视角拍摄的）人类日常活动视频上预训练，采用双轨架构：同时预测下一帧画面（世界模型）和下一个动作（行动模型）。关键发现是：预训练数据量与机器人任务成功率之间存在平滑可预测的缩放关系，即机器人领域首个从人类视频到机器人数据的缩放律——每增加一定量的人类视频，机器人性能按可预测曲线提升，不出现性能平台期。</p>
+  <p><strong>价值：</strong>在高精度制造业场景，不修改训练后数据的情况下，任务成功率从约20%提升至80-90%；预训练后只需少量本地微调（fine-tuning，在特定环境数据上的额外训练），即可实现零样本（zero-shot）量产部署。</p>
+  <p><strong>未来方向：</strong>Dyna团队表示下一个目标是1000万小时训练数据——如果缩放律成立，这意味着机器人能力还有数量级的提升空间，且不依赖昂贵的机器人数据收集。</p>
+  <cite><a href="https://www.dyna.co/dyna-2" target="_blank" rel="noopener">Dyna Robotics</a> · <a href="https://www.latent.space/p/ainews-muse-glimmer-and-spark-open" target="_blank" rel="noopener">Latent Space AINews</a></cite>
+</article></section>
+  <section class="section">
+    <div class="section-head">
+      <span class="dot dot--m"></span>
+      <h2>看一眼</h2>
+    </div>
+    <ul class="glance-list">
+      <li>Anthropic宣布将为其AI生成的文本添加不可见水印——技术承诺与政策信号同步发出。<a class="glance-src" href="https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/" target="_blank" rel="noopener">TechCrunch →</a></li>
+      <li>据《华尔街日报》，Anthropic计划9-10月IPO，时间节点早于OpenAI，目标估值高于现有一轮。<a class="glance-src" href="https://cryptobriefing.com/anthropic-targets-september-october-ipo-ahead-of-openai-wsj/" target="_blank" rel="noopener">CryptoBriefing →</a></li>
+      <li>Claude Code各个会话之间可以互发消息（session messaging）——多agent协作获得新原语。<a class="glance-src" href="https://www.bensbites.com/p/make-it-readable" target="_blank" rel="noopener">Ben's Bites →</a></li>
+      <li>OpenAI首款硬件：据报道是甜甜圈形音箱，售价$300-400，与Jony Ive合作，预计2027年上市。<a class="glance-src" href="https://decrypt.co/375117/openais-first-device-is-a-300-plus-doughnut-shaped-speaker-report" target="_blank" rel="noopener">Decrypt →</a></li>
+      <li>Aaron Levie（Box CEO）：Meta Muse Spark 1.2开放权重，是"面向全球每家企业"真正到来的时刻。<a class="glance-src" href="https://x.com/levie/status/2086802472950239618" target="_blank" rel="noopener">X @levie →</a></li>
+      <li>Sam Altman召集网络安全专家讨论"AI时代的防御"——安全成为OpenAI本周对话新中心。<a class="glance-src" href="https://x.com/sama/status/2086881528282587524" target="_blank" rel="noopener">X @sama →</a></li>
+      <li>Ben's Bites今日写作技巧：ASD-STE100简化规则+ADHD写法，让技术内容对所有读者更易读。<a class="glance-src" href="https://www.bensbites.com/p/make-it-readable" target="_blank" rel="noopener">Ben's Bites →</a></li>
+      <li>Zara Zhang：在北京AGI Bar偶遇一屋子"正在建设中国AGI"的人——密度和能量超出预期。<a class="glance-src" href="https://x.com/zarazhangrui/status/2086838277701882031" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+      <li>Simon Willison：Claude Code的 <code>--auto-approval</code>（auto模式）计划8月14日正式推出。<a class="glance-src" href="https://simonwillison.net/2026/Aug/8/auto-mode/" target="_blank" rel="noopener">Simon Willison →</a></li>
+      <li>Matt Turck：数据质量悖论——数据量无限增长时，质量反而成了最难攻克的瓶颈。<a class="glance-src" href="https://x.com/mattturck/status/2086882606638153882" target="_blank" rel="noopener">X @mattturck →</a></li>
+      <li>Madhu Guru：他的AI在Wispr Flow里悄悄把"在家工作"改成了"在办公室工作"，幽灵员工。<a class="glance-src" href="https://x.com/realmadhuguru/status/2086897516289909034" target="_blank" rel="noopener">X @realmadhuguru →</a></li>
+      <li>Thariq：游戏设计师是AI时代最被低估的职业——天生懂得设计loop与反馈系统的人。<a class="glance-src" href="https://x.com/trq212/status/2086931649938522329" target="_blank" rel="noopener">X @trq212 →</a></li>
+      <li>Garry Tan：YC里95%最有价值的公司来自硬科技方向，不是外界想象的那种应用层故事。<a class="glance-src" href="https://x.com/garrytan/status/2086855369972937106" target="_blank" rel="noopener">X @garrytan →</a></li>
+      <li>Dan Shipper：当Claude不给你想要的答案，直接说"be honest"（说实话）——往往立即奏效。<a class="glance-src" href="https://x.com/danshipper/status/2086892203918381388" target="_blank" rel="noopener">X @danshipper →</a></li>
+      <li>Aditya Agarwal（SPC）：SPC的意义是让真正有野心的创始人在一年里完成通常需要五年的认知跳跃。<a class="glance-src" href="https://x.com/adityaag/status/2086886464281788518" target="_blank" rel="noopener">X @adityaag →</a></li>
+      <li>Google Labs：旗下"Portraits"实验功能将于9月14日关闭——实验总有有效期。<a class="glance-src" href="https://x.com/GoogleLabs/status/2086936798710923603" target="_blank" rel="noopener">X @GoogleLabs →</a></li>
+      <li>Peter Steinberger：某媒体头条把"OpenClaw"和"Claude"并排报道——AI品牌名混淆已成新常态。<a class="glance-src" href="https://x.com/steipete/status/2087006417509405084" target="_blank" rel="noopener">X @steipete →</a></li>
+      <li>Nikunj分享：一键将任意图片转换为Notion风格图标的AI工作流。<a class="glance-src" href="https://x.com/nikunj/status/2086945175709114841" target="_blank" rel="noopener">X @nikunj →</a></li>
+      <li>Thibault Sottiaux：GPT-5.6-Cyber发布当天他的Claude Code配额恰好重置——并列出现纯属巧合但很好笑。<a class="glance-src" href="https://x.com/thsottiaux/status/2086972933566857393" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+      <li>Swyx：多worktree共享20GB node_modules意外成为跨agent协作的隐性磁盘成本陷阱。<a class="glance-src" href="https://x.com/swyx/status/2086962980235939920" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>Madhu Guru（Anthropic宣布文本水印后）：「你就是水印。」<a class="glance-src" href="https://x.com/realmadhuguru/status/2086980465534345677" target="_blank" rel="noopener">X @realmadhuguru →</a></li>
+    </ul>
+  </section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-08-10.html">← Aug 10</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
