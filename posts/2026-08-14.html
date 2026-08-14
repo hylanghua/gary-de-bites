@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — August 14, 2026</title>
+  <meta name="description" content="Boris Cherny 让 Claude 接管 Anthropic 内部 App 日常维护：三周 388 个 PR、46% 合并率，AI 正在给 AI 工具写代码；Ben Tossell 把 personal agent 拆成一个文件夹，神秘感全无；Gemini 3.7 Flash 距上一版仅三周直接价格砍半。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">August 14, 2026</h1>
+
+  <p class="post-lead">Boris Cherny 让 Claude 接管 Anthropic 内部 App 日常维护：三周 388 个 PR、46% 合并率，AI 正在给 AI 工具写代码；Ben Tossell 把 personal agent 拆成一个文件夹——指令、记忆、工具，神秘感全无；Google 距 Gemini 3.6 Flash 上线仅三周，直接推 3.7 Flash 并将价格砍半，价格战节奏之快已超出大多数人的追踪速度。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+<article class="item">
+  <h3><a href="https://the-decoder.com/claude-code-now-runs-daily-maintenance-on-anthropics-software-with-a-46-percent-merge-rate/" target="_blank" rel="noopener">Claude 接管 Anthropic 自家 App 的日常维护：388 个 PR，180 个合并，46% 合并率</a></h3>
+  <p>Boris Cherny（Claude Code 创作者，Anthropic）宣布一个三周实验的早期结果：一个叫 <code>proj-claude-maintains-apps</code> 的 Slack 频道里，Claude Tag（Claude 在 Slack 的集成形式）每天自动跑一批 routine，覆盖 iOS、Android、Desktop、Web、CLI 和 Agent SDK 六条产品线，任务包括 crash fuzzing（模糊测试找崩溃点）、移除重复代码抽象、清理死代码、修复接口泄漏等。三周下来，这套系统在 Anthropic 各仓库开了 388 个 PR（pull request，代码提交请求）。</p>
+  <p>其中 180 个经过 Claude Code Review 和人工复查后合并，合并率 46%。Cherny 的观察是 Claude 通常一次就做对，做不对时团队让它调整 routine 参数，次日重跑。这不是一个实验性沙盒，而是 Anthropic 真实开发 pipeline 的一部分。换言之，Anthropic 正在用 AI 维护用来跑 AI 的工具本身。<strong>AI 维护 AI 工具这件事一旦规模化，维护工程师的工作内容将从"写代码、提 PR"变成"设计 routine、审阅 AI 的 PR"——这个角色转换比"AI 辅助编程"更激进，因为主动权已经换边了。</strong></p>
+  <cite><a href="https://x.com/bcherny/status/2088014489438621990" target="_blank" rel="noopener">X @bcherny</a> · <a href="https://the-decoder.com/claude-code-now-runs-daily-maintenance-on-anthropics-software-with-a-46-percent-merge-rate/" target="_blank" rel="noopener">The Decoder</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://felloai.com/gemini-3-7-flash/" target="_blank" rel="noopener">Gemini 3.7 Flash 上线：距 3.6 Flash 仅三周，价格砍半至 $0.75/$3.75 per 1M</a></h3>
+  <p>Google 在 Gemini 3.6 Flash 发布仅三周后推出 3.7 Flash，主要升级集中在编程、Web 开发和长文档处理。更值得关注的是定价：API 价格对折至 $0.75 per 1M 输入 token（token，语言模型处理的基本文字单元）、$3.75 per 1M 输出 token。Josh Woodward（Google Labs VP）的描述很简洁：「3.7 Flash：快、便宜 50%、三周做到的。」</p>
+  <p>一个隐藏细节：这个折扣价是促销定价，有效期至 2026 年 12 月 31 日，届时价格翻倍。Google 正在用激进的价格换 API 用量和开发者黏性——促销期结束时已经形成依赖的开发者不太会因为价格翻倍就迁移。<strong>三周一代、价格砍半，Google Flash 系列的迭代速度已经把"模型发布"变成了一种节奏武器：对手还没反应，下一刀已经落了。</strong></p>
+  <cite><a href="https://x.com/joshwoodward/status/2088016871710957587" target="_blank" rel="noopener">X @joshwoodward</a> · <a href="https://www.techtimes.com/articles/324387/20260813/google-cuts-gemini-37-flash-price-half-it-claims-top-claude-business-workflows.htm" target="_blank" rel="noopener">TechTimes</a> · <a href="https://felloai.com/gemini-3-7-flash/" target="_blank" rel="noopener">FelloAI</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://www.comparos.in/news/openai-introduces-computer-history-feature-for-chatgpt-mac-desktop-app" target="_blank" rel="noopener">ChatGPT Computer History：OpenAI 让 Mac 记录你的点击、打字、App 切换，本地生成摘要</a></h3>
+  <p>OpenAI 将此前的 Chronicle 预览版替换为 Computer History，一个 opt-in（用户主动开启）功能，追踪 Mac 上的点击、打字、App 切换和无障碍事件，在本地生成活动摘要，供 ChatGPT 和 Codex（OpenAI 的编程 Agent）调用。目标是让 AI 「记得」你最近在做什么，减少重复解释，并能自动化重复操作。</p>
+  <p>关键设计是本地化处理：摘要在你的 Mac 上生成，而非上传原始日志，这是 OpenAI 在隐私争议前的一个缓冲设计。尽管如此，追踪粒度（逐次点击、逐字输入）已经足够细到让部分用户不安。OpenAI 让你控制哪些 App 和网站参与记录，不参与的完全不留痕迹。<strong>Computer History 是 ChatGPT 从"问答工具"迈向"个人 OS 层"的关键一步——知道你在做什么，AI 才能主动介入，而不是等你开口。</strong></p>
+  <cite><a href="https://www.theaivalley.com/p/openai-introduces-computer-history-for-chatgpt" target="_blank" rel="noopener">AI Valley</a> · <a href="https://www.digitaltrends.com/computing/chatgpt-can-now-remember-what-users-do-on-their-mac/" target="_blank" rel="noopener">Digital Trends</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+<article class="item">
+  <h3><a href="https://x.com/amasad/status/2088110851681386864" target="_blank" rel="noopener">Amjad Masad（Replit CEO）：明年用电脑将变成可选项，ARC-AGI-3 已近乎被"加个编程框架"解决</a></h3>
+  <p>Masad 同一天发出两条形成呼应的推文。第一条（717 likes）：「明年，使用电脑将变成可选项。」没有更多解释——这是结论，不是预告。第二条（100 likes）：「ARC-AGI-3 仅凭加一个编程框架（coding harness，即让 AI 能写代码验证自己答案的脚手架）就几乎被解决了。」ARC-AGI 是一个被设计为"需要真正推理、不能靠记忆刷分"的 benchmark（基准测试）。从 AGI-1 到 AGI-3，每代升级都被认为是 AI 无法通过的门槛，结果每次都在数月内被突破。</p>
+  <p>这两条放在一起的逻辑是：如果 AI 现在只需要一个编程框架就能绕过"需要人类判断"的任务，那么人机交互界面（即"电脑"这个中间层）正在被 AI 直接消解。所谓「不需要电脑」，实际上是 Agent 可以代替你完成几乎所有需要鼠标键盘操作的场景。在 Replit，Masad 说这趋势「确实正在发生」。<strong>ARC-AGI-3「几乎被解决」的方式是一个诊断：AI 的真正进步不是更聪明，而是更会把问题转化成它能处理的格式——这个转化能力本身就是智能的核心。</strong></p>
+  <cite><a href="https://x.com/amasad" target="_blank" rel="noopener">X @amasad</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/zarazhangrui/status/2088087765267386564" target="_blank" rel="noopener">Zara Zhang（a16z）：讽刺——AI 编程本该减少工程师需求，结果工程师需求更旺盛</a></h3>
+  <p>Zara Zhang（a16z 合伙人）一句话：「很多人以为 AI 编程会让工程师需求下降。事实相反。」（106 likes）她没有展开论证，但逻辑并不难还原：AI 编程工具放大了工程师的产出——每个工程师能独立完成更大的项目范围——于是有能力消化这类工具、让 AI 真正出活的工程师反而更值钱。与此同时，可以被 AI 替换的是那些只做执行层任务的角色，而判断"让 AI 做什么"的角色需求反而上升。</p>
+  <p>这个反直觉的结论在过去一年已经有不少数据支撑：Cursor、Claude Code 用户增长最快的群体正是高级工程师，而不是初级开发者。整体工程师招聘数量并没有随 AI 编程工具普及而下降，反而因为"能驾驭 AI 工具的工程师"的需求拉升而出现结构性分化。<strong>AI 把工程师分成了两类：能调度 AI、知道让它做什么的人，和正在被 AI 逐步接管日常任务的人——张扬的一类涨价，安静的一类在缩。</strong></p>
+  <cite><a href="https://x.com/zarazhangrui" target="_blank" rel="noopener">X @zarazhangrui</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/swyx/status/2088073777779515615" target="_blank" rel="noopener">Swyx：人类 I/O 代价高昂——/align-me 修改让 AI 主动适应你的沟通偏好</a></h3>
+  <p>Swyx（Latent Space 联合主持，AI 工程师社区核心人物）提出一个框架：「人类 I/O（输入输出，即与 AI 对话的过程）代价很高。」在这个前提下，他分享了一个 /align-me 修改——一种让 AI 主动校准自身沟通风格以匹配你偏好的 prompt 技巧，而非让用户不断向 AI 解释"我喜欢怎样的回答格式"。他同时提到三位 frontier skills（前沿能力）研究者正在协同推进这个方向。（100 likes）</p>
+  <p>背后的判断是：现在大多数 AI 工具的设计假设是"用户调整自己配合 AI"，而优化空间在于反过来——让 AI 一次性学习你的偏好，之后自动应用。<strong>如果 AI 工具的未来是"AI 配合人"而非"人配合 AI"，那下一代的产品差异化将出现在偏好建模和个性化适配上，而不只是模型能力本身。</strong></p>
+  <cite><a href="https://x.com/swyx" target="_blank" rel="noopener">X @swyx</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+<article class="item">
+  <h3><a href="https://www.bensbites.com/p/bens-session-2" target="_blank" rel="noopener">Ben Tossell（Ben's Bites）：Personal agent 不神秘——一个文件夹、一个指令文件、一个记忆文件就够了</a></h3>
+  <p>Ben 这期做了一件很有价值的事：把 OpenClaw、Hermes、Grok Bot 的底层结构拆光，发现它们本质上是同一套东西。Personal agent 的核心组成：一个指令文件（写清楚这个 agent 是谁、做什么）、一个记忆文件（用 append-only 日志记录重要事件，agent 靠读这个文件"记住"过去）、工具权限（能访问你的日历/邮件/文件系统），外加一台或共享或独立的虚拟电脑（computer use，即 AI 能像人一样操作屏幕）。Grok Bot 的核心设计——每个 Bot 有自己的独立线程——用 Codex 或 Claude 把线程钉住（pin thread）、指向特定文件夹就能复制。</p>
+  <p>Ben 的判断简洁：「它们不是不同产品，只是把同样的功能封装得不同。」他自己偏好单 Agent（「Jarvis」风格，一个 agent 统揽所有），但认可多 Agent 的价值——当你想给不同任务设置不同人格、不同记忆边界时，拆分 agent 是合理的。设置流程只有六步：创建文件夹 → 写指令文件 → 加记忆和用户文件 → 在 Codex 或 Claude 里打开该文件夹 → 钉住线程 → 给权限加计划。没有任何黑魔法。<strong>Personal agent 这个产品品类的护城河不在于底层技术，而在于谁能把这六步打包得足够无感——摩擦越低，用户粘性越高，回头再换的成本越大。</strong></p>
+  <cite><a href="https://www.bensbites.com/p/bens-session-2" target="_blank" rel="noopener">Ben's Bites</a></cite>
+</article>
+
+<article class="item">
+  <h3>纯银（羔羊计划 Vol.20260814）：Sundar Pichai 的驱动力——基础设施，不是产品</h3>
+  <p>羔羊计划（《产品沉思录》作者 shaonan 和 fonter 联合出品的人物研究系列）本期研究 Sundar Pichai。核心洞察不是他的履历，而是他行动背后的那个问题：「技术如何让 80 亿人拥有平等获取知识的机会？」这个问题源于童年——在印度两居室的公寓，等五年才装上一部拨号电话，走两小时去医院拿血检报告、结果被告知明天再来。所有职业选择都是同一个答案的不同版本：Chrome 是把网络从静态页面升级为动态应用；Android 让数十亿人第一次拥有计算设备；AI mode 让非英语用户打开英语网站也能读懂。</p>
+  <p>作者给出一个字概括：「基础设施」。Sundar 的护城河不是任何一次发布，而是 TPU（Google 自研 AI 芯片）、数据积累和产品矩阵的整合能力——这是电网思维，不是发电机思维。他不靠「抢先发布」赢，靠「改变规则」赢：把 DeepMind 和 Brain 强制合并、把 Gemini 铺进 Search/Chrome/Android/YouTube，是一个系统压力，而非一个产品优势。作者的反向思考最有意思：「他不公开讲的真实担忧，是 Google 其实是在这轮 AI 里第一次被迫防守」，而他的应对方式是继续下更长的注，而非应激。<strong>把一个 CEO 压缩成一个字，shaonan 选了「基础设施」——这本身就是一种产品决策：什么值得长期持有，什么只是当下的喧嚣。</strong></p>
+  <cite><a href="https://xiaobot.net/p/sheeppress/" target="_blank" rel="noopener">小报童 · 羔羊计划</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+<article class="item">
+  <h3><a href="https://x.com/petergyang/status/2087946170274570385" target="_blank" rel="noopener">Peter Yang（产品顾问）：用 AI 导航家人重病——最高情绪压力下 AI 的真实价值</a></h3>
+  <p>Peter Yang 分享了一个私人时刻：「我正在应对家人的健康状况。对我最有帮助的，是用 AI 梳理信息。」（123 likes）他没有给出细节，但这条推文在 AI 话语里很少见——大多数关于 AI 价值的讨论停在「效率提升」「省时间」，而他触碰到的是另一层：在高情绪压力、信息密集、需要快速判断但又不确定自己是否判断准确的时刻，AI 能不能成为一个可以信任的信息导航者？</p>
+  <p>医疗场景是 AI 辅助里最复杂也最有价值的地方之一：信息量大、专业壁垒高、时间紧迫、情绪成本高。医生的解释往往信息量不足或太专业，网上搜索结果质量参差不齐。AI 在这里能做的不是诊断，而是把你已有的信息整理清楚、帮你想到该问什么问题、把术语翻译成可操作的理解。Peter 这条推文用一个私人经历说出了 AI 能力边界之外最重要的一件事：不是 AI 有多聪明，而是在对的时刻它在不在。<strong>AI 在高压力场景的真实考验不是准确率，而是可信度——当你无暇辨别真假时，你愿不愿意先把它当作值得依赖的过滤器。</strong></p>
+  <cite><a href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/danshipper/status/2087995350745244083" target="_blank" rel="noopener">Dan Shipper（Every CEO）：每分钟 2 个求职者，来自 Citadel、OpenAI……</a></h3>
+  <p>Dan Shipper 发了一条数字：「平均每分钟 2 个申请，来源包括：Citadel、OpenAI……」（88 likes）没有更多上下文——这是一条招聘或某个项目的真实流量记录。这个数字的震撼点不是速度，而是来源：Citadel 是世界顶级对冲基金之一，OpenAI 是 AI 行业顶流。愿意从这类机构出来申请 Every 的一个职位，说明了什么？</p>
+  <p>一种解读：AI 原生的内容创业正在对顶级机构的人才产生强烈吸引力，因为在 AI 工具最好用的地方工作，比在 AI 工具被外部限制的大机构工作更能让能力得到释放。另一种解读是：金融和大模型公司的光环正在被创造性工作的机会稀释，至少对一部分人是这样。第三种解读更直接：这条推文本身就是一个信号——Dan Shipper 在招聘，而且想让对的人知道很多厉害的人也在看这个机会。<strong>每分钟 2 个来自顶级机构的申请，说明的不只是某个职位有多受欢迎，而是 AI 原生内容创业作为一个品类，已经能在人才市场上和金融与大模型公司直接竞争了。</strong></p>
+  <cite><a href="https://x.com/danshipper" target="_blank" rel="noopener">X @danshipper</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2608.00677" target="_blank" rel="noopener">OpenART：1 万+ 红队场景，50 个领域，系统性测试 Agent 攻击面</a></h3>
+  <p><strong>现状：</strong>当前 AI 安全评测主要针对短任务、静态场景，但真实 Agent（AI 代理）攻击往往是跨多步、持续演进的，现有 benchmark（基准测试）无法捕捉累积风险。</p>
+  <p><strong>问题：</strong>如何在动态、开放环境中系统性地评测 Agent 被攻击和被用于攻击的风险，同时覆盖足够多的任务域和工具组合？</p>
+  <p><strong>解决方案：</strong>OpenART 提供超过 1 万个经验证的有状态场景（stateful scenarios），横跨 50 个领域，工具和技能池超过 50 万条。测试需要 Agent 平均发起 97 次工具调用——远超现有评测的复杂度。同时提出 EMHA（Evolutionary Markov Hypergraph Attack，演化马尔可夫超图攻击）算法，系统探索不断变化的攻击面；覆盖 75 种不同 Agent 和模型配置的统一评测框架。</p>
+  <p><strong>价值：</strong>把 Agent 安全评测从"在受控沙箱里测单步拒绝"升级到"在动态多步场景里测累积风险"，填补了现有安全评测框架的主要盲区。</p>
+  <p><strong>未来方向：</strong>如何让 EMHA 覆盖更多领域、以及如何把评测结果转化为可部署的防御策略，是下一步核心问题。</p>
+  <cite><a href="https://arxiv.org/abs/2608.00677" target="_blank" rel="noopener">arXiv 2608.00677</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2608.12307" target="_blank" rel="noopener">AI4AI at Test-Time：强模型为弱模型造 harness，ToM 准确率最高提升 87%</a></h3>
+  <p><strong>现状：</strong>弱模型（参数少、能力低的模型）在推理任务上表现差，但强模型（大模型）做推理成本高。能否用强模型的智慧帮助弱模型提升表现，而不更新弱模型的任何参数？</p>
+  <p><strong>问题：</strong>强模型是否可以在推理时（test-time，不涉及训练）为弱模型构建一个"框架脚手架"（harness），把弱模型难以稳定处理的推理步骤转移到确定性代码上？</p>
+  <p><strong>解决方案：</strong>论文提出让强模型构建 inference-time harness（推理时框架），核心做法是把弱模型不稳定的推理步骤外包给可执行代码（如特定的路由规则、答案格式约束），而非让弱模型更多地采样或思考。在心理理论（Theory of Mind，ToM，即理解他人意图和信念的能力）benchmark 上，GPT-5.4-mini 的 macro-average 准确率从基础线提升 87%（相对值），达到 0.912，接近人工工程化的解法。</p>
+  <p><strong>价值：</strong>弱模型收益最大，且不需要任何参数更新——这意味着一旦 harness 设计出来，任何调用接口的用户都可以直接用。对成本敏感的场景（如大规模推理部署）是明显的降本路径。</p>
+  <p><strong>未来方向：</strong>harness 的可泛化性——在一个任务上设计的 harness 能否迁移到其他任务——以及如何自动化 harness 的生成，是下一步核心问题。</p>
+  <cite><a href="https://arxiv.org/abs/2608.12307" target="_blank" rel="noopener">arXiv 2608.12307</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://huggingface.co/papers/2608.13505" target="_blank" rel="noopener">Intern-S2-Preview：397B 科学领域 agentic 基础模型，多任务 RL + 长链 Agent RL</a></h3>
+  <p><strong>现状：</strong>现有科学领域 AI 模型（scientific AI）主要针对特定任务（蛋白质结构预测、分子生成等），缺少能在多个科学子领域同时推理、调用工具、完成长链任务的通用 agentic 基础模型。</p>
+  <p><strong>问题：</strong>如何在视觉理解、多领域推理和长链 Agent 任务三个维度同时提升，而不牺牲任何一项？</p>
+  <p><strong>解决方案：</strong>Intern-S2-Preview（InternLM 团队，397B 参数）引入三层训练：视觉语言预训练（直接从科学文献原始页面学习，无需中间解析，同时建模符号语义和视觉关系）、大规模多任务强化学习（覆盖数百个专业科学任务，35B 参数版本在多个领域达到强性能）、长链 Agent 强化学习（专门针对需要多步骤规划和工具调用的任务）。</p>
+  <p><strong>价值：</strong>397B 模型在科学推理、多模态理解和 agentic 任务上同时取得提升；35B 版本在低算力下保持竞争性能，让小团队也能部署科学 AI。</p>
+  <p><strong>未来方向：</strong>科学领域数据的质量和覆盖度是核心瓶颈；如何在保持通用性的同时做深度垂直专业化，是下一步需要解决的架构问题。</p>
+  <cite><a href="https://huggingface.co/papers/2608.13505" target="_blank" rel="noopener">HuggingFace</a> · <a href="https://arxiv.org/abs/2608.13505" target="_blank" rel="noopener">arXiv 2608.13505</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2603.09030" target="_blank" rel="noopener">PlayWorld：用多模态 Agent 追踪长目标测交互式视频世界模型</a></h3>
+  <p><strong>现状：</strong>交互式视频世界模型（interactive video world model，即能预测"你在虚拟世界里采取行动后会发生什么"的 AI 系统）是具身 AI 和游戏 AI 的核心技术，但现有评测方法以短序列、单步交互为主，无法测试模型在长时间、复杂目标下的真实表现。</p>
+  <p><strong>问题：</strong>如何系统性评估世界模型在几何一致性（前后帧的空间逻辑是否自洽）、交互保真度（AI 的动作能否引发预期的环境变化）和状态演进（世界状态随时间是否合理变化）三个维度的能力？</p>
+  <p><strong>解决方案：</strong>PlayWorld 框架：用多模态 Agent（能同时理解视觉和文字的 AI）追踪长时间目标，在这个过程中系统评估世界模型的三个核心维度。用 Agent 的目标完成度作为评测信号，而不只是单帧预测误差。</p>
+  <p><strong>价值：</strong>提供了一个与任务目标绑定的评测框架，比单纯测帧质量更能反映世界模型的实际可用性——一个图像精美但物理逻辑混乱的世界模型会在 PlayWorld 上暴露出来。</p>
+  <p><strong>未来方向：</strong>评测场景的多样性（目前以游戏类环境为主）和对开放世界任务的泛化，是下一步扩展的核心方向。</p>
+  <cite><a href="https://arxiv.org/abs/2603.09030" target="_blank" rel="noopener">arXiv</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/html/2605.24597" target="_blank" rel="noopener">A* 后训练：解决推理模型"过度思考"，路径规划比多次采样更高效</a></h3>
+  <p><strong>现状：</strong>推理模型（reasoning model，即在回答前展示思考过程的 AI）经过强化学习后往往产生远超必要长度的解题轨迹——这种"过度思考"（overthinking）浪费算力，且不总能提升答案质量。</p>
+  <p><strong>问题：</strong>如何让模型在推理时找到更短、更高效的解题路径，而不是用大量采样（多次生成）来暴力提高正确率？</p>
+  <p><strong>解决方案：</strong>论文提出用 A* 算法（一种启发式搜索算法，常见于游戏 AI 寻路）的思路做后训练（post-training）：让模型学会评估哪些推理步骤真正值得展开，哪些可以跳过，从而规划出更高效的推理路径，而不是无差别地延长思考链。</p>
+  <p><strong>价值：</strong>在保持或提升回答质量的同时，减少推理 token 数量——对于按 token 收费的推理部署场景（如 API 调用），这直接等于成本下降；对于实时场景，等于响应更快。</p>
+  <p><strong>未来方向：</strong>A* 启发式在开放域问题（没有明确终止条件）上的适用性，以及如何在不同任务类型之间迁移路径评估策略，是下一步核心问题。</p>
+  <cite><a href="https://arxiv.org/html/2605.24597" target="_blank" rel="noopener">arXiv 2605.24597</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+
+<ul class="glance-list">
+  <li>@sama（Sam Altman，OpenAI CEO）：「/ultrafast」——一条单词推文，1638 likes。Thibault Sottiaux 也发了同样内容（2723 likes）。/ultrafast 是 Claude Code 新增的高速模式选项，两位分别在 OpenAI 和 Anthropic 生态里帮它打了一次广告。<a class="glance-src" href="https://x.com/sama/status/2088101491802243121" target="_blank" rel="noopener">X @sama →</a></li>
+  <li>@thsottiaux（OpenAI Codex 团队）：「让 ChatGPT 吐槽你的电脑使用记录——很……有见地。」1280 likes。Computer History 上线第一天，OpenAI 内部人士用自嘲推动试用。<a class="glance-src" href="https://x.com/thsottiaux/status/2088133823619895712" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+  <li>@thsottiaux：「在 ChatGPT 里直接用 Google Docs、Sheets 和 Slides。」1560 likes——Google 生态工具进驻 OpenAI 产品，生态边界在模糊。<a class="glance-src" href="https://x.com/thsottiaux/status/2088103609477238858" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+  <li>@amasad（Amjad Masad，Replit CEO）：「在 Replit，这确实正在发生」——呼应"明年用电脑将是可选项"，305 likes。<a class="glance-src" href="https://x.com/amasad/status/2088112901852971056" target="_blank" rel="noopener">X @amasad →</a></li>
+  <li>@realmadhuguru（Madhu Guru，Meta AI 高级总监）：「Prompt debt 是新的 tech debt。」49 likes——随手写的 prompt 积累成难以维护的遗产，这个类比很准。<a class="glance-src" href="https://x.com/realmadhuguru/status/2087916590964851172" target="_blank" rel="noopener">X @realmadhuguru →</a></li>
+  <li>@realmadhuguru：「AI 行业：这是无限创造力的时代…… 也是 AI 正在取代人类的时代。」12 likes——一张图揭示 AI 叙事的双重性：同一群人，同时兜售两个互相矛盾的故事。<a class="glance-src" href="https://x.com/realmadhuguru/status/2088074515188519182" target="_blank" rel="noopener">X @realmadhuguru →</a></li>
+  <li>@levie（Aaron Levie，Box CEO）：「消灭工程师曾是最疯狂的假设之一……」187 likes——承认这个判断错了，AI 并没有砍掉工程岗位，而是改变了工程师的工作内容。<a class="glance-src" href="https://x.com/levie/status/2088105350201270529" target="_blank" rel="noopener">X @levie →</a></li>
+  <li>@trq212（Thariq，Anthropic）：「一切都真的是代码（everything truly is code）。」463 likes——简短，但在 AI 编程工具普及的背景下读起来分量很重：配方、协议、工作流，迟早都会被转化为可执行代码。<a class="glance-src" href="https://x.com/trq212/status/2088049989306192106" target="_blank" rel="noopener">X @trq212 →</a></li>
+  <li>@rauchg（Guillermo Rauch，Vercel CEO）：「One command to rule them all (tokens)」148 likes——推广一个简化 token 管理的命令行工具，Vercel 仍在快速实验各种 AI 开发基础设施。<a class="glance-src" href="https://x.com/rauchg/status/2088020529039180204" target="_blank" rel="noopener">X @rauchg →</a></li>
+  <li>@rauchg：「最好的东西都是免费的」311 likes——配合推介 GLM 5.2 免费使用（最高 500 TPS）。API 速率（TPS，每秒处理的请求数）免费开放，正在成为一种新的开发者拉新策略。<a class="glance-src" href="https://x.com/rauchg/status/2087900672083857815" target="_blank" rel="noopener">X @rauchg →</a></li>
+  <li>@garrytan（Garry Tan，YC CEO）：「我同意，每个 Bot 需要分主题（topics per-bot）。」281 likes——直接回应用户对 Grok Bot 功能请求，YC CEO 在公开场合 +1 产品 feature request，罕见但有效。<a class="glance-src" href="https://x.com/garrytan/status/2088029937714565260" target="_blank" rel="noopener">X @garrytan →</a></li>
+  <li>@garrytan：「YC 是硬科技的 YC。」213 likes——在 AI 软件主导舆论的周期里，Garry Tan 持续重申 YC 对 deep tech 的押注。<a class="glance-src" href="https://x.com/garrytan/status/2087929926070710381" target="_blank" rel="noopener">X @garrytan →</a></li>
+  <li>@mattturck（Matt Turck，FirstMark Capital）：「现在你要么是 AI-native 的火箭飞船，要么基本上被甩在了后面……」256 likes——投资人视角的赤裸二分法，没有中间地带。<a class="glance-src" href="https://x.com/mattturck/status/2087978386195103916" target="_blank" rel="noopener">X @mattturck →</a></li>
+  <li>@ryolu_（Ryo Lu，设计师）：「Matic 是我拥有的第一个真的让我觉得'我拥有它好多年了'的机器人。」217 likes——用户对家用机器人产品的极高情感认同，Matic 扫地机器人正在成为家用 AI 硬件里的 benchmark。<a class="glance-src" href="https://x.com/ryolu_/status/2087992867918864668" target="_blank" rel="noopener">X @ryolu_ →</a></li>
+  <li>@nikunj（Nikunj Kothari，FPV Ventures）：「Matic 是我儿子最先学会的前十个词之一。」63 likes——Matic 渗透到家庭日常到让孩子先认识这个机器人，硬件品牌的终极认可。<a class="glance-src" href="https://x.com/nikunj/status/2088029329624371544" target="_blank" rel="noopener">X @nikunj →</a></li>
+  <li>@nikunj：「Grok Bot 是个很棒的发布…… 但用户真的会想要一个 AI 做所有事吗？」176 likes——对 personal agent 平台化的理性质疑，与 Ben Tossell 的拆解形成对话。<a class="glance-src" href="https://x.com/nikunj/status/2087906119914340540" target="_blank" rel="noopener">X @nikunj →</a></li>
+  <li>@danshipper（Dan Shipper，Every CEO）：「concerning」41 likes——就一个词，没有上下文，这种刻意的模糊让人忍不住点进去。<a class="glance-src" href="https://x.com/danshipper/status/2088015579093295157" target="_blank" rel="noopener">X @danshipper →</a></li>
+  <li>@adityaag（Aditya Agarwal，SPC）：主办活动邀请 Jeff Dean 来 SPC 交流，91 likes；另一条分享与 @Samirkaji 的对话，25 likes——SPC 在持续把顶级 AI 研究者引入创业社区。<a class="glance-src" href="https://x.com/adityaag/status/2088058783767658541" target="_blank" rel="noopener">X @adityaag →</a></li>
+  <li>@petergyang：「最大的赞美……我妻子一刻不停地用它。」24 likes——不明确说的是什么工具，但显然是某个 AI 产品真正进入非技术用户日常的一个例子。<a class="glance-src" href="https://x.com/petergyang/status/2088036303816519734" target="_blank" rel="noopener">X @petergyang →</a></li>
+  <li>@swyx：「top singaporeans agree」3 likes——Singapore AI 社区内部梗，配合 frontier skills 讨论的轻松收尾。<a class="glance-src" href="https://x.com/swyx/status/2088120493224362487" target="_blank" rel="noopener">X @swyx →</a></li>
+  <li>AI Valley：ChatGPT 本周工具推荐——GLM-5.3（743B 参数基础模型后训练，coding 和 agentic 能力升级）；Claude in Chrome（页面读取+点击/填表，用户保持控制权）；bb（本地优先的 agentic workspace，支持多模型接入）。<a class="glance-src" href="https://www.theaivalley.com/p/openai-introduces-computer-history-for-chatgpt" target="_blank" rel="noopener">AI Valley →</a></li>
+</ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-08-13.html">← AUG 13</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
