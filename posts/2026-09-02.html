@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — September 2, 2026</title>
+  <meta name="description" content="Anthropic 发布 Claude Fable 5.1，Terminal-Bench-Science 得分从 24.7% 跳升至 52.6%，cache 读取价格砍去 75%；World Labs 推出 Atlas 世界模型，从 7 张照片生成一分钟 1440p 3D 场景，剑指机器人训练数据；Sam Altman 公开确认 OpenAI Astra 训练已完成，但主动放慢发布节奏以优先完成安全工作。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">September 2, 2026</h1>
+
+  <p class="post-lead">Anthropic 发布 Claude Fable 5.1，Terminal-Bench-Science 得分从 24.7% 跳升至 52.6%，cache 读取价格砍去 75%；World Labs 推出 Atlas 世界模型，从 7 张照片生成一分钟 1440p 3D 场景，剑指机器人训练数据；Sam Altman 公开确认 OpenAI Astra 训练已完成，但主动放慢发布节奏以优先完成安全工作。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><span class="section-label">新闻速递</span></div>
+
+<article class="item">
+  <h3><a href="https://www.anthropic.com/claude-fable-and-mythos-5-1" target="_blank" rel="noopener">Claude Fable 5.1 &amp; Mythos 5.1 发布：Terminal-Bench-Science 翻倍、cache 读价砍七成、EFS 企业合规层</a></h3>
+  <p>9 月 1 日，Anthropic 正式发布 Fable 5.1 和 Mythos 5.1，两款产品共享同一套模型权重，但访问门槛不同：Fable 对所有人开放，Mythos 仅面向经审核的网络安全和生命科学机构，因后者在高风险双用途知识领域有额外开放。评测数据说话：在 Terminal-Bench-Science 上，Fable 5.1 得分 52.6%，较 Fable 5 的 24.7% 翻了一倍多；Terminal-Bench 4.0 上也从 42% 升至 55.8%。同日宣布的还有大幅降价：cache 读取成本从每百万 token $1 降至 $0.25，降幅 75%。Anthropic 估算，常规工作负载（workload，指日常使用模式）可因此节省约 25%，高度自动化的 agent 工作负载（agent workload，指多步自主执行任务）最高可节省 45%。不过外部分析机构 Artificial Analysis 观察到输出 token 用量平均上升约 1.7 倍，综合算下来每任务成本仍可能上涨约 20%。</p>
+  <p>此次发布还附带 Enterprise Frontier Safeguards（EFS，企业前沿防护层）。传统上，零数据留存（ZDR，即对话数据不被保存用于训练）意味着跨 session 无法发现异常模式；EFS 在零留存基础上增加了自动化监控层，在企业自有云内运行，对 agent 跨 session 行为做异常标记。Alex Albert（Anthropic 研究员）将它定义为「ZDR++」，为 agent 时代新增了可观测性，秋季开始分批推出。</p>
+  <cite><a href="https://www.anthropic.com/claude-fable-and-mythos-5-1" target="_blank" rel="noopener">Anthropic</a> · <a href="https://www.theaivalley.com/p/new-atlas-world-model-is-literally-black-magic" target="_blank" rel="noopener">AI Valley</a> · <a href="https://www.latent.space/p/ainews-claude-fablemythos-51-new" target="_blank" rel="noopener">Latent Space AINews</a> · <a href="https://x.com/claudeai/status/2094848592812917122" target="_blank" rel="noopener">X @claudeai</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://www.worldlabs.ai/blog/atlas" target="_blank" rel="noopener">World Labs 发布 Atlas：首个多模态世界模型，7 张图生成 1 分钟 1440p 3D 场景</a></h3>
+  <p>Fei-Fei Li 创立的 World Labs 在同一天推出了 Atlas，定位为史上首款多模态世界模型（world model，能理解并生成空间一致的三维世界的 AI 系统）。Atlas 从零开始训练，将 LLM 和视频模型的设计思路融为一体，把摄像机几何（camera geometry，即视角位置和方向）作为原生输入。实际效果：给它 7 张参考图片，它能生成一分钟长度、1440p 分辨率、可从任意角度观察的 3D 视频；给它一张或几张照片，可重建出完整 3D 场景，输出格式包括点云（point cloud）和 3D 高斯泼溅（3D Gaussian splat，一种高效的 3D 表示方法）。</p>
+  <p>目标应用是机器人训练数据生成：只需用手机拍几张真实空间的照片，Atlas 就能模拟机器人在该空间移动时摄像头和深度传感器的感知结果，替代昂贵的场景扫描设备。Atlas 现阶段不公开论文，不公开定价，进入早期访问阶段，合作伙伴名单未透露。</p>
+  <cite><a href="https://www.worldlabs.ai/blog/atlas" target="_blank" rel="noopener">World Labs Blog</a> · <a href="https://siliconangle.com/2026/09/01/fei-fei-lis-world-labs-debuts-atlas-a-world-model-showcase-for-advanced-spatial-intelligence/" target="_blank" rel="noopener">SiliconAngle</a> · <a href="https://x.com/theworldlabs/status/2094839756329041984" target="_blank" rel="noopener">X @theworldlabs</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/sama/status/2094934592062959832" target="_blank" rel="noopener">Sam Altman：OpenAI Astra 训练已完成，主动放慢发布——安全需要与能力同步推进</a></h3>
+  <p>Sam Altman 在一条长推文里罕见地直接谈到节奏控制（pacing）：Astra 训练早已完成，是「对能力和对齐（alignment，让 AI 行为符合人类意图的工作）都有重大进步」的模型，但 OpenAI 正在主动放慢发布节奏，以便在开放之前完成足够的安全工作。他同时提到，继 Astra 之后还有更大的预训练项目在推进，OpenAI 会「在需要时放慢脚步，确保安全标准跟上新的能力层级」。</p>
+  <p>这段表态的背景是：AI Valley 同日报道 OpenAI 正准备以「Astra」发布一个拥有「关键（critical）网络攻击能力」的前沿模型，对标 Anthropic Mythos。Altman 的声明透露出一个信号：OpenAI 判断 Astra 足以引发社会关切，因此进入了一个更谨慎的公开节奏。<strong>「AI 正在变得极其有能力，没有人完全理解其后果」——Altman 用这句话承认了行业的认知边界，一个 CEO 公开说自己不确定自己产品的后果，本身就是一种非常少见的发言姿态。</strong></p>
+  <cite><a href="https://x.com/sama/status/2094934592062959832" target="_blank" rel="noopener">X @sama</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://research.meta.ai/blog/introducing-muse-voice-transcribe" target="_blank" rel="noopener">Meta Muse Voice Transcribe：实时语音识别 + 说话人分离，$3/千分钟，70+ 语言</a></h3>
+  <p>Meta 发布了首个实时音频感知模型 Muse Voice Transcribe，集成语音转文字（STT，speech-to-text）、说话人分离（diarization，识别谁在讲话）和端点检测（end-point detection，判断说话何时结束）于同一模型。技术亮点是自适应听取窗口（adaptive listening window）：模型自己决定每次「听多长再写一个词」，在速度与准确率之间动态权衡。训练覆盖 70+ 语言，支持同一段对话中跨语言切换，并通过了长达一小时、20+ 名说话人的测试。价格定为 $3/千分钟语音，已上线 Meta API，并已在 Meta 桌面版听写功能和 Muse Code 语音输入中实装。</p>
+  <cite><a href="https://research.meta.ai/blog/introducing-muse-voice-transcribe" target="_blank" rel="noopener">Meta Research</a> · <a href="https://www.theaivalley.com/p/new-atlas-world-model-is-literally-black-magic" target="_blank" rel="noopener">AI Valley</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><span class="section-label">AI 方向观点</span></div>
+
+<article class="item">
+  <h3><a href="https://x.com/thenanyu/status/2094928205753040999" target="_blank" rel="noopener">Nan Yu（OpenAI 产品，前 Linear 产品负责人）：让 AI 少烦人才是真 alpha，用户价值靠减少 rage-quit 实现</a></h3>
+  <p>Nan Yu 的判断很干脆：「让 agent 变得更不烦人，这里有大量 alpha（alpha 在投资领域指超额收益，这里借用指可挖掘的优化空间）。用户要到达价值，就得先停止愤怒退出。」他的配套观点：UI（用户界面）设计师的下一个机会，是转变为「对话与修辞设计师（conversation/rhetoric designer）」——因为 AI 时代的主要交互界面已经不是按钮和菜单，而是对话本身。</p>
+  <p>他同日引用了 Boris Cherny 关于 Fable 5.1 压缩冗长输出的更新，补充道：「这类细节看起来小，但影响很大」。两条推文合在一起是一个清晰论点：模型的写作风格不是品味问题，是产品体验的基础设施。<strong>让 AI 变得不烦人，不是打磨边缘功能，是在为用户真正「跑完全程」铺路——这件事被严重低估了。</strong></p>
+  <cite><a href="https://x.com/thenanyu" target="_blank" rel="noopener">X @thenanyu</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/alexalbert__/status/2094889286990446769" target="_blank" rel="noopener">Alex Albert（Anthropic 研究员）：EFS 是 ZDR++，agent 时代的可观测性与风险管控基础设施</a></h3>
+  <p>Alex Albert 把 Enterprise Frontier Safeguards 定义得很精确：传统零数据留存（ZDR，即不保存用户对话数据）的问题是跨 session 无法看见 agent 在做什么。企业给 agent 的权限越来越大，接入的内部系统越来越多，但没有一个层可以发现跨 session 的异常模式。EFS 把这个空白填上：数据留在企业自己的云里，Anthropic 在外面加一层自动化监控，专门标记 agent 行为中出现的高风险模式，再通知企业安全团队。他用的比喻是：「可观测性（observability，即系统内部状态的可见性）加风险缓解（risk mitigation）层——企业要把越来越强的 AI 跑在自己系统里，这类工具迟早会变成标准需求。」</p>
+  <p><strong>EFS 的意义不是「又一项隐私功能」，而是 Anthropic 在为 agent 时代重新定义「企业合规」的边界——从「数据不出去」升级到「我们可以看见 agent 在做什么、在出问题之前拦截它」。</strong></p>
+  <cite><a href="https://x.com/alexalbert__" target="_blank" rel="noopener">X @alexalbert__</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/bcherny/status/2094864064648536068" target="_blank" rel="noopener">Boris Cherny（Claude Code @Anthropic）：Fable 5.1 主动压缩 Claude-speak，技术进步终碰上写作审美</a></h3>
+  <p>Boris Cherny 在 Fable 5.1 发布帖的最后一条写道：「Fable 5.1 写得更好、语气更自然。我们听到了反馈，正在积极压缩 Claude-speak（Claude 特有的过度礼貌、冗长、套话式表达风格）。5.1 版有明显进步，还会继续优化。」这是一句「承认问题存在」的表态，在大型 AI 公司的官方发布材料里并不常见。</p>
+  <p>同日，他还公布了另两项具体改进：生物学安全防护（biology safeguards）对无害请求的误拦截率降低 85%，Claude Code 用户每个 session 中因网络安全判断误触的拦截次数降低约 60%。这三条合在一起传达的信号是：Anthropic 在 Fable 5.1 上花了相当精力处理「过度谨慎」这个问题，而不只是提升基准分数。<strong>把「减少烦人度」作为 headline 改进之一，意味着 Anthropic 已经把用户体验的摩擦感当成了和 benchmark（评测指标）同等重要的工程目标。</strong></p>
+  <cite><a href="https://x.com/bcherny" target="_blank" rel="noopener">X @bcherny</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><span class="section-label">产品与商业</span></div>
+
+<article class="item">
+  <h3><a href="https://every.to/working-overtime/compound-writing-how-i-turned-my-process-into-a-plugin" target="_blank" rel="noopener">Every Compound Writing Plugin（Katie Parrott）：把六个月写作流程工程化为可复用 AI skill 插件</a></h3>
+  <p>Every 今日发布了 Compound Writing，一个花了六个月打磨的写作 skill 插件（plugin，可供他人安装的打包工具集）。Katie Parrott 的核心论点：AI 写作最大的进步不是「让 AI 帮你写草稿」，而是「把你自己的写作方法打包成 AI 可以反复调用的结构」。Compound Writing 把采访（interview）、大纲（outline）、起草（draft）、修改（revision）四个环节各自做成一个独立 skill，可以单独调用也可以串联使用，并通过 plugin 的形式让任何人安装。她的比喻是「写作健身房」：equipment 和结构由 skill 提供，你决定在哪里用力。</p>
+  <p>更值得关注的是背后的演化轨迹：2024 年 Projects 出现（让 style guide 可跨对话持久保存），2024 年秋天 Skills 出现（让方法论可复用），现在 Plugins 让这些方法论可分享给他人。每一步都把 AI 写作从「个人即兴聊天」往「结构化工作流」拉近一步。<strong>Compound Writing 最重要的不是具体工具，而是它所代表的方向：AI 时代的写作竞争力来自流程的可积累性，而不是一次性的 prompt 技巧。</strong></p>
+  <cite><a href="https://every.to/working-overtime/compound-writing-how-i-turned-my-process-into-a-plugin" target="_blank" rel="noopener">Every · Katie Parrott</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/rauchg/status/2094831747037085978" target="_blank" rel="noopener">Guillermo Rauch（Vercel CEO）：Fluid 统一计算平台，Functions + Builds + Servers 合并为一条边界</a></h3>
+  <p>Guillermo Rauch 详细介绍了 Fluid——Vercel 内部已运行一段时间、现在对外说明的统一计算层。其核心是把 Functions（无服务器函数，按调用计费的短生命周期计算）、Builds（构建环节，把源代码变成部署产物）、Servers（长时运行的服务进程）三类以前相互隔离的计算形态，统一在同一个 Dockerfile（容器配置文件）、同一套安全边界（Secure Compute perimeter，指同一防火墙和网络隔离策略）、同一个文件系统和网络层之下。直接收益是：之前无法串联的能力现在可以共享——比如防止 agent 逃逸（agent escape，即 agent 突破容器边界做未授权操作）的防火墙规则，可以同时保护 Build 环境和 Function 运行时。</p>
+  <p><strong>Fluid 不是新产品，是架构统一——Vercel 在用「一个平台管所有计算」的方向押注，而这个方向在 agent 大量使用 Sandbox（沙箱，隔离的代码运行环境）的场景里有直接的安全价值：只要 agent 在 Fluid 边界内，逃逸的攻击面就压缩了。</strong></p>
+  <cite><a href="https://x.com/rauchg" target="_blank" rel="noopener">X @rauchg</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/levie/status/2094851976769257770" target="_blank" rel="noopener">Aaron Levie（Box CEO）：Box 企业评测，Fable 5.1 在非结构化数据任务上整体提升 7 个百分点</a></h3>
+  <p>Box 对 Fable 5.1 做了内部评测，任务是企业真实场景下的非结构化（unstructured，指文档、合同、报告等非表格数据）数据处理。整体评分比 Fable 5 提升 7 个百分点，Levie 举了三个具体案例：金融服务场景（+17%）：税调利润预测中，Fable 5.1 正确先扣资本摆免再计税，而 Fable 5 计算顺序错误导致数字全部偏差；科技场景（+37%）：成本优化分析中某指标定义模糊，Fable 5.1 识别出歧义并同时计算两种解读后选出正确版本；公共部门场景（+16%）：教育数据分析中，Fable 5.1 正确完成加权平均并给出正确排名，Fable 5 在分类步骤出错后全表级联错误。</p>
+  <p><strong>这些案例揭示的不是「整体更聪明」，而是模型在「识别出模糊性、主动处理边界条件」上有了系统性提升——这是企业场景最高频的失败点，也是 Fable 5 和 5.1 在实际价值上的真实差距。</strong></p>
+  <cite><a href="https://x.com/levie" target="_blank" rel="noopener">X @levie</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/realmadhuguru/status/2094817857821704659" target="_blank" rel="noopener">Madhu Guru（Meta AI Sr Director）：自我改进产品是每家公司该实施的元理念，5 个核心要素</a></h3>
+  <p>Madhu Guru 把「自我改进产品」（self-improving product，产品利用 AI 自动发现自身问题并推动优化）定义为一个应该普遍实施的元理念，并列出 5 个必要组件：（1）清晰的指标定义——首要、次要、保护性指标；（2）清晰的战略、路线图和最希望移动的指标；（3）过去产品决策和原则的知识库——让 agent 知道决策如何做；（4）接入内部产品系统的连接——仪表盘、API、MCP（模型上下文协议，一种让 AI 连接外部工具的标准）、工具；（5）针对端到端产品开发流程构建的 harness（执行框架，让 agent 按产品流程行动的脚手架）。</p>
+  <p>他引用 Shopify ML 团队作为企业自建后训练（post-training，在预训练基础模型之上针对特定任务再训练）的优秀案例，判断这是绝大多数企业目前严重低估的投资方向。<strong>「自我改进」不是一个工具，是一套飞轮——把产品数据、决策历史和 AI 行动力三者串联起来，是下一个为数不多没有被外部 SaaS 解决的企业内部机会。</strong></p>
+  <cite><a href="https://x.com/realmadhuguru" target="_blank" rel="noopener">X @realmadhuguru</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://x.com/petergyang/status/2094999358525821099" target="_blank" rel="noopener">Peter Yang（AI 教程创作者）：AI skill 卫生学——只装少量自己的 skill，定期删除，防止 prompt 漂移</a></h3>
+  <p>Peter Yang 今日清理自己的 AI skill 库，分享了几条实操原则：不喜欢装太多随机 skill；目前只保留约十几个（大部分是自己写的）；定期删除不再使用的；尽量让每个 skill 保持简短。他的配套问题切中了一个真实的工程痛点：每次靠 AI 辅助迭代 skill 时，AI 往往「为这一次的对话过拟合（overfitting，在当前场景下表现完美但丧失了对其他场景的泛化能力）」，多次迭代后 skill 与原始意图越偏越远。他在询问社区有没有好的解法。</p>
+  <p>在 Fable 5.1 发布当天，他还建议所有人用 /claude-api prompt-audit 指令扫描现有 skill，找出冗余规则和可以删掉的指令——模型能力提升后，很多之前必须写清楚的规则现在已经是默认行为。<strong>Skill 库是一种「负债」：装得越多，维护成本越高，找到你真正需要的那个 skill 越难——少而精、常清理，才是可持续的 AI 工作习惯。</strong></p>
+  <cite><a href="https://x.com/petergyang" target="_blank" rel="noopener">X @petergyang</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><span class="section-label">人文与哲学</span></div>
+
+<article class="item">
+  <h3><a href="https://x.com/zarazhangrui/status/2094812574395371857" target="_blank" rel="noopener">Zara Zhang：「Be a person, not a persona」——AI 工具泛滥时代，真实性是唯一无法复制的护城河</a></h3>
+  <p>Zara Zhang 的这六个字是今天被转发最多的短句之一。它的语境是 AI 内容生产爆炸式增长之后，越来越多人开始用 AI 打磨出一个精心设计的「人设（persona，有意识维护的公开形象）」：措辞更流畅、逻辑更自洽、每条发言都经过优化。但「persona」和「person」之间有一道裂缝——前者是一个被表演出来的形象，后者是一个真实的人，带着矛盾、犹豫、不完美的表达。</p>
+  <p>这句话不是反对用 AI，而是在提醒一件事：当所有人都在用同样的工具打磨同样的表达风格，真实性本身就成了稀缺资源。Zara 本人的写作风格印证了这点——她同日分享的另两条推文，一条是「希望每座城市都是东京」，另一条是「这种网站设计风格是什么时候开始流行的？」，都是未经过度打磨的即时感受。<strong>「做一个人，不是做一个人设」——在 AI 把表达成本归零的时代，这句话本质上是在说：真正的差异化，来自你没法外包出去的部分。</strong></p>
+  <cite><a href="https://x.com/zarazhangrui" target="_blank" rel="noopener">X @zarazhangrui</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><span class="section-label">AI 进展</span></div>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2608.23552" target="_blank" rel="noopener">Prime Agent：自我改进 RLM harness，ARC-AGI-3 RHAE 从 30% 提升至 95.5%</a></h3>
+  <p><strong>现状：</strong>长时程（long-horizon，指需要多步、多轮才能完成的）编程和推理任务对 AI 的挑战在于：计算历史（history）、记忆（memory）、技能（skill）、子 agent 规范在任务中途丢失，导致 agent 无法在跨 session、跨轨迹的场景下累积进展。</p>
+  <p><strong>问题：</strong>现有的 RLM harness（reinforcement learning model harness，驱动强化学习模型完成任务的外部执行框架）缺少持久状态和 agent 间通信机制，限制了测试时计算（test-time compute，模型在生成答案时消耗的额外计算资源）的有效利用。</p>
+  <p><strong>解决方案：</strong>Prime Agent 使用持久 IPython REPL（交互式 Python 执行环境，让 agent 可以跨轮保留变量和执行历史）配合 Recursive Language Model（递归语言模型，可以把自身作为工具调用的模型架构）；Continual Harness 跨轨迹保存状态；递归子 agent（recursive subagent）通过直接消息通信协作；Agents View 让人类可实时检视和管理守护进程（daemon-backed sessions，后台持续运行的 agent 进程）。</p>
+  <p><strong>价值：</strong>在 ARC-AGI-3 RHAE（推理+人类辅助评估指标）上，Prime Agent 将 Best@1 从 30% 推至 95.5%，同时在长上下文编程、GPU 核心生成、模拟器构建等任务上持平或超越同类框架。</p>
+  <cite><a href="https://arxiv.org/abs/2608.23552" target="_blank" rel="noopener">arXiv 2608.23552</a> · <a href="https://huggingface.co/papers/2608.23552" target="_blank" rel="noopener">HuggingFace</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2608.16157" target="_blank" rel="noopener">FreeToken：边缘原生 MoE serving，8GB 游戏本 GPU 跑 35B 模型达 39.3 tokens/s</a></h3>
+  <p><strong>现状：</strong>Mixture-of-Experts（MoE，混合专家模型，每次推理只激活一部分专家网络以降低计算量）模型在云端已有成熟服务方案，但部署到个人硬件（笔记本、台式机）时，硬件异构性（CPU/GPU 比例、带宽限制、内存容量）和 agent 工作负载的动态变化使既有方案无法高效运行。</p>
+  <p><strong>问题：</strong>如何在个人设备上把 MoE serving（模型服务，即运行模型并响应请求）的整个栈（模型布局、专家驻留、CPU-GPU 协同、状态复用、内存管理）统一设计，适应不同机器的硬件资源比例？</p>
+  <p><strong>解决方案：</strong>FreeToken 把个人机器视为「弹性统一推理平台」而非「小 GPU」，协同设计上述全栈，并特别针对 agent 工作负载（执行模式持续变化）做了带宽自适应调度（bandwidth-adaptive execution，根据实时带宽动态决定哪些专家常驻 GPU）。</p>
+  <p><strong>价值：</strong>解码（decode，模型生成每个 token 的阶段）吞吐量比同类基线高 1.5–2.3 倍；8GB 显存的游戏本上，35B 模型达 39.3 tokens/s；支持 284B 模型跑在游戏台式机上，753B GLM-5.2 跑在单张工作站 GPU 上。</p>
+  <cite><a href="https://arxiv.org/abs/2608.16157" target="_blank" rel="noopener">arXiv 2608.16157</a> · <a href="https://huggingface.co/papers/2608.16157" target="_blank" rel="noopener">HuggingFace</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2608.09888" target="_blank" rel="noopener">BDH-CQ：循环隐空间推理 + ICL，150M 参数模型，中间推理步不解码成语言</a></h3>
+  <p><strong>现状：</strong>主流推理模型依赖 chain-of-thought（CoT，思维链，把推理过程写成自然语言中间步骤）来提升准确率，但这带来额外 token 消耗，且中间步骤必须转化为文字形式才能被处理。</p>
+  <p><strong>问题：</strong>能否让模型的中间推理过程完全留在高维向量空间（latent space，模型内部的数值表示层）中，不解码为语言，同时仍能利用 in-context learning（ICL，上下文学习，给模型若干例子让它学会任务）？</p>
+  <p><strong>解决方案：</strong>BDH-CQ 用循环记忆（recurrent memory，在序列处理中持续更新的内部状态向量）替代 CoT 文字步骤：推理时新输入持续更新记忆，模型在隐空间中迭代计算后直接输出答案，无需「说出」中间过程。与将 demonstrations（上下文示例）压缩为单一任务向量的方法不同，BDH-CQ 按序列逐元素处理示例，保留细粒度信息。</p>
+  <p><strong>价值：</strong>150M 参数规模下实现了有竞争力的 ICL 推理性能，为「轻量高效推理」提供了无需 CoT 冗余 token 的新路径，适合资源受限的 edge 场景。</p>
+  <cite><a href="https://arxiv.org/abs/2608.09888" target="_blank" rel="noopener">arXiv 2608.09888</a> · <a href="https://huggingface.co/papers/2608.09888" target="_blank" rel="noopener">HuggingFace</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2608.24053" target="_blank" rel="noopener">WeMM-Embedding：WeChat 多模态 embedding，文 + 图 + 视频 + 交叉输入统一向量空间</a></h3>
+  <p><strong>现状：</strong>多模态检索和推荐系统通常需要分别训练文本、图像、视频的 embedding（嵌入，把内容压缩为固定长度向量以便比较相似度）模型，跨模态对齐靠后期拼接，难以处理真实产品中大量的「交叉输入」（interleaved input，如图文混排的帖子、带字幕的视频）。</p>
+  <p><strong>问题：</strong>如何在单一模型中统一处理文本、图像、视频和交叉输入，同时达到工业规模的检索和推荐性能？</p>
+  <p><strong>解决方案：</strong>WeMM-Embedding 提供 2B、4B、9B 三个参数版本，两阶段训练：先大规模多模态对齐（alignment，让不同模态的表示在向量空间中可比较），再用精选数据 + 细粒度相关性监督 + 跨尺度知识迁移（cross-scale knowledge transfer，大模型引导小模型学习）做精调。输出 2048 维 L2 归一化向量，已在 WeChat 频道、公众号、朋友圈、电商场景中大规模部署。</p>
+  <p><strong>价值：</strong>2B 版本在 MMEB-v2 上超越原有 8B 级最优开源基线；9B 版本以 80.6 的整体分数创当时新 SOTA；模型权重和代码已在 GitHub 开源。</p>
+  <cite><a href="https://arxiv.org/abs/2608.24053" target="_blank" rel="noopener">arXiv 2608.24053</a> · <a href="https://huggingface.co/papers/2608.24053" target="_blank" rel="noopener">HuggingFace</a></cite>
+</article>
+
+<article class="item">
+  <h3><a href="https://arxiv.org/abs/2603.01357" target="_blank" rel="noopener">ASTRA-bench：时序个人上下文 + 工具沙箱 agent 评测，2413 场景五维打分</a></h3>
+  <p><strong>现状：</strong>现有 agent 评测基准多基于静态、匿名场景，无法反映真实用户在时间积累中形成的个人上下文（personal context，如历史日历、邮件、消息）和工具依赖。</p>
+  <p><strong>问题：</strong>如何构建一个评测框架，让 agent 必须在「真实个人的时间线上下文」中使用工具完成目标，并同时评测完成质量、工具使用规范性和泛化能力？</p>
+  <p><strong>解决方案：</strong>ASTRA-bench 包含 2413 个人工编写的对话场景，来自 5 个虚构真实人物的纵向生活事件，配备交互式工具沙箱（email、日历、消息等）。目标按 referential（指称复杂度）、functional（功能复杂度）、informational（信息量）三轴标注复杂度，评分覆盖五个维度：任务完成、工具使用、信息检索、对话有效性、无幻觉（no hallucination，即没有捏造事实）。</p>
+  <p><strong>价值：</strong>当前最优模型在高复杂度场景下表现显著下降，暴露了现有 agent 在「真实个人上下文中 + 工具依赖 + 多步规划」的系统性短板，是工具使用 agent 评测的重要新基准。</p>
+  <cite><a href="https://arxiv.org/abs/2603.01357" target="_blank" rel="noopener">arXiv 2603.01357</a></cite>
+</article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><span class="section-label">看一眼</span></div>
+
+<ul class="glance-list">
+  <li>@claudeai：Mythos 5.1 通过受信访问计划（trusted access program）面向网络安全和生命科学机构开放，Fable 5.1 对所有人全面开放——同一套权重，两种访问门槛。<a class="glance-src" href="https://x.com/claudeai/status/2094848592812917122" target="_blank" rel="noopener">X @claudeai →</a></li>
+  <li>@bcherny：Claude Code 用户每个 session 误触网络安全拦截的次数降低约 60%，生物学安全防护对无害请求的误拦截率降低 85%——Fable 5.1 把误报率当成了和 benchmark 同等重要的指标。<a class="glance-src" href="https://x.com/bcherny/status/2094864063478276288" target="_blank" rel="noopener">X @bcherny →</a></li>
+  <li>@bcherny：Enterprise、API、SDK 客户的 cache 读取价格从 $1/M tokens 降至 $0.25/M tokens，降幅 75%，典型 Claude Code session 节省约 38%。<a class="glance-src" href="https://x.com/bcherny/status/2094864062186426373" target="_blank" rel="noopener">X @bcherny →</a></li>
+  <li>@trq212（Thariq，Claude Code @Anthropic）：Fable 5.1 低努力（low effort）模式适合需要较少验证或边界情况较少的任务；好消息是切换 effort 档位不再会破坏 prompt cache（之前每次切换会使缓存失效，增加延迟和成本）。<a class="glance-src" href="https://x.com/trq212/status/2094945951865520458" target="_blank" rel="noopener">X @trq212 →</a></li>
+  <li>@_catwu（Cat Wu，Claude Code/Cowork @Anthropic）：「用上 Fable 5.1，我们团队开始承接以前需要数月才能完成的更有雄心的项目」——首批内部体感反馈。<a class="glance-src" href="https://x.com/_catwu/status/2094933602228416603" target="_blank" rel="noopener">X @_catwu →</a></li>
+  <li>@alexalbert__：「用 Blender headless（无界面模式的 3D 渲染工具）」——Fable 5.1 从一张地块照片出发，自动设计建筑、渲染成品，生成电影级穿越视频，全流程通过代码驱动。<a class="glance-src" href="https://x.com/alexalbert__/status/2094860187743986169" target="_blank" rel="noopener">X @alexalbert__ →</a></li>
+  <li>@thenanyu：「A new Claude release where one of the headline features is less annoying writing」——把「减少烦人感」写进发布公告，Nan Yu 觉得这本身值得大书特书。<a class="glance-src" href="https://x.com/thenanyu/status/2094928209095872530" target="_blank" rel="noopener">X @thenanyu →</a></li>
+  <li>@levie：「AI for cyber is about to go vertical（网络安全 AI 即将垂直起飞）」——前沿模型已精于发现和利用漏洞，企业面临的漏洞发现量只会增加，以 AI 应 AI、人工监督才是出路；这同时将是安全岗位的大利好。<a class="glance-src" href="https://x.com/levie/status/2095024699441119612" target="_blank" rel="noopener">X @levie →</a></li>
+  <li>@rauchg：Fable 5.1 已上线 Vercel AI Gateway（支持 200+ 模型、40+ 提供商的统一调用网关），可通过 sdk.vercel.ai 直接调用。<a class="glance-src" href="https://x.com/rauchg/status/2094867652573528074" target="_blank" rel="noopener">X @rauchg →</a></li>
+  <li>@rauchg：Vercel 宣布成为 @tannerlinsley 和 TanStack 团队的合作伙伴，无论你选 Next.js 还是 TanStack，Vercel 承诺提供同等服务支持。<a class="glance-src" href="https://x.com/rauchg/status/2094901483414372716" target="_blank" rel="noopener">X @rauchg →</a></li>
+  <li>@mattturck：「想在 X 上急速涨粉？头号招数：成为苹果 CEO」——一条讽刺社交媒体身份权重的段子，背景是 Tim Cook 新推文轻松爆火。<a class="glance-src" href="https://x.com/mattturck/status/2094829606855462940" target="_blank" rel="noopener">X @mattturck →</a></li>
+  <li>@nikunj（Nikunj Kothari，FPV Ventures）：WebMCP demo——让 agent 通过 MCP 协议原生交互网站 UI，创建自定义视图、保存人工编辑、生成可分享链接（给其他 agent 或人类），El Nino 情况追踪器是实测案例。<a class="glance-src" href="https://x.com/nikunj/status/2094922789128196314" target="_blank" rel="noopener">X @nikunj →</a></li>
+  <li>@nikunj：「AI 渗透越深，数据泄漏只会越来越严重，这很可怕，也才刚开始」——引用一则泄漏事件，对未来趋势表示担忧。<a class="glance-src" href="https://x.com/nikunj/status/2095002897859912044" target="_blank" rel="noopener">X @nikunj →</a></li>
+  <li>@danshipper（Dan Shipper，Every CEO）：「还记得我们以前必须手写低级代码的时候吗？」——看到一段用代码写出的低级操作的截图，感叹代码抽象层的历史进步。<a class="glance-src" href="https://x.com/danshipper/status/2094942644497457527" target="_blank" rel="noopener">X @danshipper →</a></li>
+  <li>@zarazhangrui：「这种网站设计风格是什么时候开始流行的？」——对某种最近突然遍地开花的设计语言提出疑问，47 条回复各方解读。<a class="glance-src" href="https://x.com/zarazhangrui/status/2094943457769099520" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+  <li>@zarazhangrui：「希望每座城市都是东京」——引用一条关于东京城市设计的推文，37 likes，真实的城市审美偏好声明。<a class="glance-src" href="https://x.com/zarazhangrui/status/2094999513627025757" target="_blank" rel="noopener">X @zarazhangrui →</a></li>
+  <li>@petergyang：用 Fable 5.1 升级时运行 /claude-api prompt-audit 扫描现有 skill——找出冗余规则和在新模型中已经是默认行为的指令，大量精简空间正在等着你。<a class="glance-src" href="https://x.com/petergyang/status/2094987791566622971" target="_blank" rel="noopener">X @petergyang →</a></li>
+  <li>@realmadhuguru：Shopify ML 团队是企业自建后训练（post-training）系统 + evals（评测体系）+ 数据飞轮的世界级案例，更多企业应该效仿——在 Shopify 自己发布相关成果后的即时点评。<a class="glance-src" href="https://x.com/realmadhuguru/status/2094973690576576675" target="_blank" rel="noopener">X @realmadhuguru →</a></li>
+  <li>@thsottiaux（Thibault Sottiaux，Codex/ChatGPT @OpenAI）：「Should we do a merch line?」——Codex 人气之旺让团队认真考虑开周边产品线，8384 likes，显然触碰到了社区某个柔软的地方。<a class="glance-src" href="https://x.com/thsottiaux/status/2094826808114057246" target="_blank" rel="noopener">X @thsottiaux →</a></li>
+  <li>Latent Space AINews：本期提要——Fable/Mythos 5.1 benchmark 全览；cache 读取涨量 1.7x 但价格大幅下降，综合每任务成本仍可能小涨 20%；Grok 4.7 和 Gemini Flash 3.8 也在路上；World Labs Atlas 同日发布。<a class="glance-src" href="https://www.latent.space/p/ainews-claude-fablemythos-51-new" target="_blank" rel="noopener">Latent Space →</a></li>
+</ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-08-15.html">← AUG 15</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
