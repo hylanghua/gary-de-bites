@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — September 5, 2026</title>
+  <meta name="description" content="麦肯锡 2026 年调查显示，三分之一企业用 Agent 编程取代了部分软件采购；WebMCP 成为 W3C 标准，让 AI Agent 可直接调用网站原生工具；本周 X 上的建造者们在吸收 GPT-6 Astra 冲击的同时，调整着各自的产品节奏。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">September 5, 2026</h1>
+
+  <p class="post-lead">麦肯锡 2026 年调查显示，三分之一企业用 Agent 编程取代了部分软件采购；WebMCP 成为 W3C 标准，让 AI Agent 可直接调用网站原生工具；本周 X 上的建造者们在吸收 GPT-6 Astra 冲击的同时，调整着各自的产品节奏。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><h2>新闻速递</h2></div>
+
+    <article class="item">
+      <h3><a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank" rel="noopener">麦肯锡 2026 AI 调查：三分之一企业已用 Agent 编程代替购买软件</a></h3>
+      <p>麦肯锡 2026 年《AI 现状》全球调查于 8 月 25 日发布，覆盖 97 个国家 1,719 名受访者。核心数据：32% 的企业已因为可以用 Agent 编程工具内部自建，而主动放弃了购买至少一款现成软件或功能。大企业（年收入 10 亿美元以上）将 AI Agent 规模化的比例从去年的 27% 升至 40%；在大企业中，约三成正在规模化部署软件编程 Agent。</p>
+      <p>但个人生产力和公司 EBIT（息税前利润）之间的落差依然显著：80% 受访者看到个人效率提升，只有 37% 表示公司层面的财务指标受到影响——与去年持平。麦肯锡的结论是 AI 已「走在 ROI 的路上」，但大多数企业还没把效率收益转化成财务结果。<strong>三分之一企业已用内建代替采购，这是软件行业结构性压力的具体数字，不是比喻。</strong></p>
+      <cite><a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" target="_blank" rel="noopener">McKinsey Global Survey</a> · <a href="https://explainx.ai/blog/mckinsey-state-of-ai-2026-roi-agentic-coding-august-2026" target="_blank" rel="noopener">explainx.ai 解析</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://zuplo.com/blog/what-is-webmcp" target="_blank" rel="noopener">WebMCP 成为 W3C 标准：Agent 可直接读网站工具接口，不再靠截图猜测</a></h3>
+      <p>W3C Web 机器学习社区工作组正式将 WebMCP（Web Model Context Protocol，网页模型上下文协议）列为可交付标准，Chrome 146 已在 2026 年 2 月提供早期预览。WebMCP 的核心是浏览器原生 API `navigator.modelContext`：网站可以主动声明自己能做哪些操作、参数是什么、如何调用——Agent 直接读取，不再需要截图、发给视觉模型、猜哪里可以点击。</p>
+      <p>本质上，WebMCP 是 MCP（模型上下文协议，让 AI 工具调用外部系统的通用接口）的浏览器原生版——网站本身成为 MCP 服务器，工具定义和执行都在浏览器标签页内完成，无需单独部署后端。Vercel CEO Guillermo Rauch 在 X 上表示「超级看好 WebMCP，Agent 需要直接骑在现有 WWW 基础设施上」。<strong>Agent 浏览网页的方式正在从「视觉模拟人」升级为「直接读接口」，这一步会让网页端 Agent 的可靠性跃升一个台阶。</strong></p>
+      <cite><a href="https://zuplo.com/blog/what-is-webmcp" target="_blank" rel="noopener">Zuplo</a> · <a href="https://x.com/rauchg" target="_blank" rel="noopener">X @rauchg</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><h2>AI 方向观点</h2></div>
+
+    <article class="item">
+      <h3><a href="https://x.com/thsottiaux/status/2096101429832552872" target="_blank" rel="noopener">Thibault Sottiaux：Astra 是我们内部真实的竞争优势，路线图提前了整整六个月</a></h3>
+      <p>Thibault Sottiaux（AI 产品建造者）写道：在 Astra 没有全面开放的这段时间里，它是我们最大的竞争优势。自从接入 Astra，团队生产力跳升明显——他们把部分原定计划整整提前了六个月。他在昨晚 Astra 正式上线时还跟了一条：「我们超出预期地赶在今天上线了……将对所有 Plus、Pro 和 Business 用户做全量重置。」</p>
+      <p>这个描述值得注意：不是「效率提升」或「生产力大幅改善」的泛泛之词，而是路线图的时间刻度真实缩短了半年。当一个工具能把六个月的工作量挤进更短的窗口，它改变的不只是效率，而是竞争动态本身——先用上它的团队会比同行早半年到达相同里程碑。<strong>Astra 的护城河不在于它多先进，而在于使用时间差积累起来的交付领先。</strong></p>
+      <cite><a href="https://x.com/thsottiaux" target="_blank" rel="noopener">X @thsottiaux</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/rauchg/status/2095926173293572467" target="_blank" rel="noopener">Guillermo Rauch（Vercel CEO）：AI 软件工厂将交付无 bug 的、自我改进的软件</a></h3>
+      <p>Guillermo Rauch 在 X 上写道：「AI software factories will yield bug-free, self-improving software」。这是一个大胆的方向性断言。他的论点链是：Agent 可以不间断地跑测试、复现 bug、提交修复、再次验证——这个循环以机器的速度运行时，软件的缺陷密度会趋近于零；而自我改进意味着软件会在运行过程中发现自己的边缘情况并主动打补丁。</p>
+      <p>这不是遥远的愿景，而是 Vercel 正在推进的工程方向。Rauch 同日还表示超级看好 WebMCP——他的逻辑一以贯之：Agent 应该直接骑在现有基础设施上，而不是重新发明一套接口。<strong>如果「无 bug」是方向，那软件工程的价值重心将从「写代码」转向「定义什么叫正确」——测试设计和规格书的权重会超过实现本身。</strong></p>
+      <cite><a href="https://x.com/rauchg" target="_blank" rel="noopener">X @rauchg</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/zarazhangrui/status/2096082116828406233" target="_blank" rel="noopener">Zara Zhang：人们对 AI 写作质量的感知，普遍高于它的实际水平</a></h3>
+      <p>Zara Zhang（前 GGV 合伙人）在 X 上写道：「Most people perceive AI to be a better writer than it actually is」。她的观察来自与大量内容创作者和企业用户的接触：很多人会接受 AI 生成的文字，觉得「够好了」，但如果让他们在不知来源的情况下比较，AI 文本在语气的细腻度、判断的原创性、表达的准确度上仍有系统性差距。</p>
+      <p>这个感知偏差是双刃的。对产品来说，它意味着 AI 写作工具比它实际能力所支撑的空间「卖得更贵」——短期内是优势，长期可能是预期管理问题。对用户来说，感知高于实际导致的风险是：用 AI 文字替代了需要真实判断的场合，却没有察觉到差距的存在。<strong>「够好了」这个感知本身，正在成为一个需要被主动对抗的认知陷阱。</strong></p>
+      <cite><a href="https://x.com/zarazhangrui" target="_blank" rel="noopener">X @zarazhangrui</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/amasad/status/2096022087035195647" target="_blank" rel="noopener">Amjad Masad（Replit CEO）：奇点已至，只是分布不均匀</a></h3>
+      <p>Amjad Masad 在 X 上借用 William Gibson 的名句变体写道：「The singularity is here, it's just not evenly distributed」。原话是 Gibson 谈未来时说「未来已来，只是分布不均」——Masad 把「未来」换成「奇点」，用来描述 GPT-6 Astra 上线后的现实：有些团队已经把六个月的计划浓缩进几周，有些人还在用上一代工具按部就班。</p>
+      <p>奇点（Singularity）在 AI 语境里指的是 AI 能力超过人类、进入自我加速改进的临界点。Masad 并不是说奇点已经在技术上发生，而是说体验层面的断裂已经出现：使用最新工具的人和还没用上的人之间，生产力和决策速度的差距正在变成代际差，而不是一次性的效率提升。<strong>奇点不是一个时刻，而是一条越来越宽的能力鸿沟——这条沟正在按行业、按团队、按个人各自划开。</strong></p>
+      <cite><a href="https://x.com/amasad" target="_blank" rel="noopener">X @amasad</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><h2>产品与商业</h2></div>
+
+    <article class="item">
+      <h3><a href="https://www.lennynewsletter.com/p/how-to-turn-your-ai-into-a-world" target="_blank" rel="noopener">用随机字符串给 AI 注入设计灵感——String Seed of Thought 技术拆解</a></h3>
+      <p>Tim Ferriss 本周的 5-Bullet Friday 推荐了一篇 Anshu Chimala（前苹果工程与设计团队负责人，12 年经验）发布在 Lenny's Newsletter 上的文章：如何让 AI 跳出它的默认审美。核心技术叫「String Seed of Thought」，来自 Sakana AI 的研究：给模型一个随机生成的长字母数字字符串，让它从中寻找灵感——子模式、特殊数字、任何触发联想的结构——然后再生成设计方案。</p>
+      <p>这个技术解决的是一个 AI 设计工具的通病：反复提示同一类风格，AI 会收敛到训练数据里最「平均」的那个答案，也就是最像大多数设计的那个。随机字符串强迫模型每次都找一个新的发散起点，而不是默认回到中位数审美。具体 prompt：要求 AI 先用 shell 脚本生成随机字符串，再把这个字符串转化成设计方向（配色、排版、布局），最后基于这个方向输出设计。字符串不出现在设计中，只作为内部灵感触发器。<strong>AI 设计工具的瓶颈不是能力，是发散度——人工注入随机性是目前最实用的越狱方式。</strong></p>
+      <cite><a href="https://tim.blog/" target="_blank" rel="noopener">Tim Ferriss 5-Bullet Friday</a> · <a href="https://www.lennynewsletter.com/p/how-to-turn-your-ai-into-a-world" target="_blank" rel="noopener">Lenny's Newsletter</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/garrytan/status/2095971990645755941" target="_blank" rel="noopener">Garry Tan（YC 主席）：AsideAI 把 AI 工具安装从两小时压缩到分钟级</a></h3>
+      <p>Garry Tan 在 X 上连发两条关于 AsideAI 的使用感受：「用 AsideAI 作为 AI harness（AI 任务协调层，让 AI 工具之间能互相配合、共享上下文的运行框架）安装 OpenClaw + Slack 的体验是 absurd（荒诞的好）——这个流程以前要两个小时」。第二条他补充 GStack（他参与的项目）已把 AsideAI browser 定为首选的远程会话浏览器。</p>
+      <p>「以前要两小时」这个数字本身值得停下来看一眼。AI 工具之间的互通配置（授权、接口、上下文同步）长期以来是开发者的隐性时间成本——会做的人觉得这是「正常流程」，不会做的人直接放弃。AsideAI 把这个摩擦压缩到分钟级，意味着 AI 工具组合使用的门槛正在从「需要工程背景」降到「愿意试一下」。<strong>工具之间的连通成本决定了 AI 采用的上限——把安装摩擦砍掉，就是在扩大整个 AI 工具市场的可寻址用户。</strong></p>
+      <cite><a href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><h2>人文与哲学</h2></div>
+
+    <article class="item">
+      <h3>「我们往往把自己的想法当成现实的描述」— Bruce Tift</h3>
+      <p>这是 Tim Ferriss 本周 5-Bullet Friday 的结尾引用，来自 Bruce Tift 的《Already Free: Buddhism Meets Psychotherapy on the Path of Liberation》（《已然自由：佛教与心理治疗在解脱之路上的相遇》）。原文：「Most of us tend to take our thoughts and ideas as actual descriptions of reality.」</p>
+      <p>这句话的力量在于它描述的是一种几乎无处不在的认知错误：把「我认为 X」混淆成「X 就是事实」。思想是对现实的解释，不是现实本身；但大多数人在日常决策中并不做这个区分，直到面临强烈的反驳才被迫停下来。在一个信息密度极高、每天都有新模型新说法的 AI 时代，这句话有额外的重量——我们对 AI 能力的判断、对风险的预估、对未来的描述，都在以「想法即事实」的模式运行。<strong>懂得把「我认为」和「事实是」区分开，是认知质量的基础，也是在高速信息流里保持清醒的基本操作。</strong></p>
+      <cite><a href="https://tim.blog/" target="_blank" rel="noopener">Tim Ferriss 5-Bullet Friday</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/adityaag/status/2095910036652577028" target="_blank" rel="noopener">Aditya Agarwal（Dropbox 前 CTO）：我完全理解技术原理，但这些模型依然是魔法</a></h3>
+      <p>Aditya Agarwal 写道：「Me: I totally understand how RL, inference time scaling, modern data-verification loops work. Also Me: These models are total sorcery.」——我完全理解强化学习（RL，让模型从反馈中学习的训练方法）、推理时算力扩展（inference time scaling，在生成答案时多用计算资源来提升质量）、现代数据验证循环是怎么运作的。然而，这些模型依然是彻头彻尾的魔法。</p>
+      <p>这个自我矛盾的坦白来自一个真正理解底层机制的工程领导者，而不是没接触过技术的旁观者。理解原理和真正「感知到它的运作」之间的认知落差，一直存在于所有复杂系统中——只不过 AI 模型的这道鸿沟格外宽：我们能写出模型的每一行训练代码，却无法从能力上预测它下一秒会输出什么。<strong>一个既懂原理又感到惊奇的工程师，比一个只有其中一种状态的人更值得信任他的判断——这种矛盾的共存本身就是诚实。</strong></p>
+      <cite><a href="https://x.com/adityaag" target="_blank" rel="noopener">X @adityaag</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><h2>AI 进展</h2></div>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/papers/2609.04148" target="_blank" rel="noopener">Terminal-Universe：把 Agent 的运行轨迹变成可复用的训练环境</a></h3>
+      <p><strong>现状：</strong>终端型代码 Agent（terminal-based code agent，在命令行里完成编程任务的 AI）的运行轨迹数据已大量积累，但可执行的、真实的训练环境极度稀缺——大多数环境需要手工搭建。</p>
+      <p><strong>问题：</strong>现有轨迹数据的价值没有被充分利用，无法自动转化为新的训练任务和评测场景。</p>
+      <p><strong>解决方案：</strong>Terminal-Universe 观察到 Agent 轨迹中的工具执行历史本身就暴露了环境结构——利用这个信息从轨迹反向重建原始环境，并在重建后的环境里合成新任务和延伸交互。应用于公开 Agent 轨迹数据，生成了 37,300 个可直接用于训练的环境。</p>
+      <p><strong>价值：</strong>用 Terminal-Universe 数据做监督微调（supervised fine-tuning，SFT，让模型在有标准答案的示例上继续学习）后，Qwen3.5-27B 在 Terminal-Bench 2.1 上提升 11.9 分，在 EvoCode-Bench v2 多轮评测上提升 13.8 分。</p>
+      <p><strong>未来方向：</strong>轨迹即数据集——每一次 Agent 在真实环境里的运行都在生成潜在的训练素材，这条路线将让训练数据的获取成本持续下降。</p>
+      <cite><a href="https://huggingface.co/papers/2609.04148" target="_blank" rel="noopener">HuggingFace Papers</a> · <a href="https://arxiv.org/abs/2609.04148" target="_blank" rel="noopener">arXiv 2609.04148</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/papers/2609.03796" target="_blank" rel="noopener">LLaDA-Image：全开放训练方案的图像生成器，刷新开源最优</a></h3>
+      <p><strong>现状：</strong>高质量图像生成模型主要由封闭的商业模型主导，开源生成器在训练方案透明度和生成质量上普遍落后。</p>
+      <p><strong>问题：</strong>缺乏完整公开的、可复现的图像生成训练流程，阻碍了社区在此基础上的研究和改进。</p>
+      <p><strong>解决方案：</strong>LLaDA-Image 将一个从头训练的 6B 扩散 Transformer（DiT，专门用于图像生成的神经网络架构）与基于扩散语言模型 LLaDA2.0-Mini 的视觉理解模块配合，完整公开模型权重、训练代码和训练数据配方。训练流程分阶段：先做图像单独预训练建立视觉生成能力，再做多模态融合。另有 LLaDA-Image-Turbo 4 步蒸馏版，大幅提升生成速度。</p>
+      <p><strong>价值：</strong>在 Qwen-Image-Bench 英文和中文两个榜单上均刷新了开源模型最优成绩（53.53 和 53.38）；完整的训练食谱为下一步社区改进提供了可复现基础。</p>
+      <p><strong>未来方向：</strong>文生图的开源生态正在追赶商业封闭模型，下一个突破点可能在更高分辨率和视频生成的开放训练方案。</p>
+      <cite><a href="https://huggingface.co/papers/2609.03796" target="_blank" rel="noopener">HuggingFace Papers</a> · <a href="https://arxiv.org/abs/2609.03796" target="_blank" rel="noopener">arXiv 2609.03796</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/papers/2609.01507" target="_blank" rel="noopener">LatentPress：把长上下文压缩成 memory token，7.7 倍压缩率超过不压缩基线</a></h3>
+      <p><strong>现状：</strong>处理超长文档和对话历史时，LLM 需要在上下文窗口里放入大量 token，导致推理速度慢、成本高。</p>
+      <p><strong>问题：</strong>现有压缩方法（文本摘要、OCR 提取）要么损失信息太多，要么速度太慢，无法在生产环境中实用。</p>
+      <p><strong>解决方案：</strong>LatentPress 用轻量级的「写者」模型把长上下文编码成一组连续的 memory token（记忆向量），冻结的语言模型解码器通过输入嵌入接口直接读取——不改变模型本身，只在输入端做压缩。写一个对话仅需 43 毫秒，比文本摘要快约一个数量级。</p>
+      <p><strong>价值：</strong>在 LongMemEval 上，7.7 倍压缩下准确率 0.504，超过不压缩的 0.490；远超文本摘要（0.184）和 OCR 压缩（0.426）基线。读取速度比原始上下文快 5 至 9 倍。</p>
+      <p><strong>未来方向：</strong>长记忆是 Agent 实用化的关键瓶颈，能以更低成本、更高速度管理记忆的压缩层，将成为 Agent 应用的必要基础设施组件。</p>
+      <cite><a href="https://huggingface.co/papers/2609.01507" target="_blank" rel="noopener">HuggingFace Papers</a> · <a href="https://arxiv.org/abs/2609.01507" target="_blank" rel="noopener">arXiv 2609.01507</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2608.09888" target="_blank" rel="noopener">BDH-CQ：150M 参数循环隐空间推理，刷新 ARC-AGI-1 成本效率边界</a></h3>
+      <p><strong>现状：</strong>大规模推理模型（reasoning model）通常靠生成中间推理链（chain-of-thought，思维链，让模型把推理过程写出来再得出结论）来提升准确率，但 token 越多，推理成本和延迟越高。</p>
+      <p><strong>问题：</strong>在成本敏感的场景（移动端、实时应用）里，高准确率和低推理成本之间难以兼顾。</p>
+      <p><strong>解决方案：</strong>BDH-CQ 把推理工作做在循环的隐空间（recurrent latent space，一种不需要输出中间文字的推理状态空间）里：输入示例持续更新模型的循环记忆，模型在高维向量空间里迭代计算出答案，全程不生成中间文字。这使得复杂推理不再与 token 数量线性挂钩。</p>
+      <p><strong>价值：</strong>150M 参数规模下达到 29.5% pass@2，每任务推理成本仅 $0.0007，突破 ARC-AGI-1（专门测试类人直觉推理的基准，用以衡量模型是否接近通用人类水平）成本效率帕累托前沿，建立新的基准。</p>
+      <p><strong>未来方向：</strong>在隐空间里推理而不是在 token 序列里推理，是降低推理成本的另一条路线，与大算力暴力路线形成对比——两者可能都会在不同场景找到各自的生态位。</p>
+      <cite><a href="https://arxiv.org/abs/2608.09888" target="_blank" rel="noopener">arXiv 2608.09888</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://huggingface.co/papers/2608.16157" target="_blank" rel="noopener">FreeToken：让 MoE 大模型在 8GB 笔记本 GPU 上跑，边缘推理新框架</a></h3>
+      <p><strong>现状：</strong>MoE（Mixture-of-Experts，混合专家）架构的大模型通过只激活部分参数实现高效推理，但完整权重仍需要加载进内存——这对个人设备（笔记本、台式机）来说是现实瓶颈。</p>
+      <p><strong>问题：</strong>开放权重大模型日益可得，但运行它们所需的硬件仍然令人望而却步，造成「可访问性鸿沟」。</p>
+      <p><strong>解决方案：</strong>FreeToken 把整个服务栈——模型布局与加载、专家驻留策略、CPU-GPU 协同执行（CPU 和显卡共同分担推理工作）、Agent 状态复用、运行时内存管理——围绕边缘硬件的两个现实重新设计：Agent 工作负载的执行模式在不断变化；不同个人设备的 GPU/CPU/内存/互连资源比例各不相同。引入带宽自适应执行、双缓冲 prefill 流水、全局 LRU 专家缓存（优先保留最近用过的专家参数）。</p>
+      <p><strong>价值：</strong>支持 20 多个 MoE 模型，在 8GB 笔记本 GPU 到单工作站显卡的硬件范围内均可运行真实的编程和工具调用 Agent。</p>
+      <p><strong>未来方向：</strong>本地运行大模型是数据隐私和低延迟场景的刚需，边缘推理框架的成熟将加速「无须上云」的 AI 应用落地。</p>
+      <cite><a href="https://huggingface.co/papers/2608.16157" target="_blank" rel="noopener">HuggingFace Papers</a> · <a href="https://arxiv.org/abs/2608.16157" target="_blank" rel="noopener">arXiv 2608.16157</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><h2>看一眼</h2></div>
+    <ul class="glance-list">
+      <li>swyx 正在写一份 Astra 与 Fable 5.1 的前沿模型 AEO（Agent Engineering Orbit，Agent 工程生态圈）报告，顺带提到当被问及最佳 AI 播客时 Claude 推荐了 Latent Space。<a class="glance-src" href="https://x.com/swyx/status/2096095862732755342" target="_blank" rel="noopener">X @swyx →</a></li>
+      <li>Peter Yang：OpenAI 应该出一款 Apple Watch App，让用户直接语音口述给 Codex 线程，再听语音回复——一个手腕上的编程助手。<a class="glance-src" href="https://x.com/petergyang/status/2096086845159563476" target="_blank" rel="noopener">X @petergyang →</a></li>
+      <li>Madhu Guru：这个周末的建议——找一个你熟悉的真实工作流，自己动手用 AI 重做一遍，只有实际构建才能真正学到东西。<a class="glance-src" href="https://x.com/realmadhuguru/status/2095907570540335174" target="_blank" rel="noopener">X @realmadhuguru →</a></li>
+      <li>Dan Shipper：「can you tell Astra is running my @every office fantasy team」——Astra 正在替他管理 Every 的内部梦幻橄榄球队，还专门做了选秀前的「film study（赛前录像研究）」。<a class="glance-src" href="https://x.com/danshipper/status/2095885899871449385" target="_blank" rel="noopener">X @danshipper →</a></li>
+      <li>Matt Turck（FirstMark Capital 合伙人）：Hugging Face 被 Nvidia 收购的消息出来后，Thomas Wolf 的评论人气只升不降——「cannot stop winning」。<a class="glance-src" href="https://x.com/mattturck/status/2095885284801982779" target="_blank" rel="noopener">X @mattturck →</a></li>
+      <li>Sam Altman：GPT-6 Astra 正式向所有 Plus 和 Business 用户全面开放，「Happy building!」<a class="glance-src" href="https://x.com/sama/status/2096008528834244741" target="_blank" rel="noopener">X @sama →</a></li>
+      <li>Amjad Masad：「Astra on Replit ✨」——Replit 已接入 GPT-6 Astra，配合他的奇点分布论使用效果更佳。<a class="glance-src" href="https://x.com/amasad/status/2095986658185453928" target="_blank" rel="noopener">X @amasad →</a></li>
+      <li>Proofpoint 推出 SOC Analyst Agent：基于 OpenAI Daybreak（企业级高安全模型计划）把自然语言安全问题转化为结构化、可追溯的调查报告，Q3 末 GA。<a class="glance-src" href="https://agentic.ai/news" target="_blank" rel="noopener">Agentic.ai →</a></li>
+    </ul></section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-09-04.html">← SEP 4</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
