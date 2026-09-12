@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gary de Bites — September 12, 2026</title>
+  <meta name="description" content="DeepSeek v4.1-Flash 以 763B 参数的全新因果编码-解码架构重回舞台，MIT 授权、每任务成本仅 $0.27，行业普遍认为应该叫 v5；Cognition、Cursor、OpenAI 同天涌入「持久化 Agent」赛道；Jack Cheng 写下了今年最值得读的 AI 散文，关于用完 AI 额度后，他才知道自己的问题够不够好。">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<div class="wrap">
+<nav class="back-nav">
+  <a href="../index.html">← All issues</a>
+</nav>
+
+<div class="page">
+
+  <h1 class="post-date">September 12, 2026</h1>
+
+  <p class="post-lead">DeepSeek v4.1-Flash 以 763B 参数的全新因果编码-解码架构重回舞台，MIT 授权、每任务成本仅 $0.27，行业普遍认为应该叫 v5；Cognition、Cursor、OpenAI 同天涌入「持久化 Agent」赛道；Jack Cheng 写下了今年最值得读的 AI 散文，关于用完 AI 额度后，他才知道自己的问题够不够好。</p>
+
+  <section class="section"><div class="section-head"><span class="dot dot--r"></span><h2>新闻速递</h2></div>
+
+    <article class="item">
+      <h3><a href="https://www.deepseek.com/en/news/deepseek-v4-1-flash/" target="_blank" rel="noopener">DeepSeek v4.1-Flash 发布：763B 参数，全新因果编码-解码架构，MIT 授权，每任务成本 $0.27</a></h3>
+      <p>DeepSeek 以一个低调的「v4.1-Flash」标签，发布了一个实质上是代际跳跃的模型。架构上最大的创新是重新引入因果编码-解码（Causal Encoder-Decoder）分离设计：前 20 层作为编码器处理输入（仅激活 8B 参数），后 20 层作为解码器生成输出（激活 16B 参数），全局 KV 缓存（模型用于记住上下文的键值存储）则从编码器末层直接投影，而不是每一层都单独计算，这使得 KV 缓存占用降至 V4 Pro 的 1/8——对于需要处理长上下文的 Agent 工作流尤其关键。</p>
+      <p>基准表现同样强劲：Vals 评为开源权重第一，AutomationBench-AA 达到 69%，与 GPT-6 Astra 持平，比上一代 V4 Pro 高 12 个百分点。价格则是每百万 tokens 输入 $0.30，平均每个任务只需 $0.27，比 V4 Pro 便宜约 7 倍。Sebastian Raschka 直接说「应该叫 DeepSeek V5」。1M token 上下文窗口、视觉输入支持、MIT 许可，同步发布。DeepSeek 同时宣布软下架 V4 Pro：现有 API 流量将静默路由至 v4.1-Flash，以 Flash 价格计费。</p>
+      <cite><a href="https://www.deepseek.com/en/news/deepseek-v4-1-flash/" target="_blank" rel="noopener">DeepSeek</a> · <a href="https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b" target="_blank" rel="noopener">Latent Space / AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://cognition.ai/blog/swe-2" target="_blank" rel="noopener">Cognition SWE-2 + Devin Voice：编程 Agent 成本降 70%，同天推出声控接口</a></h3>
+      <p>Cognition 在同一天发布了两件事：SWE-2 和 Devin Voice。SWE-2 是 Cognition 自己训练的编程模型，声称在主流编程基准上达到前沿水平，同时成本低至竞品的 30%。技术上的亮点是团队自建了算法、基础设施和数据管道，并发现一个简单的线性长度惩罚机制就能在不同「努力程度」下保持训练效果的帕累托曲线（Pareto curve，即在不同约束下的最优解分布）。</p>
+      <p>Devin Voice 则是基于 OpenAI GPT-Live-1 和 SWE-2 构建的语音接口：用户直接对 Devin 说「帮我重构这个函数」，Devin 立刻开始写代码。同步宣布 Dioxus Labs 并入 Cognition，后者将继续维护 Dioxus（一个 Rust 前端框架）同时参与开发 Devin 的 VM 和计算机使用（computer use）基础设施。</p>
+      <cite><a href="https://cognition.ai/blog/swe-2" target="_blank" rel="noopener">Cognition</a> · <a href="https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b" target="_blank" rel="noopener">AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://www.cursor.com/blog/projects" target="_blank" rel="noopener">Cursor Projects + OpenAI Agents API：持久化 Agent 基础设施同日落地</a></h3>
+      <p>Cursor 发布了 Projects 功能：每个项目内有一个协调器 Agent（coordinator agent，负责分配子任务、跟踪状态的主控 Agent），子 Agent 之间共享记忆和生成物，跨设备同步。这从「每次对话一个任务」变成了「长期项目一套持续运行的 Agent 团队」。OpenAI 同日开放 Agents API 公测，提供云端沙盒（managed sandbox）——代码执行、文件存储、生成物托管都由 OpenAI 托管，开发者不需要自己管基础设施，类似「Codex 上云」。</p>
+      <p>两件事放在一起，指向同一个方向：Agent 的竞争优势，正在从模型能力本身，转移到「状态持久化 + 可检查会话 + 明确的编排控制」这层基础设施。单次对话生成代码，已经是上一代产品形态。</p>
+      <cite><a href="https://www.cursor.com/blog/projects" target="_blank" rel="noopener">Cursor</a> · <a href="https://openai.com/index/agents-api/" target="_blank" rel="noopener">OpenAI</a> · <a href="https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b" target="_blank" rel="noopener">AINews</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--o"></span><h2>AI 方向观点</h2></div>
+
+    <article class="item">
+      <h3><a href="https://www.redwoodresearch.org/posts/monitorability-norms" target="_blank" rel="noopener">Redwood Research & Ryan Greenblatt：消除链式推理可见性的架构，上线前必须先发布透明度证据</a></h3>
+      <p>Redwood Research 提出了一套「可监控性透明规范」：如果一个模型架构会实质性削弱或消除链式推理（chain-of-thought，CoT，模型在给出答案前写出逐步思考过程，目前是安全研究者监控 AI 意图的重要窗口）的可见性，研究机构应该在部署前公布证据和相关政策，而不是悄悄发布再观察反应。Ryan Greenblatt 明确表示：公司在削减 CoT 依赖之前，应该发表研究，说明这样做对安全属性的影响。</p>
+      <p>Neel Nanda 把 GPT-6 Astra 的出现解读为这一担忧的具体化：如果一个模型在没有 CoT 的情况下就表现出大幅跃升的推理能力，可能意味着内部架构发生了我们尚不清楚的变化。这不是禁止技术进步，而是「先发布证据，再上产品」的基本工程伦理。<strong>AI 安全的窗口期正在收窄，不是因为模型变坏了，而是因为我们能看到的部分越来越少。</strong></p>
+      <cite><a href="https://www.redwoodresearch.org/posts/monitorability-norms" target="_blank" rel="noopener">Redwood Research</a> · <a href="https://www.latent.space/p/ainews-deepseek-v41-flash-763b-p8b" target="_blank" rel="noopener">AINews</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/danshipper/status/2098481799047647715" target="_blank" rel="noopener">Dan Shipper（Every 创始人）：基准分越高，不等于真实工作越好用</a></h3>
+      <p>Dan Shipper 在 X 写道：「Better benchmark scores don't tell much about real work.」他的意思很直接：现在模型发布都拿基准分数（benchmark，标准化测试集上的客观分数）来争先，但这些数字和「我能用它完成真正的工作吗」之间，存在一条越来越宽的沟。</p>
+      <p>这个判断和他在 Every 做的事高度吻合：他们不写「GPT-X vs Claude-Y 基准对比」，而是用自己的实际项目压测模型，再写下真实体验。在基准竞赛最激烈的时期，这是一种稀缺的视角。<strong>基准是模型厂商的语言，任务完成率才是用户的语言，两者的对话还没有真正建立起来。</strong></p>
+      <cite><a href="https://x.com/danshipper" target="_blank" rel="noopener">X @danshipper</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/garrytan/status/2098615692425851205" target="_blank" rel="noopener">Garry Tan（YC CEO）：考了 1600 分，才有资格解锁更难的题</a></h3>
+      <p>Garry Tan 在 X 用 SAT 满分（1600 分，美国大学入学标准考试的满分）打了个比方：当一个 AI 模型在某个基准上得了满分，真正应该发生的事，是立刻更换一套更难的测试题，而不是继续沿用已经被攻克的题库。</p>
+      <p>这是对当前 AI 评估体系的精准批评：基准被「饱和」（benchmark saturation，指模型分数接近天花板，题目失去区分度）的问题一再出现，但产业并没有足够快地更新测试集。<strong>我们正在用 2022 年的尺子量 2026 年的模型，分数越好看，信息就越失真。</strong></p>
+      <cite><a href="https://x.com/garrytan" target="_blank" rel="noopener">X @garrytan</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--y"></span><h2>产品与商业</h2></div>
+
+    <article class="item">
+      <h3><a href="https://x.com/amasad/status/2098548464452055437" target="_blank" rel="noopener">Amjad Masad（Replit CEO）：Replit 完成首次收购，被收购的公司完全用 Replit 构建</a></h3>
+      <p>Amjad Masad 宣布 Replit 收购了一家初创公司，而这家公司的整个产品是在 Replit 上构建的。这件事的两层意思都值得记：第一，Replit 已经从「写代码的 IDE」成熟到「能生产出有被收购价值的商业产品」的平台；第二，Replit 在打通一条完整的创业闭环——「用 Replit 构建 → 在 Replit 上运行 → 被 Replit 收购」。</p>
+      <p>对 PM 来说，这是平台生态成熟度的一个信号。类比的不是「AWS 上的公司被亚马逊收购」（那太常见了），而是更像「Shopify 上的店开得太好，Shopify 来投资甚至并购」。如果这条路走通了，Replit 对创业者的吸引力就不只是工具，而是生态入口。<strong>「用 Replit 建，卖给 Replit」是一条以前从未存在过的退出路径，现在它开口了。</strong></p>
+      <cite><a href="https://x.com/amasad" target="_blank" rel="noopener">X @amasad</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/ryolu_/status/2098324260867772806" target="_blank" rel="noopener">Ryo Lu（Cursor 设计师）：Cursor Projects 长线 Agent 背后的设计逻辑</a></h3>
+      <p>Ryo Lu 发布了 Cursor 新功能 Projects：「Long-lived agents for your big ideas now in Cursor.」Projects 的核心是让一个 Agent 团队跨会话持续存在——协调器记住状态，子 Agent 共享工件（artifact，任务过程中产生的文件、代码片段、中间结果），多设备同步。Ryo 同日宣布已从上海搬到台北。</p>
+      <p>从设计师视角看，「长线 Agent」解决的是一个体验断点：每次打开 Cursor 都要重新描述项目背景，Agent 没有上下文记忆，用户必须反复「喂历史」。Projects 把这条断点填上了，让 AI 助手真正意义上地「认识你的项目」，而不只是认识你当前这次对话。<strong>让 Agent 能持续积累项目知识，是 AI 编程工具从「快速原型」走向「真实工程环境」的关键一步。</strong></p>
+      <cite><a href="https://x.com/ryolu_" target="_blank" rel="noopener">X @ryolu_（Cursor 设计师）</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://x.com/zarazhangrui/status/2098483800456179923" target="_blank" rel="noopener">Zara Zhang（GGV）：「单人公司」这个概念被过度炒作了</a></h3>
+      <p>Zara Zhang 在 X 写道：「I think the idea of 'one-person company' is overrated.」这是对当前 AI 叙事中一个流行概念的直接反驳——很多人在谈「AI 让单人公司可以做到过去 100 人才能做到的事」，但 Zara 认为，协作、团队密度、不同视角之间的碰撞，本身就是价值的来源，不是需要被 AI 绕过的摩擦。</p>
+      <p>这个观点在当前语境下需要一定勇气。AI 工具让个人产能大幅跃升是事实，但「单人 = 最优」并不自然地从中推出。真正重要的问题是：AI 放大的是个人的什么能力？如果它只放大执行速度，团队思维的缺位依然是短板。<strong>AI 消灭了人力成本，但没有消灭判断需要被检验、观点需要被质疑这件事本身。</strong></p>
+      <cite><a href="https://x.com/zarazhangrui" target="_blank" rel="noopener">X @zarazhangrui</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--g"></span><h2>人文与哲学</h2></div>
+
+    <article class="item">
+      <h3><a href="https://every.to/p/what-i-learn-when-i-run-out-of-ai" target="_blank" rel="noopener">Jack Cheng（Every）：用完 AI 额度之后，我才知道自己的问题够不够好</a></h3>
+      <p>Jack Cheng 每周一重置的 Claude 额度，让他能用最顶尖的模型（当前是 Fable 5.1）跑多 Agent 工作流、orchestrate 子 Agent。但额度用完的那几天，他反而发现一件事：限制迫使他停下来想清楚「这个问题值不值得带给 oracle（神谕）」，而不是一有想法就立刻扔给 AI。</p>
+      <p>他用德尔菲神谕（Oracle at Delphi，古希腊人向阿波罗神殿祭司寻求指引的地方）作比方：朝圣者必须从海港徒步 11 公里上山才能见到神谕，这段旅程本身就是澄清问题的过程。很多时候，「旅程」揭示了答案，神谕只是那个答案的公开化。在 Alan Kay 提出「思考的对象」（object to think with）概念五十年后，Jack 给出了一个更深的补充：用 AI 太顺手的代价，是绕过了「弄清楚自己在想什么」这一步。Will Larson 称之为「snacking」——用容易的工作代替重要的工作，AI 只是把这件事的速度和舒适度提高了几个数量级。<strong>使用 AI 的节制，不是技术局限，是认知卫生。</strong></p>
+      <cite><a href="https://every.to/p/what-i-learn-when-i-run-out-of-ai" target="_blank" rel="noopener">Every</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://tim.blog/2026/09/12/5-bullet-friday/" target="_blank" rel="noopener">Tim Ferriss 5-Bullet Friday：接触镜治抑郁、核桃护精子，加 James Baldwin 的生死之问</a></h3>
+      <p>本周 Tim Ferriss 的精选里有两个值得记的科学发现：一是材料科学家开发了一种可穿戴接触镜，通过视网膜传递微弱电信号刺激大脑，在小鼠实验中与氟西汀（Prozac 的活性成分，常见抗抑郁药）疗效相当，无需药物、非侵入式；二是 2012 年的 RCT（随机对照试验）发现，健康男性每天摄入 75 克核桃（约 2.5 把）坚持 12 周，精子活力（p=0.009）和正常形态（p≈0.03）均显著改善，2024 年的 meta 分析也印证了坚果对精子质量的正面作用。</p>
+      <p>这期的结尾是 James Baldwin 的一段话：「One must say Yes to life and embrace it wherever it is found—and it is found in terrible places. … The moment we cease to hold each other, the moment we break faith with one another, the sea engulfs us and the light goes out.」Baldwin 写于种族暴力最烈的年代，但每逢纪念日读来都有别的重量。不需要注解。</p>
+      <cite><a href="https://tim.blog/2026/09/12/5-bullet-friday/" target="_blank" rel="noopener">Tim Ferriss / 5-Bullet Friday</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--b"></span><h2>AI 进展</h2></div>
+
+    <article class="item">
+      <h3><a href="https://api-docs.deepseek.com/news/news260910/" target="_blank" rel="noopener">DeepSeek-V4.1-Flash Tech Report：因果编码-解码分离，KV 缓存较第一代压缩 437 倍</a></h3>
+      <p><strong>现状：</strong>大型 MoE（稀疏专家混合模型，每次推理只激活部分参数）在 Agent 长上下文场景下，KV 缓存（注意力层的键值缓存，存储上下文表示）占用极大，限制了推理速度和成本。</p>
+      <p><strong>问题：</strong>传统 Decoder-Only 架构中，每一层都独立计算和存储 KV，随上下文长度线性增长。</p>
+      <p><strong>解决方案：</strong>全新因果编码-解码（CED）架构：前 20 层仅作编码器（激活 8B 参数），后 20 层为解码器（激活 16B 参数），全局 KV 缓存从编码器末层一次性投影，配合 SWA Bounded Replay（滑动窗口注意力有界回放）和 CSA 2（压缩稀疏注意力第二版）进一步降低缓存体积。KV 缓存降至约 890 字节/token。</p>
+      <p><strong>价值：</strong>对比第一代模型压缩 437 倍；对比 V4 Pro 降至 1/8。1M token 上下文 + 视觉输入 + MIT 授权，$0.30/百万 tokens，实现在 4 张 RTX GPU 或 M5 Max SSD 流式读取下本地运行。</p>
+      <p><strong>未来方向：</strong>将编码和解码的计算与内存预算分别优化，同时推动开源模型服务（vLLM 已跟进支持）向长上下文 Agent 生产部署演进。</p>
+      <cite><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/blob/main/DeepSeek_V41_Tech_Report.pdf" target="_blank" rel="noopener">Tech Report (HF)</a> · <a href="https://www.deepseek.com/en/news/deepseek-v4-1-flash/" target="_blank" rel="noopener">DeepSeek</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2609.09134" target="_blank" rel="noopener">Co-Evolving Harnesses and Models (2609.09134)：弱模型模仿强模型完整轨迹会退步，只改失败那一步才有效</a></h3>
+      <p><strong>现状：</strong>当 Agent 训练框架（harness，定义 Agent 如何执行任务的脚手架）迭代升级后，通常的做法是让弱模型模仿强模型在新框架上的完整成功轨迹进行微调。</p>
+      <p><strong>问题：</strong>论文发现这会导致 4–30 个百分点的性能下降，原因是弱模型的规划风格和强模型不同，强行模仿完整轨迹破坏了弱模型和框架之间的风格适配。</p>
+      <p><strong>解决方案：</strong>由一个元级 MLE Agent 定位弱模型自己的失败轮次，仅请求强模型重写该轮的行为，保留弱模型自身的规划路径，以「单步修正」代替「全程模仿」。</p>
+      <p><strong>价值：</strong>在 Qwen3-Coder 和 Gemma 4 的 7 个任务上，方法在框架进化后依然保持或超越基线，消除了直接轨迹蒸馏带来的退步。</p>
+      <p><strong>未来方向：</strong>在 harness 持续演进的生产 Agent 系统中，让模型和框架协同进化，而非单向对齐。</p>
+      <cite><a href="https://arxiv.org/abs/2609.09134" target="_blank" rel="noopener">arXiv 2609.09134</a> · <a href="https://huggingface.co/papers/2609.09134" target="_blank" rel="noopener">HuggingFace Papers</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2609.06702" target="_blank" rel="noopener">PARSER (2609.06702)：并行子 Agent 分段读文档，主 Agent 多轮推理，896K 长上下文 +12 分</a></h3>
+      <p><strong>现状：</strong>长上下文 LLM Agent 在处理超长文档时，通常串行逐段读取，速度慢、准确率随上下文增长快速下降。</p>
+      <p><strong>问题：</strong>单 Agent 顺序读取无法并行，而且很难区分「相关证据在哪」和「需要什么证据」这两个子问题。</p>
+      <p><strong>解决方案：</strong>PARSER 将阅读和推理解耦：一组轻量级冻结子 Agent 各自绑定一个文档分块并行阅读；一个经 RL（强化学习）训练的主 Agent 通过迭代「广播查询 → 汇聚证据 → 深化推理」循环整合结果。</p>
+      <p><strong>价值：</strong>在 7K–896K token 范围内，4B 参数骨干超越最强顺序记忆基线 5.7 分，896K 长度下超越 12 分，准确率几乎不随长度衰减，推理延迟比记忆方法低 11 倍。</p>
+      <p><strong>未来方向：</strong>为超百万 token 长文档 Agent 任务提供可扩展推理框架，应用于法律、医疗、代码库分析等领域。</p>
+      <cite><a href="https://arxiv.org/abs/2609.06702" target="_blank" rel="noopener">arXiv 2609.06702</a> · <a href="https://huggingface.co/papers/2609.06702" target="_blank" rel="noopener">HuggingFace Papers</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2609.07247" target="_blank" rel="noopener">Elastic Horizon (2609.07247)：自动追踪成功轨迹长度的 90th 百分位动态调上限，省 25% token</a></h3>
+      <p><strong>现状：</strong>Agent 强化学习训练中，「交互 horizon」（单次任务允许与环境交互的最大步数）通常是手动设定、单调递增，不区分任务难度和训练阶段。</p>
+      <p><strong>问题：</strong>固定 horizon 要么上限太低错过复杂任务，要么太高浪费 token 预算，没有机制识别「继续延长已无收益」的临界点。</p>
+      <p><strong>解决方案：</strong>Elastic Horizon 提出「有效交互边界假说」：用成功轨迹长度的 90th 百分位动态跟踪上限，超过该边界后边际回报递减而成本线性增长，因此实时调整上限而非预设固定值。</p>
+      <p><strong>价值：</strong>在 AppWorld 和 BFCL 基准上，Qwen2.5-7B/14B 骨干下，方法收敛到固定 horizon 扫描确定的饱和区间内，成功率持平，每步 token 数比固定 K=50 减少约 25%。</p>
+      <p><strong>未来方向：</strong>为长 horizon Agent 的 RL 训练提供自适应预算控制，无需人工调参。</p>
+      <cite><a href="https://arxiv.org/abs/2609.07247" target="_blank" rel="noopener">arXiv 2609.07247</a></cite>
+    </article>
+
+    <article class="item">
+      <h3><a href="https://arxiv.org/abs/2508.04086" target="_blank" rel="noopener">ToolGrad (2508.04086)：先生成工具调用链再反推 prompt，通过率从 63.8% 升至 99.8%</a></h3>
+      <p><strong>现状：</strong>工具使用（tool-use）训练数据的构建通常从用户 prompt 出发，让 LLM 尝试生成正确的工具调用链，再过滤错误样本，通过率低且链路短。</p>
+      <p><strong>问题：</strong>从 prompt 到工具链，歧义太多：同一个问题有多种合理解法，LLM 很难一次性生成可验证的正确调用序列，传统深度优先搜索（DFS）通过率仅 63.8%。</p>
+      <p><strong>解决方案：</strong>ToolGrad 反转范式：先用「文本梯度」（textual gradient，类比反向传播中的梯度，通过语言描述迭代优化工具链）构建合法的工具调用链，再从这条链反推对应的用户 prompt——因为「工具链 → 问题」的标注远比「问题 → 工具链」更有约束性，只需一步 LLM 推理。</p>
+      <p><strong>价值：</strong>通过率从 63.8% 升至 99.8%，平均工具调用步数从 2.1 步增至 3.4 步（更复杂），LLM 调用次数从 64.5 次降至 63.9 次。在 ToolGrad-500 数据集上训练的模型，在未见工具的分布外评测中可与 SOTA 闭源模型持平。</p>
+      <p><strong>未来方向：</strong>为 Agent 工具使用提供高质量、低成本的合成训练数据构建流程，在 ACL 2026 上发表。</p>
+      <cite><a href="https://arxiv.org/abs/2508.04086" target="_blank" rel="noopener">arXiv 2508.04086</a> · <a href="https://research.google/blog/toolgrad-efficient-tool-use-dataset-generation-with-textual-gradients/" target="_blank" rel="noopener">Google Research</a></cite>
+    </article></section>
+  <section class="section"><div class="section-head"><span class="dot dot--m"></span><h2>看一眼</h2></div>
+  <ul class="glance-list">
+    <li>OpenAI 本周密集发布：GPT-Live-1、Images 2.5、Agents API 三件连发，同期宣布收购 Git AI 团队联创 Aidan 与 Sasha<a class="glance-src" href="https://x.com/thsottiaux" target="_blank" rel="noopener">Thomas Scialom / X →</a></li>
+    <li>「软件工厂」这个词比代码更难写——组织、流程和人际关系没有 AI 可以自动完成<a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">Peter Yang / X →</a></li>
+    <li>所有本地定时任务现在都跑在 Codex 里了<a class="glance-src" href="https://x.com/petergyang" target="_blank" rel="noopener">Peter Yang / X →</a></li>
+    <li>大多数企业 AI 项目失败，不是技术不好，而是从一开始就在解决错误的问题<a class="glance-src" href="https://x.com/realmadhuguru" target="_blank" rel="noopener">Madhu Guru / X →</a></li>
+    <li>光凭通过率根本分不清模型是否真的掌握了某项能力——eval 需要更细粒度的解读<a class="glance-src" href="https://x.com/trq212" target="_blank" rel="noopener">Tom Qi / X →</a></li>
+    <li>没有更好的工具，根本不知道自己写的技能 prompt 是否真的在起效<a class="glance-src" href="https://x.com/trq212" target="_blank" rel="noopener">Tom Qi / X →</a></li>
+    <li>Replit 推出「有预算的例程」：agent 按计划自动运行，花完预算就停<a class="glance-src" href="https://x.com/amasad" target="_blank" rel="noopener">Amjad Masad / X →</a></li>
+    <li>Tailscale 把模型路由搬上了 Vercel AI Gateway，多提供商切换更方便<a class="glance-src" href="https://x.com/rauchg" target="_blank" rel="noopener">Guillermo Rauch / X →</a></li>
+    <li>Box 现在可以直接挂载进 agent 沙箱，文件就在那里，无需预先同步<a class="glance-src" href="https://x.com/levie" target="_blank" rel="noopener">Aaron Levie / X →</a></li>
+    <li>搬到台北了<a class="glance-src" href="https://x.com/ryolu_" target="_blank" rel="noopener">Ryo Lu / X →</a></li>
+    <li>9/11 那天他在 TechCrunch 办公室，亲眼看到飞机撞楼——今天分享了那段记忆<a class="glance-src" href="https://x.com/mattturck" target="_blank" rel="noopener">Matt Turck / X →</a></li>
+    <li>成功的方式千种，失败却总是无人认领<a class="glance-src" href="https://x.com/nikunj" target="_blank" rel="noopener">Nikunj / X →</a></li>
+    <li>给 Cua 项目提交了 Linux 按键可靠性补丁，解决了长按键行为不稳定的问题<a class="glance-src" href="https://x.com/steipete" target="_blank" rel="noopener">Peter Steinberger / X →</a></li>
+    <li>用 Astra computer-use agent 让旧电脑自己启动了 Doom——它真的做到了<a class="glance-src" href="https://x.com/steipete" target="_blank" rel="noopener">Peter Steinberger / X →</a></li>
+    <li>加州的监管压力越来越大，AI 创新的空间还能剩多少？<a class="glance-src" href="https://x.com/adityaag" target="_blank" rel="noopener">Aditya Agarwal / X →</a></li>
+    <li>PLG 的销售问题从来不是新问题，只是大家总在重新发现它<a class="glance-src" href="https://www.lennysnewsletter.com" target="_blank" rel="noopener">Elena Verna / Lenny's →</a></li>
+  </ul>
+  </section>
+
+  <p class="post-end">✦</p>
+
+  <footer class="post-foot">
+    <div class="post-foot__nav">
+      <a href="2026-09-11.html">← SEP 11</a>
+      <span>—</span>
+    </div>
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
